@@ -1,0 +1,1120 @@
+id: 338179
+key: f133dd92-8e3c-40b9-9d9d-545498638459
+locale: zh-cn
+version: 1.0.0
+title: 小部件
+semantic_type: Lesson
+updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/5902552c_nd801-ud855-widgets/nd801-ud855-widgets.png'
+  width: 1098
+  height: 1102
+video: null
+summary: ‘在这节课，你将创建一个可以放置在主屏幕上的应用小部件。小部件是一种快捷方式，可以显示应用的动态消息并处理点击事件。’
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+_concepts_ids:
+  - 338118
+  - 338120
+  - 338124
+  - 338125
+  - 338128
+  - 338126
+  - 338123
+  - 338127
+  - 338147
+  - 338133
+  - 338134
+  - 338139
+  - 338140
+  - 338148
+  - 338146
+  - 338145
+  - 338155
+  - 338157
+  - 338156
+  - 338158
+  - 338154
+  - 338165
+  - 338164
+_project_id: null
+concepts:
+  - id: 338118
+    key: 98627458-72ac-45a0-94ff-bca60428ccfc
+    locale: zh-cn
+    version: 1.0.0
+    title: 小部件简介
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338085
+    atoms:
+      - id: 338085
+        key: bfc5ad51-8f40-461c-b602-d187d3b985c7
+        locale: zh-cn
+        version: 1.0.0
+        title: 小部件简介
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '55943'
+          youtube_id: w2wvgv57fvA
+          subtitles: []
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/59134e37_01-introduction-to-widgets-hs-v2/01-introduction-to-widgets-hs-v2_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/59134e37_01-introduction-to-widgets-hs-v2/01-introduction-to-widgets-hs-v2_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/59134e37_01-introduction-to-widgets-hs-v2/01-introduction-to-widgets-hs-v2_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/59134e37_01-introduction-to-widgets-hs-v2/01-introduction-to-widgets-hs-v2_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/59134e37_01-introduction-to-widgets-hs-v2/hls/playlist.m3u8'
+  - id: 338120
+    key: 38d71865-f9d1-4294-9a09-6e63b6444f46
+    locale: zh-cn
+    version: 1.0.0
+    title: 什么是应用小部件
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338086
+    atoms:
+      - id: 338086
+        key: 3eea6741-b4fb-4b85-abba-71fd5f23efc8
+        locale: zh-cn
+        version: 1.0.0
+        title: 什么是应用小部件
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54384'
+          youtube_id: wyyEVXxDPWA
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dad8_02-what-is-a-widget-sc-a.mp4/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dad8_02-what-is-a-widget-sc-a.mp4/02-what-is-a-widget-sc-a.mp4_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dad8_02-what-is-a-widget-sc-a.mp4/02-what-is-a-widget-sc-a.mp4_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dad8_02-what-is-a-widget-sc-a.mp4/02-what-is-a-widget-sc-a.mp4_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dad8_02-what-is-a-widget-sc-a.mp4/02-what-is-a-widget-sc-a.mp4_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dad8_02-what-is-a-widget-sc-a.mp4/hls/playlist.m3u8'
+  - id: 338124
+    key: 57df68a0-c010-48c0-b4e9-b55795761390
+    locale: zh-cn
+    version: 1.0.0
+    title: My Garden 应用
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338087
+      - 338088
+    atoms:
+      - id: 338087
+        key: 46299757-44a9-44d4-9060-b54c1382823e
+        locale: zh-cn
+        version: 1.0.0
+        title: My Garden 应用
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53579'
+          youtube_id: 0GTpY9yQd9o
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52854_03-my-garden-app-sc/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52854_03-my-garden-app-sc/03-my-garden-app-sc_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52854_03-my-garden-app-sc/03-my-garden-app-sc_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52854_03-my-garden-app-sc/03-my-garden-app-sc_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52854_03-my-garden-app-sc/03-my-garden-app-sc_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52854_03-my-garden-app-sc/hls/playlist.m3u8'
+      - id: 338088
+        key: aa5a831b-9329-4e1e-b7fd-619065d65fa5
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # My Garden 代码
+
+          该应用的代码位于 [MyGarden 资源库](https://github.com/udacity/AdvancedAndroid_MyGarden/tree/Starter_Code)中。请使用以下命令下载该资源库：
+
+          ```bash
+          git clone https://github.com/udacity/AdvancedAndroid_MyGarden.git
+          ```
+
+          如果你想复习下代码的组织结构，请参阅[我们在如何使用课程代码部分介绍的内容](https://classroom.udacity.com/courses/ud857/lessons/8b2a9d63-0ff5-48ff-90d3-a9855b701dae/concepts/41b82e3c-2797-46e5-8a66-684098ca8cbb)。
+
+          ### 练习代码
+          **练习：**[Starer_Code](https://github.com/udacity/AdvancedAndroid_MyGarden/tree/Starter_Code)
+        instructor_notes: ''
+        resources: null
+  - id: 338125
+    key: 5fc05dfc-f1a9-4ab1-b0be-8b9d851cafb6
+    locale: zh-cn
+    version: 1.0.0
+    title: PlantUtils 代码
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338089
+    atoms:
+      - id: 338089
+        key: 26fd6b98-fb9c-465c-8648-fabc191b4fea
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            请仔细查看起始代码。
+            请查看 PlantUtils.java 文件。getPlantImageRes 方法的作用是什么？
+          correct_feedback: |-
+            答对了，getPlantImageRes 是我们为你创建的一个非常实用的方法。
+            在这节课，我们将经常用到该方法，还有助于你熟悉 PlantUtils 类中的剩余方法，以及整个应用的一般架构。
+          video_feedback: null
+          default_feedback: ‘再试一遍！确保你查看的是 getPlantImageRes 方法，思考下输入和输出参数，并阅读描述它们的注释。’
+          answers:
+            - id: a1492078257388
+              text: 根据数据库 ID 返回植物图片资源
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1492078313858
+              text: 返回植物图片的分辨率
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1492078327785
+              text: 根据年龄和浇水时间返回图片资源
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1492078334766
+              text: 根据图片在网格中的位置返回植物图片资源
+              is_correct: false
+              incorrect_feedback: null
+  - id: 338128
+    key: 158b7a53-8018-4afa-99ab-6dbe631f3a16
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘创建首个应用小部件'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338094
+    atoms:
+      - id: 338094
+        key: e624f50e-75f9-4b09-a10c-9f44a7e9052c
+        locale: zh-cn
+        version: 1.0.0
+        title: 创建首个应用小部件
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54385'
+          youtube_id: 0_BSHxVfdfI
+          subtitles: []
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dade_05-creating-your-first-app-widget/05-creating-your-first-app-widget_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dade_05-creating-your-first-app-widget/05-creating-your-first-app-widget_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dade_05-creating-your-first-app-widget/05-creating-your-first-app-widget_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dade_05-creating-your-first-app-widget/05-creating-your-first-app-widget_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dade_05-creating-your-first-app-widget/hls/playlist.m3u8'
+  - id: 338126
+    key: fe047530-7c2a-4934-8cac-d4da7ea4730d
+    locale: zh-cn
+    version: 1.0.0
+    title: RemoteView
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338090
+    atoms:
+      - id: 338090
+        key: 8b58e77a-58eb-41fe-bb80-4ad9b0a8b649
+        locale: zh-cn
+        version: 1.0.0
+        title: RemoteView
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53581'
+          youtube_id: LL2RANSbY7g
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52869_06-remoteviews-sc/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52869_06-remoteviews-sc/06-remoteviews-sc_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52869_06-remoteviews-sc/06-remoteviews-sc_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52869_06-remoteviews-sc/06-remoteviews-sc_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52869_06-remoteviews-sc/06-remoteviews-sc_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52869_06-remoteviews-sc/hls/playlist.m3u8'
+  - id: 338123
+    key: bf66e9ae-fee0-44c7-bb05-ab1d6781b6c3
+    locale: zh-cn
+    version: 1.0.0
+    title: My Garden 小部件
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338091
+    atoms:
+      - id: 338091
+        key: be8c11c1-9100-478e-9043-68cf9d29494b
+        locale: zh-cn
+        version: 1.0.0
+        title: My Garden 小部件
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54386'
+          youtube_id: qHQGkzw1M8M
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dae5_07-my-garden-widget-sc-a-1.mov/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dae5_07-my-garden-widget-sc-a-1.mov/07-my-garden-widget-sc-a-1.mov_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dae5_07-my-garden-widget-sc-a-1.mov/07-my-garden-widget-sc-a-1.mov_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dae5_07-my-garden-widget-sc-a-1.mov/07-my-garden-widget-sc-a-1.mov_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dae5_07-my-garden-widget-sc-a-1.mov/07-my-garden-widget-sc-a-1.mov_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dae5_07-my-garden-widget-sc-a-1.mov/hls/playlist.m3u8'
+  - id: 338127
+    key: 242db1ba-1120-42db-9d31-09d82c35317b
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：创建简单的小部件'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338092
+      - 338093
+    atoms:
+      - id: 338092
+        key: 498f82fb-0188-47fc-9537-4d70c4a8bfdf
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 创建简单的小部件
+
+          在此练习中，你将为我们的应用创建非常基础的小部件，该小部件可以放置在主屏幕上，被点击之后将在 MyGarden 应用中启动主 Activity。
+
+          ### 练习代码
+          **练习：**[TWID.01-Exercise-AddNewWidget](https://github.com/udacity/AdvancedAndroid_MyGarden/tree/TWID.01-Exercise-AddNewWidget)
+        instructor_notes: ''
+        resources: null
+      - id: 338093
+        key: d6e75764-e511-4aff-b094-4b9169c36a4b
+        locale: zh-cn
+        version: 1.0.0
+        title: 创建简单的小部件
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 使用 Android Studio 向项目中添加新的小部件
+          - 设计该小部件：添加显示静态图片的 ImageView
+          - 创建一个 PendingIntent，以便在小部件图标被点击后启动该应用
+        positive_feedback: |-
+          很棒！
+          **解决方案：**[[TWID.01-Solution-AddNewWidget](https://github.com/udacity/AdvancedAndroid_MyGarden/tree/TWID.01-Solution-AddNewWidget)][[Diff](https://github.com/udacity/AdvancedAndroid_MyGarden/compare/TWID.01-Exercise-AddNewWidget...TWID.01-Solution-AddNewWidget)]
+        video_feedback: null
+        description: '现在该你了，请按照代码中的 TODO 操作，完成此练习'
+  - id: 338147
+    key: a60b73c7-f2ce-4f74-9e97-4e1e6e9fa2a4
+    locale: zh-cn
+    version: 1.0.0
+    title: 小部件外边距
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338099
+      - 338100
+      - 338102
+      - 338103
+      - 338104
+    atoms:
+      - id: 338099
+        key: 5ff95cdb-eadf-4c79-8db9-027e6495f3aa
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # 小部件外边距
+
+          自 Android API 14 及更高级别之后，当小部件出现在用户的主屏幕上时，Android 会自动在小部件周围留下外边距。 
+
+          但是，之前版本的 API 则并不会这样，因此对于在 Android API 版本低于 14 的设备上运行的小部件，依然需要指定外边距。 
+
+          我们在 values 文件夹中有面向这两种类别的用户 API 级别的文件夹，我们可以利用这一点。我们将通过引用维度资源，依然在 XML 布局文件中定义外边距。在 `"values"` 目录下，我们创建了一个叫做 `"dimens.xml"` 的新文件。
+        instructor_notes: ''
+        resources: null
+      - id: 338100
+        key: 96f78b73-0e2a-4d89-b48e-6d5a4710617c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ef5bd2_screen-shot-2017-04-13-at-1.06.36-pm/screen-shot-2017-04-13-at-1.06.36-pm.png'
+        width: 2354
+        height: 666
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338102
+        key: b8269ef7-5ebe-4382-a281-f024cb78df83
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          为了防止更新版本的 Android 使用该外边距（因为系统本身已经包含了外边距）：
+
+          我们会创建一个新的 `"values-v14"` 文件夹，其中包含一个该文件的副本，面向的是 API 14 及以上版本，但是外边距值设为 0dp。
+        instructor_notes: ''
+        resources: null
+      - id: 338103
+        key: f71238eb-eab7-41a0-a7b3-34a7d0525e29
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ef5c5b_screen-shot-2017-04-13-at-1.08.56-pm/screen-shot-2017-04-13-at-1.08.56-pm.png'
+        width: 2302
+        height: 650
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338104
+        key: ca5f357d-69a0-4d6a-a4e8-ffd848d7b64b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘现在，当 XML 布局使用其名称来引用此维度值时，会在运行 API 14 及以上版本的设备上使用值 0，并在其他设备上使用值 8dp。’
+        instructor_notes: ''
+        resources: null
+  - id: 338133
+    key: 939b1d57-4978-471a-99ad-78ee752d8a77
+    locale: zh-cn
+    version: 1.0.0
+    title: 小部件的后台任务
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338095
+    atoms:
+      - id: 338095
+        key: 2c6a57e3-e657-49a3-997a-b25ac8c92b09
+        locale: zh-cn
+        version: 1.0.0
+        title: 小部件的后台任务
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54387'
+          youtube_id: SkdZBuvckjI
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dae6_10-background-task-for-widgets/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dae6_10-background-task-for-widgets/10-background-task-for-widgets_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dae6_10-background-task-for-widgets/10-background-task-for-widgets_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dae6_10-background-task-for-widgets/10-background-task-for-widgets_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dae6_10-background-task-for-widgets/10-background-task-for-widgets_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dae6_10-background-task-for-widgets/hls/playlist.m3u8'
+  - id: 338134
+    key: 84bf86d1-0f7b-4650-bfc7-31c662315d66
+    locale: zh-cn
+    version: 1.0.0
+    title: WateringService
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338096
+    atoms:
+      - id: 338096
+        key: 8eaf88e6-380e-4492-8e10-1839bc6f663f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Watering IntentService
+
+          在此练习中，我们将开始创建一个叫做 PlantWateringService 的 IntentService 类，该类扩展自 IntentService。
+
+          ```Java
+          public class PlantWateringService extends IntentService
+          ```
+
+          为了保持条理性，建议定义 IntentService 可以处理的操作，我们先定义第一个操作 `ACTION_WATER_PLANTS`
+
+          ```Java
+          public static final String ACTION_WATER_PLANTS =
+                              "com.example.android.mygarden.action.water_plants";
+          ```
+
+          接着，我们将创建一个叫做 startActionWaterPlants 的静态方法，允许明确地触发执行该操作的服务，在其中直接创建一个引用相同类的 intent，并将操作设为 ACTION_WATER_PLANTS，然后调用启动服务
+
+          ```Java
+          public static void startActionWaterPlants(Context context) {
+                  Intent intent = new Intent(context, PlantWateringService.class);
+                  intent.setAction(ACTION_WATER_PLANTS);
+                  context.startService(intent);
+              }
+          ```
+
+          要处理此操作，我们需要替换 onHandleIntent，你可以在其中提取操作并单独处理每种类型的操作
+
+          ```Java
+          @Override
+              protected void onHandleIntent(Intent intent) {
+                  if (intent != null) {
+                      final String action = intent.getAction();
+                      if (ACTION_WATER_PLANTS.equals(action)) {
+                          handleActionWaterPlants();
+                      }
+                  }
+              }
+          ```
+
+          最后，我们实现 handleActionWaterPlants 方法。.
+          要给所有植物浇水，我们只需运行更新查询，将上次浇水时间设为现在，但仅针对还存活的植物。
+          要检查某棵植物是否还存活着，你可以将上次浇水时间与现在进行对比，如果差大于 `MAX_AGE_WITHOUT_WATER`，那么该植物已经死了！
+
+          ```Java
+          private void handleActionWaterPlants() {
+             Uri PLANTS_URI = BASE_CONTENT_URI.buildUpon().appendPath(PATH_PLANTS).build();
+             ContentValues contentValues = new ContentValues();
+             long timeNow = System.currentTimeMillis();
+             contentValues.put(PlantContract.PlantEntry.COLUMN_LAST_WATERED_TIME, timeNow);
+             // Update only plants that are still alive
+             getContentResolver().update(
+                PLANTS_URI,
+                contentValues,
+                PlantContract.PlantEntry.COLUMN_LAST_WATERED_TIME+">?",
+                new String[]{String.valueOf(timeNow - PlantUtils.MAX_AGE_WITHOUT_WATER)});
+          }
+          ```
+          现在我们的 IntentService 已经做好准备，我们向小部件布局中添加水滴图片
+
+          ```XML
+          <ImageView
+                  android:id="@+id/widget_water_button"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:src="@drawable/water_drop_blue" />
+
+          ```
+          和之前一样，我们需要创建一个 PendingIntent 来处理水滴图片上的点击事件，但是这次启动的是服务，而不是 activity
+
+          ```Java
+          // Add the wateringservice click handler
+          Intent wateringIntent = new Intent(context, PlantWateringService.class);
+          wateringIntent.setAction(PlantWateringService.ACTION_WATER_PLANTS);
+          PendingIntent wateringPendingIntent = PendingIntent.getService(
+                                                       context, 
+                                                       0, 
+                                                       wateringIntent, 
+                                                       PendingIntent.FLAG_UPDATE_CURRENT);
+          views.setOnClickPendingIntent(R.id.widget_water_button, wateringPendingIntent);
+          ```
+        instructor_notes: ''
+        resources: null
+  - id: 338139
+    key: cb0912b8-b29b-4487-98dd-cda38f3b7e65
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：添加浇水服务'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338097
+      - 338098
+    atoms:
+      - id: 338097
+        key: e59c0681-b268-4e72-9eb9-9ab658d53cde
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 添加浇水服务
+
+          在此练习中，你将在小部件上创建浇水按钮，该按钮会启动 IntentService 以更新花园中所有植物的浇水时间
+
+          ### 练习代码
+          **练习：**[TWID.02-Exercise-AddWateringService](https://github.com/udacity/AdvancedAndroid_MyGarden/tree/TWID.02-Exercise-AddWateringService)
+        instructor_notes: ''
+        resources: null
+      - id: 338098
+        key: 1ceb1d63-eb04-4d6f-81dd-b8b9c6e1be80
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 添加一个 ImageView，在其中显示 water_drop_blue 以作为浇水按钮
+          - 创建一个扩展自 IntentService 的植物浇水服务
+          - 添加操作 ACTION_WATER_PLANTS，负责为所有依然活着的植物更新 last_watered 时间戳
+          - 在 Manifest 中为 PlantWateringService 添加服务标签
+          - 为 PlantWateringService 创建 PendingIntent 并为 widget_water_button 创建 setOnClickPendingIntent 
+        positive_feedback: |-
+          很棒！
+
+          **解决方案：**[[TWID.02-Solution-AddWateringService](https://github.com/udacity/AdvancedAndroid_MyGarden/tree/TWID.02-Solution-AddWateringService)][[Diff](https://github.com/udacity/AdvancedAndroid_MyGarden/compare/TWID.02-Exercise-AddWateringService...TWID.02-Solution-AddWateringService)]
+        video_feedback: null
+        description: ‘现在该你了，请按照下面的步骤操作，完成此练习'
+  - id: 338140
+    key: 674acd6c-c1c6-44e6-9b62-3fe89084daeb
+    locale: zh-cn
+    version: 1.0.0
+    title: 通过 IntentService 更新小部件
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338101
+    atoms:
+      - id: 338101
+        key: e2b6f803-4f66-4741-8690-3f6ff43f372c
+        locale: zh-cn
+        version: 1.0.0
+        title: 通过 IntentService 更新小部件
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53593'
+          youtube_id: WtHw-ItcmPs
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5333d_13-widget-updates-via-intentservices-hs-sc/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5333d_13-widget-updates-via-intentservices-hs-sc/13-widget-updates-via-intentservices-hs-sc_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5333d_13-widget-updates-via-intentservices-hs-sc/13-widget-updates-via-intentservices-hs-sc_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5333d_13-widget-updates-via-intentservices-hs-sc/13-widget-updates-via-intentservices-hs-sc_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5333d_13-widget-updates-via-intentservices-hs-sc/13-widget-updates-via-intentservices-hs-sc_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5333d_13-widget-updates-via-intentservices-hs-sc/hls/playlist.m3u8'
+  - id: 338148
+    key: cc786bc3-9fae-4ac2-9760-7269368b8787
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：UpdateWidget 服务'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338105
+      - 338106
+    atoms:
+      - id: 338105
+        key: 76ac5cbe-6c49-480e-ae1b-c5c1a2c23046
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # UpdateWidget 服务
+
+          在此练习中，你将创建另一个 IntentService 操作，该操作将查询需要最多关照的植物，然后更新小部件界面以显示该植物。
+
+          ### 练习代码
+          **练习：**[TWID.03-Exercise-UpdateWidgetsService](https://github.com/udacity/AdvancedAndroid_MyGarden/tree/TWID.03-Exercise-UpdateWidgetsService)
+        instructor_notes: ''
+        resources: null
+      - id: 338106
+        key: 679bee05-c07f-4f4c-bc8c-0ebb5a6b662e
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 修改 updateAppWidget 方法以传入图片资源
+          - 调用 setImageViewResource 以更新小部件的图片
+          - 将 updateAppWidget 循环移到叫做 updatePlantWidgets 的新方法
+          - 将图片资源传递给 updatePlantWidgets
+          - 创建一个新的操作 ACTION_UPDATE_PLANT_WIDGETS，用来更新小部件 UI
+          - 实现 handleActionUpdatePlantWidgets 以查询最接近死亡状态的植物
+          - 调用 updatePlantWidgets 以刷新小部件
+          - '在 onUpdate、AddPlantActivity 和 PlantDetailActivity 中调用 startActionUpdatePlantWidgets’
+        positive_feedback: |-
+          很棒！
+
+          **解决方案：**[[TWID.03-Solution-UpdateWidgetsService](https://github.com/udacity/AdvancedAndroid_MyGarden/tree/TWID.03-Solution-UpdateWidgetsService)][[Diff](https://github.com/udacity/AdvancedAndroid_MyGarden/compare/TWID.03-Exercise-UpdateWidgetsService...TWID.03-Solution-UpdateWidgetsService)]
+        video_feedback: null
+        description: '现在该你了，请按照下面的步骤操作，完成此练习'
+  - id: 338146
+    key: 8bc08a0c-0f6a-4c2b-9197-9015996811c8
+    locale: zh-cn
+    version: 1.0.0
+    title: 给单棵植物浇水
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338107
+    atoms:
+      - id: 338107
+        key: fce94cc6-6d83-4c92-8a57-c6beae2a0e5e
+        locale: zh-cn
+        version: 1.0.0
+        title: 给单棵植物浇水
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53586'
+          youtube_id: ejYuNZeAg58
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52897_15-water-individual-plants-hs/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52897_15-water-individual-plants-hs/15-water-individual-plants-hs_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52897_15-water-individual-plants-hs/15-water-individual-plants-hs_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52897_15-water-individual-plants-hs/15-water-individual-plants-hs_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52897_15-water-individual-plants-hs/15-water-individual-plants-hs_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f52897_15-water-individual-plants-hs/hls/playlist.m3u8'
+  - id: 338145
+    key: c143a03d-8ecb-4e3f-8691-190cfa486cc3
+    locale: zh-cn
+    version: 1.0.0
+    title: 向 IntentService 发送 Extras
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338108
+    atoms:
+      - id: 338108
+        key: c1fc6ab9-b620-408e-989e-9212c0cd98e2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 向 IntentService 发送 Extras
+
+          在此练习中，我们的主要任务是将“给所有植物浇水”操作替换成更具体的“给一颗植物浇水”操作。这样将会根据植物 ID 给单棵植物浇水，而不是给花园中的所有植物浇水。
+
+          为了给具体的植物浇水，你需要启动相同的 IntentService，但是还需要传递植物 ID。 
+
+          为此，创建将启动 `PlantWateringService` 的 `wateringIntent` 之后，你可以使用方法 `putExtra()`，然后就像任何常规 Intent 一样设置名称和值。
+
+          ```Java
+          Intent wateringIntent = new Intent(context, PlantWateringService.class);
+          wateringIntent.setAction(PlantWateringService.ACTION_WATER_PLANT);
+          wateringIntent.putExtra(PlantWateringService.EXTRA_PLANT_ID, plantId);
+          PendingIntent wateringPendingIntent = PendingIntent.getService(context, 0, wateringIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+          views.setOnClickPendingIntent(R.id.widget_water_button, wateringPendingIntent);
+          ```
+
+          在此练习中，你需要在 My Garden 应用中完成以下更改：
+
+          1) 将小部件中的给所有植物浇水点击事件改成仅为所显示的特定植物浇水 
+           * 将 plantId 作为新的参数传入 updatePlantWidgets 方法
+           * 将浇水服务操作从 ACTION_WATER_PLANTS 改成 ACTION_WATER_PLANT
+           * 更改更新查询以使用 SINGLE_PLANT_URI
+           * 定义并使用 EXTRA_PLANT_ID 将植物 ID 传递给小部件中的 intent 服务
+           * 为浇水服务创建 pending intent 时调用 putExtra 并传入 plantId
+           * 调用 getLongExtra 以从服务中提取 plnatId
+           * 确保在浇完水之后，调用 startActionUpdatePlantWidgets 以更新小部件
+
+          2) 如果自上次浇水之后不到 MIN_AGE_BETWEEN_WATER，则隐藏小部件中的浇水按钮
+           *  向 updatePlantWidgets 添加一个新的布尔型参数，表示植物是否能浇水
+           * 使用 setViewVisibility 将 widget_water_button Visibility 从 View.VISIBLE 改成 View.INVISIBLE 以隐藏浇水按钮
+
+          3) 更改小部件植物图片点击操作程序，以为该植物启动 Detail Activity（而不是 Main Activity）
+           * 如果 plantId 是 INVALID_PLANT_ID，则和往常一样启动 MainActivity
+           * 否则启动 PlantDetailActivity，并传入 plantId 作为 EXTRA_PLANT_ID 
+
+          4) 在植物图片下添加一个 TextView，负责在 main activity 和小部件中显示植物 ID，以便区分每棵植物
+        instructor_notes: ''
+        resources: null
+  - id: 338155
+    key: 7c41c17b-0ad6-4621-8100-a179e05e4a88
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：添加更多功能'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338109
+      - 338110
+    atoms:
+      - id: 338109
+        key: 2dd0531d-0ea4-4c90-bcd7-90a24f48b139
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 练习：添加更多功能
+
+          在此练习中，你将根据我们从用户那收集的反馈，向我们的应用中添加更多功能。
+
+          1. 将小部件中的给所有植物浇水点击事件改成仅为所显示的特定植物浇水 
+            * 将 plantId 作为新的参数传入 updatePlantWidgets 方法
+            * 将浇水服务操作从 ACTION_WATER_PLANTS 改成 ACTION_WATER_PLANT
+            * 更改更新查询以使用 SINGLE_PLANT_URI
+            * 定义并使用 EXTRA_PLANT_ID 将植物 ID 传递给小部件中的 intent 服务
+            * 为浇水服务创建 pending intent 时调用 putExtra 并传入 plantId
+            * 调用 getLongExtra 以从服务中提取 plnatId
+            * 确保在浇完水之后，调用 startActionUpdatePlantWidgets 以更新小部件
+          2. 如果自上次浇水之后不到 MIN_AGE_BETWEEN_WATER，则隐藏小部件中的浇水按钮
+           *  向 updatePlantWidgets 添加一个新的布尔型参数，表示植物是否能浇水
+           * 使用 setViewVisibility 将 widget_water_button Visibility 从 View.VISIBLE 改成 View.INVISIBLE 以隐藏浇水按钮
+          3. 更改小部件植物图片点击操作程序，以为该植物启动 Detail Activity（而不是 Main Activity）
+           * 如果 plantId 是 INVALID_PLANT_ID，则和往常一样启动 MainActivity
+           * 否则启动 PlantDetailActivity，并传入 plantId 作为 EXTRA_PLANT_ID 
+          4. 在植物图片下添加一个 TextView，负责在 main activity 和小部件中显示植物 ID，以便区分每棵植物 
+
+
+          ### 练习代码
+          **练习：**[TWID.04-Exercise-Extras](https://github.com/udacity/AdvancedAndroid_MyGarden/tree/TWID.04-Exercise-Extras)
+        instructor_notes: ''
+        resources: null
+      - id: 338110
+        key: 5cb7feaa-ce47-4537-87aa-d4ae28b7b48c
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 将 ACTION_WATER_PLANTS 改成 ACTION_WATER_PLANT
+          - 将植物 ID 传入该服务并更新查询以使用 SINGLE_PLANT_URI
+          - 修改 updatePlantWidgets 和 updateAppWidget 以传入植物 ID
+          - 修改 updatePlantWidgets 和 updateAppWidget 以传入布尔值来显示/隐藏浇水按钮
+          - 将点击处理程序设为针对该植物 ID 打开 DetailActivity
+          - 在 plant_widget 中添加新的 TextView ，并将其设为显示植物 ID
+        positive_feedback: |-
+          很棒！
+
+          **解决方案：**[[TWID.04-Exercise-Extras](https://github.com/udacity/AdvancedAndroid_MyGarden/tree/TWID.04-Exercise-Extras)][[Diff](https://github.com/udacity/AdvancedAndroid_MyGarden/compare/TWID.04-Exercise-Extras...TWID.04-Solution-Extras)]
+        video_feedback: null
+        description: '现在该你了，请按照下面的步骤操作，完成此练习'
+  - id: 338157
+    key: 7aeccdaa-4f6a-4a38-a96a-86317d0a12a0
+    locale: zh-cn
+    version: 1.0.0
+    title: 重新调整小部件的大小
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338111
+    atoms:
+      - id: 338111
+        key: 5d62f7a8-87d3-4890-954c-88de1ced2186
+        locale: zh-cn
+        version: 1.0.0
+        title: 重新调整小部件的大小
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53587'
+          youtube_id: GTJxC01hhBk
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5289a_18-resizing-widgets-hs/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5289a_18-resizing-widgets-hs/18-resizing-widgets-hs_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5289a_18-resizing-widgets-hs/18-resizing-widgets-hs_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5289a_18-resizing-widgets-hs/18-resizing-widgets-hs_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5289a_18-resizing-widgets-hs/18-resizing-widgets-hs_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5289a_18-resizing-widgets-hs/hls/playlist.m3u8'
+  - id: 338156
+    key: 93aef9c2-5705-4975-83e8-ea902e1974bd
+    locale: zh-cn
+    version: 1.0.0
+    title: AppWidgetManager 选项
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338112
+    atoms:
+      - id: 338112
+        key: 33fbf35e-d2a0-41fb-a4be-60ebaaff7d49
+        locale: zh-cn
+        version: 1.0.0
+        title: AppWidgetManager 选项
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53588'
+          youtube_id: iFFvPLWtZ1E
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f528af_19-appwidgetmanager-options-sc/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f528af_19-appwidgetmanager-options-sc/19-appwidgetmanager-options-sc_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f528af_19-appwidgetmanager-options-sc/19-appwidgetmanager-options-sc_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f528af_19-appwidgetmanager-options-sc/19-appwidgetmanager-options-sc_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f528af_19-appwidgetmanager-options-sc/19-appwidgetmanager-options-sc_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f528af_19-appwidgetmanager-options-sc/hls/playlist.m3u8'
+  - id: 338158
+    key: 6b7247fa-4fe1-4645-8ed8-10d6afc6ec0f
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘小部件中的 GridView'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338113
+    atoms:
+      - id: 338113
+        key: bc40e637-0e91-4c98-8ff0-32ecb68a03e2
+        locale: zh-cn
+        version: 1.0.0
+        title: 小部件中的 GridView
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54388'
+          youtube_id: W51FZ_Yu_3c
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900daf1_20-gridviews-in-widgets-v2.mp4-1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900daf1_20-gridviews-in-widgets-v2.mp4-1/20-gridviews-in-widgets-v2.mp4-1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900daf1_20-gridviews-in-widgets-v2.mp4-1/20-gridviews-in-widgets-v2.mp4-1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900daf1_20-gridviews-in-widgets-v2.mp4-1/20-gridviews-in-widgets-v2.mp4-1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900daf1_20-gridviews-in-widgets-v2.mp4-1/20-gridviews-in-widgets-v2.mp4-1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900daf1_20-gridviews-in-widgets-v2.mp4-1/hls/playlist.m3u8'
+  - id: 338154
+    key: 78e17e02-5d0e-4bc7-af27-081827e9b192
+    locale: zh-cn
+    version: 1.0.0
+    title: PendingIntent 模板
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338114
+    atoms:
+      - id: 338114
+        key: 1d34d4d7-fd69-44ea-b39c-587c3fc6f3d4
+        locale: zh-cn
+        version: 1.0.0
+        title: PendingIntentTemplate
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54389'
+          youtube_id: wGgu91uZ3XA
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900daf6_21-pendingintenttemplates-v1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900daf6_21-pendingintenttemplates-v1/21-pendingintenttemplates-v1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900daf6_21-pendingintenttemplates-v1/21-pendingintenttemplates-v1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900daf6_21-pendingintenttemplates-v1/21-pendingintenttemplates-v1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900daf6_21-pendingintenttemplates-v1/21-pendingintenttemplates-v1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900daf6_21-pendingintenttemplates-v1/hls/playlist.m3u8'
+  - id: 338165
+    key: 89f55d8d-b386-4493-8a38-1ee08d0750d4
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：GridView'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338115
+      - 338116
+    atoms:
+      - id: 338115
+        key: cc06af9f-084c-4caa-ace5-24ec27c47f4a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 小部件中的 GridView
+
+          在此练习中，你将为小部件创建自适应界面，根据其尺寸更改布局。
+          当小部件的宽度大于 300dp 时，它将显示一个 GridView，其中包含花园中的所有植物，否则继续显示单棵植物。
+
+          ### 练习代码
+          **练习：**[TWID.05-Solution-GridView](https://github.com/udacity/AdvancedAndroid_MyGarden/tree/TWID.05-Solution-GridView)
+        instructor_notes: ''
+        resources: null
+      - id: 338116
+        key: ab09561f-3bff-43ec-b53c-9af298af069f
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 创建一个叫做 widget_grid_view.xml 的新布局，其中包含 GridView
+          - 创建一个 RemoteViewsService 类和 RemoteViewsFactory 类
+          - 在 Manifest 中注册 RemoteViewsService
+          - 将 updateAppWidget 逻辑分成 getGardenGridRemoteView 和 getSinglePlantRemoteView
+          - 使用 getAppWidgetOptions 来获取小部件宽度并使用相应的 RemoteView 方法
+          - 将 getGardenGridRemoteView 中的 PendingIntent 模板设为启动 PlantDetailActivity
+        positive_feedback: |-
+          很棒！
+
+          **解决方案：**[[TWID.05-Solution-GridView](https://github.com/udacity/AdvancedAndroid_MyGarden/tree/TWID.05-Solution-GridView)][[Diff](https://github.com/udacity/AdvancedAndroid_MyGarden/compare/TWID.05-Exercise-GridView...TWID.05-Solution-GridView)]
+        video_feedback: null
+        description: '现在该你了，请按照下面的步骤操作，完成此练习'
+  - id: 338164
+    key: 670d97f4-db57-4a3a-b687-995d957803f6
+    locale: zh-cn
+    version: 1.0.0
+    title: 小部件总结
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338117
+    atoms:
+      - id: 338117
+        key: af2131da-413b-4966-9447-3ddad4ed7fb1
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # 总结
+
+          这节课到此就结束了！我们总结下所学的内容吧：
+
+          * 小部件很有趣，使我们能够轻松地与任何应用互动，但是如果不妥善管理的话，则比较占用资源
+          * 小部件会处理自己的更新进度表，但是注意，它们在主 UI 线程上运行，因此需要将任何庞大的任务转移到新线程上
+          * IntentService 是个不错的选择，它们可以随时与小部件通信
+          * 小部件布局基于 RemoteView，大部分情况下行为和普通视图一样，但是存在以下例外情况：
+           * 点击事件由 PendingIntent 来处理，集合需要 PendingIntent 模板
+           * 并非所有视图类型都支持
+           * 集合视图需要远程服务和 RemoteView factory 来充当适配器
+
+          我们已经学完这节课了，你还可以继续探索其他小部件功能，例如使用 **ViewFlipper** 构建动画，或使用 **Stack View** 翻阅照片库。
+        instructor_notes: ''
+        resources: null

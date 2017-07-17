@@ -1,0 +1,1397 @@
+id: 338413
+key: 0dc19666-d446-4c1e-8c75-13a64af3aa2e
+locale: zh-cn
+version: 1.0.0
+title: 地点
+semantic_type: Lesson
+updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/5902534b_nd801-ud855-places/nd801-ud855-places.png'
+  width: 394
+  height: 392
+video: null
+summary: ‘在这节课，你将了解 Android 如何使用 GPS 和其他机器在全球范围内定位设备。当设备进入或离开某个地点时，你将使用 Geofence 触发相关操作'
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+_concepts_ids:
+  - 338354
+  - 338361
+  - 338362
+  - 338364
+  - 338367
+  - 338370
+  - 338369
+  - 338366
+  - 338375
+  - 338376
+  - 338377
+  - 338379
+  - 338378
+  - 338384
+  - 338386
+  - 338387
+  - 338390
+  - 338394
+  - 338396
+  - 338395
+  - 338400
+  - 338403
+_project_id: null
+concepts:
+  - id: 338354
+    key: a796cc75-7fa6-47ae-ac49-43a24c17e7b3
+    locale: zh-cn
+    version: 1.0.0
+    title: 地点简介
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338223
+    atoms:
+      - id: 338223
+        key: 8187e36b-fad7-423c-903f-9ae938a0929c
+        locale: zh-cn
+        version: 1.0.0
+        title: ShushMe 简介
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52366'
+          youtube_id: WPaE46WJy9c
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58daf922_01-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58daf922_01-intro/01-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58daf922_01-intro/01-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58daf922_01-intro/01-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58daf922_01-intro/01-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58daf922_01-intro/hls/playlist.m3u8'
+  - id: 338361
+    key: c00afaf0-b87c-42d3-bf96-aa8199c67250
+    locale: zh-cn
+    version: 1.0.0
+    title: ShushMe 源代码
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338224
+      - 338250
+    atoms:
+      - id: 338224
+        key: 93170742-f0e2-4145-891f-632b80cba077
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # ShushMe 代码
+
+          该应用的代码位于此 [Github](https://github.com/udacity/AdvancedAndroid_Shushme) 资源库中。
+
+          在这节课，我们将逐步构建该应用。每步都是资源库中的独立分支，你可以从此[分支](https://github.com/udacity/AdvancedAndroid_Shushme/tree/StarterCode)下载起始代码
+
+          稍后我们将通读起始代码，并解释其中包含的已有代码。
+
+          ## 什么是 ShushMe
+
+          ShushMe 使你能够使用 Google 的 Places API 选择一组地点，然后在这些地点周围创建地理围栏，当你的设备进入任何一个地点时，设备就会静音。设备离开之后，ShushMe 会使设备回到正常状态（进入这些地点之前的响铃模式和提示音量）。
+
+        instructor_notes: ''
+        resources: null
+      - id: 338250
+        key: 7dbe5259-2683-4525-b190-e7fae8b012b1
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58e25857_screen-shot-2017-04-03-at-4.12.23-pm/screen-shot-2017-04-03-at-4.12.23-pm.png'
+        width: 1340
+        height: 776
+        caption: ''
+        resources: null
+        instructor_notes: null
+  - id: 338362
+    key: 1e4e2f45-374d-411b-aac1-a6036fe7ee97
+    locale: zh-cn
+    version: 1.0.0
+    title: 位置信息的工作原理
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338249
+    atoms:
+      - id: 338249
+        key: 4b8ca9ba-3e79-4eed-8bf2-1ea5b0333b3a
+        locale: zh-cn
+        version: 1.0.0
+        title: 位置信息的工作原理
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53804'
+          youtube_id: 0P4zvnBFkvQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d285_02-how-location-works/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d285_02-how-location-works/02-how-location-works_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d285_02-how-location-works/02-how-location-works_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d285_02-how-location-works/02-how-location-works_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d285_02-how-location-works/02-how-location-works_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d285_02-how-location-works/hls/playlist.m3u8'
+  - id: 338364
+    key: f5af8eb0-07fb-46a6-aa08-24440de36c7d
+    locale: zh-cn
+    version: 1.0.0
+    title: Google Play 服务
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338260
+    atoms:
+      - id: 338260
+        key: 01208dab-2212-4c8b-adf7-355921e9398b
+        locale: zh-cn
+        version: 1.0.0
+        title: Google Play 服务
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52557'
+          youtube_id: ogigCGWdNn8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e2bd6f_3-google-play-services/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e2bd6f_3-google-play-services/3-google-play-services_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e2bd6f_3-google-play-services/3-google-play-services_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e2bd6f_3-google-play-services/3-google-play-services_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e2bd6f_3-google-play-services/3-google-play-services_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e2bd6f_3-google-play-services/hls/playlist.m3u8'
+  - id: 338367
+    key: 8243efd2-55e4-49f0-8df2-ffe7877d758a
+    locale: zh-cn
+    version: 1.0.0
+    title: API 密钥设置说明
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338261
+    atoms:
+      - id: 338261
+        key: 4161e47f-8460-46b8-bcde-d7ba99ebdbf5
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # API 密钥设置说明
+
+          1. 转到 [Google API Console](https://console.developers.google.com/flows/enableapi?apiid=placesandroid&reusekey=true)。
+          2. 创建或选择一个项目。
+          3. 点击“继续”以启用 Google Places API（Android 版）。
+          4. 在“凭据”页面获取 API 密钥。
+
+          **注意**：如果你拥有现有的 API 密钥（具有 Android 限制），那么你可以使用该密钥。
+
+          ### 现在你的 API 密钥
+
+          要控制谁可以使用该密钥访问 Google 的 API；将该密钥限定为特定的 Android 应用
+
+          1. 从现实 API 密钥的对话框中，选择“限制”密钥以对 API 密钥设置 Android 限制。
+          2. 在“限制”部分，选择 Android 密钥，然后输入应用的 SHA-1 指纹和程序包名称。例如：
+          BB:0D:AC:74:D3:21:E1:43:67:71:9B:62:91:AF:A1:66:6E:44:5D:75
+          com.example.android.places-example
+          3. 点击“保存”。
+
+          要查找你的应用的 SHA-1 指纹信息及其他信息，请参阅此 [Google 文档](https://developers.google.com/places/android-api/signup)。
+
+          你的新 Android-受限 API 密钥会出现在你的项目 API 密钥列表中。API 密钥是一个字符串，如下所示：
+
+          ``` AIzaSyBdVl-cTICSwYKrZ95SuvNw7dbMuDt1KG0 ```
+
+          密钥可能需要最长 5 分钟才能完全配置。如果密钥不能立即使用，请过 5 分钟后重试。
+        instructor_notes: ''
+        resources: null
+  - id: 338370
+    key: 07569457-bf4b-4431-8733-bf83221e63b6
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘包含 API 密钥'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338262
+    atoms:
+      - id: 338262
+        key: d839439d-e972-403b-925c-81daddbd9aa2
+        locale: zh-cn
+        version: 1.0.0
+        title: 包含 API 密钥
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52358'
+          youtube_id: aIZG-sdYL_w
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dade4e_5-including-the-api-key/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dade4e_5-including-the-api-key/5-including-the-api-key_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dade4e_5-including-the-api-key/5-including-the-api-key_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dade4e_5-including-the-api-key/5-including-the-api-key_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dade4e_5-including-the-api-key/5-including-the-api-key_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dade4e_5-including-the-api-key/hls/playlist.m3u8'
+  - id: 338369
+    key: 5acb4807-6239-4fde-98d9-9aee8216e1f7
+    locale: zh-cn
+    version: 1.0.0
+    title: API 文档
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338263
+      - 338264
+    atoms:
+      - id: 338263
+        key: 56ac0edb-d0da-47f8-842a-3a9fcb690078
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            请查看 Places API 文档并匹配其中包含的功能。
+            Places API：https://developers.google.com/places/android-api/reference
+          correct_feedback: ‘正确！这些方法来自 Places API。’
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1489708980721
+              text: '`getCurrentPlace`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489709063985
+              text: '`getLatitude`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489709079064
+              text: '`getPlacePhotos`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489709091684
+              text: '`getBearing`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489709310788
+              text: '`getPlacemat`'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 338264
+        key: c69c84c1-1c62-40c7-9e66-005cdb812b31
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            请查看 Location API 文档并匹配其中包含的功能。 
+            Location API：https://developer.android.com/reference/android/location/Location.html
+          correct_feedback: ‘很棒！这些方法来自 Location API`。 '
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1489709600723
+              text: '`getPlacePhotos`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489709622898
+              text: '`getLatitude`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489709680250
+              text: '`getBearing`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489709689104
+              text: '`getWheel`'
+              is_correct: false
+              incorrect_feedback: null
+  - id: 338366
+    key: b609e25d-5b65-476f-870e-cb2ee628d106
+    locale: zh-cn
+    version: 1.0.0
+    title: 起始代码
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338270
+    atoms:
+      - id: 338270
+        key: 07c2615f-be6a-4dd6-b35c-626a6eddb1c6
+        locale: zh-cn
+        version: 1.0.0
+        title: 起始代码
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53805'
+          youtube_id: N5z004ySBoc
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d290_07-starter-code-v1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d290_07-starter-code-v1/07-starter-code-v1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d290_07-starter-code-v1/07-starter-code-v1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d290_07-starter-code-v1/07-starter-code-v1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d290_07-starter-code-v1/07-starter-code-v1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d290_07-starter-code-v1/hls/playlist.m3u8'
+  - id: 338375
+    key: 145f6016-00d5-49a7-9225-90c24d4d1a48
+    locale: zh-cn
+    version: 1.0.0
+    title: Google API Client
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338276
+      - 338278
+      - 338277
+      - 338279
+      - 338280
+      - 338282
+      - 338283
+      - 338284
+      - 338293
+      - 338294
+      - 338295
+      - 338296
+    atoms:
+      - id: 338276
+        key: 44ef5391-3f72-4f30-9f24-d1e6978141d0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Google API Client
+
+          某些 Google Play 服务 API 需要你创建一个与 Google Play 服务连接的客户端，并使用该连接与 API 通信
+        instructor_notes: ''
+        resources: null
+      - id: 338278
+        key: 1203745f-d1d6-49a7-9d09-263584ede6d0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58cb3417_pasted-image-0/pasted-image-0.png'
+        width: 1440
+        height: 880
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338277
+        key: 6167ba2d-ac84-458d-b5f8-9c55ee5766a1
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          对我们来说，places API 和 location services API 都需要该客户端，那么如何创建客户端呢？
+          我们通过使用 `GoogleApiClient.Builder` 创建 Google API Client，如下所示：
+        instructor_notes: ''
+        resources: null
+      - id: 338279
+        key: ddba99ef-f906-4477-b2d5-42118baeb83b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58cb34a4_pasted-image-0-1/pasted-image-0-1.png'
+        width: 878
+        height: 302
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338280
+        key: 5b515af7-a407-47cd-b0c2-ec1237c6fc59
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          前两个方法 `addConnectionCallbacks` 和 `addOnConnectionFailedListener` 用来设置通知连接何时成功的回调，因为我们将在 `MainActivity` 中创建此客户端，所以对 `MainActivity` 设置回调。
+          然后调用 `addApi` 以添加我们将使用的 API 库，正如之前提到的，我们将使用 location services API 和 places API。
+          `enableAutoManage` 表示客户端将自动连接/断开，否则你需要明确地调用连接和断开功能。
+          最终系统会创建实际客户端对象。
+          现在，因为我们已经选中将此 (`MainActivity`) 设为我们的回调监听器，我们需要实现几个接口：
+        instructor_notes: ''
+        resources: null
+      - id: 338282
+        key: 480d6a57-1aec-4398-9390-39132480b3fd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58cb34e7_pasted-image-0-2/pasted-image-0-2.png'
+        width: 930
+        height: 170
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338283
+        key: 86121c4b-1f3e-404a-9ff4-d91c0646a4da
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘并接着实现所需的方法：’
+        instructor_notes: ''
+        resources: null
+      - id: 338284
+        key: b9c072ef-fed7-4438-8dfd-764ade3044a6
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58cb358e_pasted-image-0-3/pasted-image-0-3.png'
+        width: 894
+        height: 176
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338293
+        key: 99f83595-253e-41bd-8f7d-21eeb4057171
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58cb35b3_pasted-image-0-4/pasted-image-0-4.png'
+        width: 788
+        height: 182
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338294
+        key: 8956abc3-8a25-48f8-aaad-69fa38ac48f0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58cb35dd_pasted-image-0-5/pasted-image-0-5.png'
+        width: 992
+        height: 170
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338295
+        key: 2fa8fd7f-bc27-46ae-a734-537fbf596472
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          客户端自动连接到 Google Play Services 后，将触发 `onConnected` 方法（如果连接成功的话）。
+
+          如果因任何原因没触发该方法，则 `onConnectionFailed` 将触发。
+
+          顾名思义，当客户端的 AutoManager 决定暂停连接时，就会触发 `onConnectionSuspended`。
+
+          暂时，当这三个方法中的任何一个被调用时，只是向日志中输出消息。
+
+          我们来试试…
+        instructor_notes: ''
+        resources: null
+      - id: 338296
+        key: 94c3d160-4555-4518-a838-14d649511fb1
+        locale: zh-cn
+        version: 1.0.0
+        title: ' 9 演示 GoogleAPIClient'
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52364'
+          youtube_id: NFvtUoKy3L0
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dae4b4_9-demo-googleapiclient/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dae4b4_9-demo-googleapiclient/9-demo-googleapiclient_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dae4b4_9-demo-googleapiclient/9-demo-googleapiclient_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dae4b4_9-demo-googleapiclient/9-demo-googleapiclient_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dae4b4_9-demo-googleapiclient/9-demo-googleapiclient_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dae4b4_9-demo-googleapiclient/hls/playlist.m3u8'
+  - id: 338376
+    key: 308376ba-7d87-4c77-81a1-f2991062ebf0
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：GoogleAPIClient'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338297
+      - 338299
+    atoms:
+      - id: 338297
+        key: aecb9e4c-889f-46d1-9336-c0d6ada0b84e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 连接 Google API Client
+
+          请创建一个 Google API Client 并看看何时会显示这些日志消息。
+
+          你还需要像之前讨论的那样设置位置信息权限。
+
+          ## 练习代码
+
+          **练习：**[T0X.01-Exercise-GoogleApiClient](https://github.com/udacity/AdvancedAndroid_Shushme/tree/T0X.01-Exercise-GoogleApiClient)
+        instructor_notes: ''
+        resources: null
+      - id: 338299
+        key: 72c9c93a-23fc-4d3c-ac1e-8b5ab99f3fbe
+        locale: zh-cn
+        version: 1.0.0
+        title: 现在该你了
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 添加具有 API 密钥的元数据标签
+          - 为 INTERNET 和 ACCESS_FINE_LOCATION 添加用户权限标签
+          - 添加 play-services-places 和 play-services-location 依赖项
+          - 使用 LocationServices API 和 GEO_DATA_API 创建 GoogleApiClient
+          - ‘覆盖 GoogleApiClient 的 onConnected、onConnectionSuspended 和 onConnectionFailed'
+          - 添加一个 LinearLayout，其中包含可以授予位置信息权限的复选框
+          - 覆盖 onResume 并在其中初始化位置信息权限复选框
+          - 实现 onLocationPermissionClicked 以处理 CheckBox 点击事件
+          - 实现 Add Place Button 点击事件以显示一个表明权限状态的 Toast 消息
+        positive_feedback: |-
+          很棒！我们已经创建好客户端了，看看另一个叫做地点选择器的功能吧
+
+          **解决方案：**[[T0X.01-Solution-GoogleApiClient](https://github.com/udacity/AdvancedAndroid_Shushme/tree/T0X.01-Solution-GoogleApiClient)][[Diff](https://github.com/udacity/AdvancedAndroid_Shushme/compare/T0X.01-Exercise-GoogleApiClient...T0X.01-Solution-GoogleApiClient?expand=1)]
+        video_feedback: null
+        description: 请按照注释中的 TODO 操作，设置 Google API Client 并授予位置信息权限
+  - id: 338377
+    key: 57045f88-6f6e-41a5-97f1-42e56fcd802a
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘地点选择器'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338300
+    atoms:
+      - id: 338300
+        key: d9455cef-d4a0-40a5-868a-19aa6c8c496c
+        locale: zh-cn
+        version: 1.0.0
+        title: 地点选择器
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52399'
+          youtube_id: a2gKRkY4hHY
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58db0c07_10-exercise-2-place-picker/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58db0c07_10-exercise-2-place-picker/10-exercise-2-place-picker_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58db0c07_10-exercise-2-place-picker/10-exercise-2-place-picker_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58db0c07_10-exercise-2-place-picker/10-exercise-2-place-picker_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58db0c07_10-exercise-2-place-picker/10-exercise-2-place-picker_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58db0c07_10-exercise-2-place-picker/hls/playlist.m3u8'
+  - id: 338379
+    key: c6c12a90-a958-4f8d-957e-080a4cbf7ea9
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：地点选择器'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338301
+    atoms:
+      - id: 338301
+        key: cffc8637-0236-4df6-a761-70de95228b6d
+        locale: zh-cn
+        version: 1.0.0
+        title: ‘练习：地点选择器’
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 创建一个 PlacePicker.IntentBuilder 并调用 startActivityForResult
+          - 处理 GooglePlayServices 异常
+          - 事项 onActivityResult 并检查确保 requestCode 为 PLACE_PICKER_REQUEST
+          - ‘在 onActivityResult 中使用 PlacePicker.getPlace 来提取 Place ID 并将其插入 DB'
+        positive_feedback: '**解决方案：**[[T0X.02-Solution-PlacePicker](https://github.com/udacity/AdvancedAndroid_Shushme/tree/T0X.02-Solution-PlacePicker)][[Diff](https://github.com/udacity/AdvancedAndroid_Shushme/compare/T0X.02-Exercise-PlacePicker...T0X.02-Solution-PlacePicker)]'
+        video_feedback: null
+        description: |-
+          现在该你了，请按照代码注释中的 TODO 操作，当“添加新地点”按钮被按下时，使应用启动地点选择器界面。
+
+          ## 练习代码
+
+          **练习：**[T0X.02-Exercise-PlacePicker](https://github.com/udacity/AdvancedAndroid_Shushme/tree/T0X.02-Exercise-PlacePicker)
+  - id: 338378
+    key: af2dc19a-8bd2-4f87-8970-c2ec4f610a2e
+    locale: zh-cn
+    version: 1.0.0
+    title: 根据 ID 查找地点
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338302
+    atoms:
+      - id: 338302
+        key: 26fd6c9e-9605-4fff-9333-564ed818d9e9
+        locale: zh-cn
+        version: 1.0.0
+        title: 根据 ID 查找地点
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52547'
+          youtube_id: qzVpZqzMN4w
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e2a50f_locations-11-sc.-missing-last-demo2/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e2a50f_locations-11-sc.-missing-last-demo2/locations-11-sc.-missing-last-demo2_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e2a50f_locations-11-sc.-missing-last-demo2/locations-11-sc.-missing-last-demo2_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e2a50f_locations-11-sc.-missing-last-demo2/locations-11-sc.-missing-last-demo2_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e2a50f_locations-11-sc.-missing-last-demo2/locations-11-sc.-missing-last-demo2_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e2a50f_locations-11-sc.-missing-last-demo2/hls/playlist.m3u8'
+  - id: 338384
+    key: 9b5d5329-260c-440c-9d97-38c5c6420913
+    locale: zh-cn
+    version: 1.0.0
+    title: 'Places API：隐私权和信息出处’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338303
+      - 338310
+      - 338314
+      - 338311
+      - 338312
+      - 338313
+    atoms:
+      - id: 338303
+        key: d6f42043-cb10-41f4-961d-c567a1e20084
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          在继续开发该应用的剩余功能之前，请务必注意，Google 要求任何开发者在使用它们的 API 时都要遵守特定的规则：
+          https://developers.google.com/places/web-service/policies
+
+          在使用任何 API 时，你应该都要熟悉相关的条款和条件，至于 Places API，我已经在下面的讲师注释中给出了政策页面的链接。
+          我们已经提到在本地缓存地点信息超过 30 天的限制条件。
+          关于 Places API 政策的另一个重要事项是注明通过该 API 获得的信息来自 Google
+          要满足这一要求，可以在任何展示通过 places API 获得的信息的屏幕（当然包括我们刚刚创建的列表）上显示“Powered by google”徽标。
+        instructor_notes: ''
+        resources: null
+      - id: 338310
+        key: 283b05cc-6ae4-4840-94fc-816345b860a1
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58cb36ce_pasted-image-0-6/pasted-image-0-6.png'
+        width: 710
+        height: 302
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338314
+        key: 0f6a61dc-066c-4c61-9d1c-e1aa500f69f6
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: 'Places 库捆绑了这些徽标的两个版本：根据你的背景进行选择的浅色版本和深色版本，使你能够直接使用，无需修改。’
+        instructor_notes: ''
+        resources: null
+      - id: 338311
+        key: b7a44dac-cb07-4399-9959-faa289ffb566
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### 服务条款
+          你可能还会疑问：为何每次想在回收视图中显示地点信息时，都要从服务器请求这些信息？毕竟地点地址和名称不会频繁改变的，为何不能直接将这些详细信息存储到数据库中，并显示数据库中的信息？
+
+          根据服务条款的[这一章节](https://developers.google.com/maps/terms#section_10_5)，你不能将这些 Places API 中的数据缓存 30 天以上，以及其他关于如何存储这些数据的限制条件。当然，你可以缓存这些数据以防互联网断开连接，你肯定希望能显示一个列表（而不是什么都无法显示），但是，要遵守这些条款，你需要每隔 30 天就重新构建数据库，并确保满足所有其他限制条件
+
+          在使用 Places API（或任何与 Google 地图相关的 API）时需要遵守的另一个条件是按照[此处](https://developers.google.com/places/web-service/policies)列出的指南，在你的应用中提供**服务条款**和**隐私权政策**。
+        instructor_notes: ''
+        resources: null
+      - id: 338312
+        key: 09d83a0a-b02c-4da7-b069-75d6b4b0e90f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58cb3740_pasted-image-0-7/pasted-image-0-7.png'
+        width: 1532
+        height: 728
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338313
+        key: fd511842-0b07-44f7-852c-59bde63d4c63
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          你应该确保在 Play 商店中始终列出服务条款和隐私权政策，以便用户在下载应用时能了解他们需要遵守的条件。你还可以在应用本身里列出这些条款（例如在可以通过“设置”菜单转到的“关于”页面上，等等）。
+
+          确保在此练习中，在屏幕底部包含“Powered by Google”徽标以及隐私权政策链接。
+        instructor_notes: ''
+        resources: null
+  - id: 338386
+    key: e3199c61-4c12-4f97-bc24-fb8a247119c9
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：GetPlaceById'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338319
+      - 338320
+    atoms:
+      - id: 338319
+        key: 8f64de40-dba9-472b-a67e-833b5c49fe86
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 通过 ID 查找地点
+
+          对于此练习，我们已经了解了如何使用 getPlaceById() 方法从服务器上检索地点详情并显示在回收视图中。
+          我们还明白，一定要通过使用“Powered by Google”徽标声明所有 Google Places API 数据都来自 Google。
+
+          ## 练习代码
+
+          **练习：**[T0X.03-Exercise-GetPlaceById](https://github.com/udacity/AdvancedAndroid_Shushme/tree/T0X.03-Exercise-GetPlaceById)
+        instructor_notes: ''
+        resources: null
+      - id: 338320
+        key: 9136b471-4fd6-433c-baf7-4f52bd8c14eb
+        locale: zh-cn
+        version: 1.0.0
+        title: ‘练习：GetPlaceById'
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 实现一个叫做 refreshPlacesData 的方法，该方法会查询所有在本地存储的地点 ID，并通过该 ID 列表调用 Places.GeoDataApi.getPlaceById。
+          - 修改适配器以使用 PlaceBuffer 作为数据源。
+          - 在适配器中实现公共方法 swapPlaces。
+          - 设置 getPlaceById 回调以便 onResult 根据结果调用适配器的 swapPlaces。
+          - 在 GoogleApiClient 的 onConnected 和“添加新地点”按钮点击事件中调用 refreshPlacesData。
+          - 添加“Powered by Google”徽标和指向隐私权政策网页的链接。
+        positive_feedback: '**解决方案：**[[T0X.03-Solution-GetPlaceById](https://github.com/udacity/AdvancedAndroid_Shushme/tree/T0X.03-Solution-GetPlaceById)][[Diff](https://github.com/udacity/AdvancedAndroid_Shushme/compare/T0X.03-Exercise-GetPlaceById...T0X.03-Solution-GetPlaceById)]'
+        video_feedback: null
+        description: 现在该你了。请按照下面的步骤操作，完成此编程练习。
+  - id: 338387
+    key: caa1654c-1060-4a0f-8935-1efd4683168e
+    locale: zh-cn
+    version: 1.0.0
+    title: Geofence
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338321
+    atoms:
+      - id: 338321
+        key: 99b201d2-545a-41cb-b7ee-2ae8bdb3ff0d
+        locale: zh-cn
+        version: 1.0.0
+        title: Geofence
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53806'
+          youtube_id: y8ri4a19p3o
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d298_14-geofences/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d298_14-geofences/14-geofences_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d298_14-geofences/14-geofences_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d298_14-geofences/14-geofences_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d298_14-geofences/14-geofences_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d298_14-geofences/hls/playlist.m3u8'
+  - id: 338390
+    key: 02b2690b-ce5b-444f-9848-e27e1f671997
+    locale: zh-cn
+    version: 1.0.0
+    title: 地理围栏与 GPS 查询
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338322
+    atoms:
+      - id: 338322
+        key: 64677932-1dac-4fc9-a8da-9965b84d964a
+        locale: zh-cn
+        version: 1.0.0
+        title: 地理围栏与 GPS 查询
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 与 GPS 查询方法相比，下面的哪些场景更适合使用地理围栏？
+          correct_feedback: ‘很棒! 这些场景适合使用地理围栏，因为你只需跟踪用户是否进入/离开特定的地理围栏。’
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1489713508101
+              text: 汽车导航系统
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489713526952
+              text: 跑步跟踪器（跟踪你跑过的道路）
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489713537754
+              text: 抵达家中/办公室时提醒你
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489713547372
+              text: 跟踪每个月去健身房的次数
+              is_correct: true
+              incorrect_feedback: null
+  - id: 338394
+    key: 8a72a33f-0337-464a-9786-cb2cfcc28ed0
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：地理围栏'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338323
+      - 338329
+      - 338326
+    atoms:
+      - id: 338323
+        key: 8eb9b362-7210-4259-9f3e-5a38df84b33b
+        locale: zh-cn
+        version: 1.0.0
+        title: 16 练习 4 地理围栏
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53807'
+          youtube_id: XCvSloK-d8M
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d2a4_16-exercise-4-geofencing/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d2a4_16-exercise-4-geofencing/16-exercise-4-geofencing_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d2a4_16-exercise-4-geofencing/16-exercise-4-geofencing_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d2a4_16-exercise-4-geofencing/16-exercise-4-geofencing_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d2a4_16-exercise-4-geofencing/16-exercise-4-geofencing_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d2a4_16-exercise-4-geofencing/hls/playlist.m3u8'
+      - id: 338329
+        key: f66ffecd-99fd-45e8-a8ae-73be62a6fdcb
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 练习：地理围栏
+
+          对于这道练习，我们将为之前选择的所有地点创建地理围栏，并开始监听进入/离开事件
+
+          ## 练习代码
+
+          **练习：**[T0X.04-Exercise-Geofencing](https://github.com/udacity/AdvancedAndroid_Shushme/tree/T0X.04-Exercise-Geofencing)
+        instructor_notes: ''
+        resources: null
+      - id: 338326
+        key: af65fbda-b7ca-4d34-8f57-2d4cb047e594
+        locale: zh-cn
+        version: 1.0.0
+        title: ‘练习：地理围栏’
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 创建一个 Geofencing 类，用于存储地理围栏数组列表
+          - 实现方法“updateGeofencesList”，该方法会创建填充数组列表的地理围栏对象
+          - 实现方法“getGeofencingRequest”，该方法会返回数组列表中的 GeofencingRequest 对象
+          - 创建一个扩展自 BroadcastReceiver 并覆盖 onReceive() 的 GeofenceBroadcastReceiver 类
+          - 实现方法“getGeofencePendingIntent”，该方法会为 GeofenceBroadcastReceiver 返回一个 PendingIntent
+          - 实现“registerAllGeofences”和“UnRegisterAllGeofences”方法
+          - 设置切换按钮以启用/停用所有地理围栏
+        positive_feedback: '**解决方案：**[[T0X.04-Solution-Geofencing](https://github.com/udacity/AdvancedAndroid_Shushme/tree/T0X.04-Solution-Geofencing)][[Diff](https://github.com/udacity/AdvancedAndroid_Shushme/compare/T0X.04-Exercise-Geofencing...T0X.04-Solution-Geofencing)]'
+        video_feedback: null
+        description: ‘现在该你了。请按照相关步骤操作，完成这道编程练习。’
+  - id: 338396
+    key: b39277d9-8078-4b01-919e-ae0e125145e1
+    locale: zh-cn
+    version: 1.0.0
+    title: 地理围栏过渡
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338330
+    atoms:
+      - id: 338330
+        key: 060c5aa4-280e-4d5c-8af1-6e24e92bcab1
+        locale: zh-cn
+        version: 1.0.0
+        title: 地理围栏过渡
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53808'
+          youtube_id: Lnt1UpCngx4
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d2c3_17-geofence-transictions-v1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d2c3_17-geofence-transictions-v1/17-geofence-transictions-v1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d2c3_17-geofence-transictions-v1/17-geofence-transictions-v1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d2c3_17-geofence-transictions-v1/17-geofence-transictions-v1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d2c3_17-geofence-transictions-v1/17-geofence-transictions-v1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7d2c3_17-geofence-transictions-v1/hls/playlist.m3u8'
+  - id: 338395
+    key: faaa2a9a-b70b-40b7-ba80-e30102b26292
+    locale: zh-cn
+    version: 1.0.0
+    title: 测试位置应用的诀窍和技巧
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338331
+    atoms:
+      - id: 338331
+        key: 1e090477-fdb3-4df0-b5e9-258c1d142731
+        locale: zh-cn
+        version: 1.0.0
+        title: 测试位置应用的诀窍和技巧
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52532'
+          youtube_id: dwvuRNoyLwk
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e27a9b_18-sc/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e27a9b_18-sc/18-sc_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e27a9b_18-sc/18-sc_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e27a9b_18-sc/18-sc_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e27a9b_18-sc/18-sc_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e27a9b_18-sc/hls/playlist.m3u8'
+  - id: 338400
+    key: fe38f63f-0a1e-4a48-a58c-d3d10417d08f
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：静音模式'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338332
+      - 338336
+      - 338341
+      - 338342
+      - 338343
+      - 338346
+      - 338349
+      - 338350
+      - 338351
+      - 338352
+      - 338353
+      - 338357
+      - 338358
+    atoms:
+      - id: 338332
+        key: 73f8c7f0-2d76-4145-be39-d0d97f791528
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # 练习：静音模式
+
+          对于该应用的最后一个环节，当地理围栏触发进入过渡时，我们需要真正地将设备设为静音，并在触发退出过渡时，重新设为正常状态！
+
+          自 Android N 之后发生了一些变化：现在，要更改 Android 的响铃模式，你需要具有相应的权限，遗憾的是，该权限和我们之前遇到的权限（例如位置信息权限）有所不同。
+
+          先解决这一难题。
+
+          首先，添加一个复选框，向用户请求**响铃模式权限**, `onclick` 事件将为 `ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS` 发起 intent 并启动该 intent。
+        instructor_notes: ''
+        resources: null
+      - id: 338336
+        key: 8b4dde83-6b39-4469-9c42-658397f63d6c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58e79fbc_screen-shot-2017-04-07-at-4.17.47-pm/screen-shot-2017-04-07-at-4.17.47-pm.png'
+        width: 1490
+        height: 166
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338341
+        key: d488e21a-3861-493a-b922-c9039919fdb7
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          该 intent 发起新的内置 activity，使用户能够为应用开启或关闭**响铃模式权限**。开启该权限后，他们可以按返回并继续使用应用。
+
+          为了确保复选框始终反映的是正确的权限状态，我们需要在 `onResume` 中初始化其状态。
+
+          对于 Android N 及之后的版本，我们需要使用 `isNotificationPolicyAccessGranted` 判断权限是否已授予，否则我们可以假设该权限默认情况下已授予。
+
+          此外，因为我们不希望用户在授予该权限后取消选中复选框，建议在一切似乎设置正确后停用该复选框。
+        instructor_notes: ''
+        resources: null
+      - id: 338342
+        key: f5c4443a-82b3-4536-9a03-6dd0e35e07a2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58e79eb0_screen-shot-2017-04-07-at-4.14.03-pm/screen-shot-2017-04-07-at-4.14.03-pm.png'
+        width: 1328
+        height: 426
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338343
+        key: 96071d85-d525-48b4-bd1d-579fd678f411
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          现在回到我们的 `GeofenceBroadcastReceiver`。
+
+          在 `onReceive` 中，我们可以使用 `GeofencingEvent.fromIntent` 来检索导致过渡的 `GeofencingEvent`。
+
+          然后，我们可以调用 `getGeofenceTransition` 来获得过渡类型。
+        instructor_notes: ''
+        resources: null
+      - id: 338346
+        key: 3dca3396-34d7-4655-a858-8ca32519cf89
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58e79e10_screen-shot-2017-04-07-at-4.08.55-pm/screen-shot-2017-04-07-at-4.08.55-pm.png'
+        width: 1048
+        height: 86
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338349
+        key: 5d3823eb-85ed-42c0-b3a8-774b7badb093
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          我们可以根据过渡类型使用 `AudioManager` 设置手机响铃模式。
+
+          为了使一切模块化，我创建了这个辅助方法 `setRingerMode`，使用 AudioManager 根据传入的模式参数将 `setRingerMode` 设为静音或正常状态。
+          它还创建了 `NotificationManager` 为 Android N 或更高版本检查权限。
+        instructor_notes: ''
+        resources: null
+      - id: 338350
+        key: 1cf691ce-f0ef-4e4a-bb3d-9f06c8523aa9
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58e79bff_screen-shot-2017-04-07-at-3.47.38-pm/screen-shot-2017-04-07-at-3.47.38-pm.png'
+        width: 1574
+        height: 682
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338351
+        key: 4429a92b-2fd9-434f-ae3d-6b1b03274b0d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58e79e55_screen-shot-2017-04-07-at-4.09.03-pm/screen-shot-2017-04-07-at-4.09.03-pm.png'
+        width: 1156
+        height: 550
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338352
+        key: cae46c92-be86-4ffb-8975-40689243d562
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### 通知
+
+          每当设备设为静音或正常状态时，最好能通知用户这一状况。
+
+          所以我创建了这个辅助方法 `sendNotification`，它会创建一个常用 Android 通知，并显示对应静音或正常状态的图标。
+        instructor_notes: ''
+        resources: null
+      - id: 338353
+        key: 21fa9258-b37f-4ac7-a289-3aa9879adbeb
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58e7a40c_screen-shot-2017-04-07-at-4.37.07-pm/screen-shot-2017-04-07-at-4.37.07-pm.png'
+        width: 1178
+        height: 518
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338357
+        key: 1e0287cd-be26-4461-ae80-7e90b6e2329f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 练习代码
+
+          **练习：**[T0X.05-Exercise-SilentMode](https://github.com/udacity/AdvancedAndroid_Shushme/tree/T0X.05-Exercise-SilentMode)
+        instructor_notes: ''
+        resources: null
+      - id: 338358
+        key: c3519947-1fe4-4649-a7a1-dd75aa00e5e5
+        locale: zh-cn
+        version: 1.0.0
+        title: '练习：静音模式'
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 添加具有权限复选框和 UI 的 LinearLayout
+          - 实现 onRingerPermissionsClicked 以启动 ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS
+          - 初始化响铃权限复选框
+          - 使用 GeofencingEvent.fromIntent 来检索导致过渡的 GeofencingEvent
+          - 使用 AudioManager 根据过渡类型设置响铃模式
+          - 显示通知，以提醒用户响铃模式已更改
+        positive_feedback: '**解决方案：**[[T0X.05-Solution-SilentMode](https://github.com/udacity/AdvancedAndroid_Shushme/tree/T0X.05-Solution-SilentMode)][[Diff](https://github.com/udacity/AdvancedAndroid_Shushme/compare/T0X.05-Exercise-SilentMode...T0X.05-Solution-SilentMode)]'
+        video_feedback: null
+        description: ‘现在该你了。请按照相关步骤操作，完成这道编程练习。’
+  - id: 338403
+    key: bb933a9a-a10c-4fef-92fa-4c5a2deaac87
+    locale: zh-cn
+    version: 1.0.0
+    title: 地点结尾部分
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338360
+    atoms:
+      - id: 338360
+        key: 86a23c54-fdab-4f3d-a062-633e97eb7a6f
+        locale: zh-cn
+        version: 1.0.0
+        title: 地点结尾部分
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52361'
+          youtube_id: S65b_yHnoxY
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dade64_20-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dade64_20-outro/20-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dade64_20-outro/20-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dade64_20-outro/20-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dade64_20-outro/20-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dade64_20-outro/hls/playlist.m3u8'

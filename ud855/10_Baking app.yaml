@@ -1,0 +1,301 @@
+id: 338681
+key: 635a8c7b-340f-4dd0-a511-a1e246105319
+locale: en-us
+version: 1.0.0
+title: 烘焙应用
+semantic_type: Lesson
+updated_at: 'Fri Jun 23 2017 05:38:39 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: 创建一个可以查看视频食谱的应用。你将处理媒体加载，使用 UI 测试验证用户界面，集成第三方库，并为主屏幕小部件提供完整的用户体验。
+lesson_type: Classroom
+duration: 500
+is_project_lesson: false
+_concepts_ids:
+  - 308330
+  - 308332
+  - 159043
+_project_id: null
+resources: null
+concepts:
+  - id: 308330
+    key: 366d508b-5d27-4f6b-b983-b76b9c8938ed
+    locale: zh-cn
+    version: 1.0.0
+    title: 欢迎挑战烘培应用项目！
+    semantic_type: Concept
+    updated_at: 'Mon May 08 2017 08:17:06 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 308315
+    atoms:
+      - id: 308315
+        key: 6cb8acd9-5edb-470f-85a9-d3695714b23f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon May 08 2017 08:21:16 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 项目概述
+
+          你将改造一款具备基本功能的应用，令其变成正式版状态，最终正式发布该应用。这个项目涉及的任务包括：查找和处理错误情况、添加无障碍功能、允许本地化、添加小部件，以及添加库。
+
+          # 为何要完成此项目？
+
+          作为一名专业 Android 开发人员，你经常需要设计和规划创建正式版应用的流程。对于之前的流行电影应用，我们提供了实现指南，但是对于此应用，将由你来决定如何创建烘培应用。
+
+          # 你将学到什么？
+
+          在此项目中，你将：
+
+          * 使用 MediaPlayer/Exoplayer 播放视频。
+          * 处理 Android 中出现的错误。
+          * 为应用体验添加小部件。
+          * 在应用中利用第三方库。
+          * 使用框架实现自适应设计，使应用在手机和平板电脑上都能达到良好的效果。
+
+          # 应用说明
+
+          你的任务是创建一款 Android 烘培应用，使优达学城的常驻烘焙主厨 Miriam 能够向大家分享自己的食谱。你将创建一款应用，使用户能够选择一个食谱，并观看视频教程，了解如何制作食谱中介绍的甜品。
+
+          食谱列表位于此处：http://go.udacity.com/android-baking-app-json。其中包含了完成此项目所需的食谱说明、配料、视频和图片。并非所有的食谱步骤都包含视频。某些有视频或图片，甚至只有文字资料。
+
+          点击“下一步”即可查看此应用的一些示例！
+        instructor_notes: ''
+        resources: null
+  - id: 308332
+    key: 16d87c7d-a648-4c0c-be4e-e88fb5f1ac6b
+    locale: zh-cn
+    version: 1.0.0
+    title: 示例
+    semantic_type: Concept
+    updated_at: 'Mon May 08 2017 08:21:48 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 308318
+      - 308317
+      - 308316
+      - 308319
+      - 308322
+      - 308323
+      - 308321
+      - 308320
+      - 308328
+      - 308324
+      - 308325
+      - 308326
+      - 308327
+    atoms:
+      - id: 308318
+        key: 9d8c8673-262a-4892-b4ee-7188cf601197
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon May 08 2017 08:23:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # 示例
+
+          构建应用时，可以参考以下示例模块。确保你的应用在平板电脑和手机上都能正常运行 (<a href="https://go.udacity.com/android-baking-app-mocks-pdf" target="_blank">PDF version</a>)。
+        instructor_notes: ''
+        resources: null
+      - id: 308317
+        key: 4505e26a-1503-4efe-b05a-2ee3c363f931
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon May 08 2017 08:23:43 GMT+0000 (UTC)'
+        is_public: true
+        text: '## 选择食谱 - 纵向模式（手机）'
+        instructor_notes: ''
+        resources: null
+      - id: 308316
+        key: ad4d94b4-b580-4217-baac-40ad154cfa6c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon May 08 2017 04:14:42 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ffa8dd_baking-app1/baking-app1.png'
+        width: 374
+        height: 532
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 308319
+        key: 578b70c3-815e-49bc-9ce9-db0fd02697ad
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon May 08 2017 08:27:20 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## 选择食谱详情视图 - 纵向模式（手机）
+
+          注意，在你的应用中，这些步骤视图并不一定要是卡片。卡片太多，容易使信息难以阅读（具体请查看 <a href="https://material.io/guidelines/components/cards.html#cards­usage" target="_blank">材料设计指南</a>）。
+        instructor_notes: ''
+        resources: null
+      - id: 308322
+        key: c91dcc42-9e18-405a-baa8-32a1e50da314
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon May 08 2017 04:14:42 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ffa8e0_baking-app2/baking-app2.png'
+        width: 394
+        height: 538
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 308323
+        key: bcf9945b-b18e-4119-826a-049a448d5bdd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon May 08 2017 08:26:29 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## 选择食谱步骤详情视图 - 纵向模式（手机）
+        instructor_notes: ''
+        resources: null
+      - id: 308321
+        key: f1418f60-7a33-482d-a020-00780cb30fc2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon May 08 2017 04:14:42 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ffa8da_baking/baking.png'
+        width: 376
+        height: 536
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 308320
+        key: e0f73a89-359c-4304-b8a6-20e3e6b1722d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon May 08 2017 08:26:44 GMT+0000 (UTC)'
+        is_public: true
+        text: '## 选择食谱步骤详情视图 - 横向模式（手机）'
+        instructor_notes: ''
+        resources: null
+      - id: 308328
+        key: 4854e369-4fb3-4ce5-9016-d1b5153f7782
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon May 08 2017 04:14:42 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ffa9c6_baking-app4/baking-app4.png'
+        width: 864
+        height: 548
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 308324
+        key: e4247063-7851-43fb-9720-5b8b015ab98c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon May 08 2017 08:26:58 GMT+0000 (UTC)'
+        is_public: true
+        text: '## 选择食谱（平板电脑）'
+        instructor_notes: ''
+        resources: null
+      - id: 308325
+        key: b0bb1eef-dae7-4065-80bb-29e94fc4a471
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon May 08 2017 04:14:42 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ffa8e5_baking-app5/baking-app5.png'
+        width: 880
+        height: 538
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 308326
+        key: 7f135edc-a80b-4938-8ee5-bd47a8ca693c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon May 08 2017 08:28:48 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## 选择和查看食谱步骤详情 -（平板电脑）
+        instructor_notes: ''
+        resources: null
+      - id: 308327
+        key: 2ee7da9f-1ddc-4f77-b949-9f059dab1b6d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon May 08 2017 04:14:42 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ffa8e8_baking-app6/baking-app6.png'
+        width: 876
+        height: 570
+        caption: ''
+        resources: null
+        instructor_notes: null
+  - id: 159043
+    key: '43675885350923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 面向非纳米学位课程学员的简介
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:42:27 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 158939
+    atoms:
+      - id: 158939
+        key: '4367588535'
+        locale: zh-cn
+        version: 1.0.0
+        title: 面向非纳米学位课程学员的简介
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 21 2016 22:18:59 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 面向非纳米学位课程学员的简介 
+
+          此项目是 <a href="http://udacity.com/course/nd801" target="_blank">Android 纳米学位</a>系列课程的一部分。我们在此列出来，是希望你能免费独立完成此项目。你将获得的项目说明和审核标准与纳米学位学员收到的一模一样。 
+
+          区别在于，你是自己学习这门课程，不会获得专门的指导。当然，这就意味着你不需要向我们提交项目以获得评估或拿到纳米学位证书。 
+
+          但是，你依然可以使用提供的审核标准进行自我评估。还可以与朋友一起学习这门课程，并相互评估对方的项目！ 
+
+          我们开始推出这一纳米学位课程是因为，我们知道提高职业技能、自己学习课程非常难。与此同时，我们知道有数千名学员因为个人原因，按照自己的进度免费学习这门课程，我们希望（并期望）你能实现伟大的抱负。无论你学到哪个阶段，都要坚持下去，永远不要停止学习。
+
+           希望你能在此项目中发现乐趣！
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null

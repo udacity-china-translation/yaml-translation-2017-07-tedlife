@@ -1,0 +1,1501 @@
+id: 338415
+key: d5eedaa1-39aa-489b-8538-d1e7ae522a67
+locale: zh-cn
+version: 1.0.0
+title: FCM
+semantic_type: Lesson
+updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/590252be_nd801-ud855-fcm/nd801-ud855-fcm.png'
+  width: 1286
+  height: 1246
+video: null
+summary: ‘在这节课，你将学习如何创建一个像推特一样的应用，叫做 Squawker。你将了解如何构建一款应用，在该应用中使用 Firebase Cloud Messaging 服务从服务器上实时接收消息。掌握这些技能后，你将能够创建节省电量的应用，并在几毫秒之内就能从服务器上接收更新 ！’
+lesson_type: Classroom
+duration: 180
+is_project_lesson: false
+_concepts_ids:
+  - 338348
+  - 338345
+  - 338347
+  - 338355
+  - 338356
+  - 338359
+  - 338363
+  - 338365
+  - 338368
+  - 338371
+  - 338372
+  - 338373
+  - 338374
+  - 338380
+  - 338381
+  - 338382
+  - 338383
+  - 338385
+  - 338388
+  - 338389
+_project_id: null
+concepts:
+  - id: 338348
+    key: dfc33b60-eaf0-43b1-8982-3f5314d97027
+    locale: zh-cn
+    version: 1.0.0
+    title: FCM 简介
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338182
+    atoms:
+      - id: 338182
+        key: afac5862-2dda-493a-9151-139639f0e66f
+        locale: zh-cn
+        version: 1.0.0
+        title: FCM 简介
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52457'
+          youtube_id: cMtBx8KYvrQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dd3fcb_1-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dd3fcb_1-intro/1-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dd3fcb_1-intro/1-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dd3fcb_1-intro/1-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dd3fcb_1-intro/1-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dd3fcb_1-intro/hls/playlist.m3u8'
+  - id: 338345
+    key: c82e2cc5-201f-4586-92bc-54dbbe25a569
+    locale: zh-cn
+    version: 1.0.0
+    title: Squawker 很酷
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338183
+    atoms:
+      - id: 338183
+        key: a5cb9c48-0eda-4531-9576-87f387a15fe0
+        locale: zh-cn
+        version: 1.0.0
+        title: Squawker 很酷
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53087'
+          youtube_id: T_PtZIr6wlg
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf1e_02-squawker-is-cool-v2/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf1e_02-squawker-is-cool-v2/02-squawker-is-cool-v2_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf1e_02-squawker-is-cool-v2/02-squawker-is-cool-v2_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf1e_02-squawker-is-cool-v2/02-squawker-is-cool-v2_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf1e_02-squawker-is-cool-v2/02-squawker-is-cool-v2_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf1e_02-squawker-is-cool-v2/hls/playlist.m3u8'
+  - id: 338347
+    key: 97dc7b69-af9d-4b4c-9489-1883126fccb1
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘测验：调查与推送'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338184
+      - 338185
+    atoms:
+      - id: 338184
+        key: 381a1d44-cf90-4363-bff4-fbcdbed46c8c
+        locale: zh-cn
+        version: 1.0.0
+        title: 调查与推送
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53088'
+          youtube_id: 4SBygQ3E9q4
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf2c_03-polling-vs-pushing-v2/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf2c_03-polling-vs-pushing-v2/03-polling-vs-pushing-v2_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf2c_03-polling-vs-pushing-v2/03-polling-vs-pushing-v2_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf2c_03-polling-vs-pushing-v2/03-polling-vs-pushing-v2_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf2c_03-polling-vs-pushing-v2/03-polling-vs-pushing-v2_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf2c_03-polling-vs-pushing-v2/hls/playlist.m3u8'
+      - id: 338185
+        key: 8f3bcb93-999d-4581-b6a5-2553326635ee
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: ‘请查看以下应用。哪些应用需要、可以并值得投入额外的精力来实现推送功能？请选中所有适用项。'
+          correct_feedback: ‘很棒！Squawker 和简单的聊天应用都属于可能随时出现更新的应用，**并且**有必要让用户接近实时地接收这些更新。因此，它们适合实现推送功能。’
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1488248155252
+              text: '一款使用[电影数据库](https://www.themoviedb.org/?language=en)来获取电影信息并显示近期电影列表的应用。’
+              is_correct: false
+              incorrect_feedback: ‘电影应用可能有必要适用推送功能，但是你并不实际地控制推送过程，因此可能很难实现推送功能。’
+            - id: a1488248233132
+              text: 一款简单的聊天应用
+              is_correct: true
+              incorrect_feedback: 简单的聊天应用需要以节省电量的形式实时地接收更新吗？
+            - id: a1488248298604
+              text: Squawker
+              is_correct: true
+              incorrect_feedback: Squawker 需要以节省电量的形式实时地接收更新吗？
+            - id: a1488248303455
+              text: 一款简单的闹钟应用
+              is_correct: false
+              incorrect_feedback: |
+                简单的闹钟应用属于罕见的可能不需要互联网连接的应用。因此，它真的需要使用推送消息吗？
+  - id: 338355
+    key: 0e86bab2-9889-47ee-8431-57aa88fb8d87
+    locale: zh-cn
+    version: 1.0.0
+    title: FCM 简介
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338186
+    atoms:
+      - id: 338186
+        key: 281f514b-46ba-4acb-a6c7-7245b461afcb
+        locale: zh-cn
+        version: 1.0.0
+        title: FCM 简介
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53089'
+          youtube_id: Uv2QWwTX-es
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf35_05-introduction-to-fcm-v1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf35_05-introduction-to-fcm-v1/05-introduction-to-fcm-v1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf35_05-introduction-to-fcm-v1/05-introduction-to-fcm-v1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf35_05-introduction-to-fcm-v1/05-introduction-to-fcm-v1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf35_05-introduction-to-fcm-v1/05-introduction-to-fcm-v1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf35_05-introduction-to-fcm-v1/hls/playlist.m3u8'
+  - id: 338356
+    key: 0c6e6f5e-1271-45ab-b0d0-017b7d8d7bb7
+    locale: zh-cn
+    version: 1.0.0
+    title: 起始代码概述
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338187
+    atoms:
+      - id: 338187
+        key: 78b6c07e-225a-4ce5-b844-b5c50b6ff7b6
+        locale: zh-cn
+        version: 1.0.0
+        title: 起始代码概述
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53090'
+          youtube_id: 2bxbM4kZ2yw
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf60_06-overview-of-the-starting-code-v2/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf60_06-overview-of-the-starting-code-v2/06-overview-of-the-starting-code-v2_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf60_06-overview-of-the-starting-code-v2/06-overview-of-the-starting-code-v2_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf60_06-overview-of-the-starting-code-v2/06-overview-of-the-starting-code-v2_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf60_06-overview-of-the-starting-code-v2/06-overview-of-the-starting-code-v2_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf60_06-overview-of-the-starting-code-v2/hls/playlist.m3u8'
+  - id: 338359
+    key: 8883caaf-b8ff-4231-92f8-32a6a982de95
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘测验：添加讲师’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338188
+      - 338189
+    atoms:
+      - id: 338188
+        key: 61a3b00e-91b4-492b-a8df-108c1b52ea94
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Squawker 代码
+
+          该应用的代码位于 [Squawker 资源库](https://github.com/udacity/AdvancedAndroid_Squawker)中。请使用以下命令下载该资源库：
+
+          ```bash
+          git clone https://github.com/udacity/AdvancedAndroid_Squawker.git
+          ```
+
+          如果你想复习下代码的组织结构，请参阅[我们在如何使用课程代码部分介绍的内容](https://classroom.udacity.com/courses/ud857/lessons/8b2a9d63-0ff5-48ff-90d3-a9855b701dae/concepts/41b82e3c-2797-46e5-8a66-684098ca8cbb)。
+
+          ### 练习代码
+          **练习：**[TFCM.00-StartingCode](https://github.com/udacity/AdvancedAndroid_Squawker/tree/TFCM.00-StartingCode)
+        instructor_notes: ''
+        resources: null
+      - id: 338189
+        key: 57f12e2b-4b5c-4a4b-adb4-1d141f655e5e
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 假设你想将自己作为新的讲师添加到 Squawker 中。为此，你需要在客户端的哪个类或 xml 文件上做出更改？请选中所有适用项
+          correct_feedback: '**following_squawker.xml** 文件负责生成偏好设置，你需要为新的讲师添加新的 `SwitchPreferenceCompat` 偏好设置。对于该偏好设置，你需要在 **strings.xml** 文件中添加新的字符串，包括 `key` 字符串，它讲师 `key_<your name>`。在 **SquawkContract** 中，你需要为新的讲师密钥设置新的常量，并将其添加到为 `createSelectionForCurrentFollowers` 方法进行搜索的列表中。最后，需要修改 **SquawkAdapter** 以便显示你的资料照片。’
+          video_feedback: null
+          default_feedback: ‘你应该选择以下选项中的 4 个。首先思考需要更改什么，以便添加新讲师的新偏好设置。偏好设置更改后，如何为新的讲师生成新的 `select` 语句？最后，如何显示新的讲师？’
+          answers:
+            - id: a1488248550986
+              text: '`MainActivity.java`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488248573240
+              text: '`SquawkAdapter.java`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1488248582878
+              text: '`SquawkContract.java`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1488248589848
+              text: '`SquawkDatabase.java`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488248597444
+              text: '`SquawkProvider.java`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488248643438
+              text: '`FollowingPreferenceActivity.java`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488248655363
+              text: '`FollowingPreferenceFragment.java`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488248662552
+              text: '`AndroidManifest.xml`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488248673007
+              text: '`main_menu.xml`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488248677910
+              text: '`activity_main.xml`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488248696555
+              text: '`activity_settings.xml`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488248710778
+              text: '`item_squawk_list.xml`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488248722529
+              text: '`following_squawker.xml`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1488248731136
+              text: '`bool.xml`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488248734812
+              text: '`strings.xml`'
+              is_correct: true
+              incorrect_feedback: null
+  - id: 338363
+    key: b5161e76-298a-48ad-bb1c-8bded7c38e7e
+    locale: zh-cn
+    version: 1.0.0
+    title: 什么是 Firebase？
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338190
+      - 338191
+      - 338192
+      - 338193
+      - 338194
+      - 338195
+      - 338196
+    atoms:
+      - id: 338190
+        key: 73413667-6a2d-4247-97cd-7f13410a0246
+        locale: zh-cn
+        version: 1.0.0
+        title: 什么是 Firebase？
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53091'
+          youtube_id: zmHxJzEuSzE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf65_08-what-is-firebase-v2/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf65_08-what-is-firebase-v2/08-what-is-firebase-v2_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf65_08-what-is-firebase-v2/08-what-is-firebase-v2_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf65_08-what-is-firebase-v2/08-what-is-firebase-v2_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf65_08-what-is-firebase-v2/08-what-is-firebase-v2_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf65_08-what-is-firebase-v2/hls/playlist.m3u8'
+      - id: 338191
+        key: 53b31392-214d-4870-8088-7b24c5539a35
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 创建帐号
+          转到 [firebase.google.com](https://firebase.google.com/) 并点击**“免费开始 (Get Started For Free)”**按钮，如下所示。
+        instructor_notes: ''
+        resources: null
+      - id: 338192
+        key: c23d4a41-36b9-4b31-973e-a40c98de4ab6
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58b4e245_screen-shot-2017-02-27-at-6.36.14-pm/screen-shot-2017-02-27-at-6.36.14-pm.png'
+        width: 523
+        height: 231
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338193
+        key: ece21c7c-acd4-4c23-b042-fe9cc17df412
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘如果你未登录 Google 帐号，则系统会提示你登录或创建新的 Google 帐号。请按照说明操作。登录后，你将能够点击**免费开始**按钮并看到如下所示的页面。’
+        instructor_notes: ''
+        resources: null
+      - id: 338194
+        key: d141c1e7-4dd5-468d-a88f-cf78a3ba34bf
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58b4e302_screen-shot-2017-02-27-at-6.38.20-pm/screen-shot-2017-02-27-at-6.38.20-pm.png'
+        width: 1062
+        height: 368
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338195
+        key: 1a100150-0e19-4e4c-98e1-8d428decf8cd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘很快你将创建新的 Firebase 项目，但是暂时别按该按钮！请观看下个视频了解更多内容。’
+        instructor_notes: ''
+        resources: null
+      - id: 338196
+        key: 6d9836a8-9447-4a3e-94ef-04ff4daed4ac
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### Android 和 Firebase
+          Firebase 包含很多功能（大部分都是免费的），但是我没时间一一介绍了。这些功能包括：
+
+          * 分析 - 大量关于你的应用用户和使用情况的信息
+          * 身份验证 - 用户身份验证，包括电子邮箱/密码、Facebook、Twitter、Github 和 Google 登录
+          * 实时数据库 - NoSQL 数据库，自动在所有设备上同步下载的应用
+          * 存储空间 - 存储空间和 SDK，使用户能够上传生成的内容
+          * 托管 - 正式版托管
+          * 测试实验室 - 在多个手机版本和设备上测试你的应用
+          * 崩溃报告 - 当你的应用崩溃时为用户记录和报告
+          * 通知 - 这是 FCM 的一部分，我们将详细介绍
+          * 远程配置 - 联机自定义你的应用或轻松地运行 A/B 测试
+          * 将应用编入索引 - 使你的应用获得有机搜索流量
+          * 动态链接 Links - 使用链接将用户转到你的应用屏幕上
+          * 邀请 - 允许用户邀请他人使用你的应用
+          * AdWords - 投放广告系列，获取更多应用用户
+
+         请点击[此处](https://firebase.google.com/features/)了解关于这些功能的信息和文档链接。
+
+          如果你想了解 Android 和 Firebase，建议学习优达学城的 [Firebase 周末课程](https://www.udacity.com/course/firebase-in-a-weekend-by-google-android--ud0352)（Android 课程）。该课程是免费的，会指导你创建实时聊天应用，其中包含用户帐号、照片分享等功能，并使用 Firebase 作为后端。
+        instructor_notes: ''
+        resources: null
+  - id: 338365
+    key: 77a2b01f-2eec-4cfc-b451-1e936ab64c0f
+    locale: zh-cn
+    version: 1.0.0
+    title: 构建新的 Firebase 项目
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338197
+    atoms:
+      - id: 338197
+        key: 1e1c77a2-82a0-475d-8786-4cbb9ec7299a
+        locale: zh-cn
+        version: 1.0.0
+        title: 构建新的 Firebase 项目
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52414'
+          youtube_id: X_eIs_8P-jk
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb03_10-make-a-new-firebase-project-v1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb03_10-make-a-new-firebase-project-v1/10-make-a-new-firebase-project-v1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb03_10-make-a-new-firebase-project-v1/10-make-a-new-firebase-project-v1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb03_10-make-a-new-firebase-project-v1/10-make-a-new-firebase-project-v1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb03_10-make-a-new-firebase-project-v1/10-make-a-new-firebase-project-v1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb03_10-make-a-new-firebase-project-v1/hls/playlist.m3u8'
+  - id: 338368
+    key: 2645be33-23ad-4ff6-9bc8-e7f1f48bde2f
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：连接 Firebase 和 Squawker 应用’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338201
+      - 338198
+      - 338199
+      - 338200
+      - 338202
+      - 338203
+      - 338204
+      - 338205
+      - 338206
+      - 338207
+      - 338208
+      - 338209
+      - 338210
+      - 338211
+    atoms:
+      - id: 338201
+        key: 87463370-d3f6-4bc9-bc4b-22b8f6b9eb9d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 连接 Firebase 和 Android
+
+          在此练习中，你将完成两项任务。首先创建一个新的 Firebase 项目；其次，配置 Squawker 以与 FCM 结合使用。
+
+          ### 练习代码
+          **练习：**[TFCM.01-Exercise-AddGradleDependencies](https://github.com/udacity/AdvancedAndroid_Squawker/tree/TFCM.01-Exercise-AddGradleDependencies)
+
+          ## 自动方式
+
+          你可以通过两种方式来完成这道练习。我建议采用“手动方式”（下面有描述），这样可以清楚地知道你更改了什么。但是，如果你安装了 **Android Studio 版本 2.2 或更高版本**，并且想要执行更加自动化的流程，可以按照[此处的说明](https://firebase.google.com/docs/android/setup#use_the_firebase_assistant)操作。注意，如果你按照自动化流程操作，你**只需**执行前两个步骤：“将你的应用连接到 Firebase”和“将 FCM 添加到你的应用”。**不**应该执行第 3 步，即“访问设备注册令牌”。
+        instructor_notes: ''
+        resources: null
+      - id: 338198
+        key: d77375d0-ed2f-4acf-8f71-028271b05737
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58b74908_screen-shot-2017-03-01-at-2.17.38-pm/screen-shot-2017-03-01-at-2.17.38-pm.png'
+        width: 291
+        height: 161
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338199
+        key: 7371626d-7a96-4611-8f37-14d419f9b093
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 手动方式（推荐）
+
+          现在我们手动地配置 Firebase 吧！创建新项目很简单，我们先开始创建新项目吧。
+
+          ## 创建新的 Firebase 项目
+
+          **第 1 步** 转到 Firebase 控制台并点击**创建新项目**。
+        instructor_notes: ''
+        resources: null
+      - id: 338200
+        key: d96554cf-a6ac-46f9-97d1-9d0259e3051b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58b641ff_screen-shot-2017-02-27-at-6.38.20-pm/screen-shot-2017-02-27-at-6.38.20-pm.png'
+        width: 1062
+        height: 368
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338202
+        key: abe60140-1e06-4682-a1b5-84eaa6953704
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘**第 2 步** 将项目名称设为 **Squawker**'
+        instructor_notes: ''
+        resources: null
+      - id: 338203
+        key: 087bf973-2a92-4622-99b0-279bed54fc23
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58b642ac_createsquawker/createsquawker.png'
+        width: 468
+        height: 409
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338204
+        key: 67fd273b-b186-4bbd-a679-c188351155b6
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          这就搞定了！你已经为 Squawker 创建了一个 Firebase 项目。现在我们为该项目创建一个 Firebase“应用”，并将其与你的 Squakwer 应用相连。
+
+          ## 将 Squawker Android 应用连接到服务器
+
+          **第 1 步** 选择**将 Firebase 添加到你的 Android 应用**
+        instructor_notes: ''
+        resources: null
+      - id: 338205
+        key: 9f17db03-734b-4b06-9940-f69a9a250a40
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58b731e5_selectandroidapp/selectandroidapp.png'
+        width: 778
+        height: 332
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338206
+        key: af3a755a-61fe-4931-8386-c7edc98929ed
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘**第 2 步** 将 Squawker 程序包放入对话框中，该程序包是 `android.example.com.squawker`。你不需要 SHA 密钥，因为我们不使用需要密钥的 Firebase 功能。你也不需要应用昵称，但是你也可以添加一个。’
+        instructor_notes: ''
+        resources: null
+      - id: 338207
+        key: b9835ed4-c405-4377-879f-02e13f929062
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58b732a4_enterpackage/enterpackage.png'
+        width: 721
+        height: 769
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338208
+        key: 5a96394d-4a35-45c5-94c9-5b5b8e495707
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘**第 3 步** 按照说明操作，下载 `google-service.json` 配置文件并将其保存到 Squawker 的**应用**目录下。该配置文件会告诉 Squawker 在线连到哪个 Firebase 服务器实例。特定于你刚刚创建的 Firebase“应用”。如果你不小心删除了 `google-service.json` 文件，则可以通过转到应用**设置**重新下载该文件。’
+        instructor_notes: ''
+        resources: null
+      - id: 338209
+        key: 4e4de449-599b-4cec-9c9d-b38006301612
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58b73355_movegooglejson/movegooglejson.png'
+        width: 743
+        height: 790
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338210
+        key: fa0d9c42-3663-40c4-8904-21ecb79effb6
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          **第 4 步** 现在添加 Firebase SDK。按照说明操作，添加正确的 gradle 依赖项。说明将出现在对话框中，还可以在[此处](https://firebase.google.com/docs/android/setup#manually_add_firebase)找到。
+
+          **第 5 步** 你还需要为 FCM 具体地添加 SDK。请在你的 `app/build.gradle` 文件中添加以下库： 
+
+          ```com.google.firebase:firebase-messaging:10.2.0```
+
+        instructor_notes: ''
+        resources: null
+      - id: 338211
+        key: 8becc0d0-1dec-41fe-bd44-7d4e11f480ee
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 创建新的 Firebase 项目
+          - 选择 “将 Firebase 添加到你的 Android 应用”
+          - 输入程序包名称
+          - 将 `google-services.json` 文件复制到 Squawker 的**应用**文件夹
+          - 按照说明将正确的 gradle 依赖项添加到你的 `build.gradle` 和应用的 `build.gradle`
+          - 添加 FCM 依赖项
+        positive_feedback: |-
+          很棒！
+
+          **解决方案：**[[TFCM.01-Solution-AddGradleDependencies](https://github.com/udacity/AdvancedAndroid_Squawker/tree/TFCM.01-Solution-AddGradleDependencies)][[Diff](https://github.com/udacity/AdvancedAndroid_Squawker/compare/TFCM.01-Exercise-AddGradleDependencies...TFCM.01-Solution-AddGradleDependencies)]
+        video_feedback: null
+        description: ‘现在该你了。请按照相关步骤操作，完成此编程练习。’
+  - id: 338371
+    key: 59c2b902-6c73-43c0-a863-69e4a15d5de8
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：发出第一条 FCM 消息’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338212
+      - 338213
+      - 338214
+      - 338215
+    atoms:
+      - id: 338212
+        key: 270664d3-f4b7-492d-a430-f32fedec3f28
+        locale: zh-cn
+        version: 1.0.0
+        title: 发出第一条 FCM 消息
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53092'
+          youtube_id: lisY-G1iHvQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf6c_13-send-your-first-message-v1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf6c_13-send-your-first-message-v1/13-send-your-first-message-v1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf6c_13-send-your-first-message-v1/13-send-your-first-message-v1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf6c_13-send-your-first-message-v1/13-send-your-first-message-v1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf6c_13-send-your-first-message-v1/13-send-your-first-message-v1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebdf6c_13-send-your-first-message-v1/hls/playlist.m3u8'
+      - id: 338213
+        key: 60155028-f073-44c3-a0e8-18ce911eccc9
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # 发出第一条 FCM 消息
+
+          现在你已经正确地将 Firebase 与 Squawker 应用相连接，你可以使用 [Firebase Console](https://console.firebase.google.com/) 发送你的第一条 FCM 消息了！
+
+          ### 练习代码
+          **练习：**[[TFCM.01-Solution-AddGradleDependencies](https://github.com/udacity/AdvancedAndroid_Squawker/tree/TFCM.01-Solution-AddGradleDependencies)]
+
+          **注意** 你可以（并且应该）使用上一道练习中的解决方案来完成这道练习。
+
+        instructor_notes: ''
+        resources: null
+      - id: 338214
+        key: e0150444-cc24-4f59-8cf3-3f946b36dfc2
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 将应用放在后台
+          - 确保具有网络连接
+          - 转到 Squawker --> 通知（位于 Grow 标题下）—> 发送你的第一条消息
+          - 在消息文本字段中输入你的消息
+          - 使发送日期保持为“立即发送”
+          - 选择你的 Squawker 应用
+          - 发送消息！
+        positive_feedback: ‘很棒！你应该从 Squawker 中看到一条通知。按下该通知时，它应该也会打开该应用。’
+        video_feedback: null
+        description: 通过按照以下步骤操作，发送你的第一条 FCM 消息。
+      - id: 338215
+        key: f567dc4a-1c33-4c8d-a4ec-75ea298afc41
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### 如果遇到问题
+
+          如果你正确地发送了消息，你应该在手机上看到一条通知。如果没有看到，请检查确保 Squawker 位于后台，并且已稳定地连接到互联网。此外，还要确保在最近的练习中包含 FCM 库。
+        instructor_notes: ''
+        resources: null
+  - id: 338372
+    key: 7f27c798-6f60-4693-b139-4a589d52a72b
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：消息数据简介'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338216
+      - 338217
+    atoms:
+      - id: 338216
+        key: cb36eb8b-d002-4448-a2bd-576787e4c585
+        locale: zh-cn
+        version: 1.0.0
+        title: 消息数据简介
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51599'
+          youtube_id: w_dfJo-yFAo
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc3797_15-intro-to-message-data/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc3797_15-intro-to-message-data/15-intro-to-message-data_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc3797_15-intro-to-message-data/15-intro-to-message-data_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc3797_15-intro-to-message-data/15-intro-to-message-data_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc3797_15-intro-to-message-data/15-intro-to-message-data_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc3797_15-intro-to-message-data/hls/playlist.m3u8'
+      - id: 338217
+        key: febef546-dcb8-466e-a0b9-d47d54592156
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 将应用放在后台
+          - 确保具有网络连接
+          - 转到消息标签页并输入消息，然后选择 Squawker 应用作为**用户细分**
+          - 在**高级选项**下，添加 **自定义数据 data**，键是“test”，值是你的名称值
+          - 更新 Squawker 应用以获得 intent extra 并显示 intent extra，在日志中显示键“test”
+          - 发送消息
+          - 查看你的名称对应的日志
+        positive_feedback: |-
+          很棒！如果一切进展顺利，你应该在日志中看到你的名称！
+
+          **解决方案：**[[TFCM.02-Solution-TestGettingExtraData](https://github.com/udacity/AdvancedAndroid_Squawker/tree/TFCM.02-Solution-TestGettingExtraData)][[Diff](https://github.com/udacity/AdvancedAndroid_Squawker/compare/TFCM.02-Exercise-TestGettingExtraData...TFCM.02-Solution-TestGettingExtraData)]
+        video_feedback: null
+        description: 按照以下步骤操作发送消息数据。
+  - id: 338373
+    key: 7577c652-b45a-4346-bc22-39a7c367651e
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：发送到特定的手机'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338218
+      - 338219
+      - 338220
+      - 338221
+      - 338222
+      - 338225
+      - 338226
+    atoms:
+      - id: 338218
+        key: 81fee263-0c9f-42b9-a1cf-f90669230eff
+        locale: zh-cn
+        version: 1.0.0
+        title: 发送到特定的手机
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51600'
+          youtube_id: dXlfzLQUqaU
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37a9_16-sending-to-specific-phone/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37a9_16-sending-to-specific-phone/16-sending-to-specific-phone_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37a9_16-sending-to-specific-phone/16-sending-to-specific-phone_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37a9_16-sending-to-specific-phone/16-sending-to-specific-phone_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37a9_16-sending-to-specific-phone/16-sending-to-specific-phone_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37a9_16-sending-to-specific-phone/hls/playlist.m3u8'
+      - id: 338219
+        key: 0d9e176e-0bc3-4964-a3f6-d76ac9576d3e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 发送到特定的手机
+
+          在此练习中，你将获得手机的 FCM 注册 ID 令牌。你可以使用该令牌向你的单个设备上发送消息。
+        instructor_notes: ''
+        resources: null
+      - id: 338220
+        key: 70e5b998-42c5-4f01-9221-40312c7dcef5
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58b7608e_screen-shot-2017-03-01-at-3.59.57-pm/screen-shot-2017-03-01-at-3.59.57-pm.png'
+        width: 437
+        height: 143
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338221
+        key: 2685c243-5efe-4ee8-9538-a30f5af4b430
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |2-
+           你可以使用视频中提到的步骤和示例代码（[此处](https://firebase.google.com/docs/cloud-messaging/android/client#manifest)是相关链接）操作。
+
+          ### 练习代码
+          **练习：**[TFCM.03-Exercise-GetInstanceIdToken](https://github.com/udacity/AdvancedAndroid_Squawker/tree/TFCM.03-Exercise-GetInstanceIdToken)
+        instructor_notes: ''
+        resources: null
+      - id: 338222
+        key: 5e467d64-e9a5-4f61-8cf1-bfa05470cadb
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 创建新的程序包，名称为 `fcm`
+          - ‘在 `fcm` 程序包中，创建扩展自 `FirebaseInstanceIdService` 的新服务’
+          - 将该服务添加到 Manifest 中，并使用 intent 过滤器来捕获 `com.google.firebase.INSTANCE_ID_EVENT` 操作
+          - ‘在新的服务类中，覆盖方法 `onTokenRefresh` 并在日志中输出令牌'
+          - 运行该应用并从日志中获得令牌
+          - 使用该令牌具体地向你的设备发送消息
+        positive_feedback: |-
+          很棒！请在下面插入你的令牌以完成此练习。
+
+          **解决方案：**[[TFCM.03-Solution-GetInstanceIdToken](https://github.com/udacity/AdvancedAndroid_Squawker/tree/TFCM.03-Solution-GetInstanceIdToken)][[Diff](https://github.com/udacity/AdvancedAndroid_Squawker/compare/TFCM.03-Exercise-GetInstanceIdToken...TFCM.03-Solution-GetInstanceIdToken)]
+        video_feedback: null
+        description: ‘请按照 TODO 操作，完成这道练习。要获取帮助，你可以使用 https://firebase.google.com/docs/cloud-messaging/android/client#manifest 上提到的步骤和示例代码。’
+      - id: 338225
+        key: d33c3d88-7ef0-4e1e-8a18-762217c54718
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: ‘获得手机的 FCM 注册令牌后，请将其粘贴到此处以完成这道练习。’
+          default_feedback: ‘确保仅复制 FCM 注册令牌，不要包含任何多余的空格或字符。’
+          correct_feedback: ‘很棒！虽然我无法验证你是否 获得了完全正确的 FCM 注册令牌，你可以通过用此令牌发送消息来自己检查下。如果该令牌正确，那么该消息应该会发送到你的手机上，并且仅发送到你的手机上。注意，Squawker 应用必须位于后台，并且你的设备必须连接到互联网。’
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: '[a-zA-Z0-9_-]{5,}:[a-zA-Z0-9_-]{10,}'
+              expression_description: 'A valid FCM token (my guess, needs testing)'
+              flags: ''
+              incorrect_feedback: null
+      - id: 338226
+        key: f6a01358-e489-4936-a0cb-5f3c38d177c2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘**注意** 如果你无法获得 FCM 令牌，请尝试卸载并重新安装该应用。’
+        instructor_notes: ''
+        resources: null
+  - id: 338374
+    key: dc98f55f-9157-4d8b-befc-832bb612c9da
+    locale: zh-cn
+    version: 1.0.0
+    title: 通知和数据消息
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338227
+    atoms:
+      - id: 338227
+        key: 93536c04-2ab1-4e8e-bfb5-a9496dc3249f
+        locale: zh-cn
+        version: 1.0.0
+        title: 通知和数据消息
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '56161'
+          youtube_id: cKvSjx09rPg
+          subtitles: []
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/5914cb9e_18-notification-vs-data-messages/18-notification-vs-data-messages_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/5914cb9e_18-notification-vs-data-messages/18-notification-vs-data-messages_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/5914cb9e_18-notification-vs-data-messages/18-notification-vs-data-messages_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/5914cb9e_18-notification-vs-data-messages/18-notification-vs-data-messages_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/5914cb9e_18-notification-vs-data-messages/hls/playlist.m3u8'
+  - id: 338380
+    key: b60aca35-9ca2-4678-8b28-044b8f8fca6c
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：创建 Firebase 消息服务'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338228
+      - 338229
+      - 338230
+    atoms:
+      - id: 338228
+        key: cf6b60ed-b163-4ef7-b09b-eb3ee2a76d8a
+        locale: zh-cn
+        version: 1.0.0
+        title: 19 Firebase 消息服务
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51602'
+          youtube_id: UK72QOSNNGw
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37bd_19-firebase-messaging-service/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37bd_19-firebase-messaging-service/19-firebase-messaging-service_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37bd_19-firebase-messaging-service/19-firebase-messaging-service_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37bd_19-firebase-messaging-service/19-firebase-messaging-service_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37bd_19-firebase-messaging-service/19-firebase-messaging-service_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37bd_19-firebase-messaging-service/hls/playlist.m3u8'
+      - id: 338229
+        key: eb82c84c-0e9e-41b6-8296-1b58b3d2f4cd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # 创建 Firebase 消息服务
+
+          我们来添加处理**数据**消息的代码。为此，你需要创建 `FirebaseMessagingService`。请按照代码中的 TODO 操作，完成这道练习。完成后，你应该能够从 [Squawker 服务器](https://squawkerfcmserver.udacity.com/)向**单个设备**发送 Squawk 消息。注意，你需要使用服务器密钥，你可以通过观看[此视频](https://classroom.udacity.com/courses/ud857/lessons/d5eedaa1-39aa-489b-8538-d1e7ae522a67/concepts/dc98f55f-9157-4d8b-befc-832bb612c9da)了解如何从 Firebase Console 获取该密钥。
+
+          ### 练习代码
+          **练习：**[TFCM.04-Exercise-AddFirebaseMessagingService](https://github.com/udacity/AdvancedAndroid_Squawker/tree/TFCM.04-Exercise-AddFirebaseMessagingService)
+
+          下面是从 `RemoteMessage` 对象获取数据的示例，可供参考：
+
+          ```java 
+          Map<String, String> data = remoteMessage.getData();
+          String author = data.get("author");
+          ```
+
+          这部分练习涉及到与内容提供器互动并创建通知。我们之前讲解过这两方面的内容。如果你不熟悉这些概念，可以在[此处](https://classroom.udacity.com/courses/ud851/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/d8aae9f4-0212-4102-befe-cb72233a20d6#)详细了解通知，并在[此处](https://classroom.udacity.com/courses/ud851/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/a18a2db2-8676-4300-945e-285ad9dce0a7#)了解如何与内容提供器互动。
+        instructor_notes: ''
+        resources: null
+      - id: 338230
+        key: f9987af3-16af-4583-9b9b-96d77cf6c592
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 创建扩展自 `FirebaseMessagingService` 的服务
+          - 将该服务添加到 Manifest，并包含缓存 `com.google.firebase.MESSAGING_EVENT` 操作的 Intent 过滤器
+          - ‘在新的服务类中，覆盖方法 `onMessageReceived`'
+          - ‘在 `onMessageReceived` 中将 Squawk 添加到数据库并显示通知'
+          - '使用**针对单个设备的 Squawk** 从 [Squawker 服务器](https://squawkerfcmserver.udacity.com/)向你的设备发送一条数据消息。’
+        positive_feedback: |-
+          很棒！你现在应该能够从 [Squawker 服务器](https://squawkerfcmserver.udacity.com/)接收消息了
+
+          **解决方案：**[[TFCM.04-Solution-AddFirebaseMessagingService](https://github.com/udacity/AdvancedAndroid_Squawker/tree/TFCM.04-Solution-AddFirebaseMessagingService)][[Diff](https://github.com/udacity/AdvancedAndroid_Squawker/compare/TFCM.04-Exercise-AddFirebaseMessagingService...TFCM.04-Solution-AddFirebaseMessagingService)]
+        video_feedback: null
+        description: 请完成 TODO 并向 Squawker 发送你的第一条**数据**消息！
+  - id: 338381
+    key: 9d9a6ff7-bcf3-47f2-a4b5-172d4d150b25
+    locale: zh-cn
+    version: 1.0.0
+    title: 前台与后台
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338231
+    atoms:
+      - id: 338231
+        key: 149d804d-ef6a-4e0d-afd2-c6d6960f5dd2
+        locale: zh-cn
+        version: 1.0.0
+        title: 前台与后台
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52416'
+          youtube_id: wmk0ItTlhdQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb0e_21-foreground-vs-background-v1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb0e_21-foreground-vs-background-v1/21-foreground-vs-background-v1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb0e_21-foreground-vs-background-v1/21-foreground-vs-background-v1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb0e_21-foreground-vs-background-v1/21-foreground-vs-background-v1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb0e_21-foreground-vs-background-v1/21-foreground-vs-background-v1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb0e_21-foreground-vs-background-v1/hls/playlist.m3u8'
+  - id: 338382
+    key: a3addde2-7407-48bc-9cd6-c6b73a6bf31f
+    locale: zh-cn
+    version: 1.0.0
+    title: 发送到多部设备
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338232
+      - 338233
+    atoms:
+      - id: 338232
+        key: 4ab09215-9a77-44ce-bb80-40061df668b2
+        locale: zh-cn
+        version: 1.0.0
+        title: 发送到多部设备
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52417'
+          youtube_id: 0A6v98sRdpA
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb12_23-sending-to-multiple-devices-v1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb12_23-sending-to-multiple-devices-v1/23-sending-to-multiple-devices-v1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb12_23-sending-to-multiple-devices-v1/23-sending-to-multiple-devices-v1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb12_23-sending-to-multiple-devices-v1/23-sending-to-multiple-devices-v1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb12_23-sending-to-multiple-devices-v1/23-sending-to-multiple-devices-v1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb12_23-sending-to-multiple-devices-v1/hls/playlist.m3u8'
+      - id: 338233
+        key: 6538a8eb-e079-44ae-b9ea-fffe29eb7c57
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          如果你想详细了解设备群组，请参阅[此文档](https://firebase.google.com/docs/cloud-messaging/android/device-group)。
+
+          ### 示例代码
+          订阅和取消订阅“国家/地区”主题的代码如下所示。
+
+          ```java
+          // 订阅主题
+          FirebaseMessaging.getInstance().subscribeToTopic(“japan”);
+          FirebaseMessaging.getInstance().subscribeToTopic(”usa”);
+
+          // 取消订阅主题
+          FirebaseMessaging.getInstance().unsubscribeFromTopic(“usa”);
+          ```
+        instructor_notes: ''
+        resources: null
+  - id: 338383
+    key: e5767da7-bf3c-4418-8acc-e47128d84713
+    locale: zh-cn
+    version: 1.0.0
+    title: Squawker 主题
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338234
+    atoms:
+      - id: 338234
+        key: df52be32-c0d5-47e9-94aa-595990fb5d2e
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: ' 根据你对主题的了解，你觉得 Squawker 的主题键是什么？’
+          correct_feedback: |-
+            最合理的答案是为每位讲师设定不同的主题。要“关注”某位讲师并获得消息，你需要订阅该讲师的主题。例如，如果我想订阅 asser 和 cezanne 主题，那么我可以使用如下所示的代码：
+
+            <pre>
+            FirebaseMessaging.getInstance().subscribeToTopic("asser");
+            FirebaseMessaging.getInstance().subscribeToTopic("cezanne");
+            </pre>
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1488416817476
+              text: ‘我会为每个设备 FCM 注册 ID 设定一个主题。例如：“dna9d7fk..,“、“o744sml9fk...“、“bbd7dka...“'
+              is_correct: false
+              incorrect_feedback: ‘当某个设备想关注某位讲师时，则是设备关注讲师，而不是讲师关注设备。'
+            - id: a1488416861532
+              text: 我会为每个讲师组合设定一个主题。例如：“lyla_cezanne” 和 “lyla_cezanne_nikita”
+              is_correct: false
+              incorrect_feedback: 这样的话，每种讲师组合都有一个主题，导致数量太多。有没有什么更简单的设置方法？
+            - id: a1488416875636
+              text: 我会为每个订阅和非订阅状态设定一个主题。例如：“subscribed_lyla” 和 “unsubscribed_nikita”
+              is_correct: false
+              incorrect_feedback: '你将使用 `subscribeToTopic` 和 `unsubscribeFromTopic` 方法来设定某人是*订阅*还是*非订阅*状态，所以不需要为这些状态设定不同的主题。’
+            - id: a1488416891276
+              text: ‘我会有两个主题，一个针对测试消息，另一个针对讲师。例如“test”和“instructor”'
+              is_correct: false
+              incorrect_feedback: ‘如果只有一个 `instructor` 主题，如何区分是否要关注 Jessica 和 Cezanne 与 Nikita 和 Lyla？’
+            - id: a1488416905870
+              text: ‘我会为 Squawker 上的不同兴趣内容设定一个主题，例如“体育”、“新闻”和“娱乐”’
+              is_correct: false
+              incorrect_feedback: 用户是选择接收关于特定内容的消息还是接收来自特定讲师的消息？
+            - id: a1488416918635
+              text: ' 我会为每位讲师设定一个主题，例如“nikita”、“lyla”'
+              is_correct: true
+              incorrect_feedback: null
+  - id: 338385
+    key: 4e9267e6-49b5-4076-b59d-58e2e27d971d
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：实现主题关注'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338235
+      - 338236
+      - 338237
+      - 338238
+    atoms:
+      - id: 338235
+        key: c87322fd-08fe-4543-9c20-ebd144b9d62b
+        locale: zh-cn
+        version: 1.0.0
+        title: 25 实现主题关注代码
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51605'
+          youtube_id: M_Tbt3XYQBI
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37d9_25-implement-topic-following-code/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37d9_25-implement-topic-following-code/25-implement-topic-following-code_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37d9_25-implement-topic-following-code/25-implement-topic-following-code_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37d9_25-implement-topic-following-code/25-implement-topic-following-code_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37d9_25-implement-topic-following-code/25-implement-topic-following-code_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc37d9_25-implement-topic-following-code/hls/playlist.m3u8'
+      - id: 338236
+        key: 5f6d5d20-ef36-4edc-a6c2-9869fe3062f4
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # 实现主题关注
+
+          现在该让用户实际地关注我们的 Squawker 讲师了！完成这道练习后，你应该能够通过 [Squawker 服务器](https://squawkerfcmserver.udacity.com/)从特定讲师那发送消息，并仅在关注该讲师的设备上接收该消息。
+
+          ### 偏好设置课程
+
+          如果你想复习下如何设置偏好设置和监听值更改，请参阅[此课程](https://classroom.udacity.com/courses/ud851/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/328e74ec-6533-45f5-906f-3e3d6a09ea1d#)（第一节 Android 课程）
+
+          ### 练习代码
+          **练习：**[TFCM.05-Exercise-ImplementInstructorTopicFollowing](https://github.com/udacity/AdvancedAndroid_Squawker/tree/TFCM.05-Exercise-ImplementInstructorTopicFollowing)
+
+          要发送讲师 Squawk，你需要输入你的服务器密钥，然后从列表中选择一名讲师，如下所示。接着将触发服务器从“Lyla”那发送消息，方法是从“key_lyla”主题发送消息。
+        instructor_notes: ''
+        resources: null
+      - id: 338237
+        key: d8acd821-be6d-4f44-a643-9fb6554f1855
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58b772e4_screen-shot-2017-03-01-at-5.17.17-pm/screen-shot-2017-03-01-at-5.17.17-pm.png'
+        width: 604
+        height: 308
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338238
+        key: 9c01da1b-20c7-4d08-918e-c6e910815784
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 在 `FollowingPreferenceFragment.java` 中实现 `OnSharedPreferenceChangeListener`
+          - ‘当共享的偏好设置文件更改后，相应地订阅或取消订阅讲师'
+          - 别忘了在 `onCreate` 和 `onDestroy` 中注册及取消注册 `OnSharedPreferenceChangeListener`
+          - '从 [Squawker 服务器](https://squawkerfcmserver.udacity.com/)发送几条消息，确保主题关注操作可以正常运行'
+        positive_feedback: |-
+          很棒！现在你可以关注你喜欢的讲师了。
+
+          **解决方案：**[[TFCM.05-Solution-ImplementInstructorTopicFollowing](https://github.com/udacity/AdvancedAndroid_Squawker/tree/TFCM.05-Solution-ImplementInstructorTopicFollowing)][[Diff](https://github.com/udacity/AdvancedAndroid_Squawker/compare/TFCM.05-Exercise-ImplementInstructorTopicFollowing...TFCM.05-Solution-ImplementInstructorTopicFollowing)]
+        video_feedback: null
+        description: 完成代码中的 TODO 以从不同的讲师那接收主题消息。
+  - id: 338388
+    key: f915493f-22b1-419f-b04b-3aee12d12c0e
+    locale: zh-cn
+    version: 1.0.0
+    title: 关于 FCM 的其他知识
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338239
+      - 338240
+    atoms:
+      - id: 338239
+        key: 4d4273d0-c3af-42c7-8d67-24e7902699f6
+        locale: zh-cn
+        version: 1.0.0
+        title: 关于 FCM 的其他知识
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52418'
+          youtube_id: M417Lbfv_AY
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb17_27-theres-more-to-learn-about-fcm-v1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb17_27-theres-more-to-learn-about-fcm-v1/27-theres-more-to-learn-about-fcm-v1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb17_27-theres-more-to-learn-about-fcm-v1/27-theres-more-to-learn-about-fcm-v1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb17_27-theres-more-to-learn-about-fcm-v1/27-theres-more-to-learn-about-fcm-v1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb17_27-theres-more-to-learn-about-fcm-v1/27-theres-more-to-learn-about-fcm-v1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dbfb17_27-theres-more-to-learn-about-fcm-v1/hls/playlist.m3u8'
+      - id: 338240
+        key: ee2ee383-f80b-4415-b337-bb1e047714e6
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### 在何处查找更多资料
+
+          FCM 提供了 Android 文档及设置服务器代码的文档：
+
+          * Android 文档位于[此处](https://firebase.google.com/docs/cloud-messaging/android/client)
+          * 关于消息如何从 FCM 发送到客户端的文档位于[此处](https://firebase.google.com/docs/cloud-messaging/concept-options)
+          * 关于如何设置 FCM 服务器（例如我的 [Squawker 服务器](https://squawkerfcmserver.udacity.com/)的详细信息位于[此处](https://firebase.google.com/docs/cloud-messaging/server) 
+
+          你可以阅读此[此帖子](https://firebase.googleblog.com/2016/08/sending-notifications-between-android.html)，了解设置 FCM 服务器的 Node.js 示例代码。我针对 Squawker 服务器使用的库叫做 [fcm-node](https://www.npmjs.com/package/fcm-node)。
+
+          最后，正如之前提到的，如果你想进一步了解 Android 和 Firebase，建议学习优达学城的 [Firebase 周末课程](https://www.udacity.com/course/firebase-in-a-weekend-by-google-android--ud0352)（Android 课程）。该课程是免费的，会指导你创建实时聊天应用，其中包含用户帐号、照片分享等功能，并使用 Firebase 作为后端。
+        instructor_notes: ''
+        resources: null
+  - id: 338389
+    key: 8837245a-14d0-4319-ac47-b04778c28832
+    locale: zh-cn
+    version: 1.0.0
+    title: FCM 结尾部分
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338241
+    atoms:
+      - id: 338241
+        key: da28b300-4b34-4415-8248-657be0c4a186
+        locale: zh-cn
+        version: 1.0.0
+        title: FCM 结尾部分
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52456'
+          youtube_id: MeX7mZyF6eE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dd3fc3_28-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dd3fc3_28-outro/28-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dd3fc3_28-outro/28-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dd3fc3_28-outro/28-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dd3fc3_28-outro/28-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dd3fc3_28-outro/hls/playlist.m3u8'

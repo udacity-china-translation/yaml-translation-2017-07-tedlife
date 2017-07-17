@@ -1,0 +1,2328 @@
+id: 338669
+key: f0084cc7-2cbc-4b8e-8644-375e8c927167
+locale: zh-cn
+version: 1.0.0
+title: Espresso
+semantic_type: Lesson
+updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/59025503_ud855-espresso/ud855-espresso.png'
+  width: 932
+  height: 924
+video: null
+summary: ‘这节课我们将详细讲解 Espresso——Android 的测试框架，可以简化 UI 测试的编写过程。我们将测试基本视图、AdapterView、Intent 和 IdlingResource。’
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+_concepts_ids:
+  - 338587
+  - 338588
+  - 338589
+  - 338585
+  - 338586
+  - 338591
+  - 338590
+  - 338592
+  - 338620
+  - 338632
+  - 338633
+  - 338634
+  - 338635
+  - 338636
+  - 338637
+  - 338638
+  - 338639
+  - 338640
+  - 338642
+  - 338641
+  - 338647
+  - 338648
+_project_id: null
+concepts:
+  - id: 338587
+    key: e4448227-af55-4883-ab88-e8ed717e2800
+    locale: zh-cn
+    version: 1.0.0
+    title: 是我的浓缩咖啡茶吗？
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338493
+    atoms:
+      - id: 338493
+        key: 76cc8216-c510-48c9-8bd5-3497146565db
+        locale: zh-cn
+        version: 1.0.0
+        title: 是我的浓缩咖啡茶吗？
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52515'
+          youtube_id: ORmbNTo9XRY
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd3c_1-is-that-espresso-in-my-tea-hs/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd3c_1-is-that-espresso-in-my-tea-hs/1-is-that-espresso-in-my-tea-hs_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd3c_1-is-that-espresso-in-my-tea-hs/1-is-that-espresso-in-my-tea-hs_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd3c_1-is-that-espresso-in-my-tea-hs/1-is-that-espresso-in-my-tea-hs_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd3c_1-is-that-espresso-in-my-tea-hs/1-is-that-espresso-in-my-tea-hs_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd3c_1-is-that-espresso-in-my-tea-hs/hls/playlist.m3u8'
+  - id: 338588
+    key: 3aa91842-e7fb-4689-912a-5d8776e844ca
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘测验：欢迎学习测试知识’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338494
+      - 338495
+    atoms:
+      - id: 338494
+        key: 3b6492ae-7643-42f5-897e-a13ba14118ed
+        locale: zh-cn
+        version: 1.0.0
+        title: 欢迎学习测试知识
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54209'
+          youtube_id: qLWvc56oKnY
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8b7_02-welcome-to-the-world-of-testing-q/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8b7_02-welcome-to-the-world-of-testing-q/02-welcome-to-the-world-of-testing-q_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8b7_02-welcome-to-the-world-of-testing-q/02-welcome-to-the-world-of-testing-q_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8b7_02-welcome-to-the-world-of-testing-q/02-welcome-to-the-world-of-testing-q_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8b7_02-welcome-to-the-world-of-testing-q/02-welcome-to-the-world-of-testing-q_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8b7_02-welcome-to-the-world-of-testing-q/hls/playlist.m3u8'
+      - id: 338495
+        key: c2c2235b-0d81-4c77-b728-a9e0cca05b53
+        locale: zh-cn
+        version: 1.0.0
+        title: 你可以解释下 UI 测试流程吗？
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: ‘你是在线票务销售商的 2 人开发工程师团队成员。你刚刚添加完订购按钮，该按钮会打开订单摘要，你需要你的同伴帮助你手动测试 UI。为了帮助他们理解该测试什么，预期结果会怎样，请用简洁的步骤表示他们需要执行的操作（例如“第 1 步：打开应用并找到订购按钮”）。’
+          default_feedback: ‘请观看解决方案视频，了解指导同伴如何进行 UI 测试的一种方式。’
+          correct_feedback: ‘感谢你为同伴编写说明！请观看解决方案视频，查看我们编写的说明。’
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: .*
+              expression_description: Testing
+              flags: ''
+              incorrect_feedback: null
+  - id: 338589
+    key: d37b0c0b-0fbc-4fe6-9d69-d5f1415b318d
+    locale: zh-cn
+    version: 1.0.0
+    title: 欢迎学习测试知识
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338496
+    atoms:
+      - id: 338496
+        key: 3b062fe4-b620-4173-a6fe-41a6695e8f04
+        locale: zh-cn
+        version: 1.0.0
+        title: 欢迎学习测试知识
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54220'
+          youtube_id: 4ujK1F6OaOI
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffaaba_03-welcome-to-the-world-of-testing-v2/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffaaba_03-welcome-to-the-world-of-testing-v2/03-welcome-to-the-world-of-testing-v2_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffaaba_03-welcome-to-the-world-of-testing-v2/03-welcome-to-the-world-of-testing-v2_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffaaba_03-welcome-to-the-world-of-testing-v2/03-welcome-to-the-world-of-testing-v2_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffaaba_03-welcome-to-the-world-of-testing-v2/03-welcome-to-the-world-of-testing-v2_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffaaba_03-welcome-to-the-world-of-testing-v2/hls/playlist.m3u8'
+  - id: 338585
+    key: 92760ae0-e9bb-45be-a83e-fb2f04105c4a
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘测验：TeaTime 起始代码讲解'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338466
+      - 338468
+      - 338477
+      - 338478
+      - 338479
+      - 338480
+      - 338481
+      - 338484
+      - 338485
+      - 338486
+      - 338487
+      - 338488
+    atoms:
+      - id: 338466
+        key: 3241e062-a253-41ce-afae-30ccb002c044
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # TeaTime 代码
+
+          该应用的代码位于 [TeaTime 资源库](https://github.com/udacity/AdvancedAndroid_TeaTime)中。请使用以下命令下载该资源库：
+
+          ```bash
+          git clone https://github.com/udacity/AdvancedAndroid_TeaTime.git
+          ```
+
+          如果你想复习下代码的组织结构，请参阅 [TeaTime README](https://github.com/udacity/AdvancedAndroid_TeaTime) 以了解详情。
+
+          ### 练习代码
+          **练习：**[TESP.00-StartingCode](https://github.com/udacity/AdvancedAndroid_TeaTime/tree/TESP.00-StartingCode)
+
+          ---
+
+          ## TeaTime 介绍
+          在整个这节课中，我们将在 TeaTime 应用中使用 Espresso。我已经编写了基本功能，在继续构建其他功能之前，想请大家帮助我测试各种 UI 组件。我们在开发的时候就要考虑测试环节，以便尽早发现潜在 bug。 
+
+          你将在项目的 *app/main/java/com/example/android/teatime* 下找到这些 java 文件： 
+
+          #### MenuActivity.java
+
+        instructor_notes: ''
+        resources: null
+      - id: 338468
+        key: 080058b7-1ec7-4e23-b28b-a60bbc7b1249
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf299a_teatime-menuactivity/teatime-menuactivity.png'
+        width: 1080
+        height: 1920
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338477
+        key: 5dcaa4cc-3402-4832-a446-36ac04b9980c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          这是应用的初始屏幕。用户可以从茶饮选项网格视图中进行选择。
+
+          #### OrderActivity.java
+        instructor_notes: ''
+        resources: null
+      - id: 338478
+        key: 32c61739-0f85-439d-9cef-9df7994e5480
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf2a8f_teatime-menuactivity-03072017134707/teatime-menuactivity-03072017134707.png'
+        width: 1080
+        height: 1920
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338479
+        key: d35dae3b-4788-4f1e-ac4e-d6d66cc01ba5
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          当用户从 MenuActivity 选择一款茶饮后，他们就会转到 OrderActivity 并在此自定义所选的茶饮。有 3 个下拉列表设置（针对大小、牛奶和糖）。用户可以更改数量。总价根据所选大小和数量进行更新。
+
+          #### OrderSummaryActivity.java
+        instructor_notes: ''
+        resources: null
+      - id: 338480
+        key: f2b4a612-513f-4c2e-8258-377d36dd8515
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf2b16_teatime-menuactivity-03072017134916/teatime-menuactivity-03072017134916.png'
+        width: 1080
+        height: 1920
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338481
+        key: 78be1f72-6e78-454c-815e-1c80519fc88f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          用户在 OrderActivity 中点击“沏茶”按钮后，就会转到 OrderSummaryActivity，其中显示了所下订单的详情。在此屏幕上，用户还可以分享该应用，告诉朋友他们正在通过电子邮箱 intent 使用这个很酷的新应用。
+
+          #### TeaMenuAdapter.java
+          TeaMenuAdapter 受到茶饮对象 ArrayList 的支持，这些对象会填充 MenuActivity 中的 GridView。
+
+          你将在 *app/main/java/com/example/android/teatime/model/* 下找到以下文件：
+
+          #### Tea.java
+          该类代表用户可以从菜单中选择的茶饮。它包含茶饮名称和相关的图片。
+
+          你将在 *app/src/**androidTest/java**/com/example/android/teatime* 中发现设备化测试文件：
+
+          #### 设备化测试
+
+          这节课将重点讲解**用户界面 (UI) 测试**，它是一种**设备化测试**。设备化测试需要在真机或模拟器上运行。还有其他多种类型的测试，我们将在这节课的稍后阶段讲解。 
+          设备化测试始终位于 *module-name/src/androidTest/java/* 下
+        instructor_notes: ''
+        resources: null
+      - id: 338484
+        key: 1b40e2d0-5b2b-40da-9a5b-e40fe1737c37
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf2db1_screen-shot-2017-03-07-at-2.01.08-pm/screen-shot-2017-03-07-at-2.01.08-pm.png'
+        width: 806
+        height: 298
+        caption: 设备化测试始终位于 androidTest/java 文件夹下
+        resources: null
+        instructor_notes: null
+      - id: 338485
+        key: 5ccfde0f-daf9-4833-977f-c22df3142c16
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          你将发现，该应用包含视图、AdapterView 和 Intent，而这并非巧合。 
+          Espresso 可以用于测试：
+          * 视图
+          * AdapterView
+          * Intent
+          * Idling Resource
+
+          最后一个组件“Idling Resource”是一个新术语。当我们要测试异步代码（例如不在主线程上运行的长时间运行数据库操作）时，就会用到 Idling Resource。我们将稍后详细讲解这类测试。 
+        instructor_notes: ''
+        resources: null
+      - id: 338486
+        key: 6a5a5f57-bf83-4296-9152-b32852d9eb5f
+        locale: zh-cn
+        version: 1.0.0
+        title: 设备化测试的名称是什么？
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 设备化测试的名称是什么？
+          correct_feedback: |-
+            设备化测试需要在真机或模拟器上运行。 
+
+            我们将探索其他类型的测试，例如在 PC Java 虚拟机上运行的单元测试。先别担心这一概念，稍后我们会讲解的。 
+          video_feedback: null
+          default_feedback: ‘思考下设备化测试始终位于哪个具体文件夹下。’
+          answers:
+            - id: a1488924375773
+              text: TeaTimeInstrumentedTest
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488924406330
+              text: ExampleInstrumentedTest
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1488924415744
+              text: ExampleUnitTest
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488924420900
+              text: 尚无具体的文件夹
+              is_correct: false
+              incorrect_feedback: null
+      - id: 338487
+        key: 60ab26dd-6d13-49e7-b470-ce58b4e58f3c
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: TeaMenuAdapter 用来在 MenuActivity 中填充哪种类型的视图？
+          correct_feedback: 'TeaMenuAdapter 受到填充有茶饮图片和名称的数组的支持。’
+          video_feedback: null
+          default_feedback: ‘请查看 MenuActivity 代码和上面的屏幕截图，看看使用的是哪种类型的视图。’
+          answers:
+            - id: a1488924727979
+              text: RecyclerView
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488924750229
+              text: ListView
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488924753761
+              text: GridView
+              is_correct: true
+              incorrect_feedback: null
+      - id: 338488
+        key: 503b4f9f-3719-41b8-bd6e-297f3ed19b77
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 应用级 build.gradle 中目前存在多少个编译依赖项？
+          correct_feedback: ‘编译项目的生产来源时需要这些编译依赖项。稍后我们将讲解测试用到的其他类型的依赖项。’
+          video_feedback: null
+          default_feedback: ‘确保你查看的是正确的 build.gradle 文件。'
+          answers:
+            - id: a1488924863513
+              text: '0'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488924874457
+              text: '1'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1488924876487
+              text: '3'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1488924878492
+              text: '4'
+              is_correct: false
+              incorrect_feedback: null
+  - id: 338586
+    key: 6d342245-9742-45c0-b758-6c0072e87e55
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：编写基本的 Espresso 测试’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338490
+      - 338491
+      - 338492
+    atoms:
+      - id: 338490
+        key: 51960eb5-7d74-4b02-80c9-ce7e3a2f7462
+        locale: zh-cn
+        version: 1.0.0
+        title: '练习：编写基本的 Espresso 测试'
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52516'
+          youtube_id: XhDRYv0wWF8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd57_05-write-a-basic-espresso-test-hs-sc-1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd57_05-write-a-basic-espresso-test-hs-sc-1/05-write-a-basic-espresso-test-hs-sc-1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd57_05-write-a-basic-espresso-test-hs-sc-1/05-write-a-basic-espresso-test-hs-sc-1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd57_05-write-a-basic-espresso-test-hs-sc-1/05-write-a-basic-espresso-test-hs-sc-1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd57_05-write-a-basic-espresso-test-hs-sc-1/05-write-a-basic-espresso-test-hs-sc-1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd57_05-write-a-basic-espresso-test-hs-sc-1/hls/playlist.m3u8'
+      - id: 338491
+        key: ac688a2a-521b-403c-8272-789ff39f80f0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 编写基本的 Espresso 测试
+
+          现在将在 TeaTime 中编写你的首个 Espresso 测试。我们将先添加一个 `OrderActivityBasicTest`，它将演示递减按钮上的用户点击操作。测试将验证此操作可以正确地减少数量和总费用。 
+
+          请按照 Espresso 视图测试的三大常规步骤操作：
+          1. 查找视图
+          2. 对视图执行操作
+          3. 检查视图是否出现预期的行为
+
+          此外，请记得查看 Google 的实用 [Espresso 备忘单](https://google.github.io/android-testing-support-library/docs/espresso/cheatsheet/)，了解可用的 Matcher、Action 和 Assertion。 
+
+          ### 练习代码
+          **练习：**[TESP.01-Exercise-FinishOrderActivityBasicTest](https://github.com/udacity/AdvancedAndroid_TeaTime/tree/TESP.01-Exercise-FinishOrderActivityBasicTest)
+        instructor_notes: ''
+        resources: null
+      - id: 338492
+        key: fb431a29-c116-4aaa-a17a-6988b30f43dc
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 添加测试运行者注释
+          - 为单个 activity 测试添加规则
+          - 完成测试，检查递减功能
+          - 添加 Espresso gradle 依赖项
+        positive_feedback: |-
+          *很棒！* 第一个 Espresso 测试已完成 :)
+
+          **解决方案：**[[TESP.01-Solution-FinishOrderActivityBasicTest](https://github.com/udacity/AdvancedAndroid_TeaTime/tree/TESP.01-Solution-FinishOrderActivityBasicTest)][[Diff](https://github.com/udacity/AdvancedAndroid_TeaTime/compare/TESP.01-Exercise-FinishOrderActivityBasicTest...TESP.01-Solution-FinishOrderActivityBasicTest?expand=1)]
+        video_feedback: null
+        description: ''
+  - id: 338591
+    key: ad932c9c-ca16-4319-a6fa-9e0f29372a14
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：用 Espresso 测试 AdapterView'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338497
+      - 338498
+      - 338499
+      - 338500
+      - 338502
+      - 338503
+      - 338504
+      - 338505
+      - 338506
+      - 338507
+      - 338509
+      - 338510
+    atoms:
+      - id: 338497
+        key: a5d03ad4-3e9d-470e-a98f-658888288625
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 用 Espresso 测试 AdapterView
+
+          在此练习中，你将构建完毕 `MenuActivityScreenTest`，它会演示用户在 `MenuActivity` 中对 `GridView` 项进行点击操作，并打开相应的 `OrderActivity`。
+
+          ### 练习代码
+          **练习：**[TESP.02-Exercise-AddMenuActivityScreenTest](https://github.com/udacity/AdvancedAndroid_TeaTime/tree/TESP.02-Exercise-AddMenuActivityScreenTest)
+
+          ___
+        instructor_notes: ''
+        resources: null
+      - id: 338498
+        key: 333270bf-2870-4db8-aa8a-7219f5730c6a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58f532ff_screen-shot-2017-04-17-at-2.26.12-pm/screen-shot-2017-04-17-at-2.26.12-pm.png'
+        width: 870
+        height: 576
+        caption: AdapterView 包括 ListView 和 GridView
+        resources: null
+        instructor_notes: null
+      - id: 338499
+        key: 0b3355b2-da0e-41bc-806c-8bea16857ebe
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          虽然 `onView()` 可以处理我们的 UI 中的大部分视图，但是 Espresso 在调用 AdapterView 小部件时，需要不同的方法调用。因为 AdapterView（例如 *ListView* 和 *GridView*）会从 Adapter 中动态加载数据，所以每次可能只有一部分内容可能会加载到当前的视图层级中。这意味着 `onView()` 可能无法找到所需的视图。 
+
+          要解决这一问题，我们需要使用 `onData()`，它会将我们感兴趣的适配器项加载到屏幕上，然后再在上面进行操作。 
+        instructor_notes: ''
+        resources: null
+      - id: 338500
+        key: 2e879ce5-0fe7-407e-bb08-985901f0c6ed
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58f53542_screen-shot-2017-04-17-at-2.35.26-pm/screen-shot-2017-04-17-at-2.35.26-pm.png'
+        width: 956
+        height: 738
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338502
+        key: 26b31788-d214-49c9-b1ea-73dd19ee1df6
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘为了帮助我们进一步指定 AdapterView 中我们感兴趣的项，我们可以使用 *DataOption* 方法，例如 `inAdapterView()` 或 `atPosition()`。这些方法在下面的备忘单中处于突显状态。'
+        instructor_notes: ''
+        resources: null
+      - id: 338503
+        key: b0efeecb-7736-4753-8b56-03853a56df84
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58f53648_screen-shot-2017-04-17-at-2.40.12-pm/screen-shot-2017-04-17-at-2.40.12-pm.png'
+        width: 1432
+        height: 780
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338504
+        key: 28f523b2-524f-42f0-b9be-58a99c1efd19
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          然后，我们*执行*操作，并*检查*确保在感兴趣的视图上出现期望的结果。 
+
+          注意，我们在 AdapterView 中测试视图的方式与测试单个视图的方式非常相似：*匹配、操作和确认*。 
+        instructor_notes: ''
+        resources: null
+      - id: 338505
+        key: 89295f83-06b9-47a8-9b99-eccfa0ebf83c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58f536dd_screen-shot-2017-04-17-at-2.42.41-pm/screen-shot-2017-04-17-at-2.42.41-pm.png'
+        width: 1450
+        height: 728
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338506
+        key: 7e17dd3d-850f-4888-971a-283b7f7f237c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          你可能已经猜到，最佳尝试位置是 TeaTime 的 MenuActivity 中的 GridView！
+
+          我要运行的一项测试是点击 gridView 茶饮项目，并检查是否会打开相应的茶饮 OrderActivity。 
+        instructor_notes: ''
+        resources: null
+      - id: 338507
+        key: ab275577-2b17-4f5b-8fb2-72e1157c3f7e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58f537c9_screen-shot-2017-04-17-at-2.46.09-pm/screen-shot-2017-04-17-at-2.46.09-pm.png'
+        width: 1016
+        height: 714
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338509
+        key: d8a0978f-d22d-4ed7-b5b8-98df14208ed0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          对于这道练习，请从 [TESP.02-Exercise-AddMenuActivityScreenTest](https://github.com/udacity/AdvancedAndroid_TeaTime/tree/TESP.02-Exercise-AddMenuActivityScreenTest) 下载代码。
+
+          你会发现，我已经添加了 MenuActivityScreenTest.java 框架内容和一些 TODO。 
+
+          这次，我将提供更少的提示，因为我想让你自己去探索如何在 gridView 项目上执行点击操作。然后，你将通过验证茶饮名称文本视图，检查是否能打开正确的 OrderActivity。 
+
+          如果你想知道使用哪个方法来指定特定的 AdapterView 项目，请参阅下面的资料以获取提示。
+
+          ### 资源
+          - 请参阅 [Espresso 备忘单](https://google.github.io/android-testing-support-library/docs/espresso/cheatsheet/)的“数据选项”部分
+          - 请查看 [DataInteraction 文档](https://developer.android.com/reference/android/support/test/espresso/DataInteraction.html)中的数据选项方法说明
+        instructor_notes: ''
+        resources: null
+      - id: 338510
+        key: b7591b34-a9f2-405c-beb5-834342989043
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 添加测试运行者注释
+          - 添加规则以测试单个 activity
+          - 完成点击 gridView 项目的测试，并验证 OrderActivity 是否能打开正确的茶饮名称
+        positive_feedback: |-
+          很棒！到目前为止，我们已经介绍了 2 种类型的 Espresso 测试。很快就会介绍更多类型的测试。
+
+          **解决方案：**[[ESP.02-Solution-AddMenuActivityScreenTest](https://github.com/udacity/AdvancedAndroid_TeaTime/tree/TESP.02-Solution-AddMenuActivityScreenTest)][[Diff](https://github.com/udacity/AdvancedAndroid_TeaTime/compare/TESP.02-Exercise-AddMenuActivityScreenTest...TESP.02-Solution-AddMenuActivityScreenTest?expand=1)]
+        video_feedback: null
+        description: 请按照 TODO 操作，完成此练习。
+  - id: 338590
+    key: a5259737-1e94-4b53-9fbf-3c79101436c6
+    locale: zh-cn
+    version: 1.0.0
+    title: 用 Espresso 测试 Intent
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338511
+    atoms:
+      - id: 338511
+        key: a58fb237-dba1-4e0b-95c7-257956ed464e
+        locale: zh-cn
+        version: 1.0.0
+        title: 用 Espresso 测试 Intent
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54211'
+          youtube_id: XasgA5xq5Mo
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8c8_10-test-intents-with-espresso/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8c8_10-test-intents-with-espresso/10-test-intents-with-espresso_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8c8_10-test-intents-with-espresso/10-test-intents-with-espresso_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8c8_10-test-intents-with-espresso/10-test-intents-with-espresso_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8c8_10-test-intents-with-espresso/10-test-intents-with-espresso_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8c8_10-test-intents-with-espresso/hls/playlist.m3u8'
+  - id: 338592
+    key: 75ca4757-dd41-4300-b563-0c5af4610b91
+    locale: zh-cn
+    version: 1.0.0
+    title: Intent Stubbing 与 Intent Verification
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338512
+    atoms:
+      - id: 338512
+        key: c75bc179-7d4f-467a-a32c-85d2e3033d55
+        locale: zh-cn
+        version: 1.0.0
+        title: Intent Stubbing 与 Intent Verification
+        semantic_type: MatchingQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          complex_prompt:
+            text: ‘为了掌握 Intent Stubbing 和 Intent Verification 这两个概念，以及如何实现它们，请完成下面的拖放测验。请将正确的特征与相关的 Intent 测试类型相匹配。'
+          default_feedback: null
+          correct_feedback: 不错！Intent Stubbing 用来测试 intent 响应能力，Intent Verification 用来测试所发送的内容。
+          video_feedback: null
+          concepts_label: Intent 操作类型
+          answers_label: 特征
+          concepts:
+            - text: Intent Stubbing 代码
+              default_concept_feedback: null
+              correct_answer:
+                id: a1489014246046
+                text: '*intending(Matcher<Intent> matcher)*'
+              incorrect_feedbacks: []
+            - text: Intent Stubbing 说明
+              default_concept_feedback: null
+              correct_answer:
+                id: a1489014363381
+                text: 在测试期间，使用一小段代码作为 intent 调用的虚假响应。这么做的好处是可以得出一致的结果，使我们能够一次测试一项操作
+              incorrect_feedbacks: []
+            - text: Intent Verification 代码
+              default_concept_feedback: null
+              correct_answer:
+                id: a1489014667320
+                text: '*intended(Matcher<Intent> matcher, VerificationMode verification)*'
+              incorrect_feedbacks: []
+            - text: Intent Verification 说明
+              default_concept_feedback: null
+              correct_answer:
+                id: a1489014677837
+                text: 使用硬编码的 matcher 来验证我们打算在 intent 中发送的信息是我们所发送的信息
+              incorrect_feedbacks: []
+          answers:
+            - id: a1489014246046
+              text: '*intending(Matcher<Intent> matcher)*'
+            - id: a1489014363381
+              text: 在测试期间，使用一小段代码作为 intent 调用的虚假响应。这么做的好处是可以得出一致的结果，使我们能够一次测试一项操作
+            - id: a1489014667320
+              text: '*intended(Matcher<Intent> matcher, VerificationMode verification)*'
+            - id: a1489014677837
+              text: 使用硬编码的 matcher 来验证我们打算在 intent 中发送的信息是我们所发送的信息
+
+  - id: 338620
+    key: f0c53eb6-722d-4558-b317-d4205dc7822d
+    locale: zh-cn
+    version: 1.0.0
+    title: Intent Stubbing 代码示例
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338513
+      - 338514
+      - 338515
+      - 338516
+      - 338517
+      - 338518
+      - 338519
+      - 338520
+      - 338521
+      - 338522
+      - 338523
+    atoms:
+      - id: 338513
+        key: e59a387b-e6af-4716-b8ee-33904bed9cd0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # Intent Stubbing 代码示例
+
+          我们来看一个 Intent Stubbing 使用示例。请转到 [IntentBasicSample 代码](https://github.com/googlesamples/android-testing/tree/master/ui/espresso/IntentsBasicSample)（由 Google 团队创建）。
+
+          ## 分析 DialerActivity
+          此项目包含一个 [DialerActivity](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IntentsBasicSample/app/src/main/java/com/example/android/testing/espresso/BasicSample/DialerActivity.java)，用户可以在其中输入电话号码。
+
+          按下“呼叫号码”后，系统就会使用 `ACTION_CALL` Intent 将输入的号码发送给本机 Android 应用。
+          还有一个“选择号码”按钮，它会启动一个虚拟 `ContactsActivity`，用于展示 Intent Stubbing。 
+
+
+        instructor_notes: ''
+        resources: null
+      - id: 338514
+        key: 0733488e-6019-4454-b1cc-9ccc23a70fef
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c0a31b_basicsample-dialeractivity-03082017162610/basicsample-dialeractivity-03082017162610.png'
+        width: 1080
+        height: 1920
+        caption: DialerActivity 屏幕
+        resources: null
+        instructor_notes: null
+      - id: 338515
+        key: eaf58843-b642-48fb-af21-1fa6400fd4b3
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Analyze DialerActivityTest
+          该项目还包含一个 [DialerActivityTest](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IntentsBasicSample/app/src/androidTest/java/com/example/android/testing/espresso/BasicSample/DialerActivityTest.java) 文件。
+
+          我们逐步讲解该测试。
+
+          ### `@RunWith`
+
+          该测试与 `AndroidJUnit4` 一起运行，后者我们之前已经见过：
+          ```java
+          @RunWith(AndroidJUnit4.class)
+          ```
+
+          ### `@Rule` 
+          此测试使用的是 [IntentsTestRule](https://developer.android.com/reference/android/support/test/espresso/intent/rule/IntentsTestRule.html)，而不是我们之前见到的 `ActivityTestRule`。该规则扩展自 `ActivityTestRule`，后者在每个 Espresso 测试 (`@Test`) 运行前先初始化 Intent，并在每个测试运行完毕后释放 Intent。每次测试完毕后，相关的 activity 都会被终止。 
+        instructor_notes: ''
+        resources: null
+      - id: 338516
+        key: 848977a0-4d62-43d9-981c-f4111f271fb3
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c0a67e_screen-shot-2017-03-08-at-4.48.49-pm/screen-shot-2017-03-08-at-4.48.49-pm.png'
+        width: 1160
+        height: 136
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338517
+        key: 0a3ffc96-f07e-412d-b76e-a9272d7af05b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ### `@Before` - `stubAllExternalIntents()`
+          正如在下面的代码段的注释中提到的，默认情况下，Espresso Intent 不会插桩任何 Intent；相反，每次运行测试时，都必须设置插桩。方法 `stubAllExternalIntents()` 确保所有外部 Intent 都被屏蔽了。 
+        instructor_notes: ''
+        resources: null
+      - id: 338518
+        key: ed5bc412-15ae-457d-9a75-2a7f76572f77
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c0a96b_screen-shot-2017-03-08-at-5.01.05-pm/screen-shot-2017-03-08-at-5.01.05-pm.png'
+        width: 1438
+        height: 264
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338519
+        key: 9e8d94e1-dec7-42e3-9292-b8df1b68b36c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          它使用与插桩相关的 `intending()` 方法并传入 `not(isInternal())` 作为其 `IntentMatcher` 参数。[isInternal()][1] 与相关 intent 匹配（如果该 intent 的软件包与设备化测试的目标软件包相同），因此 `not(isInternal())` 检查该 intent 的软件包是否与测试的目标软件包不匹配。如果不匹配，则做出以下响应：
+
+          ```java
+          new ActivityResult(Activity.RESULT_OK, null)
+          ```
+
+          `ActivityResult(int resultCode, Intent resultData)` 具有 2 个参数。
+          - `resultCode` - 发送回原始 activity 的代码。`RESULT_OK` 表示操作成功。 
+          - `resultData` - 发送回原始 activity 的数据。`null` 表示未发送回任何数据。
+
+          ### `@Before` - `grantPhonePermission()`
+          面向 Android M+，确保已授予使用手机的权限，然后再运行 DialerActivityTest。 
+
+          [1]: https://developer.android.com/reference/android/support/test/espresso/intent/matcher/IntentMatchers.html#isInternal()
+        instructor_notes: ''
+        resources: null
+      - id: 338520
+        key: a76b2112-74fa-4d5e-b53e-bf1a7d05f31a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c0ae54_screen-shot-2017-03-08-at-5.20.26-pm/screen-shot-2017-03-08-at-5.20.26-pm.png'
+        width: 1192
+        height: 362
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338521
+        key: 96b65a99-7258-4e00-8fbe-fccf82ac6530
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### @Test - pickContactButton_click_SelectsPhoneNumber()
+          此测试会模拟用户在 DialerActivity 中点击“联系按钮”，然后向 ContactsActivity 插桩一个 intent，以返回硬编码的 VALID_PHONE_NUMBER，最后测试检查确保发送回的电话号码显示在 UI 上。
+
+          intent 在以下位置插桩：
+        instructor_notes: ''
+        resources: null
+      - id: 338522
+        key: f6b7439a-7c48-44c7-aad7-e7d9ccd42ac6
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c0b53b_screen-shot-2017-03-08-at-5.49.43-pm/screen-shot-2017-03-08-at-5.49.43-pm.png'
+        width: 1082
+        height: 134
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338523
+        key: 4ccc9562-4e0a-461d-bf17-0c8b5f77faf8
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          *hasComponent()* 可以根据类名称、软件包名称或简短类名称来匹配 intent。这里我们将 ShortClassName 与 ContactsActivity 相匹配。
+          匹配后，做出以下响应：
+
+          ```java
+          new ActivityResult(Activity.RESULT_OK, ContactsActivity.createResultData(VALID_PHONE_NUMBER))
+          ```
+
+          *ActivityResult(int resultCode, Intent resultData)* 具有 2 个参数。 
+          - *resultCode* - 发送回原始 activity 的代码。*RESULT_OK* 表示操作成功。 
+          - *resultData* - 发送回原始 activity 的数据。这里，[ContactsActivity.createResultData(VALID_PHONE_NUMBER)](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IntentsBasicSample/app/src/main/java/com/example/android/testing/espresso/BasicSample/ContactsActivity.java) 创建了一个 resultData 对象，其中包含将发送回 DialerActivity 的电话号码。 
+
+          ### 总结
+          Intent Stubbing 测试 *pickContactButton_click_SelectsPhoneNumber()* 通过传递硬编码的电话号码“VALID_PHONE_NUMBER”，插桩在用户点击“联系按钮”时发送的 intent。
+        instructor_notes: ''
+        resources: null
+  - id: 338632
+    key: a909598a-3dd2-4c11-b298-d0baeaaaa874
+    locale: zh-cn
+    version: 1.0.0
+    title: Intent Verification 代码示例
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338524
+      - 338525
+      - 338526
+      - 338527
+      - 338528
+      - 338529
+      - 338530
+    atoms:
+      - id: 338524
+        key: bbf33fd6-2093-4766-a57b-e1a3dbd40a3c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # Intent Verification 代码示例
+
+          现在我们来看看 Intent Verification 示例。再次转到 [IntentBasicSample 代码](https://github.com/googlesamples/android-testing/tree/master/ui/espresso/IntentsBasicSample)（由 Google 团队创建）。
+
+          （请查看上一节的内容，了解 [DialerActivity](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IntentsBasicSample/app/src/main/java/com/example/android/testing/espresso/BasicSample/DialerActivity.java) 以及 [DialerActivityTest](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IntentsBasicSample/app/src/androidTest/java/com/example/android/testing/espresso/BasicSample/DialerActivityTest.java) 的 `@Rule` 和 `@Before` 组件。
+
+        instructor_notes: ''
+        resources: null
+      - id: 338525
+        key: 218b98af-5832-4ada-a716-db033435dc32
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c0c1df_basicsample-dialeractivity-03082017162610/basicsample-dialeractivity-03082017162610.png'
+        width: 1080
+        height: 1920
+        caption: DialerActivity 屏幕
+        resources: null
+        instructor_notes: null
+      - id: 338526
+        key: a37f95b6-e583-4f5c-b9f2-53c364839060
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### @Test - typeNumber_ValidInput_InitiatesCall()
+          此测试模拟的是在 `DialerActivity` 中的 EditText 字段输入电话号码，并验证是否向拨号器的 intent 发送了正确的操作、电话号码和软件包。
+
+          这部分代码模拟的是在 `DialerActivity` 中输入电话号码： 
+        instructor_notes: ''
+        resources: null
+      - id: 338527
+        key: 69d70842-c12c-40f3-86c5-17eb59a85b28
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c0c172_screen-shot-2017-03-08-at-6.43.50-pm/screen-shot-2017-03-08-at-6.43.50-pm.png'
+        width: 1306
+        height: 252
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338528
+        key: eb99d5e0-aaf9-4e55-bc17-26c79ee3107b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘该方法的这一部分验证的是指向拨号器的 intent 是否具有正确的操作、数据和软件包：’
+        instructor_notes: ''
+        resources: null
+      - id: 338529
+        key: 7635e68b-955d-4aea-9d7e-6f647ebc5833
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c0c328_screen-shot-2017-03-08-at-6.48.07-pm/screen-shot-2017-03-08-at-6.48.07-pm.png'
+        width: 1352
+        height: 258
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338530
+        key: 42f7e0d8-4be7-4882-b803-6ab0a325b2c6
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### 总结
+
+          Intent Verification 测试 `typeNumber_ValidInput_InitiatesCall()` 验证的是发送的 intent 是否包含正确的信息（例如操作、数据、软件包）。 
+        instructor_notes: ''
+        resources: null
+  - id: 338633
+    key: 8272d3fd-a963-499b-b752-b84834287003
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：在 TeaTime 中添加 Intent 测试’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338531
+      - 338532
+    atoms:
+      - id: 338531
+        key: 14a0218c-3d3a-4bf9-b06e-473ab7ec6b5f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 在 TeaTime 中添加 Intent 测试
+
+          在此练习中，你的任务是编写完 `OrderSummaryActivityTest`。  `OrderSummaryActivityTest` 将测试从 `OrderSummaryActivity` 发送的电子邮件 intent。
+
+          我将请你判断 intent stubbing 或 intent verification 是否是这种情况。 
+
+
+          ### 练习代码
+          **练习：**[TESP.03-Exercise-AddOrderSummaryActivityTest](https://github.com/udacity/AdvancedAndroid_TeaTime/tree/TESP.03-Exercise-AddOrderSummaryActivityTest)
+        instructor_notes: ''
+        resources: null
+      - id: 338532
+        key: 8e8330dd-c81a-43d4-b7ab-27d0d7b6e282
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 将 AndroidJUnitRunner 指定为测试运行者
+          - 添加在功能性 UI 测试中使用 Espresso-intents API 的规则
+          - 对于每个测试，完成在测试前运行并插桩所有外部 intent（使所有外部 intent 被屏蔽）的方法
+          - 完成验证电子邮件 intent 的方法
+          - 添加所有必要的构建依赖项
+        positive_feedback: |-
+          希望在 Espresso 中测试 intent 不是太难 :)
+
+          **解决方案：**[[TESP.03-Solution-AddOrderSummaryActivityTest](https://github.com/udacity/AdvancedAndroid_TeaTime/tree/TESP.03-Solution-AddOrderSummaryActivityTest)][[Diff](https://github.com/udacity/AdvancedAndroid_TeaTime/compare/TESP.03-Exercise-AddOrderSummaryActivityTest...TESP.03-Solution-AddOrderSummaryActivityTest?expand=1)]
+        video_feedback: null
+        description: ‘请按照 TODO 操作，完成这道练习：’
+  - id: 338634
+    key: 08c90b8c-bc42-4a5f-b670-d678aa15337a
+    locale: zh-cn
+    version: 1.0.0
+    title: Espresso Idling Resource 简介
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338533
+    atoms:
+      - id: 338533
+        key: 7b02d322-d14f-4b01-acba-907be563fd11
+        locale: zh-cn
+        version: 1.0.0
+        title: Espresso Idling Resource 简介
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54212'
+          youtube_id: pkZiBXGgSDQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8cb_16-introduction-to-expresso-idling-resource-v1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8cb_16-introduction-to-expresso-idling-resource-v1/16-introduction-to-expresso-idling-resource-v1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8cb_16-introduction-to-expresso-idling-resource-v1/16-introduction-to-expresso-idling-resource-v1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8cb_16-introduction-to-expresso-idling-resource-v1/16-introduction-to-expresso-idling-resource-v1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8cb_16-introduction-to-expresso-idling-resource-v1/16-introduction-to-expresso-idling-resource-v1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ffa8cb_16-introduction-to-expresso-idling-resource-v1/hls/playlist.m3u8'
+  - id: 338635
+    key: f355478b-c714-4423-9be7-ce1d9d1bacc3
+    locale: zh-cn
+    version: 1.0.0
+    title: 何时使用 Idling Resource
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338534
+    atoms:
+      - id: 338534
+        key: 63189227-847a-40c7-8f38-4163636c0d15
+        locale: zh-cn
+        version: 1.0.0
+        title: 何时使用 Idling Resource
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            选择在用 Espresso 测试应用时我们应该实现 Idling Resource 的所有情形
+          correct_feedback: |-
+            第一个示例是使用 IntentService 的照片编辑应用，它是使用 IdlingResource 的最佳示例。诸如 IntentService 这样的服务会异步地从主线程上检索信息并返回信息，需要 IdlingResource 来进行设置，否则 UI 测试可能会继续进行测试，即使 Broadcast 尚未返回处理过的图片。 
+
+            在第二种情形中，当用户打开应用并选择菜单项时，可能会存在加载时间延迟。为了避免在遇到这种情形时测试失败了，我们需要注册 Idling Resource，以便 Espresso 知道等待应用进入“闲置”状态，然后才开始处理测试。
+
+             在第三个应用中，可能你会觉得处理大型账单会耗费很长的时间，在进行 Espresso 测试时需要设置闲置资源；但是，这一流程不太可能会异步发生，Espresso 可以处理这种情形，无需我们来设置 Idling Resource
+
+            在最后一个应用中，因为验证用户的登录信息不在设备前台发生，而是在后台线程上发生，所以我们需要创建并注册 Idling Resource，以便在进行 Espresso 测试时不会遇到问题。 
+          video_feedback: null
+          default_feedback: Idling Resource 适用于在测试执行期间会出现异步后台工作的情形，包括在单独的线程上或排队等待执行任务。
+          answers:
+            - id: a1489028011385
+              text: '照片编辑应用使用 IntentService 来下载和处理图片，并通过 Broadcast 将结果返回 activity。’
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489028049961
+              text: ‘冷饮店会不断更改移动订单应用中的菜单。当用户打开该应用下单时，应用会下载每个菜单项的图片和说明。’
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489028050826
+              text: ‘这款计数器应用使用户能够在一起用餐的朋友之间计算 AA 账单。传入用餐总费用、用餐人数、每个人点的食物，进行处理，然后返回每个人应该支付的费用。’
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489028069465
+              text: ‘为了登录银行应用，用户必须输入用户名和密码，以及需要通过外部客户端验证的信息。应用会将请求是否成功的响应返回给用户的设备。'
+              is_correct: true
+              incorrect_feedback: null
+  - id: 338636
+    key: d08f4f11-b8ff-4913-9766-5fb610a59de7
+    locale: zh-cn
+    version: 1.0.0
+    title: Idling Resource 代码示例 - 第 1 部分
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338535
+      - 338536
+      - 338537
+      - 338538
+      - 338539
+      - 338540
+      - 338541
+      - 338542
+      - 338543
+    atoms:
+      - id: 338535
+        key: c40beb92-0406-458f-ad1b-fd0bd914c002
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Idling Resource 代码示例 - 第 1 部分
+
+          我们构建的 TeaTime 应用目前在 ArrayList 中有 6 种类型的茶饮，但实际上让我们构建这款应用的茶馆具有多得多的茶饮类型。店主非常喜欢喝茶，总是会想出新的茶饮，并添加到菜单上。 
+
+          这意味着，当用户打开 TeaTime 应用时，应用需要下载最新的菜单图片和说明。 
+
+          和在上一道测验中看到的冷饮店情形差不多，根本没想到这一点，真的 :)
+
+          但是，在开始实现 IdlingResource 之前，我们看一个简单的示例，了解如何设置。 
+
+          ## 基本 Idling Resource 示例应用
+
+          Android 测试团队创建了一个基本 Idling Resource 应用示例。
+          建议打开以下链接中的代码，并跟我一起研究这些文件。
+
+          **[在此处查找代码](https://github.com/googlesamples/android-testing/tree/master/ui/espresso/IdlingResourceSample)**
+
+          下面是应用的运行效果：
+        instructor_notes: ''
+        resources: null
+      - id: 338536
+        key: b129077f-ca20-4a86-9464-fc081e48e72b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c19e8c_screen-shot-2017-03-09-at-10.27.06-am/screen-shot-2017-03-09-at-10.27.06-am.png'
+        width: 836
+        height: 372
+        caption: 在 EditText 字段中输入内容 > 点按按钮 > 延迟消息 > TextView 显示输入的消息
+        resources: null
+        instructor_notes: null
+      - id: 338537
+        key: a99933b0-63e7-4909-8f40-3d0eacb1f476
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 代码讲解
+
+          有 3 个 java 文件 - `SimpleIdlingResource.java`、`MainActivity.java` 和`MessageDelayer.java`。 
+
+          ### SimpleIdlingResource.java
+
+          我们从 [SimpleIdlingResource.java](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IdlingResourceSample/app/src/main/java/com/example/android/testing/espresso/IdlingResourceSample/IdlingResource/SimpleIdlingResource.java) 开始
+
+          正如该文件顶部的注释所表明的，这是一个非常简单的 [IdlingResource interface](https://developer.android.com/reference/android/support/test/espresso/IdlingResource.html) 实现：
+        instructor_notes: ''
+        resources: null
+      - id: 338538
+        key: be0640b7-72f9-4bd8-9fe7-e6213ac58820
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c1a06a_screen-shot-2017-03-09-at-10.34.31-am/screen-shot-2017-03-09-at-10.34.31-am.png'
+        width: 467
+        height: 50
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338539
+        key: 414f15af-960c-49d9-b42a-f9a159b76a55
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘因为是个接口，我们可以根据此[开发者文档](https://developer.android.com/reference/android/support/test/espresso/IdlingResource.html#nestedclassesl)判断我们需要完成以下 3 个方法：'
+        instructor_notes: ''
+        resources: null
+      - id: 338540
+        key: fc9496d3-c204-4b05-a4b2-cae87dd95e51
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c1a0e2_screen-shot-2017-03-09-at-10.36.44-am/screen-shot-2017-03-09-at-10.36.44-am.png'
+        width: 931
+        height: 218
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338541
+        key: e45aab10-0187-4d23-9c33-e4d575089170
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘这些方法在此处实现：'
+        instructor_notes: ''
+        resources: null
+      - id: 338542
+        key: d961849b-b7c2-42ee-b185-096c1d480eb1
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c1a32b_screen-shot-2017-03-09-at-10.46.33-am/screen-shot-2017-03-09-at-10.46.33-am.png'
+        width: 642
+        height: 422
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338543
+        key: 2ae0c95d-c0fd-4f1e-b301-8a6671cbc433
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          在上述代码中，我们还初始化了 [AtomicBoolean](https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html) 对象来控制闲置状态。此类为我们提供了一个“布尔型”变量，可以被自动读取和写入内容。当有多个线程需要检查和更改该布尔型变量时，则使用 `AtomicBoolean`。对我们来说，这刚刚好。
+
+          注意，*如果 idle 是 false*，则后台存在待定操作，任何测试操作都应暂停。 
+          *如果 idle 为 true*，则一切已清空，可以继续测试操作。 
+
+          ## 总结
+          `IdlingResource` 接口的实现过程很简单：需要完成 3 个必需方法。我们还创建了一个 [AtomicBoolean](https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html) 实例，以便控制多个线程上的闲置状态。
+
+          接着，我们将讨论 `MainActivity`，我们将在其中使用 `IdlingResource`。
+
+          ---
+
+          ## 详细了解：
+          - [IdlingResource 接口](https://developer.android.com/reference/android/support/test/espresso/IdlingResource.html)
+
+          - [Espresso Idling Resource](https://google.github.io/android-testing-support-library/docs/espresso/idling-resource/)
+        instructor_notes: ''
+        resources: null
+  - id: 338637
+    key: 1449718b-df48-4789-a152-4e52f0093006
+    locale: zh-cn
+    version: 1.0.0
+    title: Idling Resource 代码示例 - 第 2 部分
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338544
+      - 338545
+      - 338546
+      - 338547
+      - 338548
+      - 338549
+      - 338550
+      - 338551
+      - 338552
+      - 338553
+      - 338554
+      - 338555
+      - 338556
+      - 338557
+      - 338558
+      - 338559
+      - 338560
+      - 338561
+      - 338562
+    atoms:
+      - id: 338544
+        key: a0fff2ed-4bd1-48e0-938a-7fc907601f26
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Idling Resource 代码示例 - 第 2 部分
+
+          建议打开以下链接中的代码，并跟我一起研究这些文件。
+
+          **[在此处查找代码](https://github.com/googlesamples/android-testing/tree/master/ui/espresso/IdlingResourceSample)**
+
+          下面是应用的运行效果：
+        instructor_notes: ''
+        resources: null
+      - id: 338545
+        key: 09361bf3-fe56-427a-8aa1-e6ec0eba4d7c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c1ae65_screen-shot-2017-03-09-at-10.27.06-am/screen-shot-2017-03-09-at-10.27.06-am.png'
+        width: 836
+        height: 372
+        caption: 在 EditText 字段中输入内容 > 点按按钮 > 延迟消息 > TextView 显示输入的消息
+        resources: null
+        instructor_notes: null
+      - id: 338546
+        key: 593dff61-f564-4415-8431-3b611a0e6553
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### MainActivity.java
+          转到 [MainAcitivity.java](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IdlingResourceSample/app/src/main/java/com/example/android/testing/espresso/IdlingResourceSample/MainActivity.java)。在 `MainActivity` 类中，我们从用户那获得了一个文本 `String`，并在延迟之后显示该字符串。
+
+          `MainActivity` 扩展自 `Activity` 类，并实现了 [View.onClickListener](https://developer.android.com/reference/android/view/View.OnClickListener.html)（由 Android 框架创建）和 [Message.Delayer.DelayerCallback](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IdlingResourceSample/app/src/main/java/com/example/android/testing/espresso/IdlingResourceSample/MessageDelayer.java)（在此项目中创建的）。
+        instructor_notes: ''
+        resources: null
+      - id: 338547
+        key: 6457af0c-ba06-4c62-a9ce-18b95863402a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c1aceb_screen-shot-2017-03-09-at-11.28.14-am/screen-shot-2017-03-09-at-11.28.14-am.png'
+        width: 1214
+        height: 202
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338548
+        key: d13cac7a-e2ec-4013-b996-f7422e2dd95a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          接着声明 `TextView` 和 `EditText` 视图，它们已在 `onCreate()` 中进行设置。 
+
+          我们还定义了一个私有变量，叫做 *mIdlingResource*，类型是 `SimpleIdlingResource`。注意，它有一个注释 *@Nullable*，表示该变量在正式版中将为 `null`。这是因为这个 `IdlingResource` 设置仅用于测试，因此该项目在正式版中运行时，`IdlingResource` 可以为 `null`。 
+        instructor_notes: ''
+        resources: null
+      - id: 338549
+        key: 08089cc5-2b2a-4c5b-99d0-5669cffc9432
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c1aee3_screen-shot-2017-03-09-at-11.36.36-am/screen-shot-2017-03-09-at-11.36.36-am.png'
+        width: 1170
+        height: 802
+        caption: MainActivity.java - 声明变量和 onCreate()
+        resources: null
+        instructor_notes: null
+      - id: 338550
+        key: e0f3abc2-0d2c-4149-841d-4ca5f5668dc6
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          当 `changeTextBt` 被点击时，`onClick()` 会检索用户在 EditText 视图中输入的文本，设置临时等待消息，然后将用户输入的 EditText 值发送给 [MessageDelayer.java](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IdlingResourceSample/app/src/main/java/com/example/android/testing/espresso/IdlingResourceSample/MessageDelayer.java) 的 `processMessage()` 方法。
+        instructor_notes: ''
+        resources: null
+      - id: 338551
+        key: 92362867-624a-48f8-a9f5-8ea8f297d37f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c1b352_screen-shot-2017-03-09-at-11.55.46-am/screen-shot-2017-03-09-at-11.55.46-am.png'
+        width: 1130
+        height: 486
+        caption: MainActivity.java onClick() 方法
+        resources: null
+        instructor_notes: null
+      - id: 338552
+        key: a1226813-3cec-461e-a515-242ec0ade308
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### MessageDelayer.java
+          该类并不属于 Android 框架的一部分，是专门为此项目创建的。它传入一个 `String`，并在延迟后通过回调返回该字符串。它会在另一个线程上执行长时间运行的操作，如果未实现并注册 `IdlingResource`，则 Espresso 将出现问题。 
+
+          `processMessage()` 方法传入一个 `String`（用户在 `EditText 字段` 中输入的字符串），并在我们在 `DELAY_MILLIS` 中设置的延迟时间之后返回该字符串。通过 `onDone` 方法中的回调返回该 `String`。 
+        instructor_notes: ''
+        resources: null
+      - id: 338553
+        key: d5190b1a-627d-49e4-9e3e-374105b5e4f2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c1b3ab_screen-shot-2017-03-09-at-11.56.49-am/screen-shot-2017-03-09-at-11.56.49-am.png'
+        width: 1462
+        height: 1048
+        caption: MessageDelayer.java processMessage() 方法
+        resources: null
+        instructor_notes: null
+      - id: 338554
+        key: 63246a40-44ae-4a7b-8aa5-34f5e3b453de
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          `processMessage()` 具有 3 个参数：消息、在回调中返回的 activity，以及 `IdlingResource`。 
+
+          `if` 语句检查 `IdlingResource` 是否为 `null`。如果不为空，则可以继续将 `idle` 设为 `false`。注意，`idle` 表示：
+          - 当前消息队列中没有 UI 事件
+          - 默认的 AsyncTask 线程池中没有任务了
+
+          所以，如果 `idle` 为 `false`，则还有任务或事件在发生，所有测试都必须处于等待中，直到这些进程完毕了。
+
+          将 `idle` 设为 `false` 后，我们创建一个处理程序并运行方法 `postDelayed()`。 
+
+          `处理程序`到底是什么，`postDelayed()` 的目的是什么？
+
+          ### 处理程序
+          如果我们查看相关[开发者文档](https://developer.android.com/reference/android/os/Handler.html)，就会发现处理程序有两大用途： 
+
+        instructor_notes: ''
+        resources: null
+      - id: 338555
+        key: 8e345eb4-ee99-47be-bc75-68d86275e455
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c1b497_screen-shot-2017-03-09-at-12.01.07-pm/screen-shot-2017-03-09-at-12.01.07-pm.png'
+        width: 1556
+        height: 118
+        caption: Handler 类的开发者文档
+        resources: null
+        instructor_notes: null
+      - id: 338556
+        key: 9f67777e-1348-464e-8051-c878a5f79697
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: 在下面的代码中，我们看到 `postDelayed()` 向消息队列中添加了 `Runnable`，它将在指定的时间后运行。
+        instructor_notes: ''
+        resources: null
+      - id: 338557
+        key: 09474f79-5a13-400c-b25d-af14755b405c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c1b4f8_screen-shot-2017-03-09-at-12.02.49-pm/screen-shot-2017-03-09-at-12.02.49-pm.png'
+        width: 1574
+        height: 336
+        caption: Handler 类中 postDelayed() 方法的开发者文档
+        resources: null
+        instructor_notes: null
+      - id: 338558
+        key: 1c754868-003e-44c4-9cf4-dfde316776dd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          `postDelayed()` 的第一个参数是在延迟时间之后将运行的 Runnable。所以，什么会运行呢？ 
+        instructor_notes: ''
+        resources: null
+      - id: 338559
+        key: 471bb00b-3bf5-40fe-88e7-30656e292bbd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c1d761_screen-shot-2017-03-09-at-2.27.40-pm/screen-shot-2017-03-09-at-2.27.40-pm.png'
+        width: 874
+        height: 544
+        caption: handler.postDelayed() 具有 2 个参数：一个 Runnable 和一个延迟时间
+        resources: null
+        instructor_notes: null
+      - id: 338560
+        key: de3ab45b-85d1-4578-81d4-7db7a4559da1
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          `Runnable` 的第一个操作是检查我们在 `processMessage()`（即延迟之后应返回的 activity）中接收的回调。我们回到该 activity 的 `onDone()` 方法，并返回消息变量。 
+
+          然后检查 `idlingResource` 是否不为 `null`。如果不为 `null`，则将其状态设为 `true`。注意，如果应用是*闲置状态*，则表明 Espresso 等到绿灯了，可以继续执行测试中排队的任何操作。 
+
+          第二个参数“延迟时间”设为 `MessageDelayer.java` 中的常量 `DELAY_MILLIS`：
+        instructor_notes: ''
+        resources: null
+      - id: 338561
+        key: e05a46af-687a-40b7-9830-e2ea0b6f64b1
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c1d2b9_screen-shot-2017-03-09-at-2.08.27-pm/screen-shot-2017-03-09-at-2.08.27-pm.png'
+        width: 822
+        height: 38
+        caption: 在 MessageDelayer.java 中设置的延迟时间
+        resources: null
+        instructor_notes: null
+      - id: 338562
+        key: fb27a4e1-6252-4cbd-9085-50a4600b05e4
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 总结
+          我们先停下来，总结下到目前为止所学的知识。 
+
+          当 `changeTextBt` 被点击后，`MainActivity` 中的 `onClick()` 触发 MessageDelayer.processMessage()`。 
+
+          `processMessage()` 将 `IdlingResource` 设为 ` false`，然后创建一个 `Handler`，其中包含一个在预定延迟时间 `DELAY_MILLIS` 之后将运行的 Runnable。
+          在延迟之后将执行的 Runnable：
+
+          1) 通过回调将用户输入的 `String` 返回到调用 activity（例如 `MainActivity`）
+
+          2) 将 `IdlingResource` 设为 `true`
+
+          ---
+
+          ### 了解更多：
+          [@Nullable](https://developer.android.com/reference/android/support/annotation/Nullable.html)
+
+          [Handler](https://developer.android.com/reference/android/os/Handler.html)
+
+          [Runnable](https://developer.android.com/reference/java/lang/Runnable.html)
+
+          [Espresso Idling Resource](https://google.github.io/android-testing-support-library/docs/espresso/idling-resource/)
+        instructor_notes: ''
+        resources: null
+  - id: 338638
+    key: 68c3d675-4547-4ef9-b495-adef2267a650
+    locale: zh-cn
+    version: 1.0.0
+    title: Basic Idling Resource 代码示例
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338563
+      - 338564
+    atoms:
+      - id: 338563
+        key: b49062df-6e97-4d3f-87ab-52ab0fb85027
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘*太棒了。*我们刚刚了解了 Idling Resources 示例中的很多代码。为了检验你是否都掌握了，请完成下面的测验。’
+        instructor_notes: ''
+        resources: null
+      - id: 338564
+        key: fa926a62-a90c-4d79-adaf-46c2004308cd
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            请选择关于我们刚刚研究的 [BasicIdlingResourceSample](https://github.com/googlesamples/android-testing/tree/master/ui/espresso/IdlingResourceSample) 项目的所有正确描述：
+          correct_feedback: |-
+            你能够记住所有这些组件，很棒！
+
+            选项 2 不对。Espresso 将等应用进入闲置状态后才开始运行，所以当 `idlingResource` 的状态为 `true` 时，表明消息队列中没有事件了，所有 AsyncTask 都完成了，然后再转到下一个测试操作。
+
+            选项 3 不对。在此示例中，因为 `DelayerCallback` 是接口，所以任何实现它的类都必须替换 `onDone` 方法，该方法将返回一个文本字符串。 
+          video_feedback: null
+          default_feedback: |-
+            “闲置”是什么意思？
+
+            因为 `MainActivity` 会实现接口 `DelayerCallback`，所以在其中查找需要被替换的生命周期方法。 
+          answers:
+            - id: a1489099735299
+              text: '`MainActivity` 会实现 `MessageDelayer.DelayerCallback`，后者在 `onClick()` 方法中被触发。'
+              is_correct: true
+              incorrect_feedback: MessageDelayer.DelayerCallback 何时被触发？           
+	    - id: a1489100087261
+              text: 'Espresso 将等到 `idlingResource` 的状态变成 `false`，然后再继续进行下个测试操作。’
+              is_correct: false
+              incorrect_feedback: “闲置”是什么意思？
+            - id: a1489100094511
+              text: ‘在此示例中，回调通过 `onResume` 通知调用者（调用它的 activity）。’
+              is_correct: false
+              incorrect_feedback: ‘因为 MainActivity 会实现接口 DelayerCallback，所以到该接口中查找需要被替换的生命周期方法。’
+            - id: a1489100120122
+              text: ‘处理程序以异步形式通知 `MainActivity` 延迟时间 `DELAY_MILLIS` 已到，该处理程序会执行在方法 `onDone()` 中返回消息的 Runnable。’
+              is_correct: true
+              incorrect_feedback: 查看 handler.postDelayed() 中发生的情况
+  - id: 338639
+    key: 7e8095be-b018-4749-b349-014f2bf44f32
+    locale: zh-cn
+    version: 1.0.0
+    title: 在 MainActivity 中通过回调返回
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338566
+      - 338567
+      - 338565
+      - 338568
+      - 338569
+      - 338570
+      - 338571
+    atoms:
+      - id: 338566
+        key: 2e82860a-2d8f-41bd-a0ac-61f73f07f81f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # 在 MainActivity 中通过回调返回
+
+          在测验之前，我们从 [MessageDelayer.java](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IdlingResourceSample/app/src/main/java/com/example/android/testing/espresso/IdlingResourceSample/MessageDelayer.java) 中的 `handler.postDelayed()` 的结束之处暂停的，前者在一段延迟时间之后运行 Runnable。
+        instructor_notes: ''
+        resources: null
+      - id: 338567
+        key: 3eee7afd-39f1-4277-adae-918b94318a17
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c2eb51_screen-shot-2017-03-09-at-2.27.40-pm/screen-shot-2017-03-09-at-2.27.40-pm.png'
+        width: 874
+        height: 544
+        caption: handler.postDelayed() in MessageDelayer.java 在 DELAY_MILLIS 设定的时间之后执行 Runnable
+        resources: null
+        instructor_notes: null
+      - id: 338565
+        key: a28500fe-0aff-41ca-bfce-204a5cefe8cd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘现在，我们再仔细看看执行*回调*之后会发生什么。'
+        instructor_notes: ''
+        resources: null
+      - id: 338568
+        key: 242f5a64-3609-4e74-a5f1-a279f446f0b4
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c2ebb0_screen-shot-2017-03-09-at-2.26.42-pm/screen-shot-2017-03-09-at-2.26.42-pm.png'
+        width: 574
+        height: 190
+        caption: Runnable 会执行回调
+        resources: null
+        instructor_notes: null
+      - id: 338569
+        key: 1234b7d7-eeb6-4b8d-9d35-0613a658ebbd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          该方法调用表明我们需要转到在回调 activity（这里是 [MainActivity](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IdlingResourceSample/app/src/main/java/com/example/android/testing/espresso/IdlingResourceSample/MainActivity.java)）中实现的 *onDone()*。  
+
+          在 72 行，回到 [MainActivity.java](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IdlingResourceSample/app/src/main/java/com/example/android/testing/espresso/IdlingResourceSample/MainActivity.java)，我们找到我们的 *onDone()* 实现，并在其中将 TextView 设为用户在 EditText 中输入的文本
+        instructor_notes: ''
+        resources: null
+      - id: 338570
+        key: 44e4c23c-a85f-4052-90c6-dded4d0901a2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c2ec60_screen-shot-2017-03-10-at-10.11.25-am/screen-shot-2017-03-10-at-10.11.25-am.png'
+        width: 972
+        height: 204
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338571
+        key: a26ba23a-b96b-4ae9-95be-7f205de5e0ae
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          对于 `MainActivity` 的剩余部分，有方法 `getIdlingResource()`，其中具有注释 `@VisibleForTesting` 和 `@NonNull`，所以仅在测试期间被调用，值不能为 `null`。 
+          该方法返回新的 [SimpleIdlingResource](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IdlingResourceSample/app/src/main/java/com/example/android/testing/espresso/IdlingResourceSample/IdlingResource/SimpleIdlingResource.java) 实例。 
+
+          ## 总结
+          为了总结该特定示例中的所有新类和连接： 
+
+          1. 实现 `IdlingResource` 接口 ([SimpleIdlingResource.java](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IdlingResourceSample/app/src/main/java/com/example/android/testing/espresso/IdlingResourceSample/IdlingResource/SimpleIdlingResource.java))
+
+          2. 创建一个回调接口 ([MessageDelayer.java](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IdlingResourceSample/app/src/main/java/com/example/android/testing/espresso/IdlingResourceSample/MessageDelayer.java))，其中将会出现实际的异步任务
+
+          3. 任务运行时，将 `IdlingResource` 的状态设为 `false`，任务运行完毕后，将状态设为 `true`
+
+          4. 让延迟器通过回调 ([MainActivity.onDone](https://github.com/googlesamples/android-testing/blob/master/ui/espresso/IdlingResourceSample/app/src/main/java/com/example/android/testing/espresso/IdlingResourceSample/MainActivity.java)) 通知 activity 流程已完成
+        instructor_notes: ''
+        resources: null
+  - id: 338640
+    key: 336ba5f1-9fdb-4596-9b3e-6cc195e0391f
+    locale: zh-cn
+    version: 1.0.0
+    title: 在示例应用中添加 Idling Resource 测试
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338572
+    atoms:
+      - id: 338572
+        key: e0e53b59-e542-40ab-9eed-df2170137a5c
+        locale: zh-cn
+        version: 1.0.0
+        title: 在示例应用中添加 Idling Resource 测试
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52522'
+          youtube_id: 0cYsfEG0soE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd80_espresso-22-add-idling-resourse-test-in-sample-app/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd80_espresso-22-add-idling-resourse-test-in-sample-app/espresso-22-add-idling-resourse-test-in-sample-app_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd80_espresso-22-add-idling-resourse-test-in-sample-app/espresso-22-add-idling-resourse-test-in-sample-app_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd80_espresso-22-add-idling-resourse-test-in-sample-app/espresso-22-add-idling-resourse-test-in-sample-app_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd80_espresso-22-add-idling-resourse-test-in-sample-app/espresso-22-add-idling-resourse-test-in-sample-app_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd80_espresso-22-add-idling-resourse-test-in-sample-app/hls/playlist.m3u8'
+  - id: 338642
+    key: 03471cfe-9f6a-489b-8de8-5f4bd7c1104b
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：在 TeaTime 中添加 IdlingResourceActivityTest’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338573
+      - 338574
+      - 338575
+    atoms:
+      - id: 338573
+        key: 0e4c7839-6bfe-4e00-8d32-a92060eb49be
+        locale: zh-cn
+        version: 1.0.0
+        title: '练习：在 TeaTime 中添加 IdlingResourceActivityTest'
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52523'
+          youtube_id: hnN8bVR5Go8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd86_espresso-23-add-idling-resourse-activity-test-in-tea-time/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd86_espresso-23-add-idling-resourse-activity-test-in-tea-time/espresso-23-add-idling-resourse-activity-test-in-tea-time_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd86_espresso-23-add-idling-resourse-activity-test-in-tea-time/espresso-23-add-idling-resourse-activity-test-in-tea-time_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd86_espresso-23-add-idling-resourse-activity-test-in-tea-time/espresso-23-add-idling-resourse-activity-test-in-tea-time_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd86_espresso-23-add-idling-resourse-activity-test-in-tea-time/espresso-23-add-idling-resourse-activity-test-in-tea-time_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58decd86_espresso-23-add-idling-resourse-activity-test-in-tea-time/hls/playlist.m3u8'
+      - id: 338574
+        key: c0120d7e-bbe6-48f0-b80f-d6f9dd29a05c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 在 TeaTime 中添加 `IdlingResourceActivityTest`
+
+          在此练习中，你将实现 `IdlingResourceActivityTest`。我们将在应用中创建一个模块情景，模拟向 `MenuActivity` 中下载图片和说明时出现的时间延迟 
+
+          为了帮助你开始，我已经添加了 `SimpleIdlingResource` 类，它是 `IdlingResource` 的实现，可供你使用。
+
+          你需要修改 `MenuActivity`，以便正确地实现接口 `ImageDownloader`，它是一个回调接口。如果你不知道什么是回调接口，请复习前面介绍的概念。 
+
+          回调执行完毕后，它会将 Tea 对象数组列表（其中包含图片和茶饮名称）返回到 MenuActivity。 
+
+
+          ### 练习代码
+          **练习：**[TESP.04-Exercise-AddIdlingResourceMenuActivityTest](https://github.com/udacity/AdvancedAndroid_TeaTime/tree/TESP.04-Exercise-AddIdlingResourceMenuActivityTest)
+        instructor_notes: ''
+        resources: null
+      - id: 338575
+        key: a516821a-aa38-47a7-90a9-307b6accd8a0
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 为 `MenuActivity` 实现 `ImageDownloader.DelayerCallback`
+          - 添加 `SimpleIdlingResource` 变量
+          - 创建一个方法，返回 `IdlingResource` 变量
+          - 获取 `IdlingResource` 变量并从 `ImageDownloader` 中调用 `downloadImage`
+          - 替换 `onDone` 以通过回调返回 Tea 对象`数组列表`
+          - 注册 `IdlingResource`
+          - 测试 Tea 对象是否出现在 `gridView` 中
+          - 取消注册 `IdlingResource`
+          - 添加正确的 gradle 依赖项
+        positive_feedback: |-
+          你能够关联所有这些内容，很棒！
+
+          **解决方案：**[[TESP.04-Solution-AddIdlingResourceMenuActivityTest](https://github.com/udacity/AdvancedAndroid_TeaTime/tree/TESP.04-Solution-AddIdlingResourceMenuActivityTest)][[Diff](https://github.com/udacity/AdvancedAndroid_TeaTime/compare/TESP.04-Exercise-AddIdlingResourceMenuActivityTest...TESP.04-Solution-AddIdlingResourceMenuActivityTest?expand=11)]
+        video_feedback: null
+        description: ‘按照 TODO 操作，完成这道练习：’
+  - id: 338641
+    key: 04019f59-6a1e-4e36-a29c-258ce4d71629
+    locale: zh-cn
+    version: 1.0.0
+    title: 进一步探索 Espresso
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338576
+    atoms:
+      - id: 338576
+        key: 7b88af08-1b1a-4b38-89d6-18e0e9d6294d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 进一步探索 Espresso
+
+          Espresso 可以帮助我们测试：
+          - 视图
+          - AdapterView
+          - Intent
+          - Idling Resource
+          - Espresso Web（这节课未介绍）
+          - RecyclerView（这节课未介绍）
+
+          哇，我们学习了很多 Espresso 知识。还有一些组件我们没有讨论：
+
+          - **[Espresso Web](https://google.github.io/android-testing-support-library/docs/espresso/web/)** - 一个 API，用于为具有一个或多个 WebView 的应用编写自动化测试。Espresso Web 减少了与这些 WebView 互动所需的样板代码。
+
+          - **[Espresso RecylcerView](https://google.github.io/android-testing-support-library/docs/espresso/lists/#recyclerviews)** - Espresso RecyclerView 测试与AdapterView 测试有所不同。它不使用 onData；而是具有滚动到某个位置的操作或对项目执行操作。
+
+          ### Espresso Test Recorder
+          Android Studio 还具有 [Espresso Test Recorder](https://developer.android.com/studio/test/espresso-test-recorder.html)，使你能够通过录制与设备的互动情况来创建 UI 测试，Test Recorder 将为你自动生成测试代码！
+
+          这些测试是用我们刚刚介绍的同一 Espresso Testing 框架编写的。在制作本课程时，Test Recorder 还存在一些限制（例如，它无法处理 `IdlingResource`，只有有限数量的断言库）。但是，掌握了如何从头编写 Espresso 测试的知识后，如果你打算使用 Test Recorder，你将更容易理解、修改和更新任何自动生成的测试。
+
+          下面这些实用资源可以帮助你在未来实现这些测试：
+
+          - [Espresso Web](https://google.github.io/android-testing-support-library/docs/espresso/web/) - 示例  [此处](https://github.com/googlesamples/android-testing/tree/master/ui/espresso/WebBasicSample)和[此处](https://google.github.io/android-testing-support-library/docs/espresso/web/index.html) 
+          - [Espresso RecylcerView 测试](https://google.github.io/android-testing-support-library/docs/espresso/lists/#recyclerviews) - 示例 [此处](https://google.github.io/android-testing-support-library/docs/espresso/lists/index.html#recyclerviews)
+          - 使用 [Espresso Test Recorder](https://developer.android.com/studio/test/espresso-test-recorder.html)
+        instructor_notes: ''
+        resources: null
+  - id: 338647
+    key: 3183715d-7805-4a77-a817-5c2b52b8a7e8
+    locale: zh-cn
+    version: 1.0.0
+    title: 更广泛的测试领域
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338577
+      - 338578
+      - 338579
+      - 338580
+      - 338581
+      - 338582
+      - 338583
+    atoms:
+      - id: 338577
+        key: 7b43a193-bc4b-417e-a8ea-90047300ff02
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 更广泛的测试领域
+
+          ## 设备化单元测试
+
+          我们刚刚介绍了*用户界面测试*，它是一种*设备化单元测试*。此类测试必须在 Android 设备或模拟器上运行，因为它们依赖于 Android 框架。
+
+          例如，在计算器应用中，检查当用户在 UI 上进行点击时是否会触发正确的运算需要用到 Android 框架。 
+
+          设备化测试使用 AndroidJUnitRunner 来启动应用并在上面运行 UI 测试。 
+
+          正如我们看到的，设备化测试位于 * module-name/src/androidTest/java/* 下
+        instructor_notes: ''
+        resources: null
+      - id: 338578
+        key: f31a818a-2978-40b8-9ab4-5657ca6346bb
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c31c9c_screen-shot-2017-03-10-at-1.37.15-pm/screen-shot-2017-03-10-at-1.37.15-pm.png'
+        width: 507
+        height: 45
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338579
+        key: d3811313-8853-4171-b272-09043da9d04a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 本地单元测试
+
+          你可能看到其他项目（如 Sunshine 应用）中包含了其他测试，例如*本地单元测试*。本地单元测试是只能在本地 Java 虚拟机上运行的单元测试，但是不一定依赖于 Android 框架。 
+
+          例如，假设在 Calculator Android 项目中有一个类用于运算操作。测试这些运算方法不取决于 Android 框架。 
+
+          相反，你将使用 Java JUnit 测试框架进行该本地测试。 
+
+          本地单元测试位于项目文件夹的 *module-name/src/test/java/* 下。
+        instructor_notes: ''
+        resources: null
+      - id: 338580
+        key: 5ad267bf-cc62-42c4-879f-90af1e41e8d8
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c31bbf_screen-shot-2017-03-10-at-1.33.35-pm/screen-shot-2017-03-10-at-1.33.35-pm.png'
+        width: 1018
+        height: 88
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338581
+        key: 22a06947-112c-4057-97e2-f23f06ffc7b0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58c32587_screen-shot-2017-03-10-at-2.15.16-pm/screen-shot-2017-03-10-at-2.15.16-pm.png'
+        width: 836
+        height: 374
+        caption: ‘图片来源：Android Developers https://developer.android.com/training/testing/start/index.html'
+        resources: null
+        instructor_notes: null
+      - id: 338582
+        key: 5d838c1c-2557-4044-bbcd-9071ef0c27cd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## JUnit
+          [JUnit](http://junit.org/junit4/) 是一个框架，用于测试离散代码段（通常是方法）。 
+
+          Android 通过 [AndroidJUnit Test Runner](https://developer.android.com/topic/libraries/testing-support-library/index.html#ajur-junit) 提供 JUnit 测试支持。
+        instructor_notes: ''
+        resources: null
+      - id: 338583
+        key: 105a2fe7-b0be-434f-9a4c-820f17017a99
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Android Testing 支持库
+
+          Espresso 只是 Android Testing 支持库提供的一种自动化测试工具。该库还包括 AndroidJUnitRunner 和 UI Automator。 
+
+          - [AndroidJUnit](https://developer.android.com/topic/libraries/testing-support-library/index.html#AndroidJUnitRunner) - 在 Android 设备上运行 JUnit 样式测试的测试运行器。在 Espresso 测试中使用时，它会负责启动应用并运行 UI 测试。
+          - [Espresso](https://developer.android.com/topic/libraries/testing-support-library/index.html#Espresso) - 进行功能性 UI 测试的框架
+          - [UI Automator](https://developer.android.com/topic/libraries/testing-support-library/index.html#UIAutomator) - 在系统和安装的应用间进行跨应用功能性 UI 测试的框架
+
+          ## 了解更多
+          - [探索测试类型](https://developer.android.com/training/testing/start/index.html)
+          - [Android Testing 支持库](https://developer.android.com/topic/libraries/testing-support-library/index.html#ajur-junit)
+        instructor_notes: ''
+        resources: null
+  - id: 338648
+    key: 19278172-7e08-4c3e-9e96-f89331635208
+    locale: zh-cn
+    version: 1.0.0
+    title: Espresso 结尾部分
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338584
+    atoms:
+      - id: 338584
+        key: 85bd86a4-32d8-49ed-a888-e1270c804c44
+        locale: zh-cn
+        version: 1.0.0
+        title: Espresso 结尾部分
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58106'
+          youtube_id: 2yx0TEq0MNM
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593f1c15_26-outro-hs-1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593f1c15_26-outro-hs-1/26-outro-hs-1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593f1c15_26-outro-hs-1/26-outro-hs-1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593f1c15_26-outro-hs-1/26-outro-hs-1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593f1c15_26-outro-hs-1/26-outro-hs-1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593f1c15_26-outro-hs-1/hls/playlist.m3u8'

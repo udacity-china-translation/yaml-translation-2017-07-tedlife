@@ -1,0 +1,980 @@
+id: 338416
+key: 89b6a627-f121-498c-aa53-26304544b5f3
+locale: zh-cn
+version: 1.0.0
+title: Media Playback
+semantic_type: Lesson
+updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/59025440_nd801-ud855-media-playback/nd801-ud855-media-playback.png'
+  width: 928
+  height: 886
+video: null
+summary: ‘在这节课，你将通过在音乐测验应用中实现 ExoPlayer 库来学习 Media Playback。你还将学习后台播放、外部客户端、媒体会话等！'
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+_concepts_ids:
+  - 338391
+  - 338392
+  - 338398
+  - 338397
+  - 338393
+  - 338399
+  - 338401
+  - 338402
+  - 338404
+  - 338405
+  - 338406
+  - 338408
+  - 338407
+  - 338409
+  - 338410
+  - 338411
+  - 338412
+_project_id: null
+concepts:
+  - id: 338391
+    key: 4960f9d7-f7f9-43fe-a91e-078958479540
+    locale: zh-cn
+    version: 1.0.0
+    title: Media Playback 简介
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338242
+    atoms:
+      - id: 338242
+        key: 945f35d0-e7c3-4f12-a190-eaa1e3dbdc8f
+        locale: zh-cn
+        version: 1.0.0
+        title: Media Playback 简介
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53572'
+          youtube_id: fkyVGHZSaCo
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50a3e_01-media-intro-hs-a/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50a3e_01-media-intro-hs-a/01-media-intro-hs-a_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50a3e_01-media-intro-hs-a/01-media-intro-hs-a_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50a3e_01-media-intro-hs-a/01-media-intro-hs-a_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50a3e_01-media-intro-hs-a/01-media-intro-hs-a_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50a3e_01-media-intro-hs-a/hls/playlist.m3u8'
+  - id: 338392
+    key: 1acff325-45d3-4527-a43b-674c121cc555
+    locale: zh-cn
+    version: 1.0.0
+    title: 播放器 UI 结构
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338243
+    atoms:
+      - id: 338243
+        key: 1a740b57-912f-4369-b1da-cdadeda29c6f
+        locale: zh-cn
+        version: 1.0.0
+        title: 播放器 UI 结构
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54075'
+          youtube_id: 73iql6CCcbU
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe7599_02-l-player-ui-structure/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe7599_02-l-player-ui-structure/02-l-player-ui-structure_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe7599_02-l-player-ui-structure/02-l-player-ui-structure_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe7599_02-l-player-ui-structure/02-l-player-ui-structure_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe7599_02-l-player-ui-structure/02-l-player-ui-structure_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe7599_02-l-player-ui-structure/hls/playlist.m3u8'
+  - id: 338398
+    key: d614c7df-38d3-4746-b7c5-bdeb525de703
+    locale: zh-cn
+    version: 1.0.0
+    title: 音频视频
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338244
+    atoms:
+      - id: 338244
+        key: 54d67fd9-77b9-4011-abd4-09b114125d54
+        locale: zh-cn
+        version: 1.0.0
+        title: 音频视频
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54076'
+          youtube_id: nIbvaXjqWnM
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe759d_03-audio-video-hs-a/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe759d_03-audio-video-hs-a/03-audio-video-hs-a_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe759d_03-audio-video-hs-a/03-audio-video-hs-a_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe759d_03-audio-video-hs-a/03-audio-video-hs-a_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe759d_03-audio-video-hs-a/03-audio-video-hs-a_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe759d_03-audio-video-hs-a/hls/playlist.m3u8'
+  - id: 338397
+    key: 8af7b44d-8f97-42e0-8fac-37e3d760c331
+    locale: zh-cn
+    version: 1.0.0
+    title: 对比播放器
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338245
+    atoms:
+      - id: 338245
+        key: e82140fe-2e7a-46cf-baab-ee404605641a
+        locale: zh-cn
+        version: 1.0.0
+        title: 对比播放器
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          <a href="https://developers.google.com/youtube/" target="_blank">YouTube 开发者 API</a>
+
+          Media API：<a href="https://developer.android.com/reference/android/media/MediaCodec.html" target="_blank">MediaCodec</a>、<a href="https://developer.android.com/reference/android/media/AudioTrack.html" target="_blank">AudioTrack</a> 和 <a href="https://developer.android.com/reference/android/media/MediaDrm.html" target="_blank">MediaDrm</a>
+        resources: null
+        video:
+          id: '53562'
+          youtube_id: rQ3JepTGook
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50296_04-l-comparing-players/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50296_04-l-comparing-players/04-l-comparing-players_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50296_04-l-comparing-players/04-l-comparing-players_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50296_04-l-comparing-players/04-l-comparing-players_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50296_04-l-comparing-players/04-l-comparing-players_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50296_04-l-comparing-players/hls/playlist.m3u8'
+  - id: 338393
+    key: fe3afd25-fc4c-4a6a-9581-91d132f062e3
+    locale: zh-cn
+    version: 1.0.0
+    title: 媒体格式
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338246
+    atoms:
+      - id: 338246
+        key: a720ded4-a39e-45e7-925b-e7dccce7bb41
+        locale: zh-cn
+        version: 1.0.0
+        title: 媒体格式
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          - <a href="https://google.github.io/ExoPlayer/supported-formats.html" target="_blank">ExoPlayer 文档</a> 
+          - <a href="https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming" target="_blank">More on adaptive bitrate streaming</a>
+        resources: null
+        video:
+          id: '53563'
+          youtube_id: EO5BVMjGqJs
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5029c_05-l-media-formats/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5029c_05-l-media-formats/05-l-media-formats_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5029c_05-l-media-formats/05-l-media-formats_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5029c_05-l-media-formats/05-l-media-formats_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5029c_05-l-media-formats/05-l-media-formats_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5029c_05-l-media-formats/hls/playlist.m3u8'
+  - id: 338399
+    key: 0c7e0179-5e36-454a-94fc-96529e08bb53
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：下载起始代码'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338247
+    atoms:
+      - id: 338247
+        key: a57841be-5739-4c75-990c-60f8a10a16e9
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Media Playback 
+
+          该应用的代码位于 <a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz" target="_blank">Media Playback 资源库</a>中。请使用以下命令下载该资源库：
+
+          ```bash
+          git clone https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz.git
+          ```
+
+          如果你想复习下代码的组织结构，请参阅这门课程的第一节课。
+
+          ### 练习代码
+          **练习：**<a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.00-StartingCode" target="_blank">TMED.00-StartingCode</a>
+        instructor_notes: ''
+        resources: null
+  - id: 338401
+    key: 062710bc-5531-407d-bc7a-10cb77eb645e
+    locale: zh-cn
+    version: 1.0.0
+    title: 起始代码概述
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338254
+    atoms:
+      - id: 338254
+        key: 424b541d-3aa6-4bc6-b949-4e85185db717
+        locale: zh-cn
+        version: 1.0.0
+        title: 起始代码概述
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          - <a href="http://www.vogella.com/tutorials/JSON/article.html" target="_blank">JSON 教程 (Vogella)</a>
+          - <a href="https://developer.android.com/reference/android/util/JsonReader.html" target="_blank">JsonReader 文档</a>
+
+          在 Android Studio 中打开项目代码时，你可能会收到关于 **extras;android;m2repository** 的 gradle 错误。你可以通过下载并安装缺失的资源库来解决该错误。 
+        resources: null
+        video:
+          id: '53564'
+          youtube_id: wjQBGcz2tS4
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502ac_06-l-starting-code-overview/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502ac_06-l-starting-code-overview/06-l-starting-code-overview_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502ac_06-l-starting-code-overview/06-l-starting-code-overview_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502ac_06-l-starting-code-overview/06-l-starting-code-overview_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502ac_06-l-starting-code-overview/06-l-starting-code-overview_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502ac_06-l-starting-code-overview/hls/playlist.m3u8'
+  - id: 338402
+    key: d9589bdf-a288-45d8-87ca-eeccb5d4ea11
+    locale: zh-cn
+    version: 1.0.0
+    title: 添加 ExoPlayer 简介
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338255
+    atoms:
+      - id: 338255
+        key: fcacb3f3-bb0d-4046-a371-68dd0cf9dd1f
+        locale: zh-cn
+        version: 1.0.0
+        title: 添加 ExoPlayer 简介
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54077'
+          youtube_id: XFZXfWBeQxo
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a0_07-l-add-exoplayer-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a0_07-l-add-exoplayer-intro/07-l-add-exoplayer-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a0_07-l-add-exoplayer-intro/07-l-add-exoplayer-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a0_07-l-add-exoplayer-intro/07-l-add-exoplayer-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a0_07-l-add-exoplayer-intro/07-l-add-exoplayer-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a0_07-l-add-exoplayer-intro/hls/playlist.m3u8'
+  - id: 338404
+    key: d1be88a3-77bd-4581-b2f4-662d92f6e590
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：添加 SimpleExoPlayerView'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338256
+      - 338258
+      - 338257
+    atoms:
+      - id: 338256
+        key: b8ca6e78-aa7a-4f99-86e4-494fbc3b9f23
+        locale: zh-cn
+        version: 1.0.0
+        title: 添加 SimpleExoPlayerView
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53566'
+          youtube_id: cyjDhf9FnH8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502be_08-l-add-simple-exoplayer-view/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502be_08-l-add-simple-exoplayer-view/08-l-add-simple-exoplayer-view_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502be_08-l-add-simple-exoplayer-view/08-l-add-simple-exoplayer-view_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502be_08-l-add-simple-exoplayer-view/08-l-add-simple-exoplayer-view_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502be_08-l-add-simple-exoplayer-view/08-l-add-simple-exoplayer-view_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502be_08-l-add-simple-exoplayer-view/hls/playlist.m3u8'
+      - id: 338258
+        key: ccd3d5f5-851a-4502-87e5-37a74090d017
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Add SimpleExoPlayerView
+
+          在此练习中，你将向古典音乐测验应用中添加 ExoPlayer（可扩展的媒体播放器库）。你还会将其连接到 SimpleExoPlayerView，后者是一个 UI 元素，属于 ExoPlayer 库的一部分，其中包括播放控件和专辑封面。
+
+          ### 练习代码
+          **练习：**<a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.01-Exercise-AddExoPlayer" target="_blank">TFCM.01-Exercise-AddExoPlayer</a>
+        instructor_notes: ''
+        resources: null
+      - id: 338257
+        key: 637165c0-0c74-4d95-90c8-84ed4b2eb5ab
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 将 Composer ImageView 替换成 SimpleExoPlayerView
+          - ‘将 ImageView 替换成 SimpleExoPlayerView，并删除对 composerView 的调用’
+          - 替换 SimpleExoPlayerView 中的默认艺术作品
+          - 使用 Sample.getSampleByID() 方法创建实例对象
+          - 创建一个叫做 initializePlayer() 的方法
+          - 使用 DefaultTrackSelector 和 DefaultLoadControl 实例化 SimpleExoPlayer 对象
+          - 使用 DefaultDataSourceFactory 和 DefaultExtractorsFactory 准备 MediaSource
+          - '用 the MediaSource 准备 ExoPlayer，开始播放示例歌曲并将 SimpleExoPlayer 设为 SimpleExoPlayerView'
+          - 进入下个问题时停止播放
+          - '当用户回答问题后，更改 SimpleExoPlayerView 中的默认艺术作品，以显示作曲者的照片'
+        positive_feedback: |-
+          很棒！
+
+          **解决方案：**<a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.01-Solution-AddExoPlayer" target="_blank">TMED.01-Solution-AddExoPlayer</a>
+
+          <a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/compare/TMED.01-Exercise-AddExoPlayer...TMED.01-Solution-AddExoPlayer?expand=1" target="_blank">Diff</a>
+        video_feedback: null
+        description: ''
+  - id: 338405
+    key: 5d62a7ef-df84-43e1-8c64-882169c3044b
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：自定义 SimpleExoPlayerView'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338259
+      - 338267
+      - 338266
+    atoms:
+      - id: 338259
+        key: 73226842-e671-4cbb-a1b3-a2d0ae5fd552
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # 自定义 ExoPlayer UI
+
+          我们选择使用 SimpleExoPlayerView 是因为它很简单。只需一行代码，就能与 ExoPlayer 相连，极大地简化了媒体应用的 UI 部分，因为我们不需要自己编写任何代码。但是，这种简便性通常都以无法自定义为代价：你可能觉得我们只能使用提供的 UI，因为就提供了这种 UI。但是 ExoPlayer 并非如此！ 
+
+          ExoPlayer 具有两个很有名的开箱即用型 UI 元素：
+
+          * PlaybackControlView 是一个视图，用于控制 ExoPlayer 实例。它会显示标准播放控件，包括播放/暂停按、快进和快退按钮，以及拖动条。
+          * SimpleExoPlayerView 是一个针对 SimpleExoPlayer 媒体播放的高级视图。它会显示视频（对我们来说，则是专辑封面），并使用 PlaybackControlView 显示播放控件。
+
+
+          这些 ExoPlayer UI 组件在创建时就考虑到自定义功能了，具体体现在以下方面：
+
+          ## 属性
+
+          XML 条目支持各种 XML 属性，可以自定义 UI 外观。请查看 UI 元素文档，看看可用的属性列表（以及对应的 Java 方法）。
+
+          ## 覆盖布局文件
+          在这些视图被填充时，它们使用特定的布局文件来判断 UI 的外观。
+          对于 SimpleExoPlayerView，此文件称为：<a href="https://github.com/google/ExoPlayer/blob/release-v2/library/ui/src/main/res/layout/exo_simple_player_view.xml" target="_blank">exo_simple_player_view.xml</a>。该布局文件包括一个 PlayBackControlView（被填充后，它会替换 exo_controller_placeholder 条目），它还会使用自己的布局文件)：<a href="https://github.com/google/ExoPlayer/blob/release-v2/library/ui/src/main/res/layout/exo_playback_control_view.xml" target="_blank">exo_playback_control_view.xml</a>。
+
+          如果你包含任何具有相同名称的布局文件，ExoPlayer 将使用这些文件（而不是默认文件）。这样你可以完全自定义 UI 外观。
+
+          注意一点：必须使用标准 ID（例如 exo_play），以便子视图能以合适的方式被识别、与播放器绑定并被更新。你可以在 [PlaybackControlView](http://google.github.io/ExoPlayer/doc/reference/index.html?com/google/android/exoplayer2/ui/PlaybackControlView.html) 和 [SimpleExoPlayerView](http://google.github.io/ExoPlayer/doc/reference/index.html?com/google/android/exoplayer2/ui/SimpleExoPlayerView.html) 的 Javadoc 中查看每个视图的标准 ID 的完整列表。你可以选择是否使用每个标准 ID，因此我们将能够在我们的示例中忽略某些常用播放控件。
+
+          ## 自定义布局文件
+          上述方法存在的问题是它会为 SimpleExoPlayerView（和/或 PlaybackControlView）的每个实例自定义 UI。对我们来说并没什么影响，因为我们只使用一个播放器视图。但是，如果你需要自定义单个实例，则可以结合使用上述两种方法：针对自定义 SimpleExoPlayerView 使用 player_layout_id 属性，或针对自定义 PlaybackControlView 使用 controller_layout_id，并指定自定义布局文件来替换该特定实例的布局。
+
+          我们不需要自定义单个实例，因此为播放控件视图（包含在我们的 SimpleExoPlayerView 中）替换 exo_playback_control_view.xml 布局文件，并删除跳到下一首、快进和快退按钮（你可以在[此处](https://github.com/google/ExoPlayer/blob/release-v2/library/ui/src/main/res/layout/exo_playback_control_view.xml)）复制默认布局。
+
+          完成这一步后，运行应用并注意 UI 的变化！
+
+
+
+        instructor_notes: ''
+        resources: null
+      - id: 338267
+        key: fd2a76df-f16c-46ab-89fb-d0110307f42b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 自定义 SimpleExoPlayerView
+
+          在此练习中，你将自定义 SimpleExoPlayerView 以便仅包含你想支持的播放控件。
+
+          ### 练习代码
+          **练习：**[TMED.02-Exercise-CustomizeLayout](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.02-Exercise-CustomizeLayout)
+        instructor_notes: ''
+        resources: null
+      - id: 338266
+        key: 42c7f0d4-7dd3-406d-a0b4-f08d4c256594
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 创建一个叫做 exo_playback_control_view 的布局文件，以替换播放控件布局
+        positive_feedback: |-
+          很棒！
+
+          **解决方案：**[[TMED.02-Solution-CustomizeLayout](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.02-Solution-CustomizeLayout)][[Diff](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/compare/TMED.02-Exercise-CustomizeLayout...TMED.02-Solution-CustomizeLayout?expand=1)]
+        video_feedback: null
+        description: ''
+  - id: 338406
+    key: 48914024-46e6-4c24-8de6-4ab0284ecaba
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：ExoPlayer 事件监听’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338265
+      - 338268
+      - 338269
+      - 338271
+      - 338272
+    atoms:
+      - id: 338265
+        key: 638da2c4-32f9-4dd4-a180-bedb8bca68ae
+        locale: zh-cn
+        version: 1.0.0
+        title: ExoPlayer 事件监听
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54078'
+          youtube_id: _DH2YhiaaF0
+          subtitles: []
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a2_10-l-exoplayer-event-listening/10-l-exoplayer-event-listening_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a2_10-l-exoplayer-event-listening/10-l-exoplayer-event-listening_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a2_10-l-exoplayer-event-listening/10-l-exoplayer-event-listening_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a2_10-l-exoplayer-event-listening/10-l-exoplayer-event-listening_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a2_10-l-exoplayer-event-listening/hls/playlist.m3u8'
+      - id: 338268
+        key: 39c6341e-55a9-4f8a-b0fd-3b5390cf8ed0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 简介
+          现在我们已经有了可以正常运转的自定义媒体播放器。最后一步是使其能在外部客户端和其他应用中正常播放。但在设置媒体会话之前，我们需要知道 ExoPlayer 的状态是什么，以便使我们的媒体会话保持同步状态。我们知道 `SimpleExoPlayerView` 的状态会自动变化，但是如何将该信息传达给媒体会话呢？请观看下个视频，了解详情！
+        instructor_notes: ''
+        resources: null
+      - id: 338269
+        key: 536e5e43-be26-446e-aeaf-347f3a4c0dfb
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # ExoPlayer 事件监听
+
+          在此练习中，你将使用 EventListener 监控 ExoPlayer 的状态变化，并在每次变化后记下状态。
+
+          ### 练习代码
+          **练习：**[TMED.03-Exercise-EventListening](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.03-Exercise-EventListening)
+        instructor_notes: ''
+        resources: null
+      - id: 338271
+        key: b3f53970-6ac4-419a-a372-be671fcbf26e
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - ‘对于 QuizActivity，实现 ExoPlayer.EventListener 并添加所需的方法'
+          - ‘对于 QuizActivity，设置 ExoPlayer.EventListener'
+          - 向 onPlayerStateChanged() 方法添加条件日志语句，记录 ExoPlayer 何时在播放，何时暂停
+        positive_feedback: |-
+          状态已记录！耶！
+
+          **解决方案：**[[TMED.03-Solution-EventListening](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.03-Solution-EventListening)][[Diff](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/compare/TMED.03-Exercise-EventListening...TMED.03-Solution-EventListening?expand=1)]
+        video_feedback: null
+        description: ''
+      - id: 338272
+        key: 3034708b-a909-49c0-b08f-7c3499dd6074
+        locale: zh-cn
+        version: 1.0.0
+        title: ExoPlayer 事件
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 你应该在哪个方法中更新 MediaSession 的状态？
+          correct_feedback: ‘是 onPlayerStateChanged() 方法，这是一个 ExoPlayer.EventListener，每次播放器状态发生变化时，都会被调用，因此我们要在该方法中更新媒体会话。'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1491936046995
+              text: onPlay()
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1491936075400
+              text: MySessionCallbacks
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1491936084527
+              text: onPlayerStateChanged()
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1491936093145
+              text: onCreate()
+              is_correct: false
+              incorrect_feedback: null
+  - id: 338408
+    key: c3b45607-b1ce-40d6-91c0-ef6d71bb2e5f
+    locale: zh-cn
+    version: 1.0.0
+    title: 添加媒体会话（第 1 部分）
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338273
+      - 338274
+    atoms:
+      - id: 338273
+        key: 9460595b-4388-4a43-993e-7f9831965822
+        locale: zh-cn
+        version: 1.0.0
+        title: 添加媒体会话（第 1 部分）
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54079'
+          youtube_id: urdyOlcisqg
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a4_11-add-media-session/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a4_11-add-media-session/11-add-media-session_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a4_11-add-media-session/11-add-media-session_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a4_11-add-media-session/11-add-media-session_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a4_11-add-media-session/11-add-media-session_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a4_11-add-media-session/hls/playlist.m3u8'
+      - id: 338274
+        key: 2e2cb83e-b884-40c3-b34e-fc4fc9bb863a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: '<a href="https://developer.android.com/guide/topics/media-apps/working-with-a-media-session.html" target="_blank">处理媒体会话</a>'
+        instructor_notes: ''
+        resources: null
+  - id: 338407
+    key: 2a7ad530-1fb9-4483-ac37-70acaa65f97a
+    locale: zh-cn
+    version: 1.0.0
+    title: ExoPlayer 事件
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338275
+    atoms:
+      - id: 338275
+        key: 3df136e3-d889-40c1-b4bf-6ddd677d6b92
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            你应该在哪个方法中更新 MediaSession 的状态？
+          correct_feedback: ‘是 onPlayerStateChanged() 方法，它是一个ExoPlayer.EventListener，每次播放器状态发生变化时都会被调用，因此我们将在该方法中更新媒体会话。’
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1492213715073
+              text: '`onPlay()`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1492213733919
+              text: '`MySessionCallbacks`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1492213740711
+              text: '`onPlayerStateChanged()`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1492213748049
+              text: '`onCreate()`'
+              is_correct: false
+              incorrect_feedback: null
+  - id: 338409
+    key: f7b7f8b8-e6db-4665-b3af-190e6fc47838
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：添加媒体会话（第 2 部分）’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338281
+      - 338285
+      - 338286
+    atoms:
+      - id: 338281
+        key: 7e77f5be-030e-48a7-be14-d9ee6317bd3a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 添加媒体会话
+
+          ### 练习代码
+          **练习：**[TMED.04-Exercise-AddMediaSession](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.04-Exercise-AddMediaSession)
+        instructor_notes: ''
+        resources: null
+      - id: 338285
+        key: 48b95be2-1e27-402d-896b-da73eaec11a4
+        locale: zh-cn
+        version: 1.0.0
+        title: 添加媒体会话（第 2 部分）
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54080'
+          youtube_id: F2z2GuFXgfg
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a6_13-add-media-session-2-a/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a6_13-add-media-session-2-a/13-add-media-session-2-a_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a6_13-add-media-session-2-a/13-add-media-session-2-a_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a6_13-add-media-session-2-a/13-add-media-session-2-a_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a6_13-add-media-session-2-a/13-add-media-session-2-a_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a6_13-add-media-session-2-a/hls/playlist.m3u8'
+      - id: 338286
+        key: edc0aba0-bccc-4777-94a6-0cb53f4d1210
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 创建一个方法，以初始化 MediaSession
+          - 创建一个扩展自 MediaSessionCompat.Callbacks 的内部类，并替换所需的方法
+          - 根据 ExoPlayer 是在播放还是已暂停，对 PlayBackState 做出相应的更新
+          - ‘当 activity 被销毁时，将 MediaSession 设为非活动状态'
+        positive_feedback: |-
+          很棒！
+
+          **解决方案：**[[TMED.04-Solution-AddMediaSession](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.04-Solution-AddMediaSession)][[Diff](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/compare/TMED.04-Exercise-AddMediaSession...TMED.04-Solution-AddMediaSession?expand=1)]
+        video_feedback: null
+        description: ''
+  - id: 338410
+    key: 71c77fa7-b8e2-42af-ad0d-2883f9b49b18
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：MediaStyle 通知’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338287
+      - 338288
+      - 338289
+      - 338290
+      - 338291
+    atoms:
+      - id: 338287
+        key: 74f28351-708b-4dc1-8a04-ddc6397efccc
+        locale: zh-cn
+        version: 1.0.0
+        title: MediaStyle 通知
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: '<a href="https://developer.android.com/reference/android/support/v7/app/NotificationCompat.MediaStyle.html" target="_blank">关于 MediaStyle 通知的文档</a>'
+        resources: null
+        video:
+          id: '53570'
+          youtube_id: 0fxdMQlkErE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502df_14-mediastyle-notification-s/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502df_14-mediastyle-notification-s/14-mediastyle-notification-s_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502df_14-mediastyle-notification-s/14-mediastyle-notification-s_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502df_14-mediastyle-notification-s/14-mediastyle-notification-s_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502df_14-mediastyle-notification-s/14-mediastyle-notification-s_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502df_14-mediastyle-notification-s/hls/playlist.m3u8'
+      - id: 338288
+        key: 28a6f997-112a-4fdd-bbdd-06b3201f78a7
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 添加 MediaStyle 通知
+
+          在此练习中，你将创建 MediaStyle 通知，它可以充当用于控制媒体会话、进而控制控制媒体播放的外部客户端。然后，你将修复 MediaStyle 通知操作，方法是创建能够对外部客户端操作做出响应的 MediaButtonReceiver
+
+          ### 练习代码
+          **练习：**[TMED.05-Exercise-AddMediaNotification](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.05-Exercise-AddMediaNotification)
+        instructor_notes: ''
+        resources: null
+      - id: 338289
+        key: bf752b02-6e55-4b93-ace7-7cbff2c790ca
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - ‘创建一个显示 MediaStyle 通知的方法，具有两个操作（播放/暂停、跳到上一首）'
+          - 调用该方法来显示通知
+        positive_feedback: |-
+          新通知 - MediaStyle 通知已完成 :)
+
+          **解决方案：**<a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.05-Solution-AddMediaNotification" target="_blank">TMED.05-Solution-AddMediaNotification</a>
+          <a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/compare/TMED.05-Exercise-AddMediaNotification...TMED.05-Solution-AddMediaNotification?expand=1" target="_blank">Diff</a>
+        video_feedback: null
+        description: ''
+      - id: 338290
+        key: fdf07d11-b1ae-4a72-8858-8d4b0cee3cbc
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 添加媒体按钮接收器
+
+          ### 练习代码
+          **练习：**[TMED.06-Exercise-AddMediaButtonReceiver](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.06-Exercise-AddMediaButtonReceiver)
+        instructor_notes: ''
+        resources: null
+      - id: 338291
+        key: baa2c07f-9d47-4af1-aa17-0dcf03e245e8
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 创建一个静态内部类，该类扩展自 Broadcast Receiver，并实现 onReceive() 方法
+          - 所有 MediaButtonReceiver.handleIntent 并传入向内 intent 和 MediaSession object
+          - 为你在 QuizActivity 中创建的接收器创建接收器标签，并添加 Intent 过滤器
+        positive_feedback: |-
+          古典音乐测验应用已完成！
+
+          **解决方案：**<a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.06-Solution-AddMediaButtonReceiver" target="_blank">TMED.06-Solution-AddMediaButtonReceiver</a>
+          <a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/compare/TMED.06-Exercise-AddMediaButtonReceiver...TMED.06-Solution-AddMediaButtonReceiver?expand=1" target="_blank">Diff</a>
+        video_feedback: null
+        description: ''
+  - id: 338411
+    key: 43629d9f-b08e-499d-9300-125b8cb8ebbc
+    locale: zh-cn
+    version: 1.0.0
+    title: 音频焦点和其他 ExoPlayer 功能简介
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338292
+    atoms:
+      - id: 338292
+        key: 8536e578-91a1-4535-825b-41f7a8f2fa79
+        locale: zh-cn
+        version: 1.0.0
+        title: 音频焦点和其他 ExoPlayer 功能简介
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53574'
+          youtube_id: RZv_dU8gHTE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50fd2_15-extras-intro-hs/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50fd2_15-extras-intro-hs/15-extras-intro-hs_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50fd2_15-extras-intro-hs/15-extras-intro-hs_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50fd2_15-extras-intro-hs/15-extras-intro-hs_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50fd2_15-extras-intro-hs/15-extras-intro-hs_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50fd2_15-extras-intro-hs/hls/playlist.m3u8'
+  - id: 338412
+    key: c6a354c3-217d-439f-a298-4f1840211796
+    locale: zh-cn
+    version: 1.0.0
+    title: 音频焦点和其他 ExoPlayer 功能
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338298
+    atoms:
+      - id: 338298
+        key: bb63958b-f8e6-4841-a3bd-05fa52e3601b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # Android 媒体框架额外知识
+           
+          ### 音频焦点
+
+          Android 框架通过音频焦点了解使用音频的不同应用。如果你希望其他重要通知（例如导航）出现时你的应用退到后台，你需要了解应用如何“进入队列”以成为控制音频播放的应用，直到另一个应用请求音频焦点。
+
+          ### Noisy Intent
+
+          你需要检查某些条件。例如，你正在用最大音量播放你最喜欢的一首歌曲。几乎没人知道你最喜欢的歌曲是“Itsy Bitsy Spider”。当你正要听到高潮部分时，你被绊倒了，耳机从插孔里拔了出来。整个世界都知道了你的小秘密。比较尴尬吧？幸运的是，如果出现这种情况，Android 框架就会发出 [ACTION_AUDIO_BECOMING_NOISY](https://developer.android.com/reference/android/media/AudioManager.html#ACTION_AUDIO_BECOMING_NOISY) intent。这使你能够注册广播接收器，在出现这种情况时采取特定的操作（例如暂停音乐并避免出现尴尬情形）。 
+
+          ### 音频流
+
+          Android 使用不同的音频流来播放音乐、闹钟、通知、来电响铃、系统提示音、来电音量和 DTMF 提示音。这使得用户能够独立地控制每个音频流的音量。
+
+          默认情况下，按下音量控件会修改当前音频流的音量。如果你的应用当前没有播放任何内容，则按下音量键会调整铃声音量。
+          为了确保音量控件调整的是正确的音频流，你应该调用 [setVolumeControlStream()](https://developer.android.com/reference/android/app/Activity.html#setVolumeControlStream(int) 传入 [AudioManager.STREAM_MUSIC](https://developer.android.com/reference/android/media/AudioManager.html#STREAM_MUSIC)。
+
+          # ExoPlayer 额外功能
+
+          ### 同时加载字幕
+
+          如果给定视频文件和单独的字幕文件，则可以使用 MergingMediaSource 将它们合并成单个源文件以用于播放。
+
+          ``` java
+          MediaSource videoSource = new ExtractorMediaSource(videoUri, ...);
+          MediaSource subtitleSource = new SingleSampleMediaSource(subtitleUri, ...);
+          // Plays the video with the sideloaded subtitle.
+          MergingMediaSource mergedSource =
+              new MergingMediaSource(videoSource, subtitleSource);
+          ```
+
+          ### 循环播放视频
+
+          可以使用 LoopingMediaSource 无缝循环播放视频。下面的示例会无限期地循环播放视频。在创建 LoopingMediaSource 时，还可以指定有限的循环次数。
+
+          ```java
+          MediaSource source = new ExtractorMediaSource(videoUri, ...);
+          // Loops the video indefinitely.
+          LoopingMediaSource loopingSource = new LoopingMediaSource(source);
+          ```
+        instructor_notes: ''
+        resources: null

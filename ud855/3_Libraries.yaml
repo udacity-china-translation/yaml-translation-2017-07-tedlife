@@ -1,0 +1,1388 @@
+id: 338414
+key: 240ea66a-cf72-48bf-8df8-d5ff353a6d47
+locale: zh-cn
+version: 1.0.0
+title: 库
+semantic_type: Lesson
+updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/59025226_libraries/libraries.png'
+  width: 718
+  height: 712
+video: null
+summary: ‘在这节课，你将学习如何在应用中包含外部库。借助库，你只需添加几行代码就能实现强大的功能。当你构建一款应用时就会发现库的作用，该应该使用 Google Mobile Vision library 将照片中的面部表情转换成最接近的表情符号。学完这节课后，你将了解如何查找并选择满足需求的库，以及几个常用 Android 库的名称。’
+lesson_type: Classroom
+duration: 180
+is_project_lesson: false
+_concepts_ids:
+  - 338251
+  - 338253
+  - 338248
+  - 338252
+  - 338305
+  - 338304
+  - 338307
+  - 338306
+  - 338316
+  - 338308
+  - 338309
+  - 338315
+  - 338317
+  - 338318
+  - 338324
+  - 338325
+  - 338327
+  - 338328
+  - 338333
+  - 338334
+  - 338337
+  - 338335
+  - 338338
+  - 338339
+  - 338340
+  - 338344
+_project_id: null
+concepts:
+  - id: 338251
+    key: 25fb050c-b522-4083-bb91-6ae4566b069c
+    locale: zh-cn
+    version: 1.0.0
+    title: 库简介
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338082
+    atoms:
+      - id: 338082
+        key: 2d5cdefb-4ca0-4550-8a60-e9916dad59a8
+        locale: zh-cn
+        version: 1.0.0
+        title: 库简介
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53096'
+          youtube_id: RjfWy97dpuI
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44a_2-libraries-intro-v1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44a_2-libraries-intro-v1/2-libraries-intro-v1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44a_2-libraries-intro-v1/2-libraries-intro-v1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44a_2-libraries-intro-v1/2-libraries-intro-v1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44a_2-libraries-intro-v1/2-libraries-intro-v1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44a_2-libraries-intro-v1/hls/playlist.m3u8'
+  - id: 338253
+    key: 1287e3dc-4c9b-49eb-841f-2fca32996ca8
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘你已经使用过的库'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338083
+    atoms:
+      - id: 338083
+        key: 1bc50f4a-593e-4fc6-9f35-361a6ad40ad0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 你已经使用过的库
+
+          你一直在使用的第一个库是 <a href="https://developer.android.com/topic/libraries/support-library/index.html" target="_blank">Support Library</a>，该库可以提供 Android 新功能的向后兼容性。此外，它还提供了标准 Framework API 中不存在的类和功能，使你能够更轻松地开发应用并支持更多设备。
+
+          Support Library 的一个实际使用示例是运行时权限。当应用被安装时，旧版权限模型会请求所需的权限。但是，从 API 级别 23 开始，应用会在需要时请求权限。这一方法简化了应用安装流程，因为用户在安装或更新应用时不需要授予权限。还使用户对应用的功能更具掌控力；例如，用户可以授予 Google+ 应用通讯录访问权，但是不授予设备位置信息或相机访问权。
+
+          Support Library 包含检查现有权限和请求新权限的方法，并以向后兼容的形式提供：仅会影响到 API 级别 23 或更高级别的设备，所以你自己不需要进行任何 API 级别检查。
+
+          Support Library 非常庞大，所以当你只需获得运行时权限兼容支持时，包含整个库肯定有点多余。正因如此，Support Library 根据功能分成了很多不同的程序包，使你能够仅添加你的应用需要的功能（还记得之前你仅包含了 Support Library 中的 `RecyclerView` 语句吗）。
+
+          要查看完整的程序包列表及其用途，请参阅 <a href="https://developer.android.com/topic/libraries/support-library/index.html" target="_blank">Support Library 文档</a>。
+        instructor_notes: ''
+        resources: null
+  - id: 338248
+    key: 131b44af-3427-483c-99e3-bf4dfc7b590b
+    locale: zh-cn
+    version: 1.0.0
+    title: 何时使用库
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338084
+    atoms:
+      - id: 338084
+        key: 9fe35e51-4356-4095-9d64-33b3fbb5d7b8
+        locale: zh-cn
+        version: 1.0.0
+        title: 何时使用库
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53797'
+          youtube_id: lCMxlcFr_tw
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7b68e_3-libs-already-use-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7b68e_3-libs-already-use-intro/3-libs-already-use-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7b68e_3-libs-already-use-intro/3-libs-already-use-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7b68e_3-libs-already-use-intro/3-libs-already-use-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7b68e_3-libs-already-use-intro/3-libs-already-use-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f7b68e_3-libs-already-use-intro/hls/playlist.m3u8'
+  - id: 338252
+    key: 210bc127-87a3-4b63-8755-d9443b2dc4c3
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘测验：何时使用库’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338080
+      - 338081
+    atoms:
+      - id: 338080
+        key: 29804cd1-e168-47f9-b161-62cd4bc3cee0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: '# 何时使用库'
+        instructor_notes: ''
+        resources: null
+      - id: 338081
+        key: 3d66504d-4324-4d44-ab30-8ba08c763b74
+        locale: zh-cn
+        version: 1.0.0
+        title: When to Use Libaries
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 以下哪些问题可以通过使用库来解决？
+          correct_feedback: |-
+            创建内容提供器并不简单，并且提供器包含很多组件。很多开发人员都觉得过程很难，因此有人创建了一个库来简化这一流程。请参阅 [Schematic](https://github.com/SimonVT/schematic) 了解此类库的示例。
+
+            通过网络加载图片是项挑战，因为在很大程度上取决于网络连接状况，并消耗大量电量。有很多库可以帮助解决这一难题，包括各种强大的功能，例如缓存、配置的超时等。请参阅 [Picasso](http://square.github.io/picasso/) 了解此类库的示例。
+
+            很多应用都具有条形码扫描功能，因此你可能已经猜出，有些库可以帮助实现这一功能。Google Mobile Vision 库包含扫描条形码的 API。
+
+            还可以使用库来满足复杂的日志需求。如果你需要根据正在运行的应用版本在调试程序中显示相应的内容，则默认的日志记录器将无法满足需求。[Timber](https://github.com/JakeWharton/timber) 包含此功能以及很多其他功能。
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1489685005407
+              text: 简化内容提供器的创建过程
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489685044172
+              text: 通过网络加载和管理图片
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489685068192
+              text: ‘添加条形码扫描功能'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489685071462
+              text: 不同的调试和应用版本日志功能
+              is_correct: true
+              incorrect_feedback: null
+  - id: 338305
+    key: fa1db230-50ce-446c-9221-1a01e7462459
+    locale: zh-cn
+    version: 1.0.0
+    title: 查找库简介
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338119
+    atoms:
+      - id: 338119
+        key: 2890887a-62ed-4867-ba8a-010b9546862f
+        locale: zh-cn
+        version: 1.0.0
+        title: 查找库简介
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51915'
+          youtube_id: JJi_ZliEIf4
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b4de_07-find-library-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b4de_07-find-library-intro/07-find-library-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b4de_07-find-library-intro/07-find-library-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b4de_07-find-library-intro/07-find-library-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b4de_07-find-library-intro/07-find-library-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b4de_07-find-library-intro/hls/playlist.m3u8'
+  - id: 338304
+    key: 8f8913c5-3d66-4d15-a0a1-843c838cbdc0
+    locale: zh-cn
+    version: 1.0.0
+    title: 如何查找库
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338121
+    atoms:
+      - id: 338121
+        key: 03c93220-d722-44f1-a9d8-50b02795e46d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 查看库
+          如何查找满足需求的库和回答所有其他问题一样：没错，使用 [stackoverflow](http://stackoverflow.com/)。
+
+          库适合解决在不同的应用中不断出现的问题。如果你在 Stack Overflow 中进行搜索，会发现你要解决的问题的已接受解决方案通常都是一个第三方库，该库可以完全满足你的需求。
+
+          我还向提两个查找库的资源：
+          第一个是 [Android Arsenal](https://android-arsenal.com/)，这是一个庞大的库集合，任何人都可以向里面添加库。里面有成千上万的库，质量参差不齐。 
+          第二项资源是此 [Github](https://github.com/codepath/android_guides/wiki/Must-Have-libraries) 页面，其中列出了一些最常用的 Android 库。
+
+          # 但是！
+          请注意：即使发现可以完全满足需求的完美库，也不要基于将其添加到应用中。使用维护不当或没有合理支持文档的库会产生很多其他问题，可能导致的麻烦比实际作用还大。下个视频将专门介绍某个库是否适合你的应用。
+
+          ### 64K 方法上限
+          在判断是否使用某个库时还需要注意的一个事项是它将对应用大小产生什么样的影响。当你的应用在添加库后达到了一定的大小，你就会遇到版本错误，表明你的应用达到了 Android 版本应用架构（[64K 方法上限](https://developer.android.com/studio/build/multidex.html)）上限。库用途广泛，毫无疑问很高效，但是请务必注意这些事项。
+        instructor_notes: ''
+        resources: null
+  - id: 338307
+    key: 13410858-0e12-4027-b406-da30706c9a29
+    locale: zh-cn
+    version: 1.0.0
+    title: 选择库
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338122
+      - 338129
+    atoms:
+      - id: 338122
+        key: 1a587553-2b12-4bda-b4de-35678d6d750a
+        locale: zh-cn
+        version: 1.0.0
+        title: 选择库
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51916'
+          youtube_id: hut5flkLZj8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b4f1_09-choose-library/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b4f1_09-choose-library/09-choose-library_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b4f1_09-choose-library/09-choose-library_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b4f1_09-choose-library/09-choose-library_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b4f1_09-choose-library/09-choose-library_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b4f1_09-choose-library/hls/playlist.m3u8'
+      - id: 338129
+        key: 9d5bf91b-d6ed-4d40-8ca6-2cb365c4e38d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 讲师注释
+          要详细了解许可及使用什么样的许可，请点击此[链接](https://choosealicense.com/)
+        instructor_notes: ''
+        resources: null
+  - id: 338306
+    key: f0c5803c-36fb-4422-83ae-7c3b75f5869c
+    locale: zh-cn
+    version: 1.0.0
+    title: 探索库
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338130
+    atoms:
+      - id: 338130
+        key: 7c46cf13-ba0c-46d6-8850-e04fe0087513
+        locale: zh-cn
+        version: 1.0.0
+        title: 探索库
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51917'
+          youtube_id: rSvwImNOscU
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b500_10-explore-library/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b500_10-explore-library/10-explore-library_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b500_10-explore-library/10-explore-library_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b500_10-explore-library/10-explore-library_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b500_10-explore-library/10-explore-library_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b500_10-explore-library/hls/playlist.m3u8'
+  - id: 338316
+    key: 07f2f37a-0d1c-4d58-b1ae-904822c5f26a
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘测验：探索库'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338131
+      - 338132
+    atoms:
+      - id: 338131
+        key: eb715713-73d8-490d-ac39-a57856d2dc0c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 探索库
+          建议你在开始实现该库之前，先熟悉下该库。请查看相关文档，了解使用分类功能检测位图中的面孔时涉及了下面的哪些类。
+        instructor_notes: ''
+        resources: null
+      - id: 338132
+        key: e0b262c4-face-4d5f-9733-0d4937c483d0
+        locale: zh-cn
+        version: 1.0.0
+        title: 探索库
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 使用 Mobile Vision 库检测位图中的面孔时涉及了下面的哪些类？
+          correct_feedback: ‘很棒！ FaceDetecor、Frame 和 Face 类分别使用 Mobile Vision 库处理面孔识别。'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1489686115151
+              text: FaceDetector
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489686158285
+              text: Landmark
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489686167248
+              text: Frame
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489686174627
+              text: Face
+              is_correct: true
+              incorrect_feedback: null
+  - id: 338308
+    key: ff3a859c-3dd8-4c1d-9969-70f796af4fd7
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：探索起始代码'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338135
+      - 338136
+    atoms:
+      - id: 338135
+        key: ae6957fb-5b4d-4775-a9d8-d1daf119f3d2
+        locale: zh-cn
+        version: 1.0.0
+        title: 探索起始代码
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51918'
+          youtube_id: zcSWlqM2pXo
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b52a_13-explore-started-code/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b52a_13-explore-started-code/13-explore-started-code_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b52a_13-explore-started-code/13-explore-started-code_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b52a_13-explore-started-code/13-explore-started-code_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b52a_13-explore-started-code/13-explore-started-code_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b52a_13-explore-started-code/hls/playlist.m3u8'
+      - id: 338136
+        key: bf95b8e7-5725-4b74-9387-3276da419d53
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Emojify 代码
+
+          该应用的代码位于 [Emojify 资源库](https://github.com/udacity/AdvancedAndroid_Emojify)中。你可以在 [Android 开发者文档](https://developer.android.com/training/permissions/requesting.html)中查找运行时权限信息。
+
+          请使用以下命令下载该资源库：
+
+          ```bash
+          git clone https://github.com/udacity/AdvancedAndroid_Emojify.git
+          ```
+
+          如果你想复习下代码的组织结构，请参阅[我们在如何使用课程代码部分介绍的内容](https://classroom.udacity.com/courses/ud857/lessons/8b2a9d63-0ff5-48ff-90d3-a9855b701dae/concepts/41b82e3c-2797-46e5-8a66-684098ca8cbb)。
+
+          请花些时间研究起始代码。
+
+          ### 练习代码
+          **练习：**[TLIB.00-StartingCode](https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.00-StartingCode)
+        instructor_notes: ''
+        resources: null
+  - id: 338309
+    key: 6b80a4fa-fcdc-4409-b03d-be5b4578a534
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘探索起始代码：Bitmap Utils'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338137
+    atoms:
+      - id: 338137
+        key: 1c051319-e5c9-43b2-be1a-6a56bde8f951
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          `resamplePic()`:
+          `resamplePic()` 方法会获取设备屏幕的高度和宽度（用像素表示），并重新取样传入的图片以与屏幕大小相符。
+
+          `createTempImageFile()`:
+          该方法会在外部缓存目录下创建临时文件，并返回新的临时文件。
+
+          `deleteImageFile()`:
+          该方法尝试删除传入路径下的图片。如果删除失败，则显示 Toast 消息。
+
+          `galleryAddPic()`:
+          该方法导致图片内容提供器将传入路径下的图片添加到系统图库中，以便其他应用能查找该图片。仅在下文所述的 saveImage() 中被调用。
+
+          `saveImage()`:
+          该方法将传入的位图保存到外部存储器中，放入叫做“Emojify”的子目录下。它还会通过调用上述 `galleryAddPic()` 将该图片添加到系统图库中。
+
+          `shareImage()`:
+          该方法会创建一个共享隐式 Intent，该 Intent 将调出系统选择器，其中包含处理图片共享的应用。
+        instructor_notes: ''
+        resources: null
+  - id: 338315
+    key: 3700e068-175e-47f5-94a7-86828d07f81f
+    locale: zh-cn
+    version: 1.0.0
+    title: 探索起始代码结尾部分
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338138
+    atoms:
+      - id: 338138
+        key: 3c8681ed-75ac-469f-997d-dd9d03659add
+        locale: zh-cn
+        version: 1.0.0
+        title: 探索起始代码结尾部分
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51919'
+          youtube_id: IjRX2bTiTYg
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b52a_15-explore-starter-code-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b52a_15-explore-starter-code-outro/15-explore-starter-code-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b52a_15-explore-starter-code-outro/15-explore-starter-code-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b52a_15-explore-starter-code-outro/15-explore-starter-code-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b52a_15-explore-starter-code-outro/15-explore-starter-code-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b52a_15-explore-starter-code-outro/hls/playlist.m3u8'
+  - id: 338317
+    key: b5bff7d4-f1f6-452f-9fff-2677298b6aa1
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：添加 Gradle 依赖项’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338141
+      - 338142
+      - 338143
+    atoms:
+      - id: 338141
+        key: 7f39f736-bbeb-496c-9021-59c244807063
+        locale: zh-cn
+        version: 1.0.0
+        title: '练习：添加 Gradle 依赖项'
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51920'
+          youtube_id: K_aLHdX7HRI
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b534_16-add-gradle-dependency/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b534_16-add-gradle-dependency/16-add-gradle-dependency_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b534_16-add-gradle-dependency/16-add-gradle-dependency_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b534_16-add-gradle-dependency/16-add-gradle-dependency_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b534_16-add-gradle-dependency/16-add-gradle-dependency_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b534_16-add-gradle-dependency/hls/playlist.m3u8'
+      - id: 338142
+        key: 467108b3-76b7-40c5-8ae3-8e58adc7e472
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # 添加 Gradle 依赖项
+
+          在此练习中，你会将 Google Mobile Vision 库依赖项添加到你的 build.gradle 文件中，使你能够在你的项目中访问该库的类和方法。
+
+          [设置 Google Play 服务文档](https://developers.google.com/android/guides/setup)
+
+          ### 练习代码
+          **练习：**[TLIB.01-Exercise-AddGradleDependency](https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.01-Exercise-AddGradleDependency)
+
+        instructor_notes: ''
+        resources: null
+      - id: 338143
+        key: 535c29eb-4b48-4a1e-97e3-a23cb92902bb
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 在 build.gradle 中添加 Google Mobile Vision
+        positive_feedback: |-
+          有了很好的开端了！添加依赖项后，现在可以在你的项目中访问该库的类和方法了。 
+
+          **解决方案：**[[TLIB.01-Solution-AddGradleDependency](https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.01-Solution-AddGradleDependency)][[Diff](https://github.com/udacity/AdvancedAndroid_Emojify/compare/TLIB.00-StartingCode...TLIB.01-Exercise-AddGradleDependency?expand=1)]
+        video_feedback: null
+        description: 请完成 TODO，以便开始使用 Google Mobile Vision 库
+  - id: 338318
+    key: 1d024e2d-92b6-4028-be45-005efd72049d
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：面孔检测简介’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338144
+      - 338149
+      - 338150
+    atoms:
+      - id: 338144
+        key: 7cd65a0e-b51a-4cc6-b40e-1d066fe5807f
+        locale: zh-cn
+        version: 1.0.0
+        title: ‘练习：面孔检测简介’
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53097'
+          youtube_id: J0IxySlL6Ig
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44b_17-detect-faces-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44b_17-detect-faces-intro/17-detect-faces-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44b_17-detect-faces-intro/17-detect-faces-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44b_17-detect-faces-intro/17-detect-faces-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44b_17-detect-faces-intro/17-detect-faces-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44b_17-detect-faces-intro/hls/playlist.m3u8'
+      - id: 338149
+        key: 85b69c87-ea62-42e3-81b0-ea00c13c4d73
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # 面孔检测
+
+          在此练习中，你将使用 Mobile Vision 库来检测图片中的面孔数量，并将结果输出到日志中
+
+          ### 练习代码
+          **练习：**[TLIB.02-Exercise-DetectFaces](https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.02-Exercise-DetectFaces)
+
+        instructor_notes: ''
+        resources: null
+      - id: 338150
+        key: 0fabe3b2-69eb-4925-9437-3f37b1c06a2d
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 创建一个叫做 Emojifier 的 Java 类
+          - 在 Emojifier 类中创建一个叫做 detectFaces() 的静态方法，该方法会检测给定位图中的面孔数量并输出到日志中
+          - ‘调用新的 detectFaces() 方法，传入重新取样的位图以检测照片中的面孔'
+        positive_feedback: |-
+          很棒！
+
+          **解决方案：**[[https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.02-Solution-DetectFaces)][[Diff](https://github.com/udacity/AdvancedAndroid_Emojify/compare/TLIB.02-Exercise-DetectFaces...TLIB.02-Solution-DetectFaces?expand=1)]
+        video_feedback: null
+        description: ‘请完成此练习中的 TODO：’
+  - id: 338324
+    key: 801710e8-f10e-4f0e-aeda-2b90aa2f1117
+    locale: zh-cn
+    version: 1.0.0
+    title: 检测面孔
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338151
+    atoms:
+      - id: 338151
+        key: d830b0de-bb92-4b57-9571-b6d990b3d87b
+        locale: zh-cn
+        version: 1.0.0
+        title: 检测面孔
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 你应该使用哪两个方法及 FaceDetector.Builder 来开启分类功能并通过停用跟踪功能（如果连续的两个帧中存在相同的面孔，则保留二者之间的 ID）改善效果？
+          correct_feedback: ‘很棒！`setClassificationType(FaceDetector.ALL_CLASSIFICATIONS)` 和 `setTrackingEnabled(false)` 是正确的方法。’
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1489686585659
+              text: '`setTrackingEnabled(true)`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489686641327
+              text: '`setLandmarkType(FaceDetector.ALL_LANDMARKS)`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489686654487
+              text: '`setClassificationType(FaceDetector.ALL_CLASSIFICATIONS)`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489686665413
+              text: '`setTrackingEnabled(false)`'
+              is_correct: true
+              incorrect_feedback: null
+  - id: 338325
+    key: c0ada783-1ee0-4046-8b6a-5b9c597cb77a
+    locale: zh-cn
+    version: 1.0.0
+    title: 面孔检测
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338152
+    atoms:
+      - id: 338152
+        key: b70dab58-c46e-4fc7-bed3-5c66c21aba51
+        locale: zh-cn
+        version: 1.0.0
+        title: 面孔检测
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51922'
+          youtube_id: lWkz-G1l3Z4
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b53f_19-detect-faces/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b53f_19-detect-faces/19-detect-faces_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b53f_19-detect-faces/19-detect-faces_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b53f_19-detect-faces/19-detect-faces_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b53f_19-detect-faces/19-detect-faces_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b53f_19-detect-faces/hls/playlist.m3u8'
+  - id: 338327
+    key: e7fe3da4-e548-4386-aa84-180cefccf9a8
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：获取概率'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338153
+      - 338159
+      - 338160
+    atoms:
+      - id: 338153
+        key: 81b58353-03ab-4b46-a87a-ab5439828ce2
+        locale: zh-cn
+        version: 1.0.0
+        title: '练习：获取概率'
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51927'
+          youtube_id: WJuSR0jvIcc
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b562_20-get-probabilities-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b562_20-get-probabilities-intro/20-get-probabilities-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b562_20-get-probabilities-intro/20-get-probabilities-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b562_20-get-probabilities-intro/20-get-probabilities-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b562_20-get-probabilities-intro/20-get-probabilities-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b562_20-get-probabilities-intro/hls/playlist.m3u8'
+      - id: 338159
+        key: 72dd3eee-e8ab-4028-b9d6-c706a44ddee7
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # 获取概率
+
+          在此练习中，你将扩展 detectFaces() 方法以将分类概率输出到日志中。
+
+          ### 练习代码
+          **练习：**[TLIB.03-Exercise-GetClassificationProbabilities](https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.03-Exercise-GetClassificationProbabilities)
+
+        instructor_notes: ''
+        resources: null
+      - id: 338160
+        key: 708696c3-9878-4c59-a198-7d02a043eb99
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 创建一个叫做 getClassifications() 的方法，该方法会将双眼都睁开并保持微笑的概率输出到日志中
+          - ‘循环浏览面孔，并针对每个面孔调用 getClassifications()'
+        positive_feedback: |-
+          已输出概率 :D
+
+          **解决方案：**[[TLIB.03-Solution-GetClassificationProbabilities](https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.03-Solution-GetClassificationProbabilities)][[Diff](https://github.com/udacity/AdvancedAndroid_Emojify/compare/TLIB.03-Exercise-GetClassificationProbabilities...TLIB.03-Solution-GetClassificationProbabilities?expand=1)]
+        video_feedback: null
+        description: ‘请完成此练习中的 TODO：’
+  - id: 338328
+    key: b8ac18d7-d0a5-4ee5-bcd9-ecd515152acc
+    locale: zh-cn
+    version: 1.0.0
+    title: Overlay Emoji 简介
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338161
+      - 338162
+    atoms:
+      - id: 338161
+        key: 2973f390-e997-4928-bfe0-0c59b4f605df
+        locale: zh-cn
+        version: 1.0.0
+        title: Overlay Emoji 简介
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53100'
+          youtube_id: vVXei6G9MPE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe457_24-overlay-emoji-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe457_24-overlay-emoji-intro/24-overlay-emoji-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe457_24-overlay-emoji-intro/24-overlay-emoji-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe457_24-overlay-emoji-intro/24-overlay-emoji-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe457_24-overlay-emoji-intro/24-overlay-emoji-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe457_24-overlay-emoji-intro/hls/playlist.m3u8'
+      - id: 338162
+        key: d2f60db5-a9a2-4d61-a258-2f879969a281
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: '详细了解 [Canvas Object](https://developer.android.com/reference/android/graphics/Canvas.html)'
+        instructor_notes: ''
+        resources: null
+  - id: 338333
+    key: 2e2f93db-10a2-4efa-9a70-91905e98050c
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：生成表情符号'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338163
+      - 338166
+      - 338167
+    atoms:
+      - id: 338163
+        key: 6fd0d8e1-7575-4e9b-9e48-995df529d5d5
+        locale: zh-cn
+        version: 1.0.0
+        title: ‘练习：生成表情符号’
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53098'
+          youtube_id: yP0BUzA0PFo
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44d_21-map-to-emojis-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44d_21-map-to-emojis-intro/21-map-to-emojis-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44d_21-map-to-emojis-intro/21-map-to-emojis-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44d_21-map-to-emojis-intro/21-map-to-emojis-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44d_21-map-to-emojis-intro/21-map-to-emojis-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe44d_21-map-to-emojis-intro/hls/playlist.m3u8'
+      - id: 338166
+        key: 70e3f5a9-8dc6-4c8a-8137-a6aaf160e894
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # 生成表情符号
+
+          在此练习中，你会将分类概率映射到最匹配的表情符号。
+
+          ### 练习代码
+          **练习：**[TLIB.04-Exercise-MatchFaceToEmoji](https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.04-Exercise-MatchFaceToEmoji)
+
+        instructor_notes: ''
+        resources: null
+      - id: 338167
+        key: b29120e5-053a-434c-8775-1521cd7d4268
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 创建一个叫做 Emoji 的枚举类，其中包含你可以制作的所有可能表情符号
+          - 将 getClassifications() 方法的名称改为 whichEmoji()
+          - ‘创建微笑和眼睛睁开的阈值常量'
+          - 创建 3 个布尔变量，以跟踪面部表情的状态
+          - 创建一个 if/else 体系，以选择相应的表情符号
+        positive_feedback: |-
+          *很棒！*表情符号生成流程马上就大功告成了！
+
+          **解决方案：**[[TLIB.04-Solution-MatchFaceToEmoji](https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.04-Solution-MatchFaceToEmoji)][[Diff](https://github.com/udacity/AdvancedAndroid_Emojify/compare/TLIB.04-Exercise-MatchFaceToEmoji...TLIB.04-Solution-MatchFaceToEmoji?expand=1)]
+        video_feedback: null
+        description: ‘请完成此练习中的 TODO：’
+  - id: 338334
+    key: 20d7c0a4-bc83-4b99-b29d-31c331d846b2
+    locale: zh-cn
+    version: 1.0.0
+    title: 设置概率阈值
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338168
+    atoms:
+      - id: 338168
+        key: 929df7f8-b950-4fa0-84b6-76edfadfe08e
+        locale: zh-cn
+        version: 1.0.0
+        title: 设置概率阈值
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53099'
+          youtube_id: n1hOTKXTaBg
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe454_23-set-probability-threholds-v1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe454_23-set-probability-threholds-v1/23-set-probability-threholds-v1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe454_23-set-probability-threholds-v1/23-set-probability-threholds-v1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe454_23-set-probability-threholds-v1/23-set-probability-threholds-v1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe454_23-set-probability-threholds-v1/23-set-probability-threholds-v1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe454_23-set-probability-threholds-v1/hls/playlist.m3u8'
+  - id: 338337
+    key: a865723f-d61d-487a-ab24-7ebd97589e94
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：叠加表情符号 - 第 1 步’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338169
+      - 338170
+      - 338171
+    atoms:
+      - id: 338169
+        key: 308a9fea-e788-4452-b896-432db49a7d68
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          `whichEmoji()` 方法已经根据面部表情判断出正确的表情符号。
+           
+          你现在应该在 switch 语句中使用该方法，以便选择正确的表情符号可绘制图片。请执行以下操作：
+
+          将 whichEmoji() 方法的返回类型改成 Emoji 枚举。
+
+          在该方法的末尾返回正确的表情符号。
+
+          将 `detectFaces()` 方法重命名为 `detectFacesAndOverlayEmoji()`，因为该方法现在将覆盖相应的可绘制图片并检测面孔，将其返回类型从 `void` 改成 `Bitmap`。
+          在循环中初始化空的可绘制图片，该循环会循环访问检测到的面孔，叫做 `emojiBitmap`，用来存储正确的表情符号可绘制图片。
+          创建一个 switch 语句，将 `whichEmoji()` 方法的结果当做参数，每个表情符号充当一个 case，并使用 `BitmapFactory.decodeResource()` 方法根据 switch 的结果将可绘制图片初始化为相应的表情符号。
+
+          你现在应该包含以下组件：
+          相机中的原始照片位图，传入 `detectFacesAndOverlayEmoji()` 方法。
+          每个面孔对应的表情符号维度，在循环中为面孔进行定义。
+          检测到的面孔，同样在循环中进行定义。
+
+          下一步是创建一个新的方法 `addBitmapToFace()`，该方法会传入我们刚刚提到的三个组件（照片位图、表情符号位图和面孔对象），并在每次循环时用表情符号位图覆盖检测到的面孔，返回组合的位图结果。 
+
+          组合位图很简单，但这节课就不介绍了。你可以下方的方法代码，我将在下节课介绍相关功能。要详细了解如何处理 2D 图片，请参阅该[开发者文档](https://developer.android.com/guide/topics/graphics/2d-graphics.html)。
+
+          ```
+
+          /**
+          * 将原始照片与表情符号位图相结合
+          *
+          * @param backgroundBitmap 原始照片
+          * @param emojiBitmap      所选表情符号
+          * @param face             检测到的面孔
+          * @return 最终位图，包括面孔表情符号
+          */
+          private static Bitmap addBitmapToFace(Bitmap backgroundBitmap, Bitmap emojiBitmap, Face face) {
+
+             // 将结果位图初始化为原始图片的可变副本
+             Bitmap resultBitmap = Bitmap.createBitmap(backgroundBitmap.getWidth(),
+                     backgroundBitmap.getHeight(), backgroundBitmap.getConfig());
+
+             // 调整表情符号，使其在面孔上的效果看起来更好
+             float scaleFactor = EMOJI_SCALE_FACTOR;
+
+             // 根据面孔宽度判断表情符号的大小，并保持宽高比
+             int newEmojiWidth = (int) (face.getWidth() * scaleFactor);
+             int newEmojiHeight = (int) (emojiBitmap.getHeight() *
+                     newEmojiWidth / emojiBitmap.getWidth() * scaleFactor);
+
+
+             // 调整表情符号
+             emojiBitmap = Bitmap.createScaledBitmap(emojiBitmap, newEmojiWidth, newEmojiHeight, false);
+
+             // 判断表情符号的位置，以便与面孔保持一致
+             float emojiPositionX =
+                     (face.getPosition().x + face.getWidth() / 2) - emojiBitmap.getWidth() / 2;
+             float emojiPositionY =
+                     (face.getPosition().y + face.getHeight() / 2) - emojiBitmap.getHeight() / 3;
+
+             // 创建画布并在上面绘制位图
+             Canvas canvas = new Canvas(resultBitmap);
+             canvas.drawBitmap(backgroundBitmap, 0, 0, null);
+             canvas.drawBitmap(emojiBitmap, emojiPositionX, emojiPositionY, null);
+
+             return resultBitmap;
+          }
+
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 338170
+        key: a6eaab79-caaf-44b2-ab48-913f2a481cb7
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # 叠加表情符号第 1 步
+
+          在这一步，你会将所选表情符号的位图可绘制图片添加到原始照片的检测面孔上
+
+          ### 练习代码
+          **练习：**[TLIB.05-Exercise-DrawEmojiOverFaces](https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.05-Exercise-DrawEmojiOverFaces)
+
+        instructor_notes: ''
+        resources: null
+      - id: 338171
+        key: 4a34f7bc-8fae-4350-a5c3-98c15baf4d78
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 更改 whichEmoji() 方法的返回类型
+          - 使该方法返回所选表情符号类型
+          - 更改 detectFaces() 方法的名称和返回类型
+          - 创建一个叫做 emojiBitmap 的变量
+          - 根据 whichEmoji() 的结果创建 switch 语句
+          - 创建并初始化叫做 resultBitmap 的变量
+          - 调用 addBitmapToFace()
+          - 返回 resultBitmap
+          - 将 detectFaces() 的方法调用改成 detectFacesAndOverlayEmoji()
+        positive_feedback: |-
+          :D 
+
+          **解决方案：**[[TLIB.05-Solution-DrawEmojiOverFaces](https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.05-Solution-DrawEmojiOverFaces)][[Diff](https://github.com/udacity/AdvancedAndroid_Emojify/compare/TLIB.05-Exercise-DrawEmojiOverFaces...TLIB.05-Solution-DrawEmojiOverFaces?expand=1)]
+        video_feedback: null
+        description: '请完成此练习中的 TODO：'
+  - id: 338335
+    key: f566361a-8421-4edb-9bc4-c5c942f19dcf
+    locale: zh-cn
+    version: 1.0.0
+    title: 叠加表情符号 - 第 2 步
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338172
+    atoms:
+      - id: 338172
+        key: 3ac3c1df-0a7c-4ec2-aac2-9aeed0fc6d19
+        locale: zh-cn
+        version: 1.0.0
+        title: 叠加表情符号 - 第 2 步
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53101'
+          youtube_id: C-Dt76ko_Nc
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe46a_26-overlay-step-2/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe46a_26-overlay-step-2/26-overlay-step-2_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe46a_26-overlay-step-2/26-overlay-step-2_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe46a_26-overlay-step-2/26-overlay-step-2_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe46a_26-overlay-step-2/26-overlay-step-2_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58ebe46a_26-overlay-step-2/hls/playlist.m3u8'
+  - id: 338338
+    key: 957a1f65-7c2b-4b0c-b5c5-f07dd07cc4d1
+    locale: zh-cn
+    version: 1.0.0
+    title: 叠加表情符号结尾部分
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338174
+    atoms:
+      - id: 338174
+        key: a205471d-0ef5-4317-99bc-be7e85721f6e
+        locale: zh-cn
+        version: 1.0.0
+        title: 叠加表情符号结尾部分
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51924'
+          youtube_id: Ulbj0HOSUVY
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b547_27-overlay-emoji-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b547_27-overlay-emoji-outro/27-overlay-emoji-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b547_27-overlay-emoji-outro/27-overlay-emoji-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b547_27-overlay-emoji-outro/27-overlay-emoji-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b547_27-overlay-emoji-outro/27-overlay-emoji-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b547_27-overlay-emoji-outro/hls/playlist.m3u8'
+  - id: 338339
+    key: 62247b4f-a1d6-4653-9c34-da8fd7bdc4c0
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：常用库'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338173
+      - 338175
+      - 338176
+    atoms:
+      - id: 338173
+        key: b1afb9a0-bbe1-4aec-b0ea-6620c885e427
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          这节课就快学完了，我们将介绍很多 Android 应用用到的一些其他库。 
+
+          1. **Picasso 和 Glide**
+          Android 开发者经常遇到的一个常见问题是在应用中正确地使用图片。包含很多高质量的图片将大大地增大 apk 的大小，通过网络下载图片会消耗内存，并存在网络连接问题。Picasso 和 Glide 都是非常强大的库，适合加载、缓存和显示图片。它们包含大量精彩的功能，例如能够包含占位符图片和进行本地缓存，所以几乎所有包含图片的应用都使用二者之一。请参阅 [Picasso](http://square.github.io/picasso/) 和 [Glide](https://github.com/bumptech/glide) 文档。
+
+          2.  **Butterknife**:
+          如果你创建过包含大量视图的应用，那么你就了解针对每个视图编写 findViewById() 调用以及创建自定义 onClick 有多么的枯燥。这些任务涉及到数据绑定，以及将数据与用户查看的视图向关联。 Butterknife 是一个变革性库，通过注释让这一切变得异常轻松。请参阅相关文档，了解让你的编程操作轻松很多的一些示例。你甚至可以在我们的 Emojifier 应用中实现该库，请参阅[此代码](https://github.com/ngamolsky/Emojify/commit/6a9f68d1ff72b0679190fdafb43aa004780dfeb8)了解添加该库后的代码外观。 
+          3. **Timber**:
+          Timber 由 Butterknife 的同一创建者创建和维护，是一个非常酷的日志工具。相信大家肯定都使用过内置的 Logger，并知道查看关于应用在调试器中的信息有多重要。Timber 则进一步作出完善，为所有日志需求提供可修改的平台。它包含以下及更多功能：
+          没有标签的日志（Timber 为你创建一个）
+          为应用的调试和发布版本创建不同的日志逻辑（你可能只想查看在发布版本中的错误）；
+          自动错误检测。
+          你可以在[此处](https://github.com/ngamolsky/Emojify/commit/1d9742eb394f9637819f9e25c6c760abc2cc92c3)查看 Emojifier 应用使用该库后的效果，当然添加该库是完全可选的。
+        instructor_notes: ''
+        resources: null
+      - id: 338175
+        key: 56d92904-b945-44b5-a38a-49499f7e2732
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # 常用库
+
+          ### 练习代码
+          **练习：**[TLIB.06-Exercise-AddButterknife](https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.06-Exercise-AddButterknife)
+
+          **练习：**[TLIB.07-Exercise-AddTimber](https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.07-Exercise-AddTimber)
+
+        instructor_notes: ''
+        resources: null
+      - id: 338176
+        key: 22bab70d-a51d-4e9c-921c-16617fb0b72d
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 在 Emojify 中完成 Timber 设置
+          - 在 Emojify 中完成 Butterknife 设置
+        positive_feedback: |-
+          太棒了！又完成了一道练习! :)
+
+          **解决方案：**[[TLIB.06-Exercise-AddButterknife](https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.06-Exercise-AddButterknife)][[Diff](https://github.com/udacity/AdvancedAndroid_Emojify/compare/TLIB.06-Exercise-AddButterknife...TLIB.06-Solution-AddButterknife?expand=1)]
+
+
+          **解决方案：**[[TLIB.07-Exercise-AddTimber(https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.06-Exercise-AddButterknife)][[Diff](https://github.com/udacity/AdvancedAndroid_Emojify/compare/TLIB.07-Exercise-AddTimber...TLIB.07-Solution-AddTimber?expand=1)]
+        video_feedback: null
+        description: ''
+  - id: 338340
+    key: 53704183-35a6-412d-83ed-55fbdc8ae628
+    locale: zh-cn
+    version: 1.0.0
+    title: 常用库结尾部分
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338177
+      - 338178
+    atoms:
+      - id: 338177
+        key: 1ce5daf7-d226-47e4-8619-e7386980a387
+        locale: zh-cn
+        version: 1.0.0
+        title: 常用库结尾部分
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51923'
+          youtube_id: AIxbwzFQFHM
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b541_29-must-have-libraries-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b541_29-must-have-libraries-outro/29-must-have-libraries-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b541_29-must-have-libraries-outro/29-must-have-libraries-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b541_29-must-have-libraries-outro/29-must-have-libraries-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b541_29-must-have-libraries-outro/29-must-have-libraries-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b541_29-must-have-libraries-outro/hls/playlist.m3u8'
+      - id: 338178
+        key: 8a645af2-9e4b-4a32-9af3-3a9d79410613
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          - [Butterknife 库](https://github.com/JakeWharton/butterknife)
+          - [Timer 库](https://github.com/JakeWharton/timber)
+        instructor_notes: ''
+        resources: null
+  - id: 338344
+    key: f5282c3d-ff7b-4b65-b82d-89f8d6efe15c
+    locale: zh-cn
+    version: 1.0.0
+    title: 库结尾部分
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338180
+      - 338181
+    atoms:
+      - id: 338180
+        key: 9e69d345-9e47-48b4-83be-0fba04cbdf73
+        locale: zh-cn
+        version: 1.0.0
+        title: 库结尾部分
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51926'
+          youtube_id: sc8d9DajAuo
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b55b_30-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b55b_30-outro/30-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b55b_30-outro/30-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b55b_30-outro/30-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b55b_30-outro/30-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d1b55b_30-outro/hls/playlist.m3u8'
+      - id: 338181
+        key: fe6b9258-8efa-4aae-9ca1-32da036f285b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 讲师注释
+          请参阅该[开发者文档](https://developer.android.com/studio/projects/android-library.html)，了解如何创建 Android 库。
+        instructor_notes: ''
+        resources: null

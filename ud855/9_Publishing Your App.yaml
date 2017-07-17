@@ -1,0 +1,1239 @@
+id: 338508
+key: e8a12d52-65b1-4f20-9fe4-5622c992631f
+locale: zh-cn
+version: 1.0.0
+title: 发布你的应用
+semantic_type: Lesson
+updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/5903cd27_screen-shot-2017-04-28-at-4.15.14-pm/screen-shot-2017-04-28-at-4.15.14-pm.png'
+  width: 876
+  height: 894
+video: null
+summary: ‘这节课将逐步讲解设置应用以成功发布应用并在 Google Play 中上架后继续扩大用户群的步骤！’
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+_concepts_ids:
+  - 338461
+  - 338463
+  - 338462
+  - 338464
+  - 338465
+  - 338472
+  - 338467
+  - 338469
+  - 338470
+  - 338471
+  - 338473
+  - 338476
+  - 338475
+  - 338474
+  - 338482
+  - 338483
+  - 338489
+  - 338501
+_project_id: null
+resources:
+  files:
+    - name: Videos Zip File
+      uri: 'http://d2uz2655q5g6b2.cloudfront.net/e8a12d52-65b1-4f20-9fe4-5622c992631f/268704/1497370585692/Publishing%20Your%20App%20Videos.zip'
+    - name: Transcripts Zip File
+      uri: 'http://d2uz2655q5g6b2.cloudfront.net/e8a12d52-65b1-4f20-9fe4-5622c992631f/268704/Publishing%20Your%20App%20Subtitles.zip'
+  google_plus_link: null
+  career_resource_center_link: null
+  coaching_appointments_link: null
+  office_hours_link: null
+concepts:
+  - id: 338461
+    key: 8cf23a50-e2ba-422e-9344-032656630682
+    locale: zh-cn
+    version: 1.0.0
+    title: 应用发布简介
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338417
+      - 338418
+    atoms:
+      - id: 338417
+        key: 7a6244c9-d949-43ff-9500-289df748f48e
+        locale: zh-cn
+        version: 1.0.0
+        title: 01 简介
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53603'
+          youtube_id: x7Ok1Td1Po0
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f537fb_01-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f537fb_01-intro/01-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f537fb_01-intro/01-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f537fb_01-intro/01-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f537fb_01-intro/01-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f537fb_01-intro/hls/playlist.m3u8'
+      - id: 338418
+        key: 2af336e5-c231-47c9-9f46-28e335aae205
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Android 平台的用户群非常庞大！
+
+          活跃 Android 用户有 10 亿，Google Play 商店是开发者吸引用户群的生态系统。  
+
+          这里是几个[精彩故事](https://developer.android.com/stories/index.html)，讲述了开发者如何用自己的理念改变用户和自己的生活。 
+        instructor_notes: ''
+        resources: null
+  - id: 338463
+    key: 3908d2b5-4a8a-4760-a459-9304ad6ac3bd
+    locale: zh-cn
+    version: 1.0.0
+    title: 发布流程
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338419
+      - 338420
+      - 338421
+      - 338422
+      - 338423
+    atoms:
+      - id: 338419
+        key: 708d9a6b-ab6d-4210-b6be-127b27299f56
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          发布流程可以总结为 3 个阶段
+          - 准备发布
+          - 分发给用户
+          - 吸引和扩大用户群
+
+          每个阶段都和应用开发本身一样重要。为了确保你的应用能在 Google Play 中脱颖而出，并增大用户下载应用的概率，我们来看看 Google 的<a href="https://developer.android.com/distribute/marketing-tools/launch-checklist.html" target="_blank">发布检查清单</a>，该清单总结了在 Google Play 上发布应用前需要完成的任务。
+
+          现在不用实施这些任务，只是简要了解下，以便为后续任务完成过程做好准备。
+
+          在整个发布流程中，你将使用 <a href="https://developer.android.com/distribute/console/index.html" target="_blank">Google Play 开发者控制台</a>。它是管理应用生命周期的一站式服务点，从发布前的测试到之后跟踪应用的获取统计信息和收入报告。
+
+          请查看开发者控制台所具备的<a href="https://developer.android.com/distribute/console/features.html" target="_blank">功能</a>，并注册帐号。 
+        instructor_notes: ''
+        resources: null
+      - id: 338420
+        key: c19a0145-98f7-4ef1-81a3-bfa7a2e074dd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58f67de7_screen-shot-2017-04-18-at-1.56.11-pm/screen-shot-2017-04-18-at-1.56.11-pm.png'
+        width: 1374
+        height: 820
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338421
+        key: 567827b1-85c9-4fcf-a24f-72d1cbb51304
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          要使用开发者控制台，请用 Google 帐号登录，同意 Google Play 开发者分发协议，检查你要分发应用的国家/地区是否在列表中，并准备一张信用卡来支付 25 美元的注册费。
+
+          注册完毕后，你将看到你的信息中心。
+        instructor_notes: ''
+        resources: null
+      - id: 338422
+        key: ad3ca348-7812-4201-ac4d-5c96a3c10438
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58f67db0_screen-shot-2017-04-18-at-1.56.26-pm/screen-shot-2017-04-18-at-1.56.26-pm.png'
+        width: 1718
+        height: 884
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338423
+        key: 4786f5f1-7636-48b2-b9c0-c34c26dee23b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          使用标签页浏览控制台中的所有功能：查看你创建的所有应用、创建新的应用、使用 Google Play 游戏服务等等。如果你的应用是付费应用或具有应用内购商品，则可以在“订单管理”标签页中设置商家帐号，你还可以查看崩溃报告、应用评价、统计信息和财务报告。 
+
+          通过这一简短介绍就可以看出开发者控制台非常强大！
+        instructor_notes: ''
+        resources: null
+  - id: 338462
+    key: 968ef580-2322-41f0-a2e3-3b8c6994b0b1
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：发布流程'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338424
+    atoms:
+      - id: 338424
+        key: 013be98e-58da-4411-bb9e-2fe77aa464c2
+        locale: zh-cn
+        version: 1.0.0
+        title: 熟悉发布流程
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - ‘查看[发布检查清单](https://developer.android.com/distribute/marketing-tools/launch-checklist.html)'
+          - ‘查看 [Google Play 开发者控制台](https://developer.android.com/distribute/console/index.html)功能’
+          - 创建 Google Play 开发者控制台帐号
+        positive_feedback: 已经有了很好的开端！我们将介绍所有步骤并展示在 Google Play 中发布应用所需的工具。我们开始吧！
+        video_feedback: null
+        description: ‘请花些时间阅读下面列出的文档。无需执行发布检查清单中的任何任务，只是让你熟悉发布流程。’
+  - id: 338464
+    key: 0f76a949-84aa-46df-a2fc-531efcf6f60d
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：政策协议'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338425
+      - 338426
+      - 338427
+    atoms:
+      - id: 338425
+        key: 52072db8-0096-48fd-840c-cf261f6707cc
+        locale: zh-cn
+        version: 1.0.0
+        title: 发布 3 政策协议 SC
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53605'
+          youtube_id: fgkNLu6pRHc
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5380a_publishing-3-policy-agreements-sc/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5380a_publishing-3-policy-agreements-sc/publishing-3-policy-agreements-sc_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5380a_publishing-3-policy-agreements-sc/publishing-3-policy-agreements-sc_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5380a_publishing-3-policy-agreements-sc/publishing-3-policy-agreements-sc_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5380a_publishing-3-policy-agreements-sc/publishing-3-policy-agreements-sc_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5380a_publishing-3-policy-agreements-sc/hls/playlist.m3u8'
+      - id: 338426
+        key: 0eb6a613-2e10-4045-bd3e-26117ccb54c4
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘”我们来构建全球最值得信赖的应用和游戏来源平台吧" ([cite](https://play.google.com/about/developer-content-policy/))'
+        instructor_notes: ''
+        resources: null
+      - id: 338427
+        key: afed05bb-352a-4c83-aaa6-ab8c29f89e04
+        locale: zh-cn
+        version: 1.0.0
+        title: 查看政策协议
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - ‘查看 [Google Play 政策和指南](https://play.google.com/about/developer-content-policy/)'
+          - ‘查看 [Google 开发者分发协议](https://play.google.com/intl/ALL_us/about/developer-distribution-agreement.html)'
+        positive_feedback: ‘了解这些政策后，我们开始讲解质量测试吧！’
+        video_feedback: null
+        description: |-
+          我们已进入发布检查清单的第 2 步：了解 Google Play 政策和协议
+
+          请花些时间了解并遵守 Google Play 计划政策。Google Play 会积极强制执行这些政策，任何违规行为都可能导致应用被封停，甚至开发者帐号都被终止。请务必重视这些政策。
+  - id: 338465
+    key: acf44a84-df2b-4f0e-b2a6-5a5e692d8fa8
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：质量测试'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338428
+      - 338429
+    atoms:
+      - id: 338428
+        key: 4a8c1d30-ce87-4a98-a73d-6166bed6e0a1
+        locale: zh-cn
+        version: 1.0.0
+        title: 发布 4 质量测试 SC
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53606'
+          youtube_id: GovA5OXsetk
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f53810_publishing-4-quality-testing-sc/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f53810_publishing-4-quality-testing-sc/publishing-4-quality-testing-sc_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f53810_publishing-4-quality-testing-sc/publishing-4-quality-testing-sc_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f53810_publishing-4-quality-testing-sc/publishing-4-quality-testing-sc_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f53810_publishing-4-quality-testing-sc/publishing-4-quality-testing-sc_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f53810_publishing-4-quality-testing-sc/hls/playlist.m3u8'
+      - id: 338429
+        key: 99d4cd6b-5a1d-449b-a1b0-82e92b2e1ffc
+        locale: zh-cn
+        version: 1.0.0
+        title: 质量测试
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - ‘[核心应用质量指南](https://developer.android.com/develop/quality-guidelines/core-app-quality.html)（适用于所有应用）'
+          - ‘[平板电脑应用质量指南](https://developer.android.com/develop/quality-guidelines/tablet-app-quality.html)（如果面向平板电脑）’
+          - ‘[教育指南](https://developers.google.com/edu/guidelines)（如果在 Google Play for Education 上发布）’
+        positive_feedback: 你能够确保你的应用满足这些质量要求，很棒！你的用户将非常感激你！
+        video_feedback: null
+        description: |-
+          我们已进入发布检查清单的第 3 步：质量测试。 
+
+          设置一个测试环境，根据这些指南测试你的应用：
+  - id: 338472
+    key: ca6d428f-fbbd-451b-bcef-5dff152d7866
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：确定应用设置'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338440
+      - 338441
+    atoms:
+      - id: 338440
+        key: 52da3230-7fa5-4ebd-9fc2-2aff73a89241
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 确定应用设置
+
+          现在开始确定应用的设置了。在向 Google Play 发布应用时，你需要确定几个细节：
+
+          ### 内容分级级别
+          应用的内容分级级别可以告诉用户应用的心智成熟度。内容分级包括以下几个级别：
+          - 所有用户
+          - 心智成熟度低
+          - 心智成熟度中等
+          - 心智成熟度高 
+
+
+          ### 国家/地区分发情况
+          确定你要向哪些国家/地区分发你的应用。通常，开发者都希望尽可能向更多地区分发应用，以扩大用户群，但是某些应用要求、发布依赖条件或业务需求可能会需要排除某些国家/地区。
+
+          你要发布的国家/地区将影响到：
+          - 是否需要提供本地化应用资源
+          - 是否需要在开发者控制台中提供本地化应用说明
+          - 国家/地区特定的要求
+          - 时区支持
+          - 本地定价
+
+          ### 应用的总体大小
+          在创建本课程时，在 Google Play 上发布的 APK 大小上限是 100MB。如果你的应用超过了这一上限，Google Play 允许你添加两个扩展文件来补充你的 APK。要进行设置，请使用 [APK 扩展文件](https://developer.android.com/google/play/expansion-files.html)。 
+
+          此外，在构建准备发布的 APK 前，请运行 [Proguard](https://developer.android.com/studio/build/shrink-code.html) 来删除不使用的代码和资源，以便减小应用二进制文件的大小。
+
+          ### 确认目标平台版本和设备屏幕
+          确保应用在你计划的 Android 版本和屏幕大小的设备上运行。
+
+          检查 *minSdkVersion*，它是你的应用兼容的最低版本。Android 平台版本由 [API 级别](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)进行定义。 
+
+          对于设备屏幕尺寸，请在各种屏幕尺寸和像素密度的设备上运行应用。请参阅[支持多种屏幕](https://developer.android.com/guide/practices/screens_support.html)指南，了解如何准备你的应用。此外，请在[设备信息中心](https://developer.android.com/about/dashboards/index.html)查看世界上目前可用的 Android 平台版本和屏幕尺寸，以帮助你判断你希望面向哪些版本和屏幕尺寸。  
+
+          此外，还有很多第三方测试平台可以帮助你以云端形式在很多实际设备上测试你的应用，例如 [Xamarin Test Cloud](https://www.xamarin.com/test-cloud)。 
+
+          ### 免费应用还是付费应用？
+          你可以发布免费下载的应用或付费应用。
+
+          Google Play 中的任何 Android 用户都可以下载免费应用。免费应用必须保持免费；但是，你依然可以通过 Google Play 的应用内[结算服务](https://developer.android.com/google/play/billing/index.html)出售[应用内商品](https://developer.android.com/google/play/billing/billing_overview.html#products)和[订阅](https://developer.android.com/google/play/billing/billing_subscriptions.html)。 
+
+          只有在支持付费下载内容的国家/地区并在 Google Play 上注册了付款方式（例如信用卡或运营商直接代扣）的用户可以下载付费应用。你可以随时将付费应用改为免费应用。
+
+          如果你决定发布付费应用或出售应用内购商品，则需要设置 [Google payments 商家帐号](https://developer.android.com/distribute/best-practices/launch/index.html)，然后才能发布应用。
+
+          ### 应用内购买结算或 Android Pay
+
+          如果你想寻找通过应用获利和产生吸引力的更多方式，则可以考虑[应用内购买结算](https://developer.android.com/google/play/billing/index.html)，该服务使你能够在应用中出售可下载的电子内容（例如媒体文件或照片），或使用 Android Pay，它简化了向用户出售实际商品和服务（例如食品或服饰）的流程。
+
+          ### 设置商品价格
+          如果你的应用有定价，或你要出售应用内购商品或实际商品，请确定接受的币种。你可以在开发者控制台中针对每种币种设定不同的价格，这样可以根据汇率和市场状况调整定价。
+
+          - [以多种币种设定价格](https://support.google.com/googleplay/android-developer/answer/1169947)
+          - [为应用设定价格和分发的国家/地区](https://support.google.com/googleplay/android-developer/answer/6334373?visit_id=1-636275525080183095-4138352002&rd=1#paid_free)
+          - [交易费](https://support.google.com/googleplay/android-developer/answer/112622)
+          - [税率和增值税](https://support.google.com/googleplay/android-developer/answer/138000)
+
+          ### 开始本地化
+          最后，确保你的应用满足本地化需求。包括应用资源（例如字符串、图片等）、应用的 Google Play 商品详情和图表资源及视频。
+
+          请参阅[本地化检查清单](https://developer.android.com/distribute/best-practices/launch/localization-checklist.html)了解关键步骤。 
+
+          对于资源本地化，请参阅[资源本地化](https://developer.android.com/guide/topics/resources/localization.html)指南。 
+        instructor_notes: ''
+        resources: null
+      - id: 338441
+        key: 1c94092b-e0e3-463d-8535-90393b12e99c
+        locale: zh-cn
+        version: 1.0.0
+        title: 确定应用设置
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - ‘第 4 步- [确定应用的内容分级](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#determine-rating)'
+          - '第 5 步 - [确定分发国家/地区](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#determine-country)'
+          - '第 6 步 - [确定总体大小](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#confirm-size)'
+          - '第 7 步 - [确定平台和屏幕范围](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#confirm-platform)'
+          - '第 8 步 - [确定是免费还是付费应用](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#decide-price)'
+          - '第 9 步 - [使用应用内购买结算](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#consider-billing)'
+          - '第 10 步 - [设定商品价格](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#set-prices)'
+          - '第 11 步 - [开始本地化](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#start-localization)'
+        positive_feedback: ‘做好这些基本设置决定后，我们继续做好分发前的准备工作。’
+        video_feedback: null
+        description: ‘完成发布检查清单中的第 4 - 11 步。’
+  - id: 338467
+    key: e0b49044-e4d1-4dd7-9f94-e80dfbcba164
+    locale: zh-cn
+    version: 1.0.0
+    title: 准备可以发布的 APK
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338430
+      - 338431
+      - 338433
+    atoms:
+      - id: 338430
+        key: a3259bdf-b627-40bc-ae87-246a2934f785
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # 准备可以发布的 APK
+
+          马上就可以发布了！在准备应用以满足 UI、兼容性和质量要求后，现在可以配置应用以进行发布、向开发者控制台上传可以发布的 APK 并向用户分发应用了。
+
+          对于所有 Android 应用来说，准备发布都是必须的开发任务，并涉及配置、构建和测试应用的发布版本。在开始这一流程之前，我们先确定下我们需要收集的材料。
+
+          ## 密钥
+
+          首先，你需要密钥。在 Android 设备上安装的应用必须用应用开发者所有的整数进行电子签名。换句话说，开发者拥有应用证书的密钥。该证书用来识别应用创作者并在应用之间建立信任。  
+
+          <a href="https://developer.android.com/studio/publish/app-signing.html" target="_blank">如何获取证书来为应用签名。</a>
+
+          ## 应用图标
+
+          接着，检查确保应用图标满足<a href="https://developer.android.com/guide/practices/ui_guidelines/icon_design_launcher.html" target="_blank">应用启动器图标指南</a>。
+
+          应用的启动器图标有 3 个目的：
+          - 宣传品牌并传达应用的作用
+          - 帮助用户在 Google Play 上发现该应用
+          - 在启动器里能正常工作（也就是在任何背景下都看起来正常，并放置在其他图标旁边） 
+        instructor_notes: ''
+        resources: null
+      - id: 338431
+        key: ca28926c-f076-4bda-9352-e8e92412c6a2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## 最终用户许可协议 (EULA)
+
+          之前，在检查清单的第 2 步，我们查看了<a href="https://play.google.com/intl/ALL_us/about/developer-distribution-agreement.html" target="_blank">开发者分发协议</a>，这是一份 Google 与你（开发者）之间达成的协议。 
+
+          相反，EULA 是你（开发者）与最终用户之间达成的协议。
+
+          《开发者分发协议》的第 5.4 节规定：
+
+          *5.4 您授予用户在全球范围内非独占的永久许可，允许其在设备上演示、展示和使用商品…如果愿意，您也可以在您的商品中附带一份单独的最终用户许可协议 (EULA) 来约束用户对商品所拥有的权利；但是，如果 EULA 与本协议存在冲突，则以本协议为准。*
+
+          也就是说，并非必须自己撰写 EULA，但是有助于保护你的知识产权，限制你的责任并作出免责声明。 
+
+          如果你决定自己撰写 EULA 并需要一些示例来帮助你开始，你可以参阅热门 github 项目的许可协议：
+
+          - <a href="https://square.github.io/" target="_blank">Square Open Source</a> 具有几个开源项目，其中包含了与你的情形相符的许可协议。请转到任何项目的许可文件，看看他们使用了哪个许可。 
+          - <a href="https://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">Apache License</a> 是一个产品常用的开源软件许可，用户可以随意使用、修改和分发。 
+          - 另一个热门的开源许可是 <a href="https://opensource.org/licenses/MIT" target="_blank">MIT 许可</a>。与 Apache License 相比，MIT 许可更简短、简单，使用户更自由地使用你的产品。  
+          - 如果你需要帮助以便在各种类型的开源许可之间做出选择，请参阅 <a href="http://www.choosealicense.com" target="_blank">www.choosealicense.com</a> 以帮助确定哪个开源许可最符合你的情形。
+
+          你还可以参阅 EULA 了解你已经经常使用的应用。 
+
+          如果你在设备上下载了优达学城应用，则可以看到我们在“设置”菜单的“许可”下使用的许可措辞。
+
+          Google 针对自己的应用具有特定的 EULA，例如你可以在 Google 地图的“设置”菜单下找到 EULA。
+        instructor_notes: ''
+        resources: null
+      - id: 338433
+        key: 38e3a1f5-4593-4759-ac01-fa8a58429f8c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## 宣传材料
+
+          最后，确保具有可以在 Google Play 上展示的宣传或营销材料，以便吸引新的用户。要了解详情，请参阅<a href="https://support.google.com/googleplay/android-developer/answer/1078870" target="_blank">应用图表资源文档</a>。
+
+          为每种受支持的设备（手机、平板电脑、电视或穿戴式设备）提供屏幕截图。确保满足最小和最大尺寸，以便在 Google Play 以最佳形式展示你的应用。注意，展示的所有应用都必须具有高分辨率图标。在商品详情页面的顶部展示的置顶大图可以帮助吸引新用户的注意。 
+
+          还可以考虑使用宣传图表、横幅资源（针对 Android TV）360 度全景图片（针对支持 Daydream 的应用）和潜在的宣传视频。
+        instructor_notes: ''
+        resources: null
+  - id: 338469
+    key: bce4538d-6f38-46f0-b894-4db77f59f90c
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：准备可以发布的 APK'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338434
+      - 338432
+    atoms:
+      - id: 338434
+        key: 1ffff2bf-ba0b-4c9c-b384-575221a67fe7
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### 资源
+
+          **密钥**
+          - [为应用签名 - 证书和密钥库](https://developer.android.com/studio/publish/app-signing.html)
+
+          **应用图标**
+          - [Launcher Icon Guidelines](https://developer.android.com/guide/practices/ui_guidelines/icon_design_launcher.html)
+          - [应用图表资源文档](https://support.google.com/googleplay/android-developer/answer/1078870)
+
+          **编写 EULA 的资源**
+          - [Square Open Source](https://square.github.io/)
+          - [帮助选择许可](https://choosealicense.com/)
+          - 在 [Udacity 应用](https://play.google.com/store/apps/details?id=com.udacity.android&hl=en)中，转到 -> 设置 -> 许可
+
+          **宣传材料**
+          - [应用图表资源文档](https://support.google.com/googleplay/android-developer/answer/1078870)
+        instructor_notes: ''
+        resources: null
+      - id: 338432
+        key: 89f8359e-89ce-4b65-bcf6-df29d1f3f631
+        locale: zh-cn
+        version: 1.0.0
+        title: '练习：准备可以发布的 APK'
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - '请阅读[准备发布](https://developer.android.com/studio/publish/preparing.html)的“简介”和“收集资料和资源”部分’
+          - ‘获取*密钥* - [为应用签名 - 证书和密钥库](https://developer.android.com/studio/publish/app-signing.html)'
+          - 检查确保*应用的图标满足图标指南*
+          - 撰写*最终用户许可协议 (EULA)*
+          - 准备*宣传或营销材料*
+        positive_feedback: ‘准备完毕后，我们开始配置应用。’
+        video_feedback: null
+        description: '马上就可以发布了！在准备应用以满足 UI、兼容性和质量要求后，现在可以配置应用以进行发布、向开发者控制台上传可以发布的 APK 并向用户分发应用了！’
+  - id: 338470
+    key: 91bd956a-d4bd-482e-be6b-0bf249e05958
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：配置应用以进行发布'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338435
+      - 338436
+    atoms:
+      - id: 338435
+        key: 46f52ae7-a4e9-4669-8562-f8d030f9626b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # 练习：配置应用以进行发布
+
+          准备好所有必要的材料后，我们开始配置应用以进行发布。这一步是对源代码、资源文件和应用清单进行一些配置更改。某些步骤是可选步骤，但是强烈建议你执行，以养成良好的编程习惯。
+
+          请按照这些步骤（下面列出的所有步骤都摘自[准备发布](https://developer.android.com/studio/publish/preparing.html)指南的[配置应用以进行发布](https://developer.android.com/studio/publish/preparing.html#publishing-configure)部分)操作：
+
+          ### 选择合适的软件包名称
+          确保选择一个在应用的整个生命周期内都合适的软件包名称。向用户分发应用后，就无法更改软件包名称了。你可以在应用的清单文件中设置软件包名称。要了解详情，请参阅[软件包](https://developer.android.com/guide/topics/manifest/manifest-element.html#package)属性文档。
+
+          ### 关闭日志记录和调试
+          在构建应用以进行发布之前，确保停用日志和调试选项。你可以通过在源文件中删除对 [Log](https://developer.android.com/reference/android/util/Log.html) 方法的调用来停用日志选项。停用调试选项的方法是：在清单文件中从 *<application>* 标记中删除 *android:debuggable*  属性，或在清单文件中将 *android:debuggable* 属性设为 *false*。 
+          此外，删除在项目中创建的所有日志文件或静态测试文件。
+
+          此外，你应该删除所有添加到代码中的 [Debug](https://developer.android.com/reference/android/os/Debug.html) 跟踪调用，例如 [startMethodTracing()](https://developer.android.com/reference/android/os/Debug.html#startMethodTracing()) 和 [stopMethodTracing()](https://developer.android.com/reference/android/os/Debug.html#stopMethodTracing()) 方法调用。
+
+          ### 清理项目目录
+          清理项目，并确保遵守 [Android 项目](https://developer.android.com/studio/projects/index.html#ApplicationProjects)中描述的目录结构。将散乱文件或孤立文件留在项目中会妨碍你编译应用，而且可能会导致应用行为不可预测。至少应执行以下清理任务：
+
+          - 查看 *jni/、lib/ 和 src/* 目录下的内容。*jni/* 目录应只包含与 [Android NDK](https://developer.android.com/ndk/index.html) 关联的源文件，例如 *.c、.cpp、.h 和 .mk* 文件。*lib/* 目录应只包含第三方库文件或私有库文件，包括预构建共享库和静态库（例如 *.so* 文件）。*src/* 目录应只包含应用的源文件（*.java* 和 *.aidl* 文件）。*src/* 目录不应包含任何 *.jar* 文件。
+
+          - 检查项目，查看是否有应用不使用的私有或专有数据文件，并移除它们。例如，查看项目的 res/ 目录是否有你不再使用的旧的可绘制图像文件、布局文件和值文件，并删除它们。
+
+          - 检查 lib/ 目录，查看是否有应用不再使用的测试库，并移除它们。
+
+          - 检查 *assets/* 目录和 *res/raw/* 目录下的内容，查看是否有需要在发布前更新或移除的原始资源文件和静态文件。
+
+
+          ### 检查并更新清单和 Gradle 构建设置
+          验证确保以下清单和构建文件设置正确：
+
+          - [<uses-permission>](https://developer.android.com/guide/topics/manifest/uses-permission-element.html) 元素。你应该仅指定与你的应用相关并且必需的权限。
+
+          - *android:icon* 和 *android:label* 属性。必须为这两个属性指定值，它们位于 [<application>](https://developer.android.com/guide/topics/manifest/application-element.html) 元素中。
+
+          - *android:versionCode* 和 *android:versionName* 属性。建议为这两个属性指定值，它们位于 [<manifest>](https://developer.android.com/guide/topics/manifest/manifest-element.html) 元素中。要了解详情，请参阅[应用版本设置](https://developer.android.com/studio/publish/versioning.html)
+
+          如果你要在 Google Play 上发布应用，还可以设置其他几个清单或构建文件元素。例如，*android:minSdkVersion* 和 *android:targetSdkVersion* 属性（位于 [<uses-sdk>](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html) 元素中。如需详细了解这些设置以及其他 Google Play 设置，请参阅 [Google Play 上的过滤器](https://developer.android.com/google/play/filters.html)
+
+
+          ### 解决兼容性问题
+          Android 提供了多种工具和技术，可让你的应用与多种设备兼容。为了使你的应用可供尽可能多的用户使用，请执行以下操作：
+
+          - **添加针对多种屏幕配置的支持**：确保遵循[支持多种屏幕的最佳做法](https://developer.android.com/guide/practices/screens_support.html#screen-independence)。通过支持多种屏幕配置，你可以创建一款在 Android 系统支持的任何屏幕尺寸上都可以正常运行且显示良好的应用。
+
+          - **针对 Android 平板电脑设备优化您的应用**：如果你的应用是专为早于 Android 3.0 的设备设计的，则可遵循[针对 Android 3.0 优化应用](https://developer.android.com/guide/practices/optimizing-for-3.0.html) 中所述的指南和最佳做法使其与 Android 3.0 设备兼容。
+
+          - ** 考虑使用支持库**：如果您的应用是专为运行 Android 3.x 的设备设计的，则可通过向应用项目添加[支持库](https://developer.android.com/topic/libraries/support-library/index.html)让您的应用与较早的 Android 版本兼容。支持库提供你可以添加到 Android 应用的静态支持库，有了它，你可以使用较旧平台版本上不提供的 API，或使用不属于框架 API 的实用程序 API。
+
+          ### 更新服务器和服务的网址
+          如果你的应用访问远程服务器或服务，请确保你使用的是服务器或服务的正式版网址或路径，而不是测试网址或路径。
+
+          ### 实现许可（如果你在 Google Play 上发布）
+          如果你要通过 Google Play 发布付费应用，请考虑增加针对 Google Play 许可的支持。许可让你可以根据当前用户是否已购买应用来控制他们对应用的访问。使用 Google Play 许可属于可选项，即使你要通过 Google Play 发布应用也是如此。
+
+          要详细了解 Google Play 许可服务以及如何在应用中使用这种服务，请参阅[应用许可](https://developer.android.com/google/play/licensing/index.html)。
+
+        instructor_notes: ''
+        resources: null
+      - id: 338436
+        key: 56db7e13-5f26-4dfb-a322-4925eafa28c8
+        locale: zh-cn
+        version: 1.0.0
+        title: 配置应用以进行发布
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 选择合适的软件包名称
+          - 关闭日志记录和调试
+          - 清理项目目录
+          - 检查并更新清单和 Gradle 构建设置
+          - 解决兼容性问题
+          - 更新服务器和服务的网址
+          - 实现许可（如果你在 Google Play 上发布）
+        positive_feedback: ‘配置完毕后，我们就可以展开构建流程了！’
+        video_feedback: null
+        description: '按照[配置应用以进行发布](https://developer.android.com/studio/publish/preparing.html#publishing-configure)部分描述的步骤操作。完成每个步骤后，都打个勾。’
+  - id: 338471
+    key: 5c682800-fd1c-49bf-8dae-be23d4faca99
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：构建应用以进行发布'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338437
+      - 338438
+      - 338439
+    atoms:
+      - id: 338437
+        key: 57e2a2a3-caad-43c4-8f9a-4ba9b0853e91
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # 构建应用以进行发布
+
+          所有 APK 必须先使用证书进行数字签名，然后才能安装。要签署发布版本，你可以：
+
+          (1) 使用 Android Studio 手动生成签署的 APK，可以一次生成一个或同时生成多个。详细的[手动签署发布版本步骤位于此处](https://developer.android.com/studio/publish/app-signing.html#release-mode)。 
+
+          或 
+
+          (2) 配置 Gradle 构建版本以在构建流程中自动签署。[配置构建流程以手动签署 APK 的详细步骤位于此处](https://developer.android.com/studio/publish/app-signing.html#sign-auto)。 
+
+        instructor_notes: ''
+        resources: null
+      - id: 338438
+        key: e89c20e5-57f5-4378-8f71-071b85d7f1a1
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### 保护好密钥！！！
+          请将你的密钥库（包含密钥）放在安全可靠的地方，并确保对这些密钥进行安全备份。如果你在 Google Play 上发布应用，后来丢失了签署应用的密钥，则无法发布关于应用的任何更新，因为你必须始终使用相同的密钥签署应用的所有版本。不要变成[这些沮丧的开发者](http://stackoverflow.com/search?q=lost+my+android+keystore)。
+        instructor_notes: ''
+        resources: null
+      - id: 338439
+        key: 35680ce2-03ae-468e-8afd-5b6e831a609d
+        locale: zh-cn
+        version: 1.0.0
+        title: 构建应用以进行发布
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - '[手动](https://developer.android.com/studio/publish/app-signing.html#release-mode)签署发布版本或通过配置 Gradle 构建[自动](https://developer.android.com/studio/publish/app-signing.html#sign-auto)签署'
+          - 将密钥的备份副本放在安全可靠的地方！
+        positive_feedback: ‘再强调一遍，请务必将密钥备份副本放在安全的地方！’
+        video_feedback: null
+        description: ''
+  - id: 338473
+    key: 246b90f1-a7e8-4ffb-88a8-12ab13baf428
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：测试应用以进行发布'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338442
+      - 338443
+    atoms:
+      - id: 338442
+        key: 50b892e8-2422-40fc-82f3-0aec7f3acc30
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 练习：测试应用以进行发布
+
+          至少在 1 部目标手持设备和 1 部目标平板电脑设备上测试发布版本。
+
+          检查 UI 元素大小是否正确、应用性能和电池效率是否达到预期。 
+           
+        instructor_notes: ''
+        resources: null
+      - id: 338443
+        key: bca2bb4b-ce84-4356-ad04-571d794a720e
+        locale: zh-cn
+        version: 1.0.0
+        title: 测试应用以进行发布
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 至少在 1 部目标手持设备和 1 部目标平板电脑设备上测试了发布版本
+        positive_feedback: 哇！开始向一些用户分发应用了！
+        video_feedback: null
+        description: ''
+  - id: 338476
+    key: d5a85601-0e65-4080-9ef5-897a8a22758f
+    locale: zh-cn
+    version: 1.0.0
+    title: Alpha/Beta 测试
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338444
+      - 338445
+      - 338446
+    atoms:
+      - id: 338444
+        key: 46b8eb8e-dda8-4a52-83e5-f2aab61bd2b2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Alpha/Beta 测试
+
+          版本准备过程已完毕！当用户拿到你的应用时，所有这些准备工作都是值得的。
+
+          **在发布应用，让任何人访问你的应用之前，强烈建议你安排用户测试。**
+
+          用户测试是指寻找真实的用户来使用你的应用，请他们反馈哪些方面不错，哪些方面值得改进，以便改善你的应用体验。
+
+          在开发阶段，你应该一直都在测试应用以发现任何 bug，确保你的应用朝着正确的方向发展。 
+
+          用户测试，尤其是发布前的测试，可以帮助你优化应用，实现最流畅的用户体验。聆听用户反馈很关键，可以帮助你构建他们真正想要的功能，这样他们才会继续回来使用你的应用。 
+
+          Google Play 开发者控制台可以帮助你先在小部分人群（称为 Alpha 测试人员）中测试，然后再在更庞大的 Beta 测试人员人群中测试。
+
+          这些测试人员无法留下评价或评分，所以不会对你的应用在 Google Play 上的平方造成影响。
+
+          ## 寻找测试人员
+
+          首先，你需要寻找测试人员。可以考虑身边的人：朋友、家人、同事、同学和社区成员。例如，如果你为爱狗人士构建应用以便跟踪他们的日程遛狗行程，你可以在集会小组里找到爱狗人士，他们可能就是你的未来用户。
+
+          另一个测试人员来源是在线网站，例如 Reddit，该网站上具有专门针对 <a href="https://www.reddit.com/r/alphaandbetausers/" target="_blank">alpha/beta 测试人员</a>、beta 测试人员和 Android 应用的。
+        instructor_notes: ''
+        resources: null
+      - id: 338445
+        key: 2606bd15-5045-4035-9a71-d387c0698082
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 封闭式或开放式 Beta 测试
+
+          在 Beta 测试阶段，你可以进行封闭式或开放式 Beta 测试。
+
+          封闭式 Beta 测试意味着在一小群人群或特定的用户群体中测试应用。如果你要测试之前已经发布过的现有应用，那么这种测试很有用，只有测试群组中的用户可以收到更新测试版。 
+
+          开放式 Beta 测试是在大型人群中测试，你的应用在 Play 商店上会标注它是 Beta 版本。
+
+          如果你开展的是开放式 Beta 测试，那么任何人都可以加入你的 Beta 测试计划，并单独向你发送反馈。如果你选择这种测试模式，则一定确保你的应用已经做好这一级别的公开。 
+
+          同样，开放式和封闭式 Beta 测试人员的评价不会公开。 
+        instructor_notes: ''
+        resources: null
+      - id: 338446
+        key: 533acb43-1021-4ed9-9fb7-54b30e2a2261
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 获取用户反馈
+          选择面向哪些用户之后，如何获得反馈呢？ 
+
+          你可以通过电子邮件、网站、消息论坛（例如 Google 网上论坛或 G+ 社群）或其他渠道获得反馈。 
+
+          如果你开展的是开放式测试，那么测试人员还可以<a href="https://support.google.com/googleplay/android-developer/answer/138230#browse_reviews" target="_blank">通过 Play 商店向你提供私密反馈</a>。
+
+          现在该你了。请为你的应用设置 Alpha 或 Beta 测试，确保在发布前获得真实的评价！
+
+          注意，你的测试人员希望帮助你实现精彩的应用体验！记得感谢他们抽出时间进行测试并提供反馈。希望你能测试流程，并借机深入了解如何继续构建最佳产品。
+        instructor_notes: ''
+        resources: null
+  - id: 338475
+    key: 6570ba40-ad4b-415c-9808-57249d455e77
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：Alpha/Beta 测试’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338448
+    atoms:
+      - id: 338448
+        key: ff589fea-f606-47da-8980-1b804d282a49
+        locale: zh-cn
+        version: 1.0.0
+        title: Alpha/Beta 测试
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - ‘[设置 Alpha/Beta 测试](https://support.google.com/googleplay/android-developer/answer/3131213)'
+          - ‘通过电子邮件、网站、消息论坛、Google 网上论坛或在[开发者控制台](https://support.google.com/googleplay/android-developer/answer/138230#browse_reviews)中获得反馈’
+          - 将测试用户的反馈落实到应用中
+        positive_feedback: ‘了解何时及如何正确地收集和落实用户反馈可以帮助你了解该侧重于应用的哪个方面。请在此处查看一些[最佳做法](https://developer.android.com/distribute/best-practices/grow/user-reviews.html)。’
+        video_feedback: null
+        description: ''
+  - id: 338474
+    key: 31c7e6c0-26f7-45ff-a11a-0809b4210af3
+    locale: zh-cn
+    version: 1.0.0
+    title: 发布前测试报告
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338447
+    atoms:
+      - id: 338447
+        key: c3523451-c8e4-4327-b5a9-d4d029dfa43e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 发布前测试报告
+
+          上传并发布 alpha 或 beta APK 后，请在开发者控制台中启用[发布前测试报告](https://support.google.com/googleplay/android-developer/answer/7002270?hl=en)。
+
+          该报告是个很棒的总结报告，可以向你提供以下信息：*测试期间的崩溃次数*、*来自测试设备的屏幕截图*、以及在大量设备上测试应用时发现的*任何安全问题*！
+
+          启用发布前测试报告后，你的所有未来 alpha 和 beta APK 都将自动接受测试，检查是否存在设备兼容性、显示问题和安全漏洞。
+
+          [这个 Medium 帖子](https://medium.com/@AruLNadhaN/awesome-pre-launch-reports-for-alpha-beta-apks-9960ac5c403c)逐步讲解了发布前测试报告的功能。 
+        instructor_notes: ''
+        resources: null
+  - id: 338482
+    key: 8d5a556f-53d9-4d0a-8897-34150f95219f
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：商品详情、Play 徽章和链接'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338449
+      - 338450
+    atoms:
+      - id: 338449
+        key: 4079b773-5d92-4758-a4d8-c4b366a40924
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 完成应用的商品详情
+
+          完成所有发布前的准备工作后，你可以向全世界展示你的精彩应用了！
+
+          查看发布检查清单中的提醒 - [第 15 步：完成应用的商品详情](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#complete-details)。
+
+          # 使用 Google Play 徽章和链接来宣传你的应用
+
+          使用 [Google Play 徽章](https://play.google.com/intl/en_us/badges/)向 Android 用户宣传你的应用。徽章可以从网页、广告、评价等地方将用户链接到你的产品。此外，使用[链接格式](https://developer.android.com/distribute/marketing-tools/linking-to-google-play.html)直接链接到你的商品详情页面、链接到你的产品列表或搜索结果。 
+
+          这些方法加上社交媒体、博客帖子、视频和其他宣传方法，可以在应用发布后帮助吸引更多用户。 
+
+          查看发布检查清单中的其他详情 - [第 16 步：在宣传活动中使用 Google Play 徽章和链接](https://developer.android.com/distribute/marketing-tools/launch-checklist.html)。
+        instructor_notes: ''
+        resources: null
+      - id: 338450
+        key: 232b0a1f-d779-4087-a259-45fc813f0545
+        locale: zh-cn
+        version: 1.0.0
+        title: ‘商品详情、Play 徽章和链接'
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - ‘[完成应用商品详情](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#complete-details)'
+          - ‘决定如何[在宣传活动中使用 Google Play 徽章和链接](https://developer.android.com/distribute/marketing-tools/launch-checklist.html)'
+        positive_feedback: 就快拉开精彩帷幕了，鼓声响起来...
+        video_feedback: null
+        description: ''
+  - id: 338483
+    key: 58be111e-8bbb-4bf4-a664-5448060e8ed2
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：你已经准备好发布了！’
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338451
+      - 338452
+    atoms:
+      - id: 338451
+        key: 8ff6ce60-2a90-4d5d-907b-fa37c42c283b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 你已经准备好发布了！
+
+          *击掌！*你已经做了很多准备工作，为成功奠定了基础。请花一点时间建成任务清单。这么做可以帮助你做好平稳发布的准备（发布期间肯定不希望出现意外情况）。  
+
+          完成后，点击开发者控制台上的大**发布**按钮，开心的跳个舞吧！你已经向世界发布了一款应用了！！！
+
+          几个小时之后，用户就可以搜索你的应用和相关链接。如果你打算发布更新，请查看[发布更新的相关要求](https://support.google.com/googleplay/android-developer/answer/113476?hl=en&topic=2365760&ctx=topic)。
+        instructor_notes: ''
+        resources: null
+      - id: 338452
+        key: 837e8f01-60cb-431f-834c-480b07c07cd0
+        locale: zh-cn
+        version: 1.0.0
+        title: 最后检查
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 开发者资料信息正确
+          - 上传的应用版本正确
+          - ‘商品详情设置完备（例如图片资源、屏幕截图、视频、本地化说明）’
+          - 应用正确地显示为免费版或付费版
+          - 设定了目标国家/地区和币种
+          - ‘”兼容的设备”与你的目标设备一致'
+          - 给出了正确的网址和支持电子邮箱链接
+          - ‘应用遵守[内容政策指南](https://play.google.com/about/developer-content-policy/)'
+          - ‘应用遵守[开发者分发协议](https://play.google.com/intl/ALL_us/about/developer-distribution-agreement.html)中规定的 Google Play 上 Android 内容和美国出口法律指南’
+        positive_feedback: |-
+          你的应用已做好发布准备了！
+          向大家发布应用吧！
+        video_feedback: null
+        description: '在点击”发布”前先仔细检查这些条目：’
+  - id: 338489
+    key: 4146b6b3-f4cc-4680-99c1-23e25be64a11
+    locale: zh-cn
+    version: 1.0.0
+    title: ‘练习：吸引和扩大用户群'
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338453
+      - 338454
+      - 338455
+      - 338456
+      - 338457
+      - 338458
+    atoms:
+      - id: 338453
+        key: 86a66ac6-a1f2-40d8-81b4-a34da63c193e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # 吸引和扩大用户群
+
+          发布的乐趣并非在你点击“发布”后就结束了。要为用户打造最佳体验，一定要聆听他们的反馈和采取积极的措施。
+
+          可能的用户反馈示例：
+        instructor_notes: ''
+        resources: null
+      - id: 338454
+        key: e8cba944-19e7-4f92-bee0-98a8e28c3bb1
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58eecd6c_screen-shot-2017-04-12-at-5.58.53-pm/screen-shot-2017-04-12-at-5.58.53-pm.png'
+        width: 858
+        height: 274
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338455
+        key: 539a1da6-0134-4f1c-96ea-560253612d4a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58eecd92_screen-shot-2017-04-12-at-5.59.00-pm/screen-shot-2017-04-12-at-5.59.00-pm.png'
+        width: 858
+        height: 294
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338456
+        key: 86aa6c4c-4255-4660-b632-47091ddcf4d3
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          发布检查清单给出了几个关于如何最有效地[在发布后为用户提供支持](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#support-users)的实用建议。
+
+
+          开发者控制台也是个很好的工具，可以帮助你继续吸引和扩大用户群。请参阅它可以如何帮助你：
+          - 提高[用户获取](https://developer.android.com/distribute/console/features.html#user-acquisition)
+          - 分析[用户反馈](https://developer.android.com/distribute/console/features.html#user-feedback)
+          - 接收关于应用状态、评价、财务数据等的[通知](https://developer.android.com/distribute/console/features.html#team-access-and-notifications)
+        instructor_notes: ''
+        resources: null
+      - id: 338457
+        key: 8977342d-814f-4630-bba7-7960de624290
+        locale: zh-cn
+        version: 1.0.0
+        title: 对负面用户反馈做出响应
+        semantic_type: ReflectAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        instructor_notes: null
+        resources: null
+        question:
+          title: null
+          semantic_type: TextQuestion
+          evaluation_id: null
+          text: 假设你收到了用户"Nosmo King”的上述反馈。你会采取什么样的积极措施来解决这一情形？
+        answer:
+          text: |-
+            Nosmo King 的评论很有用，指出了哪个版本存在问题。还可以验证其他版本没有出现这一问题。 
+
+            作为开发者，如果你能意识到他们的顾虑并告诉他们你在积极解决问题，用户会很感激。
+
+            关于 UI 变化，某些用户可能不喜欢你（或你的团队）做出的决定。查看是否还会遇到这类抱怨，并看看这只是一次性的抱怨，还是有必要重新考虑设计决策。 
+          video: null
+      - id: 338458
+        key: b4c9cdf9-37fc-484f-a34e-a4bfa07ad46e
+        locale: zh-cn
+        version: 1.0.0
+        title: 对正面用户反馈做出响应
+        semantic_type: ReflectAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        instructor_notes: null
+        resources: null
+        question:
+          title: null
+          semantic_type: TextQuestion
+          evaluation_id: null
+          text: 假设你的应用收到了用户"JavaQueen”的上述反馈。你会采取什么样的积极措施来解决这一情形？
+        answer:
+          text: |-
+            感谢她提供反馈和继续支持你的应用。她可能会成为很好的宣传者，甚至会成为强大的用户。此类用户可以成为未来的用户测试人员。
+
+            还可以联系她，询问是否有任何改善建议。
+          video: null
+  - id: 338501
+    key: 8577d54b-f751-4272-98e1-1b34525671ba
+    locale: zh-cn
+    version: 1.0.0
+    title: 在 Google Play 上取得成功
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338459
+      - 338460
+    atoms:
+      - id: 338459
+        key: 0026d75c-96ed-44f7-bc43-b1648e5e8df0
+        locale: zh-cn
+        version: 1.0.0
+        title: 在 Google Play 上取得成功
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58098'
+          youtube_id: wH5JIGLYPoo
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593ef57f_publishing15-success-on-google-play-sc-1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593ef57f_publishing15-success-on-google-play-sc-1/publishing15-success-on-google-play-sc-1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593ef57f_publishing15-success-on-google-play-sc-1/publishing15-success-on-google-play-sc-1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593ef57f_publishing15-success-on-google-play-sc-1/publishing15-success-on-google-play-sc-1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593ef57f_publishing15-success-on-google-play-sc-1/publishing15-success-on-google-play-sc-1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593ef57f_publishing15-success-on-google-play-sc-1/hls/playlist.m3u8'
+      - id: 338460
+        key: 09d06fe2-5ce9-4a6e-a9cb-f17f66515c8b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### 资源
+
+          - [打造吸引数十亿用户的应用](https://developer.android.com/develop/quality-guidelines/building-for-billions.html) - 关于连接性、设备功能、流量成本、电量消耗和大型市场内容方面的建议
+
+          - [收益](https://developer.android.com/distribute/best-practices/earn/index.html) - 如何如何建立和拓展应用的收入来源
+
+          - [开发者故事](https://developer.android.com/stories/index.html) - 开发者如何在 Android 和 Google Play 上取得成功
+
+          - 通过 [Firebase Analytics](https://developer.android.com/distribute/best-practices/earn/improve-conversions.html) 提高转化率
+        instructor_notes: ''
+        resources: null

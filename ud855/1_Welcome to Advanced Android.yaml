@@ -1,0 +1,393 @@
+id: 338079
+key: 8b2a9d63-0ff5-48ff-90d3-a9855b701dae
+locale: zh-cn
+version: 1.0.0
+title: 欢迎学习《高级 Android》课程
+semantic_type: Lesson
+updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58fa754f_lesson-blue/lesson-blue.png'
+  width: 500
+  height: 500
+video: null
+summary: ‘简要介绍课程大纲，以及下载所有课程代码示例以便跟着操作的步骤。’
+lesson_type: Classroom
+duration: 10
+is_project_lesson: false
+_concepts_ids:
+  - 338077
+  - 338078
+_project_id: null
+resources:
+  files:
+    - name: Videos Zip File
+      uri: 'http://d2uz2655q5g6b2.cloudfront.net/8b2a9d63-0ff5-48ff-90d3-a9855b701dae/268705/1498143612822/Welcome%20to%20Advanced%20Android%20Videos.zip'
+  google_plus_link: null
+  career_resource_center_link: null
+  coaching_appointments_link: null
+  office_hours_link: null
+concepts:
+  - id: 338077
+    key: 2281c9ce-24da-4e0e-9fae-27e813834bf9
+    locale: zh-cn
+    version: 1.0.0
+    title: 欢迎学习这门课程！
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338059
+    atoms:
+      - id: 338059
+        key: 6e360cd8-ef51-47de-b59d-bb9a0b01a33d
+        locale: zh-cn
+        version: 1.0.0
+        title: 欢迎学习这门课程！
+        semantic_type: VideoAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '55831'
+          youtube_id: DU0WPupWBak
+          subtitles: []
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/5911f6f5_1st5mins-generic/1st5mins-generic_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/5911f6f5_1st5mins-generic/1st5mins-generic_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/5911f6f5_1st5mins-generic/1st5mins-generic_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/5911f6f5_1st5mins-generic/1st5mins-generic_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/5911f6f5_1st5mins-generic/hls/playlist.m3u8'
+  - id: 338078
+    key: 41b82e3c-2797-46e5-8a66-684098ca8cbb
+    locale: zh-cn
+    version: 1.0.0
+    title: 课程代码指南
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338060
+      - 338061
+      - 338062
+      - 338063
+      - 338068
+      - 338064
+      - 338065
+      - 338066
+      - 338067
+      - 338070
+      - 338071
+      - 338069
+      - 338072
+      - 338073
+      - 338074
+      - 338075
+      - 338076
+    atoms:
+      - id: 338060
+        key: b5606420-a730-4da7-9d35-3e1052d9ea5b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # 课程代码指南
+
+          欢迎学习《高级 Android》课程！在这门课程中，你将创建和编写 7 个不同的的示例应用，并学习高级 Android 技能，这些应用包括：
+
+          * [AndroidMe](https://github.com/udacity/Android_Me/) - AndroidMe 这款应用使你能够通过自定义 Android 的外观，创建个性化 Android 系统！它会使用[框架](https://developer.android.com/guide/components/fragments.html) 和 Activity 的模块部分创建灵活的自适应用户界面。
+          * [Emojify](https://github.com/udacity/AdvancedAndroid_Emojify) - Emojify 是一款有趣的应用，它能够根据你的面部表情将自拍照变成相应的表情符号！在这款应用中，你将开始接触库。
+          * [Squawker](https://github.com/udacity/AdvancedAndroid_Squawker/) - Squawker 是一款社交媒体应用，每当情绪烦躁时，课程讲师将会发出“抱怨声”。该应用会实时地显示新的服务器数据，并能够节省电量。
+          * [ShushMe](https://github.com/udacity/AdvancedAndroid_Shushme) - 每当你到达你设定的地点时，ShushMe 就会让设备静音。在这款应用中，我们将介绍 [Geofence](https://developer.android.com/training/location/geofencing.html)。
+          * [ClassicalMusicQuiz](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz) - 这款应用是一个简单的音频测验应用，你将通过聆听音乐作品来猜测作曲者！我们将在这款应用的创建过程中介绍 [Android Media Player](https://developer.android.com/guide/topics/media/mediaplayer.html)。
+          * [MyGarden](https://github.com/udacity/AdvancedAndroid_MyGarden) - MyGarden 是一款园艺应用，你可以向花园中添加植物，并定期浇水，这样植物才会茂盛地生长。在这款应用的学习过程中，我们将介绍小部件。
+          * [TeaTime](https://github.com/udacity/AdvancedAndroid_TeaTime) - TeaTime 是一个点茶模拟应用，展示了 [Espresso 测试框架](https://developer.android.com/training/testing/ui-testing/espresso-testing.html)的不同用途（即 View、AdapterView、Intent、IdlingResource）。
+
+
+          ## Github
+          要浏览这些代码，你需要熟悉版本控制系统 [Git](https://git-scm.com/) 和相关的网站 [GitHub](https://github.com/)。通常，掌握版本控制系统（简称 VCS）的工作原理是开发工程师岗位的常见要求。Git 是非常热门的 VCS，Google 和优达学城都使用该 VCS。
+
+          如果你不了解 Git 或 Github，不知道如何使用它们，建议你学习这门[优达学城课程](https://www.udacity.com/course/how-to-use-git-and-github--ud775)。你还可以查看很多其他资料，例如 GitHub 推出的[交互式教程](https://try.github.io/levels/1/challenges/1)。要使用我们的资源库，你需要熟练掌握以下技能：
+
+          * 如何克隆 GitHub 资源库
+          * 如何阅读 GitHub 上的 diff
+          * Git 中的分支是什么
+          * 如何使用 checkout 在分支之间切换
+          * 如何分阶段和提交代码
+
+          ## 课程代码的结构
+
+          这门课程的每个代码资源库都具有一个 commit 链，如下所示：
+
+
+
+        instructor_notes: ''
+        resources: null
+      - id: 338061
+        key: 8921e5cd-800b-417a-a705-1a97b28e3c81
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58befe2e_listofcommits/listofcommits.png'
+        width: 419
+        height: 585
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338062
+        key: ec4e03b1-95fc-4ac0-8f8e-b262bfaa19cf
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          这些 commit 展示了创建应用需要采取的每个步骤，包括**练习** Commit 和**答案** Commit。练习 Commit 包含了完成练习的说明，而答案 Commit 显示了完成后的练习。你可以通过查看 commit 消息了解是什么样的 commit。 
+
+          例如，**TFCM.01-Exercise-AddGradleDependencies** 是 Firebase Cloud Messaging (FCM) 课程的第一个编程步骤。这是练习 commit，该练习叫做“添加 Gradle 依赖项”。
+
+          每个 commit 还有一个相关的**分支**，名称和 commit 消息一样，如下所示：
+        instructor_notes: ''
+        resources: null
+      - id: 338063
+        key: 052f5c37-eab0-436f-aa9c-81afe7cde6dd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58f650f2_screen-shot-2017-04-18-at-10.46.09-am/screen-shot-2017-04-18-at-10.46.09-am.png'
+        width: 1610
+        height: 124
+        caption: 从此标签页上访问所有分支
+        resources: null
+        instructor_notes: null
+      - id: 338068
+        key: c3dd2ce6-6c01-4922-8bf8-1e230b8b268e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58befe76_listofbranches/listofbranches.png'
+        width: 427
+        height: 553
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338064
+        key: 79fe5774-b447-4e0e-8fe8-771d3cc21010
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58f650a8_screen-shot-2017-04-18-at-10.44.34-am/screen-shot-2017-04-18-at-10.44.34-am.png'
+        width: 1696
+        height: 1294
+        caption: 还可以从“代码”标签页中的下拉列表中访问分支
+        resources: null
+        instructor_notes: null
+      - id: 338065
+        key: 59de69d3-8480-41b6-9f61-8e1c67d28bf3
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 处理课程代码
+
+          下面将介绍完成资源库中的练习的基本步骤。每当你开始新的练习项目时，我们都会提供相关链接，所以不用记下这些内容！实际上，现在只需通读下，确保大概了解如何完成不同的任务，然后在开始第一个练习时再回来看看这些信息。 
+
+          基本步骤包括：
+
+          1. 克隆资源库
+          2. 检出练习分支
+          3. 查找并完成 TODO
+          4. （可选）commit 你的代码更改
+          5. 与答案进行对比
+
+          **第 1 步：克隆资源库**
+
+          当你学习这门课程时，我们将介绍如何克隆不同的练习资源库，所以暂时不用进行设置。你可以使用以下命令在所选文件夹下克隆 github 中的资源库：
+
+          ```bash
+          git clone https://github.com/udacity/REPOSITORY_NAME.git
+          ```
+
+          **第 2 步：检出练习分支**
+
+          当你完成不同的编程练习时，我们会告诉你要完成哪个练习，如下所示：
+        instructor_notes: ''
+        resources: null
+      - id: 338066
+        key: f10a6852-c8f2-44c2-86b6-d58623a10933
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf0087_exerciseexample/exerciseexample.png'
+        width: 417
+        height: 81
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338067
+        key: 21db7ed6-4377-42ac-bb0a-f68891b98fa7
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          要完成某个练习，你需要检出与该练习相关的分支。对于上述练习，检出分支的命令是：
+
+          ```bash
+          git checkout TFCM.01-Exercise-AddGradleDependencies
+          ```
+
+          **第 3 步：查找并完成 TODO**
+
+          该分支的标题中始终具有 **Exercise** 字眼。检出分支后，你将拥有处在你所需状态的代码，甚至包括 TODO。TODO 是一种特殊的注释，可以告诉你完成练习需要执行的所有步骤。你可以使用 Android Studio 的 TODO 工具轻松地查找所有 TODO。要打开 TODO 工具，点击屏幕底部带有“TODO”字样的按钮，系统随即显示出项目中的所有 TODO 注释列表。我们对 TODO 步骤进行了编号，使你能够按顺序完成这些 TODO：
+        instructor_notes: ''
+        resources: null
+      - id: 338070
+        key: 02ae58d9-bfdf-4c0a-8348-5329adce9474
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf00e7_todos/todos.png'
+        width: 878
+        height: 260
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338071
+        key: 18e33712-c9ac-4074-b43e-87b21802a005
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          **第 4 步：（可选）commit 你的代码更改**
+
+          完成 TODO 之后，你可以选择 commit 你的更改。这样每当你返回该分支时，就可以查看你所编写的代码。你可以使用以下 git 代码添加和保存**所有**更改。
+
+          ```bash
+          git add .
+          git commit -m "Your commit message"
+          ```
+
+          **第 5 步：与解决方案进行对比**
+
+         大部分练习都会给出退出课堂的步骤列表。退出之后，系统会弹出一个窗口，并在其中给出解决方案代码的链接。请注意 **Diff** 链接：
+        instructor_notes: ''
+        resources: null
+      - id: 338069
+        key: f62cf5fa-1283-4169-b874-b2799907b7f9
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf00f9_solutionwindow/solutionwindow.png'
+        width: 696
+        height: 484
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338072
+        key: 44650aaf-76bc-47e4-b177-51097d027d06
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        text: '**Diff** 链接将使你转到 Github diff 文件，如下所示：'
+        instructor_notes: ''
+        resources: null
+      - id: 338073
+        key: 1dd806c7-af9e-4956-a9a1-89d58d718550
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf0108_diffsceenshot/diffsceenshot.png'
+        width: 753
+        height: 630
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338074
+        key: 82a0ae03-c297-4e8b-8552-0a743ad943f9
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          解决方案中的绿色部分表示所有添加的代码，红色表示删除的代码（通常是 TODO 注释）。
+          ## 报告问题
+          发现资源库中存在问题？请在该资源库中提交 github 问题：
+
+        instructor_notes: ''
+        resources: null
+      - id: 338075
+        key: 7a16c575-f05c-470e-b951-4093bf6abe1b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf01c9_fileissue/fileissue.png'
+        width: 1008
+        height: 132
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 338076
+        key: 341706d8-7bfa-48a4-ad6e-39bf48903291
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 02:09:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          如果你遇到普通的课程问题，并希望报告给我们，请一定要这么做！这些问题包括错别字、意思不明的语句、视频问题或建议。你可以通过向 ticket.andnd(AT)mail.udacity.com 发送电子邮件来报告问题。确保邮件主题采用以下格式：
+
+           **高级 Android -（课程名称）-（问题说明）**
+
+          在邮件正文部分，**请附上遇到问题的网页对应的链接**并阐明问题是什么。
+        instructor_notes: ''
+        resources: null
