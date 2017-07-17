@@ -1,0 +1,1519 @@
+id: 339108
+key: 5f584ce7-1b7b-4848-80c1-b559739ea363
+locale: zh-cn
+version: 1.0.0
+title: Add Commits To A Repo
+semantic_type: Lesson
+updated_at: 'Fri Jun 23 2017 07:35:00 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58fa7637_lesson-teal/lesson-teal.png'
+  width: 500
+  height: 500
+video: null
+summary: 'A repository is nothing without commits. In this lesson, you''ll learn how to make commits, write descriptive commit messages, and verify the changes you''re about to save to the repository.'
+lesson_type: Classroom
+duration: 90
+is_project_lesson: false
+_concepts_ids:
+  - 339085
+  - 339086
+  - 339087
+  - 339088
+  - 339089
+  - 339090
+  - 339091
+_project_id: null
+concepts:
+  - id: 339085
+    key: c97e28fd-7fc6-435c-9953-4678b4728755
+    locale: zh-cn
+    version: 1.0.0
+    title: Intro
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 07:34:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338859
+    atoms:
+      - id: 338859
+        key: f84e8dd9-9445-412a-8c12-67b8e95680a7
+        locale: zh-cn
+        version: 1.0.0
+        title: Gitfinal L4 01 Adding Commits - Intro
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:37:11 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51660'
+          youtube_id: sLcOFQ4mGvo
+          subtitles: null
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc815b_gitfinal-l4-01-adding-commits-intro/gitfinal-l4-01-adding-commits-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc815b_gitfinal-l4-01-adding-commits-intro/gitfinal-l4-01-adding-commits-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc815b_gitfinal-l4-01-adding-commits-intro/gitfinal-l4-01-adding-commits-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc815b_gitfinal-l4-01-adding-commits-intro/gitfinal-l4-01-adding-commits-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc815b_gitfinal-l4-01-adding-commits-intro/hls/playlist.m3u8'
+  - id: 339086
+    key: 85cd2f5e-a3a9-467f-9043-96d8b627787b
+    locale: zh-cn
+    version: 1.0.0
+    title: Git Add
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 07:34:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338858
+      - 338860
+      - 338861
+      - 338862
+      - 338863
+      - 338864
+      - 338865
+      - 338866
+      - 338867
+      - 338868
+      - 338869
+      - 338870
+      - 338871
+      - 338872
+      - 338873
+      - 338874
+      - 338875
+      - 338876
+      - 338877
+      - 338878
+      - 338879
+      - 338880
+    atoms:
+      - id: 338858
+        key: 472d5167-ce9e-4838-bb1b-b63a4c48281b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Move To Correct Project
+
+          If you've been following along, you should have two different directories with Git projects on your computer:
+          * new-git-project - an empty directory that you converted to a Git repository using `git init`
+          * course-git-blog-project - an existing blog project you retrieved using `git clone`
+
+          To avoid any confusion with existing commits, we'll be making our commits to the new-git-project Git repository.
+
+          On the Terminal, make sure you `cd` into the `new-git-project` directory. If you don't have a `new-git-project` directory, create it now. Once you're inside the directory, run the `git init` command. If you've already run `git init` before it's ok – running `git init` multiple times doesn't cause any problems since it just re-initializes the Git directory.
+        instructor_notes: ''
+        resources: null
+      - id: 338860
+        key: cdcbff85-6406-4030-9c2c-3aa7f7d1dc9b
+        locale: zh-cn
+        version: 1.0.0
+        title: Proper Setup
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - I've `cd`ed into the `new-git-project` directory on the Terminal
+          - I've run `git init` to create a new Git repository
+        positive_feedback: Perfect!
+        video_feedback: null
+        description: 'Time to make sure we''re both have the same setup:'
+      - id: 338861
+        key: 2334d315-9ec4-4b88-a581-463c2f627551
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: 'Your Terminal should look like this:'
+        instructor_notes: ''
+        resources: null
+      - id: 338862
+        key: eb679e04-a246-4c58-bd7c-0ab33282a732
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a384ae_ud123-l4-new-git-project/ud123-l4-new-git-project.png'
+        width: 2092
+        height: 1174
+        caption: _The Terminal application in the new-git-project directory._
+        resources: null
+        instructor_notes: null
+      - id: 338863
+        key: c175bfbe-cef4-455f-8eeb-22c4659bfff2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Status Status Status
+
+          I've said it a number of times already, but the `git status` command will be _extremely helpful_ in this lesson. You should have it as your goal to run the `git status` command both _before_ and _after_ any other Git command.
+
+          Let's run it right now!
+        instructor_notes: ''
+        resources: null
+      - id: 338864
+        key: a5241099-1c7f-4714-8edb-8b5e6f51824b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a384dc_ud123-l4-git-status/ud123-l4-git-status.png'
+        width: 2122
+        height: 1174
+        caption: _The Terminal application showing the output of the `git status` command._
+        resources: null
+        instructor_notes: null
+      - id: 338865
+        key: 98c11094-7d9d-496f-af54-0b549ffbf578
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Git Status Output Review
+
+          This is the output:
+
+          ```bash
+          On branch master
+
+          Initial commit
+
+          nothing to commit (create/copy files and use "git add" to track)
+          ```
+
+          Notice that last line – `nothing to commit (create/copy files and use "git add" to track)`. See how it's recommending the `git add` command? that's super helpful! The `git status` output will give you advice or hints as to what you should do next.
+
+          Let's do what the feedback says and create some files.
+        instructor_notes: ''
+        resources: null
+      - id: 338866
+        key: 7cdf1792-f445-49f3-851f-36e1de15fbff
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Create An HTML File
+
+          First, create a file named `index.html`, and fill it with some starter code:
+
+          ```html
+          <!doctype html>
+          <html lang="en">
+          <head>
+              <meta charset="utf-8">
+              <title>Blog Project</title>
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <meta name="description" content="">
+              <link rel="stylesheet" href="css/app.css">
+          </head>
+          <body>
+
+              <script src="js/app.js"></script>
+          </body>
+          </html>
+          ```
+
+          Things to note, the code references a CSS file and a JavaScript file.
+
+          Now create those the CSS and JavaScript files. You can leave both of these files empty. We'll add content to them in a bit.
+        instructor_notes: ''
+        resources: null
+      - id: 338867
+        key: c83b76a7-f7a7-4434-a463-e62c7ff3840c
+        locale: zh-cn
+        version: 1.0.0
+        title: Verifying Project Setup
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - I have created `index.html` and filled it with the starter code above (_and saved the file_)
+          - I have created a `css` folder and created `app.css` inside of it
+          - I have created a `js` folder and created `app.js` inside of it
+        positive_feedback: 'Awesome, great work!'
+        video_feedback: null
+        description: 'Before we proceed, let''s make sure we have the same setup. Check off each of the following as you complete them:'
+      - id: 338868
+        key: 60e0ed30-db8d-437e-ae1d-7f09a0b99990
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Quick Git Status Check
+
+          We just made a number of changes to the repository by adding files and content. It's time to do a quick check-in with Git:
+
+          ```bash
+          $ git status
+          ```
+
+          Here's what my Terminal displays:
+        instructor_notes: ''
+        resources: null
+      - id: 338869
+        key: e0549d70-d19e-4b9f-b8b6-41a2e7b0d5b3
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a38587_ud123-l4-git-status-with-untracked/ud123-l4-git-status-with-untracked.png'
+        width: 2400
+        height: 1510
+        caption: '_The Terminal application displays the index.html file, and the css and js folders in the new "Untracked files" section._'
+        resources: null
+        instructor_notes: null
+      - id: 338870
+        key: dbe8add5-c974-425d-9d0e-bc7133cf7e97
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Big Picture Review
+
+          That's really cool, isn't it! We haven't done anything specific with Git just yet, but it's watching this directory (since it's a Git project), and it knows that we've created a couple of new files. What's also pretty neat about the output of the `git status` command is that it's telling us that the files are untracked by Git.
+
+          Let's do a quick review of what's going on and what we're about to do:
+          * we have some new files that we want Git to start tracking
+          * for Git to track a file, it needs to be committed to the repository
+          * for a file to be committed, it needs to be in the Staging Index
+          * the `git add` command is used to move files from the Working Directory to the Staging Index
+          * there are currently three, untracked files in the Working Directory
+              * `index.html`
+              * `app.css` in the `css` directory
+              * `app.js` in the `js` directory
+
+          So the first step to getting any files committed to the repository is to add them from the Working Directory to the Staging Index. We will be using the `git add` command to move all three of these files to the Staging Index.
+        instructor_notes: ''
+        resources: null
+      - id: 338871
+        key: e85d8a4f-a534-4a7d-853e-d45e3b1f1dd5
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58ade4ac_ud123-l4-git-add-to-staging-recap/ud123-l4-git-add-to-staging-recap.gif'
+        width: 640
+        height: 360
+        caption: '_The untracked HTML, CSS, and JavaScript files add from the Working Directory to the Staging Index._'
+        resources: null
+        instructor_notes: null
+      - id: 338872
+        key: a252ccab-449b-4c7f-8312-924a932dd7b8
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Staging Files
+
+          Alrighty, it's go time! Run the following command on the Terminal which uses `git add` to add `index.html` to the Staging Index:
+
+          ```bash
+          $ git add index.html
+          ```
+
+          Note - we are _only_ adding the `index.html` file. We'll add the CSS and JavaScript files in just a second.
+        instructor_notes: ''
+        resources: null
+      - id: 338873
+        key: 86c7c16c-4ed3-4702-9405-352754f008e0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a386a6_ud123-l4-git-add/ud123-l4-git-add.gif'
+        width: 1228
+        height: 654
+        caption: _The Terminal application. The command "git add index.html" is being typed out to add the file to the Staging Index._
+        resources: null
+        instructor_notes: null
+      - id: 338874
+        key: 8c0eb9a1-1fe5-4480-8fc8-ad86ce36eabf
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Running the `git add` command produces no output (as long as there wasn't an error). So how do we have Git tell us what it did and has happened to the `index.html` file that was added? That's what `git status` does. You're probably sick of me stressing the importance of the `git status` command, but it's an extremely helpful command, especially if you're new to version control and/or the command line.
+
+          Let's check out the status of the project:
+
+          ```bash
+          $ git status
+          ```
+
+          This is the output I get:
+        instructor_notes: ''
+        resources: null
+      - id: 338875
+        key: 5cc4793f-b50c-48b7-9961-74b9f87c58fb
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a38755_ud123-l4-git-status-after-git-add/ud123-l4-git-status-after-git-add.png'
+        width: 2064
+        height: 1510
+        caption: _The Terminal application showing the result of running the `git status` command. It shows that index.html is now in the "Changes to be committed" category._
+        resources: null
+        instructor_notes: null
+      - id: 338876
+        key: a4572e82-3183-469c-ba4e-5146efc22dab
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Changes To Be Committed
+
+          There's now a new section in the output of `git status` - the "Changes to be committed" area! This new "Changes to be committed" section displays files that are in the Staging Area! Right now it only displays the `index.html` file, so this file is the only item on the Staging Index. To continue this train of thought, if we made a commit right now, _only the index.html file would be committed_.
+        instructor_notes: ''
+        resources: null
+      - id: 338877
+        key: 5b0009ad-9fa3-4b6f-b660-362433918777
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > TIP: Did you also notice the helpful text that's located just beneath "Changes to be committed"? It says `(use "git rm --cached <file>..." to unstage)` This is a hint of what you should do if you accidentally ran `git add` and gave it the wrong file.
+
+          > As a side note, `git rm --cached` is not like the shell's `rm` command. `git rm --cached` will not destroy any of your work; it just removes it from the Staging Index.
+
+          > Also, this used the word "unstage". The act of moving a file from the Working Directory to the Staging Index is called "staging". If a file has been moved, then it has been "staged". Moving a file from the Staging Index _back_ to the Working Directory will unstage the file. If you read documentation that says "stage the following files" that means you should use the `git add` command.
+        instructor_notes: ''
+        resources: null
+      - id: 338878
+        key: a499422b-df34-4fc0-9a55-6d6bc3dd6aeb
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Stage Remaining Files
+
+          The `index.html` file has been staged. Let's stage the other two files. Now we _could_ run the following:
+
+          ```bash
+          $ git add css/app.css js/app.js
+          ```
+
+          ...but that's a lot of extra typing. We could use a special command line character to help:
+
+          ### The Period `.`
+          The period refers to the current directory and can be used as a shortcut to refer to all files and directories (including all nested files and directories!).
+
+          ```bash
+          $ git add css/app.css js/app.js
+          # would become
+          $ git add .
+          ```
+
+          The only thing to be careful of is that you might accidentally include more files than you meant to. Right now we _want_ both `css/app.css` and `js/app.js` to be staged, so running this command is fine right now. But let's say you added some images to an `img` directory but didn't want to stage them just yet. Running `git add .` _will_ stage them. If you do stage files that you didn't mean to, remember that `git status` will tell you the command to use to "unstage" files.
+
+          ## Stage The Remaining Files
+          Let's use the shortcut to stage the remaining files:
+
+          ```bash
+          $ git add .
+          ```
+
+          And then a quick `git status`:
+        instructor_notes: ''
+        resources: null
+      - id: 338879
+        key: ef5c6191-43a6-4c34-93d0-49d639235ccb
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a38858_ud123-l4-git-status-all-files/ud123-l4-git-status-all-files.png'
+        width: 1812
+        height: 1230
+        caption: '_The Terminal application showing the index.html, css/app.css, and js/app.js have been staged._'
+        resources: null
+        instructor_notes: null
+      - id: 338880
+        key: 3abe780a-231e-4632-b28f-80c2d16dee61
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Git Add Recap
+
+          The `git add` command is used to move files from the Working Directory to the Staging Index.
+
+          ```bash
+          $ git add <file1> <file2> … <fileN>
+          ```
+
+          This command:
+
+          * takes a space-separated list of file names
+          * alternatively, the period `.` can be used in place of a list of files to tell Git to add the current directory (and all nested files)
+        instructor_notes: ''
+        resources: null
+  - id: 339087
+    key: 95564c00-5060-45e7-aa24-e26fb9039f90
+    locale: zh-cn
+    version: 1.0.0
+    title: Git Commit
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 07:34:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338881
+      - 338882
+      - 338883
+      - 338884
+      - 338885
+      - 338886
+      - 338887
+      - 338888
+      - 338889
+      - 338890
+      - 338891
+      - 338892
+      - 338893
+      - 338894
+      - 338895
+      - 338896
+      - 338897
+      - 338898
+      - 338899
+      - 338900
+      - 338901
+      - 338902
+    atoms:
+      - id: 338881
+        key: 636f709d-2359-4938-a881-cbe7b214845e
+        locale: zh-cn
+        version: 1.0.0
+        title: Quick Check In
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - the `index.html` file exists and has starter code in it
+          - the `app.css` file exists in the `css` folder
+          - the `app.js` file exists in the `js` folder
+          - all three files have been staged
+        positive_feedback: That's perfect!
+        video_feedback: null
+        description: 'We''re just about to make our first commit, so let''s verify that our projects are set up the same way:'
+      - id: 338882
+        key: 97a3f8a1-7f78-4c1c-b14e-734d38ba447b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## One Last Git Status Check
+
+          If you haven't added any new files to the Working Directory or modified any of the existing files, nothing will have changed, but to make sure, let's run a quick `git status` again right before we make the commit just to make _absolutely sure_ the project is how we left it.
+        instructor_notes: ''
+        resources: null
+      - id: 338883
+        key: bb91e468-2dcd-44da-9d23-befe9286dc90
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a38858_ud123-l4-git-status-all-files/ud123-l4-git-status-all-files.png'
+        width: 1812
+        height: 1230
+        caption: '_The Terminal application shows that the index.html, css/app.css, and js/app.js have been staged and are ready to be committed._'
+        resources: null
+        instructor_notes: null
+      - id: 338884
+        key: 02606695-24d9-42a3-a7d6-727d1826146e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Make A Commit
+
+          Ok, let's do it!
+
+          To make a commit in Git you use the `git commit` command, but don't run it just yet. Running this command will open the code editor that you configured way back in the first lesson. If you haven't run this command yet:
+
+          ```bash
+          $ git config --global core.editor <your-editor's-config-went-here>
+          ```
+
+          ...go back to the Git configuration step and configure Git to use your chosen editor.
+
+          If you didn't do this step and you _already_ ran `git commit`, then Git _probably_ defaulted to using the "Vim" editor. Vim is a popular editor for people who have been using Unix or Linux systems forever, but it's not the friendliest for new users. It's definitely not in the scope of this course. Check out this forum post on [how to get out of Vim](https://discussions.udacity.com/t/escaping-from-vim-in-the-command-line/235917) and return to the regular command prompt.
+
+          If you _did_ configure your editor, then go ahead and make a commit using the `git commit` command:
+
+          ```bash
+          $ git commit
+          ```
+
+          Remember, your editor should pop open and you should see something like this:
+        instructor_notes: ''
+        resources: null
+      - id: 338885
+        key: 6890ce36-79b4-40b1-93a5-48049165d5f2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a38a0b_ud123-l4-git-commit-editor/ud123-l4-git-commit-editor.png'
+        width: 2786
+        height: 1592
+        caption: _Code editor displaying the default commit edit message content and is waiting for a commit message to be supplied._
+        resources: null
+        instructor_notes: null
+      - id: 338886
+        key: ac1179fd-a717-4e48-be4a-a8352da30a7f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Terminal Hangs
+
+          If you switch back to the Terminal for a quick second, you'll see that the Terminal is chillin' out just waiting for you to finish with the code editor that popped up. You don't need to worry about this, though. Once we add the necessary content to the code editor and finally _close the code editor window_, the Terminal will unfreeze and return to normal.
+        instructor_notes: ''
+        resources: null
+      - id: 338887
+        key: 05f90ef4-c48a-4820-8cff-b6af5c180276
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a38a39_ud123-l4-git-commit-terminal-hangs/ud123-l4-git-commit-terminal-hangs.png'
+        width: 1812
+        height: 1230
+        caption: _The Terminal application showing `git commit` but it appears to be hanging and waiting for something._
+        resources: null
+        instructor_notes: null
+      - id: 338888
+        key: 39b9bce3-64d0-4789-86c8-e223f0d23217
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: "## Code Editor Commit Message Explanation\n\nOk, switch back to the code editor. Here's what's showing in my editor:\n\n```bash\n# Please enter the commit message for your changes. Lines starting\n# with '#' will be ignored, and an empty message aborts the commit.\n# On branch master\n#\n# Initial commit\n#\n# Changes to be committed:\n#\tnew file:   css/app.css\n#\tnew file:   index.html\n#\tnew file:   js/app.js\n#\n```\n\nThe first paragraph is telling us exactly what we need to do - we need to supply a message for this commit. Also, any line that begins with the `#` character will be ignored. Farther down it says that this will be the initial commit. Lastly, it's giving us a list of the files that will be committed.\n\nSince this is the very first commit of the repository, we'll use the commit message \"Initial commit\". The text \"Initial commit\" isn't special, but it's the de facto commit message for the _very first_ commit. If you want to use something else, feel free!\n\nType out your commit message on the first line of the code editor:"
+        instructor_notes: ''
+        resources: null
+      - id: 338889
+        key: 551511e6-b9c0-4846-8ad2-94038094637b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a38aab_ud123-l4-git-commit-initial-commit/ud123-l4-git-commit-initial-commit.png'
+        width: 2786
+        height: 1592
+        caption: _Code editor with the commit message entered on the first line._
+        resources: null
+        instructor_notes: null
+      - id: 338890
+        key: 394f2a21-a2ec-4ba1-9707-7bd50d6a7d22
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Finish Committing
+
+          Now save the file and close the editor window (closing just the pane/tab isn't enough, you need to close the code editor window that the `git commit` command opened).
+
+          Awesome, now switch back to the Terminal and you should see something like the following:
+        instructor_notes: ''
+        resources: null
+      - id: 338891
+        key: 159ea814-3ac2-4364-af47-01289df4196d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a38ad8_ud123-l4-git-commit-finished/ud123-l4-git-commit-finished.png'
+        width: 1726
+        height: 1230
+        caption: _The Terminal application after closing the code editor. It displays the SHA for the new commit as well as information about the commit like the files that were added and how many lines of code were added._
+        resources: null
+        instructor_notes: null
+      - id: 338892
+        key: 1249b0ed-a6c8-4fc6-a357-33c76943a5ab
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: "## First Commit, Congrats!\n\nYou just made your first commit - woohoo! \uD83D\uDE4C\uD83C\uDFFC  How does it feel? Was it more towards the awe-inspiring side or the anticlimactic. Honestly, when I made my first commit, I was a bit like:\n\n> \"Wait...is that it? You just add the files you want to have committed to the Staging Area, and then you run 'git commit'?\"\n\n...and the answer to my questions are \"Yes\" and \"Yes\". That's all there is to it. At first, version control seems like this overwhelming obstacle that one must overcome to become a true programmer/developer/designer/etc. But once you get a handle on the terminology (which _I_ think is the most challenging parts), then the actually using version control isn't all that challenging."
+        instructor_notes: ''
+        resources: null
+      - id: 338893
+        key: 872ee194-e696-42f4-83b2-b78a5e3a4a8c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## Bypass The Editor With The `-m` Flag
+
+          > TIP: If the commit message you're writing is short and you don't want to wait for your code editor to open up to type it out, you can pass your message directly on the command line with the `-m` flag:
+
+          > ```bash
+          $ git commit -m "Initial commit"
+          ```
+
+          > In the example above, the text `"Initial commit"` is used as the commit message. Be aware that you can't provide a description for the commit, only the message part.
+        instructor_notes: ''
+        resources: null
+      - id: 338894
+        key: ef546837-787f-4573-8906-35a5b0124972
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 2nd Commit - Add Changes
+
+          We've had a short breather, so let's make a second commit! Here, add this just inside the `body` tag in `index.html`:
+
+          ```html
+          <header>
+              <h1>Expedition</h1>
+          </header>
+          ```
+
+          Ok, now what do you do next? That's right, it's our good old friend `git status`!
+        instructor_notes: ''
+        resources: null
+      - id: 338895
+        key: d31bec33-fc72-426f-b709-e341010b74e8
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a38bf1_ud123-l4-git-status-modified-files/ud123-l4-git-status-modified-files.png'
+        width: 2220
+        height: 1230
+        caption: _The Terminal application showing the result of the `git status` command. It displays a "Changes not staged for commit" section that includes the modified "index.html" file._
+        resources: null
+        instructor_notes: null
+      - id: 338896
+        key: 838b6af1-580c-49d4-a681-4bef78d00a12
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: '> TIP: If you run `git status` but don''t see that `index.html` has changed, make sure to save the file. I modify a file and then forget to save it - _all_ - _the_ - _time_! I like to think that forgetting to save a file after editing it is the mark of a true professional.'
+        instructor_notes: ''
+        resources: null
+      - id: 338897
+        key: fe9c0d5c-3157-4693-a575-aea2ed88e7dc
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Multipurpose Git Add
+
+          So we've modified our file. Git sees that it's been modified. So we're doing well so far. Now remember, to make a commit, the file or files we want committed need to be on the Staging Index. What command do we use to move files from the Working Directory to the Staging Index? You got it - `git add`!
+
+          Even though we used `git add` to add _newly created files_ to the Staging Index, we use the same command to move _modified files_ to the Staging Index.
+
+          Use the `git add` command to move the file over to the Staging Index, now. Verify that it's there with `git status`.
+        instructor_notes: ''
+        resources: null
+      - id: 338898
+        key: d89375e5-849a-462a-a7e6-177df294bbc5
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Second Commit
+
+          Now that we have a file with changes we can commit, let's make our second commit! Use the `git commit` command to make a commit. Use the commit message `Add header to blog`.
+
+          Now you might be asking yourself, "Why did Richard pick that as the commit message to use?" or "What makes a good commit message?". These are fantastic questions that we'll be looking at in the next concept!
+        instructor_notes: ''
+        resources: null
+      - id: 338899
+        key: cfcde463-ce54-4f6c-a199-7a171c9ae9e4
+        locale: zh-cn
+        version: 1.0.0
+        title: Will The File Be Committed?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Let's say you have a personal blog and want to change the color of the article headings. You
+            * edit the HTML files to give each heading a class
+            * edit the CSS file to add the new class and give it a color
+            * you save all files
+            * you run `git commit` on the terminal
+
+            Will your code editor open up to let you type out the commit message?
+          correct_feedback: That's right! Running `git commit` will _instead_ display the output of `git status` and "no changes added to commit". It did this because you did not use `git add` to move the files from the Working Directory to the Staging Index.
+          video_feedback: null
+          default_feedback: Did this work for you? It shouldn't have worked.
+          answers:
+            - id: a1487113380630
+              text: 'Yes'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487113398908
+              text: 'No'
+              is_correct: true
+              incorrect_feedback: null
+      - id: 338900
+        key: f5bea4e9-d88f-4ebf-89c8-4fd131c1569c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## What To Include In A Commit
+
+          I've been telling you what files to create, giving you the content to include, and telling you when you should make commits. But when you're on your own, how do you know what you should include in a commit and when/how often you should make commits?
+
+          **The goal is that each commit has a single focus.** Each commit should record a single-unit change. Now this can be a bit subjective (which is totally fine), but each commit should make a change to just one aspect of the project.
+
+          Now this isn't limiting the number of lines of code that are added/removed or the number of files that are added/removed/modified. Let's say you want to change your sidebar to add a new image. You'll probably:
+          * add a new image to the project files
+          * alter the HTML
+          * add/modify CSS to incorporate the new image
+
+          A commit that records all of these changes would be totally fine!
+
+          Conversely, a commit shouldn't include unrelated changes - changes to the sidebar _and_ rewording content in the footer. These two aren't related to each other and shouldn't be included in the same commit. Work on one change first, commit that, and then change the second one. That way, if it turns out that one change had a bug and you have to undo it, you don't have to undo the other change too.
+
+          The best way that I've found to think about what should be in a commit is to think, "What if all changes introduced in this commit were erased?". If a commit were erased, it should only remove one thing.
+        instructor_notes: ''
+        resources: null
+      - id: 338901
+        key: 9799a70e-cbe3-44fe-9c4b-54e9be350dd7
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > Don't worry, commits don't get randomly erased.
+
+          > In a later lesson, we'll look at using Git to undo changes made in commits and how to manually, carefully remove the last commit that was made.
+        instructor_notes: ''
+        resources: null
+      - id: 338902
+        key: 40fe3cce-61b4-4d64-bc63-9d73ede65a05
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Git Commit Recap
+
+          The `git commit` command takes files from the Staging Index and saves them in the repository.
+
+          ```bash
+          $ git commit
+          ```
+
+          This command:
+
+          * will open the code editor that is specified in your configuration
+              * (check out the Git configuration step from the first lesson to configure your editor)
+
+          Inside the code editor:
+          * a commit message must be supplied
+          * lines that start with a `#` are comments and will not be recorded
+          * save the file after adding a commit message
+          * close the editor to make the commit
+
+          Then, use `git log` to review the commit you just made!
+
+          ### Further Research
+          * [Associating text editors with Git](https://help.github.com/articles/associating-text-editors-with-git/) from GitHub Help Docs
+          * [Getting Started - First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) from Git book
+        instructor_notes: ''
+        resources: null
+  - id: 339088
+    key: 0186fd0c-3929-4f0d-82bf-999ab24df61b
+    locale: zh-cn
+    version: 1.0.0
+    title: Commit Messages
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 07:34:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338904
+      - 338903
+      - 338905
+      - 338906
+      - 338907
+      - 338908
+      - 338909
+      - 338910
+      - 338911
+    atoms:
+      - id: 338904
+        key: 7e790823-9da2-4a44-9022-e3770fbb6ebf
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Good Commit Messages
+
+          Let's take a quick stroll down Stickler Lane and ask the question: 
+
+          > How do I write a _good_ commit message? And why should I care?
+
+          These are a _fantastic_ questions! I can't stress enough how important it is to spend some time writing a _good_ commit message.
+
+          Now, what makes a "good" commit message? That's a great question and has been [written about](https://chris.beams.io/posts/git-commit/) [a number](https://medium.com/@preslavrachev/what-s-with-the-50-72-rule-8a906f61f09c#.jwprsco0n) [of times](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html). Here are some important things to think about when crafting a good commit message:
+
+          **Do**
+          * do keep the message short (less than 60-ish characters)
+          * do explain _what_ the commit does (not _how_ or _why_!)
+
+          **Do not**
+          * do not explain _why_ the changes are made (more on this below)
+          * do not explain _how_ the changes are made (that's what `git log -p` is for!)
+          * do not use the word "and"
+              * if you have to use "and", your commit message is probably doing too many changes - break the changes into separate commits
+              * e.g. "make the background color pink _and_ increase the size of the sidebar"
+
+          The best way that I've found to come up with a commit message is to finish this phrase, "This commit will...". However, you finish that phrase, use _that_ as your commit message. 
+
+          Above all, _**be consistent**_ in how you write your commit messages!
+        instructor_notes: ''
+        resources: null
+      - id: 338903
+        key: 14bfb55f-b1fb-4927-8f23-88b7fc2d88af
+        locale: zh-cn
+        version: 1.0.0
+        title: Is This A Good Commit Message?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Reviewing the guidelines on what makes a good commit message, is the following commit message good?
+
+            "Update the footer to copyright information"
+          correct_feedback: Great job! This commit is short. It explains _what_ was changed but doesn't explain _how_ it was changed or _why_.
+          video_feedback: null
+          default_feedback: That doesn't look right to me. What made you think this wasn't a good commit message?
+          answers:
+            - id: a1487113793808
+              text: 'Yes'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1487113803413
+              text: 'No'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 338905
+        key: f57b9b57-6518-4a4c-8422-4e0965c94cd4
+        locale: zh-cn
+        version: 1.0.0
+        title: Is This A Good Commit Message? 2
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Is the following a good commit message?
+
+            "Add a <p> tag to the body"
+          correct_feedback: "That's right! Awesome work! \uD83D\uDE4C\uD83C\uDFFC"
+          video_feedback: null
+          default_feedback: Think about the qualities that make a good commit message. Does this message meet them?
+          answers:
+            - id: a1487113839649
+              text: 'Yes'
+              is_correct: false
+              incorrect_feedback: The commit message should not contain specifics on _how_ the change was made. This information can be found by running `git log -p`.
+            - id: a1487113848784
+              text: 'No'
+              is_correct: true
+              incorrect_feedback: null
+      - id: 338906
+        key: 54bf050b-fd83-47c3-8ed9-cdb9a1732d28
+        locale: zh-cn
+        version: 1.0.0
+        title: Is This A Good Commit Message? 3
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Is the following a good commit message?
+
+            "Add changes to app.js"
+          correct_feedback: That's right! Make sure to explain _what_ was changed. Don't just state that changes were made or where they were made.
+          video_feedback: null
+          default_feedback: Think about the qualities that make a good commit message. Does this message meet them?
+          answers:
+            - id: a1487113935491
+              text: 'Yes'
+              is_correct: false
+              incorrect_feedback: 'Saying that changes have been added is not helpful. A commit can only include changes of some kind (new content, content being removed, content being altered. Saying that changes were made to "app.js"'
+            - id: a1487113941609
+              text: 'No'
+              is_correct: true
+              incorrect_feedback: null
+      - id: 338907
+        key: e2960abb-a9a4-4e20-9b40-926e00f49bdd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Explain the _Why_
+
+          If you need to explain _why_ a commit needs to be made, you can!
+
+          When you're writing the commit message, the first line is the message itself. After the message, leave a blank line, and then type out the body or explanation including details about why the commit is needed (e.g. URL links).
+
+          Here's what a commit message edit screen might look like:
+        instructor_notes: ''
+        resources: null
+      - id: 338908
+        key: 083d153f-78b8-4394-b3eb-847bd44bc4b4
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a38f2f_ud123-l4-git-commit-details-section/ud123-l4-git-commit-details-section.png'
+        width: 2740
+        height: 1758
+        caption: '_Code editor showing the commit message edit window. A message has been typed, followed by a blank line, followed by the body of the commit._'
+        resources: null
+        instructor_notes: null
+      - id: 338909
+        key: a522b2ca-1ddb-47b8-83ae-ac9639d03355
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          This details section of a commit message _is_ included in the `git log`. To see a commit message with a body, check out the Blog project repo and look at commit `8a11b3f`.
+
+          Only the message (the first line) is included in `git log --oneline`, though!
+        instructor_notes: ''
+        resources: null
+      - id: 338910
+        key: 1a1b69c0-89e3-43f3-9119-657942c21fc4
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Udacity's Commit Style Requirements
+
+          As I've mentioned, there are a number of ways to write commit messages. If you're working on a team, they might already have a predetermined way of writing commit messages. Here at Udacity, we have our own standard for commit messages. You can check it out on our [Git Commit Message Style Guide](https://udacity.github.io/git-styleguide/).
+
+          If you haven't chosen a commit message style, feel free to use ours. But if you're working on an existing project, use their existing style; it's much more important to be consistent with your actual team than to be consistent with us!
+        instructor_notes: ''
+        resources: null
+      - id: 338911
+        key: 43b164a5-8a1d-4f6a-87cd-a6ad37fccff9
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Git Diff Up Next!
+
+          In the next section, we'll look at a new tool (with a familiar output!). This tool will tell us what changes we've made to files _before_ the files have been committed!
+        instructor_notes: ''
+        resources: null
+  - id: 339089
+    key: 60adab01-79c2-4bed-8ffc-384ad22a9e30
+    locale: zh-cn
+    version: 1.0.0
+    title: Git Diff
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 07:34:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338912
+      - 338913
+      - 338914
+      - 338915
+      - 338916
+    atoms:
+      - id: 338912
+        key: 5d5452f2-1548-4cf7-aebb-fce6c20fe408
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Why Do We Need This
+
+          You might be like me where I start work on the next feature to my project at night, but then go to bed before I actually finish. Which means that, when I start working the next day, there are uncommitted changes. This is fine because I haven't finished the new feature, but I can't remember exactly what I've done since my last commit. `git status` will tell us what files have been changed, but not what those changes actually were.
+
+          The `git diff` command is used to find out this information!
+        instructor_notes: ''
+        resources: null
+      - id: 338913
+        key: 24cf4868-c4e0-4db0-a665-c2ed2c46b90f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## `git diff`
+
+          The `git diff` command can be used to see changes that have been made but haven't been committed, yet.
+
+          ```bash
+          $ git diff
+          ```
+
+          To see `git diff` in action, we need some uncommitted changes! In `index.html`, let's reword the heading. Change the heading from "Expedition" to "Adventure". Save the file and run `git diff` on the Terminal.
+
+          You should see the following:
+        instructor_notes: ''
+        resources: null
+      - id: 338914
+        key: 1a699aaa-b309-4a02-a4a1-5a67de6f61f7
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a3901f_ud123-l4-git-diff/ud123-l4-git-diff.png'
+        width: 2094
+        height: 1280
+        caption: _The Terminal application showing the output of the `git diff` command._
+        resources: null
+        instructor_notes: null
+      - id: 338915
+        key: 334da9e2-fca0-46f3-9986-d72a7a48f62d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Wow, doesn't that look familiar! It's the same output that we say with `git log -p`! Wanna know a secret? `git log -p` uses `git diff` under the hood. So you've actually already learned how to read the output of `git diff`!
+
+          If you don't remember what the different sections are, check out the Annotated "git log -p" Output from the previous lesson.
+        instructor_notes: ''
+        resources: null
+      - id: 338916
+        key: 451dd827-a9ee-4e85-8c02-a481a9516af1
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Git Diff Recap
+
+          To recap, the `git diff` command is used to see changes that have been made but haven't been committed, yet:
+
+          ```bash
+          $ git diff
+          ```
+
+          This command displays:
+
+          * the files that have been modified
+          * the location of the lines that have been added/removed
+          * the actual changes that have been made
+
+
+          ### Further Research
+          * [git diff](https://git-scm.com/docs/git-diff) from the Git Docs
+        instructor_notes: ''
+        resources: null
+  - id: 339090
+    key: d4275710-06eb-431c-bec6-13a202f1dfbb
+    locale: zh-cn
+    version: 1.0.0
+    title: Having Git Ignore Files
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 07:34:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338917
+      - 338918
+      - 338919
+      - 338920
+      - 338921
+      - 338922
+      - 338923
+      - 338924
+      - 338925
+      - 338926
+    atoms:
+      - id: 338917
+        key: 93fada20-d94d-4137-83b5-9cc8237788b6
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Why Should Files Be Ignored
+
+          Remember a couple sections back when we were learning about `git add`? Instead of adding the files one by one, there was a special character that we could use to indicate the current directory and all subdirectories. Do you remember what that character is?
+
+          That's right, the period (`.`)!
+
+          ### The Problem
+          Let's say you add a file like a Word document to the directory where your project is stored _but don't want it added to the repository_. Git will see this new file, so if you run `git status` it'll show up in the list of files.
+        instructor_notes: ''
+        resources: null
+      - id: 338918
+        key: e7b3dd79-fd1f-4754-a717-46464d4075c8
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a3936f_ud123-l4-git-ignore-word-doc/ud123-l4-git-ignore-word-doc.png'
+        width: 2272
+        height: 1280
+        caption: _The Terminal application showing the output of the `git status` command. The output shows a new Word document that is in Git's "Untracked files" section._
+        resources: null
+        instructor_notes: null
+      - id: 338919
+        key: 5f548593-46f1-4947-a98a-15bb261a1bcf
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: 'The potential problem with having this file in your project is that, because `git add .` adds _all_ files, the Word document might get accidentally committed to the repository.'
+        instructor_notes: ''
+        resources: null
+      - id: 338920
+        key: cdc3b9bc-fb03-4b0c-bb91-08b4ea59136c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Git Ignore
+
+          If you want to keep a file in your project's directory structure but make sure it isn't accidentally committed to the project, you can use the specially named file, `.gitignore` (note the dot at the front, it's important!). Add this file to your project in the same directory that the hidden `.git` directory is located. All you have to do is list the _names_ of files that you want Git to ignore (not track) and it will ignore them.
+
+          Let's try it with the "project.docx" file. Add the following line inside the `.gitignore` file:
+
+          ```bash
+          project.docx
+          ```
+
+          Now run `git status` and check its output:
+        instructor_notes: ''
+        resources: null
+      - id: 338921
+        key: c06bf34c-6a58-4ed3-978a-7c7d5e9a1c78
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a39121_ud123-l4-git-gitignore/ud123-l4-git-gitignore.png'
+        width: 2272
+        height: 1280
+        caption: '_The Terminal application showing the output of `git status`. The Word document is no longer listed as an untracked file. The new ".gitignore" file is listed, though._'
+        resources: null
+        instructor_notes: null
+      - id: 338922
+        key: 935be67c-3f9f-427e-aa6c-6e3be2e0a2b7
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: 'Git knows to look at the contents of a file with the name `.gitignore`. Since it saw "project.docx" in it, it ignored that file and doesn''t show it in the output of `git status`.'
+        instructor_notes: ''
+        resources: null
+      - id: 338923
+        key: 4d7db4de-8021-48d6-bc86-a8377014777e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Globbing Crash Course
+
+          Let's say that you add 50 images to your project, but want Git to ignore all of them. Does this mean you have to list each and every filename in the `.gitignore` file? Oh gosh no, that would be crazy! Instead, you can use a concept called <a href="https://en.wikipedia.org/wiki/Glob_(programming)">globbing</a>.
+
+          Globbing lets you use special characters to match patterns/characters. In the `.gitignore` file, you can use the following:
+          * blank lines can be used for spacing
+          * `#` - marks line as a comment
+          * `*` - matches 0 or more characters
+          * `?` - matches 1 character
+          * `[abc]` - matches a, b, _or_ c
+          * `**` - matches nested directories - `a/**/z` matches
+              * a/z
+              * a/b/z
+              * a/b/c/z
+
+          So if all of the 50 images are JPEG images in the "samples" folder, we could add the following line to `.gitignore` to have Git ignore all 50 images.
+
+          ```bash
+          samples/*.jpg
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 338924
+        key: 22075c4b-141c-4b3b-a388-709967aa1242
+        locale: zh-cn
+        version: 1.0.0
+        title: What File Will Be Ignored?
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Which of the following files will be ignored if `*.png` is entered into the `.gitignore` file?
+          correct_feedback: That's right! Adding `*.png` will cause Git to ignore _all_ PNG images.
+          video_feedback: null
+          default_feedback: The first thing that you need to do is figure out what the `*` does. Then combine what that does with the text `.png`.
+          answers:
+            - id: a1487114697919
+              text: ocean.jpg
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487114706389
+              text: trees.png
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1487114706928
+              text: png-format.pdf
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487114707413
+              text: not-a-png.jpeg
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487114733254
+              text: bg-pattern.png
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1487114733827
+              text: logo.gif
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487114747731
+              text: LOUDFILE.PNG
+              is_correct: true
+              incorrect_feedback: null
+      - id: 338925
+        key: d4f08f01-3f4f-4de2-8ed6-a243783482cc
+        locale: zh-cn
+        version: 1.0.0
+        title: What's That Character?
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'If you ask Git to ignore "be?rs", which of the following filenames will be ignored?'
+          correct_feedback: That's right!
+          video_feedback: null
+          default_feedback: That doesn't seem correct. Why don't you go back and check the Globbing Patterns really quickly and then try this quiz again?
+          answers:
+            - id: a1487114875523
+              text: bears
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1487114901980
+              text: beavers
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487114902578
+              text: BeArS
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487114903061
+              text: beers
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1487114918576
+              text: boars
+              is_correct: false
+              incorrect_feedback: null
+      - id: 338926
+        key: 400b8875-dcae-4105-b479-bccd3916847f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Git Ignore Recap
+
+          To recap, the `.gitignore` file is used to tell Git about the files that Git should not track. This file should be placed in the same directory that the `.git` directory is in.
+
+          ### Further Research
+
+          * [Ignoring files](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files) from the Git Book
+          * [gitignore](https://git-scm.com/docs/gitignore#_pattern_format) from the Git Docs
+          * [Ignoring files](https://help.github.com/articles/ignoring-files/) from the GitHub Docs
+          * [gitignore.io](https://www.gitignore.io/)
+        instructor_notes: ''
+        resources: null
+  - id: 339091
+    key: bc28a6df-9181-44cc-b2ff-c0e4afe71130
+    locale: zh-cn
+    version: 1.0.0
+    title: Outro
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 07:34:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338927
+    atoms:
+      - id: 338927
+        key: d4318258-db47-4e07-b864-e89461518c07
+        locale: zh-cn
+        version: 1.0.0
+        title: Nd016 WebND Ud123 Gitcourse BETAMOJITO L4 72 Adding Commits - Outro
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:37:10 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51038'
+          youtube_id: 5eyvsMvAPYs
+          subtitles: null
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc34_nd016-webnd-ud123-gitcourse-betamojito-l4-72-adding-commits-outro/nd016-webnd-ud123-gitcourse-betamojito-l4-72-adding-commits-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc34_nd016-webnd-ud123-gitcourse-betamojito-l4-72-adding-commits-outro/nd016-webnd-ud123-gitcourse-betamojito-l4-72-adding-commits-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc34_nd016-webnd-ud123-gitcourse-betamojito-l4-72-adding-commits-outro/nd016-webnd-ud123-gitcourse-betamojito-l4-72-adding-commits-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc34_nd016-webnd-ud123-gitcourse-betamojito-l4-72-adding-commits-outro/nd016-webnd-ud123-gitcourse-betamojito-l4-72-adding-commits-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc34_nd016-webnd-ud123-gitcourse-betamojito-l4-72-adding-commits-outro/hls/playlist.m3u8'

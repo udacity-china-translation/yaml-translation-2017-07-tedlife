@@ -1,0 +1,889 @@
+id: 339106
+key: 437a88fc-15f5-48b8-a6a5-0cf3347e6183
+locale: zh-cn
+version: 1.0.0
+title: Create A Git Repo
+semantic_type: Lesson
+updated_at: 'Fri Jun 23 2017 07:34:59 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58fa7637_lesson-teal/lesson-teal.png'
+  width: 500
+  height: 500
+video: null
+summary: 'Now that you''ve learned the benefits of Version Control and gotten Git installed, it''s time you learn how to create a repository.'
+lesson_type: Classroom
+duration: 75
+is_project_lesson: false
+_concepts_ids:
+  - 339072
+  - 339073
+  - 339074
+  - 339077
+  - 339076
+_project_id: null
+concepts:
+  - id: 339072
+    key: 7f6f1abe-43b3-4af1-9ca0-a7414ff3120f
+    locale: zh-cn
+    version: 1.0.0
+    title: Intro
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 07:34:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338758
+    atoms:
+      - id: 338758
+        key: 526463fe-194b-43c1-9ceb-7b823342f89c
+        locale: zh-cn
+        version: 1.0.0
+        title: Creating New Repositories - Intro
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:37:12 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51020'
+          youtube_id: KT163BkqIeg
+          subtitles: null
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dbd0_nd016-webnd-ud123-gitcourse-betamojito-l2-01-creating-new-repos-intro/nd016-webnd-ud123-gitcourse-betamojito-l2-01-creating-new-repos-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dbd0_nd016-webnd-ud123-gitcourse-betamojito-l2-01-creating-new-repos-intro/nd016-webnd-ud123-gitcourse-betamojito-l2-01-creating-new-repos-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dbd0_nd016-webnd-ud123-gitcourse-betamojito-l2-01-creating-new-repos-intro/nd016-webnd-ud123-gitcourse-betamojito-l2-01-creating-new-repos-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dbd0_nd016-webnd-ud123-gitcourse-betamojito-l2-01-creating-new-repos-intro/nd016-webnd-ud123-gitcourse-betamojito-l2-01-creating-new-repos-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dbd0_nd016-webnd-ud123-gitcourse-betamojito-l2-01-creating-new-repos-intro/hls/playlist.m3u8'
+  - id: 339073
+    key: fa8f761a-d0a2-4be1-a5b9-60116ea4ecd1
+    locale: zh-cn
+    version: 1.0.0
+    title: Create A Repo From Scratch
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 07:34:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338760
+      - 338759
+      - 338761
+      - 338762
+      - 338763
+      - 338764
+      - 338765
+      - 338766
+      - 338767
+      - 338768
+      - 338769
+      - 338770
+    atoms:
+      - id: 338760
+        key: 66159b9c-101e-4e78-8243-6c8e27bce7ac
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Before you can make commits or do anything else with a git repository, the repository needs to actually exist. To create a new repository with Git, we'll use the `git init` command.
+
+          The `init` subcommand is short for "initialize", which is helpful because it's the command that will do all of the initial setup of a repository. We'll look at what it does in just a second.
+        instructor_notes: ''
+        resources: null
+      - id: 338759
+        key: a0213f43-0555-4c08-b046-48a7864cf51d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## Required Commands
+          > Heads up! We'll be using the following terminal commands in this lesson:
+          * `ls` - used to list files and directories
+          * `mkdir` - used to create a new directory
+          * `cd` - used to change directories
+          * `rm` - used to remove files and directories
+          > 
+          > If you're not sure how to use them, check out our course on [Linux Command Line Basics](https://www.udacity.com/course/linux-command-line-basics--ud595)!
+          > 
+          > We'll also be using the idea of the current working directory, the directory that your shell is "looking at" right now. Using cd changes your working directory, and using `ls` (by itself) lists the files in the working directory. If you lose track of what your shell's working directory is, you can print its name with the `pwd` command (which stands for "print working directory")
+        instructor_notes: ''
+        resources: null
+      - id: 338761
+        key: 922f0d1a-dc7e-43e8-bf18-83da51c7e849
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Create Course Directories
+
+          We're about to create a new project for this course. Since we're all professionals, we want our projects organized. If you already have a location on your computer where you put all your projects, then keep doing what you're doing. I'll be storing all of my work in a directory called `udacity-git-course`.
+
+          If you want to follow along with me:
+          * create a directory called `udacity-git-course`
+          * inside that, create another directory called `new-git-project`
+          * use the `cd` command to move into the `new-git-project` directory
+
+          If you're a copy/paster like me, just run this command on the terminal - `mkdir -p udacity-git-course/new-git-project && cd $_` (Before running this command, make sure you `cd` to where you want these files stored. For example, if you want the files stored on your Desktop, then make sure you `cd` to the Desktop before running the command.)
+
+          If you're all set, then your terminal should be "inside" the `new-git-project` directory and look like this:
+        instructor_notes: ''
+        resources: null
+      - id: 338762
+        key: 0de30e40-bfd7-449d-b2a1-0e7810f6dbdf
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/588bb336_ud123-l2-new-git-project/ud123-l2-new-git-project.png'
+        width: 2044
+        height: 1160
+        caption: _The Terminal application located in the new-git-project directory._
+        resources: null
+        instructor_notes: null
+      - id: 338763
+        key: 1118d0f3-b578-4ad4-b410-3443afcb83be
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Git Init
+
+          Fantastic work - we're all set up and ready to start using the `git init` command!
+
+          This is one of the easiest commands to run. All you have to do is run `git init` on the terminal. That's it! Go ahead, why not give it a try right now!
+        instructor_notes: ''
+        resources: null
+      - id: 338764
+        key: 58292ea6-c844-4ca3-8747-60237fb42a3f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/588bb53d_ud123-l2-git-init/ud123-l2-git-init.gif'
+        width: 940
+        height: 358
+        caption: _The terminal application showing the `git init` command being run. The command initializes an empty Git repository in the current directory._
+        resources: null
+        instructor_notes: null
+      - id: 338765
+        key: 1b14b1dc-87e9-4ec8-b6e7-4110eb613580
+        locale: zh-cn
+        version: 1.0.0
+        title: Command Prompt Changes?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Did you run `git init` yet? If not, do it now because you'll need it to answer this quiz!
+
+            After running `git init`, the text "Initialized empty Git repository in " followed by a path. should have appeared. The question is, has anything changed with your command prompt? If so, what?
+          correct_feedback: "Perfect! Everything's working as it should \uD83D\uDC4D\uD83C\uDFFC"
+          video_feedback: null
+          default_feedback: 'Hmm, did you follow all of the configuration steps from the first lesson? If you _did_, then you might want to post in the forums that your command prompt isn''t display the right info.'
+          answers:
+            - id: a1485550964594
+              text: Yes - I now see the word "master".
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1485550981096
+              text: 'No, it looks exactly the same.'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 338766
+        key: 33aa1a0d-5fd4-45a1-b53d-4e7952f5b4d6
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Git Init's Effect
+          Running the `git init` command sets up all of the necessary files and directories that Git will use to keep track of everything. All of these files are stored in a directory called `.git` (notice the `.` at the beginning - that means it'll be a hidden directory on Mac/Linux). This `.git` directory _is the "repo"_! This is where git records all of the commits and keeps track of everything!
+
+          Let's take a brief look at the contents of the `.git` directory.
+        instructor_notes: ''
+        resources: null
+      - id: 338767
+        key: edb6e24a-7ce7-49ee-b0b7-fa80d345013e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: '> WARNING: Don''t directly edit any files inside the `.git` directory. This is the heart of the repository. If you change file names and/or file content, git will probably lose track of the files that you''re keeping in the repo, and you could lose a lot of work! It''s okay to look at those files though, but don''t edit or delete them.'
+        instructor_notes: ''
+        resources: null
+      - id: 338768
+        key: 7921efd7-f050-42e2-8a70-e4f909554c05
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/588bb68e_ud123-l2-.git-directory/ud123-l2-.git-directory.png'
+        width: 1750
+        height: 1048
+        caption: _Mac's Finder window showing the contents of the hidden ".git" directory._
+        resources: null
+        instructor_notes: null
+      - id: 338769
+        key: f70c884e-9967-47b9-a95e-6a2b7ff6f997
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## .Git Directory Contents
+
+          _We're about to take a look at the `.git` directory...it's not vital for this course, though, so don't worry about memorizing anything, it's here if you want to dig a little deeper into how Git works under the hood._
+
+          Here's a brief synopsis on each of the items in the `.git` directory:
+
+          * **config file** - where all _project specific_ configuration settings are stored.<br>
+            From the [Git Book](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration):<br>
+          >Git looks for configuration values in the configuration file in the Git directory (.git/config) of whatever repository you’re currently using. These values are specific to that single repository.
+
+            For example, let's say you set that the global configuration for Git uses your personal email address. If you want your work email to be used for a specific project rather than your personal email, that change would be added to this file. 
+
+
+          * **description file** - this file is only used by the GitWeb program, so we can ignore it
+
+
+          * **hooks directory** - this is where we could place client-side or server-side scripts that we can use to hook into Git's different lifecycle events
+
+
+          * **info directory** - contains the global excludes file
+
+
+          * **objects directory** - this directory will store all of the commits we make
+
+
+          * **refs directory** - this directory holds pointers to commits (basically the "branches" and "tags") 
+
+          Remember, other than the "hooks" directory, you shouldn't mess with pretty much any of the content in here. The "hooks" directory _can_ be used to hook into different parts or events of Git's workflow, but that's a more advanced topic that we won't be getting into in this course.
+
+          ### Further Research
+          * [Git Internals - Plumbing and Porcelain](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain) (advanced - bookmark this and check it out later)
+          * [Customizing Git - Git Hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+        instructor_notes: ''
+        resources: null
+      - id: 338770
+        key: c38f152c-eeef-4e3c-9453-8b67bab7c18e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Git Init Recap
+
+          Use the `git init` command to create a new, empty repository in the current directory.
+
+          ```bash
+          $ git init
+          ```
+
+          Running this command creates a hidden `.git` directory. This `.git` directory is the brain/storage center for the repository. It holds all of the configuration files and directories and is where all of the commits are stored.
+
+          ###  Helpful Links
+          * [Initializing a Repository in an Existing Directory](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#Initializing-a-Repository-in-an-Existing-Directory)
+          * [git init docs](https://git-scm.com/docs/git-init)
+          * [git init Tutorial](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
+        instructor_notes: ''
+        resources: null
+  - id: 339074
+    key: 59082be0-c1af-4839-8ae5-0a182dc5bfe8
+    locale: zh-cn
+    version: 1.0.0
+    title: Clone An Existing Repo
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 07:34:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338771
+      - 338772
+      - 338773
+      - 338774
+      - 338775
+      - 338776
+      - 338777
+      - 338778
+      - 338779
+      - 338780
+      - 338781
+      - 338782
+      - 338783
+      - 338784
+    atoms:
+      - id: 338771
+        key: b4e8a033-cb86-4a3d-a618-c39aee0cb976
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Why Clone?
+
+          First, what is cloning?
+
+          > to make an identical copy
+
+          What's the value of creating an identical copy of something, and how does this relate to Git and version control?
+
+          Why would you want to create an identical copy? Well, when I work on a new web project, I do the same set of steps:
+          * create an `index.html` file
+          * create a `js` directory
+          * create a `css` directory
+          * create an `img` directory
+          * create `app.css` in the css directory
+          * create `app.js` in the js directory
+          * add starter HTML code in `index.html`
+          * add configuration files for linting (validating code syntax)
+            - [HTML linting](http://htmlhint.com/)
+            - [CSS linting](https://stylelint.io/)
+            - [JavaScript linting](http://eslint.org/)
+          * [configure my code editor](http://editorconfig.org/)
+
+          ...and I do this _every time_ I create a new project!...which is a lot of effort I'm putting in for each new project. I didn't want to keep doing these same steps over and over, so I did all of the steps listed above one last time and created a starter project for myself. Now when I create a new project, I just make an identical copy of that starter project! 
+
+          The way that cloning relates to Git is that the command we'll be running on the terminal is `git clone`. You pass a path (usually a URL) of the Git repository you want to clone to the `git clone` command.
+
+          Wanna try cloning an existing project? Let's see how Git's `clone` command works!
+        instructor_notes: ''
+        resources: null
+      - id: 338772
+        key: 057c5ac6-b395-4904-a59c-f6228dd64b54
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## Verify Terminal Location
+          >
+          > TIP: Now before you clone anything, make sure you are located in the correct directory on the command line. Cloning a project creates a new directory and places the cloned Git repository in it. The problem is that you can't have nested Git repositories. So make sure the terminal's current working directory isn't located in a Git repository. If your current working directory is not in your shell's prompt, type `pwd` to print the working directory.
+        instructor_notes: ''
+        resources: null
+      - id: 338773
+        key: aadb7ebe-6f15-4a5b-a261-77d5c4237f9c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Cloning The Blog Repository
+
+          Ready? Let's get cloning!
+
+          The command is `git clone` and then you pass the path to the Git repository that you want to clone. The project that we'll be using throughout this course is located at this URL: https://github.com/udacity/course-git-blog-project So using this URL, the full command to clone blog project is:
+
+          ```bash
+          $ git clone https://github.com/udacity/course-git-blog-project
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 338774
+        key: 7ec3894b-420f-42f2-8549-6ea9361e801e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/588bba64_ud123-l2-git-clone/ud123-l2-git-clone.gif'
+        width: 1036
+        height: 424
+        caption: _The `git clone` command is used to copy the blog project repository into a `course-git-blog-project` folder in the current directory._
+        resources: null
+        instructor_notes: null
+      - id: 338775
+        key: 31a70ca0-795b-44df-8328-61ff5250206f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Git Clone Output Explanation
+
+          Let's look briefly at the output that `git clone` displays.
+
+          The first line says "Cloning into 'course-git-blog-project'...". Git is creating a directory (with the same name of the project we're cloning) and putting the repository in it...that's pretty cool!
+
+          The rest of the output is basically validation - it's counting the remote repository's number of objects, then it compresses and receives them, then it unpacks them.
+        instructor_notes: ''
+        resources: null
+      - id: 338776
+        key: 7ffe99a1-fc8e-4a15-acac-d6134199f3c8
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Clone Project And Use Different Name
+
+          You just cloned the blog project for this course. Awesome job!
+
+          The command you ran in the terminal was:
+
+          ```bash
+          $ git clone https://github.com/udacity/course-git-blog-project
+          ``` 
+          ...which created a directory named `course-git-blog-project`.
+
+          What if you want to use a different name instead of the default one? Yes, you could just run the command above and manually rename it in Finder/Windows Explorer or use `mv` on the terminal. But that's too many steps for us! Instead, we'd rather clone the project and have it use a different name all in one go! But how do we do that?
+        instructor_notes: ''
+        resources: null
+      - id: 338777
+        key: 388d8a36-1d17-4d87-925f-eddf036b6c83
+        locale: zh-cn
+        version: 1.0.0
+        title: Clone Project And Use Different Name
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'Why don''t you check out [the documentation for `git clone`](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository) and pick the correct way to do it from the options below. The command should clone the blog project repo and store it in a directory named `blog-project`.'
+          correct_feedback: 'That''s the one! Instead of having Git create a directory with the same name as the project that''s being cloned, just provide a name directly on the command line.'
+          video_feedback: null
+          default_feedback: 'That doesn''t look quite write to me. Did you check out the documentation link? There''s also this set of [docs on git clone](https://git-scm.com/docs/git-clone), but it''s a bit more cryptic because it assumes you know all about the Git clone command.'
+          answers:
+            - id: a1485552281688
+              text: 'git clone-new-dir https://github.com/udacity/course-git-blog-project blog-project'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1485552364588
+              text: 'git clone https://github.com/udacity/course-git-blog-project --out blog-project'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1485552375996
+              text: 'git clone https://github.com/udacity/course-git-blog-project --rename blog-project'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1485552381014
+              text: 'git clone https://github.com/udacity/course-git-blog-project blog-project'
+              is_correct: true
+              incorrect_feedback: null
+      - id: 338778
+        key: f3757b38-288c-4be8-ab9a-feee293325f4
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## Not In A Git Repository?
+          >
+          > WARNING: Here's a _very important_ step that often gets missed when you first start working with Git. When the `git clone` command is used to clone a repository, it creates a new directory for the repository...you already know this. _But, it doesn't change your shell's working directory._ It created the new repo inside the current working directory, which means that the current working directory is still _outside_ of this new Git repo! Make sure you `cd` into the new repository.
+          > 
+          > Remember to use the Terminal's command prompt as an aid - if you're in a directory that is a Git repository, the command prompt will include a name in parentheses.
+        instructor_notes: ''
+        resources: null
+      - id: 338779
+        key: 85c1ac0b-5115-4ffe-8b81-bf28de808c31
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/589a623e_ud123-l2-base-directory/ud123-l2-base-directory.png'
+        width: 1616
+        height: 726
+        caption: _Mac's Terminal application. The terminal shows the starting directory._
+        resources: null
+        instructor_notes: null
+      - id: 338780
+        key: 24975c7d-d8ff-4d8a-90c4-2de9f8a33621
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/589a625b_ud123-l2-base-directory-git-repo/ud123-l2-base-directory-git-repo.png'
+        width: 1616
+        height: 726
+        caption: _Mac's Terminal application. The terminal uses the `cd` command to move from the base directory into the course-git-blog-project which is a Git repository._
+        resources: null
+        instructor_notes: null
+      - id: 338781
+        key: b96eb396-bd4f-4cb0-a232-c496820fd10b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Look At The Project
+          So you've cloned the project to your computer, and you've `cd`ed into it. Don't you think it's time you checked it out in a browser to see what it looks like?
+
+          Open up the `index.html` file in your favorite browser.
+        instructor_notes: ''
+        resources: null
+      - id: 338782
+        key: 3fec3c5a-6c53-4bd4-be04-21a32e36db7b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a7513d_ud123-l2-course-git-blog-project-in-browser/ud123-l2-course-git-blog-project-in-browser.png'
+        width: 1300
+        height: 886
+        caption: _The blog project loaded in Chrome._
+        resources: null
+        instructor_notes: null
+      - id: 338783
+        key: c067fb70-c054-4dba-94b3-e5e0b5d6c833
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Git Clone Recap
+
+          The `git clone` command is used to create an identical copy of an existing repository.
+
+          ```shell
+          $ git clone <path-to-repository-to-clone>
+          ```
+
+          This command:
+          * takes the path to an existing repository
+          * by default will create a directory with the same name as the repository that's being cloned
+          * can be given a second argument that will be used as the name of the directory
+          * will create the new repository inside of the current working directory
+
+          ## Helpful Links
+          * [Cloning an Existing Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository)
+          * [git clone docs](https://git-scm.com/docs/git-clone)
+          * [git clone Tutorial](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
+        instructor_notes: ''
+        resources: null
+      - id: 338784
+        key: b2be22c1-57cf-416e-832a-ab24fc4b9756
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Status Update
+
+          At this point, we have two Git repositories:
+          * the empty one that we created with the `git init` command
+          * the one we cloned with the `git clone` command
+
+          How can we find any information about these repositories? Git's controlling them, but how can we find out what Git knows about our repos? To figure out what's going on with a repository, we use the `git status` command. Knowing the status of a Git repository is _extremely_ important, so head straight on over to the next concept: Determine A Repo's Status.
+        instructor_notes: ''
+        resources: null
+  - id: 339077
+    key: ce648229-7d6c-4ad3-805e-af6a77f38fd0
+    locale: zh-cn
+    version: 1.0.0
+    title: Determine A Repo's Status
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 07:34:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338791
+      - 338792
+      - 338793
+      - 338794
+      - 338795
+      - 338796
+      - 338797
+      - 338798
+      - 338799
+    atoms:
+      - id: 338791
+        key: 54621400-9189-4eda-adcc-ea1534681167
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Working with Git on the command line can be a little bit challenging because it's a little bit like a [black box](https://en.wikipedia.org/wiki/Black_box). I mean, how do you know when you should or shouldn't run certain Git commands? Is Git ready for me to run a command yet? What if I run a command but I think it didn't work...how can I find that out? The answer to all of these questions is the `git status` command!
+
+          ```shell
+          $ git status
+          ```
+
+          The `git status` is our key to the mind of Git. It will tell us what Git is thinking and the state of our repository as Git sees it. When you're first starting out, you should be using the `git status` command _*all of the time*_! Seriously. You should get into the habit of running it after any other command. This will help you learn how Git works and it'll help you from making (possibly) incorrect assumptions about the state of your files/repository.
+        instructor_notes: ''
+        resources: null
+      - id: 338792
+        key: 79dbc7bd-bcac-4b40-ac6f-ed61104fe534
+        locale: zh-cn
+        version: 1.0.0
+        title: Status Of Cloned Repo
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'To answer this quiz, make sure you''ve `cd`ed into the `course-git-blog-project` project. If you''ve been following along in this lesson and haven''t added any files to this project, then what does running `git status` display?'
+          correct_feedback: 'Yep, that''s what I''m seeing, too!'
+          video_feedback: null
+          default_feedback: 'Hmm, that doesn''t look right. Are you sure you''re in the `course-git-blog-project` directory and haven''t made changes to any of the files yet?'
+          answers:
+            - id: a1486513004009
+              text: 'Status: good'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1486513023571
+              text: On branch master <br>Your branch is up-to-date with 'origin/master'.<br>Initial commit <br>nothing to commit (create/copy files and use "git add" to track)
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1486513044449
+              text: master branch  <br>Please commit some files
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1486513057659
+              text: 'On branch master <br>Your branch is up-to-date with ''origin/master''.<br>nothing to commit, working directory clean'
+              is_correct: true
+              incorrect_feedback: null
+      - id: 338793
+        key: 57149697-d6c2-41eb-91f7-7d9ac0ed7db8
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Git Status Output
+          The `git status` command will display a lot of information depending on the state of your files, the working directory, and the repository. You don't need to worry too much about these, though...just run `git status` and it will display the information you need to know.
+        instructor_notes: ''
+        resources: null
+      - id: 338794
+        key: 3b2f09ef-b39e-4aa3-a8cb-26e8c13773b2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/589a6434_ud123-l2-git-status-blog-project/ud123-l2-git-status-blog-project.gif'
+        width: 1036
+        height: 522
+        caption: _An animated gif of the Terminal application. The `git status` command is run in the `course-git-blog-project` project._
+        resources: null
+        instructor_notes: null
+      - id: 338795
+        key: 869e3fde-3f9c-446a-a395-a70b64e58e7c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Git Status Explanation
+
+          As you can see in the GIF above, running `git status` in the `course-git-blog-project` project produces the following output:
+
+          ```shell
+          On branch master
+          Your branch is up-to-date with 'origin/master'.
+          nothing to commit, working directory clean
+          ```
+
+          The output tells us two things:
+          1. `On branch master` – this tells us that Git is on the `master` branch. You've got a description of a branch on your terms sheet so this is the "master" branch (which is the default branch). We'll be looking more at branches in lesson 5
+          * `Your branch is up-to-date with 'origin/master'.` – Because `git clone` was used to copy this repository from another computer, this is telling us if our project is in sync with the one we copied from. We won't be dealing with the project on the other computer, so this line can be ignored.
+          * `nothing to commit, working directory clean` – this is saying that there are no pending changes.
+
+          Think of this output as the "resting state" (that's not an official description - it's how I like to describe it!). This is the resting state because there are no new files, no changes have been made in files, nothing is in the staging area about be committed...no change or action is pending, so that's why I like to call it the resting state. 
+
+          So this is what it looks like when running `git status` in a repository that already has commits. Let's switch to the `new-git-project` project to see what the `git status` output will produce.
+        instructor_notes: ''
+        resources: null
+      - id: 338796
+        key: 065c1844-da87-46c7-b85d-819fc1330ad3
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            To answer this quiz, make sure you've `cd`ed into the `new-git-project` project. 
+
+            If you've been following along in this lesson and haven't added any files to this project, then what does running `git status` display?
+          correct_feedback: 'Yep, that''s what I''m seeing, too!'
+          video_feedback: null
+          default_feedback: 'Hmm, that doesn''t look right. Are you sure you''re in the `new-git-project` directory and haven''t made any commits yet?'
+          answers:
+            - id: a1486766973483
+              text: 'Status: good'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1486767002437
+              text: On branch master <br>Initial commit <br>nothing to commit (create/copy files and use "git add" to track)
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1486767003147
+              text: master branch <br>Please commit some files
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1486767003798
+              text: 'On branch master <br>nothing to commit, working directory clean'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 338797
+        key: 02a6d897-7cba-4523-b44e-0f20c3372a20
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/589e4494_ud123-l2-git-status-new-project/ud123-l2-git-status-new-project.gif'
+        width: 1036
+        height: 390
+        caption: _An animated GIF of the Terminal application. The `git status` command is run in the `new-git-project` project._
+        resources: null
+        instructor_notes: null
+      - id: 338798
+        key: 73ed0f88-4071-4604-84c0-96c4edfc4dc2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Explanation Of Git Status In A New Repo
+
+          This is the output of running `git status` in the `new-git-project` project:
+
+          ```bash
+          $ git status
+          On branch master
+
+          Initial commit
+
+          nothing to commit (create/copy files and use "git add" to track)
+          ```
+
+          To be completely clear, I haven't made any commits in my project yet. If you have made a commit, then your output should look exactly like that of the course-git-blog-project project. 
+
+          If you compare this to the `git status` output from the course-git-blog-project project, then you'll see that they're pretty similar. The thing to note that's different is that this output includes the line `Initial commit`. This is the tiniest bit confusing because there actually aren't any commits in this repository yet! We haven't discussed making a commit yet, but when we do, we will be able to make an initial commit.
+
+          Wanna have a sneak peak of the next lesson and at the same time prove that there aren't any commits in this repo yet? Great, I knew you did! Try running the command `git log` and check out its response:
+
+          ```bash
+          $ git log
+          fatal: your current branch 'master' does not have any commits yet
+          ```
+          Well, that's kind of scary looking. "Fatal"? Fortunately, it turns out that just means that the Git program is exiting because it can't find any work to do. Git tells us this as if it were an error, but it's really not a problem. We know we haven't put any commits into this repo yet.
+
+          It's pretty clear from the response that there aren't any commits!
+
+          We've just taken a very brief look at the `git status` command. Remember that the output of `git status` will change depending on if files have been added/deleted/modified, what's on the staging index, and the state of the repository. We'll be using the `git status` command throughout this entire course, so get comfortable running it!
+        instructor_notes: ''
+        resources: null
+      - id: 338799
+        key: 3a95cc86-763d-40f1-9acf-aac41af6eeca
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 07:34:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Git Status Recap
+
+          The `git status` command will display the current status of the repository. 
+
+          ```bash
+          $ git status
+          ```
+
+          I can't stress enough how important it is to use this command _all the time_ as you're first learning Git. This command will:
+          * tell us about new files that have been created in the Working Directory that Git hasn't started tracking, yet
+          * files that Git _is_ tracking that have been modified
+          * a whole bunch of other things that we'll be learning about throughout the rest of the course ;-)
+
+          ## Helpful Links
+          * [Checking the Status of Your Files](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Checking-the-Status-of-Your-Files)
+          * [git status docs](https://git-scm.com/docs/git-status)
+          * [git status Tutorial](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-status)
+        instructor_notes: ''
+        resources: null
+  - id: 339076
+    key: f545f8d7-7039-4d46-a12c-69325c899fb0
+    locale: zh-cn
+    version: 1.0.0
+    title: Outro
+    semantic_type: Concept
+    updated_at: 'Fri Jun 23 2017 07:34:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 338800
+    atoms:
+      - id: 338800
+        key: 2b9246ec-94e7-4050-a5dd-50fff5d095a2
+        locale: zh-cn
+        version: 1.0.0
+        title: Nd016 WebND Ud123 Gitcourse BETAMOJITO L2 38 Create A Repo - Outro
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:37:12 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51022'
+          youtube_id: h7j4STDFCjs
+          subtitles: null
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dbd6_nd016-webnd-ud123-gitcourse-betamojito-l2-38-create-a-repo-outro/nd016-webnd-ud123-gitcourse-betamojito-l2-38-create-a-repo-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dbd6_nd016-webnd-ud123-gitcourse-betamojito-l2-38-create-a-repo-outro/nd016-webnd-ud123-gitcourse-betamojito-l2-38-create-a-repo-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dbd6_nd016-webnd-ud123-gitcourse-betamojito-l2-38-create-a-repo-outro/nd016-webnd-ud123-gitcourse-betamojito-l2-38-create-a-repo-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dbd6_nd016-webnd-ud123-gitcourse-betamojito-l2-38-create-a-repo-outro/nd016-webnd-ud123-gitcourse-betamojito-l2-38-create-a-repo-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dbd6_nd016-webnd-ud123-gitcourse-betamojito-l2-38-create-a-repo-outro/hls/playlist.m3u8'

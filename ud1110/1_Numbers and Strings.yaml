@@ -1,0 +1,2616 @@
+id: 347314
+key: 2fd50672-c1f9-4013-950e-c53493cb2e67
+locale: zh-cn
+version: 1.0.0
+title: Numbers and Strings
+semantic_type: Lesson
+updated_at: 'Mon Jul 17 2017 08:29:37 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: 'In this lesson you will learn how to use Python''s numeric and string data types. You will use built-in functions and methods to process this data, and store the results in variables'
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+_concepts_ids:
+  - 347248
+  - 347249
+  - 347250
+  - 347251
+  - 347256
+  - 347252
+  - 347253
+  - 347254
+  - 347255
+  - 347257
+  - 347258
+  - 347260
+_project_id: null
+concepts:
+  - id: 347248
+    key: 2e323d45-81da-4ba9-8135-05f6d6c71ec1
+    locale: zh-cn
+    version: 1.0.0
+    title: Welcome!
+    semantic_type: Concept
+    updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 346883
+      - 346884
+      - 346885
+      - 346886
+    atoms:
+      - id: 346883
+        key: 8720f49b-264f-43e2-90e3-eae6d6f16434
+        locale: zh-cn
+        version: 1.0.0
+        title: Welcome to Introduction to Python Programming
+        semantic_type: VideoAtom
+        updated_at: 'Mon Jul 17 2017 08:29:35 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52064'
+          youtube_id: IILB-5hIeZM
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d40c7c_ud1110-intropy-l1-01-welcome/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40c7c_ud1110-intropy-l1-01-welcome/ud1110-intropy-l1-01-welcome_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40c7c_ud1110-intropy-l1-01-welcome/ud1110-intropy-l1-01-welcome_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40c7c_ud1110-intropy-l1-01-welcome/ud1110-intropy-l1-01-welcome_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40c7c_ud1110-intropy-l1-01-welcome/ud1110-intropy-l1-01-welcome_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40c7c_ud1110-intropy-l1-01-welcome/hls/playlist.m3u8'
+      - id: 346884
+        key: 7c9cc189-eba5-4459-85b5-b472862d99be
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:35 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          This course is intended for students who have some programming experience. Your experience could be in any language: if you're familiar with terms like "variable" and "iteration" you are prepared for this class.
+
+          If you have never programmed before we recommend these resources:
+          * [Intro to Programming Nanodegree](https://www.udacity.com/course/intro-to-programming-nanodegree--nd000) - This program teaches the foundations of programming. Students who enroll in this program complete a series of projects and receive feedback from mentors.
+          * [Introduction to Computer Science](https://www.udacity.com/course/intro-to-computer-science--cs101) - This free course introduces Python, and explores the academic side of computing.
+
+          If you are a more experienced programmer who simply wishes to get up to speed with Python, feel free to skip past the topics in this course that feel too basic. You can preview the first lab to gauge your skills.
+        instructor_notes: ''
+        resources: null
+      - id: 346885
+        key: d5dafedc-f612-4713-99f8-dc0e11b20614
+        locale: zh-cn
+        version: 1.0.0
+        title: What are we going to do?
+        semantic_type: VideoAtom
+        updated_at: 'Mon Jul 17 2017 08:29:35 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52111'
+          youtube_id: rK6YlbBiKQM
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d46cef_ud1110-intropy-l1-03-what-are-we-going-to-do/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d46cef_ud1110-intropy-l1-03-what-are-we-going-to-do/ud1110-intropy-l1-03-what-are-we-going-to-do_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d46cef_ud1110-intropy-l1-03-what-are-we-going-to-do/ud1110-intropy-l1-03-what-are-we-going-to-do_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d46cef_ud1110-intropy-l1-03-what-are-we-going-to-do/ud1110-intropy-l1-03-what-are-we-going-to-do_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d46cef_ud1110-intropy-l1-03-what-are-we-going-to-do/ud1110-intropy-l1-03-what-are-we-going-to-do_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d46cef_ud1110-intropy-l1-03-what-are-we-going-to-do/hls/playlist.m3u8'
+      - id: 346886
+        key: ba39c19f-15b2-4800-b390-cd1cdac254fd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:35 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          What will I Learn?
+          ==============
+
+          1. Numbers and Strings
+          2. Functions, Installation and Conditionals
+          3. Data Structures and Loops
+          4. Files and Modules
+          5. Wikipedia Web Crawl Case Study
+          6. Exceptions and Objects
+        instructor_notes: ''
+        resources: null
+  - id: 347249
+    key: d54b6078-83f5-49ad-ae48-c5d7214127e6
+    locale: zh-cn
+    version: 1.0.0
+    title: Arithmetic
+    semantic_type: Concept
+    updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 346887
+      - 346888
+      - 346889
+      - 346890
+      - 346891
+      - 346892
+      - 346893
+      - 346894
+      - 346895
+      - 346896
+      - 346897
+    atoms:
+      - id: 346887
+        key: 1538f116-be04-4415-9ccb-f8ddd27453fd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:35 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Arithmetic Operators
+          =================
+
+          Let’s get started in Python by working with numbers. You can try these examples for yourself by scrolling down to the code editor that follows. Run your code with the Test Run button- you should see the results printed in the results window below the Test Run button. The basic arithmetic operations are available, and Python will follow all the usual rules of mathematics when it comes to how they work.
+
+          I can try out a calculation in a line of Python. 
+
+
+          ```python
+          >>> print(3 + 1)
+          4
+          ```
+
+          This prints the result, 4. We could have done this calculation without printing it, but then we wouldn't see the result!
+
+          ```python
+          >>> 3 + 1
+          ```
+
+          In these examples, the `>>>` is the Python prompt. We'll use this notation to distinguish our input (which follows the prompt) from the output on the following line. Later in the course you will learn how to install Python and how to use the Python prompt yourself. For now you can just use the Arithmetic Playground provided below to follow along.
+
+          The symbols for addition and subtraction in Python are the usual ones, `+` and `-`, multiplication is asterisk `*` (watch out, it’s not `x`) and division is forward slash `/`. Brackets for mathematics are the curved parentheses `(` and `)`. 
+          You’ll also see parentheses around the content of the call to `print` that we used to show the answer to our calculation.
+
+          ```python
+          >>> print(1 + 2 + 3 * 3)
+          12
+          >>> print((1 + 2 + 3) * 3)
+          18
+          ```
+
+          This is proof that parentheses matter!
+
+          We can go beyond the basics, too. You can raise one number to the power of another with two asterisks `**`. 
+
+          ```python
+          >>> print(3**2)
+          9
+          ```
+
+          Note: There is another operator that is sometimes mistaken for the exponentiation operator, the caret: `^`.  This is not for exponentiation as some programmers expect. Instead it performs a more obscure operation called [bitwise or](https://en.wikipedia.org/wiki/Bitwise_operation#OR). If you're accustomed to using the caret for exponents you might accidentally write incorrect code that produces confusing results!
+
+          Another useful operation is given by the `%` - it’s the modulo operation. It gives the remainder after you’ve divided the first number by the second.
+
+          ```python
+          >>> print(9 % 2)
+          1
+          ```
+
+          You might also find use for integer division, denoted by `//`. It divides one integer by another, but rather than giving the exact answer it rounds the answer down to an integer. (Note: it rounds down even if the answer is negative.)
+
+          ```python
+          >>> print(15 // 4)
+          3
+          >>> print(16 // 4)
+          4
+          >>> print(-5//4)
+          -2
+          ```
+
+          Note: there are some differences in how division (`/`) works between Python 2 and Python 3. We will not go into them for now, and since this class is built for Python 3, we will focus on how division works in Python 3.
+        instructor_notes: ''
+        resources: null
+      - id: 346888
+        key: 40e40dd6-733a-4fcb-9852-a0ff85eb1c9e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:35 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Arithmetic Playground
+          ==================
+
+          Try out your own arithmetic in this programming quiz. Experiment with ints! Enclose your arithmetic in a call to `print()` to see the result!
+
+          Notice that there is one new piece of syntax in this code, the "#". Text that follows a "#" is a comment, used to annotate the rest of the code. Comments are ignored by the Python interpreter.
+        instructor_notes: ''
+        resources: null
+      - id: 346889
+        key: 4d1ca028-ede2-47b5-8ac9-4cb9baf3e29c
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:35 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: Arithmetic Playground
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6671975389986816'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: ''
+            executor_test_code: import playground
+            gae_grading_code: |-
+              grade_result['comment'] = 'This quiz doesn\'t have a right or wrong answer. Feel free to experiment!'
+              grade_result['correct'] = None
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 346890
+        key: daae8911-4826-47f1-b98b-8c701eb7515d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Average Electricity Bill
+          =======
+
+          It's time to try a calculation in Python!
+
+          My electricity bills for the last three months have been $23, $32 and $64. What is the average monthly electricity bill over the three month period? Write an expression to calculate the average, and use `print()` to view the result and to get it graded.
+        instructor_notes: ''
+        resources: null
+      - id: 346891
+        key: f4d96240-0622-4493-80de-4a9ea24f1957
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '4540677594677248'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: import electric_average
+            executor_test_code: |-
+              import sys
+              import traceback
+
+              try:
+                  import electric_average
+              except:
+                  traceback.print_exc(file=sys.stderr, limit=0)
+            gae_grading_code: |
+              def approximately_equal(a, b):
+                  """Returns True if the numbers a and b are within 0.01% of each other"""
+                  return abs(a - b) <= .0001
+
+              student_output = executor_result['stdout']
+
+              correct_answer = (23 + 32 + 64) / 3.0 # This grading code is executed with Python 2
+
+              grade_result['correct'] = True
+              grade_result['comment'] = "Well done!"
+
+              try:
+                  student_output = float(student_output)
+                  if not approximately_equal(student_output, correct_answer):
+                      grade_result['correct'] = False
+                      grade_result['comment'] = """Your code produced the wrong result. Check for typos and misplaced parentheses."""
+              except ValueError:
+                  # This detects if the student's print output can't be converted to ints
+                  grade_result['correct'] = False
+                  grade_result['comment'] = """our code didn't print a float.
+                  \n Your code should resemble this, but with the correct formula inside the print statement:
+                  `print(1 + 2 + 3)`"""
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occured while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an error. Test Run your code to verify that it prints the right things!"
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 346892
+        key: 1b97b406-a10d-463e-9dd4-fd443af04777
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Solution: Average Electricity Bill
+          ==============
+        instructor_notes: ''
+        resources: null
+      - id: 346893
+        key: 29d747ae-cc5c-48f6-8ea5-3bdc6825d7d9
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud1110 IntroPy L1 07 Arithmetic Expression In Python
+        semantic_type: VideoAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52066'
+          youtube_id: Iq3ovQqBj1M
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d40c84_ud1110-intropy-l1-07-arithmetic-expression-in-python/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40c84_ud1110-intropy-l1-07-arithmetic-expression-in-python/ud1110-intropy-l1-07-arithmetic-expression-in-python_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40c84_ud1110-intropy-l1-07-arithmetic-expression-in-python/ud1110-intropy-l1-07-arithmetic-expression-in-python_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40c84_ud1110-intropy-l1-07-arithmetic-expression-in-python/ud1110-intropy-l1-07-arithmetic-expression-in-python_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40c84_ud1110-intropy-l1-07-arithmetic-expression-in-python/ud1110-intropy-l1-07-arithmetic-expression-in-python_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40c84_ud1110-intropy-l1-07-arithmetic-expression-in-python/hls/playlist.m3u8'
+      - id: 346894
+        key: fb46e1f2-71b1-4584-a8b6-1527f03d7eee
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Arithmetic And Whitespace
+          ======
+
+          One thing you might have noticed is that in a single line of Python, whitespace doesn’t really affect how your code works. For example,
+
+          ```python
+          >>> print(4+5)
+          9
+          ```
+
+
+          will give exactly the same output as
+
+          ```python
+          >>> print (                 4+  5)
+          9
+          ```
+
+          However, that doesn’t mean that these things are equally good. Here are some useful guidelines:
+
+          * When you call a function like print, put the opening parenthesis straight after the name of the function like in `print(8)`. 
+          * Don’t put extra spaces inside the parentheses either, it should be `print(3*7)`. 
+          * If you are mixing operators with different priorities (like multiplication and subtraction), then you might like to add a space around the lower priority (in this case addition and subtraction) operator in order to make the code easier to read. For example, `1 + 2*3`.
+          * Don't write extremely long lines of code; they're hard to understand. People commonly limit themselves to lines that are 79 or 99 characters long. If you feel that you need to write longer lines, consider rewriting and simplifying your code.
+
+          These conventions come from the Python Developer's Guide, which has a Style Guide called [PEP 8](https://www.python.org/dev/peps/pep-0008/). Don't worry if you don't understand all of the content of PEP 8 right now. 
+
+          Why is this important? 
+          Although how you format the code doesn’t affect how it *runs*, it affects how it *reads*. Following standard guidelines on code style help make a lot of code easier to read. So it’s a good idea to follow the guidelines, even with one-line expressions, it’ll help you write readable code in the long run. Each time you learn something new it will be useful to refer back to PEP 8 to get your Python style right.
+        instructor_notes: ''
+        resources: null
+      - id: 346895
+        key: 63ddf952-54a8-4f67-b42e-ee42cc4be3f5
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Calculate And Format
+          ====
+
+          In this quiz you're going to do some calculations for a tiler. Two parts of a floor need tiling. One part is **9 tiles wide by 7 tiles long**, the other is **5 tiles wide by 7 tiles long**. Tiles come in packages of 6.
+
+          1. How many tiles are needed? 
+          2. You buy **17 packages of tiles containing 6 tiles each**. How many tiles will be left over?
+
+          Remember to following the formatting guidelines above as you write your code.
+        instructor_notes: ''
+        resources: null
+      - id: 346896
+        key: 30bdc63a-3ca3-4690-87b3-86d3b2584319
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6584147469533184'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: import tiles
+            executor_test_code: |-
+              import sys
+              import traceback
+
+              try:
+                  import tiles 
+              except:
+                  traceback.print_exc(file=sys.stderr, limit=0)
+            gae_grading_code: |
+              student_output = executor_result['stdout'].split('\n')
+
+              grade_result['correct'] = True
+
+              correct_tile_count = 9*7 + 5*7
+              correct_leftover_count = (17*6) - (9*7 + 5*7)
+
+              try:
+                  tile_count = int(student_output[0])
+                  leftover_count = int(student_output[1])
+
+                  if tile_count != correct_tile_count:
+                      grade_result['correct'] = False
+                      grade_result['comment'] = "Your first print statment printed the wrong number of tiles. Double check your math!"
+                  else:
+                      grade_result['comment'] = "You correctly calculated the number of tiles needed. Nice work!\n I calculated my answer like this: `9*7 + 5*7`"
+
+                  if leftover_count != correct_leftover_count:
+                      grade_result['correct'] = False
+                      grade_result['comment'] += "\n\nYour second print statment printed the wrong number of leftover tiles. Double check your math!"
+                  else:
+                      grade_result['comment'] += "\n\nYou correctly calculated the number of leftover tiles. Well done!\n I calculated my answer like this: `(17*6) - (9*7 + 5*7)`"
+
+              except ValueError:
+                  # This detects if the student's print output can't be converted to ints
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code printed something that isn't a number. Test Run your code to verify that it prints the right things!"
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occured while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an error. Test Run your code to verify that it prints the right things!"
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 346897
+        key: daf6738c-2deb-4d46-882f-b03f10d3683f
+        locale: zh-cn
+        version: 1.0.0
+        title: Code Formatting
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Which of these lines of code are correctly formatted? How would you improve the ones that don't look good?
+          correct_feedback: |-
+            Well done on thinking about good Python formatting! Practicing the correct formatting when coding is the best way to get good at it. Here is what we thought:
+
+            The first one isn't correctly formatted; it has some extra spaces, extra parentheses and an extra `+`. It would look much clearer as
+            ```python
+            print((3 + 32) - 15//2)
+            ```
+
+            The second one looks good, it's got extra spaces around the `-` and `+` to help with readability.
+
+            The third one looks quite clear, though it could be a bit better by removing the space between `print` and `(` and the spaces around the `/`.
+            ```python
+            print((1 + 2 + 4)/13)
+            ```
+            The final one looks fine. 
+          video_feedback: null
+          default_feedback: You missed a correct answer
+          answers:
+            - id: a1483472039425
+              text: '`print(((3+  32))+ -15//2)`'
+              is_correct: false
+              incorrect_feedback: |-
+                The first expression isn't correctly formatted; it has some extra spaces, extra parentheses and an extra `+`. It would look much clearer as
+                ```python
+                print((3 + 32) - 15//2)
+                ```
+            - id: a1483472071150
+              text: '`print((17 - 6)%(5 + 2))`'
+              is_correct: true
+              incorrect_feedback: 'You left a well-formatted expression unchecked, double check your answers.'
+            - id: a1483472086944
+              text: '`print ((1 + 2 + 4) / 13)`'
+              is_correct: false
+              incorrect_feedback: |-
+                The third expression looks quite clear, though it could be a bit better by removing the space between `print` and `(` and the spaces around the `/`.
+                ```python
+                print((1 + 2 + 4)/13)
+                ```
+            - id: a1483472087692
+              text: '`print(4/2 - 7*7)`'
+              is_correct: true
+              incorrect_feedback: 'You left a well-formatted expression unchecked, double check your answers.'
+  - id: 347250
+    key: af42c328-a565-4043-a9da-17b7bbb82352
+    locale: zh-cn
+    version: 1.0.0
+    title: Integers and Floats
+    semantic_type: Concept
+    updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 346898
+      - 346899
+    atoms:
+      - id: 346898
+        key: 76c07d0e-b851-4887-9868-4c0a4ae662b6
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Integers and Floats
+          ======
+          So far all of the numerical examples we’ve seen have been whole numbers: integers. But other numbers do exist in Python, and we need to be able to calculate with them and construct them.
+
+          ```python
+          >>> print(3/4)
+          0.75
+          ```
+
+          Here dividing one integer by another gives us a number that isn't an integer, 0.75. In Python (and computing in general) we represent such a number as a **float**, which is short for **floating-point number**. 
+
+          Even if one integer divides another exactly, the result will be a float. 
+
+          ```python
+          >>> print(16/4)
+          4.0
+          ```
+
+          [NOTE: This is Python 3 code. The previous versions of Python behave differently - the division of one int by another in Python 2 will yield an `int`, even if the expected result is not a whole number! This Python 2 behaviour is like integer division  (`//`) in Python 3. We use Python 3 in this course.]
+
+          An operation involving an int and a float produces a float.
+
+          ```python
+          >>> 3 + 2.5
+          5.5
+          ```
+
+          To make an int, just give a whole number without a decimal point. Here is an int:
+          ```python
+          >>> 387
+          ```
+          To make a float, include a decimal point! If the number itself is actually a whole number, that’s OK: you don’t even have to put anything AFTER the decimal point. Here are a couple of floats:
+
+          ```python
+          >>> 213.13
+          >>> 341.
+          ```
+          Sometimes you might need to manually convert one numeric type to another, and you can do that by constructing new objects of those types with `int()` and `float()`.
+
+          ```python
+          >>> int(49.7)
+          49
+          >>> int(16/4)
+          4
+          >>> float(3520+3239)
+          6759.0
+          ```
+
+          When we convert a float to an int, the part of the number after the decimal point is cut off.
+
+          So we’ve seen Python’s two main numeric **types** - integer (int) and floating-point number (float). What are they good for?
+
+          * int - there are many times when you might need to count items, or need to rely on the result of a computation being an integer. The int type is great for this.
+          * float - if what you’re working on isn’t necessarily a whole number, a float is the type you’re looking for!
+
+          Floating-point numbers are **approximations** of the numbers they are supposed to represent. This is necessary because floats can represent an enormous range of numbers, so in order to fit numbers in computer memory, Python must use approximations. This tradeoff can sometimes have surprising results: 
+
+          ```python
+          >>> print(0.1)
+          0.1
+          >>> print(0.1 + 0.1 + 0.1)
+          0.30000000000000004
+          ```
+          Because the float (i.e. the approximation) for `0.1` is actually slightly more than 0.1, when we add several of them together we can see the difference between the mathematically correct answer and the one that Python creates. In most contexts these small differences are irrelevant, but it's important to know that they're there!
+
+          The Python documentation explains more about this:  https://docs.python.org/3/tutorial/floatingpoint.html
+        instructor_notes: ''
+        resources: null
+      - id: 346899
+        key: fac02264-315d-4ab1-8ac5-6d5c4ed1e8d1
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'In the fishy situation below, some of the quantities are of type `int`, and some of type `float`. Check all the `float` ones'
+          correct_feedback: 'Well done for working on this quiz! There is not always a single right answer: you have to use your judgement to pick your data types in a way that works for your program!'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1490717598573
+              text: How many people came on your fishing trip
+              is_correct: false
+              incorrect_feedback: 'Since you can''t have a portion of a person, you should use an `int`.'
+            - id: a1490717693610
+              text: 'Length of a fish you caught, in metres'
+              is_correct: true
+              incorrect_feedback: 'Fish sizes can include fractions, for example, there could be a 1.2 meter long fish (that would be a big fish!), so you should use a `float`.'
+            - id: a1490717706252
+              text: ' Number of fish caught on a fishing trip.'
+              is_correct: false
+              incorrect_feedback: 'Since you usually catch an entire fish and not a portion of it, this should be an `int`.'
+            - id: a1490717762760
+              text: ' Length of time it took to catch the first fish, in hours.'
+              is_correct: true
+              incorrect_feedback: 'Length of time can include factions of an hour, so you should use a `float`.'
+  - id: 347251
+    key: 148a5f6d-4f16-489f-9b6e-3452ee4cf3e8
+    locale: zh-cn
+    version: 1.0.0
+    title: Errors
+    semantic_type: Concept
+    updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 346900
+      - 346902
+      - 346901
+    atoms:
+      - id: 346900
+        key: 516fc59f-8036-424a-b6fc-5002ee8c35d7
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Divide By Zero?
+          ==========
+
+          What happens if you divide by zero in Python? Try it out! Test run this code and see what happens.
+        instructor_notes: ''
+        resources: null
+      - id: 346902
+        key: 444421c5-3cef-4985-80e7-3e1656adf9ab
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: Divide by Zero
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6644924880650240'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: ''
+            executor_test_code: |-
+              import sys, traceback
+
+              try:
+                  import quiz
+              except:
+                  # This abomination only prints the section of the traceback that refers to
+                  # The line of student code where the exception occurs.
+                  print("Traceback (most recent call last):", file=sys.stderr)
+                  for line in (traceback.format_list([traceback.extract_tb(sys.exc_info()[2])[-1]])):
+                      print(line, file=sys.stderr)
+                  print("{}: {}".format(
+                      sys.exc_info()[0].__name__,
+                      str(sys.exc_info()[1]), file=sys.stderr),
+                      file=sys.stderr)
+                  
+            gae_grading_code: |-
+              grade_result['comment'] = 'This quiz doesn\'t have a right or wrong answer. Use the Test Run button to see the output of your code'
+              grade_result['correct'] = None
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 346901
+        key: 48bc440e-85ba-4ca4-99d1-0a4713c63fd8
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Here’s what you should have seen when you Submitted the programming quiz:
+
+          ```text
+          Traceback (most recent call last):
+            File "/tmp/vmuser_ysnciqgdfu/divzero.py", line 1, in <module>
+              print(5/0)
+
+          ZeroDivisionError: division by zero```
+
+          Traceback means "What the program was doing when things stopped because they went wrong"! That’s exactly what these lines are - and because it shows the most recent call last, it makes sense to start at the bottom. The traceback refers to a strangely named file, "vmuser_ysnciqgdfu/divzero.py". This is the filename of the Python program above. 
+
+          The last line is the Error message. It ought to describe what went wrong - though some are clearer than others. If you don’t understand the error message as it is, it’s a good idea to do an internet search for the exact text of the message to help you figure it out.
+
+          In this case, though, I think it tells us what went wrong: it’s a ZeroDivisionError, and the message says we divided (or tried to do a modulo) by zero. Python is enforcing the rules of arithmetic! 
+
+          The next line up shows exactly the part that went wrong - the line 50/0, and it even gives the line number, so it’s easy to find the source of the error and resolve the problem. 
+          Go back and fix the problem - by dividing by something other than zero. Does that make the error go away?
+
+          Sometimes you'll see the word 'Exception' in an error message; an exception is a problem that occurs whilst the code is running, but a 'Syntax Error' is a problem detected when Python checks the code before it runs it.
+          For more information, see the Python tutorial page on [Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html).
+        instructor_notes: ''
+        resources: null
+  - id: 347256
+    key: a71c2b58-6062-46b5-9a56-be610ec0a175
+    locale: zh-cn
+    version: 1.0.0
+    title: Variables I
+    semantic_type: Concept
+    updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 346923
+      - 346924
+      - 346925
+      - 346926
+      - 346927
+      - 346928
+      - 346929
+      - 346930
+      - 346931
+      - 346932
+    atoms:
+      - id: 346923
+        key: 1ed8d65c-a415-4aaa-ae85-6b49ab0c4437
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Doing arithmetic was OK, but using variables turns Python into more than just a calculator. 
+
+          In this portion of the lesson we are going to learn about variables. We will look at the population of Manila (the capital of the Philippines), and we are going to do some calculations with it. We are going to accomplish that using variables. Using variables (as opposed to doing calculations on raw numbers) has many advantages, including the ability to account for changes more efficiently, as we will see later on. Let's get started!
+
+          Creating a new variable in Python is simple; here’s one which stores the population of Manila.
+
+          ```python
+          >>> manila_pop = 1780148
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 346924
+        key: 41c32777-5403-4912-abcc-a9c9ea47e74c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/586c1a18_l1-diagrams.001/l1-diagrams.001.jpeg'
+        width: 621
+        height: 216
+        caption: |
+
+          The variable name in this example is `manila_pop`. The equals sign, `=`, is the assignment operator. The value of the variable `manila_pop` is 1780148. 
+        resources: null
+        instructor_notes: null
+      - id: 346925
+        key: 227395fd-d26d-4a46-9264-b7ff624da77f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Assigning And Printing Variables
+          ========
+
+          The order of this assignment expression is VERY important! It always goes in that same order, variable name = value. The variable_name on the left is now a name for the value given by the expression on the right. The assignment operator `=` assigns the value on the right to the variable name on the left. (Note how this is different from writing expressions in mathematics, where `x=y` is equivalent to `y=x`)
+
+          Notice that there’s no keyword for variable assignment in Python as there is in some languages, and there’s no need to specify the type of the value - just go ahead and use an equals sign to assign a variable.
+
+          If you want to access that value, you can just use the name of the variable. You could, for example, print it out to the screen:
+
+          ```python
+          >>> print(manila_pop)
+          1780148
+          ```
+
+
+          We have used the `print` function quite a lot in this class. `print` also comes in very handy when you need to know what the value of a certain variable is- you can simply `print` that variable! Without `print`, what happens in Python, stays in Python. Most of the time, the majority of things in your program are things that happen in Python and data will just get used and passed around until it’s time for the user to see something. `print` will help you to see what’s going on in there, which makes it very useful for debugging when something’s going wrong.
+
+          `print` is a built-in function in Python, and you’ll come across more of those later on. Function calls in Python always have a pair of parentheses attached, and if there are any arguments, they go inside the parentheses.
+          So the `print` function syntax requires a set of parentheses and the argument is put inside the parentheses. As you’ve already seen, if you put a variable here, the thing that gets printed is the value of that variable, not the variable name.
+
+          Note: in Python 2, users didn’t need to use parentheses for printing, but in Python 3 they are required, so don’t miss them!
+
+          ```python
+          >>> print manila_pop
+            File "<stdin>", line 1
+              print manila_pop
+                              ^
+          SyntaxError: Missing parentheses in call to 'print'
+          ```
+
+          There’s a SyntaxError, and a nice clear message about what went wrong. Mistakes like this are very common, but using the error message will help you to get back on track.
+        instructor_notes: ''
+        resources: null
+      - id: 346926
+        key: dd18b53e-1585-4f71-9f74-f5394cc85f55
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          What’s In A Name(error)?
+          ========
+
+          We’ve been looking at the population of Manila, but imagine that we really want to find out the population density. Let’s create a variable that is the result of a calculation.
+
+          ```python
+          >>> manila_pop = 1780148
+          >>> manila_pop_density = manila_pop / manila_area
+          NameError: name 'manila_area' is not defined
+          ```
+
+          Uh oh - looks like another error. What’s happened here? 
+          Well, I tried to divide by the variable `manila_area`, but I hadn’t already assigned this as a variable name to a value, so a NameError was raised. The error clearly gives the name that was the problem. If you want to use a variable name, you must assign a value to it first!
+
+          I’ll try again:
+
+          ```python
+          >>> manila_pop = 1780148
+          >>> manila_area = 16.56
+          >>> manila_pop_density = manila_pop/manila_area
+          >>> print(manila_pop_density)
+          107496.85990338166
+          ```
+
+          No NameError this time, and we’ve successfully calculated the population density of Manila. The area of Manila is 16.56 square miles so this population density is in people per square mile.
+
+          When you’re naming variables there are a few things you have to watch out for:
+          * There are some reserved words that you cannot use for names - things like `False` and `class` which have important purposes in Python. You can find a list here: https://docs.python.org/3/reference/lexical_analysis.html#keywords . Trying to assign a value to one of these will give you a `SyntaxError`.
+          * Use only ordinary letters, numbers and underscores in your variable names. Start variable names with a letter or an underscore.
+          * It would be a bad idea to use any of the built-in identifiers for names, though this won’t immediately cause an error. For example, assigning a value to `int` will not cause errors when you make the assignment, but will be really problematic you want to convert something to an int later on.
+          ```python
+          >>> int = 7
+          >>> int(3.0)
+          TypeError: 'int' object is not callable
+          ```
+          * It’s best to use variable names that are English words and describe what they are for as far as possible. Use underscores to separate words if you want a multiple-word variable. For example, `coconut_counter = 2`.
+        instructor_notes: ''
+        resources: null
+      - id: 346927
+        key: 355314db-6505-4fb2-8886-a2d85b043430
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Assigning A Variable Again!
+          ===============
+
+          We already set `manila_pop` variable as the population of Manila, 1780148. What if the population of Manila changes, can we update the population data? The population is now up to 1781573. We can update Python by assigning a new value to that same variable name, which will change the value.
+
+          ```python
+          >>> manila_pop = 1781573
+          >>> print(manila_pop)
+          1781573
+          ```
+
+          The old data has been forgotten, replaced by the new value of `manila_pop`.
+
+          We can also do this in another way, using Python to update the value. Perhaps we find out that 1675 people moved to the city and 250 moved away. We can do the calculation in Python to find the new value and assign it to the variable in one step. 
+
+          ```python
+          >>> manila_pop = 1780148
+          >>> print(manila_pop)
+          1780148
+          ```
+
+          ```python
+          >>> manila_pop = manila_pop + 1675 - 250
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 346928
+        key: 412ee393-5d53-4caa-be55-0032be58ce24
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/586c1c64_l1-diagrams.002/l1-diagrams.002.jpeg'
+        width: 783
+        height: 334
+        caption: |
+
+          The variable `manila_pop` is to the left of the equals sign, it is assigned to the value of the whole expression on the right hand side. On the right-hand-side of the equals sign is the expression `manila_pop + 1675 -250`. The existing value of `manila_pop` is known to be 1780148.
+        resources: null
+        instructor_notes: null
+      - id: 346929
+        key: a444f3ad-6dcf-4726-9976-925ae1daa1b5
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Assigning Again Result
+          ===============
+
+          We can check the output:
+
+          ```python
+          >>> print(manila_pop)
+          1781573
+          ```
+
+          This assignment, `manila_pop = manila_pop + 1675 - 250`, looks totally wrong if we were doing mathematics, because the variable name `manila_pop` is on both sides of the equals sign! But it works in Python code because equals sign `=` is for assignment in Python.
+        instructor_notes: ''
+        resources: null
+      - id: 346930
+        key: 6fab6bdf-8d82-4b28-931d-457cddd9c012
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Reassignment Operators
+          ===========
+
+          Because this kind of increment and re-assign operation is very common, Python includes special operators for it:
+
+          ```python
+          >>> manila_pop += 1675 # increase the value of manila_pop by 1675
+          >>> manila_pop -= 250 # decrease the value of manila_pop by 250
+          >>> manila_pop *= 0.9 # decimate manila_pop
+          >>> manila_area /=  2 # approximate the female population of Manila```
+
+          `manila_pop += 1675` is an abbreviated way of writing, `manila_pop = manila_pop + 1675`. The other reassignment operators follow the same pattern.
+        instructor_notes: ''
+        resources: null
+      - id: 346931
+        key: 4aa292cb-8993-4906-8b85-d43bbd78df69
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Assign and Modify Variables
+          ==========
+          Now it's your turn to work with variables. The comments in this quiz (the lines that begin with `#`) have instructions for creating and modifying variables. After each comment write a line of code that implements the instruction.
+
+          Note that this code uses [scientific notation](https://en.wikipedia.org/wiki/Scientific_notation) to define large numbers. `4.445e8` is equal to `4.445 * 10 ** 8` which is equal to `444500000.0`.
+        instructor_notes: ''
+        resources: null
+      - id: 346932
+        key: 84f218d7-440f-407b-a174-02f17860018d
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: Assign and Modify Variables
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5381872172531712'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: import variables
+            executor_test_code: import variables
+            gae_grading_code: |
+              student_output = executor_result['stdout']
+
+              grade_result['correct'] = True
+              grade_result['comment'] = "That's right! You can see how we implemented this math by going to the next page."
+
+              correct_answer = 447627500.0
+
+              try:
+                  reservoir_capacity = float(student_output)
+
+                  if reservoir_capacity != correct_answer:
+                      grade_result['correct'] = False
+                      grade_result['comment'] = "You printed the wrong value. Double check your math!"
+
+              except ValueError:
+                  # This detects if the student's print output can't be converted to a float
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code printed something that isn't a number. Test Run your code to verify that it prints a number and nothing else!"
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occured while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an error. Test Run your code to verify that it prints the right things!"
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 347252
+    key: 4dbaf9fa-31f5-46b2-b982-cfdc00d39fc4
+    locale: zh-cn
+    version: 1.0.0
+    title: Variables II
+    semantic_type: Concept
+    updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 346903
+      - 346904
+      - 346905
+      - 346906
+      - 346907
+    atoms:
+      - id: 346903
+        key: d69d3416-70f2-4e6a-8f3b-fbd0099f819b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz Solution: Assign and Modify Variables
+          =====
+          This is our solution to the previous quiz:
+          ```python
+          # The current volume of a water reservoir (in cubic metres)
+          reservoir_volume = 4.445e8
+          # The amount of rainfall from a storm (in cubic metres)
+          rainfall = 5e6
+
+          # decrease the rainfall variable by 10% to account for runoff
+          rainfall *= .9
+
+          # add the rainfall variable to the reservoir_volume variable
+          reservoir_volume += rainfall
+
+          # increase reservoir_volume by 5% to account for stormwater that flows
+          # into the reservoir in the days following the storm
+          reservoir_volume *= 1.05
+
+          # decrease reservoir_volume by 5% to account for evaporation
+          reservoir_volume *= 0.95
+
+          # subtract 2.5e5 cubic metres from reservoir_volume to account for water
+          # that's piped to arid regions.
+          reservoir_volume -= 2.5e5 
+
+          # print the new value of the reservoir_volume variable
+          print(reservoir_volume)
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 346904
+        key: 70a1099e-98af-4d61-a0c3-55af2c7982d3
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Multiple assignment
+          ============
+          It is also possible to assign two variables on a single line:
+
+          ```python
+          #These two assignments can be abbreviated
+          savings = 514.86
+          salary = 320.51
+
+          #Using multiple assignment
+          savings, salary = 514.86, 320.51
+          ```
+
+          This first variable is assigned the first value after the `=`, and the second variable receives the second value. You can use this when you're assigning two closely related variables, like the width and height of an object, or its x and y coordinates.
+        instructor_notes: ''
+        resources: null
+      - id: 346905
+        key: b4aac815-6ff2-43b8-be5b-0ebae238ea42
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: "Changing Variables\n==========\nHow does changing a variable affect another variable that was defined in terms of it? Let's look at an example.\n\nHere’s the initial data about Manila’s population and population density.\t\n\n```python\n>>> manila_pop = 1780148\n>>> manila_area = 16.56\n>>> manila_pop_density = manila_pop/manila_area\n>>> print(int(manila_pop_density))\n107496\n```\n\nNow we redefine the `manila_pop` variable:\n```python\n>>> manila_pop = 1781573\n```"
+        instructor_notes: ''
+        resources: null
+      - id: 346906
+        key: 3813b303-5f5d-4ce6-a68d-76e0864b9722
+        locale: zh-cn
+        version: 1.0.0
+        title: Variable Change
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: "Considering the code above, guess what the output of this expression will be.\t\n```python\t\n>>> print(int(manila_pop_density))\t\n```"
+          correct_feedback: That's right!
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1483481276199
+              text: '107448'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483481341200
+              text: '107496'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1483481341949
+              text: '107582'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483481342723
+              text: '108496'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 346907
+        key: 50a63741-1059-4e4f-9cc4-1b07027b4d82
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: "The correct answer is that the value of `int(manila_pop_density)` has not changed.\nThis is because when a variable is assigned it is assigned to the *value of the expression* on the right-hand-side, not to the expression itself. In the line\t\n```python\t\n>>> manila_pop_density = manila_pop/manila_area\t\n```\t\nPython actually did the calculation to evaluate the expression on the right-hand-side, `manila_pop/manila_area` and then assigned the variable `manila_pop_density` to be the value of that expression. It promptly forgot the formula, only saving the result in the variable.\nIn order to update the value of  `manila_pop_density` to take into account the change in `manila_pop`, we need to run this line again:\n```\t\n>>> manila_pop_density = manila_pop/manila_area\t\n>>> print(int(manila_pop_density))\t\n107582\n```\t\nThat’s the new population density, after people have moved in and out of the city - all of our variables have been updated to take this into account."
+        instructor_notes: ''
+        resources: null
+  - id: 347253
+    key: 3f30cb17-ec1a-4291-92d4-bf31a86ef10e
+    locale: zh-cn
+    version: 1.0.0
+    title: Comparison Operators
+    semantic_type: Concept
+    updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 346908
+      - 346909
+      - 346910
+      - 346911
+    atoms:
+      - id: 346908
+        key: b21c9638-a258-4417-b48b-f3c552351846
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Booleans and Comparison Operators
+          ==============
+
+          We've seen two types of value so far, ints and floats, and we've used arithmetic operators like `+` and `**` to work with these values. Another type is `bool` which is used to represent the values True and False. "bool"  is an abbreviation of "boolean".  [Boolean Algebra](https://en.wikipedia.org/wiki/Boolean_algebra) is a branch of algebra dealing with variables whose values are True or False. Boolean Algebra is named for its inventor [George Boole](https://en.wikipedia.org/wiki/George_Boole).
+
+          We can assign boolean values like this:
+
+          ```python
+          >>> the_sun_is_up = True
+          >>> the_sky_is_blue = False
+          ```
+          This isn't very useful on its own though. We can use comparison operators like `<` and `>` to compare values and produce a boolean result:
+
+          ```python
+          >>> 1 < 2
+          True
+          >>> 42 > 43
+          False
+          ```
+          These are the comparison operators:
+
+          | **Operator Name**           | **Symbol** |
+          |-------------------------|--------|
+          | less than               |   `<`    |
+          | greater than            |   `>`    |
+          |less than or equal to    |   `<=`   |
+          |greater than or equal to |   `>=`   |
+          | equal to                |   `== `  |
+          | not equal to            |   `!=`   |
+        instructor_notes: ''
+        resources: null
+      - id: 346909
+        key: 984289ed-cb10-45b9-bc86-7a4fe7bacf1a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Quiz: Which is denser, Rio or San Francisco?
+          =================
+
+          Try comparison operators in this quiz! This code calculates the population densities of Rio de Janeiro and San Francisco.
+
+          Write code to compare these densities. Is San Francisco denser than Rio de Janeiro? Print `True` if it is and `False` if not.
+        instructor_notes: ''
+        resources: null
+      - id: 346910
+        key: 6b9fee7b-4d7d-4d82-a55c-1593535926bb
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6704584660746240'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: import CompareDensities
+            executor_test_code: import CompareDensities
+            gae_grading_code: |
+              student_output = executor_result['stdout']
+
+              grade_result['correct'] = True
+              grade_result['comment'] = "Nice work!"
+
+              correct_answer = "False"
+
+
+              student_answer = student_output.strip()
+
+              if student_answer != correct_answer:
+                  grade_result['correct'] = False
+                  grade_result['comment'] = 'You printed the wrong answer. Double check your comparison, and make sure your code prints "True" or "False".'
+              else:
+                  grade_result['comment'] = "Your comparison is correct. Nice work!\n I calculated my answer like this: `print(san_francisco_pop_density > rio_de_janeiro_pop_density)`"
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occured while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an error. Test Run your code to verify that it prints the right things!"
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 346911
+        key: 611e80cc-aae4-40de-b812-b966371c1456
+        locale: zh-cn
+        version: 1.0.0
+        title: Why `==`?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Why do you think Python uses `==` for checking equality rather than `=`?
+          correct_feedback: That's right!
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1483482240115
+              text: 'So that it''s two characters long, like `!=` is'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483482303034
+              text: Because `=` is used to assign variables
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1483482303730
+              text: EIther one works
+              is_correct: false
+              incorrect_feedback: 'That''s not right! You can write some code that uses both operators, `=` and `==`, to see how they differ.'
+            - id: a1483482304458
+              text: Because `=` is used to check if two values are approximately equal
+              is_correct: false
+              incorrect_feedback: 'Nope, there is no "approximately equal" operator.'
+  - id: 347254
+    key: ad93521f-cb0a-4c66-9191-2b2141b73b0a
+    locale: zh-cn
+    version: 1.0.0
+    title: Strings I
+    semantic_type: Concept
+    updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 346912
+      - 346913
+      - 346914
+      - 346915
+      - 346916
+      - 346917
+      - 346919
+    atoms:
+      - id: 346912
+        key: 81a41d7e-b86a-4306-8ec7-8857f78546de
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Strings and Text
+          ==========
+          Programming involves more than just numbers and arithmetic, and sometimes you’ll need to deal with text. To work with text in Python you will need to use a `string` - which is just a series of characters. A string is the type that holds text. 
+
+          **Note:** If you have written code before, most likely the concept of strings is not new to you. Unless you are specifically familiar with strings in Python you will likely still benefit from this portion of the lesson, as strings in different programming languages behave differently. 
+
+          You can create a string by using quotes - single or double quotes work equally well.
+          ```python
+          >>> print("hello") #used double-quotes here
+          hello
+          >>> print ('hello') #used single-quotes on this one
+          hello
+          ```
+          In each case, I printed the string `"hello"` and got the output `hello`.
+
+          I can set a variable to be a string in the same way as a number. Strings can include any characters: even spaces, punctuation and numbers.
+
+          ```python
+          >>> welcome_message = "Hello, welcome to Udacity!"
+          >>> print(welcome_message)
+          Hello, welcome to Udacity!
+          ```
+
+          Strings are not numbers, but there are some operations that worked for integers and floats that will also work for strings. For example, we can use the `+` to put strings together - we call this to *concatenate* strings.
+
+          ```python
+          >>> instructor_1 = "Philip"
+          >>> instructor_2 = "Charlie"
+          >>> print(instructor_1 + instructor_2)
+          PhilipCharlie
+          ```
+
+          There are variables with the names of both of the instructors. We used the `+` to concatenate the two strings together to print. This is fundamentally different from numerical addition!
+          However, notice that the two names have been squished together - we’re missing a space. Python is completely literal when working with strings - we need to explicitly include spaces and punctuation if we want what we write to make sense.
+
+          ```python
+          >>> instructor_1 = "Philip"
+          >>> instructor_2 = "Charlie"
+          >>> print(instructor_1 + " and " + instructor_2)
+          Philip and Charlie
+          ```
+
+          This time we got a string that makes sense, putting the two instructors together. Notice that the joining string used has a space before and after the `and` in order to give proper spacing.
+
+          So, using `+` to operate on strings seems to work. Let’s try another mathematical operation:
+
+          ```python
+          >>> print(instructor_1 / instructor_2)
+          TypeError: unsupported operand type(s) for /: 'str' and 'str'
+          ```
+
+          OK - here’s a new kind of error! The operator `/` doesn’t work for the string (`str`) type. That’s probably for the best - I would hate to see the mess from dividing one instructor by another!
+        instructor_notes: ''
+        resources: null
+      - id: 346913
+        key: 2cadbc57-e4cb-468f-ac2d-c86f84a91165
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quotes within Quotes
+          =========
+
+          Using quotation marks to define strings presents a problem, how do we define a string that has quotation marks in it? This code does not work because the string itself includes a quotation:
+
+          ```text
+          pet_halibut = "Why should I be tarred with the epithet "loony" merely because I have a pet halibut?"
+          ```
+
+          Python offers two solutions to this problem. The first is to place the string in single quotes (`'`) rather than double quotes (`"`) like this:
+
+          ```python
+          pet_halibut = 'Why should I be tarred with the epithet "loony" merely because I have a pet halibut?'
+          ```
+
+          You can use either type of quote to define strings. Sometimes though you'll need to define a string that includes both single and double quotes. What then? In that case you can use a backlash, `\`, to escape quotes.
+
+          ```python
+          salesman = '"I think you\'re an encyclopaedia salesman"'
+          ```
+          Here the string is delimited by single quotes. The single quote within the string is preceded by a backslash so that Python knows that it should be interpreted as part of the string rather than the quote that ends the string.
+        instructor_notes: ''
+        resources: null
+      - id: 346914
+        key: 1fba22e7-bd82-4323-bd08-69c475edf5f1
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Fix the Quote
+          ===============
+          The line of code in the following quiz will cause a SyntaxError, thanks to the misuse of quotation marks. First run it with Test Run to view the error message. Then resolve the problem so that the quote is correctly assigned to the variable `messiah`.
+        instructor_notes: ''
+        resources: null
+      - id: 346915
+        key: 288f0a19-f3bd-4d5d-9f60-ee23a76fc48c
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5795315119685632'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              import quotes
+              print(quotes.messiah)
+            executor_test_code: import quotes
+            gae_grading_code: |
+              execution_output = executor_result['stdout'].split("\n") #split in case student added extra print statements
+
+              grade_result['correct'] = True
+              grade_result['comment'] = "That's right!"
+
+              correct_answer = "He's not the Messiah, he's a very naughty boy!"
+
+              if correct_answer not in execution_output:
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code has no errors, but the `messiah` variable has the wrong value. Double check your work!"
+              else:
+                  grade_result['comment'] = """You fixed the string, nice work!\n There's two ways to do this: \n
+              with backslash escaping: `messiah = 'He\\'s not the Messiah, he\'s a very naughty boy!'`\n
+              with double quotes: `messiah = "He's not the Messiah, he's a very naughty boy!"`"""
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occured while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an error. Test Run your code to verify that it prints the right things!"
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 346916
+        key: 3574860e-c744-472e-b7cc-081b6efa008c
+        locale: zh-cn
+        version: 1.0.0
+        title: Number Strings
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            We’ve already seen that the type of objects will affect how operators work on them. What will be the output of this code?
+
+            ```python
+            coconut_count = "34"
+            mango_count = "15"
+            tropical_fruit_count = coconut_count + mango_count
+            print(tropical_fruit_count)
+            ```
+          correct_feedback: 'The correct answer is 3415, and tropical_fruit_count is a string. That’s because even though the characters inside the strings `coconut_count` and `mango_count` are numbers, the values of the variable `coconut_count` and `mango_count` are strings, and are treated as strings when it comes to the `+` operator being applied.'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1483483707678
+              text: 49 (and tropical_fruit_count is a string)
+              is_correct: false
+              incorrect_feedback: That's not right. Consider which types `mango_count` and `coconut_count` are. You can test run this code in the previous programming quiz to observe the actual result.
+            - id: a1483483732175
+              text: 49 (and tropical_fruit_count is an integer)
+              is_correct: false
+              incorrect_feedback: That's not right. Consider which types `mango_count` and `coconut_count` are. You can test run this code in the previous programming quiz to observe the actual result.
+            - id: a1483483732917
+              text: 3415 (and tropical_fruit_count is a string)
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1483483733666
+              text: 3415 (and tropical_fruit_count is an integer)
+              is_correct: false
+              incorrect_feedback: That's not right. Consider which types `mango_count` and `coconut_count` are. You can test run this code in the previous programming quiz to observe the actual result.
+      - id: 346917
+        key: 52f1a7a2-9412-492c-88de-e0e811a985d6
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Write a Server Log Message
+          =============
+
+          In this programming quiz, you’re going to use what you’ve learned about strings to write a logging message for a server. 
+
+          You’ll be provided with example data for a user, the time of their visit and the site they accessed. You should use the variables provided and the techniques you’ve learned to print a log message like this one (with the username, url, and timestamp replaced with values from the appropriate variables):
+
+          `Yogesh accessed the site http://petshop.com/pets/reptiles/pythons at 16:20.`
+
+          Use the Test Run button to see your results as you work on coding this piece by piece.
+        instructor_notes: ''
+        resources: null
+      - id: 346919
+        key: 5b17cf9c-599c-4f3d-8260-f4b39cf76f76
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6025426045632512'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |
+              import Logs
+              #print(Logs)
+            executor_test_code: import Logs
+            gae_grading_code: |+
+              execution_output = executor_result['stdout']
+
+              grade_result['correct'] = True
+              grade_result['comment'] = "That's right!"
+
+              correct_answer = "Kinari accessed the site http://petshop.com/pets/mammals/cats at 04:50.\n"
+
+              def space_error(student_answer):
+                  """See if student forgot to include a space."""
+                  if "Kinariaccessed" in execution_output:
+                      return 'You forgot the include a space between "Kinari" and "accessed".'
+                  if "sitehttp" in execution_output:
+                      return 'You forgot the include a space between "site" and the url.'
+                  if "catsat" in execution_output:
+                      return 'You forgot the include a space between the url and "at".'
+                  if "at04" in execution_output:
+                      return 'You forgot the include a space between the "at" and the timestamp.'
+                  return False
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occured while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an error. Test Run your code to verify that it prints the right things!"
+              else:
+                  if correct_answer != execution_output:
+                      grade_result['correct'] = False
+                      if space_error(execution_output):
+                          grade_result['comment'] = space_error(execution_output)
+                      elif execution_output.strip()[-1] != '.':
+                          grade_result['comment'] = 'Your log message doesn\'t include a period "." at the end.'
+                          #grade_result['comment'] = execution_output
+                      elif 'Yogesh' in execution_output or 'pythons' in execution_output or '16:20' in execution_output:
+                          grade_result['comment'] = 'Use the variables `username`, `timestamp` and `url` in the log message, not the example values.'
+                  else:
+                      grade_result['correct'] = True
+                      grade_result['comment'] = """This is our solution. This code is tricky to write because you have to carefully place spaces and punctuation around the strings to produce output that matches the example string.
+
+              ```python
+              message = username + " accessed the site " + url + " at " + timestamp + "."
+              print(message)
+              ```
+                      """
+
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 347255
+    key: 1fbeace2-a1cb-48d1-932d-e1199f382c2a
+    locale: zh-cn
+    version: 1.0.0
+    title: Built-in Functions
+    semantic_type: Concept
+    updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 346918
+      - 346920
+      - 346921
+      - 346922
+    atoms:
+      - id: 346918
+        key: 214f4ee7-d833-43b5-975d-0d5d542ebf0b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          We've already been using one of Python's built-in functions, `print`. Another useful built-in function is `len`. The `len` function computes the length in characters of strings passed into it like this:
+
+          ```python
+          >>> udacity_length = len("Udacity")
+          >>> print(udacity_length)
+          7
+          ```
+          The `len` function is similar to `print` in that we call it by passing a variable as the argument inside of parentheses. `len` differs from print in that it produces a value that can be stored in a variable. In the previous example the `len` function outputs the number 7 which is then stored in the `udacity_length` variable.
+        instructor_notes: ''
+        resources: null
+      - id: 346920
+        key: e9b568fe-dcf4-4df7-bdf5-3b34eb47020d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Quiz: `len`
+          =======
+
+          Use string concatenation and the `len` function to find the length of Charlie’s full name. (Yes, she is unhappy with her parents’ choices…!) Store that length in the `name_length` variable. Don't forget that there are spaces in between the different parts of a name! 
+        instructor_notes: ''
+        resources: null
+      - id: 346921
+        key: 47d11fda-6131-4cdc-b64a-6eacd9ba8d7d
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '4518621461217280'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              from hippo import name_length
+              print('SECRET STRING!{}'.format(name_length))
+            executor_test_code: import hippo
+            gae_grading_code: |
+              # This code picks the value of name_length out from any other output that might exist
+              execution_output = executor_result['stdout']
+              secret = 'SECRET STRING!'
+              student_output = execution_output[execution_output.find(secret)+len(secret):]
+
+              grade_result['correct'] = True
+
+              correct_answer = 29
+
+              try:
+                  student_answer = int(student_output)
+                  if student_answer != correct_answer:
+                      grade_result['correct'] = False
+                      if student_answer == 27:
+                          grade_result['comment'] = "Your result doesn't match mine. Did you remember to account for the spaces between each part of the name?"
+                      else:
+                          grade_result['comment'] = "Your result doesn't match mine. Double check your code!"
+                  else:
+                      grade_result['comment'] = "You calculated the correct value for `name_length`. Nice work!\n I calculated my answer like this: `name_length = len(given_name + middle_names + family_name) + 2`. The `+2` accounts for the spaces in between each word."
+              except ValueError:
+                  # This detects if the student's print output can't be converted to ints
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "`name_length` should be an int. Double check your code!"
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occured while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an error. Test Run your code to verify that it prints the right things!"
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 346922
+        key: a964630b-9bbe-4f0c-8042-bd6766ced0df
+        locale: zh-cn
+        version: 1.0.0
+        title: The Length of an int
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: We've just used the `len` function to find the length of strings. What does the len function return when we give it the integer `835` instead of a string?
+          correct_feedback: 'That''s right, an error occurs. Functions can only accept the inputs they''re designed to handle. `len` isn''t designed to accept numeric inputs.'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1483485485110
+              text: '`len` returns the absolute value of the number'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483485522091
+              text: '`len` returns 0'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483485522742
+              text: '`len` returns 1'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483485523682
+              text: '`len` returns 3'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483485524487
+              text: An error occurs
+              is_correct: true
+              incorrect_feedback: null
+  - id: 347257
+    key: 98852da3-b627-4194-8e1d-248bb6624e8d
+    locale: zh-cn
+    version: 1.0.0
+    title: Types and Type Conversion
+    semantic_type: Concept
+    updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 346933
+      - 346934
+      - 346935
+      - 346936
+      - 346937
+      - 346938
+      - 346939
+      - 346940
+      - 346941
+      - 346942
+    atoms:
+      - id: 346933
+        key: 9df9b9c9-36ce-46ac-bd3b-943cfc5b48aa
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          What Type Is This Object?
+          ======
+
+          We’ve talked a bit about types so far, and we’ve discussed four of them in total:
+
+          * `int` (integer, for whole numbers)
+          * `float` (for numbers that aren’t necessarily whole numbers)
+          * `bool` (boolean, for True and False values)
+          * `str` (string, for text)
+
+          In Python, every object you encounter will have a type. An object’s type defines which operators and functions will work on that object and how they work!
+
+          You can check the type of an object directly using the built-in function `type()`.
+
+          ```python
+          >>> print(type(633))
+          int
+          ```
+
+          ```python
+          >>> print(type("633"))
+          str
+          ```
+
+          ```python
+          >>> print(type(633.0))
+          float
+          ```
+
+          This is essentially the same number coded in three different ways, and so they have three different types, each with their own set of behaviours.
+
+          As a side-note, here we’re calling a function `print()` on the output of another function, `type()`. We use parentheses to define the order in which functions get run: what’s contained in one set of parentheses needs to be evaluated first before being given as input to the next function. Here the `type()` function is run first and then its output is `print()`-ed.
+        instructor_notes: ''
+        resources: null
+      - id: 346934
+        key: 753c18da-9bd3-4754-acb6-34bed849613b
+        locale: zh-cn
+        version: 1.0.0
+        title: Which Type? I
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: What type does this object have? `"12"`. There is a coding environment further down this page that you can use for experimentation. Enter code and run it with the "Test Run" button.
+          correct_feedback: 'The fact that this is in quotation marks gives it away this time, but if this was saved in a variable you might have to call the `type()` function directly on an object to discover its type.'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1483486179827
+              text: str
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1483486202161
+              text: float
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483486202795
+              text: int
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483486203390
+              text: bool
+              is_correct: false
+              incorrect_feedback: null
+      - id: 346935
+        key: 80cc4c4b-a2ef-421c-9ded-ea634372718f
+        locale: zh-cn
+        version: 1.0.0
+        title: Which Type? I
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: What type does this object have? `12.3` There is a coding environment further down this page that you can use for experimentation. Enter code and run it with the "Test Run" button.
+          correct_feedback: The decimal point gives this one away - it’s a float. It’s a number but not necessarily a whole number!
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1483486260885
+              text: str
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483486288816
+              text: float
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1483486289579
+              text: int
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483486290296
+              text: bool
+              is_correct: false
+              incorrect_feedback: null
+      - id: 346936
+        key: efe244be-6aa9-4835-9b22-475e410a5a5e
+        locale: zh-cn
+        version: 1.0.0
+        title: Which Type? III
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: What type does this object have? `len("my_string")` There is a coding environment further down this page that you can use for experimentation. Enter code and run it with the "Test Run" button.
+          correct_feedback: 'This was a bit trickier. You can tell that `"my_string"` is itself a string because of the quotation marks. The length of a string is an *integer* - it’s the count of the number of elements in the string. '
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1483486368477
+              text: str
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483486383794
+              text: float
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483486384393
+              text: int
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1483486384995
+              text: bool
+              is_correct: false
+              incorrect_feedback: null
+      - id: 346937
+        key: f07a1116-a85c-491c-8bb3-34acf0665439
+        locale: zh-cn
+        version: 1.0.0
+        title: Which Type? IV
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: What type does this object have? `"hippo" *12` There is a coding environment further down this page that you can use for experimentation. Enter code and run it with the "Test Run" button.
+          correct_feedback: |-
+            This is a string. If you weren’t sure, look at the output of evaluating the expression:
+
+            ```
+            >>> print("hippo"*12)
+            hippohippohippohippohippohippohippohippohippohippohippohippo
+            ```
+
+            Multiplying a string by an integer gives a new string made up of that many copies of the original string - and the type is string.
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1483486418001
+              text: str
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1483486435068
+              text: float
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483486435622
+              text: int
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483486436282
+              text: bool
+              is_correct: false
+              incorrect_feedback: null
+      - id: 346938
+        key: 4a3eb805-3652-4837-9390-eb5966216b61
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Type Playground
+          =========
+          Use this programming quiz to experiment with types of objects. Don't forget to use `print` to see the results of your code.
+        instructor_notes: ''
+        resources: null
+      - id: 346939
+        key: c2ab0986-bd6a-4ebf-914e-92f4845a15be
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '4883752737177600'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: ''
+            executor_test_code: import play
+            gae_grading_code: |-
+              grade_result['comment'] = 'This quiz doesn\'t have a right or wrong answer. Feel free to experiment!'
+              grade_result['correct'] = None
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 346940
+        key: d9cf2ffc-829f-44b8-a479-8ac8dd47201d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Choosing Types
+          ===========
+          Different types have different properties, and when you’re designing a computer program, you’ll need to choose the types for your data based on how you’re going to use them. 
+          For example, if you want to use a number as a part of a sentence, it'll be easiest if that number is a string. If you want to encode a true/false value, it will be much easier to manipulate as a boolean than a string!
+
+          You might also have situations where you don’t control the type of data that you receive but still need to use it. The good news is you can create new objects from old, and change the type in the process.
+          Look at some examples:
+
+          Creating an int from a float and assigning it to a variable `count`, printing `count` and its type.
+          ```python
+          >>> count = int(4.0)
+          >>> print(count)
+          4
+          >>> print(type(count))
+          <class 'int'>
+          ```
+
+
+          Making a string from a number:
+          ```python
+          >>> house_number = 13
+          >>> street_name = "The Crescent"
+          >>> town_name = "Belmont"
+          >>> print(type(house_number))
+          <class ‘int’>
+          >>> address = str(house_number) + " " + street_name + ", " + town_name
+          >>> print(address)
+          13 The Crescent, Belmont
+          ```
+
+          You can also build a number from a string:
+          ```python
+          >>> grams_of_sugar = float("35.0")
+          >>> print(grams_of_sugar)
+          35.0
+          >>> print(type(grams_of_sugar))
+          <class ‘float’>
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 346941
+        key: 022070f2-731a-47d9-a15b-5a986d385b55
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Total Sales
+          ============
+
+          In this quiz, you’ll need to change the types of the input and output data in order to get the result you want.
+
+          Calculate and print the total sales for the week from the data provided. Print out a string of the form `"This week's total sales: xxx"`, where xxx will be the actual total of all the numbers. You’ll need to change the type of the input data in order to calculate that total.
+        instructor_notes: ''
+        resources: null
+      - id: 346942
+        key: 8c5c5490-c7f3-47b8-b9dd-69c2cbb82d2c
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5283020815859712'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: import sales
+            executor_test_code: import sales
+            gae_grading_code: |
+              student_output = executor_result['stdout']
+
+              grade_result['correct'] = True
+
+              correct_answer = "This week's total sales: 529"
+
+              student_answer = student_output.strip()
+              if student_answer != correct_answer:
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "That doesn't match my answer. Check that your string is formatted correctly and that you calculated the right total."
+              else:
+                  grade_result['comment'] = """You calculated the correct sum and formatted the string correctly. Nice work!\n I calculated my answer like this:\n
+              ```python
+              weekly_sales = int(mon_sales) + int(tues_sales) + int(wed_sales) + int(thurs_sales) + int(fri_sales)
+              weekly_sales = str(weekly_sales)  #convert the type back!!
+              print("This week's total sales: " + weekly_sales)
+              ```"""
+
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occured while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an error. Test Run your code to verify that it prints the right things!"
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 347258
+    key: 617d735a-a730-4877-8c01-f484c9a0ce79
+    locale: zh-cn
+    version: 1.0.0
+    title: String Methods I
+    semantic_type: Concept
+    updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 346943
+      - 346944
+      - 346945
+      - 346946
+      - 346947
+      - 346948
+      - 346949
+    atoms:
+      - id: 346943
+        key: f4eb9d66-9d0e-4bda-8493-fa757cf06d21
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          So far we've seen two distinct ways to process data with Python. We've used operators like `+`, `<=` and `=` which process the two values on either side of the operator. We've also used functions like `print` and `len`. Functions are very similar to operators, in fact the only real difference is in how they look: function inputs are put in parentheses rather than being placed next to an operator, and functions have descriptive names rather than short symbols.
+
+          <diagram showing the rearranged syntax of operators and functions>
+
+          There is a third technique for operating on values: methods. Consider the title method:
+
+          ```python
+          >>> "charlotte hippopotamus turner".title()
+          'Charlotte Hippopotamus Turner'
+          ```
+          Methods are related to functions but unlike functions, methods are associated with specific types of objects. In this example the object is a string with the value, "charlotte hippopotamus turner", and we are calling its `title` method. The method returns a string in Title Case, meaning that the first letter of each word is capitalized.
+
+          Let's try another string method, islower:
+          ```python
+          >>> full_name = "charlotte hippopotamus turner"
+          >>> full_name.islower()
+          True
+          ```
+          the `islower` method inspects the string object it has been called with. In this case the string object is "charlotte hippopotamus turner". `islower` then returns a bool that indicates whether the string object consists of lowercase letters.
+        instructor_notes: ''
+        resources: null
+      - id: 346944
+        key: 583e4fda-287d-4496-b365-b37cb87e8022
+        locale: zh-cn
+        version: 1.0.0
+        title: Methods and Types
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            What happens when you call a string method like `islower` on a float object? For example, `13.37.islower`.
+
+            There is a playground quiz further down this page that you can use to experiment.
+          correct_feedback: 'That''s right, an error occurs. The `islower` method is an attribute of string methods, but not floats. Different types of object have methods specific to their type. For example, floats have the `is_integer` method which strings don''t have.'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1483487360674
+              text: The float is returned unchanged
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483487531654
+              text: '`islower` returns True'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483487532387
+              text: '`islower` returns False'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483487533037
+              text: An error occurs
+              is_correct: true
+              incorrect_feedback: null
+      - id: 346945
+        key: 4349c297-10dd-4b30-a68f-6f2b5a3498ae
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          You can learn more about strings and  string methods by looking at the string method documentation at https://docs.python.org/3/library/stdtypes.html#string-methods.
+          You will find that the documentation is one of the most valuable resources for writing code, and not only when it comes to strings or writing code in Python! By reading and searching the documentation you can learn about data types and built in functions as well as how to use them. 
+
+          Give it a try now! Look up a few string methods (using the link above) and try them out in the programming quiz below (using the Test Run button).
+
+          String Method Playground
+          ================
+        instructor_notes: ''
+        resources: null
+      - id: 346946
+        key: f7debf55-c325-4e19-830d-d8d6e7b4243a
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5323939158032384'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: ''
+            executor_test_code: import string_playground
+            gae_grading_code: |-
+              grade_result['comment'] = 'This quiz doesn\'t have a right or wrong answer. Feel free to experiment!'
+              grade_result['correct'] = None
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 346947
+        key: f7524128-049f-485a-bce0-6a226db539a9
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          The `.count` method
+          ======
+          You've probably noticed that when we call the `islower` and `title` methods we use parentheses, but we haven't put anything in them like we did when calling functions. This isn't because methods don't take arguments though, the methods so far simply don't require arguments. Let's try a method that **does** take arguments, `count`.
+
+          ```python
+          >>> "One fish, two fish, red fish, blue fish.".count('fish')
+          4
+          ```
+          Here, the `count` method returns how many times the substring "fish" occurs in the string.
+        instructor_notes: ''
+        resources: null
+      - id: 346948
+        key: 7653cedc-0cfd-4aa7-a867-96efc187c6f9
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Vowel Count
+          =========
+          Use the count method to determine how many vowels are in the string `prophecy`. Store this count in the vowel_count variable. 
+          Note: the vowels are a, e, i, o and u.
+          Hint: You may want to call the `count` method multiple times, and increment `vowel_count` multiple times.
+
+          If you get stuck, check out the *solution.py* tab.
+        instructor_notes: ''
+        resources: null
+      - id: 346949
+        key: 963c1362-e148-422d-ba50-c20c6c10c68b
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5802944457998336'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              from vowels import vowel_count
+
+              print("SECRET STRING1{}SECRET STRING2".format(vowel_count))
+            executor_test_code: import vowels
+            gae_grading_code: |+
+              student_output = executor_result['stdout']
+
+              grade_result['correct'] = True
+
+              correct_answer = 128
+
+              def find_answer(s):
+                  start_token = 'SECRET STRING1'
+                  end_token = 'SECRET STRING2'
+                  
+                  answer_start = s.find(start_token) + len(start_token)
+                  answer_end = s.find(end_token)
+                  
+                  return s[answer_start:answer_end]
+
+              try:
+                  student_answer = int(find_answer(student_output))
+                  if student_answer != correct_answer:
+                      grade_result['correct'] = False
+                      grade_result['comment'] = "Your count is off. Did you count uppercase and lowercase vowels?"
+              except ValueError:
+                  # This detects if the student's print output can't be converted to an int
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "You set the vowel_count variable to something that isn't an int. Double check your code!"
+                  
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occured while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an error. Test Run your code to verify that it works correctly!"
+
+
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 347260
+    key: eeeb7757-5390-4d1f-8e0e-ea1ed9bd2e98
+    locale: zh-cn
+    version: 1.0.0
+    title: String Methods II
+    semantic_type: Concept
+    updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 346950
+      - 346951
+      - 346952
+      - 346953
+      - 346954
+      - 346955
+      - 346956
+      - 346957
+    atoms:
+      - id: 346950
+        key: 5d2016b5-16c6-4d68-888f-23ba0da5824a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          String Method Documentation
+          ================
+        instructor_notes: ''
+        resources: null
+      - id: 346951
+        key: f0470672-cae4-494a-a791-1b98b905ab83
+        locale: zh-cn
+        version: 1.0.0
+        title: Python Documentation
+        semantic_type: VideoAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '44208'
+          youtube_id: lBtG0DO_KqM
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/January/586c433a_49-python-documentation/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c433a_49-python-documentation/49-python-documentation_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c433a_49-python-documentation/49-python-documentation_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c433a_49-python-documentation/49-python-documentation_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c433a_49-python-documentation/49-python-documentation_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c433a_49-python-documentation/hls/playlist.m3u8'
+      - id: 346952
+        key: 54046c02-2a27-49e3-a446-22c2e9254a2a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          The string method documentation is at https://docs.python.org/3/library/stdtypes.html#string-methods
+
+          You can try out a few in the programming quiz below using the Test Run button.
+
+          String Method Playground
+          ================
+        instructor_notes: ''
+        resources: null
+      - id: 346953
+        key: 09b4d525-5918-4eea-88c7-487cb3bcec66
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5801184595148800'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: ''
+            executor_test_code: import strings
+            gae_grading_code: |-
+              grade_result['comment'] = 'This quiz doesn\'t have a right or wrong answer. Feel free to experiment!'
+              grade_result['correct'] = None
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 346954
+        key: c28f5e5c-184a-45b6-a679-8d4297b0a4bc
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          String Formatting
+          ===========
+
+          One particularly useful string method is `format`. The `format` method is used to construct strings by inserting values into template strings. Consider this example for generating log messages for a hypothetical web server.
+
+          ```python
+          log_message = "IP address {} accessed {} at {}".format(user_ip, url, now)
+          ```
+
+          If the variables `user_ip`, `url` and `now` are defined then they will be substituted for the `{}` placeholder values:
+
+          ```python
+          > print(log_message)
+          IP address 208.94.117.90 accessed /bears/koala at 16:20
+          ```
+
+          You can pass any type into the `format` method. `format` will convert values into strings as needed.
+        instructor_notes: ''
+        resources: null
+      - id: 346955
+        key: 683017d6-08dd-4ace-b94b-c42bf03d4716
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Quiz: Simplify Code with String Formatting
+          ============
+
+          The code in this quiz generates weather report alerts. The original programmer used string concatenation to assemble the alerts though, which resulted in some hard to read code. Rewrite the code using the `format` method. Your new code should produce the same string as the old code you're replacing.
+        instructor_notes: ''
+        resources: null
+      - id: 346956
+        key: ee979bc1-e6df-41ed-84dd-23b820ca5f8a
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '4651038658396160'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              import weather
+
+              import sys
+
+              with open("weather.py") as f:
+                  if '.format(' not in f.read():
+                      print("Submitted code doesn't use the `format` method.", file=sys.stderr)
+                      
+            executor_test_code: import weather
+            gae_grading_code: |-
+              grade_result['correct'] = True
+
+              if "Submitted code doesn't use the `format` method." in executor_result['stderr']:
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your submission doesn't use the format method. Rewrite the code so that it does, the format method makes string construction much simpler!"
+                  used_format_method = False
+              else:
+                  used_format_method = True
+
+              student_output = executor_result['stdout']
+
+              correct_answer = "Today's forecast for Seoul: The temperature will range from 9 to 18 degrees Celsius. Conditions will be light rain."
+              if correct_answer not in student_output:
+                  grade_result['correct'] = False
+                  if student_output.find('9') > student_output.find('18'):
+                      grade_result['comment'] = "Your string mixed the ordering of high_temperature before low_temperature (or there's a similar bug). Double check your output!"
+                  else:
+                      grade_result['comment'] = "Your printed output doesn't match the output of the original version of the program."
+              elif used_format_method:
+                  grade_result['comment'] = "You used the format method correctly. Nice work!"
+                      
+              if "Traceback" in executor_result['stderr']:
+                  # This detects detects if an exception occurred while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an error. Test Run your code to verify that it prints the right things!"
+
+              if "Submitted code doesn't use the `format` method." in executor_result['stderr']:
+                      grade_result['correct'] = False
+                      grade_result['comment'] = "Submitted code doesn't use the `format` method."
+                  
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 346957
+        key: 59b7d74e-82fb-4948-8060-2c613d0bcfdc
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud1110 IntroPy L1 53 Lesson 1 Done!
+        semantic_type: VideoAtom
+        updated_at: 'Mon Jul 17 2017 08:29:36 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52068'
+          youtube_id: y3dstGZWPgc
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d40c89_ud1110-intropy-l1-53-lesson-1-done/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40c89_ud1110-intropy-l1-53-lesson-1-done/ud1110-intropy-l1-53-lesson-1-done_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40c89_ud1110-intropy-l1-53-lesson-1-done/ud1110-intropy-l1-53-lesson-1-done_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40c89_ud1110-intropy-l1-53-lesson-1-done/ud1110-intropy-l1-53-lesson-1-done_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40c89_ud1110-intropy-l1-53-lesson-1-done/ud1110-intropy-l1-53-lesson-1-done_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40c89_ud1110-intropy-l1-53-lesson-1-done/hls/playlist.m3u8'
