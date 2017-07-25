@@ -11,7 +11,7 @@ image:
   width: 876
   height: 894
 video: null
-summary: ‘这节课将逐步讲解设置应用以成功发布应用并在 Google Play 中上架后继续扩大用户群的步骤！’
+summary: '这节课将逐步讲解设置应用以成功发布应用并在 Google Play 中上架后继续扩大用户群的步骤！'
 lesson_type: Classroom
 duration: 120
 is_project_lesson: false
@@ -35,16 +35,6 @@ _concepts_ids:
   - 338489
   - 338501
 _project_id: null
-resources:
-  files:
-    - name: Videos Zip File
-      uri: 'http://d2uz2655q5g6b2.cloudfront.net/e8a12d52-65b1-4f20-9fe4-5622c992631f/268704/1497370585692/Publishing%20Your%20App%20Videos.zip'
-    - name: Transcripts Zip File
-      uri: 'http://d2uz2655q5g6b2.cloudfront.net/e8a12d52-65b1-4f20-9fe4-5622c992631f/268704/Publishing%20Your%20App%20Subtitles.zip'
-  google_plus_link: null
-  career_resource_center_link: null
-  coaching_appointments_link: null
-  office_hours_link: null
 concepts:
   - id: 338461
     key: 8cf23a50-e2ba-422e-9344-032656630682
@@ -95,7 +85,7 @@ concepts:
 
           活跃 Android 用户有 10 亿，Google Play 商店是开发者吸引用户群的生态系统。  
 
-          这里是几个[精彩故事](https://developer.android.com/stories/index.html)，讲述了开发者如何用自己的理念改变用户和自己的生活。 
+          这里是几个[精彩故事](https://developer.android.google.cn/stories/index.html)，讲述了开发者如何用自己的理念改变用户和自己的生活。 
         instructor_notes: ''
         resources: null
   - id: 338463
@@ -128,13 +118,13 @@ concepts:
           - 分发给用户
           - 吸引和扩大用户群
 
-          每个阶段都和应用开发本身一样重要。为了确保你的应用能在 Google Play 中脱颖而出，并增大用户下载应用的概率，我们来看看 Google 的<a href="https://developer.android.com/distribute/marketing-tools/launch-checklist.html" target="_blank">发布检查清单</a>，该清单总结了在 Google Play 上发布应用前需要完成的任务。
+          每个阶段都和应用开发本身一样重要。为了确保你的应用能在 Google Play 中脱颖而出，并增大用户下载应用的概率，我们来看看 Google 的<a href="https://developer.android.google.cn/distribute/marketing-tools/launch-checklist.html" target="_blank">发布检查清单</a>，该清单总结了在 Google Play 上发布应用前需要完成的任务。
 
           现在不用实施这些任务，只是简要了解下，以便为后续任务完成过程做好准备。
 
-          在整个发布流程中，你将使用 <a href="https://developer.android.com/distribute/console/index.html" target="_blank">Google Play 开发者控制台</a>。它是管理应用生命周期的一站式服务点，从发布前的测试到之后跟踪应用的获取统计信息和收入报告。
+          在整个发布流程中，你将使用 <a href="https://developer.android.google.cn/distribute/console/index.html" target="_blank">Google Play 开发者控制台</a>。它是管理应用生命周期的一站式服务点，从发布前的测试到之后跟踪应用的获取统计信息和收入报告。
 
-          请查看开发者控制台所具备的<a href="https://developer.android.com/distribute/console/features.html" target="_blank">功能</a>，并注册帐号。 
+          请查看开发者控制台所具备的<a href="https://developer.android.google.cn/distribute/console/features.html" target="_blank">功能</a>，并注册帐号。 
         instructor_notes: ''
         resources: null
       - id: 338420
@@ -197,7 +187,7 @@ concepts:
     key: 968ef580-2322-41f0-a2e3-3b8c6994b0b1
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：发布流程'
+    title: '练习：发布流程'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
     is_public: true
@@ -214,17 +204,17 @@ concepts:
         updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
         is_public: true
         tasks:
-          - ‘查看[发布检查清单](https://developer.android.com/distribute/marketing-tools/launch-checklist.html)'
-          - ‘查看 [Google Play 开发者控制台](https://developer.android.com/distribute/console/index.html)功能’
+          - '查看[发布检查清单](https://developer.android.google.cn/distribute/marketing-tools/launch-checklist.html)'
+          - '查看 [Google Play 开发者控制台](https://developer.android.google.cn/distribute/console/index.html)功能'
           - 创建 Google Play 开发者控制台帐号
         positive_feedback: 已经有了很好的开端！我们将介绍所有步骤并展示在 Google Play 中发布应用所需的工具。我们开始吧！
         video_feedback: null
-        description: ‘请花些时间阅读下面列出的文档。无需执行发布检查清单中的任何任务，只是让你熟悉发布流程。’
+        description: '请花些时间阅读下面列出的文档。无需执行发布检查清单中的任何任务，只是让你熟悉发布流程。'
   - id: 338464
     key: 0f76a949-84aa-46df-a2fc-531efcf6f60d
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：政策协议'
+    title: '练习：政策协议'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
     is_public: true
@@ -265,7 +255,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
         is_public: true
-        text: ‘”我们来构建全球最值得信赖的应用和游戏来源平台吧" ([cite](https://play.google.com/about/developer-content-policy/))'
+        text: '”我们来构建全球最值得信赖的应用和游戏来源平台吧" ([cite](https://play.google.com/about/developer-content-policy/))'
         instructor_notes: ''
         resources: null
       - id: 338427
@@ -277,9 +267,9 @@ concepts:
         updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
         is_public: true
         tasks:
-          - ‘查看 [Google Play 政策和指南](https://play.google.com/about/developer-content-policy/)'
-          - ‘查看 [Google 开发者分发协议](https://play.google.com/intl/ALL_us/about/developer-distribution-agreement.html)'
-        positive_feedback: ‘了解这些政策后，我们开始讲解质量测试吧！’
+          - '查看 [Google Play 政策和指南](https://play.google.com/about/developer-content-policy/)'
+          - '查看 [Google 开发者分发协议](https://play.google.com/intl/ALL_us/about/developer-distribution-agreement.html)'
+        positive_feedback: '了解这些政策后，我们开始讲解质量测试吧！'
         video_feedback: null
         description: |-
           我们已进入发布检查清单的第 2 步：了解 Google Play 政策和协议
@@ -289,7 +279,7 @@ concepts:
     key: acf44a84-df2b-4f0e-b2a6-5a5e692d8fa8
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：质量测试'
+    title: '练习：质量测试'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
     is_public: true
@@ -330,9 +320,9 @@ concepts:
         updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
         is_public: true
         tasks:
-          - ‘[核心应用质量指南](https://developer.android.com/develop/quality-guidelines/core-app-quality.html)（适用于所有应用）'
-          - ‘[平板电脑应用质量指南](https://developer.android.com/develop/quality-guidelines/tablet-app-quality.html)（如果面向平板电脑）’
-          - ‘[教育指南](https://developers.google.com/edu/guidelines)（如果在 Google Play for Education 上发布）’
+          - '[核心应用质量指南](https://developer.android.google.cn/develop/quality-guidelines/core-app-quality.html)（适用于所有应用）'
+          - '[平板电脑应用质量指南](https://developer.android.google.cn/develop/quality-guidelines/tablet-app-quality.html)（如果面向平板电脑）'
+          - '[教育指南](https://developers.google.com/edu/guidelines)（如果在 Google Play for Education 上发布）'
         positive_feedback: 你能够确保你的应用满足这些质量要求，很棒！你的用户将非常感激你！
         video_feedback: null
         description: |-
@@ -343,7 +333,7 @@ concepts:
     key: ca6d428f-fbbd-451b-bcef-5dff152d7866
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：确定应用设置'
+    title: '练习：确定应用设置'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
     is_public: true
@@ -384,31 +374,31 @@ concepts:
           - 本地定价
 
           ### 应用的总体大小
-          在创建本课程时，在 Google Play 上发布的 APK 大小上限是 100MB。如果你的应用超过了这一上限，Google Play 允许你添加两个扩展文件来补充你的 APK。要进行设置，请使用 [APK 扩展文件](https://developer.android.com/google/play/expansion-files.html)。 
+          在创建本课程时，在 Google Play 上发布的 APK 大小上限是 100MB。如果你的应用超过了这一上限，Google Play 允许你添加两个扩展文件来补充你的 APK。要进行设置，请使用 [APK 扩展文件](https://developer.android.google.cn/google/play/expansion-files.html)。 
 
-          此外，在构建准备发布的 APK 前，请运行 [Proguard](https://developer.android.com/studio/build/shrink-code.html) 来删除不使用的代码和资源，以便减小应用二进制文件的大小。
+          此外，在构建准备发布的 APK 前，请运行 [Proguard](https://developer.android.google.cn/studio/build/shrink-code.html) 来删除不使用的代码和资源，以便减小应用二进制文件的大小。
 
           ### 确认目标平台版本和设备屏幕
           确保应用在你计划的 Android 版本和屏幕大小的设备上运行。
 
-          检查 *minSdkVersion*，它是你的应用兼容的最低版本。Android 平台版本由 [API 级别](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels)进行定义。 
+          检查 *minSdkVersion*，它是你的应用兼容的最低版本。Android 平台版本由 [API 级别](https://developer.android.google.cn/guide/topics/manifest/uses-sdk-element.html#ApiLevels)进行定义。 
 
-          对于设备屏幕尺寸，请在各种屏幕尺寸和像素密度的设备上运行应用。请参阅[支持多种屏幕](https://developer.android.com/guide/practices/screens_support.html)指南，了解如何准备你的应用。此外，请在[设备信息中心](https://developer.android.com/about/dashboards/index.html)查看世界上目前可用的 Android 平台版本和屏幕尺寸，以帮助你判断你希望面向哪些版本和屏幕尺寸。  
+          对于设备屏幕尺寸，请在各种屏幕尺寸和像素密度的设备上运行应用。请参阅[支持多种屏幕](https://developer.android.google.cn/guide/practices/screens_support.html)指南，了解如何准备你的应用。此外，请在[设备信息中心](https://developer.android.google.cn/about/dashboards/index.html)查看世界上目前可用的 Android 平台版本和屏幕尺寸，以帮助你判断你希望面向哪些版本和屏幕尺寸。  
 
           此外，还有很多第三方测试平台可以帮助你以云端形式在很多实际设备上测试你的应用，例如 [Xamarin Test Cloud](https://www.xamarin.com/test-cloud)。 
 
           ### 免费应用还是付费应用？
           你可以发布免费下载的应用或付费应用。
 
-          Google Play 中的任何 Android 用户都可以下载免费应用。免费应用必须保持免费；但是，你依然可以通过 Google Play 的应用内[结算服务](https://developer.android.com/google/play/billing/index.html)出售[应用内商品](https://developer.android.com/google/play/billing/billing_overview.html#products)和[订阅](https://developer.android.com/google/play/billing/billing_subscriptions.html)。 
+          Google Play 中的任何 Android 用户都可以下载免费应用。免费应用必须保持免费；但是，你依然可以通过 Google Play 的应用内[结算服务](https://developer.android.google.cn/google/play/billing/index.html)出售[应用内商品](https://developer.android.google.cn/google/play/billing/billing_overview.html#products)和[订阅](https://developer.android.google.cn/google/play/billing/billing_subscriptions.html)。 
 
           只有在支持付费下载内容的国家/地区并在 Google Play 上注册了付款方式（例如信用卡或运营商直接代扣）的用户可以下载付费应用。你可以随时将付费应用改为免费应用。
 
-          如果你决定发布付费应用或出售应用内购商品，则需要设置 [Google payments 商家帐号](https://developer.android.com/distribute/best-practices/launch/index.html)，然后才能发布应用。
+          如果你决定发布付费应用或出售应用内购商品，则需要设置 [Google payments 商家帐号](https://developer.android.google.cn/distribute/best-practices/launch/index.html)，然后才能发布应用。
 
           ### 应用内购买结算或 Android Pay
 
-          如果你想寻找通过应用获利和产生吸引力的更多方式，则可以考虑[应用内购买结算](https://developer.android.com/google/play/billing/index.html)，该服务使你能够在应用中出售可下载的电子内容（例如媒体文件或照片），或使用 Android Pay，它简化了向用户出售实际商品和服务（例如食品或服饰）的流程。
+          如果你想寻找通过应用获利和产生吸引力的更多方式，则可以考虑[应用内购买结算](https://developer.android.google.cn/google/play/billing/index.html)，该服务使你能够在应用中出售可下载的电子内容（例如媒体文件或照片），或使用 Android Pay，它简化了向用户出售实际商品和服务（例如食品或服饰）的流程。
 
           ### 设置商品价格
           如果你的应用有定价，或你要出售应用内购商品或实际商品，请确定接受的币种。你可以在开发者控制台中针对每种币种设定不同的价格，这样可以根据汇率和市场状况调整定价。
@@ -421,9 +411,9 @@ concepts:
           ### 开始本地化
           最后，确保你的应用满足本地化需求。包括应用资源（例如字符串、图片等）、应用的 Google Play 商品详情和图表资源及视频。
 
-          请参阅[本地化检查清单](https://developer.android.com/distribute/best-practices/launch/localization-checklist.html)了解关键步骤。 
+          请参阅[本地化检查清单](https://developer.android.google.cn/distribute/best-practices/launch/localization-checklist.html)了解关键步骤。 
 
-          对于资源本地化，请参阅[资源本地化](https://developer.android.com/guide/topics/resources/localization.html)指南。 
+          对于资源本地化，请参阅[资源本地化](https://developer.android.google.cn/guide/topics/resources/localization.html)指南。 
         instructor_notes: ''
         resources: null
       - id: 338441
@@ -435,17 +425,17 @@ concepts:
         updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
         is_public: true
         tasks:
-          - ‘第 4 步- [确定应用的内容分级](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#determine-rating)'
-          - '第 5 步 - [确定分发国家/地区](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#determine-country)'
-          - '第 6 步 - [确定总体大小](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#confirm-size)'
-          - '第 7 步 - [确定平台和屏幕范围](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#confirm-platform)'
-          - '第 8 步 - [确定是免费还是付费应用](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#decide-price)'
-          - '第 9 步 - [使用应用内购买结算](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#consider-billing)'
-          - '第 10 步 - [设定商品价格](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#set-prices)'
-          - '第 11 步 - [开始本地化](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#start-localization)'
-        positive_feedback: ‘做好这些基本设置决定后，我们继续做好分发前的准备工作。’
+          - '第 4 步- [确定应用的内容分级](https://developer.android.google.cn/distribute/marketing-tools/launch-checklist.html#determine-rating)'
+          - '第 5 步 - [确定分发国家/地区](https://developer.android.google.cn/distribute/marketing-tools/launch-checklist.html#determine-country)'
+          - '第 6 步 - [确定总体大小](https://developer.android.google.cn/distribute/marketing-tools/launch-checklist.html#confirm-size)'
+          - '第 7 步 - [确定平台和屏幕范围](https://developer.android.google.cn/distribute/marketing-tools/launch-checklist.html#confirm-platform)'
+          - '第 8 步 - [确定是免费还是付费应用](https://developer.android.google.cn/distribute/marketing-tools/launch-checklist.html#decide-price)'
+          - '第 9 步 - [使用应用内购买结算](https://developer.android.google.cn/distribute/marketing-tools/launch-checklist.html#consider-billing)'
+          - '第 10 步 - [设定价格](https://developer.android.google.cn/distribute/marketing-tools/launch-checklist.html#set-prices)'
+          - '第 11 步 - [开始本地化](https://developer.android.google.cn/distribute/marketing-tools/launch-checklist.html#start-localization)'
+        positive_feedback: '做好这些基本设置决定后，我们继续做好分发前的准备工作。'
         video_feedback: null
-        description: ‘完成发布检查清单中的第 4 - 11 步。’
+        description: '完成发布检查清单中的第 4 - 11 步。'
   - id: 338467
     key: e0b49044-e4d1-4dd7-9f94-e80dfbcba164
     locale: zh-cn
@@ -479,11 +469,11 @@ concepts:
 
           首先，你需要密钥。在 Android 设备上安装的应用必须用应用开发者所有的整数进行电子签名。换句话说，开发者拥有应用证书的密钥。该证书用来识别应用创作者并在应用之间建立信任。  
 
-          <a href="https://developer.android.com/studio/publish/app-signing.html" target="_blank">如何获取证书来为应用签名。</a>
+          <a href="https://developer.android.google.cn/studio/publish/app-signing.html" target="_blank">如何获取证书来为应用签名。</a>
 
           ## 应用图标
 
-          接着，检查确保应用图标满足<a href="https://developer.android.com/guide/practices/ui_guidelines/icon_design_launcher.html" target="_blank">应用启动器图标指南</a>。
+          接着，检查确保应用图标满足<a href="https://developer.android.google.cn/guide/practices/ui_guidelines/icon_design_launcher.html" target="_blank">应用启动器图标指南</a>。
 
           应用的启动器图标有 3 个目的：
           - 宣传品牌并传达应用的作用
@@ -548,7 +538,7 @@ concepts:
     key: bce4538d-6f38-46f0-b894-4db77f59f90c
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：准备可以发布的 APK'
+    title: '练习：准备可以发布的 APK'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
     is_public: true
@@ -569,10 +559,10 @@ concepts:
           ### 资源
 
           **密钥**
-          - [为应用签名 - 证书和密钥库](https://developer.android.com/studio/publish/app-signing.html)
+          - [为应用签名 - 证书和密钥库](https://developer.android.google.cn/studio/publish/app-signing.html)
 
           **应用图标**
-          - [Launcher Icon Guidelines](https://developer.android.com/guide/practices/ui_guidelines/icon_design_launcher.html)
+          - [Launcher Icon Guidelines](https://developer.android.google.cn/guide/practices/ui_guidelines/icon_design_launcher.html)
           - [应用图表资源文档](https://support.google.com/googleplay/android-developer/answer/1078870)
 
           **编写 EULA 的资源**
@@ -593,19 +583,19 @@ concepts:
         updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
         is_public: true
         tasks:
-          - '请阅读[准备发布](https://developer.android.com/studio/publish/preparing.html)的“简介”和“收集资料和资源”部分’
-          - ‘获取*密钥* - [为应用签名 - 证书和密钥库](https://developer.android.com/studio/publish/app-signing.html)'
+          - '请阅读[准备发布](https://developer.android.google.cn/studio/publish/preparing.html)的“简介”和“收集资料和资源”部分'
+          - '获取*密钥* - [为应用签名 - 证书和密钥库](https://developer.android.google.cn/studio/publish/app-signing.html)'
           - 检查确保*应用的图标满足图标指南*
           - 撰写*最终用户许可协议 (EULA)*
           - 准备*宣传或营销材料*
-        positive_feedback: ‘准备完毕后，我们开始配置应用。’
+        positive_feedback: '准备完毕后，我们开始配置应用。'
         video_feedback: null
-        description: '马上就可以发布了！在准备应用以满足 UI、兼容性和质量要求后，现在可以配置应用以进行发布、向开发者控制台上传可以发布的 APK 并向用户分发应用了！’
+        description: '马上就可以发布了！在准备应用以满足 UI、兼容性和质量要求后，现在可以配置应用以进行发布、向开发者控制台上传可以发布的 APK 并向用户分发应用了！'
   - id: 338470
     key: 91bd956a-d4bd-482e-be6b-0bf249e05958
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：配置应用以进行发布'
+    title: '练习：配置应用以进行发布'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
     is_public: true
@@ -627,21 +617,21 @@ concepts:
 
           准备好所有必要的材料后，我们开始配置应用以进行发布。这一步是对源代码、资源文件和应用清单进行一些配置更改。某些步骤是可选步骤，但是强烈建议你执行，以养成良好的编程习惯。
 
-          请按照这些步骤（下面列出的所有步骤都摘自[准备发布](https://developer.android.com/studio/publish/preparing.html)指南的[配置应用以进行发布](https://developer.android.com/studio/publish/preparing.html#publishing-configure)部分)操作：
+          请按照这些步骤（下面列出的所有步骤都摘自[准备发布](https://developer.android.google.cn/studio/publish/preparing.html)指南的[配置应用以进行发布](https://developer.android.google.cn/studio/publish/preparing.html#publishing-configure)部分)操作：
 
           ### 选择合适的软件包名称
-          确保选择一个在应用的整个生命周期内都合适的软件包名称。向用户分发应用后，就无法更改软件包名称了。你可以在应用的清单文件中设置软件包名称。要了解详情，请参阅[软件包](https://developer.android.com/guide/topics/manifest/manifest-element.html#package)属性文档。
+          确保选择一个在应用的整个生命周期内都合适的软件包名称。向用户分发应用后，就无法更改软件包名称了。你可以在应用的清单文件中设置软件包名称。要了解详情，请参阅[软件包](https://developer.android.google.cn/guide/topics/manifest/manifest-element.html#package)属性文档。
 
           ### 关闭日志记录和调试
-          在构建应用以进行发布之前，确保停用日志和调试选项。你可以通过在源文件中删除对 [Log](https://developer.android.com/reference/android/util/Log.html) 方法的调用来停用日志选项。停用调试选项的方法是：在清单文件中从 *<application>* 标记中删除 *android:debuggable*  属性，或在清单文件中将 *android:debuggable* 属性设为 *false*。 
+          在构建应用以进行发布之前，确保停用日志和调试选项。你可以通过在源文件中删除对 [Log](https://developer.android.google.cn/reference/android/util/Log.html) 方法的调用来停用日志选项。停用调试选项的方法是：在清单文件中从 *<application>* 标记中删除 *android:debuggable*  属性，或在清单文件中将 *android:debuggable* 属性设为 *false*。 
           此外，删除在项目中创建的所有日志文件或静态测试文件。
 
-          此外，你应该删除所有添加到代码中的 [Debug](https://developer.android.com/reference/android/os/Debug.html) 跟踪调用，例如 [startMethodTracing()](https://developer.android.com/reference/android/os/Debug.html#startMethodTracing()) 和 [stopMethodTracing()](https://developer.android.com/reference/android/os/Debug.html#stopMethodTracing()) 方法调用。
+          此外，你应该删除所有添加到代码中的 [Debug](https://developer.android.google.cn/reference/android/os/Debug.html) 跟踪调用，例如 [startMethodTracing()](https://developer.android.google.cn/reference/android/os/Debug.html#startMethodTracing()) 和 [stopMethodTracing()](https://developer.android.google.cn/reference/android/os/Debug.html#stopMethodTracing()) 方法调用。
 
           ### 清理项目目录
-          清理项目，并确保遵守 [Android 项目](https://developer.android.com/studio/projects/index.html#ApplicationProjects)中描述的目录结构。将散乱文件或孤立文件留在项目中会妨碍你编译应用，而且可能会导致应用行为不可预测。至少应执行以下清理任务：
+          清理项目，并确保遵守 [Android 项目](https://developer.android.google.cn/studio/projects/index.html#ApplicationProjects)中描述的目录结构。将散乱文件或孤立文件留在项目中会妨碍你编译应用，而且可能会导致应用行为不可预测。至少应执行以下清理任务：
 
-          - 查看 *jni/、lib/ 和 src/* 目录下的内容。*jni/* 目录应只包含与 [Android NDK](https://developer.android.com/ndk/index.html) 关联的源文件，例如 *.c、.cpp、.h 和 .mk* 文件。*lib/* 目录应只包含第三方库文件或私有库文件，包括预构建共享库和静态库（例如 *.so* 文件）。*src/* 目录应只包含应用的源文件（*.java* 和 *.aidl* 文件）。*src/* 目录不应包含任何 *.jar* 文件。
+          - 查看 *jni/、lib/ 和 src/* 目录下的内容。*jni/* 目录应只包含与 [Android NDK](https://developer.android.google.cn/ndk/index.html) 关联的源文件，例如 *.c、.cpp、.h 和 .mk* 文件。*lib/* 目录应只包含第三方库文件或私有库文件，包括预构建共享库和静态库（例如 *.so* 文件）。*src/* 目录应只包含应用的源文件（*.java* 和 *.aidl* 文件）。*src/* 目录不应包含任何 *.jar* 文件。
 
           - 检查项目，查看是否有应用不使用的私有或专有数据文件，并移除它们。例如，查看项目的 res/ 目录是否有你不再使用的旧的可绘制图像文件、布局文件和值文件，并删除它们。
 
@@ -653,23 +643,23 @@ concepts:
           ### 检查并更新清单和 Gradle 构建设置
           验证确保以下清单和构建文件设置正确：
 
-          - [<uses-permission>](https://developer.android.com/guide/topics/manifest/uses-permission-element.html) 元素。你应该仅指定与你的应用相关并且必需的权限。
+          - [<uses-permission>](https://developer.android.google.cn/guide/topics/manifest/uses-permission-element.html) 元素。你应该仅指定与你的应用相关并且必需的权限。
 
-          - *android:icon* 和 *android:label* 属性。必须为这两个属性指定值，它们位于 [<application>](https://developer.android.com/guide/topics/manifest/application-element.html) 元素中。
+          - *android:icon* 和 *android:label* 属性。必须为这两个属性指定值，它们位于 [<application>](https://developer.android.google.cn/guide/topics/manifest/application-element.html) 元素中。
 
-          - *android:versionCode* 和 *android:versionName* 属性。建议为这两个属性指定值，它们位于 [<manifest>](https://developer.android.com/guide/topics/manifest/manifest-element.html) 元素中。要了解详情，请参阅[应用版本设置](https://developer.android.com/studio/publish/versioning.html)
+          - *android:versionCode* 和 *android:versionName* 属性。建议为这两个属性指定值，它们位于 [<manifest>](https://developer.android.google.cn/guide/topics/manifest/manifest-element.html) 元素中。要了解详情，请参阅[应用版本设置](https://developer.android.google.cn/studio/publish/versioning.html)
 
-          如果你要在 Google Play 上发布应用，还可以设置其他几个清单或构建文件元素。例如，*android:minSdkVersion* 和 *android:targetSdkVersion* 属性（位于 [<uses-sdk>](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html) 元素中。如需详细了解这些设置以及其他 Google Play 设置，请参阅 [Google Play 上的过滤器](https://developer.android.com/google/play/filters.html)
+          如果你要在 Google Play 上发布应用，还可以设置其他几个清单或构建文件元素。例如，*android:minSdkVersion* 和 *android:targetSdkVersion* 属性（位于 [<uses-sdk>](https://developer.android.google.cn/guide/topics/manifest/uses-sdk-element.html) 元素中。如需详细了解这些设置以及其他 Google Play 设置，请参阅 [Google Play 上的过滤器](https://developer.android.google.cn/google/play/filters.html)
 
 
           ### 解决兼容性问题
           Android 提供了多种工具和技术，可让你的应用与多种设备兼容。为了使你的应用可供尽可能多的用户使用，请执行以下操作：
 
-          - **添加针对多种屏幕配置的支持**：确保遵循[支持多种屏幕的最佳做法](https://developer.android.com/guide/practices/screens_support.html#screen-independence)。通过支持多种屏幕配置，你可以创建一款在 Android 系统支持的任何屏幕尺寸上都可以正常运行且显示良好的应用。
+          - **添加针对多种屏幕配置的支持**：确保遵循[支持多种屏幕的最佳做法](https://developer.android.google.cn/guide/practices/screens_support.html#screen-independence)。通过支持多种屏幕配置，你可以创建一款在 Android 系统支持的任何屏幕尺寸上都可以正常运行且显示良好的应用。
 
-          - **针对 Android 平板电脑设备优化您的应用**：如果你的应用是专为早于 Android 3.0 的设备设计的，则可遵循[针对 Android 3.0 优化应用](https://developer.android.com/guide/practices/optimizing-for-3.0.html) 中所述的指南和最佳做法使其与 Android 3.0 设备兼容。
+          - **针对 Android 平板电脑设备优化您的应用**：如果你的应用是专为早于 Android 3.0 的设备设计的，则可遵循[针对 Android 3.0 优化应用](https://developer.android.google.cn/guide/practices/optimizing-for-3.0.html) 中所述的指南和最佳做法使其与 Android 3.0 设备兼容。
 
-          - ** 考虑使用支持库**：如果您的应用是专为运行 Android 3.x 的设备设计的，则可通过向应用项目添加[支持库](https://developer.android.com/topic/libraries/support-library/index.html)让您的应用与较早的 Android 版本兼容。支持库提供你可以添加到 Android 应用的静态支持库，有了它，你可以使用较旧平台版本上不提供的 API，或使用不属于框架 API 的实用程序 API。
+          - ** 考虑使用支持库**：如果您的应用是专为运行 Android 3.x 的设备设计的，则可通过向应用项目添加[支持库](https://developer.android.google.cn/topic/libraries/support-library/index.html)让您的应用与较早的 Android 版本兼容。支持库提供你可以添加到 Android 应用的静态支持库，有了它，你可以使用较旧平台版本上不提供的 API，或使用不属于框架 API 的实用程序 API。
 
           ### 更新服务器和服务的网址
           如果你的应用访问远程服务器或服务，请确保你使用的是服务器或服务的正式版网址或路径，而不是测试网址或路径。
@@ -677,7 +667,7 @@ concepts:
           ### 实现许可（如果你在 Google Play 上发布）
           如果你要通过 Google Play 发布付费应用，请考虑增加针对 Google Play 许可的支持。许可让你可以根据当前用户是否已购买应用来控制他们对应用的访问。使用 Google Play 许可属于可选项，即使你要通过 Google Play 发布应用也是如此。
 
-          要详细了解 Google Play 许可服务以及如何在应用中使用这种服务，请参阅[应用许可](https://developer.android.com/google/play/licensing/index.html)。
+          要详细了解 Google Play 许可服务以及如何在应用中使用这种服务，请参阅[应用许可](https://developer.android.google.cn/google/play/licensing/index.html)。
 
         instructor_notes: ''
         resources: null
@@ -697,14 +687,14 @@ concepts:
           - 解决兼容性问题
           - 更新服务器和服务的网址
           - 实现许可（如果你在 Google Play 上发布）
-        positive_feedback: ‘配置完毕后，我们就可以展开构建流程了！’
+        positive_feedback: '配置完毕后，我们就可以展开构建流程了！'
         video_feedback: null
-        description: '按照[配置应用以进行发布](https://developer.android.com/studio/publish/preparing.html#publishing-configure)部分描述的步骤操作。完成每个步骤后，都打个勾。’
+        description: '按照[配置应用以进行发布](https://developer.android.google.cn/studio/publish/preparing.html#publishing-configure)部分描述的步骤操作。完成每个步骤后，都打个勾。'
   - id: 338471
     key: 5c682800-fd1c-49bf-8dae-be23d4faca99
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：构建应用以进行发布'
+    title: '练习：构建应用以进行发布'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
     is_public: true
@@ -727,11 +717,11 @@ concepts:
 
           所有 APK 必须先使用证书进行数字签名，然后才能安装。要签署发布版本，你可以：
 
-          (1) 使用 Android Studio 手动生成签署的 APK，可以一次生成一个或同时生成多个。详细的[手动签署发布版本步骤位于此处](https://developer.android.com/studio/publish/app-signing.html#release-mode)。 
+          (1) 使用 Android Studio 手动生成签署的 APK，可以一次生成一个或同时生成多个。详细的[手动签署发布版本步骤位于此处](https://developer.android.google.cn/studio/publish/app-signing.html#release-mode)。 
 
           或 
 
-          (2) 配置 Gradle 构建版本以在构建流程中自动签署。[配置构建流程以手动签署 APK 的详细步骤位于此处](https://developer.android.com/studio/publish/app-signing.html#sign-auto)。 
+          (2) 配置 Gradle 构建版本以在构建流程中自动签署。[配置构建流程以手动签署 APK 的详细步骤位于此处](https://developer.android.google.cn/studio/publish/app-signing.html#sign-auto)。 
 
         instructor_notes: ''
         resources: null
@@ -757,16 +747,16 @@ concepts:
         updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
         is_public: true
         tasks:
-          - '[手动](https://developer.android.com/studio/publish/app-signing.html#release-mode)签署发布版本或通过配置 Gradle 构建[自动](https://developer.android.com/studio/publish/app-signing.html#sign-auto)签署'
+          - '[手动](https://developer.android.google.cn/studio/publish/app-signing.html#release-mode)签署发布版本或通过配置 Gradle 构建[自动](https://developer.android.google.cn/studio/publish/app-signing.html#sign-auto)签署'
           - 将密钥的备份副本放在安全可靠的地方！
-        positive_feedback: ‘再强调一遍，请务必将密钥备份副本放在安全的地方！’
+        positive_feedback: '再强调一遍，请务必将密钥备份副本放在安全的地方！'
         video_feedback: null
         description: ''
   - id: 338473
     key: 246b90f1-a7e8-4ffb-88a8-12ab13baf428
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：测试应用以进行发布'
+    title: '练习：测试应用以进行发布'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
     is_public: true
@@ -898,7 +888,7 @@ concepts:
     key: 6570ba40-ad4b-415c-9808-57249d455e77
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：Alpha/Beta 测试’
+    title: '练习：Alpha/Beta 测试'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
     is_public: true
@@ -915,10 +905,10 @@ concepts:
         updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
         is_public: true
         tasks:
-          - ‘[设置 Alpha/Beta 测试](https://support.google.com/googleplay/android-developer/answer/3131213)'
-          - ‘通过电子邮件、网站、消息论坛、Google 网上论坛或在[开发者控制台](https://support.google.com/googleplay/android-developer/answer/138230#browse_reviews)中获得反馈’
+          - '[设置 Alpha/Beta 测试](https://support.google.com/googleplay/android-developer/answer/3131213)'
+          - '通过电子邮件、网站、消息论坛、Google 网上论坛或在[开发者控制台](https://support.google.com/googleplay/android-developer/answer/138230#browse_reviews)中获得反馈'
           - 将测试用户的反馈落实到应用中
-        positive_feedback: ‘了解何时及如何正确地收集和落实用户反馈可以帮助你了解该侧重于应用的哪个方面。请在此处查看一些[最佳做法](https://developer.android.com/distribute/best-practices/grow/user-reviews.html)。’
+        positive_feedback: '了解何时及如何正确地收集和落实用户反馈可以帮助你了解该侧重于应用的哪个方面。请在此处查看一些[最佳做法](https://developer.android.google.cn/distribute/best-practices/grow/user-reviews.html)。'
         video_feedback: null
         description: ''
   - id: 338474
@@ -957,7 +947,7 @@ concepts:
     key: 8d5a556f-53d9-4d0a-8897-34150f95219f
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：商品详情、Play 徽章和链接'
+    title: '练习：商品详情、Play 徽章和链接'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
     is_public: true
@@ -979,28 +969,28 @@ concepts:
 
           完成所有发布前的准备工作后，你可以向全世界展示你的精彩应用了！
 
-          查看发布检查清单中的提醒 - [第 15 步：完成应用的商品详情](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#complete-details)。
+          查看发布检查清单中的提醒 - [第 15 步：完成应用的商品详情](https://developer.android.google.cn/distribute/marketing-tools/launch-checklist.html#complete-details)。
 
           # 使用 Google Play 徽章和链接来宣传你的应用
 
-          使用 [Google Play 徽章](https://play.google.com/intl/en_us/badges/)向 Android 用户宣传你的应用。徽章可以从网页、广告、评价等地方将用户链接到你的产品。此外，使用[链接格式](https://developer.android.com/distribute/marketing-tools/linking-to-google-play.html)直接链接到你的商品详情页面、链接到你的产品列表或搜索结果。 
+          使用 [Google Play 徽章](https://play.google.com/intl/en_us/badges/)向 Android 用户宣传你的应用。徽章可以从网页、广告、评价等地方将用户链接到你的产品。此外，使用[链接格式](https://developer.android.google.cn/distribute/marketing-tools/linking-to-google-play.html)直接链接到你的商品详情页面、链接到你的产品列表或搜索结果。 
 
           这些方法加上社交媒体、博客帖子、视频和其他宣传方法，可以在应用发布后帮助吸引更多用户。 
 
-          查看发布检查清单中的其他详情 - [第 16 步：在宣传活动中使用 Google Play 徽章和链接](https://developer.android.com/distribute/marketing-tools/launch-checklist.html)。
+          查看发布检查清单中的其他详情 - [第 16 步：在宣传活动中使用 Google Play 徽章和链接](https://developer.android.google.cn/distribute/marketing-tools/launch-checklist.html)。
         instructor_notes: ''
         resources: null
       - id: 338450
         key: 232b0a1f-d779-4087-a259-45fc813f0545
         locale: zh-cn
         version: 1.0.0
-        title: ‘商品详情、Play 徽章和链接'
+        title: '商品详情、Play 徽章和链接'
         semantic_type: TaskListAtom
         updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
         is_public: true
         tasks:
-          - ‘[完成应用商品详情](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#complete-details)'
-          - ‘决定如何[在宣传活动中使用 Google Play 徽章和链接](https://developer.android.com/distribute/marketing-tools/launch-checklist.html)'
+          - '[完成应用商品详情](https://developer.android.google.cn/distribute/marketing-tools/launch-checklist.html#complete-details)'
+          - '决定如何[在宣传活动中使用 Google Play 徽章和链接](https://developer.android.google.cn/distribute/marketing-tools/launch-checklist.html)'
         positive_feedback: 就快拉开精彩帷幕了，鼓声响起来...
         video_feedback: null
         description: ''
@@ -1008,7 +998,7 @@ concepts:
     key: 58be111e-8bbb-4bf4-a664-5448060e8ed2
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：你已经准备好发布了！’
+    title: '练习：你已经准备好发布了！'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
     is_public: true
@@ -1046,23 +1036,23 @@ concepts:
         tasks:
           - 开发者资料信息正确
           - 上传的应用版本正确
-          - ‘商品详情设置完备（例如图片资源、屏幕截图、视频、本地化说明）’
+          - '商品详情设置完备（例如图片资源、屏幕截图、视频、本地化说明）'
           - 应用正确地显示为免费版或付费版
           - 设定了目标国家/地区和币种
-          - ‘”兼容的设备”与你的目标设备一致'
+          - '”兼容的设备”与你的目标设备一致'
           - 给出了正确的网址和支持电子邮箱链接
-          - ‘应用遵守[内容政策指南](https://play.google.com/about/developer-content-policy/)'
-          - ‘应用遵守[开发者分发协议](https://play.google.com/intl/ALL_us/about/developer-distribution-agreement.html)中规定的 Google Play 上 Android 内容和美国出口法律指南’
+          - '应用遵守[内容政策指南](https://play.google.com/about/developer-content-policy/)'
+          - '应用遵守[开发者分发协议](https://play.google.com/intl/ALL_us/about/developer-distribution-agreement.html)中规定的 Google Play 上 Android 内容和美国出口法律指南'
         positive_feedback: |-
           你的应用已做好发布准备了！
           向大家发布应用吧！
         video_feedback: null
-        description: '在点击”发布”前先仔细检查这些条目：’
+        description: '在点击”发布”前先仔细检查这些条目：'
   - id: 338489
     key: 4146b6b3-f4cc-4680-99c1-23e25be64a11
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：吸引和扩大用户群'
+    title: '练习：吸引和扩大用户群'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
     is_public: true
@@ -1128,13 +1118,13 @@ concepts:
         updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          发布检查清单给出了几个关于如何最有效地[在发布后为用户提供支持](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#support-users)的实用建议。
+          发布检查清单给出了几个关于如何最有效地[在发布后为用户提供支持](https://developer.android.google.cn/distribute/marketing-tools/launch-checklist.html#support-users)的实用建议。
 
 
           开发者控制台也是个很好的工具，可以帮助你继续吸引和扩大用户群。请参阅它可以如何帮助你：
-          - 提高[用户获取](https://developer.android.com/distribute/console/features.html#user-acquisition)
-          - 分析[用户反馈](https://developer.android.com/distribute/console/features.html#user-feedback)
-          - 接收关于应用状态、评价、财务数据等的[通知](https://developer.android.com/distribute/console/features.html#team-access-and-notifications)
+          - 提高[用户获取](https://developer.android.google.cn/distribute/console/features.html#user-acquisition)
+          - 分析[用户反馈](https://developer.android.google.cn/distribute/console/features.html#user-feedback)
+          - 接收关于应用状态、评价、财务数据等的[通知](https://developer.android.google.cn/distribute/console/features.html#team-access-and-notifications)
         instructor_notes: ''
         resources: null
       - id: 338457
@@ -1228,12 +1218,12 @@ concepts:
         text: |-
           ### 资源
 
-          - [打造吸引数十亿用户的应用](https://developer.android.com/develop/quality-guidelines/building-for-billions.html) - 关于连接性、设备功能、流量成本、电量消耗和大型市场内容方面的建议
+          - [打造吸引数十亿用户的应用](https://developer.android.google.cn/develop/quality-guidelines/building-for-billions.html) - 关于连接性、设备功能、流量成本、电量消耗和大型市场内容方面的建议
 
-          - [收益](https://developer.android.com/distribute/best-practices/earn/index.html) - 如何如何建立和拓展应用的收入来源
+          - [收益](https://developer.android.google.cn/distribute/best-practices/earn/index.html) - 如何如何建立和拓展应用的收入来源
 
-          - [开发者故事](https://developer.android.com/stories/index.html) - 开发者如何在 Android 和 Google Play 上取得成功
+          - [开发者故事](https://developer.android.google.cn/stories/index.html) - 开发者如何在 Android 和 Google Play 上取得成功
 
-          - 通过 [Firebase Analytics](https://developer.android.com/distribute/best-practices/earn/improve-conversions.html) 提高转化率
+          - 通过 [Firebase Analytics](https://developer.android.google.cn/distribute/best-practices/earn/improve-conversions.html) 提高转化率
         instructor_notes: ''
         resources: null

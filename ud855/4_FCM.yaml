@@ -11,7 +11,7 @@ image:
   width: 1286
   height: 1246
 video: null
-summary: ‘在这节课，你将学习如何创建一个像推特一样的应用，叫做 Squawker。你将了解如何构建一款应用，在该应用中使用 Firebase Cloud Messaging 服务从服务器上实时接收消息。掌握这些技能后，你将能够创建节省电量的应用，并在几毫秒之内就能从服务器上接收更新 ！’
+summary: '在这节课，你将学习如何创建一个像推特一样的应用，叫做 Squawker。你将了解如何构建一款应用，在该应用中使用 Firebase Cloud Messaging 服务从服务器上实时接收消息。掌握这些技能后，你将能够创建节省电量的应用，并在几毫秒之内就能从服务器上接收更新 ！'
 lesson_type: Classroom
 duration: 180
 is_project_lesson: false
@@ -112,7 +112,7 @@ concepts:
     key: 97dc7b69-af9d-4b4c-9489-1883126fccb1
     locale: zh-cn
     version: 1.0.0
-    title: ‘测验：调查与推送'
+    title: '测验：调查与推送'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -153,15 +153,15 @@ concepts:
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
         question:
-          prompt: ‘请查看以下应用。哪些应用需要、可以并值得投入额外的精力来实现推送功能？请选中所有适用项。'
-          correct_feedback: ‘很棒！Squawker 和简单的聊天应用都属于可能随时出现更新的应用，**并且**有必要让用户接近实时地接收这些更新。因此，它们适合实现推送功能。’
+          prompt: '请查看以下应用。哪些应用需要、可以并值得投入额外的精力来实现推送功能？请选中所有适用项。'
+          correct_feedback: '很棒！Squawker 和简单的聊天应用都属于可能随时出现更新的应用，**并且**有必要让用户接近实时地接收这些更新。因此，它们适合实现推送功能。'
           video_feedback: null
           default_feedback: null
           answers:
             - id: a1488248155252
-              text: '一款使用[电影数据库](https://www.themoviedb.org/?language=en)来获取电影信息并显示近期电影列表的应用。’
+              text: '一款使用[电影数据库](https://www.themoviedb.org/?language=en)来获取电影信息并显示近期电影列表的应用。'
               is_correct: false
-              incorrect_feedback: ‘电影应用可能有必要适用推送功能，但是你并不实际地控制推送过程，因此可能很难实现推送功能。’
+              incorrect_feedback: '电影应用可能有必要适用推送功能，但是你并不实际地控制推送过程，因此可能很难实现推送功能。'
             - id: a1488248233132
               text: 一款简单的聊天应用
               is_correct: true
@@ -249,7 +249,7 @@ concepts:
     key: 8883caaf-b8ff-4231-92f8-32a6a982de95
     locale: zh-cn
     version: 1.0.0
-    title: ‘测验：添加讲师’
+    title: '测验：添加讲师'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -269,7 +269,7 @@ concepts:
         text: |-
           # Squawker 代码
 
-          该应用的代码位于 [Squawker 资源库](https://github.com/udacity/AdvancedAndroid_Squawker)中。请使用以下命令下载该资源库：
+          该应用的代码位于 [Squawker 代码库](https://github.com/udacity/AdvancedAndroid_Squawker)中。请使用以下命令下载该代码库：
 
           ```bash
           git clone https://github.com/udacity/AdvancedAndroid_Squawker.git
@@ -291,9 +291,9 @@ concepts:
         is_public: true
         question:
           prompt: 假设你想将自己作为新的讲师添加到 Squawker 中。为此，你需要在客户端的哪个类或 xml 文件上做出更改？请选中所有适用项
-          correct_feedback: '**following_squawker.xml** 文件负责生成偏好设置，你需要为新的讲师添加新的 `SwitchPreferenceCompat` 偏好设置。对于该偏好设置，你需要在 **strings.xml** 文件中添加新的字符串，包括 `key` 字符串，它讲师 `key_<your name>`。在 **SquawkContract** 中，你需要为新的讲师密钥设置新的常量，并将其添加到为 `createSelectionForCurrentFollowers` 方法进行搜索的列表中。最后，需要修改 **SquawkAdapter** 以便显示你的资料照片。’
+          correct_feedback: '**following_squawker.xml** 文件负责生成偏好设置，你需要为新的讲师添加新的 `SwitchPreferenceCompat` 偏好设置。对于该偏好设置，你需要在 **strings.xml** 文件中添加新的字符串，包括 `key` 字符串，它讲师 `key_<your name>`。在 **SquawkContract** 中，你需要为新的讲师密钥设置新的常量，并将其添加到为 `createSelectionForCurrentFollowers` 方法进行搜索的列表中。最后，需要修改 **SquawkAdapter** 以便显示你的资料照片。'
           video_feedback: null
-          default_feedback: ‘你应该选择以下选项中的 4 个。首先思考需要更改什么，以便添加新讲师的新偏好设置。偏好设置更改后，如何为新的讲师生成新的 `select` 语句？最后，如何显示新的讲师？’
+          default_feedback: '你应该选择以下选项中的 4 个。首先思考需要更改什么，以便添加新讲师的新偏好设置。偏好设置更改后，如何为新的讲师生成新的 `select` 语句？最后，如何显示新的讲师？'
           answers:
             - id: a1488248550986
               text: '`MainActivity.java`'
@@ -431,7 +431,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
-        text: ‘如果你未登录 Google 帐号，则系统会提示你登录或创建新的 Google 帐号。请按照说明操作。登录后，你将能够点击**免费开始**按钮并看到如下所示的页面。’
+        text: '如果你未登录 Google 帐号，则系统会提示你登录或创建新的 Google 帐号。请按照说明操作。登录后，你将能够点击**免费开始**按钮并看到如下所示的页面。'
         instructor_notes: ''
         resources: null
       - id: 338194
@@ -456,7 +456,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
-        text: ‘很快你将创建新的 Firebase 项目，但是暂时别按该按钮！请观看下个视频了解更多内容。’
+        text: '很快你将创建新的 Firebase 项目，但是暂时别按该按钮！请观看下个视频了解更多内容。'
         instructor_notes: ''
         resources: null
       - id: 338196
@@ -485,9 +485,9 @@ concepts:
           * 邀请 - 允许用户邀请他人使用你的应用
           * AdWords - 投放广告系列，获取更多应用用户
 
-         请点击[此处](https://firebase.google.com/features/)了解关于这些功能的信息和文档链接。
+          请点击[此处](https://firebase.google.com/features/)了解关于这些功能的信息和文档链接。
 
-          如果你想了解 Android 和 Firebase，建议学习优达学城的 [Firebase 周末课程](https://www.udacity.com/course/firebase-in-a-weekend-by-google-android--ud0352)（Android 课程）。该课程是免费的，会指导你创建实时聊天应用，其中包含用户帐号、照片分享等功能，并使用 Firebase 作为后端。
+          如果你想了解 Android 和 Firebase，建议学习优达学城的[周末学 Firebase 课程](https://cn.udacity.com/course/firebase-in-a-weekend-by-google-android--ud0352)（Android 课程）。该课程是免费的，会指导你创建实时聊天应用，其中包含用户帐号、照片分享等功能，并使用 Firebase 作为后端。
         instructor_notes: ''
         resources: null
   - id: 338365
@@ -529,7 +529,7 @@ concepts:
     key: 2645be33-23ad-4ff6-9bc8-e7f1f48bde2f
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：连接 Firebase 和 Squawker 应用’
+    title: '练习：连接 Firebase 和 Squawker 应用'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -625,7 +625,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
-        text: ‘**第 2 步** 将项目名称设为 **Squawker**'
+        text: '**第 2 步** 将项目名称设为 **Squawker**'
         instructor_notes: ''
         resources: null
       - id: 338203
@@ -680,7 +680,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
-        text: ‘**第 2 步** 将 Squawker 程序包放入对话框中，该程序包是 `android.example.com.squawker`。你不需要 SHA 密钥，因为我们不使用需要密钥的 Firebase 功能。你也不需要应用昵称，但是你也可以添加一个。’
+        text: '**第 2 步** 将 Squawker 程序包放入对话框中，该程序包是 `android.example.com.squawker`。你不需要 SHA 密钥，因为我们不使用需要密钥的 Firebase 功能。你也不需要应用昵称，但是你也可以添加一个。'
         instructor_notes: ''
         resources: null
       - id: 338207
@@ -705,7 +705,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
-        text: ‘**第 3 步** 按照说明操作，下载 `google-service.json` 配置文件并将其保存到 Squawker 的**应用**目录下。该配置文件会告诉 Squawker 在线连到哪个 Firebase 服务器实例。特定于你刚刚创建的 Firebase“应用”。如果你不小心删除了 `google-service.json` 文件，则可以通过转到应用**设置**重新下载该文件。’
+        text: '**第 3 步** 按照说明操作，下载 `google-service.json` 配置文件并将其保存到 Squawker 的**应用**目录下。该配置文件会告诉 Squawker 在线连到哪个 Firebase 服务器实例。特定于你刚刚创建的 Firebase“应用”。如果你不小心删除了 `google-service.json` 文件，则可以通过转到应用**设置**重新下载该文件。'
         instructor_notes: ''
         resources: null
       - id: 338209
@@ -759,12 +759,12 @@ concepts:
 
           **解决方案：**[[TFCM.01-Solution-AddGradleDependencies](https://github.com/udacity/AdvancedAndroid_Squawker/tree/TFCM.01-Solution-AddGradleDependencies)][[Diff](https://github.com/udacity/AdvancedAndroid_Squawker/compare/TFCM.01-Exercise-AddGradleDependencies...TFCM.01-Solution-AddGradleDependencies)]
         video_feedback: null
-        description: ‘现在该你了。请按照相关步骤操作，完成此编程练习。’
+        description: '现在该你了。请按照相关步骤操作，完成此编程练习。'
   - id: 338371
     key: 59c2b902-6c73-43c0-a863-69e4a15d5de8
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：发出第一条 FCM 消息’
+    title: '练习：发出第一条 FCM 消息'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -834,7 +834,7 @@ concepts:
           - 使发送日期保持为“立即发送”
           - 选择你的 Squawker 应用
           - 发送消息！
-        positive_feedback: ‘很棒！你应该从 Squawker 中看到一条通知。按下该通知时，它应该也会打开该应用。’
+        positive_feedback: '很棒！你应该从 Squawker 中看到一条通知。按下该通知时，它应该也会打开该应用。'
         video_feedback: null
         description: 通过按照以下步骤操作，发送你的第一条 FCM 消息。
       - id: 338215
@@ -855,7 +855,7 @@ concepts:
     key: 7f27c798-6f60-4693-b139-4a589d52a72b
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：消息数据简介'
+    title: '练习：消息数据简介'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -913,7 +913,7 @@ concepts:
     key: 7577c652-b45a-4346-bc22-39a7c367651e
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：发送到特定的手机'
+    title: '练习：发送到特定的手机'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -1003,9 +1003,9 @@ concepts:
         is_public: true
         tasks:
           - 创建新的程序包，名称为 `fcm`
-          - ‘在 `fcm` 程序包中，创建扩展自 `FirebaseInstanceIdService` 的新服务’
+          - '在 `fcm` 程序包中，创建扩展自 `FirebaseInstanceIdService` 的新服务'
           - 将该服务添加到 Manifest 中，并使用 intent 过滤器来捕获 `com.google.firebase.INSTANCE_ID_EVENT` 操作
-          - ‘在新的服务类中，覆盖方法 `onTokenRefresh` 并在日志中输出令牌'
+          - '在新的服务类中，覆盖方法 `onTokenRefresh` 并在日志中输出令牌'
           - 运行该应用并从日志中获得令牌
           - 使用该令牌具体地向你的设备发送消息
         positive_feedback: |-
@@ -1013,7 +1013,7 @@ concepts:
 
           **解决方案：**[[TFCM.03-Solution-GetInstanceIdToken](https://github.com/udacity/AdvancedAndroid_Squawker/tree/TFCM.03-Solution-GetInstanceIdToken)][[Diff](https://github.com/udacity/AdvancedAndroid_Squawker/compare/TFCM.03-Exercise-GetInstanceIdToken...TFCM.03-Solution-GetInstanceIdToken)]
         video_feedback: null
-        description: ‘请按照 TODO 操作，完成这道练习。要获取帮助，你可以使用 https://firebase.google.com/docs/cloud-messaging/android/client#manifest 上提到的步骤和示例代码。’
+        description: '请按照 TODO 操作，完成这道练习。要获取帮助，你可以使用 https://firebase.google.com/docs/cloud-messaging/android/client#manifest 上提到的步骤和示例代码。'
       - id: 338225
         key: d33c3d88-7ef0-4e1e-8a18-762217c54718
         locale: zh-cn
@@ -1023,9 +1023,9 @@ concepts:
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
         question:
-          prompt: ‘获得手机的 FCM 注册令牌后，请将其粘贴到此处以完成这道练习。’
-          default_feedback: ‘确保仅复制 FCM 注册令牌，不要包含任何多余的空格或字符。’
-          correct_feedback: ‘很棒！虽然我无法验证你是否 获得了完全正确的 FCM 注册令牌，你可以通过用此令牌发送消息来自己检查下。如果该令牌正确，那么该消息应该会发送到你的手机上，并且仅发送到你的手机上。注意，Squawker 应用必须位于后台，并且你的设备必须连接到互联网。’
+          prompt: '获得手机的 FCM 注册令牌后，请将其粘贴到此处以完成这道练习。'
+          default_feedback: '确保仅复制 FCM 注册令牌，不要包含任何多余的空格或字符。'
+          correct_feedback: '很棒！虽然我无法验证你是否 获得了完全正确的 FCM 注册令牌，你可以通过用此令牌发送消息来自己检查下。如果该令牌正确，那么该消息应该会发送到你的手机上，并且仅发送到你的手机上。注意，Squawker 应用必须位于后台，并且你的设备必须连接到互联网。'
           video_feedback: null
           matchers:
             - semantic_type: RegexMatcher
@@ -1042,7 +1042,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
-        text: ‘**注意** 如果你无法获得 FCM 令牌，请尝试卸载并重新安装该应用。’
+        text: '**注意** 如果你无法获得 FCM 令牌，请尝试卸载并重新安装该应用。'
         instructor_notes: ''
         resources: null
   - id: 338374
@@ -1082,7 +1082,7 @@ concepts:
     key: b60aca35-9ca2-4678-8b28-044b8f8fca6c
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：创建 Firebase 消息服务'
+    title: '练习：创建 Firebase 消息服务'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -1152,9 +1152,9 @@ concepts:
         tasks:
           - 创建扩展自 `FirebaseMessagingService` 的服务
           - 将该服务添加到 Manifest，并包含缓存 `com.google.firebase.MESSAGING_EVENT` 操作的 Intent 过滤器
-          - ‘在新的服务类中，覆盖方法 `onMessageReceived`'
-          - ‘在 `onMessageReceived` 中将 Squawk 添加到数据库并显示通知'
-          - '使用**针对单个设备的 Squawk** 从 [Squawker 服务器](https://squawkerfcmserver.udacity.com/)向你的设备发送一条数据消息。’
+          - '在新的服务类中，覆盖方法 `onMessageReceived`'
+          - '在 `onMessageReceived` 中将 Squawk 添加到数据库并显示通知'
+          - '使用**针对单个设备的 Squawk** 从 [Squawker 服务器](https://squawkerfcmserver.udacity.com/)向你的设备发送一条数据消息。'
         positive_feedback: |-
           很棒！你现在应该能够从 [Squawker 服务器](https://squawkerfcmserver.udacity.com/)接收消息了
 
@@ -1277,7 +1277,7 @@ concepts:
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
         question:
-          prompt: ' 根据你对主题的了解，你觉得 Squawker 的主题键是什么？’
+          prompt: ' 根据你对主题的了解，你觉得 Squawker 的主题键是什么？'
           correct_feedback: |-
             最合理的答案是为每位讲师设定不同的主题。要“关注”某位讲师并获得消息，你需要订阅该讲师的主题。例如，如果我想订阅 asser 和 cezanne 主题，那么我可以使用如下所示的代码：
 
@@ -1289,9 +1289,9 @@ concepts:
           default_feedback: null
           answers:
             - id: a1488416817476
-              text: ‘我会为每个设备 FCM 注册 ID 设定一个主题。例如：“dna9d7fk..,“、“o744sml9fk...“、“bbd7dka...“'
+              text: '我会为每个设备 FCM 注册 ID 设定一个主题。例如：“dna9d7fk..,“、“o744sml9fk...“、“bbd7dka...“'
               is_correct: false
-              incorrect_feedback: ‘当某个设备想关注某位讲师时，则是设备关注讲师，而不是讲师关注设备。'
+              incorrect_feedback: '当某个设备想关注某位讲师时，则是设备关注讲师，而不是讲师关注设备。'
             - id: a1488416861532
               text: 我会为每个讲师组合设定一个主题。例如：“lyla_cezanne” 和 “lyla_cezanne_nikita”
               is_correct: false
@@ -1299,13 +1299,13 @@ concepts:
             - id: a1488416875636
               text: 我会为每个订阅和非订阅状态设定一个主题。例如：“subscribed_lyla” 和 “unsubscribed_nikita”
               is_correct: false
-              incorrect_feedback: '你将使用 `subscribeToTopic` 和 `unsubscribeFromTopic` 方法来设定某人是*订阅*还是*非订阅*状态，所以不需要为这些状态设定不同的主题。’
+              incorrect_feedback: '你将使用 `subscribeToTopic` 和 `unsubscribeFromTopic` 方法来设定某人是*订阅*还是*非订阅*状态，所以不需要为这些状态设定不同的主题。'
             - id: a1488416891276
-              text: ‘我会有两个主题，一个针对测试消息，另一个针对讲师。例如“test”和“instructor”'
+              text: '我会有两个主题，一个针对测试消息，另一个针对讲师。例如“test”和“instructor”'
               is_correct: false
-              incorrect_feedback: ‘如果只有一个 `instructor` 主题，如何区分是否要关注 Jessica 和 Cezanne 与 Nikita 和 Lyla？’
+              incorrect_feedback: '如果只有一个 `instructor` 主题，如何区分是否要关注 Jessica 和 Cezanne 与 Nikita 和 Lyla？'
             - id: a1488416905870
-              text: ‘我会为 Squawker 上的不同兴趣内容设定一个主题，例如“体育”、“新闻”和“娱乐”’
+              text: '我会为 Squawker 上的不同兴趣内容设定一个主题，例如“体育”、“新闻”和“娱乐”'
               is_correct: false
               incorrect_feedback: 用户是选择接收关于特定内容的消息还是接收来自特定讲师的消息？
             - id: a1488416918635
@@ -1316,7 +1316,7 @@ concepts:
     key: 4e9267e6-49b5-4076-b59d-58e2e27d971d
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：实现主题关注'
+    title: '练习：实现主题关注'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -1397,7 +1397,7 @@ concepts:
         is_public: true
         tasks:
           - 在 `FollowingPreferenceFragment.java` 中实现 `OnSharedPreferenceChangeListener`
-          - ‘当共享的偏好设置文件更改后，相应地订阅或取消订阅讲师'
+          - '当共享的偏好设置文件更改后，相应地订阅或取消订阅讲师'
           - 别忘了在 `onCreate` 和 `onDestroy` 中注册及取消注册 `OnSharedPreferenceChangeListener`
           - '从 [Squawker 服务器](https://squawkerfcmserver.udacity.com/)发送几条消息，确保主题关注操作可以正常运行'
         positive_feedback: |-

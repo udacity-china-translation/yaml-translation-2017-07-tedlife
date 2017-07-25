@@ -11,7 +11,7 @@ image:
   width: 928
   height: 886
 video: null
-summary: ‘在这节课，你将通过在音乐测验应用中实现 ExoPlayer 库来学习 Media Playback。你还将学习后台播放、外部客户端、媒体会话等！'
+summary: '在这节课，你将通过在音乐测验应用中实现 ExoPlayer 库来学习 Media Playback。你还将学习后台播放、外部客户端、媒体会话等！'
 lesson_type: Classroom
 duration: 120
 is_project_lesson: false
@@ -164,7 +164,7 @@ concepts:
         instructor_notes: |-
           <a href="https://developers.google.com/youtube/" target="_blank">YouTube 开发者 API</a>
 
-          Media API：<a href="https://developer.android.com/reference/android/media/MediaCodec.html" target="_blank">MediaCodec</a>、<a href="https://developer.android.com/reference/android/media/AudioTrack.html" target="_blank">AudioTrack</a> 和 <a href="https://developer.android.com/reference/android/media/MediaDrm.html" target="_blank">MediaDrm</a>
+          Media API：<a href="https://developer.android.google.cn/reference/android/media/MediaCodec.html" target="_blank">MediaCodec</a>、<a href="https://developer.android.google.cn/reference/android/media/AudioTrack.html" target="_blank">AudioTrack</a> 和 <a href="https://developer.android.google.cn/reference/android/media/MediaDrm.html" target="_blank">MediaDrm</a>
         resources: null
         video:
           id: '53562'
@@ -219,7 +219,7 @@ concepts:
     key: 0c7e0179-5e36-454a-94fc-96529e08bb53
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：下载起始代码'
+    title: '练习：下载起始代码'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -238,7 +238,7 @@ concepts:
         text: |-
           # Media Playback 
 
-          该应用的代码位于 <a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz" target="_blank">Media Playback 资源库</a>中。请使用以下命令下载该资源库：
+          该应用的代码位于 <a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz" target="_blank">Media Playback 代码库</a>中。请使用以下命令下载该代码库：
 
           ```bash
           git clone https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz.git
@@ -273,9 +273,9 @@ concepts:
         tags: []
         instructor_notes: |-
           - <a href="http://www.vogella.com/tutorials/JSON/article.html" target="_blank">JSON 教程 (Vogella)</a>
-          - <a href="https://developer.android.com/reference/android/util/JsonReader.html" target="_blank">JsonReader 文档</a>
+          - <a href="https://developer.android.google.cn/reference/android/util/JsonReader.html" target="_blank">JsonReader 文档</a>
 
-          在 Android Studio 中打开项目代码时，你可能会收到关于 **extras;android;m2repository** 的 gradle 错误。你可以通过下载并安装缺失的资源库来解决该错误。 
+          在 Android Studio 中打开项目代码时，你可能会收到关于 **extras;android;m2repository** 的 gradle 错误。你可以通过下载并安装缺失的代码库来解决该错误。 
         resources: null
         video:
           id: '53564'
@@ -328,7 +328,7 @@ concepts:
     key: d1be88a3-77bd-4581-b2f4-662d92f6e590
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：添加 SimpleExoPlayerView'
+    title: '练习：添加 SimpleExoPlayerView'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -388,7 +388,7 @@ concepts:
         is_public: true
         tasks:
           - 将 Composer ImageView 替换成 SimpleExoPlayerView
-          - ‘将 ImageView 替换成 SimpleExoPlayerView，并删除对 composerView 的调用’
+          - '将 ImageView 替换成 SimpleExoPlayerView，并删除对 composerView 的调用'
           - 替换 SimpleExoPlayerView 中的默认艺术作品
           - 使用 Sample.getSampleByID() 方法创建实例对象
           - 创建一个叫做 initializePlayer() 的方法
@@ -409,7 +409,7 @@ concepts:
     key: 5d62a7ef-df84-43e1-8c64-882169c3044b
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：自定义 SimpleExoPlayerView'
+    title: '练习：自定义 SimpleExoPlayerView'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -500,7 +500,7 @@ concepts:
     key: 48914024-46e6-4c24-8de6-4ab0284ecaba
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：ExoPlayer 事件监听’
+    title: '练习：ExoPlayer 事件监听'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -526,7 +526,9 @@ concepts:
         video:
           id: '54078'
           youtube_id: _DH2YhiaaF0
-          subtitles: []
+          subtitles: 
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/April/58fe75a2_10-l-exoplayer-event-listening/subtitles/lang_en_vs1.srt'    
+              language_code: en
           transcodings:
             uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a2_10-l-exoplayer-event-listening/10-l-exoplayer-event-listening_480p.mp4'
             uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a2_10-l-exoplayer-event-listening/10-l-exoplayer-event-listening_480p_1000kbps.mp4'
@@ -572,8 +574,8 @@ concepts:
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
         tasks:
-          - ‘对于 QuizActivity，实现 ExoPlayer.EventListener 并添加所需的方法'
-          - ‘对于 QuizActivity，设置 ExoPlayer.EventListener'
+          - '对于 QuizActivity，实现 ExoPlayer.EventListener 并添加所需的方法'
+          - '对于 QuizActivity，设置 ExoPlayer.EventListener'
           - 向 onPlayerStateChanged() 方法添加条件日志语句，记录 ExoPlayer 何时在播放，何时暂停
         positive_feedback: |-
           状态已记录！耶！
@@ -591,7 +593,7 @@ concepts:
         is_public: true
         question:
           prompt: 你应该在哪个方法中更新 MediaSession 的状态？
-          correct_feedback: ‘是 onPlayerStateChanged() 方法，这是一个 ExoPlayer.EventListener，每次播放器状态发生变化时，都会被调用，因此我们要在该方法中更新媒体会话。'
+          correct_feedback: '是 onPlayerStateChanged() 方法，这是一个 ExoPlayer.EventListener，每次播放器状态发生变化时，都会被调用，因此我们要在该方法中更新媒体会话。'
           video_feedback: null
           default_feedback: null
           answers:
@@ -655,7 +657,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
-        text: '<a href="https://developer.android.com/guide/topics/media-apps/working-with-a-media-session.html" target="_blank">处理媒体会话</a>'
+        text: '<a href="https://developer.android.google.cn/guide/topics/media-apps/working-with-a-media-session.html" target="_blank">处理媒体会话</a>'
         instructor_notes: ''
         resources: null
   - id: 338407
@@ -681,7 +683,7 @@ concepts:
         question:
           prompt: |
             你应该在哪个方法中更新 MediaSession 的状态？
-          correct_feedback: ‘是 onPlayerStateChanged() 方法，它是一个ExoPlayer.EventListener，每次播放器状态发生变化时都会被调用，因此我们将在该方法中更新媒体会话。’
+          correct_feedback: '是 onPlayerStateChanged() 方法，它是一个ExoPlayer.EventListener，每次播放器状态发生变化时都会被调用，因此我们将在该方法中更新媒体会话。'
           video_feedback: null
           default_feedback: null
           answers:
@@ -705,7 +707,7 @@ concepts:
     key: f7b7f8b8-e6db-4665-b3af-190e6fc47838
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：添加媒体会话（第 2 部分）’
+    title: '练习：添加媒体会话（第 2 部分）'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -765,7 +767,7 @@ concepts:
           - 创建一个方法，以初始化 MediaSession
           - 创建一个扩展自 MediaSessionCompat.Callbacks 的内部类，并替换所需的方法
           - 根据 ExoPlayer 是在播放还是已暂停，对 PlayBackState 做出相应的更新
-          - ‘当 activity 被销毁时，将 MediaSession 设为非活动状态'
+          - '当 activity 被销毁时，将 MediaSession 设为非活动状态'
         positive_feedback: |-
           很棒！
 
@@ -776,7 +778,7 @@ concepts:
     key: 71c77fa7-b8e2-42af-ad0d-2883f9b49b18
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：MediaStyle 通知’
+    title: '练习：MediaStyle 通知'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -797,7 +799,7 @@ concepts:
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
         tags: []
-        instructor_notes: '<a href="https://developer.android.com/reference/android/support/v7/app/NotificationCompat.MediaStyle.html" target="_blank">关于 MediaStyle 通知的文档</a>'
+        instructor_notes: '<a href="https://developer.android.google.cn/reference/android/support/v7/app/NotificationCompat.MediaStyle.html" target="_blank">关于 MediaStyle 通知的文档</a>'
         resources: null
         video:
           id: '53570'
@@ -837,7 +839,7 @@ concepts:
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
         tasks:
-          - ‘创建一个显示 MediaStyle 通知的方法，具有两个操作（播放/暂停、跳到上一首）'
+          - '创建一个显示 MediaStyle 通知的方法，具有两个操作（播放/暂停、跳到上一首）'
           - 调用该方法来显示通知
         positive_feedback: |-
           新通知 - MediaStyle 通知已完成 :)
@@ -944,14 +946,14 @@ concepts:
 
           ### Noisy Intent
 
-          你需要检查某些条件。例如，你正在用最大音量播放你最喜欢的一首歌曲。几乎没人知道你最喜欢的歌曲是“Itsy Bitsy Spider”。当你正要听到高潮部分时，你被绊倒了，耳机从插孔里拔了出来。整个世界都知道了你的小秘密。比较尴尬吧？幸运的是，如果出现这种情况，Android 框架就会发出 [ACTION_AUDIO_BECOMING_NOISY](https://developer.android.com/reference/android/media/AudioManager.html#ACTION_AUDIO_BECOMING_NOISY) intent。这使你能够注册广播接收器，在出现这种情况时采取特定的操作（例如暂停音乐并避免出现尴尬情形）。 
+          你需要检查某些条件。例如，你正在用最大音量播放你最喜欢的一首歌曲。几乎没人知道你最喜欢的歌曲是“Itsy Bitsy Spider”。当你正要听到高潮部分时，你被绊倒了，耳机从插孔里拔了出来。整个世界都知道了你的小秘密。比较尴尬吧？幸运的是，如果出现这种情况，Android 框架就会发出 [ACTION_AUDIO_BECOMING_NOISY](https://developer.android.google.cn/reference/android/media/AudioManager.html#ACTION_AUDIO_BECOMING_NOISY) intent。这使你能够注册广播接收器，在出现这种情况时采取特定的操作（例如暂停音乐并避免出现尴尬情形）。 
 
           ### 音频流
 
           Android 使用不同的音频流来播放音乐、闹钟、通知、来电响铃、系统提示音、来电音量和 DTMF 提示音。这使得用户能够独立地控制每个音频流的音量。
 
           默认情况下，按下音量控件会修改当前音频流的音量。如果你的应用当前没有播放任何内容，则按下音量键会调整铃声音量。
-          为了确保音量控件调整的是正确的音频流，你应该调用 [setVolumeControlStream()](https://developer.android.com/reference/android/app/Activity.html#setVolumeControlStream(int) 传入 [AudioManager.STREAM_MUSIC](https://developer.android.com/reference/android/media/AudioManager.html#STREAM_MUSIC)。
+          为了确保音量控件调整的是正确的音频流，你应该调用 [setVolumeControlStream()](https://developer.android.google.cn/reference/android/app/Activity.html#setVolumeControlStream(int) 传入 [AudioManager.STREAM_MUSIC](https://developer.android.google.cn/reference/android/media/AudioManager.html#STREAM_MUSIC)。
 
           # ExoPlayer 额外功能
 
