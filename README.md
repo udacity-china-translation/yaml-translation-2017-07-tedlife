@@ -2,7 +2,7 @@
 
 ## 试译流程
 
-到达这一步，你应该已经在 [Google Spreadsheets](https://docs.google.com/spreadsheets/d/1A2Lpk6cz59dQDNdG9ul6RnQYR_SmgSLxPRBTEu-tQsw/edit#gid=982304948) 中认领了翻译和校对任务，并提交了截止日期。
+到达这一步，你应该已经在 [Google Spreadsheets](https://docs.google.com/spreadsheets/d/1X2D_P4K9YJq6b189vztqHUPDmzsKYvEBW0HiYier8kY/edit?usp=sharing) 中认领了翻译和校对任务，并提交了截止日期。
 现在你需要做的是：
 
 1. 使用 git 克隆 repo 至本地，创建新 branch。
@@ -10,11 +10,6 @@
 3. 在截止日期前完成任务并提交 PR
 4. 等待审核并修改
 5. 审核修改 2 次后达到 96 分即可毕业
-
-## 试译中遇到问题
-
-- 在 slack 中 #training 频道 @ivylee 提问
-- 在优达字幕组入坑答疑 QQ 群：595926064 提问
 
 
 ## 评分标准
