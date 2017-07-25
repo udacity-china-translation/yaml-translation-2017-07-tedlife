@@ -2,7 +2,7 @@ id: 338670
 key: 79936377-aa69-45ae-a386-d865dcb36518
 locale: zh-cn
 version: 1.0.0
-title: Fragment
+title: Fragments
 semantic_type: Lesson
 updated_at: 'Fri Jun 23 2017 02:09:05 GMT+0000 (UTC)'
 is_public: true
@@ -11,7 +11,7 @@ image:
   width: 592
   height: 584
 video: null
-summary: ‘在这节课，你将详细了解 **Fragment**。Fragment 是构建灵活的应用界面的基本元素。你将构建一款叫做 AndroidMe 的应用，并掌握如何创建 Fragment 的实践经验。AndroidMe 使用户能够自定义 Android 图像的头发和服饰。完成该应用后，你将了解如何使用 Fragment 和强大的模块及重复利用功能，构建美观的自适应用户界面！’
+summary: '在这节课，你将详细了解 **Fragment**。Fragment 是构建灵活的应用界面的基本元素。你将构建一款叫做 AndroidMe 的应用，并掌握如何创建 Fragment 的实践经验。AndroidMe 使用户能够自定义 Android 图像的头发和服饰。完成该应用后，你将了解如何使用 Fragment 和强大的模块及重复利用功能，构建美观的自适应用户界面！'
 lesson_type: Classroom
 duration: 240
 is_project_lesson: false
@@ -42,6 +42,16 @@ _concepts_ids:
   - 338667
   - 338668
 _project_id: null
+resources:
+  files:
+    - name: Videos Zip File
+      uri: 'http://d2uz2655q5g6b2.cloudfront.net/79936377-aa69-45ae-a386-d865dcb36518/268643/Fragments%20Videos.zip'
+    - name: Transcripts Zip File
+      uri: 'http://d2uz2655q5g6b2.cloudfront.net/79936377-aa69-45ae-a386-d865dcb36518/268643/Fragments%20Subtitles.zip'
+  google_plus_link: null
+  career_resource_center_link: null
+  coaching_appointments_link: null
+  office_hours_link: null
 concepts:
   - id: 338645
     key: cfef9808-ca3a-44d2-995a-e2553f5abc94
@@ -49,7 +59,7 @@ concepts:
     version: 1.0.0
     title: Fragment 简介
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 04:34:49 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -61,7 +71,7 @@ concepts:
         version: 1.0.0
         title: Fragment 简介
         semantic_type: VideoAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:34:48 GMT+0000 (UTC)'
         is_public: true
         tags: []
         instructor_notes: ''
@@ -84,7 +94,7 @@ concepts:
     version: 1.0.0
     title: 自适应设计
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 04:34:49 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -97,7 +107,7 @@ concepts:
         version: 1.0.0
         title: 自适应设计
         semantic_type: VideoAtom
-        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:34:49 GMT+0000 (UTC)'
         is_public: true
         tags: []
         instructor_notes: ''
@@ -120,9 +130,9 @@ concepts:
         version: 1.0.0
         title: null
         semantic_type: TextAtom
-        updated_at: 'Fri Jun 23 2017 02:09:03 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:34:49 GMT+0000 (UTC)'
         is_public: true
-        text: ‘详细了解如何[实现子代导航](https://developer.android.com/training/implementing-navigation/descendant.html)。’
+        text: '详细了解如何[实现子代导航（Descendent Navigation）](https://developer.android.google.cn/training/implementing-navigation/descendant.html)。'
         instructor_notes: ''
         resources: null
   - id: 338644
@@ -131,7 +141,7 @@ concepts:
     version: 1.0.0
     title: 为何要使用 Fragment？
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 04:34:50 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -144,7 +154,7 @@ concepts:
         version: 1.0.0
         title: 为何要使用 Fragment？
         semantic_type: VideoAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:34:50 GMT+0000 (UTC)'
         is_public: true
         tags: []
         instructor_notes: ''
@@ -167,9 +177,9 @@ concepts:
         version: 1.0.0
         title: null
         semantic_type: TextAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:34:50 GMT+0000 (UTC)'
         is_public: true
-        text: ‘请务必记住，[Fragment](https://developer.android.com/guide/components/fragments.html) 必须始终嵌入到 Activity 中，Fragment 的生命周期直接受到托管 Activity 生命周期的影响。例如，当 Activity 被暂停时，其中的所有 Fragment 也会暂停，然后该 Activity 被销毁，所有 Fragment 也会随之被销毁。’
+        text: '请务必记住，[Fragment](https://developer.android.google.cn/guide/components/fragments.html) 必须始终嵌入到 Activity 中，Fragment 的生命周期直接受到托管 Activity 生命周期的影响。例如，当 Activity 被暂停时，其中的所有 Fragment 也会暂停，然后该 Activity 被销毁，所有 Fragment 也会随之被销毁。'
         instructor_notes: ''
         resources: null
   - id: 338646
@@ -178,7 +188,7 @@ concepts:
     version: 1.0.0
     title: Fragment 的优势
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 04:34:51 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -190,13 +200,13 @@ concepts:
         version: 1.0.0
         title: Fragment 的优势
         semantic_type: CheckboxQuizAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:34:50 GMT+0000 (UTC)'
         is_public: true
         question:
           prompt: 请查看让 Fragment 非常实用的所有特性。
-          correct_feedback: ‘很棒！Fragment 可以重复利用、模块化（因为它们具有自己的生命周期），并且可以在运行时动态改变！’
+          correct_feedback: 很棒！Fragment 可以重复利用、模块化（因为它们具有自己的生命周期），并且可以在运行时动态改变！
           video_feedback: null
-          default_feedback: ‘嗯，似乎一个或多个答案不正确，请记得选中所有适用项！’
+          default_feedback: 嗯，似乎一个或多个答案不正确，请记得选中所有适用项！
           answers:
             - id: a1489182751845
               text: 可以重复利用
@@ -220,7 +230,7 @@ concepts:
     version: 1.0.0
     title: Fragment 生命周期
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 04:34:51 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -232,7 +242,7 @@ concepts:
         version: 1.0.0
         title: Fragment 生命周期
         semantic_type: VideoAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:34:51 GMT+0000 (UTC)'
         is_public: true
         tags: []
         instructor_notes: ''
@@ -255,7 +265,7 @@ concepts:
     version: 1.0.0
     title: 生命周期回调
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 04:34:52 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -267,13 +277,13 @@ concepts:
         version: 1.0.0
         title: Fragment 生命周期回调
         semantic_type: RadioQuizAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:34:52 GMT+0000 (UTC)'
         is_public: true
         question:
-          prompt: ‘对于 Activity 中的单个 Fragment，当其托管 Activity 被创建后，系统会立即调用什么生命周期回调？'
-          correct_feedback: ‘正确！当托管 Activity 被创建后，Activity 及其包含的 Fragment 会调用它们的 onCreate 方法。创建完毕后，Fragment 会调用它们的 onCreateView 方法，以便动态地填充视图！’
+          prompt: 对于 Activity 中的单个 Fragment，当其托管 Activity 被创建后，系统会立即调用什么生命周期回调？
+          correct_feedback: 正确！当托管 Activity 被创建后，Activity 及其包含的 Fragment 会调用它们的 onCreate 方法。创建完毕后，Fragment 会调用它们的 onCreateView 方法，以便动态地填充视图！
           video_feedback: null
-          default_feedback: ‘不太对！当 Activity 被创建时，它会调用 onCreate，Fragment 具有自己的方法，并紧接着立即被调用，以便填充 Fragment 的视图。’
+          default_feedback: 不太对！当 Activity 被创建时，它会调用 onCreate，Fragment 具有自己的方法，并紧接着立即被调用，以便填充 Fragment 的视图。
           answers:
             - id: a1489183245131
               text: onDestroy
@@ -301,7 +311,7 @@ concepts:
     version: 1.0.0
     title: 起始代码
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 04:34:53 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -314,7 +324,7 @@ concepts:
         version: 1.0.0
         title: 起始代码
         semantic_type: VideoAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:34:52 GMT+0000 (UTC)'
         is_public: true
         tags: []
         instructor_notes: ''
@@ -337,12 +347,12 @@ concepts:
         version: 1.0.0
         title: null
         semantic_type: TextAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:34:52 GMT+0000 (UTC)'
         is_public: true
         text: |-
           # 下载 AndroidMe 起始代码
 
-          该应用的代码位于 [AndroidMe 资源库](https://github.com/udacity/Android_Me) 中。请使用以下命令下载该资源库：
+          该应用的代码位于 [AndroidMe 代码库](https://github.com/udacity/Android_Me) 中。请使用以下命令下载该代码库：
 
           ```bash
           git clone https://github.com/udacity/Android_Me.git
@@ -360,7 +370,7 @@ concepts:
     version: 1.0.0
     title: 创建 Fragment
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 04:34:53 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -371,9 +381,9 @@ concepts:
         key: c6c6b587-9b60-4406-9326-9d64ba05723c
         locale: zh-cn
         version: 1.0.0
-        title: ‘创建 Fragment '
+        title: 创建 Fragment
         semantic_type: VideoAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:34:53 GMT+0000 (UTC)'
         is_public: true
         tags: []
         instructor_notes: ''
@@ -396,7 +406,7 @@ concepts:
         version: 1.0.0
         title: null
         semantic_type: TextAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:34:53 GMT+0000 (UTC)'
         is_public: true
         text: |-
           ### Fragment 命名规范
@@ -411,7 +421,7 @@ concepts:
 
           ### 选择 Fragment 支持库
 
-          我们的 Fragment 类使用 *v4 [支持库](https://developer.android.com/topic/libraries/support-library/packages.html)*。v4 库旨在与 Android 2.3（API 级别 9）及以上版本结合使用。与其他库相比，它们包含最庞大的 API 集合，包括对应用组件、用户界面功能、无障碍、数据处理、网络连接和编程实用工具的支持。
+          我们的 Fragment 类使用 *v4 [支持库](https://developer.android.google.cn/topic/libraries/support-library/packages.html)*。v4 库旨在与 Android 2.3（API 级别 9）及以上版本结合使用。与其他库相比，它们包含最庞大的 API 集合，包括对应用组件、用户界面功能、无障碍、数据处理、网络连接和编程实用工具的支持。
         instructor_notes: ''
         resources: null
   - id: 338652
@@ -420,7 +430,7 @@ concepts:
     version: 1.0.0
     title: 创建 Fragment 的步骤
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 04:30:35 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -432,21 +442,21 @@ concepts:
         version: 1.0.0
         title: 创建 Fragment 的有序步骤
         semantic_type: MatchingQuizAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:31:52 GMT+0000 (UTC)'
         is_public: true
         question:
           complex_prompt:
-            text: |
+            text: |-
               对你需要完成的任务进行排序，以便按照正确的执行顺序动态地显示 Fragment。 
 
               例如，要创建新的 Activity：1) 创建一个指向新 Activity 的新 Intent，2) 向该 Intent 添加所需的信息，3) 启动该 Intent（按此顺序）。
           default_feedback: |-
             似乎一个或多个步骤顺序不对。 
             *提示：* 要填充布局，你首先需要创建布局，最后一步应该是在托管 Activity 中显示 Fragment。
-          correct_feedback: ‘很棒！首先需要为 Fragment 的外观定义布局，然后创建新的 Fragment 类（用于填充之前定义的布局），最后，在托管 Activity 中创建和显示该 Fragment。'
+          correct_feedback: 很棒！首先需要为 Fragment 的外观定义布局，然后创建新的 Fragment 类（用于填充之前定义的布局），最后，在托管 Activity 中创建和显示该 Fragment。
           video_feedback: null
-          concepts_label: Task description
-          answers_label: Step number
+          concepts_label: 任务描述
+          answers_label: 步骤
           concepts:
             - text: 创建填充布局的新 Fragment 类
               default_concept_feedback: null
@@ -473,21 +483,21 @@ concepts:
                 text: '3'
               incorrect_feedbacks: []
           answers:
-            - id: a1489183712109
-              text: '2'
             - id: a1489183959601
               text: '1'
-            - id: a1489184014139
-              text: '4'
+            - id: a1489183712109
+              text: '2'
             - id: a1489184039697
               text: '3'
+            - id: a1489184014139
+              text: '4'
   - id: 338653
     key: af805185-cfc8-49da-bf97-c8d60c194fe5
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：创建 BodyPartFragment'
+    title: 练习：创建 BodyPartFragment
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 04:32:11 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -500,7 +510,7 @@ concepts:
         version: 1.0.0
         title: null
         semantic_type: TextAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:32:30 GMT+0000 (UTC)'
         is_public: true
         text: |-
           # 创建和显示 BodyPartFragment
@@ -519,27 +529,27 @@ concepts:
         version: 1.0.0
         title: ''
         semantic_type: TaskListAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:57:55 GMT+0000 (UTC)'
         is_public: true
         tasks:
           - 创建一个布局文件，用于显示一个身体部分图片，名称为 fragment_body_part.xml
           - 创建一个叫做 BodyPartFragment 的新类，用于显示 Android-Me 身体部分的图片
-          - ‘在新建的类中，显示头部图片列表中的第一张图片'
-          - ‘在 activity_android_me 布局文件中，创建一个容器来放置头部 BodyPartFragment'
+          - 在新建的类中，显示头部图片列表中的第一张图片
+          - 在 activity_android_me 布局文件中，创建一个容器来放置头部 BodyPartFragment
           - 创建一个新的 BodyPartFragment 实例，并使用 FragmentManager 显示该实例
         positive_feedback: |-
           很棒！你已经有了很好的开端，继续保持！
 
           **解决方案：**[[TFragments.01-Solution-CreateBodyPartFragment](https://github.com/udacity/Android_Me/tree/TFragments.01-Solution-CreateBodyPartFragment/app)][[Diff](https://github.com/udacity/Android_Me/compare/TFragments.01-Exercise-CreateBodyPartFragment...TFragments.01-Solution-CreateBodyPartFragment)]
         video_feedback: null
-        description: 按照相关步骤操作，完成此编程练习。
+        description: 按照步骤操作，完成此编程练习。
   - id: 338654
     key: 5af22bff-9bb3-457a-8d00-2e5a769ac575
     locale: zh-cn
     version: 1.0.0
     title: FragmentManager 和事务
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 04:58:09 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -549,9 +559,9 @@ concepts:
         key: 40f496b4-70a1-4e1b-9bad-c8ce368d5343
         locale: zh-cn
         version: 1.0.0
-        title: FragmentManager 和事务
+        title: Fragment Manager and Transactions
         semantic_type: VideoAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Wed Jun 28 2017 00:37:19 GMT+0000 (UTC)'
         is_public: true
         tags: []
         instructor_notes: ''
@@ -574,7 +584,7 @@ concepts:
     version: 1.0.0
     title: 更多 Fragment 和存储变量
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 04:58:18 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -584,9 +594,9 @@ concepts:
         key: 349582bf-859e-45fd-9451-5511004b6ac5
         locale: zh-cn
         version: 1.0.0
-        title: 更多 Fragment 和存储变量
+        title: More Fragments and Storing Variables
         semantic_type: VideoAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Wed Jun 28 2017 00:37:19 GMT+0000 (UTC)'
         is_public: true
         tags: []
         instructor_notes: ''
@@ -607,9 +617,9 @@ concepts:
     key: aa8f96d4-191e-44d2-9fd7-15f42768c2f2
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：显示三个 Fragment'
+    title: 练习：显示三个 Fragment
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 04:58:27 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -622,7 +632,7 @@ concepts:
         version: 1.0.0
         title: null
         semantic_type: TextAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 04:58:38 GMT+0000 (UTC)'
         is_public: true
         text: |-
           # 显示所有三个 BodyPartFragment
@@ -643,26 +653,26 @@ concepts:
         version: 1.0.0
         title: ''
         semantic_type: TaskListAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 05:01:21 GMT+0000 (UTC)'
         is_public: true
         tasks:
-          - ‘对于 BodyPartFragment，创建一个 setter 方法和类变量 (mImageIds)，以便设置和存储图片资源列表'
+          - 对于 BodyPartFragment，创建一个 setter 方法和类变量 (mImageIds)，以便设置和存储图片资源列表
           - 创建另一个 setter 方法和变量 (mListIndex)，以便跟踪和设置要显示的列表项的索引
-          - ‘如果存在图片 ID 列表，则将图片资源设为该列表中的正确列表项'
+          - 如果存在图片 ID 列表，则将图片资源设为该列表中的正确列表项
           - 创建和显示身体和腿部 BodyPartFragment
         positive_feedback: |-
           很棒！
 
           **解决方案：**[[TFragments.02-Solution-DisplayThreeFragments](https://github.com/udacity/Android_Me/tree/TFragments.02-Solution-DisplayThreeFragments/app)][[Diff](https://github.com/udacity/Android_Me/compare/TFragments.02-Exercise-DisplayThreeFragments...TFragments.02-Solution-DisplayThreeFragments)]
         video_feedback: null
-        description: ‘现在该你了。按照相关步骤操作，完成此编程练习。'
+        description: 现在该你了。按照相关步骤操作，完成此编程练习。
   - id: 338657
     key: 613159c2-d3e7-4f3a-bbba-8d93414637a9
     locale: zh-cn
     version: 1.0.0
     title: 练习替换 Fragment
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 05:01:34 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -672,9 +682,9 @@ concepts:
         key: 4a2acf49-bd86-4352-8581-26f1c2c706b8
         locale: zh-cn
         version: 1.0.0
-        title: 替换 Fragment
+        title: 替换 fragment
         semantic_type: RadioQuizAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 05:02:31 GMT+0000 (UTC)'
         is_public: true
         question:
           prompt: |-
@@ -693,7 +703,7 @@ concepts:
             完成事务代码，将 Fragment 容器替换成新的 BodyPartFragment。
           correct_feedback: 很棒，你能够正确地进行替换！
           video_feedback: null
-          default_feedback: ‘嗯，确保调用 commit 并替换现有的 Fragment！’
+          default_feedback: 嗯，确保调用 commit 并替换现有的 Fragment！
           answers:
             - id: a1489184461983
               text: 'ft.replace(containerID, frag);'
@@ -711,13 +721,14 @@ concepts:
               text: 'ft.replace(containerID, frag). commit();'
               is_correct: true
               incorrect_feedback: null
+          always_correct: false
   - id: 338658
     key: b70f337f-216e-4c81-bec4-62f53756cfb0
     locale: zh-cn
     version: 1.0.0
     title: 对点击做出响应
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 05:03:39 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -727,9 +738,9 @@ concepts:
         key: b2ce2c25-e29c-470a-bb21-6711e707994b
         locale: zh-cn
         version: 1.0.0
-        title: 对点击做出响应
+        title: Responding to Clicks
         semantic_type: VideoAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Wed Jun 28 2017 00:37:19 GMT+0000 (UTC)'
         is_public: true
         tags: []
         instructor_notes: ''
@@ -750,9 +761,9 @@ concepts:
     key: 41c6adc0-139c-4d29-8954-2e61884d3494
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：点击响应和保存状态'
+    title: 练习：点击响应和保存状态
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 05:03:53 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -765,7 +776,7 @@ concepts:
         version: 1.0.0
         title: null
         semantic_type: TextAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 05:04:04 GMT+0000 (UTC)'
         is_public: true
         text: |-
           # 添加 ClickListener 并保存状态
@@ -786,14 +797,14 @@ concepts:
         version: 1.0.0
         title: ''
         semantic_type: TaskListAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 05:05:40 GMT+0000 (UTC)'
         is_public: true
         tasks:
-          - ‘在 BodyPartFragment 类中，在图片视图上设置点击监听器并递增列表索引，同时设置图片资源'
-          - ‘如果到达图片列表末尾，则将列表索引重新设为 0（即列表中的第一项）'
+          - 在 BodyPartFragment 类中，在图片视图上设置点击监听器并递增列表索引，同时设置图片资源
+          - 如果到达图片列表末尾，则将列表索引重新设为 0（即列表中的第一项）
           - 创建最终字符串，以存储关于图片列表的状态信息和列表索引
           - 覆盖 onSaveInstanceState 并保存 Fragment 的当前状态
-          - ‘在托管 Activity 中，仅在没有之前保存的状态时创建新的 Fragment'
+          - 在托管 Activity 中，仅在没有之前保存的状态时创建新的 Fragment
         positive_feedback: |-
           很棒！
 
@@ -818,7 +829,7 @@ concepts:
         version: 1.0.0
         title: Master List Fragment
         semantic_type: VideoAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Wed Jun 28 2017 00:37:19 GMT+0000 (UTC)'
         is_public: true
         tags: []
         instructor_notes: ''
@@ -839,9 +850,9 @@ concepts:
     key: e4d6dffa-89ca-43d3-9bd0-47dde7fa6761
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：创建 MasterListFragment'
+    title: 练习：创建 MasterListFragment
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 05:06:00 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -854,7 +865,7 @@ concepts:
         version: 1.0.0
         title: null
         semantic_type: TextAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 05:06:10 GMT+0000 (UTC)'
         is_public: true
         text: |-
           # 创建并显示 Master List Fragment
@@ -873,12 +884,12 @@ concepts:
         version: 1.0.0
         title: ''
         semantic_type: TaskListAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 05:07:10 GMT+0000 (UTC)'
         is_public: true
         tasks:
           - 创建 fragment_master_list.xml 布局文件来显示所有图片；应该是 GridView
           - 创建一个叫做 MasterListFragment 的新类，该类将显示所有 AndroidMe 图片的 GridView 列表
-          - ‘在 MasterListFragment 类中，创建一个新的 MasterListAdapter 并将其设置到 GridView 上’
+          - 在 MasterListFragment 类中，创建一个新的 MasterListAdapter 并将其设置到 GridView 上
           - 创建一个叫做 MainActivity 的新 Activity，并创建相应的布局文件，用来显示 MasterListFragment
           - 在 Manifest 中声明 MainActivity，并将其设为打开此应用时启动
         positive_feedback: |-
@@ -891,9 +902,9 @@ concepts:
     key: 49a9c01b-e81a-4102-9ba8-c4055c31e22d
     locale: zh-cn
     version: 1.0.0
-    title: '在 Fragment 之间通信'
+    title: 在 Fragment 之间通信
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 05:07:22 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -903,9 +914,9 @@ concepts:
         key: 8a2256fd-451b-4d66-be18-25436a06d3b2
         locale: zh-cn
         version: 1.0.0
-        title: 在 Fragment 之间通信
+        title: Communicating Between Fragments
         semantic_type: VideoAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Wed Jun 28 2017 00:37:19 GMT+0000 (UTC)'
         is_public: true
         tags: []
         instructor_notes: ''
@@ -928,7 +939,7 @@ concepts:
     version: 1.0.0
     title: 定义接口
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 05:07:29 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -938,9 +949,9 @@ concepts:
         key: 0ee9a583-6267-476d-a990-cb7bcf94c380
         locale: zh-cn
         version: 1.0.0
-        title: 定义接口
+        title: Define An Interface
         semantic_type: VideoAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Wed Jun 28 2017 00:37:18 GMT+0000 (UTC)'
         is_public: true
         tags: []
         instructor_notes: ''
@@ -961,9 +972,9 @@ concepts:
     key: a814286a-4223-4bb8-9a61-881299668275
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：接口通信'
+    title: 练习：接口通信
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 05:07:37 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -976,7 +987,7 @@ concepts:
         version: 1.0.0
         title: null
         semantic_type: TextAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 05:07:48 GMT+0000 (UTC)'
         is_public: true
         text: |-
           # 定义接口
@@ -997,13 +1008,13 @@ concepts:
         version: 1.0.0
         title: ''
         semantic_type: TaskListAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 05:08:41 GMT+0000 (UTC)'
         is_public: true
         tasks:
-          - ‘在 MasterListFragment 类中定义一个新的接口 OnImageClickListener，该监听器会在托管 Activity 中触发回调'
+          - 在 MasterListFragment 类中定义一个新的接口 OnImageClickListener，该监听器会在托管 Activity 中触发回调
           - 覆盖 onAttach 以确保容器 Activity 已实现回调
           - 在 gridView 上设置点击监听器，并在点击某项时触发回调 onImageSelected
-          - ‘在 MainActivity 中，实现 MasterListFragment 回调：OnImageClickListener'
+          - 在 MainActivity 中，实现 MasterListFragment 回调：OnImageClickListener
           - 定义 onImageSelected 回调方法的行为，并创建一条 Toast 消息，用来显示所点击的位置
         positive_feedback: |-
           很棒！
@@ -1017,7 +1028,7 @@ concepts:
     version: 1.0.0
     title: 在 Activity 之间通信
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 05:08:52 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -1027,9 +1038,9 @@ concepts:
         key: 5997fe03-6419-45f4-a862-594657745420
         locale: zh-cn
         version: 1.0.0
-        title: 在 Activity 之间通信
+        title: Communicate Between Activities
         semantic_type: VideoAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Wed Jun 28 2017 00:37:19 GMT+0000 (UTC)'
         is_public: true
         tags: []
         instructor_notes: ''
@@ -1050,9 +1061,9 @@ concepts:
     key: 154d3714-c4ba-4389-8c10-584baac47804
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：在 Activity 之间通信'
+    title: 练习：在 Activity 之间通信
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 05:09:02 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -1065,7 +1076,7 @@ concepts:
         version: 1.0.0
         title: null
         semantic_type: TextAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 05:09:12 GMT+0000 (UTC)'
         is_public: true
         text: |-
           # 在 Activity 之间通信
@@ -1082,14 +1093,14 @@ concepts:
         version: 1.0.0
         title: ''
         semantic_type: TaskListAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 05:09:59 GMT+0000 (UTC)'
         is_public: true
         tasks:
           - 将 Master List 布局变成 LinearLayout 并在 gridview 的底部添加“Next”按钮
-          - ‘在 MainActivity 中，根据用户的点击位置存储头部、身体和腿部 BodyPartFragment 的所选列表索引'
+          - 在 MainActivity 中，根据用户的点击位置存储头部、身体和腿部 BodyPartFragment 的所选列表索引
           - 将所选图片信息放入 Bundle 并将其附到将启动 AndroidMeActivity 的 Intent 上
           - 获取“Next”按钮的引用，并在该按钮被点击时启动该 Intent
-          - ‘在 AndroidMeActivity 中，检索通过 Intent 发送的捆绑列表索引值，并使用这些值来显示相关 AndroidMe 身体图片'
+          - 在 AndroidMeActivity 中，检索通过 Intent 发送的捆绑列表索引值，并使用这些值来显示相关 AndroidMe 身体图片
         positive_feedback: |-
           很棒！
 
@@ -1100,9 +1111,9 @@ concepts:
     key: c2fa39f7-e4ed-4340-97dc-351dc7b84fbe
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：双窗格布局'
+    title: 练习：双窗格布局
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 05:10:12 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -1116,10 +1127,10 @@ concepts:
         version: 1.0.0
         title: null
         semantic_type: TextAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 05:12:49 GMT+0000 (UTC)'
         is_public: true
-        text: |
-          #  任务名称
+        text: |-
+          # 任务名称
 
           在最后这道练习中，你将为平板电脑视图创建双窗格布局。你需要为平板电脑创建新的布局文件夹，并切实地利用 Fragment 的灵活、可重复利用及模块化特性！
 
@@ -1137,9 +1148,9 @@ concepts:
         key: 5986a9c3-3946-48a5-b67d-497da2decced
         locale: zh-cn
         version: 1.0.0
-        title: 双窗格布局
+        title: Two Pane Layout
         semantic_type: VideoAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Wed Jun 28 2017 00:37:19 GMT+0000 (UTC)'
         is_public: true
         tags: []
         instructor_notes: ''
@@ -1162,14 +1173,14 @@ concepts:
         version: 1.0.0
         title: ''
         semantic_type: TaskListAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Tue Jul 25 2017 05:12:54 GMT+0000 (UTC)'
         is_public: true
         tasks:
-          - ‘在新文件夹中为平板电脑创建新的双窗格 activity_main layout (sw600dp)，并覆盖默认的布局资源'
+          - 在新文件夹中为平板电脑创建新的双窗格 activity_main layout (sw600dp)，并覆盖默认的布局资源
           - 构建布局来并排显示 MasterListFragment 及所有 BodyPartFragment
-          - ‘在 MainActivity 中，创建一个变量来跟踪是显示双窗格还是单窗格 UI'
-          - ‘如果你要构建双窗格视图，请添加新的 BodyPartFragment 以创建初始 AndroidMe 图片’
-          - ‘在 onImageSelected 回调中，处理双窗格 case 并且当用户选中 master list 中的新图片时替换现有的 Fragment'
+          - 在 MainActivity 中，创建一个变量来跟踪是显示双窗格还是单窗格 UI
+          - 如果你要构建双窗格视图，请添加新的 BodyPartFragment 以创建初始 AndroidMe 图片
+          - 在 onImageSelected 回调中，处理双窗格 case 并且当用户选中 master list 中的新图片时替换现有的 Fragment
         positive_feedback: |-
           哇，很棒！你已经创建完这款应用了！
 
@@ -1182,7 +1193,7 @@ concepts:
     version: 1.0.0
     title: Fragment 结尾部分
     semantic_type: Concept
-    updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+    updated_at: 'Tue Jul 25 2017 05:13:02 GMT+0000 (UTC)'
     is_public: true
     resources: null
     _atoms_ids:
@@ -1192,9 +1203,9 @@ concepts:
         key: 360801be-ebf7-4637-9239-f4358e866969
         locale: zh-cn
         version: 1.0.0
-        title: Fragment 结尾部分
+        title: Fragments Outro
         semantic_type: VideoAtom
-        updated_at: 'Fri Jun 23 2017 02:09:04 GMT+0000 (UTC)'
+        updated_at: 'Wed Jun 28 2017 00:37:18 GMT+0000 (UTC)'
         is_public: true
         tags: []
         instructor_notes: ''

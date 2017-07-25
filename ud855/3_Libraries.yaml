@@ -11,7 +11,7 @@ image:
   width: 718
   height: 712
 video: null
-summary: ‘在这节课，你将学习如何在应用中包含外部库。借助库，你只需添加几行代码就能实现强大的功能。当你构建一款应用时就会发现库的作用，该应该使用 Google Mobile Vision library 将照片中的面部表情转换成最接近的表情符号。学完这节课后，你将了解如何查找并选择满足需求的库，以及几个常用 Android 库的名称。’
+summary: '在这节课，你将学习如何在应用中包含外部库。借助库，你只需添加几行代码，就能实现强大的功能。当你构建一款使用 Google Mobile Vision library 将照片中的面部表情转换成最接近的表情符号的应用时，就会发现库的作用。学完这节课后，你将了解如何查找并选择满足需求的库，以及几个常用 Android 库的名称。'
 lesson_type: Classroom
 duration: 180
 is_project_lesson: false
@@ -83,7 +83,7 @@ concepts:
     key: 1287e3dc-4c9b-49eb-841f-2fca32996ca8
     locale: zh-cn
     version: 1.0.0
-    title: ‘你已经使用过的库'
+    title: '你已经使用过的库'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -102,7 +102,7 @@ concepts:
         text: |-
           # 你已经使用过的库
 
-          你一直在使用的第一个库是 <a href="https://developer.android.com/topic/libraries/support-library/index.html" target="_blank">Support Library</a>，该库可以提供 Android 新功能的向后兼容性。此外，它还提供了标准 Framework API 中不存在的类和功能，使你能够更轻松地开发应用并支持更多设备。
+          你一直在使用的第一个库是 <a href="https://developer.android.google.cn/topic/libraries/support-library/index.html" target="_blank">Support Library</a>，该库可以提供 Android 新功能的向后兼容性。此外，它还提供了标准 Framework API 中不存在的类和功能，使你能够更轻松地开发应用并支持更多设备。
 
           Support Library 的一个实际使用示例是运行时权限。当应用被安装时，旧版权限模型会请求所需的权限。但是，从 API 级别 23 开始，应用会在需要时请求权限。这一方法简化了应用安装流程，因为用户在安装或更新应用时不需要授予权限。还使用户对应用的功能更具掌控力；例如，用户可以授予 Google+ 应用通讯录访问权，但是不授予设备位置信息或相机访问权。
 
@@ -110,7 +110,7 @@ concepts:
 
           Support Library 非常庞大，所以当你只需获得运行时权限兼容支持时，包含整个库肯定有点多余。正因如此，Support Library 根据功能分成了很多不同的程序包，使你能够仅添加你的应用需要的功能（还记得之前你仅包含了 Support Library 中的 `RecyclerView` 语句吗）。
 
-          要查看完整的程序包列表及其用途，请参阅 <a href="https://developer.android.com/topic/libraries/support-library/index.html" target="_blank">Support Library 文档</a>。
+          要查看完整的程序包列表及其用途，请参阅 <a href="https://developer.android.google.cn/topic/libraries/support-library/index.html" target="_blank">Support Library 文档</a>。
         instructor_notes: ''
         resources: null
   - id: 338248
@@ -152,7 +152,7 @@ concepts:
     key: 210bc127-87a3-4b63-8755-d9443b2dc4c3
     locale: zh-cn
     version: 1.0.0
-    title: ‘测验：何时使用库’
+    title: '测验：何时使用库'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -202,7 +202,7 @@ concepts:
               is_correct: true
               incorrect_feedback: null
             - id: a1489685068192
-              text: ‘添加条形码扫描功能'
+              text: '添加条形码扫描功能'
               is_correct: true
               incorrect_feedback: null
             - id: a1489685071462
@@ -278,7 +278,7 @@ concepts:
           请注意：即使发现可以完全满足需求的完美库，也不要基于将其添加到应用中。使用维护不当或没有合理支持文档的库会产生很多其他问题，可能导致的麻烦比实际作用还大。下个视频将专门介绍某个库是否适合你的应用。
 
           ### 64K 方法上限
-          在判断是否使用某个库时还需要注意的一个事项是它将对应用大小产生什么样的影响。当你的应用在添加库后达到了一定的大小，你就会遇到版本错误，表明你的应用达到了 Android 版本应用架构（[64K 方法上限](https://developer.android.com/studio/build/multidex.html)）上限。库用途广泛，毫无疑问很高效，但是请务必注意这些事项。
+          在判断是否使用某个库时还需要注意的一个事项是它将对应用大小产生什么样的影响。当你的应用在添加库后达到了一定的大小，你就会遇到版本错误，表明你的应用达到了 Android 版本应用架构（[64K 方法上限](https://developer.android.google.cn/studio/build/multidex.html)）上限。库用途广泛，毫无疑问很高效，但是请务必注意这些事项。
         instructor_notes: ''
         resources: null
   - id: 338307
@@ -369,7 +369,7 @@ concepts:
     key: 07f2f37a-0d1c-4d58-b1ae-904822c5f26a
     locale: zh-cn
     version: 1.0.0
-    title: ‘测验：探索库'
+    title: '测验：探索库'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -401,7 +401,7 @@ concepts:
         is_public: true
         question:
           prompt: 使用 Mobile Vision 库检测位图中的面孔时涉及了下面的哪些类？
-          correct_feedback: ‘很棒！ FaceDetecor、Frame 和 Face 类分别使用 Mobile Vision 库处理面孔识别。'
+          correct_feedback: '很棒！ FaceDetecor、Frame 和 Face 类分别使用 Mobile Vision 库处理面孔识别。'
           video_feedback: null
           default_feedback: null
           answers:
@@ -425,7 +425,7 @@ concepts:
     key: ff3a859c-3dd8-4c1d-9969-70f796af4fd7
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：探索起始代码'
+    title: '练习：探索起始代码'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -468,9 +468,9 @@ concepts:
         text: |-
           # Emojify 代码
 
-          该应用的代码位于 [Emojify 资源库](https://github.com/udacity/AdvancedAndroid_Emojify)中。你可以在 [Android 开发者文档](https://developer.android.com/training/permissions/requesting.html)中查找运行时权限信息。
+          该应用的代码位于 [Emojify 代码库](https://github.com/udacity/AdvancedAndroid_Emojify)中。你可以在 [Android 开发者文档](https://developer.android.google.cn/training/permissions/requesting.html)中查找运行时权限信息。
 
-          请使用以下命令下载该资源库：
+          请使用以下命令下载该代码库：
 
           ```bash
           git clone https://github.com/udacity/AdvancedAndroid_Emojify.git
@@ -488,7 +488,7 @@ concepts:
     key: 6b80a4fa-fcdc-4409-b03d-be5b4578a534
     locale: zh-cn
     version: 1.0.0
-    title: ‘探索起始代码：Bitmap Utils'
+    title: '探索起始代码：Bitmap Utils'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -563,7 +563,7 @@ concepts:
     key: b5bff7d4-f1f6-452f-9fff-2677298b6aa1
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：添加 Gradle 依赖项’
+    title: '练习：添加 Gradle 依赖项'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -636,7 +636,7 @@ concepts:
     key: 1d024e2d-92b6-4028-be45-005efd72049d
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：面孔检测简介’
+    title: '练习：面孔检测简介'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -650,7 +650,7 @@ concepts:
         key: 7cd65a0e-b51a-4cc6-b40e-1d066fe5807f
         locale: zh-cn
         version: 1.0.0
-        title: ‘练习：面孔检测简介’
+        title: '练习：面孔检测简介'
         semantic_type: VideoAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
@@ -698,13 +698,13 @@ concepts:
         tasks:
           - 创建一个叫做 Emojifier 的 Java 类
           - 在 Emojifier 类中创建一个叫做 detectFaces() 的静态方法，该方法会检测给定位图中的面孔数量并输出到日志中
-          - ‘调用新的 detectFaces() 方法，传入重新取样的位图以检测照片中的面孔'
+          - '调用新的 detectFaces() 方法，传入重新取样的位图以检测照片中的面孔'
         positive_feedback: |-
           很棒！
 
           **解决方案：**[[https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.02-Solution-DetectFaces)][[Diff](https://github.com/udacity/AdvancedAndroid_Emojify/compare/TLIB.02-Exercise-DetectFaces...TLIB.02-Solution-DetectFaces?expand=1)]
         video_feedback: null
-        description: ‘请完成此练习中的 TODO：’
+        description: '请完成此练习中的 TODO：'
   - id: 338324
     key: 801710e8-f10e-4f0e-aeda-2b90aa2f1117
     locale: zh-cn
@@ -727,7 +727,7 @@ concepts:
         is_public: true
         question:
           prompt: 你应该使用哪两个方法及 FaceDetector.Builder 来开启分类功能并通过停用跟踪功能（如果连续的两个帧中存在相同的面孔，则保留二者之间的 ID）改善效果？
-          correct_feedback: ‘很棒！`setClassificationType(FaceDetector.ALL_CLASSIFICATIONS)` 和 `setTrackingEnabled(false)` 是正确的方法。’
+          correct_feedback: '很棒！`setClassificationType(FaceDetector.ALL_CLASSIFICATIONS)` 和 `setTrackingEnabled(false)` 是正确的方法。'
           video_feedback: null
           default_feedback: null
           answers:
@@ -786,7 +786,7 @@ concepts:
     key: e7fe3da4-e548-4386-aa84-180cefccf9a8
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：获取概率'
+    title: '练习：获取概率'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -847,13 +847,13 @@ concepts:
         is_public: true
         tasks:
           - 创建一个叫做 getClassifications() 的方法，该方法会将双眼都睁开并保持微笑的概率输出到日志中
-          - ‘循环浏览面孔，并针对每个面孔调用 getClassifications()'
+          - '循环浏览面孔，并针对每个面孔调用 getClassifications()'
         positive_feedback: |-
           已输出概率 :D
 
           **解决方案：**[[TLIB.03-Solution-GetClassificationProbabilities](https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.03-Solution-GetClassificationProbabilities)][[Diff](https://github.com/udacity/AdvancedAndroid_Emojify/compare/TLIB.03-Exercise-GetClassificationProbabilities...TLIB.03-Solution-GetClassificationProbabilities?expand=1)]
         video_feedback: null
-        description: ‘请完成此练习中的 TODO：’
+        description: '请完成此练习中的 TODO：'
   - id: 338328
     key: b8ac18d7-d0a5-4ee5-bcd9-ecd515152acc
     locale: zh-cn
@@ -898,14 +898,14 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
-        text: '详细了解 [Canvas Object](https://developer.android.com/reference/android/graphics/Canvas.html)'
+        text: '详细了解 [Canvas Object](https://developer.android.google.cn/reference/android/graphics/Canvas.html)'
         instructor_notes: ''
         resources: null
   - id: 338333
     key: 2e2f93db-10a2-4efa-9a70-91905e98050c
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：生成表情符号'
+    title: '练习：生成表情符号'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -919,7 +919,7 @@ concepts:
         key: 6fd0d8e1-7575-4e9b-9e48-995df529d5d5
         locale: zh-cn
         version: 1.0.0
-        title: ‘练习：生成表情符号’
+        title: '练习：生成表情符号'
         semantic_type: VideoAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
@@ -967,7 +967,7 @@ concepts:
         tasks:
           - 创建一个叫做 Emoji 的枚举类，其中包含你可以制作的所有可能表情符号
           - 将 getClassifications() 方法的名称改为 whichEmoji()
-          - ‘创建微笑和眼睛睁开的阈值常量'
+          - '创建微笑和眼睛睁开的阈值常量'
           - 创建 3 个布尔变量，以跟踪面部表情的状态
           - 创建一个 if/else 体系，以选择相应的表情符号
         positive_feedback: |-
@@ -975,7 +975,7 @@ concepts:
 
           **解决方案：**[[TLIB.04-Solution-MatchFaceToEmoji](https://github.com/udacity/AdvancedAndroid_Emojify/tree/TLIB.04-Solution-MatchFaceToEmoji)][[Diff](https://github.com/udacity/AdvancedAndroid_Emojify/compare/TLIB.04-Exercise-MatchFaceToEmoji...TLIB.04-Solution-MatchFaceToEmoji?expand=1)]
         video_feedback: null
-        description: ‘请完成此练习中的 TODO：’
+        description: '请完成此练习中的 TODO：'
   - id: 338334
     key: 20d7c0a4-bc83-4b99-b29d-31c331d846b2
     locale: zh-cn
@@ -1015,7 +1015,7 @@ concepts:
     key: a865723f-d61d-487a-ab24-7ebd97589e94
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：叠加表情符号 - 第 1 步’
+    title: '练习：叠加表情符号 - 第 1 步'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -1053,7 +1053,7 @@ concepts:
 
           下一步是创建一个新的方法 `addBitmapToFace()`，该方法会传入我们刚刚提到的三个组件（照片位图、表情符号位图和面孔对象），并在每次循环时用表情符号位图覆盖检测到的面孔，返回组合的位图结果。 
 
-          组合位图很简单，但这节课就不介绍了。你可以下方的方法代码，我将在下节课介绍相关功能。要详细了解如何处理 2D 图片，请参阅该[开发者文档](https://developer.android.com/guide/topics/graphics/2d-graphics.html)。
+          组合位图很简单，但这节课就不介绍了。你可以下方的方法代码，我将在下节课介绍相关功能。要详细了解如何处理 2D 图片，请参阅该[开发者文档](https://developer.android.google.cn/guide/topics/graphics/2d-graphics.html)。
 
           ```
 
@@ -1216,7 +1216,7 @@ concepts:
     key: 62247b4f-a1d6-4653-9c34-da8fd7bdc4c0
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：常用库'
+    title: '练习：常用库'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -1383,6 +1383,6 @@ concepts:
         is_public: true
         text: |-
           # 讲师注释
-          请参阅该[开发者文档](https://developer.android.com/studio/projects/android-library.html)，了解如何创建 Android 库。
+          请参阅该[开发者文档](https://developer.android.google.cn/studio/projects/android-library.html)，了解如何创建 Android 库。
         instructor_notes: ''
         resources: null

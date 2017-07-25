@@ -11,7 +11,7 @@ image:
   width: 394
   height: 392
 video: null
-summary: ‘在这节课，你将了解 Android 如何使用 GPS 和其他机器在全球范围内定位设备。当设备进入或离开某个地点时，你将使用 Geofence 触发相关操作'
+summary: '在这节课，你将了解 Android 如何使用 GPS 和其他机器在全球范围内定位设备。当设备进入或离开某个地点时，你将使用 Geofence 触发相关操作。'
 lesson_type: Classroom
 duration: 120
 is_project_lesson: false
@@ -99,9 +99,9 @@ concepts:
         text: |+
           # ShushMe 代码
 
-          该应用的代码位于此 [Github](https://github.com/udacity/AdvancedAndroid_Shushme) 资源库中。
+          该应用的代码位于此 [Github](https://github.com/udacity/AdvancedAndroid_Shushme) 代码库中。
 
-          在这节课，我们将逐步构建该应用。每步都是资源库中的独立分支，你可以从此[分支](https://github.com/udacity/AdvancedAndroid_Shushme/tree/StarterCode)下载起始代码
+          在这节课，我们将逐步构建该应用。每步都是代码库中的独立分支，你可以从此[分支](https://github.com/udacity/AdvancedAndroid_Shushme/tree/StarterCode)下载起始代码
 
           稍后我们将通读起始代码，并解释其中包含的已有代码。
 
@@ -248,7 +248,7 @@ concepts:
     key: 07569457-bf4b-4431-8733-bf83221e63b6
     locale: zh-cn
     version: 1.0.0
-    title: ‘包含 API 密钥'
+    title: '包含 API 密钥'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -304,7 +304,7 @@ concepts:
           prompt: |-
             请查看 Places API 文档并匹配其中包含的功能。
             Places API：https://developers.google.com/places/android-api/reference
-          correct_feedback: ‘正确！这些方法来自 Places API。’
+          correct_feedback: '正确！这些方法来自 Places API。'
           video_feedback: null
           default_feedback: null
           answers:
@@ -339,8 +339,8 @@ concepts:
         question:
           prompt: |-
             请查看 Location API 文档并匹配其中包含的功能。 
-            Location API：https://developer.android.com/reference/android/location/Location.html
-          correct_feedback: ‘很棒！这些方法来自 Location API`。 '
+            Location API：https://developer.android.google.cn/reference/android/location/Location.html
+          correct_feedback: '很棒！这些方法来自 Location API`。 '
           video_feedback: null
           default_feedback: null
           answers:
@@ -511,7 +511,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
-        text: ‘并接着实现所需的方法：’
+        text: '并接着实现所需的方法：'
         instructor_notes: ''
         resources: null
       - id: 338284
@@ -603,7 +603,7 @@ concepts:
     key: 308376ba-7d87-4c77-81a1-f2991062ebf0
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：GoogleAPIClient'
+    title: '练习：GoogleAPIClient'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
     is_public: true
@@ -645,7 +645,7 @@ concepts:
           - 为 INTERNET 和 ACCESS_FINE_LOCATION 添加用户权限标签
           - 添加 play-services-places 和 play-services-location 依赖项
           - 使用 LocationServices API 和 GEO_DATA_API 创建 GoogleApiClient
-          - ‘覆盖 GoogleApiClient 的 onConnected、onConnectionSuspended 和 onConnectionFailed'
+          - '覆盖 GoogleApiClient 的 onConnected、onConnectionSuspended 和 onConnectionFailed'
           - 添加一个 LinearLayout，其中包含可以授予位置信息权限的复选框
           - 覆盖 onResume 并在其中初始化位置信息权限复选框
           - 实现 onLocationPermissionClicked 以处理 CheckBox 点击事件
@@ -660,7 +660,7 @@ concepts:
     key: 57045f88-6f6e-41a5-97f1-42e56fcd802a
     locale: zh-cn
     version: 1.0.0
-    title: ‘地点选择器'
+    title: '地点选择器'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
     is_public: true
@@ -695,7 +695,7 @@ concepts:
     key: c6c12a90-a958-4f8d-957e-080a4cbf7ea9
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：地点选择器'
+    title: '练习：地点选择器'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
     is_public: true
@@ -707,7 +707,7 @@ concepts:
         key: cffc8637-0236-4df6-a761-70de95228b6d
         locale: zh-cn
         version: 1.0.0
-        title: ‘练习：地点选择器’
+        title: '练习：地点选择器'
         semantic_type: TaskListAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
@@ -715,7 +715,7 @@ concepts:
           - 创建一个 PlacePicker.IntentBuilder 并调用 startActivityForResult
           - 处理 GooglePlayServices 异常
           - 事项 onActivityResult 并检查确保 requestCode 为 PLACE_PICKER_REQUEST
-          - ‘在 onActivityResult 中使用 PlacePicker.getPlace 来提取 Place ID 并将其插入 DB'
+          - '在 onActivityResult 中使用 PlacePicker.getPlace 来提取 Place ID 并将其插入 DB'
         positive_feedback: '**解决方案：**[[T0X.02-Solution-PlacePicker](https://github.com/udacity/AdvancedAndroid_Shushme/tree/T0X.02-Solution-PlacePicker)][[Diff](https://github.com/udacity/AdvancedAndroid_Shushme/compare/T0X.02-Exercise-PlacePicker...T0X.02-Solution-PlacePicker)]'
         video_feedback: null
         description: |-
@@ -763,7 +763,7 @@ concepts:
     key: 9b5d5329-260c-440c-9d97-38c5c6420913
     locale: zh-cn
     version: 1.0.0
-    title: 'Places API：隐私权和信息出处’
+    title: 'Places API：隐私权和信息出处'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
     is_public: true
@@ -816,7 +816,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
-        text: 'Places 库捆绑了这些徽标的两个版本：根据你的背景进行选择的浅色版本和深色版本，使你能够直接使用，无需修改。’
+        text: 'Places 库捆绑了这些徽标的两个版本：根据你的背景进行选择的浅色版本和深色版本，使你能够直接使用，无需修改。'
         instructor_notes: ''
         resources: null
       - id: 338311
@@ -868,7 +868,7 @@ concepts:
     key: e3199c61-4c12-4f97-bc24-fb8a247119c9
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：GetPlaceById'
+    title: '练习：GetPlaceById'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
     is_public: true
@@ -900,7 +900,7 @@ concepts:
         key: 9136b471-4fd6-433c-baf7-4f52bd8c14eb
         locale: zh-cn
         version: 1.0.0
-        title: ‘练习：GetPlaceById'
+        title: '练习：GetPlaceById'
         semantic_type: TaskListAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
@@ -971,7 +971,7 @@ concepts:
         is_public: true
         question:
           prompt: 与 GPS 查询方法相比，下面的哪些场景更适合使用地理围栏？
-          correct_feedback: ‘很棒! 这些场景适合使用地理围栏，因为你只需跟踪用户是否进入/离开特定的地理围栏。’
+          correct_feedback: '很棒! 这些场景适合使用地理围栏，因为你只需跟踪用户是否进入/离开特定的地理围栏。'
           video_feedback: null
           default_feedback: null
           answers:
@@ -995,7 +995,7 @@ concepts:
     key: 8a72a33f-0337-464a-9786-cb2cfcc28ed0
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：地理围栏'
+    title: '练习：地理围栏'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
     is_public: true
@@ -1050,7 +1050,7 @@ concepts:
         key: af65fbda-b7ca-4d34-8f57-2d4cb047e594
         locale: zh-cn
         version: 1.0.0
-        title: ‘练习：地理围栏’
+        title: '练习：地理围栏'
         semantic_type: TaskListAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
@@ -1064,7 +1064,7 @@ concepts:
           - 设置切换按钮以启用/停用所有地理围栏
         positive_feedback: '**解决方案：**[[T0X.04-Solution-Geofencing](https://github.com/udacity/AdvancedAndroid_Shushme/tree/T0X.04-Solution-Geofencing)][[Diff](https://github.com/udacity/AdvancedAndroid_Shushme/compare/T0X.04-Exercise-Geofencing...T0X.04-Solution-Geofencing)]'
         video_feedback: null
-        description: ‘现在该你了。请按照相关步骤操作，完成这道编程练习。’
+        description: '现在该你了。请按照相关步骤操作，完成这道编程练习。'
   - id: 338396
     key: b39277d9-8078-4b01-919e-ae0e125145e1
     locale: zh-cn
@@ -1139,7 +1139,7 @@ concepts:
     key: fe38f63f-0a1e-4a48-a58c-d3d10417d08f
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：静音模式'
+    title: '练习：静音模式'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:02 GMT+0000 (UTC)'
     is_public: true
@@ -1359,7 +1359,7 @@ concepts:
           - 显示通知，以提醒用户响铃模式已更改
         positive_feedback: '**解决方案：**[[T0X.05-Solution-SilentMode](https://github.com/udacity/AdvancedAndroid_Shushme/tree/T0X.05-Solution-SilentMode)][[Diff](https://github.com/udacity/AdvancedAndroid_Shushme/compare/T0X.05-Exercise-SilentMode...T0X.05-Solution-SilentMode)]'
         video_feedback: null
-        description: ‘现在该你了。请按照相关步骤操作，完成这道编程练习。’
+        description: '现在该你了。请按照相关步骤操作，完成这道编程练习。'
   - id: 338403
     key: bb933a9a-a10c-4fef-92fa-4c5a2deaac87
     locale: zh-cn

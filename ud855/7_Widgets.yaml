@@ -11,7 +11,7 @@ image:
   width: 1098
   height: 1102
 video: null
-summary: ‘在这节课，你将创建一个可以放置在主屏幕上的应用小部件。小部件是一种快捷方式，可以显示应用的动态消息并处理点击事件。’
+summary: '在这节课，你将创建一个可以放置在主屏幕上的应用小部件。小部件是一种快捷方式，可以显示应用的动态消息并处理点击事件。'
 lesson_type: Classroom
 duration: 120
 is_project_lesson: false
@@ -67,7 +67,9 @@ concepts:
         video:
           id: '55943'
           youtube_id: w2wvgv57fvA
-          subtitles: []
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/May/59134e37_01-introduction-to-widgets-hs-v2/subtitles/lang_en_vs1.srt'    
+              language_code: en
           transcodings:
             uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/59134e37_01-introduction-to-widgets-hs-v2/01-introduction-to-widgets-hs-v2_480p.mp4'
             uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/59134e37_01-introduction-to-widgets-hs-v2/01-introduction-to-widgets-hs-v2_480p_1000kbps.mp4'
@@ -156,7 +158,7 @@ concepts:
         text: |-
           # My Garden 代码
 
-          该应用的代码位于 [MyGarden 资源库](https://github.com/udacity/AdvancedAndroid_MyGarden/tree/Starter_Code)中。请使用以下命令下载该资源库：
+          该应用的代码位于 [MyGarden 代码库](https://github.com/udacity/AdvancedAndroid_MyGarden/tree/Starter_Code)中。请使用以下命令下载该代码库：
 
           ```bash
           git clone https://github.com/udacity/AdvancedAndroid_MyGarden.git
@@ -196,7 +198,7 @@ concepts:
             答对了，getPlantImageRes 是我们为你创建的一个非常实用的方法。
             在这节课，我们将经常用到该方法，还有助于你熟悉 PlantUtils 类中的剩余方法，以及整个应用的一般架构。
           video_feedback: null
-          default_feedback: ‘再试一遍！确保你查看的是 getPlantImageRes 方法，思考下输入和输出参数，并阅读描述它们的注释。’
+          default_feedback: '再试一遍！确保你查看的是 getPlantImageRes 方法，思考下输入和输出参数，并阅读描述它们的注释。'
           answers:
             - id: a1492078257388
               text: 根据数据库 ID 返回植物图片资源
@@ -218,7 +220,7 @@ concepts:
     key: 158b7a53-8018-4afa-99ab-6dbe631f3a16
     locale: zh-cn
     version: 1.0.0
-    title: ‘创建首个应用小部件'
+    title: '创建首个应用小部件'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -240,7 +242,9 @@ concepts:
         video:
           id: '54385'
           youtube_id: 0_BSHxVfdfI
-          subtitles: []
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/April/5900dade_05-creating-your-first-app-widget/subtitles/lang_en_vs1.srt'   
+              language_code: en
           transcodings:
             uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dade_05-creating-your-first-app-widget/05-creating-your-first-app-widget_480p.mp4'
             uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/5900dade_05-creating-your-first-app-widget/05-creating-your-first-app-widget_480p_1000kbps.mp4'
@@ -321,7 +325,7 @@ concepts:
     key: 242db1ba-1120-42db-9d31-09d82c35317b
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：创建简单的小部件'
+    title: '练习：创建简单的小部件'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -448,7 +452,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
         is_public: true
-        text: ‘现在，当 XML 布局使用其名称来引用此维度值时，会在运行 API 14 及以上版本的设备上使用值 0，并在其他设备上使用值 8dp。’
+        text: '现在，当 XML 布局使用其名称来引用此维度值时，会在运行 API 14 及以上版本的设备上使用值 0，并在其他设备上使用值 8dp。'
         instructor_notes: ''
         resources: null
   - id: 338133
@@ -594,7 +598,7 @@ concepts:
     key: cb0912b8-b29b-4487-98dd-cda38f3b7e65
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：添加浇水服务'
+    title: '练习：添加浇水服务'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -639,7 +643,7 @@ concepts:
 
           **解决方案：**[[TWID.02-Solution-AddWateringService](https://github.com/udacity/AdvancedAndroid_MyGarden/tree/TWID.02-Solution-AddWateringService)][[Diff](https://github.com/udacity/AdvancedAndroid_MyGarden/compare/TWID.02-Exercise-AddWateringService...TWID.02-Solution-AddWateringService)]
         video_feedback: null
-        description: ‘现在该你了，请按照下面的步骤操作，完成此练习'
+        description: '现在该你了，请按照下面的步骤操作，完成此练习'
   - id: 338140
     key: 674acd6c-c1c6-44e6-9b62-3fe89084daeb
     locale: zh-cn
@@ -679,7 +683,7 @@ concepts:
     key: cc786bc3-9fae-4ac2-9760-7269368b8787
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：UpdateWidget 服务'
+    title: '练习：UpdateWidget 服务'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -721,7 +725,7 @@ concepts:
           - 创建一个新的操作 ACTION_UPDATE_PLANT_WIDGETS，用来更新小部件 UI
           - 实现 handleActionUpdatePlantWidgets 以查询最接近死亡状态的植物
           - 调用 updatePlantWidgets 以刷新小部件
-          - '在 onUpdate、AddPlantActivity 和 PlantDetailActivity 中调用 startActionUpdatePlantWidgets’
+          - '在 onUpdate、AddPlantActivity 和 PlantDetailActivity 中调用 startActionUpdatePlantWidgets'
         positive_feedback: |-
           很棒！
 
@@ -826,7 +830,7 @@ concepts:
     key: 7c41c17b-0ad6-4621-8100-a179e05e4a88
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：添加更多功能'
+    title: '练习：添加更多功能'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -964,7 +968,7 @@ concepts:
     key: 6b7247fa-4fe1-4645-8ed8-10d6afc6ec0f
     locale: zh-cn
     version: 1.0.0
-    title: ‘小部件中的 GridView'
+    title: '小部件中的 GridView'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
@@ -1034,7 +1038,7 @@ concepts:
     key: 89f55d8d-b386-4493-8a38-1ee08d0750d4
     locale: zh-cn
     version: 1.0.0
-    title: ‘练习：GridView'
+    title: '练习：GridView'
     semantic_type: Concept
     updated_at: 'Fri Jun 23 2017 02:09:01 GMT+0000 (UTC)'
     is_public: true
