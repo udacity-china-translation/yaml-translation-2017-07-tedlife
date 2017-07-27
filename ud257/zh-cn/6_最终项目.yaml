@@ -1,0 +1,634 @@
+id: 178272
+key: '4126079196'
+locale: zh-cn
+version: 1.0.0
+title: 最终项目
+semantic_type: Lesson
+updated_at: 'Mon Sep 26 2016 12:04:06 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: 了解最终项目，尝试一系列练习题，验证你的测试的定量部分。
+lesson_type: Classroom
+duration: 180
+is_project_lesson: false
+_concepts_ids:
+  - 177859
+  - 177860
+  - 177861
+  - 177862
+  - 177863
+  - 177864
+  - 177868
+  - 177869
+  - 177865
+  - 177866
+_project_id: null
+resources:
+  files: []
+  google_plus_link: null
+  career_resource_center_link: null
+  coaching_appointments_link: null
+  office_hours_link: null
+concepts:
+  - id: 177859
+    key: '42072285530923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 项目说明
+    semantic_type: Concept
+    updated_at: 'Mon Sep 26 2016 12:01:24 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176061
+    atoms:
+      - id: 176061
+        key: '4207228553'
+        locale: zh-cn
+        version: 1.0.0
+        title: 项目说明
+        semantic_type: TextAtom
+        updated_at: 'Thu Sep 29 2016 06:20:17 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 项目概述
+          在本项目中，你所要考虑的是由优达学城运行过的一个真实试验。具体数字已做更改，但是模式并没有改变。你要将试验的想法变成一个完整定义的设计、分析其结果，并提供一个高层次的后续实验。[项目说明](https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd002/FinalProjectInstructions_zh.pdf)中可以找到更多的具体细节。
+
+          ## 项目形式
+          本项目包含定性和定量两个部分。你可以利用课程中的测验来验证你定量部分问题的答案。定性分析的答案将不计入课程成绩。使用[这个模板](https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd002/Final+Project+Template_zh.docx)来帮助你整理思路。我们建议在你成功通过所有的测验之后再将定量问题的答案添加至你的报告中。
+
+          ## 项目评估准则
+          我们会使用[此评估准则](https://review.udacity.com/#!/rubrics/312/view)来评估你的作业。
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 177860
+    key: '41906885800923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 选择不变指标
+    semantic_type: Concept
+    updated_at: 'Mon Sep 26 2016 12:31:52 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176062
+    atoms:
+      - id: 176062
+        key: '4190688580'
+        locale: zh-cn
+        version: 1.0.0
+        title: 选择不变指标
+        semantic_type: QuizAtom
+        updated_at: 'Mon Sep 26 2016 12:32:06 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |
+          ## 选择不变指标
+
+          以下选项中，哪些你会用作不变指标？
+
+          - □ Cookie 的数量：即查看课程概述页面的唯一 cookie 的数量。
+          - □ 用户 id 的数量：即报名参加免费试用的用户数量。
+          - □ 点击次数：即点击“开始免费试用”按钮（在免费试用屏幕触犯前发生）的唯一 cookie 的数量。
+          - □ 点进概率：即点击“开始免费试用”按钮的唯一 cookie 除以查看课程概述页面的唯一 cookie 的数量所得的结果。
+          - □ 总转化率：即完成登录并报名参加免费试用的用户 id 的数量除以点击“开始免费试用”按钮的唯一 cookie 的数量所得的结果。
+          - □ 留存率：即在 14 天期限后仍保持参加（并进行了至少一次支付）的用户 id 的数量除以完成登录的用户 id 的数量。
+          - □ 净转化率：即在 14 天期限结束后仍然参加（并至少进行了一次支付）的用户 id 的数量除以点击“开始免费试用”按钮的唯一 cookie 的数量所得的结果。
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Choosing Invariant Metrics
+          background_image: '//lh3.googleusercontent.com/C2joj8IN5TodmZttQ4vFZO7Rs_GQ2MrbK9vb83hs0h_YGhDjFINL6GXQXv3wrSt2o6jIO4axtEDyHo1UJMM=s0#w=774&h=436'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4130358913'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 177861
+    key: '41366789930923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 选择评估指标
+    semantic_type: Concept
+    updated_at: 'Mon Sep 26 2016 12:32:14 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176063
+    atoms:
+      - id: 176063
+        key: '4136678993'
+        locale: zh-cn
+        version: 1.0.0
+        title: 选择评估指标
+        semantic_type: QuizAtom
+        updated_at: 'Mon Sep 26 2016 12:32:23 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |
+          ## 选择评估指标
+
+          以下选项中，哪些你会用作评估指标？
+
+          - □ Cookie 的数量：即查看课程概述页面的唯一 cookie 的数量。
+          - □ 用户 id 的数量：即报名参加免费试用的用户数量。
+          - □ 点击次数：即点击“开始免费试用”按钮（在免费试用屏幕触犯前发生）的唯一 cookie 的数量。
+          - □ 点进概率：即点击“开始免费试用”按钮的唯一 cookie 除以查看课程概述页面的唯一 cookie 的数量所得的结果。
+          - □ 总转化率：即完成登录并报名参加免费试用的用户 id 的数量除以点击“开始免费试用”按钮的唯一 cookie 的数量所得的结果。
+          - □ 留存率：即在 14 天期限后仍保持参加（并进行了至少一次支付）的用户 id 的数量除以完成登录的用户 id 的数量。
+          - □ 净转化率：即在 14 天期限结束后仍然参加（并至少进行了一次支付）的用户 id 的数量除以点击“开始免费试用”按钮的唯一 cookie 的数量所得的结果。
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Choosing Evaluation Metrics
+          background_image: '//lh3.googleusercontent.com/Xm-k4WS8uCJvZDSIClW3MjU2yx8JhQ_CUj9Kpq99UvNlQRrLdqKeBNL8xFh04bXVR0eX8Xl9hoFyCY8qgg=s0#w=774&h=436'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4167348805'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 177862
+    key: '41454387170923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 计算标准偏差
+    semantic_type: Concept
+    updated_at: 'Mon Sep 26 2016 12:17:37 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176064
+    atoms:
+      - id: 176064
+        key: '4145438717'
+        locale: zh-cn
+        version: 1.0.0
+        title: 计算标准偏差
+        semantic_type: QuizAtom
+        updated_at: 'Thu Sep 29 2016 06:44:26 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ## 对于你选择作为评估度量的每个度量，假设有 5000 个 cookie 样本大笑访问课程概述页面的情况下，分析估计一下其标准偏差。将每项估计输入到适当的框中（保留 4 位小数）。
+
+          - □ Cookie 的数量
+          - □ 用户 id 的数量
+          - □ “开始免费试用”的点击次数
+          - □ “开始免费试用”的点入概率
+          - □ 总转化率
+          - □ 留存率
+          - □ 净转化率
+
+          ----
+          如果一个指标不是评估指标，请将对应的框留白。
+
+          ## 提示
+
+          提示 1：请确保你使用的信息均来自[基准值表](https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd002/Final+Project+Baseline+Values.xlsx)。不要使用实验的结果，因为这一步应该在运行实验前完成。
+           
+          提示 2：请确保搞清楚每个对应5000次页面浏览的度量需要多少分析单位。再次说明，请使用给定的[基准值]((https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd002/Final+Project+Baseline+Values.xlsx))。
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Calculating Standard Deviation
+          background_image: '//lh3.googleusercontent.com/sZ9KhOsGZivMWa9YxMwuiwT8vUxmXNu4isoWozKrc73JKHDr56rNUJaWdDvNYvyL_CwjW6KwBoPlbGA5aN5-=s0#w=778&h=436'
+          alt_text: ''
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4140418739'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 177863
+    key: '41785088850923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 计算页面浏览量
+    semantic_type: Concept
+    updated_at: 'Mon Sep 26 2016 12:19:19 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176065
+    atoms:
+      - id: 176065
+        key: '4178508885'
+        locale: zh-cn
+        version: 1.0.0
+        title: 计算页面浏览量
+        semantic_type: QuizAtom
+        updated_at: 'Thu Sep 29 2016 06:36:27 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ## 你会在分析阶段使用 Bonferroni 校正吗？
+
+          - □ 会
+          - □ 不会
+
+
+
+          ## 你选择了哪一个评估度量？
+
+          - □ Cookie 的数量
+          - □ 用户 id 的数量
+          - □ “开始免费试用”的点击次数
+          - □ “开始免费试用”的点入概率
+          - □ 总转化率
+          - □ 留存率
+          - □ 净转化率 
+
+
+          ## 你需要多大的页面浏览量？
+
+          使用 alpha = 0.05，beta = 0.2。将答案约为最近的整数。
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Calculating Number of Pageviews
+          background_image: '//lh3.googleusercontent.com/i1PSAthZzVX2wPfISBY9a2KiiXtd9Ax2ulNxYMAECTNUAGpN4ad3-rS7lliLhdowh24vOYokf1WqcRiNzQ=s0#w=774&h=436'
+          alt_text: ''
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4169338859'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 177864
+    key: '41756393080923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 选择持续时间和曝光
+    semantic_type: Concept
+    updated_at: 'Mon Sep 26 2016 12:23:42 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176066
+    atoms:
+      - id: 176066
+        key: '4175639308'
+        locale: zh-cn
+        version: 1.0.0
+        title: 选择持续时间和曝光
+        semantic_type: QuizAtom
+        updated_at: 'Mon Sep 26 2016 12:24:47 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |
+          ## 选择持续时间和曝光
+             
+          ### 页面浏览量
+
+          需要多少页面访问量？（输入你在前一个练习中的答案。）  
+
+          ### 曝光的流量部分
+
+          你会将优达学城流量的哪个部分转到此试验？输入你的答案（0 或 1）。
+
+          ### 试验持续时间
+
+          在此基础上，优达学城需要多少天来运行试验？输入一个整天数。
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Choosing Duration and Exposure
+          background_image: '//lh3.googleusercontent.com/i99pR2vSHdzB5UQa_rqw9fdyEui-TG4MzyS0JQYSnSL6UmSBn3pU1inzpXWMQRNlrzo80qE8cth9PhSCrII=s0#w=774&h=436'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4129038932'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 177868
+    key: '41831189470923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 完整性检查
+    semantic_type: Concept
+    updated_at: 'Mon Sep 26 2016 12:25:14 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176067
+    atoms:
+      - id: 176067
+        key: '4183118947'
+        locale: zh-cn
+        version: 1.0.0
+        title: 完整性检查
+        semantic_type: QuizAtom
+        updated_at: 'Thu Sep 29 2016 06:44:04 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ## 对于你选择作为不变指标的每个指标，计算你期望观察到的值的 95% 置信区间。输入上限和下限，及观察到的值（全部保留 4 位小数）。若指标通过了完整性检查，则勾选对应框。
+
+          | ／             | 下限   | 上限   | 观察值  | 通过   |
+          | ------------- | ---- | ---- | ---- | ---- |
+          | Cookie 的数量    |      |      |      |      |
+          | 用户 id 的数量     |      |      |      |      |
+          | “开始免费试用”的点入概率 |      |      |      |      |
+          | “开始免费试用”的点入概率 |      |      |      |      |
+          | 总转化率          |      |      |      |      |
+          | 留存率           |      |      |      |      |
+          | 净转化率          |      |      |      |      |
+
+
+
+          ----
+
+          本实验的数据可以在[此电子表格](https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd002/Final+Project+Results.xlsx)中获得；使用这些信息来回答分析问题。注意控制数据和实验数据在电子表格里不同的标签页。
+
+          ## 更多说明
+
+          对于每个计数（如前三个度量），你需要计算期望分配给控制组的部分构成的置信区间，观察值是分配给控制组的实际部分。此过程在第5课里面提到过。
+
+          对其他类型的度量而言，（如最后四个度量），使用与第1课相似的方法为不同的部分构建一个置信区间，然后检查组内各值差异是否落入该置信区间内。
+
+          如果一个指标不是不变指标，请将对应的框留白。
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Sanity Checks
+          background_image: '//lh3.googleusercontent.com/huGo38XwJWDmjXSPlQuBlLgRablldXD3eUNn0YPBV-Yn9bFNsdbtVlgggvP2PhDwpszS1ev2408x2NP4-hg=s0#w=774&h=436'
+          alt_text: ''
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4170338842'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 177869
+    key: '41548188020923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 有效大小检验
+    semantic_type: Concept
+    updated_at: 'Mon Sep 26 2016 12:28:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176072
+    atoms:
+      - id: 176072
+        key: '4154818802'
+        locale: zh-cn
+        version: 1.0.0
+        title: 有效大小检验
+        semantic_type: QuizAtom
+        updated_at: 'Thu Sep 29 2016 06:42:44 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |
+          ## 效应值检验
+
+          对于你的每个评估指标，计算差异的置信区间。 
+
+          你是否使用了 Bonferroni 校正法？     
+
+          - □ 是
+          - □ 否
+
+          | ／             | 下限   | 上限   | 观察值  | 通过   |
+          | ------------- | ---- | ---- | ---- | ---- |
+          | Cookie 的数量    |      |      |      |      |
+          | 用户 id 的数量     |      |      |      |      |
+          | “开始免费试用”的点入概率 |      |      |      |      |
+          | “开始免费试用”的点入概率 |      |      |      |      |
+          | 总转化率          |      |      |      |      |
+          | 留存率           |      |      |      |      |
+          | 净转化率          |      |      |      |      |
+
+
+          ----
+
+          本实验的数据可以在[此电子表格](https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd002/Final+Project+Results.xlsx)中获得，使用这些信息回答分析问题。请注意控制数据和实验数据在电子表格的不同的标签页。
+
+          ## 重要定义
+
+          如果置信区间不包含 0（这就是说，你可以确信它是会变的），这个指标具有统计显著性。如果置信区间不包含实际显著性边界（这就是说，你可以确信变化对业务是有用的）。
+
+          ## 指导
+
+          每个置信区间输入的上、下限值保留4位小数，在复选框内指出差异是具有统计上的显著性还是实际上的显著性。
+
+          如果一个指标不是评估指标，请将对应的框留白。
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Effect Size Tests
+          background_image: '//lh3.googleusercontent.com/KIBpsxQMZw0V4uAGWSwQVzErFFiN_bb0fxoMJGiaDcLfUdTF8EiDXShLfBRoQssm8lyfhwmJD5H--zTUtg=s0#w=774&h=436'
+          alt_text: ''
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4168639256'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 177865
+    key: '41359790850923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 符号检验
+    semantic_type: Concept
+    updated_at: 'Mon Sep 26 2016 12:32:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176068
+    atoms:
+      - id: 176068
+        key: '4135979085'
+        locale: zh-cn
+        version: 1.0.0
+        title: 符号检验
+        semantic_type: QuizAtom
+        updated_at: 'Thu Sep 29 2016 06:42:14 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ## 符号检验
+
+          使用每日数据对你的每个评估度量运行符号检验。输入 P 值并说明每个结果是否具有统计显著性。
+
+          你是否使用了 Bonferroni 校正法？     
+
+          - □ 是
+          - □ 否
+
+          | ／             | 下限   | 上限   | 观察值  | 通过   |
+          | ------------- | ---- | ---- | ---- | ---- |
+          | Cookie 的数量    |      |      |      |      |
+          | 用户 id 的数量     |      |      |      |      |
+          | “开始免费试用”的点入概率 |      |      |      |      |
+          | “开始免费试用”的点入概率 |      |      |      |      |
+          | 总转化率          |      |      |      |      |
+          | 保留率           |      |      |      |      |
+          | 净转化率          |      |      |      |      |
+
+
+          ----
+          如果一个指标不是评估指标，请将对应的框留白。
+
+          ## 结果数据
+
+          使用[此电子表格](https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd002/Final+Project+Results.xlsx)内的结果数据。请注意控制数据和实验数据在电子表格的不同的标签页。
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Sign Tests
+          background_image: '//lh3.googleusercontent.com/fY2X2ZgHuAdXVaaGP4ZXumOOvwzp5kSHO1QFGZbdrTTUHxk8hH4s41WuJrh0fTvwUqVrez0-iPZLmYAZSA=s0#w=774&h=436'
+          alt_text: ''
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4187509020'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 177866
+    key: '41886195480923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 恭喜！
+    semantic_type: Concept
+    updated_at: 'Mon Sep 26 2016 12:01:32 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176069
+    atoms:
+      - id: 176069
+        key: '4188619548'
+        locale: zh-cn
+        version: 1.0.0
+        title: 恭喜！
+        semantic_type: TextAtom
+        updated_at: 'Thu Sep 29 2016 06:45:52 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 恭喜！
+
+          你已完成最终项目的定量部分。不要忘记回答定性部分的问题。你可以使用[项目说明](https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd002/FinalProjectInstructions_zh.pdf)中的[模板](https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd002/Final+Project+Template_zh.docx)来回答问题，并使用[项目评估准则](https://review.udacity.com/#!/rubrics/312/view)来评估你的作业。
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null

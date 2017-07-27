@@ -1,0 +1,501 @@
+id: 47017
+key: '4126079196'
+locale: en-us
+version: 1.0.0
+title: 'Final Project '
+semantic_type: Lesson
+updated_at: 'Tue May 31 2016 02:44:25 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: Learn about the final project and go through a series of quizzes to verify the quantitative components of your test.
+lesson_type: Classroom
+duration: 180
+is_project_lesson: false
+_concepts_ids:
+  - 38077
+  - 29737
+  - 74933
+  - 29709
+  - 75898
+  - 29970
+  - 35765
+  - 29766
+  - 130282
+  - 3849
+_project_id: null
+concepts:
+  - id: 38077
+    key: '42072285530923'
+    locale: en-us
+    version: 1.0.0
+    title: Project Instructions
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 84783
+    atoms:
+      - id: 84783
+        key: '4207228553'
+        locale: en-us
+        version: 1.0.0
+        title: Project Instructions
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 21 2016 22:18:47 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Project overview
+          In this project, you will consider an actual experiment that was run by Udacity. The specific numbers have been changed, but the patterns have not. You will flesh the experiment idea out into a fully defined design, analyze the results, and propose a high-level follow-on experiment. The <a href="https://docs.google.com/document/u/1/d/1aCquhIqsUApgsxQ8-SQBAigFDcfWVVohLEXcV6jWbdI/pub?embedded=True" target="_blank">project instructions</a> contain more details.
+
+          ## Project format
+          The project will have both qualitative and quantitative components. You can verify your answers to the quantitative questions using the quizzes in this lesson. Your qualitative answers will not be evaluated with classroom graders. Use <a href="https://docs.google.com/document/d/16OX2KDSHI9mSCriyGIATpRGscIW2JmByMd0ITqKYvNg/edit?usp=sharing" target="_blank">this template</a> to help organize your thoughts. (If you would like to create your report using Google Docs, you can copy this template using "File > Make a copy" if you are signed into Google Drive.) We recommend not adding your quantitative answers to your report until you have correctly passed all the quizzes.
+
+          ## Project rubric
+          You can evaluate your own work using <a href="https://docs.google.com/document/u/1/d/1Hga00A4258wSJ9dir0Td_ZPLeAtJ079UGbM3C0ykUtE/pub?embedded=true" target="_blank">this rubric</a>. If you would like to get feedback on this project and other data analysis projects, consider enrolling in the <a href="https://www.udacity.com/course/nd002" target="_blank">Data Analyst Nanodegree program</a>. If you are currently enrolled in the Nanodegree program, then you can find information about submitting your project from the Nanodegree syllabus.
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 29737
+    key: '41906885800923'
+    locale: en-us
+    version: 1.0.0
+    title: Choosing Invariant Metrics
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 85861
+    atoms:
+      - id: 85861
+        key: '4190688580'
+        locale: en-us
+        version: 1.0.0
+        title: Choosing Invariant Metrics
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 21 2016 22:16:04 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Choosing Invariant Metrics
+          background_image: '//lh3.googleusercontent.com/C2joj8IN5TodmZttQ4vFZO7Rs_GQ2MrbK9vb83hs0h_YGhDjFINL6GXQXv3wrSt2o6jIO4axtEDyHo1UJMM=s0#w=774&h=436'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4130358913'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 74933
+    key: '41366789930923'
+    locale: en-us
+    version: 1.0.0
+    title: Choosing Evaluation Metrics
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 86026
+    atoms:
+      - id: 86026
+        key: '4136678993'
+        locale: en-us
+        version: 1.0.0
+        title: Choosing Evaluation Metrics
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 21 2016 22:16:04 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Choosing Evaluation Metrics
+          background_image: '//lh3.googleusercontent.com/Xm-k4WS8uCJvZDSIClW3MjU2yx8JhQ_CUj9Kpq99UvNlQRrLdqKeBNL8xFh04bXVR0eX8Xl9hoFyCY8qgg=s0#w=774&h=436'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4167348805'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 29709
+    key: '41454387170923'
+    locale: en-us
+    version: 1.0.0
+    title: Calculating Standard Deviation
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 92782
+    atoms:
+      - id: 92782
+        key: '4145438717'
+        locale: en-us
+        version: 1.0.0
+        title: Calculating Standard Deviation
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 21 2016 22:16:17 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          If a metric is not an evaluation metric, leave the corresponding box blank.
+
+          ### Hints
+          Hint 1: Make sure you are only using information given in the <a href="https://docs.google.com/a/knowlabs.com/spreadsheets/d/1MYNUtC47Pg8hdoCjOXaHqF-thheGpUshrFA21BAJnNc/edit#gid=0" target="_blank">table of baseline values</a>. Do not use the results of the experiment, since this step should be done before the experiment is run.
+
+          Hint 2: Make sure you figure out how many units of analysis will correspond to 5000 pageviews for each metric. Again, use the given <a href="https://docs.google.com/a/knowlabs.com/spreadsheets/d/1MYNUtC47Pg8hdoCjOXaHqF-thheGpUshrFA21BAJnNc/edit#gid=0" target="_blank">baseline values</a>.
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Calculating Standard Deviation
+          background_image: '//lh3.googleusercontent.com/sZ9KhOsGZivMWa9YxMwuiwT8vUxmXNu4isoWozKrc73JKHDr56rNUJaWdDvNYvyL_CwjW6KwBoPlbGA5aN5-=s0#w=778&h=436'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4140418739'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 75898
+    key: '41785088850923'
+    locale: en-us
+    version: 1.0.0
+    title: Calculating Number of Pageviews
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 110732
+    atoms:
+      - id: 110732
+        key: '4178508885'
+        locale: en-us
+        version: 1.0.0
+        title: Calculating Number of Pageviews
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 21 2016 22:14:42 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Calculating Number of Pageviews
+          background_image: '//lh3.googleusercontent.com/i1PSAthZzVX2wPfISBY9a2KiiXtd9Ax2ulNxYMAECTNUAGpN4ad3-rS7lliLhdowh24vOYokf1WqcRiNzQ=s0#w=774&h=436'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4169338859'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 29970
+    key: '41756393080923'
+    locale: en-us
+    version: 1.0.0
+    title: Choosing Duration and Exposure
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 102537
+    atoms:
+      - id: 102537
+        key: '4175639308'
+        locale: en-us
+        version: 1.0.0
+        title: Choosing Duration and Exposure
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 21 2016 22:17:19 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Choosing Duration and Exposure
+          background_image: '//lh3.googleusercontent.com/i99pR2vSHdzB5UQa_rqw9fdyEui-TG4MzyS0JQYSnSL6UmSBn3pU1inzpXWMQRNlrzo80qE8cth9PhSCrII=s0#w=774&h=436'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4129038932'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 35765
+    key: '41831189470923'
+    locale: en-us
+    version: 1.0.0
+    title: Sanity Checks
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 86267
+    atoms:
+      - id: 86267
+        key: '4183118947'
+        locale: en-us
+        version: 1.0.0
+        title: Sanity Checks
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 21 2016 22:16:05 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          The experiment data can be found in [this spreadsheet](https://docs.google.com/spreadsheets/d/1Mu5u9GrybDdska-ljPXyBjTpdZIUev_6i7t4LRDfXM8/edit#gid=0); use this information to answer the analysis questions. Note that control data and experiment data are on separate tabs of the spreadsheet.
+
+          ### Further instructions
+          For a count (such as the first three metrics), you should calculate a confidence interval around the fraction of events you **expect** to be assigned to the control group, and the observed value should be the actual fraction that was assigned to the control group. This is the process that was shown in Lesson 5.
+
+          For any other type of metric, (such as the last four metrics), you should construct a confidence interval for a difference in proportions using a similar strategy as in Lesson 1, then check whether the difference between group values falls within that confidence level.
+
+          If a metric is not an invariant metric, leave the corresponding boxes blank.
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Sanity Checks
+          background_image: '//lh3.googleusercontent.com/huGo38XwJWDmjXSPlQuBlLgRablldXD3eUNn0YPBV-Yn9bFNsdbtVlgggvP2PhDwpszS1ev2408x2NP4-hg=s0#w=774&h=436'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4170338842'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 29766
+    key: '41548188020923'
+    locale: en-us
+    version: 1.0.0
+    title: Effect Size Tests
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 6143
+    atoms:
+      - id: 6143
+        key: '4154818802'
+        locale: en-us
+        version: 1.0.0
+        title: Effect Size Tests
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 21 2016 22:17:43 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          The experiment data can be found in [this spreadsheet](https://docs.google.com/spreadsheets/d/1Mu5u9GrybDdska-ljPXyBjTpdZIUev_6i7t4LRDfXM8/edit#gid=0); use this information to answer the analysis questions. Note that control data and experiment data are on separate tabs of the spreadsheet.
+
+          ### Significance definitions
+          A metric is statistically significant if the confidence interval does not include 0 (that is, you can be confident there was a change), and it is practically significant if the confidence interval does not include the practical significance boundary (that is, you can be confident there is a change that matters to the business.)
+
+          ### Instructions
+          Enter the upper and lower bounds of each confidence interval to 4 decimal places, and use the checkboxes to indicate whether the difference is statistically and practically significant.
+
+          If a metric is not an evaluation metric, leave the corresponding boxes blank.
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Effect Size Tests
+          background_image: '//lh3.googleusercontent.com/KIBpsxQMZw0V4uAGWSwQVzErFFiN_bb0fxoMJGiaDcLfUdTF8EiDXShLfBRoQssm8lyfhwmJD5H--zTUtg=s0#w=774&h=436'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4168639256'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 130282
+    key: '41359790850923'
+    locale: en-us
+    version: 1.0.0
+    title: Sign Tests
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 71692
+    atoms:
+      - id: 71692
+        key: '4135979085'
+        locale: en-us
+        version: 1.0.0
+        title: Sign Tests
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 21 2016 22:15:28 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          If a metric is not an evaluation metric, leave the corresponding boxes blank.
+
+          ### Result Data
+          Use the results from [this spreadsheet](https://docs.google.com/spreadsheets/d/1Mu5u9GrybDdska-ljPXyBjTpdZIUev_6i7t4LRDfXM8/edit#gid=0). Note that control data and experiment data are on separate tabs of the spreadsheet.
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Sign Tests
+          background_image: '//lh3.googleusercontent.com/fY2X2ZgHuAdXVaaGP4ZXumOOvwzp5kSHO1QFGZbdrTTUHxk8hH4s41WuJrh0fTvwUqVrez0-iPZLmYAZSA=s0#w=774&h=436'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4187509020'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 3849
+    key: '41886195480923'
+    locale: en-us
+    version: 1.0.0
+    title: Congratulations!
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 101106
+    atoms:
+      - id: 101106
+        key: '4188619548'
+        locale: en-us
+        version: 1.0.0
+        title: Congratulations!
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 21 2016 22:18:13 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Congratulations!
+
+          You've finished the quantitative parts of the final project.
+          Don't forget to think about the answers to the qualitative questions as well.
+          You can use <a href="https://docs.google.com/document/d/16OX2KDSHI9mSCriyGIATpRGscIW2JmByMd0ITqKYvNg/edit?usp=sharing" target="_blank">this template</a>
+          to answer the questions in the <a href="https://docs.google.com/document/u/1/d/1aCquhIqsUApgsxQ8-SQBAigFDcfWVVohLEXcV6jWbdI/pub?embedded=True" target="_blank">project instructions</a>
+          and the <a href="https://docs.google.com/document/u/1/d/1Hga00A4258wSJ9dir0Td_ZPLeAtJ079UGbM3C0ykUtE/pub?embedded=true" target="_blank">project rubric</a> to evaluate your work.
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null

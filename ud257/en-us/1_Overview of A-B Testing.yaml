@@ -1,0 +1,1717 @@
+id: 75854
+key: '4018018619'
+locale: en-us
+version: 1.0.0
+title: Overview of A/B Testing
+semantic_type: Lesson
+updated_at: 'Thu Apr 27 2017 16:49:31 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: Learn about what A/B testing is and what it can be used for.
+lesson_type: Classroom
+duration: 240
+is_project_lesson: false
+_concepts_ids:
+  - 84812
+  - 109937
+  - 125764
+  - 70536
+  - 109954
+  - 74766
+  - 115302
+  - 134474
+  - 51704
+  - 29779
+  - 84860
+  - 84773
+  - 29778
+  - 35775
+  - 29777
+  - 35757
+  - 133324
+  - 125750
+  - 35756
+  - 108308
+  - 49546
+  - 74832
+  - 30899
+  - 39031
+  - 109882
+  - 29768
+  - 109963
+  - 74688
+  - 111017
+_project_id: null
+concepts:
+  - id: 84812
+    key: '41149386080923'
+    locale: en-us
+    version: 1.0.0
+    title: Introduction to Course
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 75006
+    atoms:
+      - id: 75006
+        key: '4114938608'
+        locale: en-us
+        version: 1.0.0
+        title: Introduction to Course
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:32:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '18574'
+          youtube_id: gR_buSP6sdw
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fa14_introduction-to-course/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fa14_introduction-to-course/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fa14_introduction-to-course/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fa14_introduction-to-course/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fa14_introduction-to-course/introduction-to-course_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fa14_introduction-to-course/introduction-to-course_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fa14_introduction-to-course/introduction-to-course_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fa14_introduction-to-course/introduction-to-course_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fa14_introduction-to-course/hls/playlist.m3u8'
+  - id: 109937
+    key: '40732886670923'
+    locale: en-us
+    version: 1.0.0
+    title: Course Format
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 54847
+    atoms:
+      - id: 54847
+        key: '4073288667'
+        locale: en-us
+        version: 1.0.0
+        title: Course Format
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:39:17 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |-
+          ### Statistics courses
+          If you need to learn more about statistics, or brush up on some existing knowledge, check out Udacity's courses on <a href="https://www.udacity.com/course/ud827" target="_blank">Descriptive Statistics</a> and <a href="https://www.udacity.com/course/ud201" target="_blank">Inferential Statistics</a>.
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '33787'
+          youtube_id: rVmwPGFtk_Y
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e591_course-format/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e591_course-format/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e591_course-format/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e591_course-format/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e591_course-format/course-format_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e591_course-format/course-format_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e591_course-format/course-format_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e591_course-format/course-format_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e591_course-format/hls/playlist.m3u8'
+  - id: 125764
+    key: '40043986740923'
+    locale: en-us
+    version: 1.0.0
+    title: Intro to A/B Testing
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 67173
+    atoms:
+      - id: 67173
+        key: '4004398674'
+        locale: en-us
+        version: 1.0.0
+        title: Intro to A/B Testing
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:31:45 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |-
+          ### Examples of A/B testing in industry:
+
+          **Examples mentioned in the video:**
+
+          * Google <a href="http://www.nytimes.com/2009/03/01/business/01marissa.html?pagewanted=3" target="_blank">tested 41 different shades of blue</a>.
+          * Amazon initially decided to launch their first personalized product recommendations based on an <a href="http://www.exp-platform.com/Documents/GuideControlledExperiments.pdf" target="_blank"> A/B test showing a huge revenue increase by adding that feature</a>. (See the second paragraph in the introduction.)
+          * LinkedIn <a href="http://engineering.linkedin.com/mobile/mobile-ab-testing-linkedin-how-members-shape-our-apps" target="_blank">tested whether to use the top slot on a user's stream for top news articles or an encouragement to add more contacts</a>. (See the first paragraph in "A/B testing with view based JSON" section.)
+          * Amazon determined that <a href="http://www.exp-platform.com/Documents/IEEEComputer2007OnlineExperiments.pdf" target="_blank">every 100ms increase in page load time decreased sales by 1%</a>. (In "Secondary metrics" section on the last page)
+          * Google’s  <a href="http://googleresearch.blogspot.com/2009/06/speed-matters.html" target="_blank">latency results</a> showed a similar impact for a 100ms delay.
+
+          **Other Examples:**
+
+          * Kayak <a href="http://apptimize.com/blog/2014/03/kayaks-most-interesting-ab-test/" target="_blank">tested whether notifying users that their payment was encrypted would make users more or less likely to complete the payment</a>.
+          * Khan Academy tests <a href="http://apptimize.com/blog/2014/07/how-khan-academy-uses-ab-testing-to-improve-student-learning/" target="_blank">changes like letting students know how many other students are working on the exercise with them, or making it easier for students to fast-forward past skills they already have</a>.  (See the question "What is the most interesting A/B test you've seen so far?")
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '3793'
+          youtube_id: ASQubLvGuxY
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfaa33_intro-to-ab-testing/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfaa33_intro-to-ab-testing/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfaa33_intro-to-ab-testing/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfaa33_intro-to-ab-testing/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfaa33_intro-to-ab-testing/intro-to-ab-testing_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfaa33_intro-to-ab-testing/intro-to-ab-testing_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfaa33_intro-to-ab-testing/intro-to-ab-testing_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfaa33_intro-to-ab-testing/intro-to-ab-testing_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfaa33_intro-to-ab-testing/hls/playlist.m3u8'
+  - id: 70536
+    key: '40043986750923'
+    locale: en-us
+    version: 1.0.0
+    title: What You Can and Can't Do with A/B Tests
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 54591
+    atoms:
+      - id: 54591
+        key: '4004398675'
+        locale: en-us
+        version: 1.0.0
+        title: What You Can and Can't Do with A/B Tests
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:52:11 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ### Skipping to the example A/B test
+          <a href="https://classroom.udacity.com/courses/ud257/lessons/4018018619/concepts/40043986830923" target="_blank">Click here</a> to skip to the description of the example A/B test we'll be analyzing for the rest of the lesson.
+        instruction:
+          video:
+            id: '28050'
+            youtube_id: Z4n3jR-FZP8
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4e0_what-you-can-and-cant-do-with-ab-tests/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4e0_what-you-can-and-cant-do-with-ab-tests/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4e0_what-you-can-and-cant-do-with-ab-tests/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4e0_what-you-can-and-cant-do-with-ab-tests/subtitles/lang_en_vs3.srt'
+                language_code: en
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4e0_what-you-can-and-cant-do-with-ab-tests/what-you-can-and-cant-do-with-ab-tests_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4e0_what-you-can-and-cant-do-with-ab-tests/what-you-can-and-cant-do-with-ab-tests_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4e0_what-you-can-and-cant-do-with-ab-tests/what-you-can-and-cant-do-with-ab-tests_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4e0_what-you-can-and-cant-do-with-ab-tests/what-you-can-and-cant-do-with-ab-tests_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4e0_what-you-can-and-cant-do-with-ab-tests/hls/playlist.m3u8'
+          text: null
+        question:
+          title: What You Can and Can’t Do with A/B Tests
+          background_image: '//lh3.ggpht.com/tbtLU24YT9N_PZLAqIl8h3qM_iBAviJKigbJfrYMad33jntPlRk0CM1b5p9AHgYT-_4lDn1FNkkgfFk1Az3J=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3873628550'
+        answer:
+          text: null
+          video:
+            id: '16657'
+            youtube_id: EwV5Vs2m33w
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d52f_what-you-can-and-cant-do-with-a-b-tests/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d52f_what-you-can-and-cant-do-with-a-b-tests/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d52f_what-you-can-and-cant-do-with-a-b-tests/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d52f_what-you-can-and-cant-do-with-a-b-tests/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d52f_what-you-can-and-cant-do-with-a-b-tests/what-you-can-and-cant-do-with-a-b-tests_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d52f_what-you-can-and-cant-do-with-a-b-tests/what-you-can-and-cant-do-with-a-b-tests_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d52f_what-you-can-and-cant-do-with-a-b-tests/what-you-can-and-cant-do-with-a-b-tests_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d52f_what-you-can-and-cant-do-with-a-b-tests/what-you-can-and-cant-do-with-a-b-tests_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d52f_what-you-can-and-cant-do-with-a-b-tests/hls/playlist.m3u8'
+  - id: 109954
+    key: '40043986780923'
+    locale: en-us
+    version: 1.0.0
+    title: More A/B Testing Possibilities
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 119579
+    atoms:
+      - id: 119579
+        key: '4004398678'
+        locale: en-us
+        version: 1.0.0
+        title: More A/B Testing Possibilities
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:50:58 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '33032'
+            youtube_id: rGw4xFsUUqE
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1db0e_more-ab-testing-possibilities/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1db0e_more-ab-testing-possibilities/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1db0e_more-ab-testing-possibilities/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1db0e_more-ab-testing-possibilities/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1db0e_more-ab-testing-possibilities/more-ab-testing-possibilities_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1db0e_more-ab-testing-possibilities/more-ab-testing-possibilities_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1db0e_more-ab-testing-possibilities/more-ab-testing-possibilities_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1db0e_more-ab-testing-possibilities/more-ab-testing-possibilities_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1db0e_more-ab-testing-possibilities/hls/playlist.m3u8'
+          text: null
+        question:
+          title: More A/B Testing Possibilities
+          background_image: '//lh4.ggpht.com/dzbFAl9h65zG_W4lEBXaaYkNALXoFh1q35L_zaaLKh996sYrC4GYOvr-TamHI6w2je2jGWKyDCcYqBnYKlU=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3844088633'
+        answer:
+          text: null
+          video:
+            id: '16739'
+            youtube_id: eZ_yCrh4740
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d689_more-a-b-testing-possibilities/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d689_more-a-b-testing-possibilities/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d689_more-a-b-testing-possibilities/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d689_more-a-b-testing-possibilities/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d689_more-a-b-testing-possibilities/more-a-b-testing-possibilities_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d689_more-a-b-testing-possibilities/more-a-b-testing-possibilities_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d689_more-a-b-testing-possibilities/more-a-b-testing-possibilities_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d689_more-a-b-testing-possibilities/more-a-b-testing-possibilities_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d689_more-a-b-testing-possibilities/hls/playlist.m3u8'
+  - id: 74766
+    key: '40043986810923'
+    locale: en-us
+    version: 1.0.0
+    title: Other Techniques
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 47318
+    atoms:
+      - id: 47318
+        key: '4004398681'
+        locale: en-us
+        version: 1.0.0
+        title: Other Techniques
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:38:26 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '22807'
+          youtube_id: KsiyW6bPux8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14cb9_other-techniques/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14cb9_other-techniques/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14cb9_other-techniques/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14cb9_other-techniques/subtitles/lang_en_vs3.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14cb9_other-techniques/other-techniques_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14cb9_other-techniques/other-techniques_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14cb9_other-techniques/other-techniques_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14cb9_other-techniques/other-techniques_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14cb9_other-techniques/hls/playlist.m3u8'
+  - id: 115302
+    key: '40043986820923'
+    locale: en-us
+    version: 1.0.0
+    title: History of A/B Testing
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 64888
+    atoms:
+      - id: 64888
+        key: '4004398682'
+        locale: en-us
+        version: 1.0.0
+        title: History of A/B Testing
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:38:28 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '25630'
+          youtube_id: NNiKGao0xnk
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1868e_history-of-ab-testing/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1868e_history-of-ab-testing/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1868e_history-of-ab-testing/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1868e_history-of-ab-testing/subtitles/lang_en_vs3.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1868e_history-of-ab-testing/history-of-ab-testing_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1868e_history-of-ab-testing/history-of-ab-testing_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1868e_history-of-ab-testing/history-of-ab-testing_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1868e_history-of-ab-testing/history-of-ab-testing_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1868e_history-of-ab-testing/hls/playlist.m3u8'
+  - id: 134474
+    key: '40043986830923'
+    locale: en-us
+    version: 1.0.0
+    title: Overview of Business Example
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 24606
+    atoms:
+      - id: 24606
+        key: '4004398683'
+        locale: en-us
+        version: 1.0.0
+        title: Overview of Business Example
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:26:46 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '35338'
+          youtube_id: tlSe7H9BDy8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26af0_overview-of-business-example/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26af0_overview-of-business-example/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26af0_overview-of-business-example/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26af0_overview-of-business-example/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26af0_overview-of-business-example/overview-of-business-example_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26af0_overview-of-business-example/overview-of-business-example_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26af0_overview-of-business-example/overview-of-business-example_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26af0_overview-of-business-example/overview-of-business-example_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26af0_overview-of-business-example/hls/playlist.m3u8'
+  - id: 51704
+    key: '40043986840923'
+    locale: en-us
+    version: 1.0.0
+    title: Metric Choice
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 64966
+    atoms:
+      - id: 64966
+        key: '4004398684'
+        locale: en-us
+        version: 1.0.0
+        title: Metric Choice
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:38:29 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '13244'
+          youtube_id: BeIy4A6YKrY
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a47a_metric-choice/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a47a_metric-choice/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a47a_metric-choice/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a47a_metric-choice/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a47a_metric-choice/metric-choice_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a47a_metric-choice/metric-choice_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a47a_metric-choice/metric-choice_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a47a_metric-choice/metric-choice_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a47a_metric-choice/hls/playlist.m3u8'
+  - id: 29779
+    key: '40043986850923'
+    locale: en-us
+    version: 1.0.0
+    title: Estimating Click-Through-Probability
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 20447
+    atoms:
+      - id: 20447
+        key: '4004398685'
+        locale: en-us
+        version: 1.0.0
+        title: Estimating Click-Through-Probability
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:30:15 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '3625'
+          youtube_id: Hkbc_vcb7D8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa801_estimating-clickthrough-probability/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa801_estimating-clickthrough-probability/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa801_estimating-clickthrough-probability/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa801_estimating-clickthrough-probability/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa801_estimating-clickthrough-probability/estimating-clickthrough-probability_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa801_estimating-clickthrough-probability/estimating-clickthrough-probability_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa801_estimating-clickthrough-probability/estimating-clickthrough-probability_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa801_estimating-clickthrough-probability/estimating-clickthrough-probability_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa801_estimating-clickthrough-probability/hls/playlist.m3u8'
+  - id: 84860
+    key: '40043986860923'
+    locale: en-us
+    version: 1.0.0
+    title: Repeating the Experiment
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 113433
+    atoms:
+      - id: 113433
+        key: '4004398686'
+        locale: en-us
+        version: 1.0.0
+        title: Repeating the Experiment
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:51:03 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '27161'
+            youtube_id: UXLEe6bNpM4
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1aa81_repeating-the-experiment/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1aa81_repeating-the-experiment/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1aa81_repeating-the-experiment/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1aa81_repeating-the-experiment/subtitles/lang_en_vs3.srt'
+                language_code: en
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1aa81_repeating-the-experiment/repeating-the-experiment_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1aa81_repeating-the-experiment/repeating-the-experiment_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1aa81_repeating-the-experiment/repeating-the-experiment_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1aa81_repeating-the-experiment/repeating-the-experiment_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1aa81_repeating-the-experiment/hls/playlist.m3u8'
+          text: null
+        question:
+          title: Repeating the Experiment
+          background_image: '//lh4.ggpht.com/HQilOGZbLJW7YIMo-jT9ZG_RM8e_gEtW5YiJqNwTxKQnUKUyld7h_lMbTvUkV34TgBAtnfPzp_HDOplOip0=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3846998569'
+        answer:
+          text: null
+          video:
+            id: '19378'
+            youtube_id: HH73nOnzRrc
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10bf4_repeating-the-experiment/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10bf4_repeating-the-experiment/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10bf4_repeating-the-experiment/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10bf4_repeating-the-experiment/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10bf4_repeating-the-experiment/repeating-the-experiment_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10bf4_repeating-the-experiment/repeating-the-experiment_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10bf4_repeating-the-experiment/repeating-the-experiment_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10bf4_repeating-the-experiment/repeating-the-experiment_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10bf4_repeating-the-experiment/hls/playlist.m3u8'
+  - id: 84773
+    key: '40043986890923'
+    locale: en-us
+    version: 1.0.0
+    title: Which Distribution?
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 31103
+    atoms:
+      - id: 31103
+        key: '4004398689'
+        locale: en-us
+        version: 1.0.0
+        title: Which Distribution?
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:28:51 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |-
+          ### Skipping past statistics review
+          <a href="https://classroom.udacity.com/courses/ud257/lessons/4018018619/concepts/40043987030923" target="_blank">Click here</a> to skip the explanation of the binomial distribution, confidence intervals, and hypothesis testing.
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '35584'
+          youtube_id: tTb1k27rhgI
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26f3c_which-distribution/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26f3c_which-distribution/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26f3c_which-distribution/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26f3c_which-distribution/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26f3c_which-distribution/which-distribution_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26f3c_which-distribution/which-distribution_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26f3c_which-distribution/which-distribution_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26f3c_which-distribution/which-distribution_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26f3c_which-distribution/hls/playlist.m3u8'
+  - id: 29778
+    key: '40043986900923'
+    locale: en-us
+    version: 1.0.0
+    title: Binomial Distribution
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 4553
+    atoms:
+      - id: 4553
+        key: '4004398690'
+        locale: en-us
+        version: 1.0.0
+        title: Binomial Distribution
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:48:50 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ### Exploring the binomial distribution
+
+          Try using <a href="http://databits.io/bits/fbmx-binomial-distribution" target="_blank">this website</a> to get a better feel for the binomial distribution. At the top, you can choose _n_ (the number of events to generate) and _p_ (the probability of success for each event) for two binomial distributions and compare them. The site will show one distribution as bars and the other as dots, and two graphs will be shown. The top graph shows the probability that exactly some number of successes _k_ will occur for each _k_, and the bottom graph shows the cumulative probability that at _k_ or fewer successes will occur (so the probability on the far right (_k_ >= _n_) will always be 1).
+
+          At the bottom, you can play a game where you throw a dice many times (with various definitions of success), keeping track of how many successes come up. This will let you see how the distribution you get resembles the binomial more and more as you keep playing.
+          Try using <a href="http://databits.io/bits/fbmx-binomial-distribution" target="_blank">this website</a> to get a better feel for the binomial distribution. At the top, you can choose N (the number of events to generate) and p (the probability of success for each event) for two binomial distributions and compare them. The site will show one distribution as bars and the other as dots, and two graphs will be shown. The top graph shows the probability that exactly some fraction of successes will occur, and the bottom graph shows the probability that at most some fraction of successes will occur (so the probability on the far right will always be 1).
+        instruction:
+          video:
+            id: '25988'
+            youtube_id: nXbucNJpP8I
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1998e_binomial-distribution/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1998e_binomial-distribution/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1998e_binomial-distribution/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1998e_binomial-distribution/subtitles/lang_en_vs3.srt'
+                language_code: en
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1998e_binomial-distribution/binomial-distribution_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1998e_binomial-distribution/binomial-distribution_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1998e_binomial-distribution/binomial-distribution_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1998e_binomial-distribution/binomial-distribution_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1998e_binomial-distribution/hls/playlist.m3u8'
+          text: null
+        question:
+          title: Binomial Distribution
+          background_image: '//lh5.ggpht.com/nCVcaHwvX3KBqRnLP--e-3cM6Cta0V_vz1NthmBsf9xBSveweUN2HtemEyJIclSbIRxdhe60gRFQkDvCFJU=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3849658626'
+        answer:
+          text: null
+          video:
+            id: '29440'
+            youtube_id: PVTChqpnr5Q
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1bf73_binomial-distribution/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1bf73_binomial-distribution/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1bf73_binomial-distribution/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1bf73_binomial-distribution/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1bf73_binomial-distribution/binomial-distribution_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1bf73_binomial-distribution/binomial-distribution_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1bf73_binomial-distribution/binomial-distribution_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1bf73_binomial-distribution/binomial-distribution_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1bf73_binomial-distribution/hls/playlist.m3u8'
+  - id: 35775
+    key: '40043986930923'
+    locale: en-us
+    version: 1.0.0
+    title: Confidence Intervals
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 86848
+    atoms:
+      - id: 86848
+        key: '4004398693'
+        locale: en-us
+        version: 1.0.0
+        title: Confidence Intervals
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:43:10 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '17089'
+          youtube_id: fDkfHKODOcQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0dd94_confidence-intervals/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0dd94_confidence-intervals/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0dd94_confidence-intervals/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0dd94_confidence-intervals/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0dd94_confidence-intervals/confidence-intervals_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0dd94_confidence-intervals/confidence-intervals_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0dd94_confidence-intervals/confidence-intervals_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0dd94_confidence-intervals/confidence-intervals_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0dd94_confidence-intervals/hls/playlist.m3u8'
+  - id: 29777
+    key: '40043986940923'
+    locale: en-us
+    version: 1.0.0
+    title: Calculating a Confidence Interval
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 36740
+    atoms:
+      - id: 36740
+        key: '4004398694'
+        locale: en-us
+        version: 1.0.0
+        title: Calculating a Confidence Interval
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:48:12 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ### z-score table
+          You can use <a href="https://www.math.upenn.edu/~yuecheng/images/zscoretable.pdf" target="_blank">this z-score table</a>.
+
+          If you don't recall how to read a z-score table, <a href="http://www.had2know.com/academics/normal-distribution-table-z-scores.html" target="_blank">this page</a> contains instructions.
+
+          ### Standard deviation of binomial
+          If you look up a binomial distribution elsewhere, you may find that it has a mean of <span class="mathquill">np</span> and a standard deviation of <span class="mathquill">\sqrt{np(1-p)}</span>. This is for a binomial distribution defined as the total number of successes, whereas we will use the fraction or proportion of successes throughout this class. In this cas, the mean is <span class="mathquill">p</span> and standard deviation is <span class="mathquill">\sqrt{\frac{p(1-p)}{n}}</span>.
+          ### Useful equations
+          You may find these equations helpful in solving the quiz:  
+          ![p_hat = X/N  SE = sqrt(p_hat (1-p_hat) / N)  m = z* SE](//lh3.googleusercontent.com/7G4sR5EnVaKfqmc98cJorT0F9TtKIYEql7WDIYuemeWSGcGf6fW_MqrxR8fAs39n6gdmZ2ubbg28ttH_O9c=s0#w=134&h=128)
+          ### Standard deviation of binomial
+          If you look up a binomial distribution elsewhere, you may find that it has a mean of <span class="mathquill">np</span> and a standard deviation of <span class="mathquill">\sqrt{np(1-p)}</span>. This is for a binomial distribution defined as the total number of successes, whereas we will use the fraction or proportion of successes throughout this class. In this case, the mean is <span class="mathquill">p</span> and standard deviation is <span class="mathquill">\sqrt{\frac{p(1-p)}{n}}</span>.
+        instruction:
+          video:
+            id: '19373'
+            youtube_id: HGYW-skXvY4
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10be2_calculating-a-confidence-interval/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10be2_calculating-a-confidence-interval/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10be2_calculating-a-confidence-interval/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10be2_calculating-a-confidence-interval/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10be2_calculating-a-confidence-interval/calculating-a-confidence-interval_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10be2_calculating-a-confidence-interval/calculating-a-confidence-interval_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10be2_calculating-a-confidence-interval/calculating-a-confidence-interval_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10be2_calculating-a-confidence-interval/calculating-a-confidence-interval_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10be2_calculating-a-confidence-interval/hls/playlist.m3u8'
+          text: null
+        question:
+          title: Calculating a Confidence Interval
+          background_image: '//lh3.ggpht.com/znCLfkNdW5uJnOioUsT6ZeIZ5rIxncXL0nmsRqLYlYZ9M7Zrmqdcdg_GPpWcJb9_OxN-i-qUOu8z0j0hpnPa=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3865808637'
+        answer:
+          text: null
+          video:
+            id: '34743'
+            youtube_id: T-QWVJtXHAs
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26077_calculating-a-confidence-interval/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26077_calculating-a-confidence-interval/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26077_calculating-a-confidence-interval/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26077_calculating-a-confidence-interval/subtitles/lang_en_vs3.srt'
+                language_code: en
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26077_calculating-a-confidence-interval/calculating-a-confidence-interval_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26077_calculating-a-confidence-interval/calculating-a-confidence-interval_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26077_calculating-a-confidence-interval/calculating-a-confidence-interval_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26077_calculating-a-confidence-interval/calculating-a-confidence-interval_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26077_calculating-a-confidence-interval/hls/playlist.m3u8'
+  - id: 35757
+    key: '40043986970923'
+    locale: en-us
+    version: 1.0.0
+    title: Establishing Statistical Significance
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 127102
+    atoms:
+      - id: 127102
+        key: '4004398697'
+        locale: en-us
+        version: 1.0.0
+        title: Establishing Statistical Significance
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:31:59 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '13986'
+          youtube_id: C22VZ_mY5RM
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a6c5_establishing-statistical-significance/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a6c5_establishing-statistical-significance/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a6c5_establishing-statistical-significance/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a6c5_establishing-statistical-significance/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a6c5_establishing-statistical-significance/establishing-statistical-significance_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a6c5_establishing-statistical-significance/establishing-statistical-significance_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a6c5_establishing-statistical-significance/establishing-statistical-significance_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a6c5_establishing-statistical-significance/establishing-statistical-significance_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a6c5_establishing-statistical-significance/hls/playlist.m3u8'
+  - id: 133324
+    key: '40043986980923'
+    locale: en-us
+    version: 1.0.0
+    title: Null and Alternative Hypothesis
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 50824
+    atoms:
+      - id: 50824
+        key: '4004398698'
+        locale: en-us
+        version: 1.0.0
+        title: Null and Alternative Hypothesis
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:52:16 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ### Two-tailed vs. one-tailed tests
+
+          The null hypothesis and alternative hypothesis proposed here correspond to a two-tailed test, which allows you to distinguish between three cases:
+
+          1. A statistically significant positive result
+          2. A statistically significant negative result
+          3.  No statistically significant difference.
+
+          Sometimes when people run A/B tests, they will use a one-tailed test, which only allows you to distinguish between two cases:
+
+          1. A statistically significant positive result
+          2. No statistically significant result
+
+          Which one you should use depends on what action you will take based on the results. If you're going to launch the experiment for a statistically significant positive change, and otherwise not, then you don't need to distinguish between a negative result and no result, so a one-tailed test is good enough. If you want to learn the direction of the difference, then a two-tailed test is necessary.
+        instruction:
+          video:
+            id: '30900'
+            youtube_id: QoEqPotgMbA
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd03_null-and-alternative-hypothesis/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd03_null-and-alternative-hypothesis/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd03_null-and-alternative-hypothesis/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd03_null-and-alternative-hypothesis/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd03_null-and-alternative-hypothesis/null-and-alternative-hypothesis_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd03_null-and-alternative-hypothesis/null-and-alternative-hypothesis_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd03_null-and-alternative-hypothesis/null-and-alternative-hypothesis_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd03_null-and-alternative-hypothesis/null-and-alternative-hypothesis_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd03_null-and-alternative-hypothesis/hls/playlist.m3u8'
+          text: null
+        question:
+          title: Null and Alternative Hypothesis
+          background_image: '//lh4.ggpht.com/BNtArv6I0wrv1KpAarKO0_7XFqGCKMQPBYFWHFVbBiQqLol1CnNK0QralK9iPHyxmPvgsJ9fFgXqetXOVzo=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3852598619'
+        answer:
+          text: null
+          video:
+            id: '13204'
+            youtube_id: BGNx2FiNFY0
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a461_null-and-alternative-hypothesis/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a461_null-and-alternative-hypothesis/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a461_null-and-alternative-hypothesis/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a461_null-and-alternative-hypothesis/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a461_null-and-alternative-hypothesis/null-and-alternative-hypothesis_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a461_null-and-alternative-hypothesis/null-and-alternative-hypothesis_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a461_null-and-alternative-hypothesis/null-and-alternative-hypothesis_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a461_null-and-alternative-hypothesis/null-and-alternative-hypothesis_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a461_null-and-alternative-hypothesis/hls/playlist.m3u8'
+  - id: 125750
+    key: '40043987010923'
+    locale: en-us
+    version: 1.0.0
+    title: Comparing Two Samples
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 64974
+    atoms:
+      - id: 64974
+        key: '4004398701'
+        locale: en-us
+        version: 1.0.0
+        title: Comparing Two Samples
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:32:50 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '22236'
+          youtube_id: kaVG7U0rda8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14141_comparing-two-samples/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14141_comparing-two-samples/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14141_comparing-two-samples/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14141_comparing-two-samples/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14141_comparing-two-samples/comparing-two-samples_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14141_comparing-two-samples/comparing-two-samples_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14141_comparing-two-samples/comparing-two-samples_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14141_comparing-two-samples/comparing-two-samples_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14141_comparing-two-samples/hls/playlist.m3u8'
+  - id: 35756
+    key: '40043987020923'
+    locale: en-us
+    version: 1.0.0
+    title: Pooled Standard Error
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 64997
+    atoms:
+      - id: 64997
+        key: '4004398702'
+        locale: en-us
+        version: 1.0.0
+        title: Pooled Standard Error
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:32:50 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '20812'
+          youtube_id: iub8yWiO84I
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d125b0_pooled-standard-error/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d125b0_pooled-standard-error/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d125b0_pooled-standard-error/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d125b0_pooled-standard-error/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d125b0_pooled-standard-error/pooled-standard-error_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d125b0_pooled-standard-error/pooled-standard-error_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d125b0_pooled-standard-error/pooled-standard-error_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d125b0_pooled-standard-error/pooled-standard-error_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d125b0_pooled-standard-error/hls/playlist.m3u8'
+  - id: 108308
+    key: '40043987030923'
+    locale: en-us
+    version: 1.0.0
+    title: 'Practical, or Substantive, Significance'
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 65068
+    atoms:
+      - id: 65068
+        key: '4004398703'
+        locale: en-us
+        version: 1.0.0
+        title: 'Practical, or Substantive, Significance'
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:38:29 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '29681'
+          youtube_id: Q576t5aaZ34
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c358_practical-or-substantive-significance/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c358_practical-or-substantive-significance/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c358_practical-or-substantive-significance/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c358_practical-or-substantive-significance/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c358_practical-or-substantive-significance/practical-or-substantive-significance_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c358_practical-or-substantive-significance/practical-or-substantive-significance_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c358_practical-or-substantive-significance/practical-or-substantive-significance_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c358_practical-or-substantive-significance/practical-or-substantive-significance_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c358_practical-or-substantive-significance/hls/playlist.m3u8'
+  - id: 49546
+    key: '40043987040923'
+    locale: en-us
+    version: 1.0.0
+    title: Size vs. Power Trade-Off
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 65074
+    atoms:
+      - id: 65074
+        key: '4004398704'
+        locale: en-us
+        version: 1.0.0
+        title: Size vs. Power Trade-Off
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:38:29 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '13474'
+          youtube_id: bnTIVGBkKhM
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a53e_size-vs-power-trade-off/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a53e_size-vs-power-trade-off/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a53e_size-vs-power-trade-off/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a53e_size-vs-power-trade-off/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a53e_size-vs-power-trade-off/size-vs-power-trade-off_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a53e_size-vs-power-trade-off/size-vs-power-trade-off_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a53e_size-vs-power-trade-off/size-vs-power-trade-off_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a53e_size-vs-power-trade-off/size-vs-power-trade-off_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a53e_size-vs-power-trade-off/hls/playlist.m3u8'
+  - id: 74832
+    key: '40043987050923'
+    locale: en-us
+    version: 1.0.0
+    title: How Page Views Affect Sensitivity
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 71450
+    atoms:
+      - id: 71450
+        key: '4004398705'
+        locale: en-us
+        version: 1.0.0
+        title: How Page Views Affect Sensitivity
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:29:38 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '37686'
+          youtube_id: WFVj8QI_uto
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29430_how-page-views-affect-sensitivity/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29430_how-page-views-affect-sensitivity/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29430_how-page-views-affect-sensitivity/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29430_how-page-views-affect-sensitivity/subtitles/lang_en_vs3.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29430_how-page-views-affect-sensitivity/how-page-views-affect-sensitivity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29430_how-page-views-affect-sensitivity/how-page-views-affect-sensitivity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29430_how-page-views-affect-sensitivity/how-page-views-affect-sensitivity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29430_how-page-views-affect-sensitivity/how-page-views-affect-sensitivity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29430_how-page-views-affect-sensitivity/hls/playlist.m3u8'
+  - id: 30899
+    key: '40043987060923'
+    locale: en-us
+    version: 1.0.0
+    title: Calculating Number of Pages Views Needed
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 112846
+    atoms:
+      - id: 112846
+        key: '4004398706'
+        locale: en-us
+        version: 1.0.0
+        title: Calculating Number of Pages Views Needed
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:51:04 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ### Note on power
+          Statistics textbooks frequently define power to mean the same thing as sensitivity, that is, 1 - beta. However, conversationally power often means the probability that your test draws the correct conclusions, and this probability depends on both alpha and beta. In this course, we'll use the second definition, and we'll use sensitivity to refer to 1 - beta.
+
+          ### Online sample size calculator
+          Use <a href="http://www.evanmiller.org/ab-testing/sample-size.html" target="_blank">this calculator</a> to determine how many page views we'll need to collect in our experiment. Make sure to choose an absolute difference, not a relative difference.
+        instruction:
+          video:
+            id: '37963'
+            youtube_id: WnQoZzxas-g
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d298fa_calculating-number-of-pages-views-needed/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d298fa_calculating-number-of-pages-views-needed/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d298fa_calculating-number-of-pages-views-needed/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d298fa_calculating-number-of-pages-views-needed/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d298fa_calculating-number-of-pages-views-needed/calculating-number-of-pages-views-needed_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d298fa_calculating-number-of-pages-views-needed/calculating-number-of-pages-views-needed_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d298fa_calculating-number-of-pages-views-needed/calculating-number-of-pages-views-needed_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d298fa_calculating-number-of-pages-views-needed/calculating-number-of-pages-views-needed_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d298fa_calculating-number-of-pages-views-needed/hls/playlist.m3u8'
+          text: null
+        question:
+          title: Calculating Number of Page Views Needed
+          background_image: '//lh3.ggpht.com/jekOqkpQUrFiIyKXKW_FxrqakhSPbFFeXwL--Ad5997xLYoliZHrvPTzb7eum0jcm-q05W7w9zXb_OM7MVo=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3866248587'
+        answer:
+          text: null
+          video:
+            id: '4534'
+            youtube_id: ta5Nz-YCn6g
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb63e_calculating-number-of-pages-views-needed/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb63e_calculating-number-of-pages-views-needed/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb63e_calculating-number-of-pages-views-needed/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb63e_calculating-number-of-pages-views-needed/subtitles/lang_en_vs3.srt'
+                language_code: en
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb63e_calculating-number-of-pages-views-needed/calculating-number-of-pages-views-needed_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb63e_calculating-number-of-pages-views-needed/calculating-number-of-pages-views-needed_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb63e_calculating-number-of-pages-views-needed/calculating-number-of-pages-views-needed_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb63e_calculating-number-of-pages-views-needed/calculating-number-of-pages-views-needed_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb63e_calculating-number-of-pages-views-needed/hls/playlist.m3u8'
+  - id: 39031
+    key: '40043987090923'
+    locale: en-us
+    version: 1.0.0
+    title: How Does Number of Page Views Vary?
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 92467
+    atoms:
+      - id: 92467
+        key: '4004398709'
+        locale: en-us
+        version: 1.0.0
+        title: How Does Number of Page Views Vary?
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:51:30 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ### Online sample size calculator
+          You may wish to use <a href="http://www.evanmiller.org/ab-testing/sample-size.html" target="_blank">the online calculator</a> to check your intuition about whether changes will increase or decrease the sample size.
+        instruction:
+          video:
+            id: '35123'
+            youtube_id: tfhsgVCX2Ao
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26749_how-does-number-of-page-views-vary/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26749_how-does-number-of-page-views-vary/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26749_how-does-number-of-page-views-vary/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26749_how-does-number-of-page-views-vary/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26749_how-does-number-of-page-views-vary/how-does-number-of-page-views-vary_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26749_how-does-number-of-page-views-vary/how-does-number-of-page-views-vary_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26749_how-does-number-of-page-views-vary/how-does-number-of-page-views-vary_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26749_how-does-number-of-page-views-vary/how-does-number-of-page-views-vary_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26749_how-does-number-of-page-views-vary/hls/playlist.m3u8'
+          text: null
+        question:
+          title: How Does Number of Page Views Vary?
+          background_image: '//lh3.googleusercontent.com/xsWOVqU7T7P7tY1v4U8ufHUQa1iHJ_7UUBYLUaee6KiMH_5iEmNDYcQE55Rxm4doeK7Jcpgico20NXxRww=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3866098651'
+        answer:
+          text: null
+          video:
+            id: '18223'
+            youtube_id: gfuknvEP2ro
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f254_how-does-number-of-page-views-vary/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f254_how-does-number-of-page-views-vary/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f254_how-does-number-of-page-views-vary/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f254_how-does-number-of-page-views-vary/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f254_how-does-number-of-page-views-vary/how-does-number-of-page-views-vary_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f254_how-does-number-of-page-views-vary/how-does-number-of-page-views-vary_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f254_how-does-number-of-page-views-vary/how-does-number-of-page-views-vary_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f254_how-does-number-of-page-views-vary/how-does-number-of-page-views-vary_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f254_how-does-number-of-page-views-vary/hls/playlist.m3u8'
+  - id: 109882
+    key: '40043987120923'
+    locale: en-us
+    version: 1.0.0
+    title: Calculating Results
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 78046
+    atoms:
+      - id: 78046
+        key: '4004398712'
+        locale: en-us
+        version: 1.0.0
+        title: Calculating Results
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:50:30 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ### z-score table
+          You can use <a href="http://www.stat.ufl.edu/~athienit/Tables/Ztable.pdf" target="_blank">this z-score table</a>.
+        instruction:
+          video:
+            id: '38976'
+            youtube_id: WkInrWZwbNA
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50274_calculating-results/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50274_calculating-results/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50274_calculating-results/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50274_calculating-results/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50274_calculating-results/calculating-results_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50274_calculating-results/calculating-results_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50274_calculating-results/calculating-results_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50274_calculating-results/calculating-results_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50274_calculating-results/hls/playlist.m3u8'
+          text: null
+        question:
+          title: Calculating Results
+          background_image: '//lh4.ggpht.com/lI9OSO6E9ZX2U6JQ7GP9WsVX8JY81OaAplnHUknl8oAvWralFY3LmEu-x-5RjnnISw_x3PhznsAwMiO0gAk=s0#w=1920&h=1080'
+          alt_text: ''
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3851268814'
+        answer:
+          text: null
+          video:
+            id: '34637'
+            youtube_id: SxCK2_82FfQ
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25e9c_calculating-results/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25e9c_calculating-results/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25e9c_calculating-results/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25e9c_calculating-results/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25e9c_calculating-results/calculating-results_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25e9c_calculating-results/calculating-results_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25e9c_calculating-results/calculating-results_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25e9c_calculating-results/calculating-results_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25e9c_calculating-results/hls/playlist.m3u8'
+  - id: 29768
+    key: '40043987150923'
+    locale: en-us
+    version: 1.0.0
+    title: Confidence Interval Case Breakdown
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 83429
+    atoms:
+      - id: 83429
+        key: '4004398715'
+        locale: en-us
+        version: 1.0.0
+        title: Confidence Interval Case Breakdown
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:51:39 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '18818'
+            youtube_id: gycmvQqw-8s
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fe50_confidence-interval-case-breakdown/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fe50_confidence-interval-case-breakdown/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fe50_confidence-interval-case-breakdown/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fe50_confidence-interval-case-breakdown/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fe50_confidence-interval-case-breakdown/confidence-interval-case-breakdown_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fe50_confidence-interval-case-breakdown/confidence-interval-case-breakdown_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fe50_confidence-interval-case-breakdown/confidence-interval-case-breakdown_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fe50_confidence-interval-case-breakdown/confidence-interval-case-breakdown_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fe50_confidence-interval-case-breakdown/hls/playlist.m3u8'
+          text: null
+        question:
+          title: Confidence Interval Case Breakdown
+          background_image: '//lh5.ggpht.com/lb_KgciAM0W8hyHxQ8Znn_79p80oMZyHeKEdzwOjyOmBrKsw5laJkbznnYETTQ8XZ6CNVsIyv-Zz8nT98w=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3865148626'
+        answer:
+          text: null
+          video:
+            id: '9676'
+            youtube_id: 6pGDwrJHitw
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09007_confidence-interval-case-breakdown/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09007_confidence-interval-case-breakdown/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09007_confidence-interval-case-breakdown/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09007_confidence-interval-case-breakdown/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09007_confidence-interval-case-breakdown/confidence-interval-case-breakdown_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09007_confidence-interval-case-breakdown/confidence-interval-case-breakdown_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09007_confidence-interval-case-breakdown/confidence-interval-case-breakdown_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09007_confidence-interval-case-breakdown/confidence-interval-case-breakdown_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09007_confidence-interval-case-breakdown/hls/playlist.m3u8'
+  - id: 109963
+    key: '40043987180923'
+    locale: en-us
+    version: 1.0.0
+    title: Making Decisions about Uncertain Data
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 71498
+    atoms:
+      - id: 71498
+        key: '4004398718'
+        locale: en-us
+        version: 1.0.0
+        title: Making Decisions about Uncertain Data
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:38:57 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '18443'
+          youtube_id: GM8MV0FvCUo
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f7c5_making-decisions-about-uncertain-data/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f7c5_making-decisions-about-uncertain-data/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f7c5_making-decisions-about-uncertain-data/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f7c5_making-decisions-about-uncertain-data/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f7c5_making-decisions-about-uncertain-data/making-decisions-about-uncertain-data_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f7c5_making-decisions-about-uncertain-data/making-decisions-about-uncertain-data_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f7c5_making-decisions-about-uncertain-data/making-decisions-about-uncertain-data_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f7c5_making-decisions-about-uncertain-data/making-decisions-about-uncertain-data_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f7c5_making-decisions-about-uncertain-data/hls/playlist.m3u8'
+  - id: 74688
+    key: '40043987190923'
+    locale: en-us
+    version: 1.0.0
+    title: Conclusion
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 65434
+    atoms:
+      - id: 65434
+        key: '4004398719'
+        locale: en-us
+        version: 1.0.0
+        title: Conclusion
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:38:30 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '33374'
+          youtube_id: rrSNkPGJmTc
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e096_conclusion/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e096_conclusion/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e096_conclusion/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e096_conclusion/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e096_conclusion/conclusion_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e096_conclusion/conclusion_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e096_conclusion/conclusion_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e096_conclusion/conclusion_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e096_conclusion/hls/playlist.m3u8'
+  - id: 111017
+    key: '40273385472589030923'
+    locale: en-us
+    version: 1.0.0
+    title: Survey Says!
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:44:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 110350
+    atoms:
+      - id: 110350
+        key: '4027338547258903'
+        locale: en-us
+        version: 1.0.0
+        title: Survey Says!
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 21 2016 22:14:55 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ### Survey link
+
+          You can complete the survey <a href="https://docs.google.com/forms/d/18rZ99YZfG9JfHHC2rvIW7MFdijuAaBhj3NkDuRjvwro/viewform?usp=send_form" target="_blank">here</a>.
+
+          Thanks in advance!
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Survey Says!
+          background_image: '//lh3.googleusercontent.com/04UPOHNyjUUTlJ5_21Sl-civ9B5LfutQuHX4VWB8VrT1f8zXGZnbr_dognSCGUmaQh2rgzSkYTF8CKmZ7rfE=s0#w=732&h=405'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4027338547'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null

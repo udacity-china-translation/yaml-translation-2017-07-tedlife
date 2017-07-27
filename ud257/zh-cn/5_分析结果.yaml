@@ -1,0 +1,1187 @@
+id: 178270
+key: '4085798776'
+locale: zh-cn
+version: 1.0.0
+title: 分析结果
+semantic_type: Lesson
+updated_at: 'Fri Apr 21 2017 14:21:36 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: 学习如何分析你的实验结果。
+lesson_type: Classroom
+duration: 420
+is_project_lesson: false
+_concepts_ids:
+  - 177839
+  - 177840
+  - 177845
+  - 177841
+  - 177842
+  - 177843
+  - 177844
+  - 177846
+  - 177847
+  - 177848
+  - 177853
+  - 177849
+  - 177850
+  - 177851
+  - 177852
+  - 177854
+  - 177855
+  - 177856
+  - 177857
+  - 177858
+_project_id: null
+concepts:
+  - id: 177839
+    key: '41155686480923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 简介
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:04 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176041
+    atoms:
+      - id: 176041
+        key: '4115568648'
+        locale: zh-cn
+        version: 1.0.0
+        title: 简介
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:33:41 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          ### 运行 A/B 测试说明
+          运行 A/B 测试的平台有很多，你也可以使用自己的平台。
+
+          这里有你的网站可以使用的众多全方位服务平台（甚至电子邮箱或客户端销售应用程序也可使用）—— 你可<a href="http://en.wikipedia.org/wiki/A/B_testing#A.2FB_testing_tools_comparison" target="_blank">在此</a>查看它们的对比表。 也有很多部件测试方法，你可以使用带有框架、随机化或其他功能的工具包进行实验（并记录结果）。
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '12805'
+          youtube_id: AyeKXinJ3W8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a2a9_introduction/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a2a9_introduction/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a2a9_introduction/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a2a9_introduction/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a2a9_introduction/introduction_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a2a9_introduction/introduction_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a2a9_introduction/introduction_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a2a9_introduction/introduction_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a2a9_introduction/hls/playlist.m3u8'
+  - id: 177840
+    key: '40739790200923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 健全性检查
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:04 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176042
+    atoms:
+      - id: 176042
+        key: '4073979020'
+        locale: zh-cn
+        version: 1.0.0
+        title: 健全性检查
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:33:58 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '27445'
+          youtube_id: OVnlC_T3EpI
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ac93_sanity-checks/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ac93_sanity-checks/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ac93_sanity-checks/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ac93_sanity-checks/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ac93_sanity-checks/sanity-checks_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ac93_sanity-checks/sanity-checks_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ac93_sanity-checks/sanity-checks_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ac93_sanity-checks/sanity-checks_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ac93_sanity-checks/hls/playlist.m3u8'
+  - id: 177845
+    key: '41164485960923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 选择不变量
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:05 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176043
+    atoms:
+      - id: 176043
+        key: '4116448596'
+        locale: zh-cn
+        version: 1.0.0
+        title: 选择不变量
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:53:45 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '29941'
+            youtube_id: qCnbDgy2yHk
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c6b3_choosing-invariants/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c6b3_choosing-invariants/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c6b3_choosing-invariants/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c6b3_choosing-invariants/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c6b3_choosing-invariants/choosing-invariants_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c6b3_choosing-invariants/choosing-invariants_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c6b3_choosing-invariants/choosing-invariants_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c6b3_choosing-invariants/choosing-invariants_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c6b3_choosing-invariants/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 选择不变量
+          background_image: '//lh3.googleusercontent.com/eMMTH2mx8zqfEuW0TgJrgo0_ciLJx13lkMcLzedEzqGC4H8GOsIeZj5vOb3u7gMy_rr8ZXeUIrjL-55AVxpK=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4096748572'
+        answer:
+          text: null
+          video:
+            id: '15895'
+            youtube_id: E1ePfjcVH3I
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c60b_choosing-invariants/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c60b_choosing-invariants/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c60b_choosing-invariants/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c60b_choosing-invariants/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c60b_choosing-invariants/choosing-invariants_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c60b_choosing-invariants/choosing-invariants_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c60b_choosing-invariants/choosing-invariants_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c60b_choosing-invariants/choosing-invariants_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c60b_choosing-invariants/hls/playlist.m3u8'
+  - id: 177841
+    key: '40796087550923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 选择不变量 2
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:06 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176044
+    atoms:
+      - id: 176044
+        key: '4079608755'
+        locale: zh-cn
+        version: 1.0.0
+        title: 选择不变量 2
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:49:59 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '32206'
+            youtube_id: XqEQG4qo94I
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d4c7_choosing-invariants-part-2/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d4c7_choosing-invariants-part-2/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d4c7_choosing-invariants-part-2/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d4c7_choosing-invariants-part-2/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d4c7_choosing-invariants-part-2/choosing-invariants-part-2_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d4c7_choosing-invariants-part-2/choosing-invariants-part-2_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d4c7_choosing-invariants-part-2/choosing-invariants-part-2_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d4c7_choosing-invariants-part-2/choosing-invariants-part-2_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d4c7_choosing-invariants-part-2/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 选择不变量 2
+          background_image: '//lh3.googleusercontent.com/-gm8W2rhJZjEU9GE_Y7OY3i6p0fCUvHNtBEVeTPN_OjE7aqYwEvIi7R4xCECVOzTWxzLeHU2kbdbOUSfhdkj=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4112978611'
+        answer:
+          text: null
+          video:
+            id: '23934'
+            youtube_id: lWjaCJazJE0
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1627f_choosing-invariants-part-2/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1627f_choosing-invariants-part-2/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1627f_choosing-invariants-part-2/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1627f_choosing-invariants-part-2/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1627f_choosing-invariants-part-2/choosing-invariants-part-2_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1627f_choosing-invariants-part-2/choosing-invariants-part-2_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1627f_choosing-invariants-part-2/choosing-invariants-part-2_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1627f_choosing-invariants-part-2/choosing-invariants-part-2_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1627f_choosing-invariants-part-2/hls/playlist.m3u8'
+  - id: 177842
+    key: '41050287250923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 检查不变量
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:07 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176045
+    atoms:
+      - id: 176045
+        key: '4105028725'
+        locale: zh-cn
+        version: 1.0.0
+        title: 检查不变量
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:49:59 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '9900'
+            youtube_id: 7CVlKQ3UjUI
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d090ee_checking-invariants/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d090ee_checking-invariants/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d090ee_checking-invariants/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d090ee_checking-invariants/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d090ee_checking-invariants/checking-invariants_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d090ee_checking-invariants/checking-invariants_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d090ee_checking-invariants/checking-invariants_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d090ee_checking-invariants/checking-invariants_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d090ee_checking-invariants/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 检查不变量
+          background_image: '//lh3.googleusercontent.com/cRflPspsjXU3LJdMvgd8MVwn9bEB3dkBGx_BRmo0OimT8VBqd2uqTiXuzJn2bm1Wts4rvMJDBHBKk2vS1CM=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4072208638'
+        answer:
+          text: null
+          video:
+            id: '25486'
+            youtube_id: NixhPePGk-s
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d183b9_checking-invariants/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d183b9_checking-invariants/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d183b9_checking-invariants/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d183b9_checking-invariants/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d183b9_checking-invariants/checking-invariants_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d183b9_checking-invariants/checking-invariants_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d183b9_checking-invariants/checking-invariants_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d183b9_checking-invariants/checking-invariants_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d183b9_checking-invariants/hls/playlist.m3u8'
+  - id: 177843
+    key: '40713087720923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 检查不变量 2
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:08 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176046
+    atoms:
+      - id: 176046
+        key: '4071308772'
+        locale: zh-cn
+        version: 1.0.0
+        title: 检查不变量 2
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:53:43 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          在第一步中，“标准偏差（SD）”是所占取样分布的标准偏差，即标准误差（SE）。在计算中，应该用 SE，而不是 SD。
+
+          ### z-值表
+          你可以使用<a href="http://www.utdallas.edu/dept/abp/zscoretable.pdf" target="_blank">此 z-值表</a>。
+        instruction:
+          video:
+            id: '6329'
+            youtube_id: 05jVh4kUbHU
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06b71_checking-invariants-part-2/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06b71_checking-invariants-part-2/subtitles/lang_en_vs4.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06b71_checking-invariants-part-2/subtitles/lang_ar_vs3.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06b71_checking-invariants-part-2/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06b71_checking-invariants-part-2/checking-invariants-part-2_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06b71_checking-invariants-part-2/checking-invariants-part-2_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06b71_checking-invariants-part-2/checking-invariants-part-2_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06b71_checking-invariants-part-2/checking-invariants-part-2_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06b71_checking-invariants-part-2/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 检查不变量 2
+          background_image: '//lh3.googleusercontent.com/6d_AdZkM8Htf_Jk9xAgxPMkAQoGOMb3IEQ92TPFPM7Oi1QFManjkqScWPhG94Z3kaSnlBVh6Qj6z4f5UPg=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4117218580'
+        answer:
+          text: null
+          video:
+            id: '24459'
+            youtube_id: Mftti4FSjn4
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d16cf6_checking-invariants-part-2/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d16cf6_checking-invariants-part-2/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d16cf6_checking-invariants-part-2/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d16cf6_checking-invariants-part-2/subtitles/lang_en_vs3.srt'
+                language_code: en
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d16cf6_checking-invariants-part-2/checking-invariants-part-2_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d16cf6_checking-invariants-part-2/checking-invariants-part-2_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d16cf6_checking-invariants-part-2/checking-invariants-part-2_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d16cf6_checking-invariants-part-2/checking-invariants-part-2_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d16cf6_checking-invariants-part-2/hls/playlist.m3u8'
+  - id: 177844
+    key: '41174386370923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 健全性检查：总结
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:09 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176047
+    atoms:
+      - id: 176047
+        key: '4117438637'
+        locale: zh-cn
+        version: 1.0.0
+        title: 健全性检查：总结
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:39:41 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '32716'
+          youtube_id: rCAYdZk5O2E
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d80c_sanity-checking-wrapup/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d80c_sanity-checking-wrapup/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d80c_sanity-checking-wrapup/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d80c_sanity-checking-wrapup/subtitles/lang_en_vs3.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d80c_sanity-checking-wrapup/sanity-checking-wrapup_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d80c_sanity-checking-wrapup/sanity-checking-wrapup_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d80c_sanity-checking-wrapup/sanity-checking-wrapup_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d80c_sanity-checking-wrapup/sanity-checking-wrapup_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d80c_sanity-checking-wrapup/hls/playlist.m3u8'
+  - id: 177846
+    key: '40769787150923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 单个指标：简介
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:11 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176048
+    atoms:
+      - id: 176048
+        key: '4076978715'
+        locale: zh-cn
+        version: 1.0.0
+        title: 单个指标：简介
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:36:13 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          ### 如果你的结果不显著，不要做什么
+
+          Carrie 给出了几个建议，说明如果你的结果不显著你能做什么，但是我们总是期待结果是显著的。 你可能会想继续将实验运行几天，看看额外的数据是否会帮助你获得显著的结果。 但是，这可能会导致比你的预期更高的 false positive 率！ 参见<a href="http://www.evanmiller.org/how-not-to-run-an-ab-test.html" target="_blank">此博文</a>了解更多。 在不喜欢结果时不要继续进行更久的实验，而是提前计算好实验的样本容量，以确保第一次看到结果时有足够的功效。
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '34518'
+          youtube_id: StP9L9f70EU
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25ca9_single-metric-introduction/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25ca9_single-metric-introduction/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25ca9_single-metric-introduction/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25ca9_single-metric-introduction/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25ca9_single-metric-introduction/single-metric-introduction_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25ca9_single-metric-introduction/single-metric-introduction_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25ca9_single-metric-introduction/single-metric-introduction_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25ca9_single-metric-introduction/single-metric-introduction_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d25ca9_single-metric-introduction/hls/playlist.m3u8'
+  - id: 177847
+    key: '40737188220923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 单一指标：示例
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:12 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176049
+    atoms:
+      - id: 176049
+        key: '4073718822'
+        locale: zh-cn
+        version: 1.0.0
+        title: 单一指标：示例
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:49:59 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ### 在线计算器
+          你可以使用<a href="http://graphpad.com/quickcalcs/binomial1.cfm" target="_blank">此在线计算器</a>进行符号检验计算。
+          ### 测验数据
+          这是你需要复制并粘贴的测试题数据：
+          Xs_cont = [196, 200, 200, 216, 212, 185, 225, 187, 205, 211, 192, 196, 223, 192]  
+          Ns_cont = [2029, 1991, 1951, 1985, 1973, 2021, 2041, 1980, 1951, 1988, 1977, 2019, 2035, 2007]  
+          Xs_exp = [179, 208, 205, 175, 191, 291, 278, 216, 225, 207, 205, 200, 297, 299]  
+          Ns_exp = [1971, 2009, 2049, 2015, 2027, 1979, 1959, 2020, 2049, 2012, 2023, 1981, 1965, 1993]
+
+          你也可以下载<a href="https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd002/L5-+Simple+Metric+Quiz+Data.xlsx" target="_blank">此表格</a>进行计算。
+
+          ### z-值表
+          你可以使用<a href="http://www.utdallas.edu/dept/abp/zscoretable.pdf" target="_blank">此 z-值表</a>。
+
+          ### 计算错误
+          在大约 2:30 处，Caroline 说置信区间的下限为 0.0020，但实际的值是 0.0220，大于实践意义边界。
+        instruction:
+          video:
+            id: '23338'
+            youtube_id: LCZG4wlEFXE
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d156bf_single-metric-example/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d156bf_single-metric-example/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d156bf_single-metric-example/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d156bf_single-metric-example/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d156bf_single-metric-example/single-metric-example_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d156bf_single-metric-example/single-metric-example_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d156bf_single-metric-example/single-metric-example_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d156bf_single-metric-example/single-metric-example_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d156bf_single-metric-example/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 单一指标：示例
+          background_image: '//lh3.googleusercontent.com/IOsnHBO8pfAkzV9RjAd8pyvlRwsR0l0P9qEs8va1eYIH-l5N__nVfhRFYkFd1NPMANjVLqvs_Tt8yk9tmTIF=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4107458604'
+        answer:
+          text: null
+          video:
+            id: '6190'
+            youtube_id: '-QwMdwqUq9c'
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06a83_single-metric-example/subtitles/lang_en_vs6.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06a83_single-metric-example/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06a83_single-metric-example/subtitles/lang_ar_vs3.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06a83_single-metric-example/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06a83_single-metric-example/single-metric-example_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06a83_single-metric-example/single-metric-example_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06a83_single-metric-example/single-metric-example_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06a83_single-metric-example/single-metric-example_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06a83_single-metric-example/hls/playlist.m3u8'
+  - id: 177848
+    key: '40782488340923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 单一指标：明白了
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:13 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176050
+    atoms:
+      - id: 176050
+        key: '4078248834'
+        locale: zh-cn
+        version: 1.0.0
+        title: 单一指标：明白了
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:29:05 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '38083'
+          youtube_id: WrfWFLiFeMU
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ba5_single-metric-gotchas/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ba5_single-metric-gotchas/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ba5_single-metric-gotchas/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ba5_single-metric-gotchas/subtitles/lang_en_vs3.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ba5_single-metric-gotchas/single-metric-gotchas_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ba5_single-metric-gotchas/single-metric-gotchas_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ba5_single-metric-gotchas/single-metric-gotchas_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ba5_single-metric-gotchas/single-metric-gotchas_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ba5_single-metric-gotchas/hls/playlist.m3u8'
+  - id: 177853
+    key: '41091086150923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 明白了：辛普森悖论
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:13 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176051
+    atoms:
+      - id: 176051
+        key: '4109108615'
+        locale: zh-cn
+        version: 1.0.0
+        title: 明白了：辛普森悖论
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:50:56 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '35710'
+            youtube_id: Tx_jtCfrbt0
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27158_gotchas-simpsons-paradox/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27158_gotchas-simpsons-paradox/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27158_gotchas-simpsons-paradox/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27158_gotchas-simpsons-paradox/subtitles/lang_en_vs3.srt'
+                language_code: en
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27158_gotchas-simpsons-paradox/gotchas-simpsons-paradox_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27158_gotchas-simpsons-paradox/gotchas-simpsons-paradox_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27158_gotchas-simpsons-paradox/gotchas-simpsons-paradox_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27158_gotchas-simpsons-paradox/gotchas-simpsons-paradox_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27158_gotchas-simpsons-paradox/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 明白了：辛普森悖论
+          background_image: '//lh3.googleusercontent.com/rjx8JesX8oEkdJLJxc7E1j0F4uOPAJ9rytZV2IdohTKyJGAFtHtoQsEpujEpSpQ2kPx7Ihf0PLgquff62YA=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4084608721'
+        answer:
+          text: null
+          video:
+            id: '18636'
+            youtube_id: GSPTcqNpab8
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fb18_gotchas-simpsons-paradox/subtitles/lang_pt-br_vs1.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fb18_gotchas-simpsons-paradox/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fb18_gotchas-simpsons-paradox/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fb18_gotchas-simpsons-paradox/gotchas-simpsons-paradox_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fb18_gotchas-simpsons-paradox/gotchas-simpsons-paradox_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fb18_gotchas-simpsons-paradox/gotchas-simpsons-paradox_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fb18_gotchas-simpsons-paradox/gotchas-simpsons-paradox_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fb18_gotchas-simpsons-paradox/hls/playlist.m3u8'
+  - id: 177849
+    key: '41156885870923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 多重指标：简介
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:14 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176052
+    atoms:
+      - id: 176052
+        key: '4115688587'
+        locale: zh-cn
+        version: 1.0.0
+        title: 多重指标：简介
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:34:36 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          ### 多重比较
+          如 Carrie 提到的那样，随着你测试更多的指标，就更有可能其中一个偶然显示出统计显著性结果。下个视频中会进行更详细的解说。 你也可以参阅<a href="http://en.wikipedia.org/wiki/Multiple_comparisons_problem" target="_blank">此文章</a>了解更多信息。
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '4529'
+          youtube_id: dw0UylGwPe8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb62c_multiple-metrics-introduction/subtitles/lang_pt-br_vs1.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb62c_multiple-metrics-introduction/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb62c_multiple-metrics-introduction/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb62c_multiple-metrics-introduction/multiple-metrics-introduction_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb62c_multiple-metrics-introduction/multiple-metrics-introduction_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb62c_multiple-metrics-introduction/multiple-metrics-introduction_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb62c_multiple-metrics-introduction/multiple-metrics-introduction_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb62c_multiple-metrics-introduction/hls/playlist.m3u8'
+  - id: 177850
+    key: '41053286040923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 多个指标：示例
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:15 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176053
+    atoms:
+      - id: 176053
+        key: '4105328604'
+        locale: zh-cn
+        version: 1.0.0
+        title: 多个指标：示例
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:49:59 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '9275'
+            youtube_id: 60IGcSho56o
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d08824_multiple-metrics-example/subtitles/lang_pt-br_vs1.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d08824_multiple-metrics-example/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d08824_multiple-metrics-example/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d08824_multiple-metrics-example/multiple-metrics-example_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d08824_multiple-metrics-example/multiple-metrics-example_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d08824_multiple-metrics-example/multiple-metrics-example_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d08824_multiple-metrics-example/multiple-metrics-example_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d08824_multiple-metrics-example/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 多个指标：示例
+          background_image: '//lh3.googleusercontent.com/2wddnQ2pjnLZ-1h7WQvo9VGVpWDOLddDOY8VqS7hH_Yq5rzVvt4vCQF3lVahDKHiUDspVEnLmnytOPF9eQo=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4079808710'
+        answer:
+          text: null
+          video:
+            id: '3191'
+            youtube_id: 0eCWo0h5DpM
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9e2f_multiple-metrics-example/subtitles/lang_pt-br_vs1.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9e2f_multiple-metrics-example/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9e2f_multiple-metrics-example/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9e2f_multiple-metrics-example/multiple-metrics-example_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9e2f_multiple-metrics-example/multiple-metrics-example_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9e2f_multiple-metrics-example/multiple-metrics-example_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9e2f_multiple-metrics-example/multiple-metrics-example_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9e2f_multiple-metrics-example/hls/playlist.m3u8'
+  - id: 177851
+    key: '40748587040923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 多个指标：示例 2
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:15 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176054
+    atoms:
+      - id: 176054
+        key: '4074858704'
+        locale: zh-cn
+        version: 1.0.0
+        title: 多个指标：示例 2
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:48:56 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ### Bonferroni 校正
+          你可以在<a href="http://en.wikipedia.org/wiki/Bonferroni_correction" target="_blank">此文章</a>找到关于 Bonferroni 校正的更多详情，包括其效果证明。
+
+          ### z-值表
+          你可以使用<a href="http://www.utdallas.edu/dept/abp/zscoretable.pdf" target="_blank">此 z-值表</a>。
+        instruction:
+          video:
+            id: '25814'
+            youtube_id: nTeQi9MjgiA
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18a3c_multiple-metrics-example-2/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18a3c_multiple-metrics-example-2/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18a3c_multiple-metrics-example-2/subtitles/lang_pt-br_vs1.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18a3c_multiple-metrics-example-2/multiple-metrics-example-2_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18a3c_multiple-metrics-example-2/multiple-metrics-example-2_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18a3c_multiple-metrics-example-2/multiple-metrics-example-2_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18a3c_multiple-metrics-example-2/multiple-metrics-example-2_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18a3c_multiple-metrics-example-2/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 多个指标：示例 2
+          background_image: '//lh3.googleusercontent.com/6CRdAyxlIS2nUo8AkHbN1WuGU38xurfRqlQlexHFvK7DyziC-nUnuSucoRqd8Bvi0WNB9JffuOsSTJrdTCM=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4091338676'
+        answer:
+          text: null
+          video:
+            id: '24089'
+            youtube_id: m0E26ndQBNo
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d165aa_multiple-metrics-example-2/subtitles/lang_pt-br_vs1.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d165aa_multiple-metrics-example-2/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d165aa_multiple-metrics-example-2/subtitles/lang_en_vs2.srt'
+                language_code: en
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d165aa_multiple-metrics-example-2/multiple-metrics-example-2_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d165aa_multiple-metrics-example-2/multiple-metrics-example-2_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d165aa_multiple-metrics-example-2/multiple-metrics-example-2_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d165aa_multiple-metrics-example-2/multiple-metrics-example-2_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d165aa_multiple-metrics-example-2/hls/playlist.m3u8'
+  - id: 177852
+    key: '41042786060923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 多个指标：示例 3
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:17 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176055
+    atoms:
+      - id: 176055
+        key: '4104278606'
+        locale: zh-cn
+        version: 1.0.0
+        title: 多个指标：示例 3
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:35:24 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          ### 不那么保守的多重比较方法
+          <a href="http://en.wikipedia.org/wiki/Bonferroni_correction" target="_blank">Bonferroni 校正</a>是一个非常简单的方法，但也有许多其他的方法， 包括<a href="http://en.wikipedia.org/wiki/Closed_testing_procedure" target="_blank">封闭测试程序</a>、 <a href="http://en.wikipedia.org/wiki/Bonferroni_bound" target="_blank">Boole-Bonferroni 边界</a> 和 <a href="http://en.wikipedia.org/wiki/Holm%E2%80%93Bonferroni_method" target="_blank">Holm-Bonferroni 方法</a>。 <a href="http://en.wikipedia.org/wiki/Multiple_comparisons_problem" target="_blank">此文章</a>包含更多关于多重比较的信息， 而<a href="http://en.wikipedia.org/wiki/False_discovery_rate" target="_blank">此文章</a>包含更多关于错误发现率 (FDR) 的信息及其控制方法，而不是族系误差率 (FWER) 的控制方法。
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '31785'
+          youtube_id: XByoblkCgfE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d23e_multiple-metrics-example-3/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d23e_multiple-metrics-example-3/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d23e_multiple-metrics-example-3/subtitles/lang_pt-br_vs1.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d23e_multiple-metrics-example-3/multiple-metrics-example-3_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d23e_multiple-metrics-example-3/multiple-metrics-example-3_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d23e_multiple-metrics-example-3/multiple-metrics-example-3_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d23e_multiple-metrics-example-3/multiple-metrics-example-3_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d23e_multiple-metrics-example-3/hls/playlist.m3u8'
+  - id: 177854
+    key: '41147386150923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 分析多个指标
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:18 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176056
+    atoms:
+      - id: 176056
+        key: '4114738615'
+        locale: zh-cn
+        version: 1.0.0
+        title: 分析多个指标
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:56 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '3026'
+          youtube_id: mbHnQ_EdrZ8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9b0e_analyzing-multiple-metrics/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9b0e_analyzing-multiple-metrics/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9b0e_analyzing-multiple-metrics/subtitles/lang_pt-br_vs1.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9b0e_analyzing-multiple-metrics/analyzing-multiple-metrics_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9b0e_analyzing-multiple-metrics/analyzing-multiple-metrics_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9b0e_analyzing-multiple-metrics/analyzing-multiple-metrics_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9b0e_analyzing-multiple-metrics/analyzing-multiple-metrics_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cf9b0e_analyzing-multiple-metrics/hls/playlist.m3u8'
+  - id: 177855
+    key: '41026486000923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 得出结论
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:21 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176057
+    atoms:
+      - id: 176057
+        key: '4102648600'
+        locale: zh-cn
+        version: 1.0.0
+        title: 得出结论
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:56 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          ### 建议
+          在我们这堂课程的所有示例中，我们不仅尝试了确定结果的统计显著性，而且还提供下一步如何操作的建议。 <a href="https://www.udacity.com/course/viewer#!/c-ud257/l-4085798776/e-4109108615/m-4091178657" target="_blank">这些 </a><a href="https://classroom.udacity.com/courses/ud257/lessons/4085798776/concepts/41042786060923" target="_blank">视频 </a><a href="https://www.udacity.com/course/viewer#!/c-ud257/l-4085798776/e-4073718822/m-4075178851" target="_blank">中 </a>的<a href="https://classroom.udacity.com/courses/ud257/lessons/4085798776/concepts/40737188220923" target="_blank">示例 </a>展示了如何利用 Diane 和 Carrie 讲到的技巧来做到这些。
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '14866'
+          youtube_id: CZQ-nZyUG7g
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aefd_drawing-conclusions/subtitles/lang_pt-br_vs1.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aefd_drawing-conclusions/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aefd_drawing-conclusions/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aefd_drawing-conclusions/drawing-conclusions_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aefd_drawing-conclusions/drawing-conclusions_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aefd_drawing-conclusions/drawing-conclusions_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aefd_drawing-conclusions/drawing-conclusions_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aefd_drawing-conclusions/hls/playlist.m3u8'
+  - id: 177856
+    key: '41116585760923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 明白了：随时间变化
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:22 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176058
+    atoms:
+      - id: 176058
+        key: '4111658576'
+        locale: zh-cn
+        version: 1.0.0
+        title: 明白了：随时间变化
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:34:00 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '27757'
+          youtube_id: P7Hso-EoWvA
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b282_gotchas-changes-over-time/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b282_gotchas-changes-over-time/subtitles/lang_pt-br_vs1.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b282_gotchas-changes-over-time/subtitles/lang_en_vs2.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b282_gotchas-changes-over-time/gotchas-changes-over-time_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b282_gotchas-changes-over-time/gotchas-changes-over-time_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b282_gotchas-changes-over-time/gotchas-changes-over-time_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b282_gotchas-changes-over-time/gotchas-changes-over-time_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b282_gotchas-changes-over-time/hls/playlist.m3u8'
+  - id: 177857
+    key: '40806387570923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 经验教训
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:23 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176059
+    atoms:
+      - id: 176059
+        key: '4080638757'
+        locale: zh-cn
+        version: 1.0.0
+        title: 经验教训
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:34:03 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '8961'
+          youtube_id: 5JjCVTc0FGk
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07fe2_lessons-learned/subtitles/lang_pt-br_vs1.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07fe2_lessons-learned/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07fe2_lessons-learned/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07fe2_lessons-learned/lessons-learned_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07fe2_lessons-learned/lessons-learned_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07fe2_lessons-learned/lessons-learned_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07fe2_lessons-learned/lessons-learned_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07fe2_lessons-learned/hls/playlist.m3u8'
+  - id: 177858
+    key: '41234885530923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 课程结论
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 16:07:24 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176060
+    atoms:
+      - id: 176060
+        key: '4123488553'
+        locale: zh-cn
+        version: 1.0.0
+        title: 课程结论
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:39:31 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '9359'
+          youtube_id: 6aBIwp3n7_8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d088bf_course-conclusion/subtitles/lang_pt-br_vs1.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d088bf_course-conclusion/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d088bf_course-conclusion/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d088bf_course-conclusion/course-conclusion_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d088bf_course-conclusion/course-conclusion_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d088bf_course-conclusion/course-conclusion_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d088bf_course-conclusion/course-conclusion_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d088bf_course-conclusion/hls/playlist.m3u8'

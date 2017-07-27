@@ -1,0 +1,881 @@
+id: 178267
+key: '3998098714'
+locale: zh-cn
+version: 1.0.0
+title: 试验中的政策和伦理问题
+semantic_type: Lesson
+updated_at: 'Mon May 15 2017 05:03:58 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: 了解如何充分保护试验被试，以及关于试验伦理你需要知道的事情。
+lesson_type: Classroom
+duration: 60
+is_project_lesson: false
+_concepts_ids:
+  - 177767
+  - 177768
+  - 177769
+  - 177770
+  - 177772
+  - 177773
+  - 177774
+  - 177775
+  - 177776
+  - 177777
+  - 177778
+  - 177779
+  - 177780
+  - 177781
+  - 177782
+_project_id: null
+concepts:
+  - id: 177767
+    key: '40011586090923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 简介
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 14:01:58 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 175970
+    atoms:
+      - id: 175970
+        key: '4001158609'
+        locale: zh-cn
+        version: 1.0.0
+        title: 简介
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:57 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '30826'
+          youtube_id: yod62-mxXR4
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cc3f_introduction-reshoot/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cc3f_introduction-reshoot/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cc3f_introduction-reshoot/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cc3f_introduction-reshoot/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cc3f_introduction-reshoot/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cc3f_introduction-reshoot/introduction-reshoot_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cc3f_introduction-reshoot/introduction-reshoot_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cc3f_introduction-reshoot/introduction-reshoot_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cc3f_introduction-reshoot/introduction-reshoot_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cc3f_introduction-reshoot/hls/playlist.m3u8'
+  - id: 177768
+    key: '40011586100923'
+    locale: zh-cn
+    version: 1.0.0
+    title: Tuskegee 和 Milgram 实验
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 14:01:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 175971
+    atoms:
+      - id: 175971
+        key: '4001158610'
+        locale: zh-cn
+        version: 1.0.0
+        title: Tuskegee 和 Milgram 实验
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:39:41 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          ### Tuskegee 和 Milgram 实验
+          这些文章包含更多关于 <a href="http://en.wikipedia.org/wiki/Tuskegee_syphilis_experiment" target="_blank">Tuskegee</a>  和 <a href="http://en.wikipedia.org/wiki/Milgram_experiment" target="_blank">Milgram</a> 实验的信息。
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '24953'
+          youtube_id: mxNp8_3syVk
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1778e_tuskegee-and-milgram-experiments/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1778e_tuskegee-and-milgram-experiments/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1778e_tuskegee-and-milgram-experiments/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1778e_tuskegee-and-milgram-experiments/subtitles/lang_en_vs3.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1778e_tuskegee-and-milgram-experiments/tuskegee-and-milgram-experiments_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1778e_tuskegee-and-milgram-experiments/tuskegee-and-milgram-experiments_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1778e_tuskegee-and-milgram-experiments/tuskegee-and-milgram-experiments_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1778e_tuskegee-and-milgram-experiments/tuskegee-and-milgram-experiments_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1778e_tuskegee-and-milgram-experiments/hls/playlist.m3u8'
+  - id: 177769
+    key: '40011586110923'
+    locale: zh-cn
+    version: 1.0.0
+    title: Facebook 实验
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 14:02:00 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 175972
+    atoms:
+      - id: 175972
+        key: '4001158611'
+        locale: zh-cn
+        version: 1.0.0
+        title: Facebook 实验
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:33:40 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          ### Facebook 实验
+          <a href="http://www.wsj.com/articles/furor-erupts-over-facebook-experiment-on-users-1404085840" target="_blank">这篇文章</a>包含 Facebook 实验的更多信息。
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '37002'
+          youtube_id: VqLX0wnrldc
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d287e2_facebook-experiment/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d287e2_facebook-experiment/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d287e2_facebook-experiment/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d287e2_facebook-experiment/subtitles/lang_en_vs3.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d287e2_facebook-experiment/facebook-experiment_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d287e2_facebook-experiment/facebook-experiment_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d287e2_facebook-experiment/facebook-experiment_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d287e2_facebook-experiment/facebook-experiment_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d287e2_facebook-experiment/hls/playlist.m3u8'
+  - id: 177770
+    key: '39927087840923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 第一项原则：风险
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 14:02:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 175973
+    atoms:
+      - id: 175973
+        key: '3992708784'
+        locale: zh-cn
+        version: 1.0.0
+        title: 第一项原则：风险
+        semantic_type: TextAtom
+        updated_at: 'Sun Sep 04 2016 14:02:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## IRB 的四项原则
+
+          好的，我们刚看了几个需要伦理委员会 (IRB) 进行审查的实验。那么 IRB 寻求的四个主要原则是什么呢？
+
+          ## 第一项原则：风险
+
+          首先，在这项研究中，参与者面临什么样的风险？主要界限在于风险是否超过了“最低风险”。 最低风险的定义为参与者在日常生活中会遇到的伤害的概率和程度，包括身体、心理、情感、社会和经济方面。 如果风险超过最低风险，那就需要获得知情同意。我们将在后面讨论知情同意。
+
+          在大多数（并非全部）在线实验中，这些实验是否会导致超过最低风险的伤害是非常有争议的。 如果我们改变某个教育网站的课程排名，或更改某个在线游戏的用户界面，参与者会暴露在什么风险之下呢？
+
+          与健康或财务相关的网站或应用程序当然除外。 比如，在 Facebook 的实验中，参与者是否真的暴露在超过最低风险的伤害之下是有争议的： 显示的所有内容无论如何都会进入他们的信息流，问题就在于删掉一些文章是否会增加风险。
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 177772
+    key: '40011586120923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 评估风险
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 14:02:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 175974
+    atoms:
+      - id: 175974
+        key: '4001158612'
+        locale: zh-cn
+        version: 1.0.0
+        title: 评估风险
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:49:59 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '21050'
+            youtube_id: j0qfuunqym8
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12a1b_assessing-risk/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12a1b_assessing-risk/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12a1b_assessing-risk/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12a1b_assessing-risk/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12a1b_assessing-risk/assessing-risk_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12a1b_assessing-risk/assessing-risk_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12a1b_assessing-risk/assessing-risk_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12a1b_assessing-risk/assessing-risk_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12a1b_assessing-risk/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 评估风险
+          background_image: '//lh4.ggpht.com/-a0oAE699IJ0e_4L2k7Ij2NcDpjfOHXYQl7AJR6cXLuhFN4TOA_iHpgS2gm4k-ort8cFMfCj-krZtGHAzUgn=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3881428577'
+        answer:
+          text: null
+          video:
+            id: '37822'
+            youtube_id: WjRAjbeG0RE
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2967b_assessing-risk/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2967b_assessing-risk/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2967b_assessing-risk/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2967b_assessing-risk/subtitles/lang_en_vs3.srt'
+                language_code: en
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2967b_assessing-risk/assessing-risk_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2967b_assessing-risk/assessing-risk_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2967b_assessing-risk/assessing-risk_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2967b_assessing-risk/assessing-risk_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2967b_assessing-risk/hls/playlist.m3u8'
+  - id: 177773
+    key: '39799589070923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 下两项原则
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 14:02:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 175975
+    atoms:
+      - id: 175975
+        key: '3979958907'
+        locale: zh-cn
+        version: 1.0.0
+        title: 下两项原则
+        semantic_type: TextAtom
+        updated_at: 'Sun Sep 04 2016 14:02:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 第二项原则：益处
+
+          下一个问题是，这项研究的益处是什么？即使风险很小，但是研究结果有什么意义呢？大多数 A/B 测试的益处在于改进产品。 在其他社会科学中，在于理解人的境况以提供帮助，比如教育和发展。医学界的测试风险往往较高，但却能带来健康状况的改善。
+
+          能够说明完成研究的益处是非常重要的。
+
+          ## 第三项原则：备选方案
+
+          第三点，参与者还有什么其他选择？比如，您要测试一个搜索引擎的变化，参与者始终可以选择使用其他搜索引擎。 主要问题在于参与者的选择越少，强制性以及参与者是否能选择参与与否的问题就越多，以及这些问题如何在风险和益处之间实现平衡。
+
+          例如，医学临床试验要测试治疗癌症的新药，鉴于大多数参与者面临的另一个主要选择是死亡，那么在知情同意的情况下，参与者的风险还是很高的。
+
+          对于在线实验，需要考虑的问题是用户可以使用的其他服务有哪些，以及转换服务的成本是多少，包括时间、金钱、信息等。
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 177774
+    key: '39997087540923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 第四项原则：数据敏感性
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 14:02:05 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 175976
+    atoms:
+      - id: 175976
+        key: '3999708754'
+        locale: zh-cn
+        version: 1.0.0
+        title: 第四项原则：数据敏感性
+        semantic_type: TextAtom
+        updated_at: 'Tue Oct 25 2016 03:00:47 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 第四项原则：数据敏感性
+
+          最后一点，收集的数据是什么，以及隐私和保密性的期望如何？最后一个问题非常微妙，包含多个问题：
+
+          * 参与者了解从他们那里收集的数据是什么吗？
+          * 如果公开这些数据，会给他们带来什么伤害？
+          * 他们是否期望这些数据被当做隐私和保密信息？
+
+          例如，如果参与者在公共环境中接受观察（如：足球场），那就没有隐私可言。如果这项研究是针对现有公共数据，也就谈不上更进一步的保密了。
+
+          但是，如果收集了新数据，那问题就又回到：
+
+          * 收集了哪些数据？敏感性如何？是否包括财务和健康数据？
+          * 收集的数据是否会与个人联系起来，也就是说是否具有个人可识别性？
+          * 数据是如何处理的，采取了什么安全措施？参与者可以期望什么样的保密级别？
+          * 数据公之于众后会对个人带来什么伤害，包括健康、心理、情绪、社会和财务方面？
+          例如很多时候，从观察到的“公共”行为、调查和采访中收集的数据，如果数据没有个人可识别性，则被视为不需要 IRB 审查（参考：下方 NSF 常见问题解答）。
+
+          总的来说，实验数据收集主要存在三大问题：
+
+          * 对于新收集和存储的数据，数据的敏感性如何？处理数据时采取了什么内部防御措施？例如设置了何种访问控制？如何捕捉和管理违反该防御措施的行为等？
+          * 然后，如何使用收集的数据？如何保护参与者的数据？如何向参与者保证为了此研究而向他们收集的数据不会被用于其他目的？随着数据敏感性的增强，这一点越来越重要。
+          * 最后，哪些数据会更加广泛地公开，是否会给参与者带来任何额外风险？
+        instructor_notes: |-
+
+          ----
+
+          ### 假名和匿名数据之间的区别
+
+          经常被问到的一个问题是可识别的数据，假名数据和匿名的数据之间的区别是什么。
+
+          可识别的数据是指使用个人身份信息来存储和收集数据。这可以是姓名、身份证明（例如社会保险号码或驾驶执照号码、电话号码等）。HIPAA 是一种通用标准，这个标准包含了被认为可以被识别的 <a href="http://www.hhs.gov/ocr/privacy/hipaa/understanding/coveredentities/De-identification/guidance.html#standard" target="_blank">18 个标识符（参见安全港法）</a>。设备 ID（如智能手机的设备ID）在很多情况下被看为个人身份的证明。
+
+          **匿名数据**是指在没有任何个人可识别信息的情况下被存储和收集数据。如果数据与随机生成的 ID 一起被存储，例如在某些事件中（如用户第一次访问应用软件或网站并且没有存储此类 ID）时分配的 Cookie，则该数据可以被认为是**假名**。
+
+          在大多数情况下，匿名数据仍然具有时间戳，这是 HIPAA 18个标识符之一。为什么？那么，我们需要区分匿名的数据和匿名化的数据。 **匿名化的数据 **可以被识别或者匿名数据可以被检查和保证以某种方式重新被识别的风险低到不存在，即给定数据，人们找出这个数据所指的具体个人。通常这种保证是在统计学上进行的，并且考虑多少个人将落入每个可能的桶的可能性（即值的排列组合）。
+
+          这意味着匿名数据仍然具有较高的可能重新被识别的风险（参见 <a href="http://en.wikipedia.org/wiki/AOL_search_data_leak" target="_blank">AOL 例子</a>）。
+
+          因此，如果我们回到正在被收集、存储和在实验中使用的数据，问题是：
+
+          * 数据有多敏感？
+          * 从数据中的重新识别中个人的风险是什么？
+
+          随着敏感性和风险的增加，数据保护的水平必须提高：保密性、控制访问、安全性、监控和审计等。
+
+          ### 附加阅读
+
+          Daniel Solove 的<a href="https://www.law.upenn.edu/journals/lawreview/articles/volume154/issue3/Solove154U.Pa.L.Rev.477%282006%29.pdf" target="_blank">“隐私分类法”</a> 将人们的某些事物的隐私分类，以便更好地理解隐私权侵犯这个问题。
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 177775
+    key: '40011586150923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 评估数据敏感性
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 14:02:05 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 175977
+    atoms:
+      - id: 175977
+        key: '4001158615'
+        locale: zh-cn
+        version: 1.0.0
+        title: 评估数据敏感性
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:49:59 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '36320'
+            youtube_id: UkGwgerJU44
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27c32_assessing-data-sensitivity/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27c32_assessing-data-sensitivity/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27c32_assessing-data-sensitivity/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27c32_assessing-data-sensitivity/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27c32_assessing-data-sensitivity/assessing-data-sensitivity_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27c32_assessing-data-sensitivity/assessing-data-sensitivity_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27c32_assessing-data-sensitivity/assessing-data-sensitivity_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27c32_assessing-data-sensitivity/assessing-data-sensitivity_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d27c32_assessing-data-sensitivity/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 评估数据敏感性
+          background_image: '//lh4.ggpht.com/VbsQSQZHkG4T8o0t-avGzahoWArZgzfXW9rJJl7K533WNmdP6WmZjSfn_q308LGos1_hx4j3zet4z1HRwMM=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3884568702'
+        answer:
+          text: null
+          video:
+            id: '30327'
+            youtube_id: qgwygpD0eN8
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c931_assessing-data-sensitivity/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c931_assessing-data-sensitivity/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c931_assessing-data-sensitivity/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c931_assessing-data-sensitivity/subtitles/lang_en_vs3.srt'
+                language_code: en
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c931_assessing-data-sensitivity/assessing-data-sensitivity_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c931_assessing-data-sensitivity/assessing-data-sensitivity_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c931_assessing-data-sensitivity/assessing-data-sensitivity_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c931_assessing-data-sensitivity/assessing-data-sensitivity_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c931_assessing-data-sensitivity/hls/playlist.m3u8'
+  - id: 177776
+    key: '40011586180923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 问题和同意
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 14:02:06 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 175978
+    atoms:
+      - id: 175978
+        key: '4001158618'
+        locale: zh-cn
+        version: 1.0.0
+        title: 问题和同意
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:26:28 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '28790'
+          youtube_id: ZmXg42IoG_Q
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ba40_questions-and-consent/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ba40_questions-and-consent/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ba40_questions-and-consent/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ba40_questions-and-consent/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ba40_questions-and-consent/questions-and-consent_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ba40_questions-and-consent/questions-and-consent_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ba40_questions-and-consent/questions-and-consent_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ba40_questions-and-consent/questions-and-consent_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ba40_questions-and-consent/hls/playlist.m3u8'
+  - id: 177777
+    key: '40161685970923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 原则总结
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 14:02:07 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 175979
+    atoms:
+      - id: 175979
+        key: '4016168597'
+        locale: zh-cn
+        version: 1.0.0
+        title: 原则总结
+        semantic_type: TextAtom
+        updated_at: 'Sun Sep 04 2016 14:02:07 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 原则总结
+
+          总结：很多互联网研究是否应该接受伦理委员会 (IRB) 的审查以及知情同意是否必要，这些问题尚为灰色地带，到今天为止并不常见。
+
+          大多数研究，由于在线服务的性质，往往风险较小，问题多在于可识别性、隐私、机密/安全性方面的数据收集。 因此，由公司外的中立第三方来做这些决定或许要好过于结果中存在既得利益的人。 在线研究的一个越来越大的风险在于偏见及歧视的可能性，如阶梯计价以及对于特定人群来说这算不算歧视。 讨论这些偏见的类型不在本课程的授课范围之内。
+
+          我们的建议是，对于提议的所有研究，应该由专家就以下问题进行内部审核：
+
+          * 参与者面临的风险是否降到了最低？
+          * 参与者了解收集的数据是什么吗？
+          * 这些数据具有可识别性吗？
+          * 如何处理数据？
+
+          如果发现足够多的问题，再进行外部审核。
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 177778
+    key: '40011586190923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 哪些测试需要进一步审查？
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 14:02:08 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 175980
+    atoms:
+      - id: 175980
+        key: '4001158619'
+        locale: zh-cn
+        version: 1.0.0
+        title: 哪些测试需要进一步审查？
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:47:45 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '5752'
+            youtube_id: KYa8_fuZ30w
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03c09_which-tests-need-further-review/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03c09_which-tests-need-further-review/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03c09_which-tests-need-further-review/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03c09_which-tests-need-further-review/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03c09_which-tests-need-further-review/which-tests-need-further-review_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03c09_which-tests-need-further-review/which-tests-need-further-review_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03c09_which-tests-need-further-review/which-tests-need-further-review_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03c09_which-tests-need-further-review/which-tests-need-further-review_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03c09_which-tests-need-further-review/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 哪些测试需要进一步审查？
+          background_image: '//lh6.ggpht.com/rIrQdUByP7nt--JQ293kFi5r9NMPT681phWg0a-22qN_hzdG7Mb5T_kuDTG6ntS4rojX4DejX8UAVOU-jmE=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3863758752'
+        answer:
+          text: null
+          video:
+            id: '23614'
+            youtube_id: LlPsmQx5y50
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d15c5a_which-tests-need-further-review/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d15c5a_which-tests-need-further-review/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d15c5a_which-tests-need-further-review/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d15c5a_which-tests-need-further-review/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d15c5a_which-tests-need-further-review/which-tests-need-further-review_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d15c5a_which-tests-need-further-review/which-tests-need-further-review_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d15c5a_which-tests-need-further-review/which-tests-need-further-review_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d15c5a_which-tests-need-further-review/which-tests-need-further-review_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d15c5a_which-tests-need-further-review/hls/playlist.m3u8'
+  - id: 177779
+    key: '40415185350923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 内部流程
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 14:02:09 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 175981
+    atoms:
+      - id: 175981
+        key: '4041518535'
+        locale: zh-cn
+        version: 1.0.0
+        title: 内部流程
+        semantic_type: TextAtom
+        updated_at: 'Sun Sep 04 2016 14:02:09 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 内部流程建议
+
+          最后，对于数据处理的内部流程，我们建议：
+
+          1. 参与 A/B 测试的每名员工应接受伦理和参与者保护方面的教育。 很明显除了我们谈到的诚信、胜任能力和责任外，还有其他伦理方面，而且往往比保护 A/B 测试的参与者更加广泛（引自美国计算机协会 (ACM) 道德规范)。
+          2. 所有数据，无论是否具有可识别性，都应安全存储，仅向需要这些数据来完成工作的人提供访问权限，且应该对访问限时。 应针对哪些数据使用是可接受的和不可接受的制定政策。而且，所有数据使用均应记录在案和定期审计，以确保未违反规定。
+          3. 对于可能存在超过最低风险或数据敏感性问题的处理，应制定明确的上报流程。
+        instructor_notes: |-
+
+          ----
+          ### 额外阅读
+
+          * <a href="http://www.hhs.gov/ohrp/policy/belmont.html" target="_blank">Belmont Report</a>
+          * <a href="http://www.hhs.gov/ohrp/humansubjects/guidance/45cfr46.html#subparta" target="_blank">Common Rule definition</a>
+          * <a href="http://www.nsf.gov/bfa/dias/policy/human.jsp" target="_blank">NSF guidelines</a>
+          * <a href="http://www.nsf.gov/bfa/dias/policy/hsfaqs.jsp#exempt" target="_blank">NSF FAQ for Social Science & Behavioural research</a>
+          * <a href="http://www.hhs.gov/ohrp/archive/irb/irb_chapter1.htm" target="_blank">HHS IRB Guidebook</a>
+            * <a href="http://www.hhs.gov/ohrp/archive/irb/irb_chapter3.htm" target="_blank">Definition of Minimal Risk</a>
+            * <a href="http://www.hhs.gov/ohrp/archive/irb/irb_chapter4.htm" target="_blank">Discussion of different types of data gathering</a>
+          * <a href="http://www.utexas.edu/research/rsc/humansubjects/whatis.html" target="_blank">UTexas overview</a>
+          * <a href="http://www.research.uci.edu/compliance/human-research-protections/researchers/activities-irb-review.html" target="_blank">UC Irvine overview</a>
+          * The Association for Computer Machinery has developed a <a href="http://www.acm.org/about/code-of-ethics" target="_blank">code of ethics</a>.
+          * As an example, there’s a thorough outline of an <a href="http://www.oii.ox.ac.uk/research/projects/?id=107" target="_blank">“ideal” ethical privacy design</a> for mobile connectivity measurements that could be used as a model.
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 177780
+    key: '40011586220923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 提供的信息
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 14:02:10 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 175982
+    atoms:
+      - id: 175982
+        key: '4001158622'
+        locale: zh-cn
+        version: 1.0.0
+        title: 提供的信息
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:53:45 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '17096'
+            youtube_id: FdRVdkASudw
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ddc1_provided-information/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ddc1_provided-information/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ddc1_provided-information/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ddc1_provided-information/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ddc1_provided-information/provided-information_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ddc1_provided-information/provided-information_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ddc1_provided-information/provided-information_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ddc1_provided-information/provided-information_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ddc1_provided-information/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 提供的信息
+          background_image: '//lh5.ggpht.com/D11g_KmlhPkQI_IbnVh85yuMiDhJB5DxT5QbXSBmkEPnCJoTznAna-iQUz7gd2tTIL3Kfu05YLl-8S3Bug=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3873898717'
+        answer:
+          text: null
+          video:
+            id: '4076'
+            youtube_id: mPN46IqnT1c
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfae0d_provided-information/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfae0d_provided-information/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfae0d_provided-information/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfae0d_provided-information/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfae0d_provided-information/provided-information_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfae0d_provided-information/provided-information_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfae0d_provided-information/provided-information_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfae0d_provided-information/provided-information_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfae0d_provided-information/hls/playlist.m3u8'
+  - id: 177781
+    key: '40011586250923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 内部培训
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 14:02:11 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 175983
+    atoms:
+      - id: 175983
+        key: '4001158625'
+        locale: zh-cn
+        version: 1.0.0
+        title: 内部培训
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:53:28 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '14410'
+            youtube_id: ClkOE3kdvLs
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abe9_internal-training/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abe9_internal-training/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abe9_internal-training/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abe9_internal-training/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abe9_internal-training/internal-training_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abe9_internal-training/internal-training_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abe9_internal-training/internal-training_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abe9_internal-training/internal-training_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abe9_internal-training/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 内部培训
+          background_image: '//lh6.ggpht.com/xYvFiTh4anl6flt0fQ6xWFgff6FPuOOjN_nJLi8no0N-AQaFLver0QO8-37LVIoBbE_X2XETJqRX1vAmDPw=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3875118570'
+        answer:
+          text: null
+          video:
+            id: '15926'
+            youtube_id: E55ujT-kf5E
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c626_internal-training/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c626_internal-training/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c626_internal-training/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c626_internal-training/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c626_internal-training/internal-training_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c626_internal-training/internal-training_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c626_internal-training/internal-training_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c626_internal-training/internal-training_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0c626_internal-training/hls/playlist.m3u8'
+  - id: 177782
+    key: '40011586280923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 结论
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 14:02:12 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 175984
+    atoms:
+      - id: 175984
+        key: '4001158628'
+        locale: zh-cn
+        version: 1.0.0
+        title: 结论
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:33:44 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '4864'
+          youtube_id: PXBdIBgFTL4
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfba1e_conclusion/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfba1e_conclusion/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfba1e_conclusion/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfba1e_conclusion/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfba1e_conclusion/conclusion_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfba1e_conclusion/conclusion_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfba1e_conclusion/conclusion_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfba1e_conclusion/conclusion_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfba1e_conclusion/hls/playlist.m3u8'

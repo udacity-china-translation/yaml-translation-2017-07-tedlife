@@ -1,0 +1,1407 @@
+id: 178269
+key: '4001558669'
+locale: zh-cn
+version: 1.0.0
+title: 设计试验
+semantic_type: Lesson
+updated_at: 'Mon May 15 2017 05:03:08 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: 了解如何设计一个 A/B 测试。
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+_concepts_ids:
+  - 177814
+  - 177815
+  - 177823
+  - 177816
+  - 177820
+  - 177817
+  - 177818
+  - 177819
+  - 177821
+  - 177822
+  - 177824
+  - 177825
+  - 177826
+  - 177827
+  - 177828
+  - 177829
+  - 177830
+  - 177831
+  - 177832
+  - 177833
+  - 177834
+  - 177835
+  - 177836
+  - 177837
+  - 177838
+_project_id: null
+concepts:
+  - id: 177814
+    key: '39700989980923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 简介
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176016
+    atoms:
+      - id: 176016
+        key: '3970098998'
+        locale: zh-cn
+        version: 1.0.0
+        title: 简介
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:29:10 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '12080'
+          youtube_id: aAmMK8tGEYc
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09eaf_introduction/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09eaf_introduction/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09eaf_introduction/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09eaf_introduction/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09eaf_introduction/introduction_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09eaf_introduction/introduction_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09eaf_introduction/introduction_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09eaf_introduction/introduction_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09eaf_introduction/hls/playlist.m3u8'
+  - id: 177815
+    key: '39700989990923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 引流单位概述
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176017
+    atoms:
+      - id: 176017
+        key: '3970098999'
+        locale: zh-cn
+        version: 1.0.0
+        title: 引流单位概述
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:39:41 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '18264'
+          youtube_id: Gh32VbXrmdQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f2d9_unit-of-diversion-overview/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f2d9_unit-of-diversion-overview/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f2d9_unit-of-diversion-overview/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f2d9_unit-of-diversion-overview/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f2d9_unit-of-diversion-overview/unit-of-diversion-overview_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f2d9_unit-of-diversion-overview/unit-of-diversion-overview_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f2d9_unit-of-diversion-overview/unit-of-diversion-overview_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f2d9_unit-of-diversion-overview/unit-of-diversion-overview_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f2d9_unit-of-diversion-overview/hls/playlist.m3u8'
+  - id: 177823
+    key: '39700990000923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 引流单位：示例
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:04 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176022
+    atoms:
+      - id: 176022
+        key: '3970099000'
+        locale: zh-cn
+        version: 1.0.0
+        title: 引流单位：示例
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:47:45 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '37400'
+            youtube_id: W4Xno_vJvZM
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28f28_unit-of-diversion-explanations-and-example/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28f28_unit-of-diversion-explanations-and-example/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28f28_unit-of-diversion-explanations-and-example/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28f28_unit-of-diversion-explanations-and-example/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28f28_unit-of-diversion-explanations-and-example/unit-of-diversion-explanations-and-example_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28f28_unit-of-diversion-explanations-and-example/unit-of-diversion-explanations-and-example_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28f28_unit-of-diversion-explanations-and-example/unit-of-diversion-explanations-and-example_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28f28_unit-of-diversion-explanations-and-example/unit-of-diversion-explanations-and-example_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28f28_unit-of-diversion-explanations-and-example/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 引流单位：示例
+          background_image: '//lh3.ggpht.com/ErSgbngbbUW90x45919UjsvFCd5MG_TaQU9tCrwM4Fe7jbZznQBjLUYAHTbGyEh9rO18pkGVn8D9GA0o5MQ=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4007008554'
+        answer:
+          text: null
+          video:
+            id: '11243'
+            youtube_id: _-BxFJTBNMM
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09b59_unit-of-diversion-explanations-and-example/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09b59_unit-of-diversion-explanations-and-example/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09b59_unit-of-diversion-explanations-and-example/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09b59_unit-of-diversion-explanations-and-example/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09b59_unit-of-diversion-explanations-and-example/unit-of-diversion-explanations-and-example_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09b59_unit-of-diversion-explanations-and-example/unit-of-diversion-explanations-and-example_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09b59_unit-of-diversion-explanations-and-example/unit-of-diversion-explanations-and-example_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09b59_unit-of-diversion-explanations-and-example/unit-of-diversion-explanations-and-example_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09b59_unit-of-diversion-explanations-and-example/hls/playlist.m3u8'
+  - id: 177816
+    key: '39700990030923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 引流的一致性
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:05 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176018
+    atoms:
+      - id: 176018
+        key: '3970099003'
+        locale: zh-cn
+        version: 1.0.0
+        title: 引流的一致性
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:41:06 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '20557'
+          youtube_id: im8-LLU5J_Y
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1214f_unit-of-diversion-consistency/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1214f_unit-of-diversion-consistency/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1214f_unit-of-diversion-consistency/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1214f_unit-of-diversion-consistency/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1214f_unit-of-diversion-consistency/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1214f_unit-of-diversion-consistency/unit-of-diversion-consistency_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1214f_unit-of-diversion-consistency/unit-of-diversion-consistency_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1214f_unit-of-diversion-consistency/unit-of-diversion-consistency_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1214f_unit-of-diversion-consistency/unit-of-diversion-consistency_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1214f_unit-of-diversion-consistency/hls/playlist.m3u8'
+  - id: 177820
+    key: '39700990040923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 引流的一致性：示例
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:05 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176019
+    atoms:
+      - id: 176019
+        key: '3970099004'
+        locale: zh-cn
+        version: 1.0.0
+        title: 引流的一致性：示例
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:47:33 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '25779'
+            youtube_id: nsG26Dz9z44
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18977_consistency-quiz/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18977_consistency-quiz/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18977_consistency-quiz/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18977_consistency-quiz/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18977_consistency-quiz/consistency-quiz_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18977_consistency-quiz/consistency-quiz_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18977_consistency-quiz/consistency-quiz_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18977_consistency-quiz/consistency-quiz_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d18977_consistency-quiz/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 引流的一致性：示例
+          background_image: '//lh4.ggpht.com/GbodZTEA-bqXsX7MnceKroTKbTjsucit6IJEXN6iheJntAEG8etu1A2OW5zqqKiovVZS2JQTDIPXo3OJsVTi=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3994768574'
+        answer:
+          text: null
+          video:
+            id: '39203'
+            youtube_id: f7vNKm0Zci0
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50752_consistency-quiz/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50752_consistency-quiz/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50752_consistency-quiz/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50752_consistency-quiz/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50752_consistency-quiz/consistency-quiz_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50752_consistency-quiz/consistency-quiz_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50752_consistency-quiz/consistency-quiz_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50752_consistency-quiz/consistency-quiz_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50752_consistency-quiz/hls/playlist.m3u8'
+  - id: 177817
+    key: '39700990070923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 引流的伦理考虑
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:06 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176020
+    atoms:
+      - id: 176020
+        key: '3970099007'
+        locale: zh-cn
+        version: 1.0.0
+        title: 引流的伦理考虑
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:30:50 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '28245'
+          youtube_id: Zf0XzYNsado
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b5ee_unit-of-diversion-ethical-considerations/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b5ee_unit-of-diversion-ethical-considerations/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b5ee_unit-of-diversion-ethical-considerations/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b5ee_unit-of-diversion-ethical-considerations/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b5ee_unit-of-diversion-ethical-considerations/unit-of-diversion-ethical-considerations_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b5ee_unit-of-diversion-ethical-considerations/unit-of-diversion-ethical-considerations_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b5ee_unit-of-diversion-ethical-considerations/unit-of-diversion-ethical-considerations_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b5ee_unit-of-diversion-ethical-considerations/unit-of-diversion-ethical-considerations_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b5ee_unit-of-diversion-ethical-considerations/hls/playlist.m3u8'
+  - id: 177818
+    key: '39700990080923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 伦理考虑：示例
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:08 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176021
+    atoms:
+      - id: 176021
+        key: '3970099008'
+        locale: zh-cn
+        version: 1.0.0
+        title: 伦理考虑：示例
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:53:39 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '35155'
+            youtube_id: tGHQsk1SGGU
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d267c5_ethical-considerations-quiz/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d267c5_ethical-considerations-quiz/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d267c5_ethical-considerations-quiz/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d267c5_ethical-considerations-quiz/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d267c5_ethical-considerations-quiz/ethical-considerations-quiz_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d267c5_ethical-considerations-quiz/ethical-considerations-quiz_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d267c5_ethical-considerations-quiz/ethical-considerations-quiz_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d267c5_ethical-considerations-quiz/ethical-considerations-quiz_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d267c5_ethical-considerations-quiz/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 伦理考虑：示例
+          background_image: '//lh3.ggpht.com/R_hyWFPyYokLPYFCg-v5FLDlCN59aOQPSYXEf51JpcUOs47p93A_DhleU7yu2dmGgHNYbbQExZWdeZD3ZMO2=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3966589081'
+        answer:
+          text: null
+          video:
+            id: '22456'
+            youtube_id: KhGfaSWoEn0
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1459d_ethical-considerations-quiz/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1459d_ethical-considerations-quiz/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1459d_ethical-considerations-quiz/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1459d_ethical-considerations-quiz/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1459d_ethical-considerations-quiz/ethical-considerations-quiz_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1459d_ethical-considerations-quiz/ethical-considerations-quiz_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1459d_ethical-considerations-quiz/ethical-considerations-quiz_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1459d_ethical-considerations-quiz/ethical-considerations-quiz_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1459d_ethical-considerations-quiz/hls/playlist.m3u8'
+  - id: 177819
+    key: '39700990110923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 分析单位与引流单位
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:09 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176023
+    atoms:
+      - id: 176023
+        key: '3970099011'
+        locale: zh-cn
+        version: 1.0.0
+        title: 分析单位与引流单位
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:35:24 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '33609'
+          youtube_id: rzim0wu_0kM
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e33f_unit-of-analysis-vs-unit-of-diversion/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e33f_unit-of-analysis-vs-unit-of-diversion/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e33f_unit-of-analysis-vs-unit-of-diversion/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e33f_unit-of-analysis-vs-unit-of-diversion/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e33f_unit-of-analysis-vs-unit-of-diversion/unit-of-analysis-vs-unit-of-diversion_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e33f_unit-of-analysis-vs-unit-of-diversion/unit-of-analysis-vs-unit-of-diversion_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e33f_unit-of-analysis-vs-unit-of-diversion/unit-of-analysis-vs-unit-of-diversion_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e33f_unit-of-analysis-vs-unit-of-diversion/unit-of-analysis-vs-unit-of-diversion_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e33f_unit-of-analysis-vs-unit-of-diversion/hls/playlist.m3u8'
+  - id: 177821
+    key: '39700990120923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 分析与引流单位：示例
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:12 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176024
+    atoms:
+      - id: 176024
+        key: '3970099012'
+        locale: zh-cn
+        version: 1.0.0
+        title: 分析与引流单位：示例
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:49:59 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ### 标准误差图
+          Caroline 所讨论的图形是<a href="https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd002/36500.pdf" target="_blank">此文</a>的图 4。
+        instruction:
+          video:
+            id: '30071'
+            youtube_id: ycbXO4xBEVw
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c73f_unit-of-analysis-vs-diversion-quiz/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c73f_unit-of-analysis-vs-diversion-quiz/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c73f_unit-of-analysis-vs-diversion-quiz/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c73f_unit-of-analysis-vs-diversion-quiz/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c73f_unit-of-analysis-vs-diversion-quiz/unit-of-analysis-vs-diversion-quiz_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c73f_unit-of-analysis-vs-diversion-quiz/unit-of-analysis-vs-diversion-quiz_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c73f_unit-of-analysis-vs-diversion-quiz/unit-of-analysis-vs-diversion-quiz_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c73f_unit-of-analysis-vs-diversion-quiz/unit-of-analysis-vs-diversion-quiz_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c73f_unit-of-analysis-vs-diversion-quiz/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 分析与引流单位：示例
+          background_image: '//lh3.ggpht.com/e0on-NsFLbDo83yjfmRM3jr6hjT4KB4bzPIiR3MJF4QGTaGau7H88jlpLGiR5sptD9qB4jWaPUWaUgCaYUZ6=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4002038622'
+        answer:
+          text: null
+          video:
+            id: '37125'
+            youtube_id: vuu3BY7X9ps
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28a3e_unit-of-analysis-vs-diversion-quiz/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28a3e_unit-of-analysis-vs-diversion-quiz/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28a3e_unit-of-analysis-vs-diversion-quiz/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28a3e_unit-of-analysis-vs-diversion-quiz/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28a3e_unit-of-analysis-vs-diversion-quiz/unit-of-analysis-vs-diversion-quiz_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28a3e_unit-of-analysis-vs-diversion-quiz/unit-of-analysis-vs-diversion-quiz_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28a3e_unit-of-analysis-vs-diversion-quiz/unit-of-analysis-vs-diversion-quiz_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28a3e_unit-of-analysis-vs-diversion-quiz/unit-of-analysis-vs-diversion-quiz_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28a3e_unit-of-analysis-vs-diversion-quiz/hls/playlist.m3u8'
+  - id: 177822
+    key: '39700990150923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 用户间与用户内实验
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:13 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176025
+    atoms:
+      - id: 176025
+        key: '3970099015'
+        locale: zh-cn
+        version: 1.0.0
+        title: 用户间与用户内实验
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:39:40 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          ### 交织实验
+          在交织排名实验中，假如您有两个交织排名算法，X 和 Y。算法 X 会依次显示结果 X1、X2、……XN，而算法 Y 会显示 Y1、Y2、……YN。 交织实验会交错显示这些结果，如 X1、Y1、X2、Y2、……并删除重复结果。对此进行测量的一个方法是比较两个算法的结果点进率或概率。 如需了解更多信息，请参见<a href="http://www.cs.cornell.edu/People/tj/publications/chapelle_etal_12a.pdf" target="_blank">此文</a>。
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '38750'
+          youtube_id: EGE8ddtWIeo
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d4fdda_inter-vs-intra-user-experiments/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d4fdda_inter-vs-intra-user-experiments/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d4fdda_inter-vs-intra-user-experiments/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d4fdda_inter-vs-intra-user-experiments/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d4fdda_inter-vs-intra-user-experiments/inter-vs-intra-user-experiments_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d4fdda_inter-vs-intra-user-experiments/inter-vs-intra-user-experiments_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d4fdda_inter-vs-intra-user-experiments/inter-vs-intra-user-experiments_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d4fdda_inter-vs-intra-user-experiments/inter-vs-intra-user-experiments_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d4fdda_inter-vs-intra-user-experiments/hls/playlist.m3u8'
+  - id: 177824
+    key: '39700990160923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 目标人群
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:14 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176026
+    atoms:
+      - id: 176026
+        key: '3970099016'
+        locale: zh-cn
+        version: 1.0.0
+        title: 目标人群
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:33:41 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '3404'
+          youtube_id: HO1Doq8PiCI
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2d6_target-population/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2d6_target-population/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2d6_target-population/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2d6_target-population/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2d6_target-population/target-population_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2d6_target-population/target-population_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2d6_target-population/target-population_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2d6_target-population/target-population_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2d6_target-population/hls/playlist.m3u8'
+  - id: 177825
+    key: '39700990170923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 目标人群：示例
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:16 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176027
+    atoms:
+      - id: 176027
+        key: '3970099017'
+        locale: zh-cn
+        version: 1.0.0
+        title: 目标人群：示例
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:47:34 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ### z-值表
+          你可以使用<a href="http://www.utdallas.edu/dept/abp/zscoretable.pdf" target="_blank">此 z-值表</a>。
+        instruction:
+          video:
+            id: '22354'
+            youtube_id: kEFp6xIb8cs
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1436d_target-population-example/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1436d_target-population-example/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1436d_target-population-example/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1436d_target-population-example/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1436d_target-population-example/target-population-example_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1436d_target-population-example/target-population-example_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1436d_target-population-example/target-population-example_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1436d_target-population-example/target-population-example_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1436d_target-population-example/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 目标人群：示例
+          background_image: '//lh4.ggpht.com/InKXfmYp6EpQ2OZU5gGnyR7GdXu9U5AGmoW9_FQPHTPhE97yMnHQv2x-ReCKPuqfPv1TSMF02r2g8kp8SSY=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3987798917'
+        answer:
+          text: null
+          video:
+            id: '32769'
+            youtube_id: XsyavvSGjLM
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d822_target-population-example/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d822_target-population-example/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d822_target-population-example/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d822_target-population-example/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d822_target-population-example/target-population-example_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d822_target-population-example/target-population-example_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d822_target-population-example/target-population-example_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d822_target-population-example/target-population-example_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d822_target-population-example/hls/playlist.m3u8'
+  - id: 177826
+    key: '39700990200923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 人群与队列
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:17 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176028
+    atoms:
+      - id: 176028
+        key: '3970099020'
+        locale: zh-cn
+        version: 1.0.0
+        title: 人群与队列
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:35:24 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '19190'
+          youtube_id: HC2dunMuVW4
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d104ac_population-vs-cohort/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d104ac_population-vs-cohort/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d104ac_population-vs-cohort/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d104ac_population-vs-cohort/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d104ac_population-vs-cohort/population-vs-cohort_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d104ac_population-vs-cohort/population-vs-cohort_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d104ac_population-vs-cohort/population-vs-cohort_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d104ac_population-vs-cohort/population-vs-cohort_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d104ac_population-vs-cohort/hls/playlist.m3u8'
+  - id: 177827
+    key: '39700990210923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 人群与队列：示例
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:18 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176029
+    atoms:
+      - id: 176029
+        key: '3970099021'
+        locale: zh-cn
+        version: 1.0.0
+        title: 人群与队列：示例
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:35:24 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '24958'
+          youtube_id: MXukXfzL59E
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d177a3_population-vs-cohort-example/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d177a3_population-vs-cohort-example/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d177a3_population-vs-cohort-example/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d177a3_population-vs-cohort-example/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d177a3_population-vs-cohort-example/population-vs-cohort-example_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d177a3_population-vs-cohort-example/population-vs-cohort-example_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d177a3_population-vs-cohort-example/population-vs-cohort-example_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d177a3_population-vs-cohort-example/population-vs-cohort-example_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d177a3_population-vs-cohort-example/hls/playlist.m3u8'
+  - id: 177828
+    key: '39700990220923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 实验设计及样本容量：概述
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:19 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176030
+    atoms:
+      - id: 176030
+        key: '3970099022'
+        locale: zh-cn
+        version: 1.0.0
+        title: 实验设计及样本容量：概述
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:56 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '9337'
+          youtube_id: 6_odiPIKZO0
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0889f_experiment-design-sizing-overview/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0889f_experiment-design-sizing-overview/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0889f_experiment-design-sizing-overview/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0889f_experiment-design-sizing-overview/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0889f_experiment-design-sizing-overview/experiment-design-sizing-overview_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0889f_experiment-design-sizing-overview/experiment-design-sizing-overview_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0889f_experiment-design-sizing-overview/experiment-design-sizing-overview_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0889f_experiment-design-sizing-overview/experiment-design-sizing-overview_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0889f_experiment-design-sizing-overview/hls/playlist.m3u8'
+  - id: 177829
+    key: '39700990230923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 样本容量：概述
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:20 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176031
+    atoms:
+      - id: 176031
+        key: '3970099023'
+        locale: zh-cn
+        version: 1.0.0
+        title: 样本容量：概述
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:36:06 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '5553'
+          youtube_id: sKRWt_iS7zo
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0355f_sizing-overview/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0355f_sizing-overview/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0355f_sizing-overview/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0355f_sizing-overview/subtitles/lang_en_vs3.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0355f_sizing-overview/sizing-overview_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0355f_sizing-overview/sizing-overview_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0355f_sizing-overview/sizing-overview_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0355f_sizing-overview/sizing-overview_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0355f_sizing-overview/hls/playlist.m3u8'
+  - id: 177830
+    key: '39700990240923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 样本容量：示例
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:21 GMT+0000 (UTC)'
+    is_public: true
+    resources:
+      files:
+        - name: empirical_sizing.R
+          uri: 'https://www.udacity.com/api/nodes/3970099024/supplemental_media/empirical-sizingr/download'
+      google_plus_link: null
+      career_resource_center_link: null
+      coaching_appointments_link: null
+      office_hours_link: null
+    _atoms_ids:
+      - 176032
+    atoms:
+      - id: 176032
+        key: '3970099024'
+        locale: zh-cn
+        version: 1.0.0
+        title: 样本容量：示例
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:33:41 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          ### 样本容量计算代码
+          你可以在“辅助材料”部分中找到 Caroline 用于计算实验规模的 R 代码。
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '16904'
+          youtube_id: f69Hs7m1axc
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d9dd_sizing-example/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d9dd_sizing-example/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d9dd_sizing-example/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d9dd_sizing-example/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d9dd_sizing-example/sizing-example_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d9dd_sizing-example/sizing-example_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d9dd_sizing-example/sizing-example_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d9dd_sizing-example/sizing-example_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d9dd_sizing-example/hls/playlist.m3u8'
+  - id: 177831
+    key: '39700990250923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 如何减小实验样本容量
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:21 GMT+0000 (UTC)'
+    is_public: true
+    resources:
+      files:
+        - name: empirical_sizing.R
+          uri: 'https://www.udacity.com/api/nodes/3970099027/supplemental_media/empirical-sizingr/download'
+      google_plus_link: null
+      career_resource_center_link: null
+      coaching_appointments_link: null
+      office_hours_link: null
+    _atoms_ids:
+      - 176033
+    atoms:
+      - id: 176033
+        key: '3970099025'
+        locale: zh-cn
+        version: 1.0.0
+        title: 如何减小实验样本容量
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:47:47 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ### 样本容量计算代码
+          你可以在“辅助材料”部分中找到 Caroline 用于计算实验规模的 R 代码。
+        instruction:
+          video:
+            id: '8247'
+            youtube_id: 4-MF0UZac8o
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07b74_sizing/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07b74_sizing/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07b74_sizing/subtitles/lang_ar_vs2.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07b74_sizing/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07b74_sizing/sizing_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07b74_sizing/sizing_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07b74_sizing/sizing_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07b74_sizing/sizing_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07b74_sizing/hls/playlist.m3u8'
+          text: null
+        question:
+          title: How to Decrease Experiment Size
+          background_image: '//lh4.ggpht.com/xvQYA9k7_a0_rxGaeKte6ap7eoBXkKUBjVjSVJS4juEYI_TtUkL-5ocfQJAePWy-GMCuvMtW9K5KZXAMJyBv=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4002048631'
+        answer:
+          text: null
+          video:
+            id: '24643'
+            youtube_id: MLzRdgcFYQQ
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17068_sizing/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17068_sizing/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17068_sizing/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17068_sizing/subtitles/lang_en_vs3.srt'
+                language_code: en
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17068_sizing/sizing_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17068_sizing/sizing_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17068_sizing/sizing_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17068_sizing/sizing_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17068_sizing/hls/playlist.m3u8'
+  - id: 177832
+    key: '39700990280923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 样本容量诱发因素
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:23 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176034
+    atoms:
+      - id: 176034
+        key: '3970099028'
+        locale: zh-cn
+        version: 1.0.0
+        title: 样本容量诱发因素
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:33:46 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '4367'
+          youtube_id: ae9SWJxGM0w
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb47f_sizing-triggering/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb47f_sizing-triggering/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb47f_sizing-triggering/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb47f_sizing-triggering/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb47f_sizing-triggering/sizing-triggering_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb47f_sizing-triggering/sizing-triggering_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb47f_sizing-triggering/sizing-triggering_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb47f_sizing-triggering/sizing-triggering_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfb47f_sizing-triggering/hls/playlist.m3u8'
+  - id: 177833
+    key: '39700990290923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 持续时间与暴露
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:24 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176035
+    atoms:
+      - id: 176035
+        key: '3970099029'
+        locale: zh-cn
+        version: 1.0.0
+        title: 持续时间与暴露
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:35:23 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '24845'
+          youtube_id: MsByTo7FRgs
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1745d_duration-vs-exposure/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1745d_duration-vs-exposure/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1745d_duration-vs-exposure/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1745d_duration-vs-exposure/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1745d_duration-vs-exposure/duration-vs-exposure_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1745d_duration-vs-exposure/duration-vs-exposure_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1745d_duration-vs-exposure/duration-vs-exposure_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1745d_duration-vs-exposure/duration-vs-exposure_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1745d_duration-vs-exposure/hls/playlist.m3u8'
+  - id: 177834
+    key: '39700990300923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 持续时间与暴露：示例
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:25 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176036
+    atoms:
+      - id: 176036
+        key: '3970099030'
+        locale: zh-cn
+        version: 1.0.0
+        title: 持续时间与暴露：示例
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:56 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '10799'
+          youtube_id: 993P7ivCrnQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d098bd_duration-vs-exposure/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d098bd_duration-vs-exposure/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d098bd_duration-vs-exposure/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d098bd_duration-vs-exposure/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d098bd_duration-vs-exposure/duration-vs-exposure_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d098bd_duration-vs-exposure/duration-vs-exposure_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d098bd_duration-vs-exposure/duration-vs-exposure_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d098bd_duration-vs-exposure/duration-vs-exposure_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d098bd_duration-vs-exposure/hls/playlist.m3u8'
+  - id: 177835
+    key: '40222885720923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 何时限制暴露
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:26 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176037
+    atoms:
+      - id: 176037
+        key: '4022288572'
+        locale: zh-cn
+        version: 1.0.0
+        title: 何时限制暴露
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:49:59 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '28139'
+            youtube_id: z_Gp9ttyiwg
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b565_when-to-limit-exposure/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b565_when-to-limit-exposure/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b565_when-to-limit-exposure/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b565_when-to-limit-exposure/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b565_when-to-limit-exposure/when-to-limit-exposure_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b565_when-to-limit-exposure/when-to-limit-exposure_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b565_when-to-limit-exposure/when-to-limit-exposure_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b565_when-to-limit-exposure/when-to-limit-exposure_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b565_when-to-limit-exposure/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 何时限制暴露
+          background_image: '//lh5.ggpht.com/BxY4PqDge8hmNkxYB0-xsuD1h_nPtOeG90qqQp_UqvAZezcSAPvAN-M-ccJSYs7Z4piR_9WV0a_eSkdh1nQ=s0#w=1440&h=810'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '3951358898'
+        answer:
+          text: null
+          video:
+            id: '14272'
+            youtube_id: CfDLpojt4AY
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a79c_when-to-limit-exposure/subtitles/lang_zh-cn_vs1.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a79c_when-to-limit-exposure/subtitles/lang_en_vs3.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a79c_when-to-limit-exposure/subtitles/lang_ar_vs1.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a79c_when-to-limit-exposure/subtitles/lang_pt-br_vs9.srt'
+                language_code: pt-br
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a79c_when-to-limit-exposure/when-to-limit-exposure_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a79c_when-to-limit-exposure/when-to-limit-exposure_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a79c_when-to-limit-exposure/when-to-limit-exposure_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a79c_when-to-limit-exposure/when-to-limit-exposure_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a79c_when-to-limit-exposure/hls/playlist.m3u8'
+  - id: 177836
+    key: '39700990310923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 学习效应
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:27 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176039
+    atoms:
+      - id: 176039
+        key: '3970099031'
+        locale: zh-cn
+        version: 1.0.0
+        title: 学习效应
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:29:05 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '25383'
+          youtube_id: nFpIDWPUDm8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d181e2_learning-effects/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d181e2_learning-effects/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d181e2_learning-effects/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d181e2_learning-effects/subtitles/lang_en_vs3.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d181e2_learning-effects/learning-effects_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d181e2_learning-effects/learning-effects_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d181e2_learning-effects/learning-effects_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d181e2_learning-effects/learning-effects_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d181e2_learning-effects/hls/playlist.m3u8'
+  - id: 177837
+    key: '39700990320923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 经验教训
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:28 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176038
+    atoms:
+      - id: 176038
+        key: '3970099032'
+        locale: zh-cn
+        version: 1.0.0
+        title: 经验教训
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:30:57 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '18504'
+          youtube_id: GonjL0GbNiw
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f8d0_lessons-learned/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f8d0_lessons-learned/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f8d0_lessons-learned/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f8d0_lessons-learned/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f8d0_lessons-learned/lessons-learned_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f8d0_lessons-learned/lessons-learned_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f8d0_lessons-learned/lessons-learned_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f8d0_lessons-learned/lessons-learned_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f8d0_lessons-learned/hls/playlist.m3u8'
+  - id: 177838
+    key: '39700990330923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 结论
+    semantic_type: Concept
+    updated_at: 'Sun Sep 04 2016 15:53:29 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 176040
+    atoms:
+      - id: 176040
+        key: '3970099033'
+        locale: zh-cn
+        version: 1.0.0
+        title: 结论
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:33:41 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '31032'
+          youtube_id: YS4bR1vQ3Ls
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd9f_conclusion/subtitles/lang_zh-cn_vs1.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd9f_conclusion/subtitles/lang_ar_vs1.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd9f_conclusion/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd9f_conclusion/subtitles/lang_en_vs3.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd9f_conclusion/conclusion_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd9f_conclusion/conclusion_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd9f_conclusion/conclusion_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd9f_conclusion/conclusion_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd9f_conclusion/hls/playlist.m3u8'
