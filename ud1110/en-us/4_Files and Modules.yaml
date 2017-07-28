@@ -1,0 +1,2009 @@
+id: 231940
+key: 0d7cfb06-4a38-4dde-b6df-aae686ab3bf0
+locale: en-us
+version: 1.0.0
+title: Files and Modules
+semantic_type: Lesson
+updated_at: 'Wed Jul 05 2017 19:43:20 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: 'In this lesson you will extend your knowledge of functions by learning how to specify default arguments and how to return multiple value from a function. You will learn how to read from files. You will also learn how to import modules from Python''s standard library, and how to install third-party libraries. We will also learn more about reliant problem solving.'
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+_concepts_ids:
+  - 231964
+  - 250082
+  - 250091
+  - 250287
+  - 250289
+  - 250381
+  - 250319
+  - 250391
+  - 252445
+  - 253409
+_project_id: null
+concepts:
+  - id: 231964
+    key: 0f153284-28ea-4055-af9d-fde1b492083c
+    locale: en-us
+    version: 1.0.0
+    title: Welcome Back!
+    semantic_type: Concept
+    updated_at: 'Tue Jul 18 2017 00:26:09 GMT+0000 (UTC)'
+    is_public: false
+    resources: null
+    _atoms_ids:
+      - 289086
+    atoms:
+      - id: 289086
+        key: e63b1ad9-b315-4814-bd3c-a5385d35d3f3
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L4 01  Welcome Back
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 04:41:08 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52078'
+          youtube_id: Sr_TzGyDwC4
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d40d06_ud1110-intropy-l4-01-welcome-back/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40d06_ud1110-intropy-l4-01-welcome-back/ud1110-intropy-l4-01-welcome-back_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40d06_ud1110-intropy-l4-01-welcome-back/ud1110-intropy-l4-01-welcome-back_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40d06_ud1110-intropy-l4-01-welcome-back/ud1110-intropy-l4-01-welcome-back_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40d06_ud1110-intropy-l4-01-welcome-back/ud1110-intropy-l4-01-welcome-back_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40d06_ud1110-intropy-l4-01-welcome-back/hls/playlist.m3u8'
+  - id: 250082
+    key: 5ebbee74-8eb5-4497-8e93-f6d1f1a8a78a
+    locale: en-us
+    version: 1.0.0
+    title: Tuples
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:34:32 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250083
+      - 250084
+      - 250085
+      - 250089
+    atoms:
+      - id: 250083
+        key: 41c9f322-53ef-47d5-9a03-23b616745704
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 07 2017 20:29:57 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Introducing Tuples
+          =============
+
+          Python provides another useful built-in type: tuples. Tuples are used to store related pieces of information. Consider this example involving latitude and longitude:
+
+          ```python
+          >>> AngkorWat = (13.4125, 103.866667)
+          >>> print(type(AngkorWat))
+          <class 'tuple'>
+          >>> print("Angkor Wat is at latitude: {}".format(AngkorWat[0]))
+          Angkor Wat is at latitude: 13.4125
+          >>> print("Angkor Wat is at longitude: {}".format(AngkorWat[1]))
+          Angkor Wat is at longitude: 103.866667
+          ```
+
+
+          Tuples are similar to lists in that they store an ordered collection of objects which can be accessed by their indexes (for example `AngkorWat[0]` and `AngkorWat[1]`). Unlike lists, tuples are *immutable*. You can't add and remove items from tuples, or sort them in place. 
+
+          Why Tuples?
+          -------------------
+          Why do we have tuples if they're like lists with less features? Tuples useful when you have two or more values that are so closely related that they will always be used together, like latitude and longitude coordinates.
+
+          Tuples can be used to assign multiple variables in a compact way:
+          ```python
+          >>> dimensions = 52, 40, 100 
+          >>> length, width, height = dimensions 
+          >>> print("The dimensions are {}x{}x{}".format(length, width, height))
+          The dimensions are 52x40x100
+          ```
+
+          Notice that the values assigned to the tuple `dimensions` aren't surrounded with parentheses as previous examples were. The parentheses are optional when making tuples, and programmers frequently omit them if parentheses don't clarify the code.
+
+          Tuple Unpacking
+          -------------------------
+          In the second line, three variables are assigned from the content of the tuple `dimensions`. This is called *tuple unpacking*. You can use tuple unpacking yo assign the information from a tuple into multiple variables without having to access them one by one and make multiple assignment statements.
+
+          In this example, if we won't need to use `dimensions` directly, we could shorten those two lines of code into a single line that assigns three variables in one go!
+
+          ```python
+          length, width, height = 52, 40, 100
+          ```
+
+          Tuple Immutability
+          ------------------------------
+          There's also a place where the tuple's immutability is a perk. Unlike lists, tuples can be stored in sets or used as the keys of a dictionary. Since these two data structures require immutable keys, lists aren't an option. (If you're curious why sets and dicts require immutable keys you can learn by in [CS101 Lesson 5](https://classroom.udacity.com/courses/cs101/lessons/48682650/concepts/486995980923#). In that lesson you build a dict from scratch to learn how they work.)
+          In the example below we create a dictionary, `world_heritage_locations` that has tuples of the form `(latitude, longitude)` as the keys and strings denoting the corresponding place names as values.
+          ```python
+          world_heritage_locations = {(13.4125, 103.866667): "Angkor Wat",
+                                      (25.73333, 32.6): "Ancient Thebes",
+                                      (30.330556, 35.4433330): "Petra",
+                                      (-13.116667, -72.583333): "Machu Picchu"}
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 250084
+        key: 70b7eefe-b352-4fe4-a746-915d32c67434
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 18:54:15 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Returning Tuples
+          =======
+          A common use for tuples is to return multiple values from a function:
+
+          ```python
+          def first_and_last(sequence):
+              """returns the first and last elements of a sequence"""
+              return sequence[0], sequence[-1]
+          ```
+
+          The `first_and_last` function can be used like this:
+
+          ```python
+          >>> first_and_last(["Spam", "egg", "sausage", "Spam"])
+          ('Spam', 'Spam')
+          ```
+
+          A function that returns a tuple can also be used to assign multiple variables:
+
+          ```python
+          >>> start, end = first_and_last(["Spam", "egg", "sausage", "Spam"])
+          >>> print(start)
+          Spam
+          >>> print(end)
+          Spam
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 250085
+        key: 1c9ab166-b6df-4a64-805c-27a57c022442
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 19:01:52 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Days and Hours
+          ==============
+          Try your hand at writing a function that uses a tuple to return multiple values. Write an `hours2days` function that takes one argument, an integer, that is a time period in hours. The function should return a tuple of how long that period is in days and hours, with hours being the remainder that can't be expressed in days. For example, 39 hours is 1 day and 15 hours, so the function should return (1,15).
+
+          These examples demonstrate how the function can be used:
+
+          ```python
+          >>> hours2days(24) # 24 hours is one day and zero hours
+          (1, 0)
+          >>> hours2days(25) # 25 hours is one day and one hour
+          (1, 1)
+          >>> hours2days(10000)
+          (416, 16)
+          ```
+          You can use them to test your code. Your function doesn't need to handle negative inputs.
+        instructor_notes: ''
+        resources: null
+      - id: 250089
+        key: bbf4357f-290d-4ed7-a157-6950ee5f5f15
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Apr 03 2017 14:52:08 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5156388369203200'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |
+              try:
+                  from hours2days import hours2days
+                  
+                  if hours2days(25)!= (1, 1):
+                      print('error1-secretstring')
+                  if hours2days(10000)!= (416, 16):    
+                      print('error2-secretstring')
+                  if hours2days(49)!= (2, 1):
+                      print('error3-secretstring')
+                  if hours2days(3)!= (0, 3):
+                      print('error4-secretstring')
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import hours2days
+            gae_grading_code: |
+              solution_text = """
+              def hours2days(input_hours):
+                  days = input_hours // 24
+                  hours = input_hours % 24
+                  return days, hours
+              """
+
+              def find_errors(s):
+                  explanation_str = '''Your code produced the wrong result when ran with {}. Expected result is {}.'''
+
+                  errors = []
+
+                  if ('error1-secretstring' in s):
+                      errors.append(explanation_str.format('25', '(1,1)'))
+                  if ('error2-secretstring' in s):
+                      errors.append(explanation_str.format('10000', '(416, 16)'))
+                  if ('error3-secretstring' in s):
+                      errors.append(explanation_str.format('49', '(2, 1)'))
+                  if ('error4-secretstring' in s):
+                      errors.append(explanation_str.format('3', '(0, 3)'))
+                
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              # feedback.append("Click *NEXT* to see our solution.") #uncomment if the feedback really is on the next concept
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 250091
+    key: 25c1ebb2-9d7b-4c47-8bac-45c1bd4dfdf1
+    locale: en-us
+    version: 1.0.0
+    title: Default Arguments
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:34:35 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250092
+      - 250103
+      - 250110
+      - 250285
+      - 250286
+    atoms:
+      - id: 250092
+        key: 4b16a843-e7ee-4035-8bbc-ab177d0e48da
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 00:35:43 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Default Argument Values
+          =================
+          Let's revisit the `starbox` function from [earlier on](../../a6927fc9-e963-4403-847d-0a79c8b16a46/concepts/06888cd6-6f49-4fcf-9f0a-829acdfac850), but with one modification. This `box` function can use any symbol to draw boxes, not just `*`.
+
+          ```python
+          def box(width, height, symbol):
+              """print a box made up of asterisks, or some other character.
+
+              width: width of box in characters, must be at least 2
+              height: height of box in lines, must be at least 2
+              symbol: a single character string used to draw the box edges
+              """
+              print(symbol * width) # print top edge of box
+             
+              # print sides of box
+              for _ in range(height-2):
+                  print(symbol + " " * (width-2) + symbol) 
+
+              print(symbol * width) # print bottom edge of box
+          ```
+
+          This added functionality is nice, but when we call the function we have to specify an extra argument. This is a pain if we just want to draw a box and don't care what symbol is used. Fortunately there is a Python feature that allows the flexibility of the extra argument, without requiring extra effort when the flexibility isn't needed.
+
+          We can specify a default value for the `symbol` argument by changing the first line of the function to this:
+
+          ```python
+          def box(width, height, symbol='*'):
+          ```
+
+          Now we can call the function with two arguments or three. If the third argument is omitted then `*` will be used as the default value.
+
+          ```python
+          >>> box(7, 5)
+          *******
+          *     *
+          *     *
+          *     *
+          *******
+
+          >>> box(7, 5, '#')
+          #######
+          #     #
+          #     #
+          #     #
+          #######
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 250103
+        key: 253e93d2-7312-427f-a496-6937a0473689
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 19:19:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Default Arguments
+          ===============
+          `print_list` is a function that takes a list as its input and prints it line by line as a numbered or bulleted list. It takes three arguments:
+          - `l`: The list to print
+          - `numbered`: set to `True` to print a numbered list.
+          - `bullet_character`: The symbol placed before each list element. This is ignored if `numbered` is `True`.
+
+          This function is pretty cumbersome to call. It requires a `bullet_character` even if the user wants a numbered list!
+
+          Make the function easier to use by adding default arguments. By default the function should produce a bulleted list, and the default bullet character should be "-".
+
+          After your changes, the function should behave like this:
+
+          ```python
+          >>> print_list(["cats", "in", "space"])
+          - cats
+          - in
+          - space
+          >>> print_list(["cats", "in", "space"], True)
+          1: cats
+          2: in
+          3: space
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 250110
+        key: aa6a786d-ebfb-4bf7-ba03-44e9657dd3b8
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Apr 03 2017 16:02:49 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6524326426836992'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |
+              try:
+                  from list_printer import print_list
+                  print_list(["cats", "in", "space"], False, '*')
+                  print_list(["cats", "in", "space"], True)
+                  print_list(["cats", "in", "space"])
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import list_printer
+            gae_grading_code: |-
+              solution_text = """
+              In our solution, we just changed the definition line to include these default values:
+
+              ```python
+              def print_list(l, numbered=False, bullet_character='-'):
+              ```
+              """
+
+              def find_errors(s):
+                  errors = []
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      if ("print_list() takes at least" in error_msg) or ("print_list() takes exactly" in error_msg) :
+                          errors.append('''It looks like you did not specify a default value for either `numbered` or `bullet_character`, therefore when we tried running your function without one of these arguments specified this raised an exception.\n Try running your function as follows to verify that it works:
+
+              ```python
+              print_list(["cats", "in", "space"], False, '*')
+              print_list(["cats", "in", "space"], True)
+              print_list(["cats", "in", "space"])
+              ```
+                          ''')
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              # feedback.append("Click *NEXT* to see our solution.") #uncomment if the feedback really is on the next concept
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 250285
+        key: 272943a5-f22d-41dc-a31a-b157b48f2473
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 00:31:16 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Mutable Default Arguments
+          =================
+
+          Default arguments are a helpful feature, but there is one situation where they can be surprisingly unhelpful. Using a mutable type (like a list or dictionary) as a default argument and then modifying that argument can lead to strange results. It's usually best to avoid using mutable default arguments: to see why, try the following code locally.
+
+          Consider this function which adds items to a todo list. Users can provide their own todo list, or add items to a default list:
+          ```python
+          def todo_list(new_task, base_list=['wake up']):
+              base_list.append(new_task)
+              return base_list
+          ```
+
+          We can call the function like this:
+
+          ```python
+          >>> todo_list("check the mail")
+          ['wake up', 'check the mail']
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 250286
+        key: f5a0b7a2-acea-4739-ae3e-d6e2a108af60
+        locale: en-us
+        version: 1.0.0
+        title: ' '
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Jan 11 2017 00:34:01 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Later on, an astronaut calls the function to create a todo list for themselves:
+            ```python
+            >>> todo_list("begin orbital transfer")
+            ```
+
+            What does `todo_list` return?
+          correct_feedback: |
+            That's right! The list object `base_list` is only created once: when the `todo_list` function is defined. Lists are mutable objects. This list object is used every time the function is called, it isn't redefined each time the function is called. Because `todo_list` appends an item to the list, `base_list` can get longer each time that `todo_list` is called.
+          video_feedback: null
+          default_feedback: 'That might be what you expect, but that''s not what really happens. Try the code on your computer to see what really happens!'
+          answers:
+            - id: a1484094660128
+              text: '`[''begin orbital transfer'']`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484094698148
+              text: '`[''wake up'', ''begin orbital transfer'']`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484094707384
+              text: '`[''wake up'', ''check the mail'']`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484094718173
+              text: '`[''wake up'', ''check the mail'', ''begin orbital transfer'']`'
+              is_correct: true
+              incorrect_feedback: null
+  - id: 250287
+    key: 9c190475-f615-4f8e-a9e0-a51b668a4460
+    locale: en-us
+    version: 1.0.0
+    title: Variable Scope
+    semantic_type: Concept
+    updated_at: 'Tue Jun 06 2017 16:24:20 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250288
+      - 250308
+    atoms:
+      - id: 250288
+        key: ec17437b-eae3-4077-a170-f31b87808fc5
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue May 09 2017 17:11:15 GMT+0000 (UTC)'
+        is_public: true
+        text: "When you program, you'll often find that similar ideas come up again and again. You'll use variables for things like counting, iterating and accumulating values to return. In order to write readable code, you'll find yourself wanting to use similar names for similar ideas. As soon as you put multiple piece of code together (for instance, multiple functions or function calls in a single script) you might find that you want to use the same name for two separate concepts.\n\nFortunately, you don't need to come up with new names endlessly. Reusing names for objects is OK as long as you keep them in separate scope. \"Scope\" refers to which parts of a program a variable can be referenced from. \n\nIf a variable is created inside a function, it can only be used within that function. \n\nConsider these two functions, `word_count` and `nearest_square`. Both functions include a `answer` variable, but they are distinct variables that only exist within their respective functions.\n\n```python\ndef word_count(document, search_term):\n    \"\"\" Count how many times search_term appears in document. \"\"\"\n    words = document.split()\t\n    answer = 0\n    for word in words:\n        if word == search_term:\n            answer += 1\n    return answer\n\ndef nearest_square(limit):\n    \"\"\" Find the largest square number smaller than limit. \"\"\"\n    answer = 0\n    while (answer+1)**2 < limit:\n        answer += 1\n    return answer**2\n```\n\nGood practice: It's best to define variables in the smallest scope they will be needed in. While functions _can_ refer to variables defined in a larger scope, this is very rarely a good idea. "
+        instructor_notes: ''
+        resources: null
+      - id: 250308
+        key: 80d445d4-17d9-4352-a1b4-c7afe05416d7
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Jan 11 2017 01:44:39 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Read through this code snippet,
+
+            ```python
+            egg_count = 0
+
+            def buy_eggs():
+                egg_count += 12 # purchase a dozen eggs
+
+            buy_eggs()
+            ```
+
+            What is the result of running this code? If you aren't sure, try running it on your own computer!
+          correct_feedback: |-
+            This is an `UnboundLocalError`. Python doesn't allow functions to modify variables that aren't in the function's scope. The best way to rewrite this would be like this:
+
+            ```python
+            def buy_eggs(count):
+                return count + 12  # purchase a dozen eggs
+            egg_count = 0
+            egg_count = buy_eggs(12)
+            ```
+          video_feedback: null
+          default_feedback: That's not right. Copy this code to your computer to see the real result!
+          answers:
+            - id: a1484098582574
+              text: '`egg_count` equals zero'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484098848319
+              text: '`egg_count` equals 12'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484098849281
+              text: An error occurs
+              is_correct: true
+              incorrect_feedback: null
+  - id: 250289
+    key: d2d034b0-5c87-4572-bac4-b9508755609d
+    locale: en-us
+    version: 1.0.0
+    title: Reading from a File
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:34:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250290
+      - 291761
+      - 291784
+      - 250294
+      - 292337
+      - 292338
+      - 250293
+      - 250298
+      - 250330
+      - 250328
+      - 250333
+      - 250340
+      - 250379
+      - 250380
+    atoms:
+      - id: 250290
+        key: 6119a891-e71a-4f50-b3ad-ddf431593d01
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 07 2017 20:43:48 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Using Files
+          =========
+          In order for a program to be really useful, it needs to interact with real-world data. Images, webpages, databases are all examples of files, and we routinely create, move, manipulate, and read these files in our daily digital lives.
+
+          All the data we've used so far has been defined inside the Python interpreter or a Python script. Next, we're going to massively increase the variety of what we can achieve in our Python programming by introducing how to open and read files in Python. This will allow us to interact with and process larger amounts of information from any source.
+
+          All kinds of files have a similar structure on a computer - they are strings of characters that encode some information. The specific file format (often indicated by the extension of the filename, such as .txt or .mp3) will indicate how those characters are organised. The characters in the file are interpreted by the various programs we use to work with them - for example, an image editing program will interpret the information of a digital photograph file and display the image. If we then edit the image in the program, we're using the program to make changes to the characters in the file.
+
+          In Python, we can read those file characters directly. The experience will seem quite different from opening a file in a desktop application. Opening files in Python gives us a common programmatic interface to all kinds of files without the need for a graphical user interface - which means we can automate tasks involving files with Python programs!
+
+          Here's an example of some code for reading information from a file into Python.
+        instructor_notes: ''
+        resources: null
+      - id: 291761
+        key: 36431401-49e0-4124-9a8c-38b53820e23a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 07 2017 21:43:17 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Opening and reading from Files
+          ---------------
+          In order to read from a file we must first open it, and we can do so with the `open` function. We mist give it a path where the file resides, and we can also specify several optional parameters. We can then assign the value returned from thus function to a variable. For example:
+          ```python
+          f = open('/my_path/my_file.txt','r')
+          ```
+           The `open` function will return a file object - a Python object through which Python will interact with the file itself.
+
+          In this example the second parameter `r` specifies the mode in which we opened the file, in our case we opened in read only mode (because we only want to read from the file, we don't want to change the file's contents). We did not need to specify this parameter, because by default (if we don't specify mode) `open` will open files in read mode.
+
+          Next, in order to access the contents of the file we can use `read`. `f.read()` creates a string object containing the text in the file. This string gets assigned to the variable named `file_data`.:
+          ```python
+          file_data = f.read()
+          ```
+          Once we are finished with the file `f` we should close it. This will free up any system resources taken up by the file:
+          ```python
+          f.close()
+          ```
+          It is important to remember to always close files we have opened, once we no longer need them. If we open a lot of files without closing them, we can run out of file handles, and we will not be able to open any new files (exactly how many files you can open before running out of handles will depend on your operating system).
+
+          To convince yourself, you can try running the following in your python interpreter:
+          ```python
+          >>> files = []
+          >>> for i in range(100000):
+          ...     files.append(open('somefile.txt'))
+          ```
+          Try editing the number in `range` in the `for` loop. At some point, for a large enough number, you will receive an error.
+          ```python
+          Traceback (most recent call last):
+            File "<stdin>", line 2, in <module>
+          OSError: [Errno 24] Too many open files: 'somefile.txt'
+          >>> i
+          7164
+          ```
+          We can see that at 7164 open files the system no longer had available resources to open any new files. To avoid this, it is always a good idea to close any files you no longer need.
+        instructor_notes: ''
+        resources: null
+      - id: 291784
+        key: 17b51385-186f-4c79-9ad3-b8d2fd2fe8b3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 07 2017 21:15:10 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Writing to a File
+          ----------------
+          In addition to reading from a file, you can also write to a file, in which case you will change the content of the file. To do so, you must open the file in writing mode:
+          ```python
+          f = open('/my_path/my_file.txt','w')
+          ```
+          Caution: once you open a file in writing mode, anything that it had contained previously will be deleted. If you're interested in adding to an existing file (without deleting its content) you should use `append` instead of `write` and open in append mode (using `a` instead of `w`). You can visit the [python documentation](https://docs.python.org/3/library/functions.html#open) for more information on the different modes in which you can open a file.
+
+          If the file does not exist, python will create it for you. 
+
+          We can now write to the file:
+          ```python
+          f.write("Hello World!")
+          ```
+          And after we are done we will close it, like good citizens.
+          ```python
+          f.close()
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 250294
+        key: 2079524c-d5d0-46cb-a82b-6e0cc6a65daa
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 07 2017 21:49:59 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          `with`
+          ============
+          Python allows you to open a file, do operations on it, and automatically close it afterwards using `with`.
+          ```python
+          >>> with open('/my_path/my_file.txt','r') as f:
+          >>>   file_data = f.read()
+          ```
+          In the example above we open a file, perform the operations in the block below the `with` statement (in this case read from the file) and afterwards Python closes it for us. No need to call `f.close()`!
+
+           This is explained in more detail below.
+        instructor_notes: ''
+        resources: null
+      - id: 292337
+        key: 5f2eab34-8f7e-4861-bb0b-5bca57210d95
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon Apr 10 2017 17:57:46 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ebc748_intropy-l4-reading-from-a-file/intropy-l4-reading-from-a-file.png'
+        width: 517
+        height: 294
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 292338
+        key: 22901696-bdea-48a5-bf63-5cc307ba9b03
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Apr 10 2017 17:57:55 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ```python
+          with open('/my_path/my_file.txt','r') as f:
+              file_data = f.read()
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 250293
+        key: 57065cd0-e856-45ef-82ce-696e2f4944e1
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 07 2017 21:44:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          In this code, the function `open` takes as input a path to a file (`'/my_path/my_file.txt'`) on the file system and creates a file object. As we have already seen the `'r'` means this object can be used for **read** mode only. '`r`' is actually the default mode so it's not really strictly necessary when calling `open`.
+
+          The code `as f` assigns the file object created by the call to `open` to the variable name `f` - it's similar to saying `f = open('/my_path/my_file.txt','r')`.
+
+          In the call `f.read()`, the file object `f` reads (all of) the content of the underlying file `/my_path/my_file.txt` and so `f.read()` creates a string object containing that text. This string gets assigned to the variable named `file_data`.
+
+          It could be easy to forget to close the file when you're coding but Python provides a special syntax that auto-closes it: this is the keyword `with`. 
+
+          After a `with open(filename) as f:` statement (don't forget the ending colon), write an indented block to use that opened file object `f` however you need to. Once the indented block has been executed, the file will be closed automatically. This is another kind of scope - you can only access the data in the file via `f` inside that indented block. Once the file has been closed, you will be unable to interact with it.
+
+          The official documentation for `open` and file objects is [here](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files) and has more examples and explanation.
+
+          After the example code has executed, the string `file_data` contains the whole file in a single string. You can use all the usual string methods on that string and process its contents. 
+        instructor_notes: ''
+        resources: null
+      - id: 250298
+        key: 3f426215-c164-4fa2-bf2e-612de14cc882
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 02:08:41 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          How to read
+          ==========
+          Opening a file object is like opening a window to look into the file. To be more precise, it's a window that's just one character wide, and it always starts off at the very start of the file. 
+          This is very different from reading a book or a document, where you can look at multiple words or even pages at once. Think instead of the file as a long stream of characters; the file object can look at just one character at a time, in order.
+
+          [NOTE, hope to insert the following video as a gif in due course, and have it looking nice and finished, but right now it's a placeholder to give a feel of the actual animation to come.]
+        instructor_notes: ''
+        resources: null
+      - id: 250330
+        key: 0f41b448-c271-427e-ae52-8ad80540bde4
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Jan 11 2017 04:51:48 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/58759509_lesson4animation/lesson4animation.gif'
+        width: 640
+        height: 480
+        caption: This is an in-progress shot of the final gif. Want a polished version eventually.
+        resources: null
+        instructor_notes: null
+      - id: 250328
+        key: a8ab4693-6ffb-4581-a502-7c22d7fa8b05
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 02:12:23 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          In the previous code, the call to `f.read()` had no arguments passed to it; it defaults to reading all the remainder of the file from its current position - the whole file. If you pass `.read()` an integer argument, it will read up to that number of characters, output all of them, and keep the 'window' at that position ready to read on. 
+
+          ```python
+          >>> with open(camelot.txt) as song:
+          …        print(song.read(2))
+          …        print(song.read(8))
+          …        print(song.read())
+          We
+          're the 
+          knights of the round table
+          We dance whenever we're able
+          ```
+          This makes moving around in the open file a little tricky, as there are not many landmarks to navigate by. 
+
+          The `\n`s in the text are newline characters. The newline character marks the end of a line, and tells a program (such as a text editor) to go down to the next line. However, looking at the stream of characters in the file, `\n`is just another character. 
+          Fortunately, Python knows that these are special characters and you can ask it to read one line at a time. Let's try it!
+        instructor_notes: ''
+        resources: null
+      - id: 250333
+        key: 3c09c41e-579b-4659-8303-1280bf55e433
+        locale: en-us
+        version: 1.0.0
+        title: Read the next line
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Wed Jan 11 2017 04:51:48 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            Use the [relevant part of the Python documentation](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files) to find a function that reads the next line of a file. Put the name of the function in the box.
+          default_feedback: 'Check the section [Methods of File Objects in the Python documentation](https://docs.python.org/3/tutorial/inputoutput.html#methods-of-file-objects) to find a function that reads a single line.'
+          correct_feedback: 'Well done for finding this: `readline` is a useful method!'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: readline
+              expression_description: readline
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: readline()
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: .readline
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: .readline()
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: read line
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+      - id: 250340
+        key: ead3c268-de8b-4610-8262-ddf33b99f741
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 04:46:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Conveniently, Python will loop over the lines of a file using the syntax `for line in file`. 
+          I can use this to create a list of lines in the file. Because each line still has its newline character attached, I remove this using `.strip()`.
+
+          ```python
+          >>> camelot_lines = []
+          >>> with open("camelot.txt") as f:
+          ...     for line in f:
+          ...         camelot_lines.append(line.strip())
+          ... 
+          >>> print(camelot_lines)
+          ["We're the knights of the round table", "We dance whenever we're able"]
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 250379
+        key: beaa2475-8ff9-4efc-9de7-cee5656cf407
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 04:47:15 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Quiz: Flying Circus cast list
+          =============
+          You're going to create a list of the actors who appeared in the television programme Monty Python's Flying Circus. 
+
+          Write a function called `create_cast_list` that takes a filename as input and returns a list of actors' names.
+          It will be run on the file `flying_circus_cast.txt` (this information was collected from imdb.com). Each line of that file consists of an actor's name, a comma, and then some (messy) information about roles they played in the programme. You'll need to extract *only* the name and add it to a list. You might use the [`.split()` method](https://docs.python.org/3/library/stdtypes.html#str.split) to process each line.
+        instructor_notes: ''
+        resources: null
+      - id: 250380
+        key: f575d356-77c4-4f73-8b78-5b8596285d2d
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Apr 03 2017 16:39:34 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6044203843977216'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              try:
+                  from cast_list import create_cast_list
+                  correct_result = ['Graham Chapman', 'Eric Idle', 'Terry Jones', 'Michael Palin', 'Terry Gilliam', 'John Cleese', 'Carol Cleveland', 'Ian Davidson', 'John Hughman', 'The Fred Tomlinson Singers', 'Connie Booth', 'Bob Raymond', 'Lyn Ashley', 'Rita Davies', 'Stanley Mason', 'David Ballantyne', 'Donna Reading', 'Peter Brett', 'Maureen Flanagan', 'Katya Wyeth', 'Frank Lester', 'Neil Innes', 'Dick Vosburgh', 'Sandra Richards', 'Julia Breck', 'Nicki Howorth', 'Jimmy Hill', 'Barry Cryer', 'Jeannette Wild', 'Marjorie Wilde', 'Marie Anderson', 'Caron Gardner', 'Nosher Powell', 'Carolae Donoghue', 'Vincent Wong', 'Helena Clayton', 'Nigel Jones', 'Roy Gunson', 'Daphne Davey', 'Stenson Falke', 'Alexander Curry', 'Frank Williams', 'Ralph Wood', 'Rosalind Bailey', 'Marion Mould', 'Sheila Sands', 'Richard Baker', 'Douglas Adams', 'Ewa Aulin', 'Reginald Bosanquet', 'Barbara Lindley', 'Roy Brent', 'Jonas Card', 'Tony Christopher', 'Beulah Hughes', 'Peter Kodak', 'Lulu', 'Jay Neill', 'Graham Skidmore', 'Ringo Starr', 'Fred Tomlinson', 'David Hamilton', 'Suzy Mandel', 'Peter Woods']
+                  
+                  if create_cast_list('flying_circus_cast.txt')!= correct_result:
+                      print('error1-secretstring')
+                      
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import cast_list
+            gae_grading_code: |+
+
+              solution_text = """
+              ```python
+              def create_cast_list(filename):
+                  cast_list = []
+                  # use with to open the file filename
+                  with open(filename) as f:
+                  # use the for loop syntax to process each line        
+                  # and add the actor name to cast_list
+                      for line in f:
+                          line_data = line.split(',')
+                          cast_list.append(line_data[0])
+                  return cast_list
+              ```
+
+              Later on you'll learn how to use other people's code to parse files in more complex ways, but it will always rely on being able to open up the file first - well done on mastering that skill!
+
+              """
+              def find_errors(s):
+                  explanation_str = '''Your code produced the wrong result when ran like this:
+                      `create_cast_list('flying_circus_cast.txt')`.
+                      Expected result is:
+                          ['Graham Chapman', 'Eric Idle', 'Terry Jones', 'Michael Palin', 'Terry Gilliam', 'John Cleese', 'Carol Cleveland', 'Ian Davidson', 'John Hughman', 'The Fred Tomlinson Singers', 'Connie Booth', 'Bob Raymond', 'Lyn Ashley', 'Rita Davies', 'Stanley Mason', 'David Ballantyne', 'Donna Reading', 'Peter Brett', 'Maureen Flanagan', 'Katya Wyeth', 'Frank Lester', 'Neil Innes', 'Dick Vosburgh', 'Sandra Richards', 'Julia Breck', 'Nicki Howorth', 'Jimmy Hill', 'Barry Cryer', 'Jeannette Wild', 'Marjorie Wilde', 'Marie Anderson', 'Caron Gardner', 'Nosher Powell', 'Carolae Donoghue', 'Vincent Wong', 'Helena Clayton', 'Nigel Jones', 'Roy Gunson', 'Daphne Davey', 'Stenson Falke', 'Alexander Curry', 'Frank Williams', 'Ralph Wood', 'Rosalind Bailey', 'Marion Mould', 'Sheila Sands', 'Richard Baker', 'Douglas Adams', 'Ewa Aulin', 'Reginald Bosanquet', 'Barbara Lindley', 'Roy Brent', 'Jonas Card', 'Tony Christopher', 'Beulah Hughes', 'Peter Kodak', 'Lulu', 'Jay Neill', 'Graham Skidmore', 'Ringo Starr', 'Fred Tomlinson', 'David Hamilton', 'Suzy Mandel', 'Peter Woods']'''
+
+                  errors = []
+
+                  if ('error1-secretstring' in s):
+                      errors.append(explanation_str)
+                  
+                
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              # feedback.append("Click *NEXT* to see our solution.") #uncomment if the feedback really is on the next concept
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 250381
+    key: f9301f01-75c6-40ab-b909-1e8d7dbc676d
+    locale: en-us
+    version: 1.0.0
+    title: Cast List Solution
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:34:43 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250382
+    atoms:
+      - id: 250382
+        key: 82258bf8-e060-4d87-8459-952d4b81eb80
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 04:53:04 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          This is how we created our cast list.
+
+          ```python
+          def create_cast_list(filename):
+              cast_list = []
+              # use with to open the file filename
+              with open(filename) as f:
+              # use the for loop syntax to process each line        
+              # and add the actor name to cast_list
+                  for line in f:
+                      line_data = line.split(',')
+                      cast_list.append(line_data[0])
+              return cast_list
+          ```
+
+          Later on you'll learn how to use other people's code to parse files in more complex ways, but it will always rely on being able to open up the file first - well done on mastering that skill!
+        instructor_notes: ''
+        resources: null
+  - id: 250319
+    key: a59361e3-daa2-4faa-a95a-c7ee89fb136f
+    locale: en-us
+    version: 1.0.0
+    title: The Standard Library
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:35:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250320
+      - 250321
+      - 250325
+      - 250327
+      - 250331
+      - 250329
+      - 250332
+      - 250335
+      - 250339
+      - 250383
+      - 250384
+      - 250385
+      - 250386
+      - 250387
+      - 250388
+      - 250389
+      - 250390
+    atoms:
+      - id: 250320
+        key: 9bd0e3b7-b850-4262-b34c-cb1940a3af3d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 02:07:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Introduction to the Python Standard Library
+          =====================
+          So far, we've worked with built-in types, functions and syntax in Python. The syntax we've seen is all available in the Python interpreter or you can put this code into a Python script and just run it. This is useful and powerful, and what you can do with it is really limited only by your own imagination and coding stamina!
+
+          There's only so much a programmer can do on their own though. Wouldn't it be helpful if code existed to solve common problems? It does! This is called the Python Standard Library. 
+
+
+          Think of the Python Standard Library as a very big set of programming tools that you can use to help you to program in Python. It provides new types of objects and functions for a range of common and specialised tasks, from networking to mathematical statistics. Other people have already written this code and put it into useful "modules" for you to access and use in your own code. Using modules from the Python Standard Library to easily access and use existing code gives you a lot of programming power!
+
+
+          In this section we'll give you a quick tour of the standard library, teach you how to use it, and share some of our favourite modules. 
+        instructor_notes: ''
+        resources: null
+      - id: 250321
+        key: 9c155dfd-ca69-4363-9e7a-8ba45618ccb9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 18:17:28 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Importing Modules
+          ================
+          The Python Standard Library is organised into parts called `modules`. Many modules are simply Python files, like the Python scripts you've already used and written. In order to be able to use the code contained in a module we must `import` it, either in the interactive interpreter or in a Python script of our own. 
+
+          The syntax for importing a module is simply `import package_name`.
+
+          ```python
+          >>> import math
+          ```
+          Put import statements at the top of your file (each one on a separate line). Importing a module runs the code in that file. It will typically contain a lot of definitions, and usually doesn't show any output. Running the code will make all of the module's functions and types of objects available to use. 
+
+          For example, `math` has a `factorial` function. (It finds the product of a positive integer with all of the integers smaller than it; so the factorial of 4 is 24 because 4 × 3 × 2 × 1 = 24.)
+          We have already used `import math` to import the `math` module. Now, in order to use the `factorial` function, we can call it, starting with the module name `math`, then a dot (`.`) and then the function name `factorial()`.
+
+          ```python
+          >>> print(math.factorial(3))
+          6
+          ```
+
+          The Python Standard Library has good documentation for each of its modules, and it's a good idea to read the relevant page whenever you use a module. [Here's the documentation for the `math` module](https://docs.python.org/3/library/math.html#module-math).
+
+          You can discover new modules at the [Python Module of the Week blog](https://pymotw.com/3/).
+        instructor_notes: ''
+        resources: null
+      - id: 250325
+        key: a5d955b0-0b6e-403d-9ec2-56a0fe8b5bf5
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Apr 03 2017 17:03:07 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Find the Greatest Common Divisor
+          =================
+
+          It's your turn to import and use the `math` module. Use the `math` module to calculate `e` to the power of 3. `print` the answer.
+
+          Refer to the [math module's documentation](https://docs.python.org/3.6/library/math.html?highlight=math%20module#module-math) to find the function you need!
+        instructor_notes: ''
+        resources: null
+      - id: 250327
+        key: cbbd60a2-3137-47e1-813a-56468a265a27
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Apr 03 2017 17:15:30 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5487581417570304'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              try:
+                  import gcdquiz
+                  
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import gcdquiz
+            gae_grading_code: |+
+              solution_text = """
+              Here's how we did this:
+
+              ```python
+              import math
+              print(math.exp(3))
+              ```
+              """
+
+              def find_errors(s):
+                  errors = []
+                  
+                  correct_result = '20.085536923187668'
+
+                  if correct_result not in s:
+                      errors.append('Your code produced the wrong result. Expected answer is `20.085536923187668`')
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              # feedback.append("Click *NEXT* to see our solution.") #uncomment if the feedback really is on the next concept
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 250331
+        key: 718c7c90-8e94-4f7b-ab75-6ca11c76e95d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 02:17:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Explore the Standard Library
+          =============
+
+          So far you've seen only one module in the Python Standard Library. It's a good one, but there are many more. It's time to take a look at the documentation for the whole of the Python Standard Library. It's a big list of links - the first few sections relate to the built-in objects, many of which we've already discussed. (As you already know, those don't need to be `import`ed before use.) 
+
+          Modules are listed in groups based on their uses. Clicking on a name takes you to the documentation for that module, which will often include example code, which you should feel free to test out.
+
+          [You can browse the library documentation here.](https://docs.python.org/3/library/)
+
+          In the following quizzes, enter the name of the module that solves each problem. Note that capitalization is important! Every module in the standard library is lowercased.
+        instructor_notes: ''
+        resources: null
+      - id: 250329
+        key: eca6c29f-bf78-4999-a73a-8c8fa767b0a4
+        locale: en-us
+        version: 1.0.0
+        title: Which Module? 1
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Wed Jan 11 2017 07:16:53 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Which module can tell you the current time and date?
+          default_feedback: null
+          correct_feedback: 'The (datetime)[https://docs.python.org/3/library/datetime.html] module'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: datetime
+              expression_description: ''
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: datetime\.datetime
+              expression_description: ''
+              flags: ''
+              incorrect_feedback: null
+      - id: 250332
+        key: 454ebc7a-64f3-4c45-91bd-ed2e7042dace
+        locale: en-us
+        version: 1.0.0
+        title: Which Module? 2
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Wed Jan 11 2017 07:16:54 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Which module has a method for changing the current working directory?
+          default_feedback: null
+          correct_feedback: 'The (os)[https://docs.python.org/3/library/os.html] module.'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: os
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+      - id: 250335
+        key: c0baf8e0-5f9b-4540-b64e-b0f629beff19
+        locale: en-us
+        version: 1.0.0
+        title: Which Module? 3
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Wed Jan 11 2017 07:16:53 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Which module can read data from a comma separated values (.csv) file into Python dictionaries for each row?
+          default_feedback: null
+          correct_feedback: 'The (os)[https://docs.python.org/3/library/csv.html] module.'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: csv
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+      - id: 250339
+        key: 08346fcf-fe2a-4a35-92b4-993bed811e4e
+        locale: en-us
+        version: 1.0.0
+        title: Which Module? 3
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Wed Jan 11 2017 07:16:53 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Which module can help extract all of the files from a zip file?
+          default_feedback: null
+          correct_feedback: 'The (zipfile)[https://docs.python.org/3/library/zipfile.html] module.'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: zipfile
+              expression_description: ''
+              flags: ''
+              incorrect_feedback: null
+      - id: 250383
+        key: 028cf8c0-ff04-40e2-b1fb-a2d476ffa5a4
+        locale: en-us
+        version: 1.0.0
+        title: Which Module? 4
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Wed Jan 11 2017 07:16:54 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            Which module can say how long your code took to run?
+          default_feedback: null
+          correct_feedback: 'Well researched! There are a few different modules you can use for this: we like [timeit](https://docs.python.org/3/library/timeit.html) for short pieces of code or [cProfile or profile](https://docs.python.org/3/library/profile.html) for bigger jobs.'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: timeit
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: profile
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: cProfile
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: time
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+      - id: 250384
+        key: dee310e0-1589-4d41-9ffd-cf3dd4cd872a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 05:06:22 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Other ways to import, and naming
+          ===================
+
+          So far you've imported modules with`import module_name`, which makes all of the classes of objects and functions of that module available via dot notation.
+
+          There are some other variants of importing that are useful in other situations.
+
+          ### To import an individual function or class from a module use
+          ```python
+          >>> from module_name import object_name
+          ```
+          for example:
+          ```python
+          >>> from collections import defaultdict
+          ```
+          This gives access **only** to `defaultdict` from the module `collections`. `defaultdict`will be accessible with its own name (without the module name before it) and trying to access `collections` or even call `collections.defaultdict()` will give a NameError.
+
+          ```python
+          >>> collections
+          Traceback (most recent call last):
+            File "<stdin>", line 1, in <module>
+          NameError: name 'collections' is not defined
+          >>> collections.defaultdict()
+          Traceback (most recent call last):
+            File "<stdin>", line 1, in <module>
+          NameError: name 'collections' is not defined
+          >>> defaultdict()
+          defaultdict(None, {})
+          ```
+          Importing individual objects from a module means you only take what you need, and you don't need to use dot notation to access them.
+
+          You can import multiple individual objects from a module by separating them with commas:
+          ```python
+          >>> from collections import defaultdict, namedtuple
+          ```
+          This technique is very common when importing pieces from large libraries.
+
+          ### To import a module and give it a different (usually shorter) name
+          To rename a module, you can use `as`:
+          ```python
+          >>> import module_name as different_name
+          ```
+          for example
+          ```python
+          >>> import multiprocessing as mp
+          ```
+          If the name of a module is particularly long, or if there is a clash with something with the same or similar name, you can rename a module. Check code examples in the documentation as these will often include a standard abbreviation if one is used for this module - using an abbreviation that is consistent with others' will make your code more readable.
+
+          You will then access objects from the module via the alternative name that you specified, and the usual dot notation:
+
+          ```python
+          >>> mp.cpu_count()
+          4
+          ```
+
+          ### Import an individual item from a module and give it a different name
+          You can combine the previous two pieces of syntax to import an item from a module **and** change its name:
+
+          ```python
+          from module_name import object_name as different_name
+          ```
+          For example:
+
+          ```python
+          from csv import reader as csvreader
+          ```
+          Again, you'll be able to access only that individual item directly via its newly specified name: no dot notation needed.
+          This can be useful if you have multiple objects with similar names from different packages in your namespace. For example, perhaps you want a csv reader and a json reader - you could import them from their respective modules and give them descriptive names.
+
+
+          ### One technique that you **should NOT** use for importing
+
+          Another way of importing that you may see in other people's code but that you **should not use** is 
+
+          ```python
+          from module_name import *
+          ```
+          For example
+          ```python
+          from random import *
+          ```
+          This will import **every** object from the `random` module individually, and allow you to access each of them directly via its name. The real problem with this is that modules may contain many objects, each of which has a name. 
+          Including all of these names may overwrite (or may be overwritten by) other names you are using in your program. `import *` also makes it impossible for collaborators to find where an imported object was defined. A reader can search for the definition of a function and not find it, and they won't know which `import *` statement introduced the function. These problems can lead to a lot of confusion. 
+          **Do NOT use `from module_name import *`!!**
+
+          If you really want to use all of the objects from the `random` module, use the standard `import random` instead and access each of the objects via the dot notation.
+        instructor_notes: ''
+        resources: null
+      - id: 250385
+        key: 94125fc5-9d88-487d-aef2-afd75d5f085e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 06:59:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Modules, packages and names
+          ==================
+          Some of the Python Standard Library modules have a lot in them! In order to manage the code better, they are split down into sub-modules that are contained within a package. A package is simply a module that contains sub-modules. A sub-module is specified with the usual dot notation.
+
+          For example, the `os` module (useful for dealing with filesystems, works the same for every operating system) has a submodule, `os.path` which is used specifically for dealing with pathnames. Modules that are submodules are specified by the package name and then the submodule name separated by a dot.
+
+          You can import the submodule `os.path` using 
+          ```python
+          >>> import os.path
+          ```
+          You can then use the objects from the submodule in the usual way:
+          ```python
+          >>> os.path.isdir('my_path')
+          False
+          ```
+          However, this syntax for importing will **only** work for submodules - you cannot import a function from a module in this way. 
+          ```python
+          >>> import os.path.isdir
+          ImportError: No module named 'os.path.isdir'; 'os.path' is not a package
+          ```
+          If you want to use other parts of the os module, too, you could import `os` instead, and everything in `os.path` will be accessible.
+
+          Sometimes naming can be a point of confusion when working with modules. For example, a module might be named after one of the important classes or functions within it. In this case, you'll need to think carefully about your import statements:
+
+          ```python
+          >>> from datetime import datetime
+          ```
+          imports the `datetime` class from the `datetime` module. Note that, after this, using `datetime` will refer to the `datetime` class, not the module.
+        instructor_notes: ''
+        resources: null
+      - id: 250386
+        key: 661503be-107a-43bf-acd8-c95205b89586
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Apr 10 2017 14:09:40 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Importing and accessing from modules
+          ===============
+          In this quiz, you'll be using different methods to import and use the `random.randint()` function from the `random` module. Your task is to match the import statement with the way you would then call the function itself. 
+          You can test these out in your own Python interpreter. Don't forget that once you've imported something, it will remain imported until you exit the interactive interpreter with `exit()` or `ctrl-D` (or if you are working on Windows `ctrl-Z`).
+        instructor_notes: ''
+        resources: null
+      - id: 250387
+        key: 77505ebf-682e-4830-bf04-bb579ba00110
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: MatchingQuizAtom
+        updated_at: 'Wed Jan 11 2017 07:16:53 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          complex_prompt:
+            text: Match the import statement with the way that `random.randint()` is called.
+          default_feedback: Try testing them out in your own Python interpreter if you need to check how they work.
+          correct_feedback: Well done for matching these up!
+          video_feedback: null
+          concepts_label: ' Import statement'
+          answers_label: Calling the function
+          concepts:
+            - text: |-
+
+                `import random`
+              default_concept_feedback: null
+              correct_answer:
+                id: a1484117753829
+                text: '`random.randint(0,10)`'
+              incorrect_feedbacks: []
+            - text: '`from random import randint`'
+              default_concept_feedback: null
+              correct_answer:
+                id: a1484117827419
+                text: '`randint(0,10)`'
+              incorrect_feedbacks: []
+            - text: '`import random as rd`'
+              default_concept_feedback: null
+              correct_answer:
+                id: a1484117843772
+                text: '`rd.randint(0,10)`'
+              incorrect_feedbacks: []
+            - text: '`from random import randint as rint`'
+              default_concept_feedback: null
+              correct_answer:
+                id: a1484117859785
+                text: '`rint(0,10)`'
+              incorrect_feedbacks: []
+            - text: '`from random import *`'
+              default_concept_feedback: null
+              correct_answer:
+                id: a1484117876417
+                text: Don't use this import statement!
+              incorrect_feedbacks: []
+          answers:
+            - id: a1484117753829
+              text: '`random.randint(0,10)`'
+            - id: a1484117859785
+              text: '`rint(0,10)`'
+            - id: a1484117827419
+              text: '`randint(0,10)`'
+            - id: a1484117843772
+              text: '`rd.randint(0,10)`'
+            - id: a1484117876417
+              text: Don't use this import statement!
+      - id: 250388
+        key: 013436ce-2008-454a-9fb6-ae56366414e6
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Apr 10 2017 14:15:37 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Our favourite modules 
+          ============
+          The Python Standard Library has a lot of modules! To help you get familiar with what's available, here are a selection of our favourite Python Standard Library modules and why we use them! 
+
+          * [`csv`](https://docs.python.org/3/library/csv.html): very convenient for reading and writing csv files  
+          * [`collections`](https://docs.python.org/3/library/collections.html): useful extensions of the usual data types including `OrderedDict`, `defaultdict` and `namedtuple`  
+          * [`random`](https://docs.python.org/3/library/random.html): generates pseudo-random numbers, shuffles sequences randomly and chooses random items  
+          * [`string`](https://docs.python.org/3/library/string.html): more functions on strings. This module also contains useful collections of letters like `string.digits` (a string containing all characters with are valid digits).  
+          * [`re`](https://docs.python.org/3/library/re.html): pattern-matching in strings via regular expressions  
+          * [`math`](https://docs.python.org/3/library/math.html): some standard mathematical functions  
+          * [`os`](https://docs.python.org/3/library/os.html): interacting with operating systems  
+          * [`os.path`](https://docs.python.org/3/library/os.path.html): submodule of `os` for manipulating path names  
+          * [`sys`](https://docs.python.org/3/library/sys.html): work directly with the Python interpreter  
+          * [`json`](https://docs.python.org/3/library/json.html): good for reading and writing json files (good for web work)
+
+          We hope you find these useful!
+        instructor_notes: ''
+        resources: null
+      - id: 250389
+        key: 3323e128-a7b5-4aa5-b3e1-2c2aba1ce0b7
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 07:02:22 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Password Generator
+          ================
+          Write a function called `password_generator` that selects three random words from a provided file of words and concatenates them into a single string. The code to read in the data from the file is already in the starter code, you will need to build a password out of these parts.
+        instructor_notes: ''
+        resources: null
+      - id: 250390
+        key: 1520997f-9dae-4451-8ca0-c344691700cd
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Tue Apr 04 2017 15:49:49 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6339134953226240'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |
+              try:
+                  from password_generator import generate_password
+                  
+                  pswd1 = generate_password()
+                  pswd2 = generate_password()
+                  pswd3 = generate_password()
+                  
+                  if (not isinstance(pswd1, str)) or (not isinstance(pswd2, str)) or (not isinstance(pswd3, str)):
+                      print('error1-secretstring')
+                  elif (not 11<len(pswd1)<22) or (not 11<len(pswd2)<22) or (not 11<len(pswd3)<22):
+                      print('error2-secretstring')
+                  elif (pswd1==pswd2) or (pswd2==pswd3) or (pswd1 == pswd3):
+                      print('error3-secretstring')
+                 
+                      
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import password_generator
+            gae_grading_code: "solution_text = \"\"\"\nWe used `import random` and then the function definition was simply:\n```python\ndef generate_password():\n\treturn random.choice(word_list) + random.choice(word_list) + random.choice(word_list)\n```\nAlternatively, you could use the `random.sample` function and `.join` method for strings:\n```\ndef generate_password():\n    return str().join(random.sample(word_list,3))\n```\n\"\"\"\n\ndef find_errors(s):\n    explanation_str = '''Your code produced the wrong result. {}'''\n\n    errors = []\n\n    if ('error1-secretstring' in s):\n        errors.append(explanation_str.format(\"Your function does not return a string.\"))\n    if ('error2-secretstring' in s):\n        errors.append(explanation_str.format(\"The password that your function returns is either too short or too long.\"))\n    if ('error3-secretstring' in s):\n        errors.append(explanation_str.format(\"Your function returns the same passwords when called multiple times.\"))\n  \n    if 'error6-secretstring' in s:\n        tokens = s.split('-')\n        error_msg = tokens[-1].strip()\n        errors.append('Your code raised an exception, \"{}\". Test Run to verify that it works!'.format(error_msg))\n\n    \n    return errors\n\n\nfeedback = find_errors(executor_result['stdout'])\n\n\ngrade_result['correct'] = not bool(feedback)\nif not feedback:\n    feedback = [\"Your code passes all of our tests, nice work!\"]\n    feedback.append(solution_text)\n# feedback.append(\"Click *NEXT* to see our solution.\") #uncomment if the feedback really is on the next concept\ngrade_result['comment'] = '\\n\\n'.join(feedback)\n\n#uncomment to debug\n#grade_result['comment'] += executor_result['stdout']\n#grade_result['comment'] += executor_result['stderr']\n"
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 250391
+    key: 2fbbda18-7114-4aab-99d2-f0dc8bde245f
+    locale: en-us
+    version: 1.0.0
+    title: Password Generator Solution
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:35:37 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250392
+    atoms:
+      - id: 250392
+        key: 1f180a70-edb1-4c01-a6fb-e03007376c39
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 07:18:28 GMT+0000 (UTC)'
+        is_public: true
+        text: "Quiz Solution: Password Generator \n========\nTo create random passwords we used `import random`. The function definition was simply:\n```python\ndef generate_password():\n\treturn random.choice(word_list) + random.choice(word_list) + random.choice(word_list)\n```\nAlternatively, you could use the `random.sample` function and `.join` method for strings:\n```python\ndef generate_password():\n    return str().join(random.sample(word_list,3))\n```"
+        instructor_notes: ''
+        resources: null
+  - id: 252445
+    key: 572294be-1822-4e65-a091-ee08b80917ff
+    locale: en-us
+    version: 1.0.0
+    title: Third-Party Libraries
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:35:16 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 252446
+      - 252447
+      - 252448
+      - 252451
+    atoms:
+      - id: 252446
+        key: 112753d0-dd5a-4f20-bd7e-1904d15ee0e9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 17:50:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Third-Party Libraries and Package Managers
+          ===================
+          Python has a large standard library compared to most languages. In fact, people say that Python comes with "batteries included" because it comes with the libraries you need to get right to work. However, the standard library doesn't come with everything you might want; some tasks are too specialized to be accommodated by the standard library. Fortunately there are tens of thousands of third-party libraries written by independent developers. You can browse [a listing of the most popular third-party libraries at PyPi Ranking](http://pypi-ranking.info/alltime).
+
+          How do we get these packages though if they aren't included with Python itself? We can install libraries using [pip](https://pip.pypa.io/en/stable/), a package manager that is included with Python 3. Python 2 users also use pip, but since it doesn't come included with Python 2 it must be installed separately. If you have both Python 2 and Python 3 installed, each with pip, you can use commands pip2 and pip3 to distinguish them.
+
+          pip is the standard package manager for Python, but it isn't the only one. One popular alternative is [Anaconda](https://www.continuum.io/anaconda-overview) which is designed specifically for data scientists and similar users. We'll teach you about pip because it's the general standard.
+        instructor_notes: ''
+        resources: null
+      - id: 252447
+        key: 65d0c539-47e3-40d0-9991-298c442a22ca
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 17:50:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |2-
+           Installing Packages with pip
+          =============
+          Let's use pip to install the pytz library. To make sure we are using the pip associated with the Python 3 installation, we'll use the command `pip3`. pytz is a library for working with time zones, which is [a remarkably complicated task](http://infiniteundo.com/post/25326999628/falsehoods-programmers-believe-about-time).
+
+          We can install `pytz` from our command line with `pip3`:
+
+          ```shell
+          $ pip3 install pytz
+          ```
+
+          This command will download and install `pytz` so that it's available to import in our programs. Once installed, we can import third-party packages using the same syntax we use to import from the standard library. In this example I import `pytz` and also `datetime` from the standard library. It's standard practice to put the import statements for third-party libraries after imports from the standard library.
+
+          ```python
+          from datetime import datetime
+
+          import pytz
+
+          utc = pytz.utc # utc is Coordinated Universal Time
+          ist = pytz.timezone('Asia/Kolkata') #IST is Indian Standard Time
+
+          now = datetime.datetime.now(tz=utc) # this is the current time in UTC
+          ist_now = now.astimezone(ist) # this is the current time in IST.
+          ```
+
+          This example stores the current time, expressed in terms of coordinated universal time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time) in the variable `now`. It then translates this time into [Indian Standard TIme](https://en.wikipedia.org/wiki/Coordinated_Universal_Time) and stores that in the variable `ist_now`.
+        instructor_notes: ''
+        resources: null
+      - id: 252448
+        key: f1cf65a0-38bf-4a9e-b47d-2a5a700585be
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Apr 10 2017 14:17:56 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Useful Third-Party Packages
+          ===============
+
+          Being able to install and import third party libraries is useful, but to be an effective programmer you also need to know what libraries are available for you to use. People typically learn about useful new libraries by word of mouth; from an online recommendation or from a colleague. If you're a new Python programmer you may not have many colleagues, so to get you started here's a list of packages that are popular with engineers at Udacity.
+
+          * [IPython](https://ipython.org/) - A better interactive Python interpreter  
+          * [requests](http://docs.python-requests.org/) - Provides easy to use methods to make web requests. Useful for accessing web APIs.  
+          * [Flask](http://flask.pocoo.org/) - a lightweight framework for making web applications and APIs.  
+          * [Django](https://www.djangoproject.com/) - A more featureful framework for making web applications. Django is particularly good for designing complex, content heavy, web applications.  
+          * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) - Used to parse HTML and extract information from it. Great for web scraping.  
+          * [pytest](http://doc.pytest.org/) - extends Python's builtin assertions and unittest module.  
+          * [PyYAML](http://pyyaml.org/wiki/PyYAML) -  For reading and writing [YAML](https://en.wikipedia.org/wiki/YAML) files.  
+          * [NumPy](http://www.numpy.org/) - The fundamental package for scientific computing with Python. It contains among other things a powerful N-dimensional array object and useful linear algebra capabilities.  
+          * [pandas](http://pandas.pydata.org/) - A library containing high-performance, data structures and data analysis tools. In particular, pandas provides dataframes!  
+          * [matplotlib](http://matplotlib.org/) - a 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments.  
+          * [ggplot](http://ggplot.yhathq.com/) - Another 2D plotting library, based on R's ggplot2 library.  
+          * [Pillow](https://python-pillow.org/) - The Python Imaging Library adds image processing capabilities to your Python interpreter.  
+          * [pyglet](http://www.pyglet.org/) - A cross-platform application framework intended for game development.  
+          * [Pygame](http://www.pygame.org/) - A set of Python modules designed for writing games.  
+          * [pytz](http://pytz.sourceforge.net/) - World Timezone Definitions for Python  
+        instructor_notes: ''
+        resources: null
+      - id: 252451
+        key: 24d43774-bfb1-41f0-a988-24b323cc9055
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 17:57:56 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          `requirements.txt`
+          ======
+          Larger Python programs might depend on dozens of third party packages. To make it easier to share these programs programmers often list a project's dependencies in a file called requirements.txt. This is an example requirements.txt file:
+
+          ```text
+          beautifulsoup4==4.5.1
+          bs4==0.0.1
+          pytz==2016.7
+          requests==2.11.1
+          ```
+
+          Each line of the file includes the name of a package and its version number. The version number is technically optional, but it usually should be included. Libraries can change subtly (or dramatically!) between versions, so it's important to use the same library versions that the program's author had when they wrote the program.
+
+          You can use pip to install all of a project's dependencies at once with this command:
+
+          ```shell
+          $ pip3 install -r requirements.txt
+          ```
+        instructor_notes: ''
+        resources: null
+  - id: 253409
+    key: cc9f5ff4-3f94-4b83-96c0-31a7d67cbdd5
+    locale: en-us
+    version: 1.0.0
+    title: Using Online Resources
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:35:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 253412
+      - 254782
+      - 254897
+      - 253419
+      - 255179
+      - 289595
+    atoms:
+      - id: 253412
+        key: 0e285ff2-1115-4df6-8ed7-e450cfc72428
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 04 2017 15:56:26 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Getting the information you need to know
+          ========
+
+          It takes an enormous amount of knowledge to be a skilled programmer. There's libraries to know, syntax to remember, and myriad other details. To add to the difficulty, the technology landscape is constantly shifting as new techniques and tools are invented.
+
+          To a novice programmer, learning all of these details and keeping abreast of new developments seems like an impossible task. And it is! Expert programmers who have been working for years don't actually carry an encyclopædia's worth of knowledge in their heads. Instead they have mastered the task of finding information quickly.
+        instructor_notes: ''
+        resources: null
+      - id: 254782
+        key: 21cca1dc-619e-46e9-8ab3-fd3cef5887d9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 21:47:12 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          How to Search
+          =============
+          Here are some techniques for effective web searching:
+
+          * Try using "Python" or the name of the library you're using as first word of your query. This tells the search engine to prioritise results that are explicitly related to the tools you're using.
+          * Writing a good search query can take multiple attempts. If you don't find helpful results on your first attempt, try again. 
+          * Try using keywords found on the pages you found in your initial search to direct the search engine to better resources in the subsequent search.
+          * Copy and paste error messages to use as search terms. This will lead you to explanations of the error and potential causes. An error message might include references to specific line numbers of code that you wrote. Only include the part of the error message that comes before this in your search.
+          * If you can't find an answer to your question, ask it yourself! Communities like Stackoverflow have etiquette rules you must learn if you want to participate, but don't let this stop you from using these resources.
+        instructor_notes: ''
+        resources: null
+      - id: 254897
+        key: 11a0da64-cda2-48fa-b161-89271bae44e2
+        locale: en-us
+        version: 1.0.0
+        title: 'Quiz: Best Search Term'
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Jan 11 2017 22:02:33 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            While coding I encountered this error message. 
+
+            ```python
+            UnboundLocalError: local variable 'egg_count' referenced before assignment
+            ```
+
+            Which of these search terms is mostly likely to yield helpful results?
+          correct_feedback: 'Well done, this is the best query. "Python" tells the search engine that we want results related to Python. "UnboundLocalError:" is the name of the error, and "local variable" is the part error message that doesn''t reference my specific code (the `egg_count` variable).'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1484171257859
+              text: '`egg_count` referenced before assignment'
+              is_correct: false
+              incorrect_feedback: 'The first word of this search is "egg_count". This variable name is unique to my program, so it isn''t very useful for the search engine.'
+            - id: a1484171276909
+              text: counting with Python
+              is_correct: false
+              incorrect_feedback: 'This search term is too vague, the search engine won''t know that you''re asking about an error message. Copying and pasting the actual error message is better than describing the error.'
+            - id: a1484171282022
+              text: reference before assignment
+              is_correct: false
+              incorrect_feedback: 'This query is good because it''s copied from the error message. However, you should also mention "Python" because "reference" and "assignment" are terms used by other programming languages.'
+            - id: a1484171291216
+              text: 'Python UnboundLocalError: local variable'
+              is_correct: true
+              incorrect_feedback: null
+      - id: 253419
+        key: 15287696-1da5-473b-8166-18fa5a378ea9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 11 2017 21:43:53 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Hierarchy of Online Resources
+          ==================
+
+          While there are many online resources about programming, not all of the them are created equal. This list of resources is in approximate order of reliability.
+
+          1. **[The Python Tutorial](https://docs.python.org/3/tutorial/)** - This section of the official documentation surveys Python's syntax and standard library. It uses examples, and is written using less technical language than the main documentation. Make sure you're reading the Python3 version of the docs!
+          2. **[The Python Language and Library References](https://docs.python.org/3/index.html)** - The Language Reference and Library Reference are more technical than the tutorial, but hey are the definitive source of truth. As you become more acquainted with Python you should get begin to use these resources more and more.
+          3. **Third-Party Library Documentation** - Third-party libraries publish their documentation on their own websites, and often times at https://readthedocs.org/. You can judge the quality of a third-party library by the quality of its documentation. If the developers haven't found time to write good docs, they probably haven't found the time to polish their library either.
+          4. **The websites and blogs of prominent experts** - The previous resources are primary sources, meaning that they are documentation from the same people who wrote the code being documented. Primary sources are the most reliable. Secondary sources are also extremely valuable. The difficulty with secondary sources is determining the credibility of the source. The websites of authors like [Doug Hellmann](https://doughellmann.com/blog/) and developers like [Eli Bendersky](http://eli.thegreenplace.net/) are excellent. The blog of an unknown author might be excellent, or it might be rubbish.
+          5. **[Stackoverflow](http://stackoverflow.com/)** - This question and answer site has a good amount of traffic, so it's likely that someone has asked (and someone has answered) a related question before! However, answers are provided by volunteers and vary in quality. Always understand solutions before putting them into your program. One line answers without any explanation are dubious. This is a good place to find out more about your question or discover alternative search terms.
+          6. **Bug Trackers** - Sometimes you'll encounter a problem so rare, or so new, that no one has addressed it on Stackoverflow. You might might a reference to your error in a bug report on GitHub for instance. These bug reports can be helpful, but you'll probably have to do some original engineering work to solve the problem.
+          7. **Random Web Forums** - Sometimes your search yields references to forums that haven't been active since 2004, or some similarly ancient time. If these are the only resources that address your problem, you should rethink how you're approaching your solution.
+        instructor_notes: ''
+        resources: null
+      - id: 255179
+        key: 596300da-d10f-46d2-b2ad-23f2ef758068
+        locale: en-us
+        version: 1.0.0
+        title: 'Quiz: Help a fellow student'
+        semantic_type: ReflectAtom
+        updated_at: 'Wed Jan 11 2017 22:25:55 GMT+0000 (UTC)'
+        is_public: true
+        instructor_notes: null
+        resources: null
+        question:
+          title: null
+          semantic_type: TextQuestion
+          evaluation_id: null
+          text: |
+            One of the best ways to learn a skill is to teach it to someone else. Practice your debugging and research skills by helping this student understand the error in their code. Imagine that the following message and code are posted by a student on the [Udacity Discussion Forum](discussions.udacity.com). 
+
+            Write a message to the student explaining the error they see and helping them to understand how to solve the problem. 
+
+            > Hi, I'm getting an error with my code, I just don't understand it. What's going wrong?
+            > 
+            > I made a list of my facebook friends and I want to select the fourth from the list.
+            > Here's my code:
+            ```
+            friends["3"]
+            ```
+            > And the error is:
+            > `TypeError: list indices must be integers or slices, not str`
+        answer:
+          text: |-
+            Thanks for thinking about how to help a student. Working with and sharing knowledge with others is a great way to improve your programming!
+
+            ### Our answer to the student:
+            > Hello student! Thanks for sharing your problem - getting the issue written down is a great first step.
+            > I read and researched your error message on the internet. Does your variable `friends` refers to a list? If you want to get an element of a list, you need to use the **integer** of the index, **not** a string. ("3" is a string, different from the integer `3`.)
+
+            ### Our research to get to that answer
+            We can't see the traceback or the rest of the student's code, but the error message has lots of information here. 
+            I did a search online for "python TypeError: list indices must be integers or slices, not str" which pulled up a few different results, including a few irrelevant ones, which confused me at first. Taking it slowly and reading a few different answers on Stackoverflow and other sites helped me to understand the kind of problem this was, and ignore the irrelevant parts. 
+
+            If you'd like even more debugging practice, feel free to answer questions from real students taking this course. [Browse the forums to see how you can help!](discussions.udacity.com).
+          video: null
+      - id: 289595
+        key: 2c4d3d27-53da-421a-ae8e-73d9e87e6892
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L4 99  Lesson Outro
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 04:41:49 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52079'
+          youtube_id: 8AOietAcOLk
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d40d0c_ud1110-intropy-l4-99-lesson-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40d0c_ud1110-intropy-l4-99-lesson-outro/ud1110-intropy-l4-99-lesson-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40d0c_ud1110-intropy-l4-99-lesson-outro/ud1110-intropy-l4-99-lesson-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40d0c_ud1110-intropy-l4-99-lesson-outro/ud1110-intropy-l4-99-lesson-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40d0c_ud1110-intropy-l4-99-lesson-outro/ud1110-intropy-l4-99-lesson-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40d0c_ud1110-intropy-l4-99-lesson-outro/hls/playlist.m3u8'

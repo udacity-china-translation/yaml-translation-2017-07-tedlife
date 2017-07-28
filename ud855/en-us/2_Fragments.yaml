@@ -1,0 +1,1213 @@
+id: 268643
+key: 79936377-aa69-45ae-a386-d865dcb36518
+locale: en-us
+version: 1.0.0
+title: Fragments
+semantic_type: Lesson
+updated_at: 'Wed Jun 07 2017 22:43:46 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/59025203_nd801-ud855-fragments/nd801-ud855-fragments.png'
+  width: 592
+  height: 584
+video: null
+summary: 'In this lesson, you''ll learn all about **fragments**, an essential building block to create apps with a flexible UI. You''ll be getting hands-on experience with creating fragments by building an app called AndroidMe. AndroidMe lets a user customize the hair and clothing of an Android figure. After completing the app, you''ll know how to build a beautiful and responsive UI for any app using fragments and the power of modularity and reusability!'
+lesson_type: Classroom
+duration: 240
+is_project_lesson: false
+_concepts_ids:
+  - 279211
+  - 279213
+  - 279214
+  - 279253
+  - 279215
+  - 279256
+  - 279216
+  - 279217
+  - 279263
+  - 279322
+  - 279218
+  - 279219
+  - 279326
+  - 279278
+  - 279220
+  - 279330
+  - 279221
+  - 279333
+  - 279222
+  - 279224
+  - 279336
+  - 279225
+  - 279341
+  - 279226
+  - 279227
+_project_id: null
+concepts:
+  - id: 279211
+    key: cfef9808-ca3a-44d2-995a-e2553f5abc94
+    locale: en-us
+    version: 1.0.0
+    title: Introduction to Fragments
+    semantic_type: Concept
+    updated_at: 'Fri Apr 14 2017 21:53:37 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 282701
+    atoms:
+      - id: 282701
+        key: eaed1134-0f83-4caf-b6e7-dea36a20bbe9
+        locale: en-us
+        version: 1.0.0
+        title: Introduction to Fragments
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:56 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51421'
+          youtube_id: KECSjLiTu78
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c28d_02-fragments-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c28d_02-fragments-intro/02-fragments-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c28d_02-fragments-intro/02-fragments-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c28d_02-fragments-intro/02-fragments-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c28d_02-fragments-intro/02-fragments-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c28d_02-fragments-intro/hls/playlist.m3u8'
+  - id: 279213
+    key: a2047c96-af15-4e98-ab8f-82c7705464e5
+    locale: en-us
+    version: 1.0.0
+    title: Responsive Design
+    semantic_type: Concept
+    updated_at: 'Tue Apr 18 2017 00:17:37 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 283724
+      - 298400
+    atoms:
+      - id: 283724
+        key: a32ab24a-896f-4613-9e91-2e10831009e9
+        locale: en-us
+        version: 1.0.0
+        title: Responsive Design
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:19 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51846'
+          youtube_id: 5kmlkW4aO4c
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d04b79_03-responsive-design/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d04b79_03-responsive-design/03-responsive-design_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d04b79_03-responsive-design/03-responsive-design_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d04b79_03-responsive-design/03-responsive-design_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d04b79_03-responsive-design/03-responsive-design_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d04b79_03-responsive-design/hls/playlist.m3u8'
+      - id: 298400
+        key: a538456a-7fee-45e6-a6d4-973789c47b4d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 18 2017 00:17:42 GMT+0000 (UTC)'
+        is_public: true
+        text: 'Read more about [Implementing Descendent Navigation](https://developer.android.com/training/implementing-navigation/descendant.html).'
+        instructor_notes: ''
+        resources: null
+  - id: 279214
+    key: 3e401af5-517f-499f-9d69-87107a2bad20
+    locale: en-us
+    version: 1.0.0
+    title: Why Use Fragments?
+    semantic_type: Concept
+    updated_at: 'Tue Apr 18 2017 00:17:29 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 283700
+      - 298399
+    atoms:
+      - id: 283700
+        key: 77ba5bee-191b-4324-9340-407375343a3d
+        locale: en-us
+        version: 1.0.0
+        title: Why Use Fragments?
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:29:46 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51829'
+          youtube_id: vvKB3_BQn2g
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d03703_nd801-00057-04-why-use-fragments/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d03703_nd801-00057-04-why-use-fragments/nd801-00057-04-why-use-fragments_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d03703_nd801-00057-04-why-use-fragments/nd801-00057-04-why-use-fragments_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d03703_nd801-00057-04-why-use-fragments/nd801-00057-04-why-use-fragments_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d03703_nd801-00057-04-why-use-fragments/nd801-00057-04-why-use-fragments_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d03703_nd801-00057-04-why-use-fragments/hls/playlist.m3u8'
+      - id: 298399
+        key: 8b39d5b2-ab52-4454-8dec-242fb1f8d9aa
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 18 2017 00:18:02 GMT+0000 (UTC)'
+        is_public: true
+        text: 'It''s important to note that a [Fragment](https://developer.android.com/guide/components/fragments.html) must always be embedded in an activity and the fragment''s lifecycle is directly affected by the host activity''s lifecycle. For example, when the activity is paused, so are all fragments in it, and when the activity is destroyed, so are all fragments.'
+        instructor_notes: ''
+        resources: null
+  - id: 279253
+    key: 05bff044-e412-4297-8140-12171dd21cae
+    locale: en-us
+    version: 1.0.0
+    title: Advantages of Fragments
+    semantic_type: Concept
+    updated_at: 'Fri Apr 14 2017 21:42:05 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 279254
+    atoms:
+      - id: 279254
+        key: af67a51a-6739-4b15-8dcb-977ce8641cea
+        locale: en-us
+        version: 1.0.0
+        title: Advantages of Using Fragments
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Mar 10 2017 21:55:16 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Please check all of the traits that make fragments useful.
+          correct_feedback: 'Great job! Fragments are reusable, modular (because they have their own lifecycle), and can be dynamically changed at runtime!'
+          video_feedback: null
+          default_feedback: 'Hmm, looks like one or more answers is incorrect - remember to select all that apply!'
+          answers:
+            - id: a1489182751845
+              text: They are reusable
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489182798715
+              text: Fragments have the same lifecycle as their host activity
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489182806684
+              text: They can be used to build a flexible UI
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489182815073
+              text: You can dynamically add or remove them during runtime
+              is_correct: true
+              incorrect_feedback: null
+  - id: 279215
+    key: 1f7a9b74-eb88-4385-9adc-aecb26bcbbaf
+    locale: en-us
+    version: 1.0.0
+    title: Fragment Lifecycle
+    semantic_type: Concept
+    updated_at: 'Tue Apr 11 2017 19:08:46 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 282703
+    atoms:
+      - id: 282703
+        key: 15af75bf-1407-4d82-81ec-286acfd038f3
+        locale: en-us
+        version: 1.0.0
+        title: Fragment Lifecycle
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:39:49 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51423'
+          youtube_id: uvloJibNKsQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c48e_06-fragment-lifecycle/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c48e_06-fragment-lifecycle/06-fragment-lifecycle_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c48e_06-fragment-lifecycle/06-fragment-lifecycle_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c48e_06-fragment-lifecycle/06-fragment-lifecycle_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c48e_06-fragment-lifecycle/06-fragment-lifecycle_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c48e_06-fragment-lifecycle/hls/playlist.m3u8'
+  - id: 279256
+    key: 68125fbd-ec4e-4650-9934-03935c5c415e
+    locale: en-us
+    version: 1.0.0
+    title: Lifecycle Callbacks
+    semantic_type: Concept
+    updated_at: 'Fri Apr 14 2017 21:47:12 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 279257
+    atoms:
+      - id: 279257
+        key: cb18059d-bb5e-44e2-b39a-d7e6e749a0aa
+        locale: en-us
+        version: 1.0.0
+        title: Fragment Lifecycle Callbacks
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Mar 10 2017 22:05:11 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'For a single fragment in an activity, what lifecycle callback is called right after it’s host activity is created?'
+          correct_feedback: 'Yes! When the host activity is created, both it, and the fragments it contains, call their onCreate methods. Then, right after this creation, fragments call their onCreateView method to inflate their view dynamically!'
+          video_feedback: null
+          default_feedback: 'Not quite! When an activity is created it calls onCreate, and a fragment has its own method that is called immediately after this that inflates its view.'
+          answers:
+            - id: a1489183245131
+              text: onDestroy
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489183278465
+              text: onCreateView
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489183287077
+              text: onResume
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489183300108
+              text: onSaveInstanceState
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489183308632
+              text: onCreate
+              is_correct: false
+              incorrect_feedback: null
+  - id: 279216
+    key: c2bcb059-e1bd-425a-898a-019b9f38a144
+    locale: en-us
+    version: 1.0.0
+    title: Starting Code
+    semantic_type: Concept
+    updated_at: 'Fri Apr 14 2017 22:04:25 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 297357
+      - 279315
+    atoms:
+      - id: 297357
+        key: 6dc1c840-44f6-4883-a50c-453674dbcafd
+        locale: en-us
+        version: 1.0.0
+        title: Starting Code
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:56 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51424'
+          youtube_id: CFYfd7C93G4
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c566_nd801-00061-08-starting-code-sc/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c566_nd801-00061-08-starting-code-sc/nd801-00061-08-starting-code-sc_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c566_nd801-00061-08-starting-code-sc/nd801-00061-08-starting-code-sc_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c566_nd801-00061-08-starting-code-sc/nd801-00061-08-starting-code-sc_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c566_nd801-00061-08-starting-code-sc/nd801-00061-08-starting-code-sc_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58c9c566_nd801-00061-08-starting-code-sc/hls/playlist.m3u8'
+      - id: 279315
+        key: e419d118-ad35-4c8a-bee0-8530bcdf733a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 14 2017 21:28:56 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Download the AndroidMe Starter Code
+
+          The code for this app can be found in the [AndroidMe repository](https://github.com/udacity/Android_Me). Download this repository using the command:
+
+          ```bash
+          git clone https://github.com/udacity/Android_Me.git
+          ```
+
+          If you need to a refresher on how the code is organized, please refer to the [concept where we introduced how to work with the course code](https://classroom.udacity.com/courses/ud857/lessons/8b2a9d63-0ff5-48ff-90d3-a9855b701dae/concepts/41b82e3c-2797-46e5-8a66-684098ca8cbb).
+
+          ### Exercise Code
+          **Exercise:** [TFragments.00-StartingCode](https://github.com/udacity/Android_Me/tree/TFragments.00-StartingCode)
+        instructor_notes: ''
+        resources: null
+  - id: 279217
+    key: e07ab40c-9248-43f8-b78a-c4835aa8aa37
+    locale: en-us
+    version: 1.0.0
+    title: Create a Fragment
+    semantic_type: Concept
+    updated_at: 'Tue Apr 18 2017 17:15:20 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 282975
+      - 298488
+    atoms:
+      - id: 282975
+        key: c6c6b587-9b60-4406-9326-9d64ba05723c
+        locale: en-us
+        version: 1.0.0
+        title: 'Create a Fragment '
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:59 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51501'
+          youtube_id: g2xvPm8y5PQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadece_nd801-00062-09-create-a-fragment-sc-/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadece_nd801-00062-09-create-a-fragment-sc-/nd801-00062-09-create-a-fragment-sc-_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadece_nd801-00062-09-create-a-fragment-sc-/nd801-00062-09-create-a-fragment-sc-_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadece_nd801-00062-09-create-a-fragment-sc-/nd801-00062-09-create-a-fragment-sc-_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadece_nd801-00062-09-create-a-fragment-sc-/nd801-00062-09-create-a-fragment-sc-_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadece_nd801-00062-09-create-a-fragment-sc-/hls/playlist.m3u8'
+      - id: 298488
+        key: 0f359a8b-1671-4fb6-8a4f-96c00a5fdba4
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 18 2017 17:28:57 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### Fragment Naming Convention
+
+          The class name should be in CamelCase. Ex: `SignInFragment`
+
+          The corresponding XML file should follow this naming convention `fragment_<FRAGMENT_NAME>.xml`
+
+          Ex:  `fragment_sign_in.xml`
+
+          For a full list of Android naming conventions, checkout [ribot's Android Guidelines](https://github.com/ribot/android-guidelines/blob/master/project_and_code_guidelines.md).
+
+          ### Choosing Fragment Support Library
+
+          Our Fragment class use  the *v4 [Support Library](https://developer.android.com/topic/libraries/support-library/packages.html)*. The v4 libraries are designed to be used with Android 2.3 (API level 9) and higher. They include the largest set of APIs compared to the other libraries, including support for application components, user interface features, accessibility, data handling, network connectivity, and programming utilities.
+        instructor_notes: ''
+        resources: null
+  - id: 279263
+    key: 88fefef7-4404-440b-8ff5-14a2713b975e
+    locale: en-us
+    version: 1.0.0
+    title: Steps to Create a Fragment
+    semantic_type: Concept
+    updated_at: 'Fri Apr 14 2017 21:54:19 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 279270
+    atoms:
+      - id: 279270
+        key: 9b0eb44a-bbe5-404f-a602-356e9b7a441d
+        locale: en-us
+        version: 1.0.0
+        title: Ordered steps to create a fragment
+        semantic_type: MatchingQuizAtom
+        updated_at: 'Tue Apr 18 2017 17:36:08 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          complex_prompt:
+            text: |
+              Match the tasks you need to complete in order to dynamically display a fragment with the order that they should be executed in. 
+
+              For example, to start a new activity: 1) Create a new Intent that points to the new activity, 2) Add any information you want to that Intent, 3) Start the intent (in this order).
+          default_feedback: |-
+            Looks like one or more of these steps is ordered incorrectly. 
+            *Hint:* To inflate the layout, you first must create it, and the last step has to do with displaying the fragment in its host activity.
+          correct_feedback: 'Nicely done! First a layout has to be defined for the appearance of a fragment, then a new fragment class is created (this inflates the layout earlier defined), finally the fragment should be created and displayed in its host activity.'
+          video_feedback: null
+          concepts_label: Task description
+          answers_label: Step number
+          concepts:
+            - text: Create a new fragment class that inflates a layout
+              default_concept_feedback: null
+              correct_answer:
+                id: a1489183712109
+                text: '2'
+              incorrect_feedbacks: []
+            - text: Create a layout that defines the appearance of the fragment
+              default_concept_feedback: null
+              correct_answer:
+                id: a1489183959601
+                text: '1'
+              incorrect_feedbacks: []
+            - text: Add the fragment to it's host activity using the FragmentManager and a fragment transaction
+              default_concept_feedback: null
+              correct_answer:
+                id: a1489184014139
+                text: '4'
+              incorrect_feedbacks: []
+            - text: Create a new fragment instance in a host activity
+              default_concept_feedback: null
+              correct_answer:
+                id: a1489184039697
+                text: '3'
+              incorrect_feedbacks: []
+          answers:
+            - id: a1489184039697
+              text: '3'
+            - id: a1489184014139
+              text: '4'
+            - id: a1489183959601
+              text: '1'
+            - id: a1489183712109
+              text: '2'
+  - id: 279322
+    key: af805185-cfc8-49da-bf97-c8d60c194fe5
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Create BodyPartFragment'
+    semantic_type: Concept
+    updated_at: 'Tue Apr 11 2017 19:09:26 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 279323
+      - 279324
+    atoms:
+      - id: 279323
+        key: 8daf12ae-b1e0-4789-8f65-9813fb0d10e2
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 11 2017 20:29:24 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Create and Display a BodyPartFragment
+
+          In this exercise, you'll be doing three things. First, creating a new fragment layout that displays an image, second, creating a new Fragment class to display that layout, and third, instantiating and displaying a fragment in an Activity!
+
+          Download the exercise code and follow along with the listed TODO's to complete the exercise!
+
+          ### Exercise Code
+          **Exercise:** [TFragments.01-Exercise-CreateBodyPartFragment](https://github.com/udacity/Android_Me/tree/TFragments.01-Exercise-CreateBodyPartFragment/app)
+        instructor_notes: ''
+        resources: null
+      - id: 279324
+        key: baf17289-5116-4ce0-b10a-b2ad371a56dd
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Tue Apr 11 2017 20:31:48 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - Create a layout file that displays one body part image named fragment_body_part.xml
+          - Create a new class called BodyPartFragment to display an image of an Android-Me body part
+          - 'In the new class, display the first image in the list of head images'
+          - 'In the activity_android_me layout file, create a container to hold the head BodyPartFragment'
+          - Create a new BodyPartFragment instance and display it using the FragmentManager
+        positive_feedback: |-
+          Great job! This is a strong start; let's keep going!!
+
+          **Solution:** [[TFragments.01-Solution-CreateBodyPartFragment](https://github.com/udacity/Android_Me/tree/TFragments.01-Solution-CreateBodyPartFragment/app)][[Diff](https://github.com/udacity/Android_Me/compare/TFragments.01-Exercise-CreateBodyPartFragment...TFragments.01-Solution-CreateBodyPartFragment)]
+        video_feedback: null
+        description: Follow the steps to complete this coding exercise.
+  - id: 279218
+    key: 5af22bff-9bb3-457a-8d00-2e5a769ac575
+    locale: en-us
+    version: 1.0.0
+    title: FragmentManager and Transactions
+    semantic_type: Concept
+    updated_at: 'Tue Apr 11 2017 19:09:41 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 283696
+    atoms:
+      - id: 283696
+        key: 40f496b4-70a1-4e1b-9bad-c8ce368d5343
+        locale: en-us
+        version: 1.0.0
+        title: Fragment Manager and Transactions
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:58 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51828'
+          youtube_id: T6_mGn4oK0M
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d03552_12-fragment-manager-and-transactions/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d03552_12-fragment-manager-and-transactions/12-fragment-manager-and-transactions_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d03552_12-fragment-manager-and-transactions/12-fragment-manager-and-transactions_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d03552_12-fragment-manager-and-transactions/12-fragment-manager-and-transactions_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d03552_12-fragment-manager-and-transactions/12-fragment-manager-and-transactions_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d03552_12-fragment-manager-and-transactions/hls/playlist.m3u8'
+  - id: 279219
+    key: 32e598d2-94a0-4e9f-8e86-666875720477
+    locale: en-us
+    version: 1.0.0
+    title: More Fragments and Storing Variables
+    semantic_type: Concept
+    updated_at: 'Tue Apr 11 2017 19:09:37 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 282945
+    atoms:
+      - id: 282945
+        key: 349582bf-859e-45fd-9451-5511004b6ac5
+        locale: en-us
+        version: 1.0.0
+        title: More Fragments and Storing Variables
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:29:46 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51493'
+          youtube_id: NpzC9UhCMik
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58caca5c_nd801-00066-13-more-fragments-and-storing-variables-sc/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58caca5c_nd801-00066-13-more-fragments-and-storing-variables-sc/nd801-00066-13-more-fragments-and-storing-variables-sc_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58caca5c_nd801-00066-13-more-fragments-and-storing-variables-sc/nd801-00066-13-more-fragments-and-storing-variables-sc_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58caca5c_nd801-00066-13-more-fragments-and-storing-variables-sc/nd801-00066-13-more-fragments-and-storing-variables-sc_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58caca5c_nd801-00066-13-more-fragments-and-storing-variables-sc/nd801-00066-13-more-fragments-and-storing-variables-sc_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58caca5c_nd801-00066-13-more-fragments-and-storing-variables-sc/hls/playlist.m3u8'
+  - id: 279326
+    key: aa8f96d4-191e-44d2-9fd7-15f42768c2f2
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Display Three Fragments'
+    semantic_type: Concept
+    updated_at: 'Tue Apr 11 2017 19:11:04 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 279327
+      - 279329
+    atoms:
+      - id: 279327
+        key: d6bc6d75-2b65-4387-8303-060f238615e1
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 11 2017 20:32:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Display All Three BodyPartFragments
+
+          In this exercise, you'll build on top of what you already know to add the rest of the BodyPartFragments to the screen! You'll also learn how to dynamically set fragment resources
+
+          ### Exercise Code
+          **Exercise:** [TFragments.02-Exercise-DisplayThreeFragments](https://github.com/udacity/Android_Me/tree/TFragments.02-Exercise-DisplayThreeFragments/app)
+
+          ## Setting image resources
+
+          The tricky part of this exercise is learning to dynamically set fragment resources. This will mainly be done by 1) adding internal class variables that keep track of resources in the fragment class and 2) providing "setter" methods that allow you to give those class variables a certain value.
+        instructor_notes: ''
+        resources: null
+      - id: 279329
+        key: ca3fc68c-1476-4df9-bb7c-fe3e081f43b3
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Tue Apr 11 2017 20:33:09 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 'For the BodyPartFragment, create a setter method and class variable (mImageIds) to set and store of a list of image resources'
+          - Create another setter method and variable (mListIndex) to track and set the index of the list item to display
+          - 'If a list of image id''s exists, set the image resource to the correct item in that list'
+          - Create and display the body and leg BodyPartFragments
+        positive_feedback: |-
+          Excellent work!
+
+          **Solution:** [[TFragments.02-Solution-DisplayThreeFragments](https://github.com/udacity/Android_Me/tree/TFragments.02-Solution-DisplayThreeFragments/app)][[Diff](https://github.com/udacity/Android_Me/compare/TFragments.02-Exercise-DisplayThreeFragments...TFragments.02-Solution-DisplayThreeFragments)]
+        video_feedback: null
+        description: 'Okay, now it''s your turn. Follow the steps to complete this coding exercise.'
+  - id: 279278
+    key: 613159c2-d3e7-4f3a-bbba-8d93414637a9
+    locale: en-us
+    version: 1.0.0
+    title: Practice Replacing a Fragment
+    semantic_type: Concept
+    updated_at: 'Fri Apr 14 2017 21:49:31 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 279282
+    atoms:
+      - id: 279282
+        key: 4a2acf49-bd86-4352-8581-26f1c2c706b8
+        locale: en-us
+        version: 1.0.0
+        title: Replace a fragment
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Mar 10 2017 22:22:51 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Given the following starting code:
+
+
+            ```java
+
+            FragmentManager fm = getSupportFragmentManager();
+            Fragment frag = new BodyPartFragment();
+            int containerID = R.id.fragment_container;
+            FragmentTransaction ft = fm.beginTransaction();
+
+            ```
+
+            Complete the transaction code to replace the fragment container with a new BodyPartFragment.
+          correct_feedback: Great job using replace correctly!
+          video_feedback: null
+          default_feedback: 'Hmm, make sure you are calling commit and that you are replacing the existing fragment!'
+          answers:
+            - id: a1489184461983
+              text: 'ft.replace(containerID, frag);'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489184503002
+              text: 'ft.add(containerID, frag). commit();'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489184521128
+              text: 'ft.replace(containerID, null). commit();'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489184525797
+              text: 'ft.replace(containerID, frag). commit();'
+              is_correct: true
+              incorrect_feedback: null
+  - id: 279220
+    key: b70f337f-216e-4c81-bec4-62f53756cfb0
+    locale: en-us
+    version: 1.0.0
+    title: Responding to Clicks
+    semantic_type: Concept
+    updated_at: 'Tue Apr 11 2017 19:11:20 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 282976
+    atoms:
+      - id: 282976
+        key: b2ce2c25-e29c-470a-bb21-6711e707994b
+        locale: en-us
+        version: 1.0.0
+        title: Responding to Clicks
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:29:46 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51502'
+          youtube_id: eOlNJTyxKqE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadee6_nd801-00069-16-responding-to-clicks-sc/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadee6_nd801-00069-16-responding-to-clicks-sc/nd801-00069-16-responding-to-clicks-sc_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadee6_nd801-00069-16-responding-to-clicks-sc/nd801-00069-16-responding-to-clicks-sc_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadee6_nd801-00069-16-responding-to-clicks-sc/nd801-00069-16-responding-to-clicks-sc_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadee6_nd801-00069-16-responding-to-clicks-sc/nd801-00069-16-responding-to-clicks-sc_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadee6_nd801-00069-16-responding-to-clicks-sc/hls/playlist.m3u8'
+  - id: 279330
+    key: 41c6adc0-139c-4d29-8954-2e61884d3494
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Click Response and Saving State'
+    semantic_type: Concept
+    updated_at: 'Tue Apr 11 2017 19:11:32 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 279331
+      - 279332
+    atoms:
+      - id: 279331
+        key: c80ff81d-e973-4c1b-9490-dd40deea394d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 11 2017 20:33:26 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Adding a ClickListener and Saving State
+
+          In this exercise, you'll be doing two things. First, creating a click listener inside the BodyPartFragment class that will update the image resource on a click! Second, you'll be adding some simple code to save the current state of the fragment -- this is so that the image that is being displayed is saved and will *still* be displayed when an activity restarts, such as on an orientation change.
+
+          ### Exercise Code
+          **Exercise:** [TFragments.03-Exercise-ClicksAndSavingState](https://github.com/udacity/Android_Me/tree/TFragments.03-Exercise-ClicksAndSavingState/app)
+
+          ## Saving state
+
+          To save the state of a fragment, you'll need to override the onSaveInstanceState method as well as check if there *is* a saved state, in the host activity, before creating new fragment instances.
+        instructor_notes: ''
+        resources: null
+      - id: 279332
+        key: 8f38a99d-0cb0-4fad-abd1-4b6434435d59
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Tue Apr 11 2017 20:33:58 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 'In the BodyPartFragment class, set a click listener on the image view and on a click increment the list index and set the image resource'
+          - 'If you reach the end of a list of images, set the list index back to 0 (the first item in the list)'
+          - Create final Strings to store state information about the list of images and list index
+          - Override onSaveInstanceState and save the current state of the fragment
+          - 'In the host activity, only create new fragments when there is no previously saved state'
+        positive_feedback: |-
+          Excellent work!
+
+          **Solution:** [[TFragments.03-Solution-ClicksAndSavingState](https://github.com/udacity/Android_Me/tree/TFragments.03-Solution-ClicksAndSavingState/app)][[Diff](https://github.com/udacity/Android_Me/compare/TFragments.03-Exercise-ClicksAndSavingState...TFragments.03-Solution-ClicksAndSavingState)]
+        video_feedback: null
+        description: Follow along with the list of tasks to complete the exercise.
+  - id: 279221
+    key: 11adc783-daec-412a-a619-9558f4bd61e8
+    locale: en-us
+    version: 1.0.0
+    title: Master List Fragment
+    semantic_type: Concept
+    updated_at: 'Tue Apr 11 2017 19:11:42 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 282799
+    atoms:
+      - id: 282799
+        key: 76ec31a7-dc66-4a26-b289-edc54ff1aa6d
+        locale: en-us
+        version: 1.0.0
+        title: Master List Fragment
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:58 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51490'
+          youtube_id: wxmjTIae0lM
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cabba1_nd801-00071-18-masterlistfragment-sc-/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cabba1_nd801-00071-18-masterlistfragment-sc-/nd801-00071-18-masterlistfragment-sc-_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cabba1_nd801-00071-18-masterlistfragment-sc-/nd801-00071-18-masterlistfragment-sc-_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cabba1_nd801-00071-18-masterlistfragment-sc-/nd801-00071-18-masterlistfragment-sc-_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cabba1_nd801-00071-18-masterlistfragment-sc-/nd801-00071-18-masterlistfragment-sc-_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cabba1_nd801-00071-18-masterlistfragment-sc-/hls/playlist.m3u8'
+  - id: 279333
+    key: e4d6dffa-89ca-43d3-9bd0-47dde7fa6761
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Create MasterListFragment'
+    semantic_type: Concept
+    updated_at: 'Tue Apr 11 2017 19:11:53 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 279334
+      - 279335
+    atoms:
+      - id: 279334
+        key: 6924e6d8-76d3-487e-a259-58a7090d69fc
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 11 2017 20:34:15 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Create and Display the Master List Fragment
+
+          In this exercise, you'll be creating the MasterListFragment. This will be similar to how you created the BodyPartFragment class, only you'll be using the provided adapter to display a grid-list of *all* images.
+
+          ### Exercise Code
+          **Exercise:** [TFragments.04-Exercise-CreateMasterListFragment](https://github.com/udacity/Android_Me/tree/TFragments.04-Exercise-CreateMasterListFragment/app)
+
+          Hint: You'll also need to create a new host activity to display this fragment and set it to launch by changing parameters in the *AndroidManifest* file.
+        instructor_notes: ''
+        resources: null
+      - id: 279335
+        key: 61ed2309-6dbe-4e45-afae-657661fc1d92
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Tue Apr 11 2017 20:35:07 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - Create a fragment_master_list.xml layout file to display all our images; this should be a GridView
+          - Create a new class called MasterListFragment which will display the GridView list of ALL AndroidMe images
+          - 'In the MasterListFragment class, create a new MasterListAdapter and set it on the GridView'
+          - Create a new Activity named MainActivity and a corresponding layout file that displays a MasterListFragment
+          - Declare the MainActivity in the manifest and set it to launch upon opening this app
+        positive_feedback: |-
+          Excellent work!
+
+          **Solution:** [[TFragments.04-Solution-CreateMasterListFragment](https://github.com/udacity/Android_Me/tree/TFragments.04-Solution-CreateMasterListFragment/app)][[Diff](https://github.com/udacity/Android_Me/compare/TFragments.04-Exercise-CreateMasterListFragment...TFragments.04-Solution-CreateMasterListFragment)]
+        video_feedback: null
+        description: Follow along with these tasks to complete this exercise and create the final fragment class!
+  - id: 279222
+    key: 49a9c01b-e81a-4102-9ba8-c4055c31e22d
+    locale: en-us
+    version: 1.0.0
+    title: 'Communicating Between Fragments '
+    semantic_type: Concept
+    updated_at: 'Tue Apr 11 2017 19:12:00 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 283726
+    atoms:
+      - id: 283726
+        key: 8a2256fd-451b-4d66-be18-25436a06d3b2
+        locale: en-us
+        version: 1.0.0
+        title: Communicating Between Fragments
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:59 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51847'
+          youtube_id: 1FI51h4XBIE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d04cae_20-communicating-between-fragments/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d04cae_20-communicating-between-fragments/20-communicating-between-fragments_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d04cae_20-communicating-between-fragments/20-communicating-between-fragments_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d04cae_20-communicating-between-fragments/20-communicating-between-fragments_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d04cae_20-communicating-between-fragments/20-communicating-between-fragments_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d04cae_20-communicating-between-fragments/hls/playlist.m3u8'
+  - id: 279224
+    key: 5759d392-f965-4270-b6f7-3d92f4f7fa47
+    locale: en-us
+    version: 1.0.0
+    title: Define an Interface
+    semantic_type: Concept
+    updated_at: 'Tue Apr 11 2017 19:12:06 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 282958
+    atoms:
+      - id: 282958
+        key: 0ee9a583-6267-476d-a990-cb7bcf94c380
+        locale: en-us
+        version: 1.0.0
+        title: Define An Interface
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:30 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51499'
+          youtube_id: h_CLPqaWhEg
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cacc6c_nd801-00074-21-define-an-interface-sc/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cacc6c_nd801-00074-21-define-an-interface-sc/nd801-00074-21-define-an-interface-sc_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cacc6c_nd801-00074-21-define-an-interface-sc/nd801-00074-21-define-an-interface-sc_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cacc6c_nd801-00074-21-define-an-interface-sc/nd801-00074-21-define-an-interface-sc_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cacc6c_nd801-00074-21-define-an-interface-sc/nd801-00074-21-define-an-interface-sc_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cacc6c_nd801-00074-21-define-an-interface-sc/hls/playlist.m3u8'
+  - id: 279336
+    key: a814286a-4223-4bb8-9a61-881299668275
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Interface Communication'
+    semantic_type: Concept
+    updated_at: 'Tue Apr 11 2017 19:12:14 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 279337
+      - 279340
+    atoms:
+      - id: 279337
+        key: c5c1c46b-e439-46dc-ae8b-bfbce0614d28
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 11 2017 20:35:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Define an Interface
+
+          In this exercise, you'll be defining an interface in the MasterListFragment class, and have it "callback" or communicate up to it's host activity..
+
+          ### Exercise Code
+          **Exercise:** [TFragments.05-Exercise-InterfaceCommunication](https://github.com/udacity/Android_Me/tree/TFragments.04-Exercise-InterfaceCommunication/app)
+
+          ## Why interfaces?
+
+          To keep fragments modular and reusable, you cannot have them communicate directly with one another or directly tied to a host activity. An interface gives you a way to communicate but also stay modular because it can be implemented by *any* host activity -- this way the fragment is not tied directly to an activity.
+        instructor_notes: ''
+        resources: null
+      - id: 279340
+        key: ca53bdbd-75fb-4c07-8248-6beee25aff15
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Tue Apr 11 2017 20:36:09 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 'In the MasterListFragment class, define a new interface OnImageClickListener that triggers a callback in the host activity'
+          - Override onAttach to make sure that the container activity has implemented the callback
+          - Set a click listener on the gridView and trigger the callback onImageSelected when an item is clicked
+          - 'In MainActivity, implement the MasterListFragment callback: OnImageClickListener'
+          - Define the behavior for the onImageSelected callback method and create a Toast that displays the position clicked
+        positive_feedback: |-
+          Excellent work!
+
+          **Solution:** [[TFragments.05-Solution-InterfaceCommunication](https://github.com/udacity/Android_Me/tree/TFragments.05-Solution-InterfaceCommunication/app)][[Diff](https://github.com/udacity/Android_Me/compare/TFragments.04-Exercise-InterfaceCommunication...TFragments.05-Solution-InterfaceCommunication)]
+        video_feedback: null
+        description: Follow along with these tasks to implement fragment-to-activity communication.
+  - id: 279225
+    key: fe9ed686-be58-4277-b494-4b9d6c41a6e2
+    locale: en-us
+    version: 1.0.0
+    title: Communicate Between Activities
+    semantic_type: Concept
+    updated_at: 'Tue Apr 11 2017 19:12:21 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 282963
+    atoms:
+      - id: 282963
+        key: 5997fe03-6419-45f4-a862-594657745420
+        locale: en-us
+        version: 1.0.0
+        title: Communicate Between Activities
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:58 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51500'
+          youtube_id: r69SVwRtQ1E
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cad309_nd801-00076-23-communicate-between-activities-sc-/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cad309_nd801-00076-23-communicate-between-activities-sc-/nd801-00076-23-communicate-between-activities-sc-_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cad309_nd801-00076-23-communicate-between-activities-sc-/nd801-00076-23-communicate-between-activities-sc-_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cad309_nd801-00076-23-communicate-between-activities-sc-/nd801-00076-23-communicate-between-activities-sc-_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cad309_nd801-00076-23-communicate-between-activities-sc-/nd801-00076-23-communicate-between-activities-sc-_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cad309_nd801-00076-23-communicate-between-activities-sc-/hls/playlist.m3u8'
+  - id: 279341
+    key: 154d3714-c4ba-4389-8c10-584baac47804
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Communicate Between Activities'
+    semantic_type: Concept
+    updated_at: 'Tue Apr 11 2017 20:36:19 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 279342
+      - 279348
+    atoms:
+      - id: 279342
+        key: 023dd537-c06f-4c3e-afa4-7643ba530cb2
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 11 2017 20:36:40 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Communicate Between Activities
+
+          In this exercise, you'll be completing the phone app by implementing communication between the master list and android-me activities. Both activities will be able to respond to user input!
+
+          ### Exercise Code
+          **Exercise:** [TFragments.06-Exercise-CommunicateBetweenActivities](https://github.com/udacity/Android_Me/tree/TFragments.06-Exercise-CommunicateBetweenActivities/app)
+        instructor_notes: ''
+        resources: null
+      - id: 279348
+        key: 62a71ec5-2b58-481a-9ebd-8ab2e21365ce
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Tue Apr 11 2017 20:37:14 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - Turn the master list layout into a LinearLayout and add a "Next" button at the bottom of the gridview
+          - 'In MainActivity, based on where a user has clicked, store the selected list index for the head, body, and leg BodyPartFragments'
+          - Put the selected-image information in a Bundle and attach it to an Intent that will launch an AndroidMeActivity
+          - Get a reference to the "Next" button and launch the intent when this button is clicked
+          - 'In AndroidMeActivity, retrieve the bundled list index values that were sent through the intent and use them to display the desired Android-Me body part image'
+        positive_feedback: |-
+          Excellent work!
+
+          **Solution:** [[TFragments.06-Solution-CommunicateBetweenActivities](https://github.com/udacity/Android_Me/tree/TFragments.06-Solution-CommunicateBetweenActivities/app)][[Diff](https://github.com/udacity/Android_Me/compare/TFragments.06-Exercise-CommunicateBetweenActivities...TFragments.06-Solution-CommunicateBetweenActivities)]
+        video_feedback: null
+        description: Now it's your turn! Follow along with these steps to finish this exercise.
+  - id: 279226
+    key: c2fa39f7-e4ed-4340-97dc-351dc7b84fbe
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Two Pane Layout'
+    semantic_type: Concept
+    updated_at: 'Tue Apr 11 2017 20:37:31 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 279355
+      - 282977
+      - 279359
+    atoms:
+      - id: 279355
+        key: 9e34ee03-421b-48e3-b8f4-bacd41b79d09
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 18 2017 18:49:07 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # Title of Task
+
+          In this final exercise, you'll be creating a two pane layout for viewing on a tablet. This will require creating a new layout folder for tablets and truly utilizing the flexible, reusable, and modular power of fragments!
+
+          ### Exercise Code
+          **Exercise:** [TFragments.07-Exercise-TwoPaneUI](https://github.com/udacity/Android_Me/tree/TFragments.07-Exercise-TwoPaneUI/app)
+
+          ## Responsive Design
+
+          This two pane layout completes our Master-Detail flow that we talked about at the beginning of this lesson. This is an extremely common (and responsive) design pattern, and the last step in completing this app! :)
+
+          If you decide to implement a divider in the UI, checkout [this suggestion](http://stackoverflow.com/a/14533085). 
+        instructor_notes: ''
+        resources: null
+      - id: 282977
+        key: 5986a9c3-3946-48a5-b67d-497da2decced
+        locale: en-us
+        version: 1.0.0
+        title: Two Pane Layout
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:58 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51503'
+          youtube_id: 9OK-H8N2v2U
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadf0c_nd801-00078-25-two-pane-layout-sc-/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadf0c_nd801-00078-25-two-pane-layout-sc-/nd801-00078-25-two-pane-layout-sc-_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadf0c_nd801-00078-25-two-pane-layout-sc-/nd801-00078-25-two-pane-layout-sc-_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadf0c_nd801-00078-25-two-pane-layout-sc-/nd801-00078-25-two-pane-layout-sc-_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadf0c_nd801-00078-25-two-pane-layout-sc-/nd801-00078-25-two-pane-layout-sc-_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cadf0c_nd801-00078-25-two-pane-layout-sc-/hls/playlist.m3u8'
+      - id: 279359
+        key: 53e3cce2-a739-4ccf-93a9-e33c6cb97b70
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Tue Apr 11 2017 20:38:21 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 'In a new folder, create a new two-pane activity_main layout for tablets (sw600dp) that will override the default layout resource'
+          - Build the layout to display the MasterListFragment and all BodyPartFragments side-by-side
+          - 'In MainActivity, create a variable to track whether to display a two-pane or single-pane UI'
+          - 'If you are making a two-pane display, add new BodyPartFragments to create an initial Android-Me image'
+          - 'In the onImageSelected callback, handle the two-pane case and replace existing fragments right when a new image is selected from the master list'
+        positive_feedback: |-
+          Wooo!! Great job!! You've completed this app!
+
+          **Solution:** [[TFragments.07-Solution-TwoPaneUI](https://github.com/udacity/Android_Me/tree/TFragments.07-Solution-TwoPaneUI/app)][[Diff](https://github.com/udacity/Android_Me/compare/TFragments.07-Exercise-TwoPaneUI...TFragments.07-Solution-TwoPaneUI)]
+        video_feedback: null
+        description: Follow along with these steps to create a UI that looks great on tablet screens!
+  - id: 279227
+    key: b8bc063f-a8a6-40a5-8067-37c8b1d72746
+    locale: en-us
+    version: 1.0.0
+    title: Fragments Outro
+    semantic_type: Concept
+    updated_at: 'Fri Apr 14 2017 21:49:53 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 282797
+    atoms:
+      - id: 282797
+        key: 360801be-ebf7-4637-9239-f4358e866969
+        locale: en-us
+        version: 1.0.0
+        title: Fragments Outro
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:44:10 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51488'
+          youtube_id: OSQoTG2NgSQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cab93f_nd801-0008028-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cab93f_nd801-0008028-outro/nd801-0008028-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cab93f_nd801-0008028-outro/nd801-0008028-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cab93f_nd801-0008028-outro/nd801-0008028-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cab93f_nd801-0008028-outro/nd801-0008028-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cab93f_nd801-0008028-outro/hls/playlist.m3u8'

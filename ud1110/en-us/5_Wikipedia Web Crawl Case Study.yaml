@@ -1,0 +1,2210 @@
+id: 231941
+key: 1be3e033-6aae-4e6f-8806-bca80a652222
+locale: en-us
+version: 1.0.0
+title: Wikipedia Web Crawl Case Study
+semantic_type: Lesson
+updated_at: 'Wed Jul 05 2017 19:44:32 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: In this lesson we will apply the skills learned previously by writing a web crawler that explores Wikipedia.
+lesson_type: Classroom
+duration: 180
+is_project_lesson: false
+_concepts_ids:
+  - 250086
+  - 250119
+  - 250200
+  - 250211
+  - 250221
+  - 250240
+  - 250243
+  - 250250
+  - 250259
+  - 250264
+  - 250272
+_project_id: null
+concepts:
+  - id: 250086
+    key: 3b9c496c-1a64-4de5-9e7b-583e890e2969
+    locale: en-us
+    version: 1.0.0
+    title: Case Study Introduction
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 00:27:05 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 289599
+      - 250117
+      - 250116
+    atoms:
+      - id: 289599
+        key: 6e407c77-b198-4964-bc27-7ee20dd82e8e
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L5 01 A Wikipedia Crawl
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 03:21:59 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52162'
+          youtube_id: osrplIl1m-k
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d5d5a0_ud1110-intropy-l5-01-a-wikipedia-crawl/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d5a0_ud1110-intropy-l5-01-a-wikipedia-crawl/ud1110-intropy-l5-01-a-wikipedia-crawl_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d5a0_ud1110-intropy-l5-01-a-wikipedia-crawl/ud1110-intropy-l5-01-a-wikipedia-crawl_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d5a0_ud1110-intropy-l5-01-a-wikipedia-crawl/ud1110-intropy-l5-01-a-wikipedia-crawl_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d5a0_ud1110-intropy-l5-01-a-wikipedia-crawl/ud1110-intropy-l5-01-a-wikipedia-crawl_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d5a0_ud1110-intropy-l5-01-a-wikipedia-crawl/hls/playlist.m3u8'
+      - id: 250117
+        key: f0ea8ab8-f1b1-40f7-bafa-a9faaef68f67
+        locale: en-us
+        version: 1.0.0
+        title: Reflect
+        semantic_type: ReflectAtom
+        updated_at: 'Tue Jan 10 2017 19:25:50 GMT+0000 (UTC)'
+        is_public: true
+        instructor_notes: null
+        resources: null
+        question:
+          title: null
+          semantic_type: TextQuestion
+          evaluation_id: null
+          text: |
+            Now it's your turn. Go to a Wikipedia page you find interesting, or just a [random one](https://en.wikipedia.org/wiki/Special:Random) and click the first link. Then on that page click the first link in the main body of the article text and just keep going. You could try it multiple times for different pages and see whether you get different behaviour! Write in the box what happens. 
+        answer:
+          text: Thanks for crawling Wikipedia. Did you make it to the Philosophy article?
+          video: null
+      - id: 250116
+        key: 7eddceac-cdb7-4ea8-9919-5c82fc932760
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 19:25:26 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Automating the Wikipedia Crawl
+          ==============
+
+          Whilst it's interesting to click through Wikipedia, it takes a lot of time to click through and read all those articles.  We're going to work on automating this process, ending up with a program that will go through Wikipedia for us, keeping track of the first links on each page and seeing where they lead. In order to do this, we'll need to find out about how web pages work and get to know some of the Python tools we can use to interact with the web and web content.
+        instructor_notes: ''
+        resources: null
+  - id: 250119
+    key: a99c5929-38de-43e8-8072-556f776677e8
+    locale: en-us
+    version: 1.0.0
+    title: Laying the Groundwork
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 00:27:08 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250134
+      - 250142
+      - 250154
+      - 250155
+      - 250157
+      - 250177
+      - 250183
+      - 250184
+      - 250185
+      - 250187
+      - 250186
+      - 250188
+      - 250190
+      - 250189
+      - 250191
+      - 250192
+      - 250193
+      - 250194
+      - 250195
+      - 250196
+      - 250198
+    atoms:
+      - id: 250134
+        key: 9dba7911-4230-4b25-9059-7bc501796303
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Apr 12 2017 20:40:33 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          How do Web pages Work?
+          ====================
+
+          A program that interacts with websites is called a web crawler. Web crawlers are used to create search engine indexes, to archive pages, and in our case: to explore Wikipedia. In order to write a crawler we need to understand how web pages work. In particular, we need to know some HTML.
+
+          If you're an aspiring web developer, you're probably already familiar with HTML. If you aren't familiar with HTML, don't fret! You don't need to know much HTML to write a web crawler. Read on for an overview of the essentials.
+
+          HTML, or *HyperText Markup Language*, is the source code of web pages. An HTML document is a text document that describes what should be on a page. It includes text content, URLs for the images and videos that should be on the page, and information about how the content should be arranged and styled. Your web browser receives raw HTML and renders nicely formatted, multimedia web pages from it.
+
+          Let's examine the source of a simple page to see how HTML is structured,
+
+          ```html
+          <title>My Website</title>
+          <div id="introduction">
+            <p>
+              Welcome to my website!
+            </p>
+          </div>    
+          <div id="image-gallery">
+            <p>
+              This is my cat!
+              <img src="cat.jpg" alt="Meow!">
+              <a href="https://en.wikipedia.org/wiki/Cat">Learn more about cats!</a>
+            </p>
+          </div>
+          ```
+
+          HTML source code is composed of nested tags. The first tag is the title tag, the text in between `<title>` and its closing tag `</title>` is used as the page's title.
+        instructor_notes: ''
+        resources: null
+      - id: 250142
+        key: 88bbf586-ffcb-42ed-a320-91fd0e0862b9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Tue Jan 10 2017 19:42:59 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/5875387d_kitty/kitty.png'
+        width: 444
+        height: 611
+        caption: 'The sample page, with title "My Website"'
+        resources: null
+        instructor_notes: null
+      - id: 250154
+        key: 0c610ec8-47cb-4847-9f21-a984693a3456
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 19:43:20 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          The next tag in the HTML source  is `<div id="introduction">`. `div` is an abbreviation of "division", and `id="introduction"` means the the author of this page labeled this section as the introduction.
+          Several lines below this tag we see `</div>`. This is the div's closing tag, which means that this paragraph code is nested inside of the div:
+          ```html
+          <p>
+            Welcome to my website!
+          </p>
+          ```
+          `p` is an abbreviation of "paragraph". The text in between `<p>` and its closing tag, `</p>` is content that will be displayed on the screen when this HTML is rendered. This paragraph can be called a "child" of the div tag that it's nested inside of. Likewise, the div is the "parent" of the paragraph. Taken altogether, this arrangement of parent tags and child tags creates a tree structure.
+
+          Vocabulary note: The terms "tag" and "element" are closely related, and sometimes used interchangeably. A tag is a piece of HTML source, while elements are the visual components that users see after tags have been rendered by their browser.
+        instructor_notes: ''
+        resources: null
+      - id: 250155
+        key: 2768116f-8190-4503-9664-c843ad415bb9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Tue Jan 10 2017 19:44:53 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/587539aa_trees/trees.png'
+        width: 579
+        height: 557
+        caption: The tree structure of an HTML document composed of nested tags.
+        resources: null
+        instructor_notes: null
+      - id: 250157
+        key: 736ea499-faa1-4c94-b89e-81d39f697868
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 19:46:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          The second div in the HTML document is more complex. It also has a paragraph tag as a child, and that paragraph tag has it's own children, `img` and `a`. These two are nested inside of the div tag making them descendents of the div. They aren't children of the div though, they're children of the `p` tag.
+        instructor_notes: ''
+        resources: null
+      - id: 250177
+        key: 5a269e41-cbfd-42e2-9a8d-790634e43713
+        locale: en-us
+        version: 1.0.0
+        title: Identify the parent and children tags
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Wed Apr 12 2017 20:54:50 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Refer to the "My Website" html above to answer this question. 
+            How many elements are inside of the `image-gallery` div?
+          default_feedback: 'Make sure you count every element in the `image-gallery` div, not just its immediate children. Note that a pair of opening and closing tags like `<p>` and `</p>` count as one element, not two.'
+          correct_feedback: 'The `image-gallery` div has three descendants, a `p` elements, an `img` elements, and an `a` elements.'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: '3|[Tt]hree'
+              expression_description: ''
+              flags: ''
+              incorrect_feedback: null
+      - id: 250183
+        key: 173bdf81-c991-4d4d-9e90-c02160ec3766
+        locale: en-us
+        version: 1.0.0
+        title: Identify the parent and children tags II
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Wed Apr 12 2017 20:50:56 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: How many of these tags are direct descendants of the `image-gallery` div?
+          default_feedback: Only count the elements that are directly inside the image-gallery` div. The HTML is indented to help distinguish between different levels of nested tags.
+          correct_feedback: 'The `image-gallery` div has one direct descendant, or child: the paragraph element.'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: '1|[Oo]ne'
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+      - id: 250184
+        key: abef139a-0e89-4523-a623-c671d3ef7069
+        locale: en-us
+        version: 1.0.0
+        title: Identify the parent and children tags III
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Wed Apr 12 2017 20:55:22 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: How many parent tags can a tag have? This number is the same for every html document.
+          default_feedback: Refer to the HTML samples above and pick any element. How many parent tags is it immediately within?
+          correct_feedback: 'Every element has one parent, this follows from the fact that elements are structured as a tree. An element can have any number of children, but only one parent.'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: '1|[Oo]ne'
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+      - id: 250185
+        key: 937902fe-0199-4006-ba0d-f3ae108eb31c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 20:15:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Anchor Tags
+          ========
+
+          There's one more tag type you need to know to crawl the web, anchor tags. We've seen one anchor tag already:
+
+          ```html
+          <a href="https://en.wikipedia.org/wiki/Cat">Learn more about cats!</a>
+          ```
+
+          Anchor tags (denoted by `<a></a>` are used to create links. This example creates a link like this one [Learn more about cats!](https://en.wikipedia.org/wiki/Cat). The link's destination is specified in the `href` attribute, and the text in between the opening and closing tags is the link's text.
+        instructor_notes: ''
+        resources: null
+      - id: 250187
+        key: 6d328a11-109b-4532-a22b-c1ee0e977878
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 20:16:21 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Exploring HTML with Developer Tools
+          ============================
+        instructor_notes: ''
+        resources: null
+      - id: 250186
+        key: 294920a2-bf7d-4468-9aa0-29dbad23d9a6
+        locale: en-us
+        version: 1.0.0
+        title: Exploring HTML with Developer Tools
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 03:57:10 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '44210'
+          youtube_id: YWbCvLCBQrg
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/January/586c438c_09-exploring-html-with-developer-tools/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c438c_09-exploring-html-with-developer-tools/09-exploring-html-with-developer-tools_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c438c_09-exploring-html-with-developer-tools/09-exploring-html-with-developer-tools_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c438c_09-exploring-html-with-developer-tools/09-exploring-html-with-developer-tools_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c438c_09-exploring-html-with-developer-tools/09-exploring-html-with-developer-tools_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c438c_09-exploring-html-with-developer-tools/hls/playlist.m3u8'
+      - id: 250188
+        key: 4c809a0e-640c-423c-bc71-b5413a09d625
+        locale: en-us
+        version: 1.0.0
+        title: Try Out the Developer Tools
+        semantic_type: RadioQuizAtom
+        updated_at: 'Tue Apr 11 2017 20:08:57 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Try out the developer tools on your own. Navigate to any Wikipedia article and answer this question by inspecting its HTML source.
+
+            Find the div with the id `mw-content-text`. What type of tag is this div's parent?
+          correct_feedback: 'Yes! The mw-content-text div is nested in another div. Deeply nested div tags are a common pattern for websites with intricately designed pages. When this pattern is taken to ridiculous extremes, web developers call it "div soup"!'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1484079562685
+              text: '`div`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1484079707125
+              text: '`b`'
+              is_correct: false
+              incorrect_feedback: 'This b tag is a sibling of the anchor tag in the article. That makes it a descendent of the mw-content-text div, not a parent.'
+            - id: a1484079707785
+              text: '`p`'
+              is_correct: false
+              incorrect_feedback: 'Wikipedia articles have lots of paragraph tags, but none of them are parents of the  mw-content-text div.'
+            - id: a1484079709267
+              text: '`body`'
+              is_correct: false
+              incorrect_feedback: 'The mw-content-text is inside of the body tag, but it''s not a direct child of it. There are several tags in between mw-content-text and body.'
+      - id: 250190
+        key: 90912453-6323-46cf-b999-2369201e92df
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 20:24:52 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Using Python to get HTML
+          ==============
+        instructor_notes: ''
+        resources: null
+      - id: 250189
+        key: 7bcc66aa-43e2-4145-8a3e-a29441c388e7
+        locale: en-us
+        version: 1.0.0
+        title: Using Python to get HTML
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 05:07:14 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '44211'
+          youtube_id: 1Y_CZyKNWe4
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/January/586c439e_11-using-python-to-get-html/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c439e_11-using-python-to-get-html/11-using-python-to-get-html_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c439e_11-using-python-to-get-html/11-using-python-to-get-html_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c439e_11-using-python-to-get-html/11-using-python-to-get-html_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c439e_11-using-python-to-get-html/11-using-python-to-get-html_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c439e_11-using-python-to-get-html/hls/playlist.m3u8'
+      - id: 250191
+        key: cae62b43-b46c-4d01-aee8-85a1fa48e8a0
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Apr 12 2017 20:58:40 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Try `requests` on your own
+          ================
+
+          Now it's your turn to try out the requests library.
+
+          First go to the command line to install `requests` with `pip`
+
+          ```
+          $ pip3 install requests
+          ```
+          (Depending on your Python installation you may need to use `pip` instead of `pip3`.)
+
+          Then you can open up the interactive Python interpreter to test out some requests code. This is the code from the previous video:
+
+          ```python
+          >>> response = requests.get('https://en.wikipedia.org/wiki/Dead_Parrot_sketch')
+          >>> print(response.text)
+          >>> print(type(response.text))
+          ```
+          Replace the url in the example with a page of your own choice to test it out in the interactive Python interpreter and look at the html.
+        instructor_notes: ''
+        resources: null
+      - id: 250192
+        key: f312a7c3-5687-44a1-b695-4a1c4d9c8978
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 11 2017 20:11:29 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Beautiful Soup
+          ============
+
+          Now that we know how to make web requests and download html, it's time to see how we can parse HTML. Since HTML is simply text, we could parse through it with the tools we already know; loops and string methods. This would be challenging though, HTML is a very flexible language which makes it tricky to parse correctly. Fortunately past programmers have solved this problem for us.
+
+          I've used the Beautiful Soup library before for projects like this one. According to its documentation:
+
+          >  "Beautiful Soup parses anything you give it, and does the tree traversal stuff for you. You can tell it 'Find all the links', or 'Find all the links of classexternalLink', or 'Find all the links whose urls match "foo.com", or 'Find the table heading that's got bold text, then give me that text.'"
+
+          Those examples sound a lot like our problem of finding the first Wikipedia link in a certain div! 
+
+          Let's install the library and try it out! You can use pip to install the most recent version of Beautiful Soup:
+
+          ```shell
+          $ pip3 install beautifulsoup4
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 250193
+        key: ded8b112-b3d5-4410-b893-a3faa650ad7e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 20:32:52 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Beautiful Soup Demonstration
+          ==============
+        instructor_notes: ''
+        resources: null
+      - id: 250194
+        key: 70e0feb4-c892-4afe-b3de-a888ef6a0d80
+        locale: en-us
+        version: 1.0.0
+        title: Beautiful Soup Demonstration
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 05:17:18 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '44212'
+          youtube_id: dk7ESZXLnk4
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/January/586c43a9_14-beautiful-soup-documentation-demonstration/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43a9_14-beautiful-soup-documentation-demonstration/14-beautiful-soup-documentation-demonstration_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43a9_14-beautiful-soup-documentation-demonstration/14-beautiful-soup-documentation-demonstration_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43a9_14-beautiful-soup-documentation-demonstration/14-beautiful-soup-documentation-demonstration_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43a9_14-beautiful-soup-documentation-demonstration/14-beautiful-soup-documentation-demonstration_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43a9_14-beautiful-soup-documentation-demonstration/hls/playlist.m3u8'
+      - id: 250195
+        key: 32a883d8-32b2-4d3a-88c0-3062614b5da8
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 20:39:17 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Try Beautiful Soup on your Own
+          ==================
+          Install Beautiful Soup and try it out! Open an interactive interpreter in your terminal, and navigate to a webpage of your choice in your browser. Pick elements from the page and try to select them with Beautiful Soup! Try opening your browser's developer tools to help understand how the html is structured.
+
+          Explore the page, and Beautiful Soup to answer the following questions.
+        instructor_notes: ''
+        resources: null
+      - id: 250196
+        key: 0fd9b2c2-c986-4827-ae2e-6e79f2d4b56c
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 16 2017 15:28:43 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Which of these evaluates to a list of all of the anchor tags in the first paragraph on a page?
+          correct_feedback: Correct!
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1484080874232
+              text: '`soup.p.a`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484080887135
+              text: '`soup.find_all(''p'').find_all(''a'')`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484080887751
+              text: '`soup.p.find_all(''a'')`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1484080888509
+              text: '`for p in soup.find_all(''p''):     \n p.a`'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 250198
+        key: e424df09-67b3-4a7a-9426-fc2dbc565f56
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Tue Jan 10 2017 21:30:24 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'Given a soup object named `soup`, what code will select a div element with the id "image-gallery"?'
+          correct_feedback: 'Correct! This code doesn''t explicitly specify that it should find a div tag, but there should only be one element with a specific id, which means this should work.'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1484083660182
+              text: '`soup.id.image-gallery`'
+              is_correct: false
+              incorrect_feedback: 'This snippet will look for id tags and image-gallery tags (neither of which is a standard tag), rather than a div tag with the proper id. Refer to the documentation for the proper technique.'
+            - id: a1484083679121
+              text: '`soup.div(id="image-gallery")`'
+              is_correct: false
+              incorrect_feedback: 'This syntax looks nice, but Beautiful soup doesn''t work this way. Refer to the documentation for the proper technique.'
+            - id: a1484083679765
+              text: '`soup.get(''div'', id=''image-gallery'')`'
+              is_correct: false
+              incorrect_feedback: 'The soup object has a `get` method, but it isn''t very useful. Refer to the documentation for the proper technique.'
+            - id: a1484083680377
+              text: '`soup.find(id="image-gallery")`'
+              is_correct: true
+              incorrect_feedback: null
+  - id: 250200
+    key: 0d2575fd-9155-4c45-be5d-32cad6215a2b
+    locale: en-us
+    version: 1.0.0
+    title: Designing the Program
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 00:27:12 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250201
+      - 250202
+      - 250203
+      - 250205
+      - 250206
+      - 250207
+      - 250210
+      - 293381
+    atoms:
+      - id: 250201
+        key: 75482ac5-0936-40bc-8122-a24fc8aa423b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Apr 12 2017 21:19:55 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Breaking the Problem into Steps
+          =================
+
+          Now that we've explored the libraries we'll use to crawl Wikipedia, let's think about the steps our crawler program will execute. The manual process we followed was this:
+
+          1. Open an article
+          2. Find the first link in the article
+          3. Follow the link
+          4. Repeat this process until we reach the Philosophy article, or get stuck in an article cycle.
+
+          The key phrase in this process is "Repeat". This four-step process is essentially a loop! If our program duplicates the manual process, our program will consist of one big loop. This raises a question though...
+        instructor_notes: ''
+        resources: null
+      - id: 250202
+        key: 71ca2a29-1e84-426e-afcd-af8afeed5e29
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Tue Jan 10 2017 21:35:25 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: What kind of loop should we use to implement the crawling process?
+          correct_feedback: 'While loops are useful for indefinite iteration, that is situations where we don''t know in advance how many times the loop will loop. Our crawler will loop an indefinite number of times though because we don''t know how many clicks it it will take to find the Philosophy article.'
+          video_feedback: null
+          default_feedback: 'For loops are an example of definite iteration, meaning that they''re useful if you know ahead of time how many times the loop should run. Iterating over a list is a good example because a loop over a list will run once for each element in the list. Our crawler will loop an indefinite number of times though because we don''t know how many clicks it it will take to find the Philosophy article.'
+          answers:
+            - id: a1484084027380
+              text: a `for` loop
+              is_correct: false
+              incorrect_feedback: ''
+            - id: a1484084029600
+              text: a `while` loop
+              is_correct: true
+              incorrect_feedback: null
+      - id: 250203
+        key: 22af45f3-7b70-418f-8e47-f1fb45eabc62
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 11 2017 20:19:26 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Recording our Progress
+          ===============
+
+          As we loop, we'll need to keep track of the articles we visit so we can output the path our crawler finds. I'll add this into our process:
+
+          1. Open an article
+          2. Find the first link in the article
+          3. Follow the link
+          4. ** Record the link in the `article_chain` data structure.**
+          5. Repeat this process until we reach the Philosophy article, or get stuck in an article cycle.
+
+          `article_chain` will be our program's output. We can also use it to keep up with which article to explore next. In step 1 of the loop, out program can open the article that's at the end of the article chain.
+        instructor_notes: ''
+        resources: null
+      - id: 250205
+        key: 68388c17-368b-4b0d-9189-315a5f56518b
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Tue Jan 10 2017 21:40:09 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'Our algorithm needs to keep track of the chain of articles that have already been seen, so that they can be outputted at the end. It also needs to keep track of the last article seen, so that it can be used as input for the next iteration of the while loop. Which **one** of these data structures could we use for `article_chain`? '
+          correct_feedback: 'Correct! A list can store the article chain in the correct order, and it''s easy to select the last article from the list.'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1484084301348
+              text: string
+              is_correct: false
+              incorrect_feedback: 'article_chain is a collection of distinct objects. We could store this is a string, but it wouldn''t be easy. How would we get the last article from the string?'
+            - id: a1484084330303
+              text: list
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1484084330901
+              text: dictionary
+              is_correct: false
+              incorrect_feedback: 'Dictionaries are unordered, making it difficult to select the last article from the chain.'
+            - id: a1484084331519
+              text: set
+              is_correct: false
+              incorrect_feedback: 'Sets are unordered, making it tough to select the last article from the chain.'
+            - id: a1484084332204
+              text: tuple
+              is_correct: false
+              incorrect_feedback: 'A tuple could work, but it''s not ideal. We''ll be adding elements to our chain as we crawl, but tuples are immutable. They don''t have a convenient append method like certain other data structures.'
+            - id: a1484084332872
+              text: float
+              is_correct: false
+              incorrect_feedback: I'm not sure how you would store a sequence of articles in a float.
+      - id: 250206
+        key: b02c5156-2409-4505-8fb9-61fe78499c41
+        locale: en-us
+        version: 1.0.0
+        title: Reflect
+        semantic_type: ReflectAtom
+        updated_at: 'Tue Jan 10 2017 21:45:22 GMT+0000 (UTC)'
+        is_public: true
+        instructor_notes: null
+        resources: null
+        question:
+          title: null
+          semantic_type: TextQuestion
+          evaluation_id: null
+          text: |-
+            We have already decided to use a `while` loop as we record the articles visited on our crawl through Wikipedia. But we shouldn't write a program that will go on forever - under what circumstances should we end the loop? There are several cases we need to cover. Put your ideas in the box.
+
+            The `while` loop should end when:
+        answer:
+          text: |-
+            Solution:
+            The program should end the `while` loop when:
+
+            * we reach Philosophy,
+            * we reach a page we've already visited, hence find ourselves in a cycle of articles (like the case of [Chair](https://en.wikipedia.org/wiki/Chair),
+            * we go on for too long (we think that 25 steps is plenty, but you can adjust this if you like), or
+            * we find a page that has no links on it - we simply can't keep going in this case.
+
+            Later, we'll decide how best to check for each of these conditions.
+            It's useful that we already decided to have an `article_chain` variable tracking which articles we've already visited. This will make checking for a cycle much easier!
+          video: null
+      - id: 250207
+        key: f60b2356-b830-4fde-a3ba-94b636a1b65e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Apr 12 2017 21:44:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          The Sequence of Steps
+          =================
+
+          We've determined that our program will be structured in a while loop. Earlier on we establish the steps that need to go in the loop
+
+          1. Find the first link in the current article's HTML
+          2. Download the HTML for the current article
+          3. Add the first link from the current article to `article_chain`
+
+          There's one other step we didn't explicitly state earlier:
+
+          <ol start="4">
+            <li>Pause for a couple seconds so we don't flood Wikipedia with requests.</li>
+          </ol>
+
+          When we manually found links and clicked them, our speed was naturally limited by how fast we could read and click. Our Python program won't be constrained this way, it will loop as quickly as pages can be downloaded. While this is a time saver, it's impolite to hammer a web server with rapid repeated requests. If we don't slow our loop down the server might think we're attackers trying to overload the server, and block us. And the server might be right! If there's a bug in our code we might get into an infinite loop and drown the server with requests. To avoid this we should include a pause in the main loop. (Websites specify their automated crawler policies in a [robots.txt file](https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt). You can find Wikipedia's robots.txt at https://en.wikipedia.org/robots.txt. Wikipedia says that, "Friendly, low-speed bots are welcome viewing article pages…". By including a delay, we comply with Wikipedia's terms!)
+        instructor_notes: ''
+        resources: null
+      - id: 250210
+        key: ec5062da-633d-4f4f-939b-50a9760bca5b
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Tue Jan 10 2017 22:07:33 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'In what order should our loop perform these four steps? If you think we should do these steps in the order written, enter "1234" in the answer box.'
+          default_feedback: null
+          correct_feedback: 'Nice work! It''s interesting to note that the two-second pause can be placed anywhere in the loop to limit our request speed. I think it''s tidiest to put it last, but other positions are equally correct.'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: '4213'
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: '2413'
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: '2143'
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: '2134'
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: 1.*2
+              expression_description: 1 before 2
+              flags: ''
+              incorrect_feedback: We need to download the article before we can find a link in it.
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: 3.*2
+              expression_description: 3 before 2
+              flags: ''
+              incorrect_feedback: We need to download the article before we can do any more work.
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: 3.*1
+              expression_description: 3 before 1
+              flags: ''
+              incorrect_feedback: We need to find the link before we can append it to the chain.
+      - id: 293381
+        key: edde99c2-e447-40c3-b159-1f243569fb6c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Apr 12 2017 21:49:25 GMT+0000 (UTC)'
+        is_public: true
+        text: "We can also describe our sequence of steps using the following pseudo code.\n```python\npage = a random starting page\narticle_chain = []\nwhile title of page isn't 'Philosophy' and we have not discovered a cycle:\n\tappend page to article_chain\n\tdownload the page content\n\tfind the first link in the content\n\tpage = that link\n\tpause for a second\n```\nThis is a little more worked out than using plain English, but is still not actual Python code. You can think as pseudo-code as an intermediate step between numbered steps in English and actual code that can run."
+        instructor_notes: ''
+        resources: null
+  - id: 250211
+    key: da6affc5-8ee4-4b1e-832c-e849965c05ae
+    locale: en-us
+    version: 1.0.0
+    title: Implementing the Program
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 00:27:15 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250212
+      - 289608
+      - 250214
+      - 250217
+      - 250223
+    atoms:
+      - id: 250212
+        key: 6ed7bf42-5e72-4397-909b-78fb892e53fb
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 22:08:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Collaboration
+          ==========
+        instructor_notes: ''
+        resources: null
+      - id: 289608
+        key: ae2cdb99-3fa0-4360-8769-a55da362eaa7
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L5 22 Continue Crawl Solution
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 03:57:27 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52163'
+          youtube_id: tLhTfSZ6LRA
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d5d5a2_ud1110-intropy-l5-22-continue-crawl-solution/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d5a2_ud1110-intropy-l5-22-continue-crawl-solution/ud1110-intropy-l5-22-continue-crawl-solution_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d5a2_ud1110-intropy-l5-22-continue-crawl-solution/ud1110-intropy-l5-22-continue-crawl-solution_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d5a2_ud1110-intropy-l5-22-continue-crawl-solution/ud1110-intropy-l5-22-continue-crawl-solution_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d5a2_ud1110-intropy-l5-22-continue-crawl-solution/ud1110-intropy-l5-22-continue-crawl-solution_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d5a2_ud1110-intropy-l5-22-continue-crawl-solution/hls/playlist.m3u8'
+      - id: 250214
+        key: 8326fe97-1c4a-4ed7-8424-6fe585cf13de
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 04 2017 17:09:24 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: The `continue_crawl` Function
+          ========
+
+          The first helper function we need to write is `continue_crawl` which will be used in our while loop like this:
+
+          ```python
+          while continue_crawl(search_history, target_url):
+          ```
+
+          For example, we might call the function with these values:
+          ```python
+          continue_crawl(['https://en.wikipedia.org/wiki/Floating_point'],
+                                 'https://en.wikipedia.org/wiki/Philosophy')
+          ```
+          * `search_history` is a list of strings which are the urls of Wikipedia articles. The last item in the list most recently found url.
+          * `target_url` is a string, the url of the article that the search should stop at if it is found.
+
+          `continue_crawl`should return `True` or `False` following these rules:
+          * if the most recent article in the search_history is the target article the search should stop and the function should return `False`
+          * If the list is more than 25 urls long, the function should return `False`
+          * If the list has a cycle in it, the function should return `False`
+          * otherwise the search should continue and the function should return True.
+
+          For this quiz, implement `continue_crawl`. For each of the situations where the search stops, print a message that briefly explains why.
+          Remember to test your code!
+        instructor_notes: ''
+        resources: null
+      - id: 250217
+        key: be3ce6b5-9cc2-4d26-918e-37abefd56332
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Tue Apr 04 2017 18:35:14 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5744938307420160'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |
+              try:
+                  from continuecrawl import continue_crawl
+                  search_history1 = ['https://en.wikipedia.org/wiki/Floating_point']
+                  target_url = 'https://en.wikipedia.org/wiki/Philosophy'
+                  
+                  if not(continue_crawl(search_history1, target_url)):
+                      print('error1-secretstring')
+                  
+                  search_history2 = ['https://en.wikipedia.org/wiki/Floating_point', 'https://en.wikipedia.org/wiki/Philosophy']
+
+                  if continue_crawl(search_history2, target_url):
+                      print('error2-secretstring')
+                      
+                  search_history3 = ['https://en.wikipedia.org/wiki/Floating_point', 'https://en.wikipedia.org/wiki/Computing', 'https://en.wikipedia.org/wiki/Floating_point']
+
+                  if continue_crawl(search_history3, target_url):
+                      print('error3-secretstring')
+                      
+                  search_history4 = ['https://en.wikipedia.org/wiki/Floating_point', 'https://en.wikipedia.org/wiki/Computing', 'https://en.wikipedia.org/wiki/Mathematics', 'https://en.wikipedia.org/wiki/Ancient_Greek', 'https://en.wikipedia.org/wiki/Greek_language', 'https://en.wikipedia.org/wiki/Modern_Greek', 'https://en.wikipedia.org/wiki/Colloquialism', 'https://en.wikipedia.org/wiki/Word', 'https://en.wikipedia.org/wiki/Linguistics', 'https://en.wikipedia.org/wiki/Science', 'https://en.wikipedia.org/wiki/Knowledge', 'https://en.wikipedia.org/wiki/Awareness', 'https://en.wikipedia.org/wiki/Quality_(philosophy)', 'https://en.wikipedia.org/wiki/Property_(philosophy)', 'https://en.wikipedia.org/wiki/Logic', 'https://en.wikipedia.org/wiki/Argument', 'https://en.wikipedia.org/wiki/Natural_language', 'https://en.wikipedia.org/wiki/Neuropsychology', 'https://en.wikipedia.org/wiki/Anatomy', 'https://en.wikipedia.org/wiki/Biology', 'https://en.wikipedia.org/wiki/Natural_science', 'https://en.wikipedia.org/wiki/List_of_natural_phenomena', 'https://en.wikipedia.org/wiki/Phenomenon', 'https://en.wikipedia.org/wiki/Experience', 'https://en.wikipedia.org/wiki/Empirical_evidence', 'https://en.wikipedia.org/wiki/Observation']
+                  if continue_crawl(search_history4, target_url):
+                      print('error4-secretstring')
+                  
+                      
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import continuecrawl
+            gae_grading_code: |
+              solution_text = '''
+              Here's my first attempt at a solution for the `continue_crawl` function:
+
+              ```python
+              def continue_crawl(search_history, target_url):
+                  if search_history[-1] == target_url:
+                      print("We've found the target article!")
+                      return False
+                  elif len(search_history) > 25:
+                      print("The search has gone on suspiciously long; aborting search!")
+                      return False
+                  elif search_history[-1] in search_history[:-1]:
+                      print("We've arrived at an article we've already seen; aborting search!")
+                      return False
+                  else:
+                      return True
+              ```
+              '''
+
+              def find_errors(s):
+                  explanation_str = '''Your code produced the wrong result when ran with {}. Expected result is {}.'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format("`['https://en.wikipedia.org/wiki/Floating_point']` and `'https://en.wikipedia.org/wiki/Philosophy'`", "`True` since none of the stopping conditions are met"))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format("`['https://en.wikipedia.org/wiki/Floating_point', 'https://en.wikipedia.org/wiki/Philosophy']` and `'https://en.wikipedia.org/wiki/Philosophy'`", "`False` since the target link is the last element in the search history list"))
+                  if 'error3-secretstring' in s:
+                      errors.append(explanation_str.format("`['https://en.wikipedia.org/wiki/Floating_point', 'https://en.wikipedia.org/wiki/Computing', 'https://en.wikipedia.org/wiki/Floating_point']` and `'https://en.wikipedia.org/wiki/Philosophy'`", "`False` since the list contains a loop"))
+                  if 'error4-secretstring' in s:
+                      errors.append(explanation_str.format("a list that contained more than 25 urls and `'https://en.wikipedia.org/wiki/Philosophy'`", "`False` since the list contains more than 25 urls"))
+                
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              # feedback.append("Click *NEXT* to see our solution.") #uncomment if the feedback really is on the next concept
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 250223
+        key: e22817e5-e5cc-4676-98d1-6810ce156c06
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 22:25:32 GMT+0000 (UTC)'
+        is_public: true
+        text: Click the "Next" button to see my solution.
+        instructor_notes: ''
+        resources: null
+  - id: 250221
+    key: 6de97e3b-0a65-4875-96be-ec45ddee4fd3
+    locale: en-us
+    version: 1.0.0
+    title: Implementing the Program II
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 00:27:18 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250222
+      - 250224
+      - 287801
+      - 250230
+      - 250231
+      - 250232
+    atoms:
+      - id: 250222
+        key: 1b969560-d338-4e9d-8a73-7f9bdc10bb20
+        locale: en-us
+        version: 1.0.0
+        title: Continue Crawl Solution
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 04:52:33 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '44213'
+          youtube_id: cFwJ_MO3ofs
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/January/586c43ab_25-continue-crawl-solution/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43ab_25-continue-crawl-solution/25-continue-crawl-solution_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43ab_25-continue-crawl-solution/25-continue-crawl-solution_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43ab_25-continue-crawl-solution/25-continue-crawl-solution_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43ab_25-continue-crawl-solution/25-continue-crawl-solution_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43ab_25-continue-crawl-solution/hls/playlist.m3u8'
+      - id: 250224
+        key: 004ab983-e1f0-473c-9a59-9aff5824c6fa
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 22:26:13 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Here's my final version of the `continue_crawl` function in full.
+
+          ```python
+          def continue_crawl(search_history, target_url, max_steps=25):
+              if search_history[-1] == target_url:
+                  print("We've found the target article!")
+                  return False
+              elif len(search_history) > max_steps:
+                  print("The search has gone on suspiciously long, aborting search!")
+                  return False
+              elif search_history[-1] in search_history[:-1]:
+                  print("We've arrived at an article we've already seen, aborting search!")
+                  return False
+              else:
+                  return True
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 287801
+        key: b361a232-f6d1-4cef-8092-56d41db4fc71
+        locale: en-us
+        version: 1.0.0
+        title: Coding inside the skeleton loop
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 04:47:38 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52158'
+          youtube_id: MRPdqOwnqag
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d5b700_ud1110-intropy-l5-27-coding-inside-the-skeleton-loop/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5b700_ud1110-intropy-l5-27-coding-inside-the-skeleton-loop/ud1110-intropy-l5-27-coding-inside-the-skeleton-loop_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5b700_ud1110-intropy-l5-27-coding-inside-the-skeleton-loop/ud1110-intropy-l5-27-coding-inside-the-skeleton-loop_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5b700_ud1110-intropy-l5-27-coding-inside-the-skeleton-loop/ud1110-intropy-l5-27-coding-inside-the-skeleton-loop_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5b700_ud1110-intropy-l5-27-coding-inside-the-skeleton-loop/ud1110-intropy-l5-27-coding-inside-the-skeleton-loop_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5b700_ud1110-intropy-l5-27-coding-inside-the-skeleton-loop/hls/playlist.m3u8'
+      - id: 250230
+        key: 6193b304-4262-410d-8fe4-444527229790
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Apr 12 2017 22:47:50 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Here are those four steps as comments in a skeleton of the while loop.
+
+          ```python
+          while continue_crawl(article_chain, target_url): 
+              # download html of last article in article_chain
+              # find the first link in that html
+              # add the first link to article_chain
+              # delay for about two seconds
+          ```
+
+          It's time to fill in some of the implementation.
+
+          The first step, `download html of last article in article_chain,` is where we'll be using the requests package to obtain the  html from wikipedia. The second step, `find the first link in that html`,  will involve parsing that html with BeautifulSoup to grab the URL of the first link.
+
+
+          I propose that we put these two steps together into a single function whose input will be a string containing the URL for a wikipedia article and whose output will be a string containing the URL of the first link in the body of that wikipedia article. Let's call this function `find_first_link`.
+
+          The steps:
+           `download html of last article in article_chain`
+          and
+           `find the first link in that html`
+          were originally the first two steps in of our plan, but putting them both into a helper function `find_first_link`abstracts away all the details of using the external libraries requests and BeautifulSoup out of the `while` loop. This is nice because if the details of how these libraries work were to change in the future, we could keep the main `while` loop as it is, and just change the helper function. It also helps keep the code really readable.
+
+          Because I've defined the input and output of `find_first_link` properly, I can leave the implementation of this function to Philip - he'll work on it later on. For now, I can rely on what the output of this function will be, and use it by putting a call to `find_first_link` into the `while` loop. 
+
+          ```python
+          while continue_crawl(article_chain, target_url): 
+              # download html of last article in article_chain
+              # find the first link in that html
+              first_link = find_first_link(article_chain[-1])
+              # add the first link to article chain
+              # delay for about two seconds
+          ```
+
+          The index `[-1]` gives the last entry in the `article_chain` list, so on the next line it's going to make sense to add that `first_link` to the end of `article_chain` - you're going to write that code next!
+        instructor_notes: ''
+        resources: null
+      - id: 250231
+        key: d844a080-54b9-48c2-b326-dc3913d7e2a7
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 22:37:59 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Add a Link to the Article Chain
+          ===============
+
+          Write a line of code that will add the `first_link` to the end of the list `article_chain`. This line should come after the comment, "add the first link to article chain".
+        instructor_notes: ''
+        resources: null
+      - id: 250232
+        key: 4aafb890-7d0d-4e4b-b369-e1497c299366
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Thu Apr 13 2017 00:34:18 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5092230114181120'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |-
+              try:
+                  import addlink
+                  
+                  addlink.article_chain = ['https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy']
+                  def my_first_link(URL):
+                      return 'https://en.wikipedia.org/wiki/Point_and_click'
+                  
+                  addlink.find_first_link = my_first_link
+                  addlink.target_url = 'https://en.wikipedia.org/wiki/Point_and_click'
+                  
+                  def my_crawl(search_history, target_url, max_steps=25):
+                      if search_history[-1] == target_url:
+                          #print("We've found the target article!")
+                          return False
+                      elif len(search_history) > max_steps:
+                          #print("The search has gone on suspiciously long, aborting search!")
+                          return False
+                      elif search_history[-1] in search_history[:-1]:
+                          #print("We've arrived at an article we've already seen, aborting search!")
+                          return False
+                      else:
+                          return True
+                  
+                  addlink.continue_crawl = my_crawl   
+                  addlink.web_crawl()
+                  #print('hello')
+                  if addlink.article_chain !=['https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy', 'https://en.wikipedia.org/wiki/Point_and_click']:
+                      print('error1-secretstring')
+
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+                  #print("This code will not work as of just yet, since we have not defined article_chain and find_first_link, and we haven't included continue_crawl in our file. Press the 'Submit Answer' button to see our solution.")
+                  
+            executor_test_code: |
+              #print("This code will not work as of just yet, since we have not defined article_chain and find_first_link, and we haven't included continue_crawl in our file. Press the 'Submit Answer' button to see our solution.")
+
+              print("This code will not work as of just yet, since we have not defined article_chain and find_first_link, and we haven't included continue_crawl in our file. Press the 'Submit Answer' button to test your code.")
+            gae_grading_code: |
+              solution_text = '''You can add the current `first_link` to the `article_chain` with:
+              ```python
+              article_chain.append(first_link)
+              ```
+
+              Now the `while` loop looks like this:
+              ```python
+              while continue_crawl(article_chain, target_url): 
+                  # download html of last article in article_chain
+                  # find the first link in that html
+                  first_link = find_first_link(article_chain[-1])
+                  # add the first link to article chain
+                  article_chain.append(first_link)
+                  # delay for about two seconds
+              ```
+              There's only one step left to go!
+              '''
+
+              #grade_result['correct']=True
+
+
+              def find_errors(s):
+                  explanation_str = '''Your code produced the wrong result. Did you use append to add the new link to the article chain?'''
+
+                  errors = []
+
+                  if ('error1-secretstring' in s):
+                      errors.append(explanation_str)
+                  
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              # feedback.append("Click *NEXT* to see our solution.") #uncomment if the feedback really is on the next concept
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 250240
+    key: fc9de7a9-9ec8-4378-9c6e-2a3d225802ec
+    locale: en-us
+    version: 1.0.0
+    title: Implementing the Program III
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 00:28:44 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250241
+      - 250242
+    atoms:
+      - id: 250241
+        key: d96f18f7-34e9-4b21-bc39-b8616a5ecde8
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 22:49:49 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Just Wait a Moment!
+          ================
+          Work out the final step in the `while` loop - how to make Python wait for two seconds. 
+          You might need to do some research to find a relevant Python package and/or command to use. Add an import statement to the top part if needed, and then a line of code at the bottom of the indented block.
+        instructor_notes: ''
+        resources: null
+      - id: 250242
+        key: e1b823ab-71b6-4e26-8cd8-c496bb4487fa
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Thu Apr 13 2017 00:58:07 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '4703024875438080'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              import datetime
+
+              try:
+                  import sleep
+                  
+                  sleep.article_chain = ['https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy']
+                  def my_first_link(URL):
+                      return 'https://en.wikipedia.org/wiki/Point_and_click'
+                  
+                  sleep.find_first_link = my_first_link
+                  sleep.target_url = 'https://en.wikipedia.org/wiki/Point_and_click'
+                  
+                  def my_crawl(search_history, target_url, max_steps=25):
+                      if search_history[-1] == target_url:
+                          #print("We've found the target article!")
+                          return False
+                      elif len(search_history) > max_steps:
+                          #print("The search has gone on suspiciously long, aborting search!")
+                          return False
+                      elif search_history[-1] in search_history[:-1]:
+                          #print("We've arrived at an article we've already seen, aborting search!")
+                          return False
+                      else:
+                          return True
+                  
+                  
+                  sleep.continue_crawl = my_crawl 
+                  before_time = datetime.datetime.now()
+                  sleep.web_crawl()
+                  #print('hello')
+                  after_time = datetime.datetime.now()
+                  time_diff = after_time - before_time
+                  
+                  if time_diff.seconds <2:
+                      print('error2-secretstring')
+                  elif time_diff.seconds >3:
+                      print('error3-secretstring')
+                      
+                  if sleep.article_chain !=['https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy', 'https://en.wikipedia.org/wiki/Point_and_click']:
+                      print('error1-secretstring')
+
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+                  #print("This code will not work as of just yet, since we have not defined article_chain and find_first_link, and we haven't included continue_crawl in our file. Press the 'Submit Answer' button to see our solution.")
+                  
+            executor_test_code: |
+              try:
+                  import addlink
+              except Exception as e:
+                  print("This code will not work as of just yet, since we have not defined article_chain and find_first_link, and we haven't included continue_crawl in our file. Press the 'Submit Answer' button to test your code.")
+            gae_grading_code: |
+              solution_text = '''We can use the [`time` module](https://docs.python.org/3/library/time.html), which is part of the standard library, to make the code wait for a certain length of time before continuing. In this case, the code would be
+
+              ```python
+              import time
+
+              while continue_crawl(article_chain, target_url): 
+                  # download html of last article in article_chain
+                  # find the first link in that html
+                  first_link = find_first_link(article_chain[-1])
+                  # add the first link to article chain
+                  article_chain.append(first_link)
+                  # delay for about two seconds
+                  time.sleep(2)
+              ```
+
+              When you come to put this all together, don't forget to put the `import` statement at the top of the file, not just above this block.'''
+
+              def find_errors(s):
+                  explanation_str = '''Your code produced the wrong result. Make sure to use append to add the new link to the article chain.'''
+
+                  errors = []
+
+                  if ('error1-secretstring' in s):
+                      errors.append(explanation_str)
+                  
+                  if ('error2-secretstring' in s):
+                      errors.append("It looks like you did not make Python wait for two seconds.")
+                  
+                  if ('error3-secretstring' in s):
+                      errors.append("It looks like you made Python wait for longer than two seconds.")
+                  
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Did you remember to add necessary import statements?'.format(error_msg))
+
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              # feedback.append("Click *NEXT* to see our solution.") #uncomment if the feedback really is on the next concept
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 250243
+    key: cfa1bf86-0dd3-4b33-8340-7c63d078d62a
+    locale: en-us
+    version: 1.0.0
+    title: Iterative Programming I
+    semantic_type: Concept
+    updated_at: 'Mon Jun 26 2017 21:13:30 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250244
+      - 291908
+      - 250245
+      - 250247
+      - 250246
+      - 340147
+      - 250248
+      - 250249
+    atoms:
+      - id: 250244
+        key: c74451c7-4c59-4ddc-b8aa-53619caf9e0c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 22:53:38 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Finding the First Link
+          ============
+        instructor_notes: ''
+        resources: null
+      - id: 291908
+        key: 69eb8277-792e-40f1-ad12-40acc4520d6b
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L5 30 Finding The First Link
+        semantic_type: VideoAtom
+        updated_at: 'Mon Jul 03 2017 17:46:16 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53026'
+          youtube_id: Z-uuXDrMzqM
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/April/58e879a6_ud1110-intropy-l5-30-finding-the-first-link/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e879a6_ud1110-intropy-l5-30-finding-the-first-link/ud1110-intropy-l5-30-finding-the-first-link_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e879a6_ud1110-intropy-l5-30-finding-the-first-link/ud1110-intropy-l5-30-finding-the-first-link_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e879a6_ud1110-intropy-l5-30-finding-the-first-link/ud1110-intropy-l5-30-finding-the-first-link_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e879a6_ud1110-intropy-l5-30-finding-the-first-link/ud1110-intropy-l5-30-finding-the-first-link_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e879a6_ud1110-intropy-l5-30-finding-the-first-link/hls/playlist.m3u8'
+      - id: 250245
+        key: 7ee55fd3-31ba-48cf-98bf-fd33a1a1ddaa
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 22:55:06 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Function Scaffolding
+          =============
+
+          Before I start coding the `find_first_link` function, let's sketch out the subtasks the function will need to do. Let's start out by writing the first line of the function and a comment explaining what it will return. These are the parts of the function that Charlie needs to work as expected.
+
+          ```python
+          def find_first_link(url):
+              # return the first link as a string, or return None if there is no link
+          ```
+
+          Now I can fill in the intermediate steps:
+
+          ```python
+          def find_first_link(url):
+              # get the HTML from "url", use the requests library
+              # feed the HTML into Beautiful Soup
+              # find the first link in the article
+              # return the first link as a string, or return None if there is no link
+          ```
+
+          Now that I have a plan I can implement it. It's always possible to start coding without a plan, but I've found that a few minutes of planning can prevent hours of wasted time. As I work I'll replace these comments with working code.
+
+          The first subtask is pretty simple, we learned how to do this when we tried the requests library:
+          ```python
+          # get the HTML from "url", use the requests library
+          response = requests.get(url)
+          html = response.text
+          ```
+
+          The next step is `# feed the HTML into Beautiful Soup`. I learned how to do that earlier when trying out the library. The next step, finding the first link, will take some effort, so I'll simply stub that in for now.
+
+          ```python
+          def find_first_link(url):
+              response = requests.get(url)
+              html = response.text
+              soup = bs4.BeautifulSoup(html, "html.parser")
+
+              # TODO: find the first link in the article, or set to None if
+              # there is no link in the article.
+              article_link = "a url, or None"
+
+              if article_link:
+                  return article_link
+          ```
+
+          With this work out of the way, we can move on to writing the code that will find the first link in an article.
+        instructor_notes: ''
+        resources: null
+      - id: 250247
+        key: 09b71a25-8633-4dcc-8364-219c70199dec
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 23:03:57 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Finding the First Link: First Attempt
+          ===============
+        instructor_notes: ''
+        resources: null
+      - id: 250246
+        key: 552674d5-0c24-4d88-98a3-3c5ce067ff6e
+        locale: en-us
+        version: 1.0.0
+        title: Finding the First Link
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 03:27:47 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '44214'
+          youtube_id: _bPdJBJtNqo
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/January/586c43b8_32-finding-the-first-link-1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43b8_32-finding-the-first-link-1/32-finding-the-first-link-1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43b8_32-finding-the-first-link-1/32-finding-the-first-link-1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43b8_32-finding-the-first-link-1/32-finding-the-first-link-1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43b8_32-finding-the-first-link-1/32-finding-the-first-link-1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43b8_32-finding-the-first-link-1/hls/playlist.m3u8'
+      - id: 340147
+        key: 059e0264-825c-45ce-acec-c870daeeec13
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 21:15:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          #### Video Update
+
+          The web is always changing, and this case is no different. As of this writing (June 2017) the structure of Wikipedia pages has changed such that the main body of the articles are one level deeper than that shown in the video. The expression to be used should instead be:
+          ```python
+          soup.find(id='mw-content-text').find(class_="mw-parser-output").p.a.get('href')
+          ```
+
+          The second `.find(class_="mw-parser-output")` enters the `div` element with the class name "mw-parser-output". Note that we have to use the argument `class_` since `class` is a reserved keyword in Python.
+        instructor_notes: ''
+        resources: null
+      - id: 250248
+        key: 18c54d64-6765-4a3a-b8d2-d500cbb0369b
+        locale: en-us
+        version: 1.0.0
+        title: Does it work?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Jun 26 2017 21:24:14 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Try this Beautiful Soup code on the html from any Wikipedia article other than [A.J.W. McNeilly](https://en.wikipedia.org/wiki/A.J.W._McNeilly). Download the HTML, create a soup object, and try the code snippet from the text box above.
+            ```python
+            soup.find(id='mw-content-text').find(class_="mw-parser-output").p.a.get('href')
+            ```
+            Does it work? If it doesn't work what do you think went wrong?
+          correct_feedback: |-
+            Did it work? Great? Try running the code again on another article, does this code *always* work?
+
+            Did it not work? Uh oh, this code only works on some articles. That's not good!
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1484089039028
+              text: 'yes'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1484089058049
+              text: 'no'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 250249
+        key: 4b04c73d-cf70-4c06-9257-f15500332f4a
+        locale: en-us
+        version: 1.0.0
+        title: Reflect
+        semantic_type: ReflectAtom
+        updated_at: 'Tue Jan 10 2017 23:03:18 GMT+0000 (UTC)'
+        is_public: true
+        instructor_notes: null
+        resources: null
+        question:
+          title: null
+          semantic_type: TextQuestion
+          evaluation_id: null
+          text: If your test run didn't work what do you think went wrong? How is your test article different from the A.J.W. McNeilly article?
+        answer:
+          text: 'The A.J.W. McNeilly article was pretty simple by Wikipedia standards. Articles with infoboxes, pronunciation guides, and inconveniently placed footnotes introduce new problems for us to solve.'
+          video: null
+  - id: 250250
+    key: 1f5c8c7a-32c6-4d17-9907-a82c09ac38fd
+    locale: en-us
+    version: 1.0.0
+    title: Iterative Programming II
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:34:00 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250251
+      - 287804
+      - 250252
+      - 250253
+      - 250254
+      - 250256
+      - 291906
+    atoms:
+      - id: 250251
+        key: 1a19adfd-567e-4802-8e2c-e1b461ec4fc3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Mar 25 2017 00:25:20 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Finding the First Link: Second Attempt
+          ===============
+        instructor_notes: ''
+        resources: null
+      - id: 287804
+        key: db99eb94-71d2-4095-bd87-34e0535d4a56
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L5 34 Finding The First Link 2
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 08:42:55 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52160'
+          youtube_id: bsMtF-705EU
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d5b8c9_ud1110-intropy-l5-34-finding-the-first-link-2/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5b8c9_ud1110-intropy-l5-34-finding-the-first-link-2/ud1110-intropy-l5-34-finding-the-first-link-2_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5b8c9_ud1110-intropy-l5-34-finding-the-first-link-2/ud1110-intropy-l5-34-finding-the-first-link-2_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5b8c9_ud1110-intropy-l5-34-finding-the-first-link-2/ud1110-intropy-l5-34-finding-the-first-link-2_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5b8c9_ud1110-intropy-l5-34-finding-the-first-link-2/ud1110-intropy-l5-34-finding-the-first-link-2_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5b8c9_ud1110-intropy-l5-34-finding-the-first-link-2/hls/playlist.m3u8'
+      - id: 250252
+        key: 28b72970-6920-48b2-9f6d-ffccd79b9f02
+        locale: en-us
+        version: 1.0.0
+        title: Children and Descendents
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Tue Jan 10 2017 23:11:41 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            Which of these methods might help us find the link we want, rather than one that's a distant descendent of the `mw-content-text` div tag? Select every method that seem relevant.
+          correct_feedback: That's right! The `children` method finds direct descendants. We can also use the `find_all` method and set the `recursive` argument to `False` so that it only finds children.
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1484089497037
+              text: the `extract` method
+              is_correct: false
+              incorrect_feedback: '`extract` will modify the HTML tree. That isn''t necessary to solve our problem.'
+            - id: a1484089507636
+              text: the `find_all` method
+              is_correct: true
+              incorrect_feedback: Did you check all methods that might help?
+            - id: a1484089508654
+              text: the `insert_after` method
+              is_correct: false
+              incorrect_feedback: '`insert_after` will modify the HTML tree. That isn''t necessary to solve our problem.'
+            - id: a1484089509260
+              text: the `prettify` method
+              is_correct: false
+              incorrect_feedback: 'That method is helpful for printing HTML, which isn''t helpful right now. Our problem is that we want to find a paragraph that is a child of `mw-content-text`, rather than a distant descendant.'
+            - id: a1484089509846
+              text: the `children` method
+              is_correct: true
+              incorrect_feedback: Did you check all methods that might help?
+      - id: 250253
+        key: 13b0786f-5c77-405c-9071-1aad60e84176
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 21:22:41 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Trying a New Technique
+          ==============
+
+          I rewrote my code, this time it uses the `find_all` method:
+
+          ```python
+          content_div = soup.find(id="mw-content-text").find(class_="mw-parser-output")
+          for element in content_div.find_all("p", recursive=False):
+              if element.a:
+                  first_relative_link = element.a.get('href')
+                  break
+          ```
+
+          The first line finds the div that contains the article's body.
+          The next line loops over each `<p>` tag in the div, if that tag is a child of the div. [The documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#recursive) tells us that, "If you only want Beautiful Soup to consider direct children, you can pass in recursive=False."
+
+          The body of the loop checks to see if an `a` tag is in the paragraph. If so, it gets the url from the link, stores it in `first_relative_link`, and ends the loop.
+
+          Note: I could also have written this using the `children` method. The body of the loop would be different.
+        instructor_notes: ''
+        resources: null
+      - id: 250254
+        key: 9996a7e8-efce-422f-a886-3dc44fc9316a
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Jun 26 2017 21:23:17 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Try this Beautiful Soup code on the html from a new test article. Does it work? If it doesn't work what do you think went wrong?
+
+            ```python
+            content_div = soup.find(id="mw-content-text").find(class_="mw-parser-output")
+            for element in content_div.find_all("p", recursive=False):
+                if element.a:
+                    first_relative_link = element.a.get('href')
+                    break
+            ```
+          correct_feedback: 'Did it not work? Uh oh, this code only works on some articles. That''s not good!'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1484090090620
+              text: 'yes'
+              is_correct: false
+              incorrect_feedback: 'Did it work? Great? Try running the code again on another article, does this code *always* work?'
+            - id: a1484090141003
+              text: 'no'
+              is_correct: true
+              incorrect_feedback: null
+      - id: 250256
+        key: effae3ac-f674-4532-bb98-ba88a50d4a1e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 23:17:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Squashing Bugs
+          ============
+        instructor_notes: ''
+        resources: null
+      - id: 291906
+        key: a2fc812b-33d3-4c09-9370-abd74831b5ae
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L5 37 Squashing Bugs
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 09:12:52 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53025'
+          youtube_id: X-GqfxYpaw0
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/April/58e8795d_ud1110-intropy-l5-37-squashing-bugs/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e8795d_ud1110-intropy-l5-37-squashing-bugs/ud1110-intropy-l5-37-squashing-bugs_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e8795d_ud1110-intropy-l5-37-squashing-bugs/ud1110-intropy-l5-37-squashing-bugs_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e8795d_ud1110-intropy-l5-37-squashing-bugs/ud1110-intropy-l5-37-squashing-bugs_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e8795d_ud1110-intropy-l5-37-squashing-bugs/ud1110-intropy-l5-37-squashing-bugs_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e8795d_ud1110-intropy-l5-37-squashing-bugs/hls/playlist.m3u8'
+  - id: 250259
+    key: 1990e1c5-ee22-447b-9577-0469ba97bf14
+    locale: en-us
+    version: 1.0.0
+    title: Iterative Programming III
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:33:57 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250260
+      - 250261
+      - 250262
+    atoms:
+      - id: 250260
+        key: 9670d841-9161-4c5a-95cc-01896fe2a0ce
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 23:18:59 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Finding the First Link: Third Attempt
+          ===============
+        instructor_notes: ''
+        resources: null
+      - id: 250261
+        key: 90dc7029-5bdd-4f61-b452-be9712eee61c
+        locale: en-us
+        version: 1.0.0
+        title: Reflect
+        semantic_type: ReflectAtom
+        updated_at: 'Tue Jan 10 2017 23:19:27 GMT+0000 (UTC)'
+        is_public: true
+        instructor_notes: null
+        resources: null
+        question:
+          title: null
+          semantic_type: TextQuestion
+          evaluation_id: null
+          text: 'How can we ensure that our code only finds links to ordinary articles, and not links to footnotes, pronunciation guides, or other strange things? There are countless ways to accomplish this, so brainstorm a few approaches and describe the solution that you think is best.'
+        answer:
+          text: Let's see how your solution compares to mine. Feel free to implement your idea too!
+          video: null
+      - id: 250262
+        key: 55be0f94-8e11-4900-a2d6-7ea5d9e580e2
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 21:27:06 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          There are many ways to make sure the link we find is to a Wikipedia article. I chose a lazy technique that's based on my solution to the last problem: I'm using the `recursive=False` option of the `find` method:
+
+          ```python
+          content_div = soup.find(id="mw-content-text").find(class_="mw-parser-output")
+          for element in content_div.find_all("p", recursive=False):
+              if element.find("a", recursive=False):
+                  first_relative_link = element.find("a", recursive=False).get('href')
+                  break
+          ```
+
+          This works because "special links" like footnotes and pronunciation keys all seem to be wrapped in more div tags. Since these special links aren't direct descendants of a paragraph tag, I can skip them using the same technique as before. I used the `find` method this time rather than `find_all` because `find` returns the first tag it finds rather than a list of matching tags.
+
+          Try this code for yourself, or invent your own implementation of the `find_first_link` function. Does it work consistently? 
+        instructor_notes: ''
+        resources: null
+  - id: 250264
+    key: 54271309-d408-4178-bf0a-d93b39ed94da
+    locale: en-us
+    version: 1.0.0
+    title: Finishing Touches
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:33:55 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 250265
+      - 250270
+      - 250269
+      - 250271
+    atoms:
+      - id: 250265
+        key: be4108a4-3bf6-418b-8dec-a852c4a2d67a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 21:28:43 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Putting the Pieces Together
+          =================
+
+          After some more testing in the interactive Python interpreter I'm ready to paste the code extractor code into the `find_first_link` function. This is the completed function neatly formatted and commented:
+
+          ```python
+          def find_first_link(url):
+              response = requests.get(url)
+              html = response.text
+              soup = bs4.BeautifulSoup(html, "html.parser")
+
+              # This div contains the article's body
+              # (June 2017 Note: Body nested in two div tags)
+              content_div = soup.find(id="mw-content-text").find(class_="mw-parser-output")
+
+              # stores the first link found in the article, if the article contains no
+              # links this value will remain None
+              article_link = None
+
+              # Find all the direct children of content_div that are paragraphs
+              for element in content_div.find_all("p", recursive=False):
+                  # Find the first anchor tag that's a direct child of a paragraph.
+                  # It's important to only look at direct children, because other types
+                  # of link, e.g. footnotes and pronunciation, could come before the
+                  # first link to an article. Those other link types aren't direct
+                  # children though, they're in divs of various classes.
+                  if element.find("a", recursive=False):
+                      article_link = element.find("a", recursive=False).get('href')
+                      break
+
+              if not article_link:
+                  return 
+
+              # Build a full url from the relative article_link url
+              first_link = urllib.parse.urljoin('https://en.wikipedia.org/', article_link)
+
+              return first_link
+          ```
+
+          There is one new line here, `first_link = urllib.parse.urljoin('https://en.wikipedia.org/', article_link)`. This is necessary because of another wrinkle that Charlie and I didn't anticipate in our planning. The links in Wikipedia articles are relative urls like `wiki/Templebryan_Stone_Circle`, rather than absolute urls like https://en.wikipedia.org/wiki/Templebryan_Stone_Circle . I searched the web to see how to create an absolute url from a relative url and found [this explanation](http://stackoverflow.com/a/476521/770271).
+
+          If you're curious you can learn more about relative and absolute urls at the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL).
+        instructor_notes: ''
+        resources: null
+      - id: 250270
+        key: 414af9b0-1c47-42f2-aa99-69b7cf9e5a58
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 23:33:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Running the Completed Program
+          ============
+        instructor_notes: ''
+        resources: null
+      - id: 250269
+        key: 05ac9063-a3f7-4f9a-a8fc-ba3f6eb0bc49
+        locale: en-us
+        version: 1.0.0
+        title: The Completed Program
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 03:58:09 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '44215'
+          youtube_id: yGDHoIOfwt8
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/January/586c43bc_41-the-completed-program/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43bc_41-the-completed-program/41-the-completed-program_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43bc_41-the-completed-program/41-the-completed-program_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43bc_41-the-completed-program/41-the-completed-program_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43bc_41-the-completed-program/41-the-completed-program_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/586c43bc_41-the-completed-program/hls/playlist.m3u8'
+      - id: 250271
+        key: 9b1cfc18-e671-41bc-ab8e-ac3ccd0c7359
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 21:29:51 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          WikipediaCrawler.py
+          =========
+
+          ```python
+          import time
+          import urllib
+
+          import bs4
+          import requests
+
+
+          start_url = "https://en.wikipedia.org/wiki/Special:Random"
+          target_url = "https://en.wikipedia.org/wiki/Philosophy"
+
+          def find_first_link(url):
+              response = requests.get(url)
+              html = response.text
+              soup = bs4.BeautifulSoup(html, "html.parser")
+
+              # This div contains the article's body
+              # (June 2017 Note: Body nested in two div tags)
+              content_div = soup.find(id="mw-content-text").find(class_="mw-parser-output")
+
+              # stores the first link found in the article, if the article contains no
+              # links this value will remain None
+              article_link = None
+
+              # Find all the direct children of content_div that are paragraphs
+              for element in content_div.find_all("p", recursive=False):
+                  # Find the first anchor tag that's a direct child of a paragraph.
+                  # It's important to only look at direct children, because other types
+                  # of link, e.g. footnotes and pronunciation, could come before the
+                  # first link to an article. Those other link types aren't direct
+                  # children though, they're in divs of various classes.
+                  if element.find("a", recursive=False):
+                      article_link = element.find("a", recursive=False).get('href')
+                      break
+
+              if not article_link:
+                  return
+
+              # Build a full url from the relative article_link url
+              first_link = urllib.parse.urljoin('https://en.wikipedia.org/', article_link)
+
+              return first_link
+
+          def continue_crawl(search_history, target_url, max_steps=25):
+              if search_history[-1] == target_url:
+                  print("We've found the target article!")
+                  return False
+              elif len(search_history) > max_steps:
+                  print("The search has gone on suspiciously long, aborting search!")
+                  return False
+              elif search_history[-1] in search_history[:-1]:
+                  print("We've arrived at an article we've already seen, aborting search!")
+                  return False
+              else:
+                  return True
+
+          article_chain = [start_url]
+
+          while continue_crawl(article_chain, target_url):
+              print(article_chain[-1])
+
+              first_link = find_first_link(article_chain[-1])
+              if not first_link:
+                  print("We've arrived at an article with no links, aborting search!")
+                  break
+
+              article_chain.append(first_link)
+
+              time.sleep(2) # Slow things down so as to not hammer Wikipedia's servers
+          ```
+        instructor_notes: ''
+        resources: null
+  - id: 250272
+    key: 0f113d0a-359c-465f-800c-75ee7c5e1ce1
+    locale: en-us
+    version: 1.0.0
+    title: Conclusion
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:37:56 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 293630
+      - 290533
+      - 293631
+      - 290535
+    atoms:
+      - id: 293630
+        key: acfcff11-b061-4ff4-9b07-560a084b2d0a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Apr 13 2017 01:17:29 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          We did it! 
+          =======
+          Great job! Here's a recap of what we did.
+        instructor_notes: ''
+        resources: null
+      - id: 290533
+        key: 28a2f49a-f245-4bb3-a7dd-fa7633be31a6
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L5 43 Case Study Review
+        semantic_type: VideoAtom
+        updated_at: 'Mon Jul 03 2017 14:21:38 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52166'
+          youtube_id: jiZwuN6zTFs
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d5d666_ud1110-intropy-l5-43-case-study-review/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d666_ud1110-intropy-l5-43-case-study-review/ud1110-intropy-l5-43-case-study-review_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d666_ud1110-intropy-l5-43-case-study-review/ud1110-intropy-l5-43-case-study-review_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d666_ud1110-intropy-l5-43-case-study-review/ud1110-intropy-l5-43-case-study-review_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d666_ud1110-intropy-l5-43-case-study-review/ud1110-intropy-l5-43-case-study-review_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d666_ud1110-intropy-l5-43-case-study-review/hls/playlist.m3u8'
+      - id: 293631
+        key: 4af47138-96fc-4e2c-94e5-46b8fd843f7f
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Apr 13 2017 01:18:45 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Good job!
+          ======
+          You learned a lot in this course. Keep on learning!
+        instructor_notes: ''
+        resources: null
+      - id: 290535
+        key: 32691bd5-551d-4e71-8362-b3426405812c
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L5 44 Bye Bye!
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 04:48:16 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52165'
+          youtube_id: lRYvuMf33eY
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d5d5a9_ud1110-intropy-l5-44-bye-bye/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d5a9_ud1110-intropy-l5-44-bye-bye/ud1110-intropy-l5-44-bye-bye_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d5a9_ud1110-intropy-l5-44-bye-bye/ud1110-intropy-l5-44-bye-bye_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d5a9_ud1110-intropy-l5-44-bye-bye/ud1110-intropy-l5-44-bye-bye_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d5a9_ud1110-intropy-l5-44-bye-bye/ud1110-intropy-l5-44-bye-bye_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5d5a9_ud1110-intropy-l5-44-bye-bye/hls/playlist.m3u8'

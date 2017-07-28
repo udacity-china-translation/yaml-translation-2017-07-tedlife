@@ -1,0 +1,385 @@
+id: 268705
+key: 8b2a9d63-0ff5-48ff-90d3-a9855b701dae
+locale: en-us
+version: 1.0.0
+title: Welcome to Advanced Android
+semantic_type: Lesson
+updated_at: 'Fri Jul 28 2017 00:17:02 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58fa754f_lesson-blue/lesson-blue.png'
+  width: 500
+  height: 500
+video: null
+summary: 'A quick guide to the course outline, and steps to download any of the code samples to follow along with the lessons.'
+lesson_type: Classroom
+duration: 10
+is_project_lesson: false
+_concepts_ids:
+  - 308832
+  - 277557
+_project_id: null
+concepts:
+  - id: 308832
+    key: 2281c9ce-24da-4e0e-9fae-27e813834bf9
+    locale: en-us
+    version: 1.0.0
+    title: Welcome to the Course!
+    semantic_type: Concept
+    updated_at: 'Tue May 09 2017 17:07:30 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 308833
+    atoms:
+      - id: 308833
+        key: 6e360cd8-ef51-47de-b59d-bb9a0b01a33d
+        locale: en-us
+        version: 1.0.0
+        title: Welcome to the Course!
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:42:17 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '55831'
+          youtube_id: DU0WPupWBak
+          subtitles: []
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/5911f6f5_1st5mins-generic/1st5mins-generic_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/5911f6f5_1st5mins-generic/1st5mins-generic_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/5911f6f5_1st5mins-generic/1st5mins-generic_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/5911f6f5_1st5mins-generic/1st5mins-generic_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/May/5911f6f5_1st5mins-generic/hls/playlist.m3u8'
+  - id: 277557
+    key: 41b82e3c-2797-46e5-8a66-684098ca8cbb
+    locale: en-us
+    version: 1.0.0
+    title: Guide to the Course Code
+    semantic_type: Concept
+    updated_at: 'Tue Apr 18 2017 17:46:31 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 277580
+      - 277589
+      - 277587
+      - 298495
+      - 277592
+      - 298494
+      - 277591
+      - 277599
+      - 277598
+      - 277605
+      - 277601
+      - 277607
+      - 277602
+      - 277610
+      - 277603
+      - 277620
+      - 277614
+    atoms:
+      - id: 277580
+        key: b5606420-a730-4da7-9d35-3e1052d9ea5b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Apr 17 2017 23:58:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # Guide to the Course Code
+
+          Welcome to Advanced Android! In this course, you'll be creating and coding seven different sample apps to learn about the advanced capabilities of Android. They are:
+
+          * [AndroidMe](https://github.com/udacity/Android_Me/) - AndroidMe is an app that lets you style your own Android by customizing it's hair and clothing! It uses [Fragments](https://developer.android.com/guide/components/fragments.html), modular sections of an Activity, to create a flexible and responsive UI.
+          * [Emojify](https://github.com/udacity/AdvancedAndroid_Emojify) - Emojify is a fun app that turns your face in a selfie into an appropriate Emoji based on your facial expression! This app is your introduction to using libraries.
+          * [Squawker](https://github.com/udacity/AdvancedAndroid_Squawker/) - Squawker is a social media app where the course instructors send "Squawks" whenever the mood strikes. This app shows new server data in real time, in a battery efficient way.
+          * [ShushMe](https://github.com/udacity/AdvancedAndroid_Shushme) - ShushMe is an app that turns your device silent whenever you enter any of a list of places of your choice. This app is your introduction to [Geofences](https://developer.android.com/training/location/geofencing.html).
+          * [ClassicalMusicQuiz](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz) - This app is simple audio-based quiz where you try to guess the composer by listening to a musical piece! It's your introduction to using [Android Media Players](https://developer.android.com/guide/topics/media/mediaplayer.html).
+          * [MyGarden](https://github.com/udacity/AdvancedAndroid_MyGarden) - MyGarden is a plant growing app, you get to add plants to your garden and keep them alive by regularly watering them. This app is your introduction to widgets
+          * [TeaTime](https://github.com/udacity/AdvancedAndroid_TeaTime) - TeaTime is a mock tea ordering app that demonstrates various uses of the [Espresso Testing framework](https://developer.android.com/training/testing/ui-testing/espresso-testing.html) (i.e. Views, AdapterViews, Intents, IdlingResources).
+
+
+          ## Github
+          To navigate the code, some familiarity with the version control system [Git](https://git-scm.com/) and the associated website [GitHub](https://github.com/) is required. In general, knowledge of how version control systems (also called a VCS) work is a common prerequisite for developer jobs. Git is also a hugely popular VCS and is used by both Google and Udacity.
+
+          If you're not sure what Git or Github are and how to use them, we suggest taking the [Udacity course](https://www.udacity.com/course/how-to-use-git-and-github--ud775) about it. There's also plenty of other resources to get you started, such as GitHub's own [interactive tutorial](https://try.github.io/levels/1/challenges/1). To use our repositories, you'll need to be comfortable with the following skills:
+
+          * How to clone a GitHub repo
+          * How to read a diff on GitHub
+          * What a branch in git is
+          * How to switch between branches using the checkout command
+          * How to stage and commit code
+
+          ## Structure of the Course Code
+
+          Each code repository in this class has a chain of commits that looks like this:
+
+
+
+        instructor_notes: ''
+        resources: null
+      - id: 277589
+        key: 8921e5cd-800b-417a-a705-1a97b28e3c81
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Tue Mar 07 2017 18:50:59 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58befe2e_listofcommits/listofcommits.png'
+        width: 419
+        height: 585
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 277587
+        key: ec4e03b1-95fc-4ac0-8f8e-b262bfaa19cf
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Mar 07 2017 18:39:33 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          These commits show every step you'll take to create the app. They include **Exercise** commits and **Solution** commits. Exercise commits contain instructions for completing the exercise, while solution commits show the completed exercise. You can tell what a commit is by looking at its commit message. 
+
+          For example, **TFCM.01-Exercise-AddGradleDependencies** is the first code step in the Firebase Cloud Messaging (FCM) lesson. This is the exercise commit, and the exercise is called Add Gradle Dependencies.
+
+          Each commit also has a **branch** associated with it of the same name as the commit message, seen below:
+        instructor_notes: ''
+        resources: null
+      - id: 298495
+        key: 052f5c37-eab0-436f-aa9c-81afe7cde6dd
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Tue Apr 18 2017 17:46:53 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58f650f2_screen-shot-2017-04-18-at-10.46.09-am/screen-shot-2017-04-18-at-10.46.09-am.png'
+        width: 1610
+        height: 124
+        caption: Access all branches from this tab
+        resources: null
+        instructor_notes: null
+      - id: 277592
+        key: c3dd2ce6-6c01-4922-8bf8-1e230b8b268e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Tue Mar 07 2017 18:39:55 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58befe76_listofbranches/listofbranches.png'
+        width: 427
+        height: 553
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 298494
+        key: 79fe5774-b447-4e0e-8fe8-771d3cc21010
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Tue Apr 18 2017 17:45:48 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58f650a8_screen-shot-2017-04-18-at-10.44.34-am/screen-shot-2017-04-18-at-10.44.34-am.png'
+        width: 1696
+        height: 1294
+        caption: The branches are also accessible from the drop-down in the "Code" tab
+        resources: null
+        instructor_notes: null
+      - id: 277591
+        key: 59de69d3-8480-41b6-9f61-8e1c67d28bf3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Mar 07 2017 18:48:20 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Working with the Course Code
+
+          Here are the basic steps for working with and completing exercises in the repo. This information is linked whenever you start a new exercise project, so don't feel you need to memorize all of this! In fact, skim it now, make sure that you know generally how to do the different tasks, and then come back when you start your first exercise. 
+
+          The basic steps are:
+
+          1. Clone the repo
+          2. Checkout the exercise branch
+          3. Find and complete the TODOs
+          4. Optionally commit your code changes
+          5. Compare with the solution
+
+          **Step 1: Clone the repo**
+
+          As you go through the course, you'll be instructed to clone the different exercise repositories, so you don't need to set these up now. You can clone a repository from github in a folder of your choice with the command:
+
+          ```bash
+          git clone https://github.com/udacity/REPOSITORY_NAME.git
+          ```
+
+          **Step 2: Checkout the exercise branch**
+
+          As you do different exercises in the code, you'll be told which exercise you're on, as seen below:
+        instructor_notes: ''
+        resources: null
+      - id: 277599
+        key: f10a6852-c8f2-44c2-86b6-d58623a10933
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Tue Mar 07 2017 18:48:44 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf0087_exerciseexample/exerciseexample.png'
+        width: 417
+        height: 81
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 277598
+        key: 21db7ed6-4377-42ac-bb0a-f68891b98fa7
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Mar 07 2017 18:49:06 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          To complete an exercise, you'll want to check out the branch associated with that exercise. For the exercise above, the command to check out that branch would be:
+
+          ```bash
+          git checkout TFCM.01-Exercise-AddGradleDependencies
+          ```
+
+          **Step 3: Find and complete the TODOs**
+
+          This branch should always have **Exercise** in the title. Once you've checked out the branch, you'll have the code in the exact state you need. You'll even have TODOs, which are special comments that tell you all the steps you need to complete the exercise. You can easily navigate to all the TODOs using Android Studio's TODO tool. To open the TODO tool, click the button at the bottom of the screen that says TODO. This will display a list of all comments with TODO in the project. We've numbered the TODO steps so you can do them in order:
+        instructor_notes: ''
+        resources: null
+      - id: 277605
+        key: 02ae58d9-bfdf-4c0a-8348-5329adce9474
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Tue Mar 07 2017 18:50:20 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf00e7_todos/todos.png'
+        width: 878
+        height: 260
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 277601
+        key: 18e33712-c9ac-4074-b43e-87b21802a005
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Mar 07 2017 18:49:25 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          **Step 4: Optionally commit your code changes**
+
+          After You've completed the TODOs, you can optionally commit your changes. This will allow you to see the code you wrote whenever you return to the branch. The following git code will add and save **all** your changes.
+
+          ```bash
+          git add .
+          git commit -m "Your commit message"
+          ```
+
+          **Step 5: Compare with the solution **
+
+          Most exercises will have a list of steps for you to check off in the classroom. Once you've checked these off, you'll see a pop up window with a link to the solution code. Note the **Diff** link:
+        instructor_notes: ''
+        resources: null
+      - id: 277607
+        key: f62cf5fa-1283-4169-b874-b2799907b7f9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Tue Mar 07 2017 18:50:38 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf00f9_solutionwindow/solutionwindow.png'
+        width: 696
+        height: 484
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 277602
+        key: 44650aaf-76bc-47e4-b177-51097d027d06
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Mar 07 2017 18:49:38 GMT+0000 (UTC)'
+        is_public: true
+        text: 'The **Diff** link will take you to a Github diff as seen below:'
+        instructor_notes: ''
+        resources: null
+      - id: 277610
+        key: 1dd806c7-af9e-4956-a9a1-89d58d718550
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Tue Mar 07 2017 18:50:53 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf0108_diffsceenshot/diffsceenshot.png'
+        width: 753
+        height: 630
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 277603
+        key: 82a0ae03-c297-4e8b-8552-0a743ad943f9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Mar 07 2017 18:52:25 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          All of the code that was added in the solution is in green, and the removed code (which will usually be the TODO comments) is in red. 
+          ## Report Issues
+          Notice any issues with a repository? File a github issue in the repository:
+
+        instructor_notes: ''
+        resources: null
+      - id: 277620
+        key: 7a16c575-f05c-470e-b951-4093bf6abe1b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Tue Mar 07 2017 18:54:05 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf01c9_fileissue/fileissue.png'
+        width: 1008
+        height: 132
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 277614
+        key: 341706d8-7bfa-48a4-ad6e-39bf48903291
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Mar 07 2017 18:55:12 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          If you notice a general course issue and want to report it to us, please do! This can include typos, confusing statements, video issues or suggestions. You can report problems by sending an email to ticket.andnd(AT)mail.udacity.com. Make sure to have the subject of the email in the following format:
+
+           **Advanced Android - (Lesson Name) - (Issue description)**
+
+          In the body of the email, **please include a link** to the page you're having trouble with and clearly state what the issue is.
+        instructor_notes: ''
+        resources: null

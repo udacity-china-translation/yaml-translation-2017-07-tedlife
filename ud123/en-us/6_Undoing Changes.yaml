@@ -1,0 +1,853 @@
+id: 256065
+key: f02167ad-3ba7-40e0-a157-e5320a5b0dc8
+locale: en-us
+version: 1.0.0
+title: Undoing Changes
+semantic_type: Lesson
+updated_at: 'Wed Jul 05 2017 20:56:46 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58fa7637_lesson-teal/lesson-teal.png'
+  width: 500
+  height: 500
+video: null
+summary: 'Help! Disaster has struck! You don''t have to worry, though, because your project is tracked in version control! You''ll learn how to undo and modify changes that have been saved to the repository.'
+lesson_type: Classroom
+duration: 60
+is_project_lesson: false
+_concepts_ids:
+  - 266845
+  - 266846
+  - 266847
+  - 266848
+  - 266849
+  - 266850
+_project_id: null
+concepts:
+  - id: 266845
+    key: 50740c4a-054c-46da-910a-8d1344b18d33
+    locale: en-us
+    version: 1.0.0
+    title: Intro
+    semantic_type: Concept
+    updated_at: 'Mon Mar 20 2017 21:52:04 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 283737
+    atoms:
+      - id: 283737
+        key: b3d98ae1-70ba-4c81-b7c0-80ba9a86f4ec
+        locale: en-us
+        version: 1.0.0
+        title: Undoing Changes - Intro
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:19:17 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51657'
+          youtube_id: Kfi7l41wUVc
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58cc80f0_gitfinal-l6-01-undoing-changes-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc80f0_gitfinal-l6-01-undoing-changes-intro/gitfinal-l6-01-undoing-changes-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc80f0_gitfinal-l6-01-undoing-changes-intro/gitfinal-l6-01-undoing-changes-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc80f0_gitfinal-l6-01-undoing-changes-intro/gitfinal-l6-01-undoing-changes-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc80f0_gitfinal-l6-01-undoing-changes-intro/gitfinal-l6-01-undoing-changes-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc80f0_gitfinal-l6-01-undoing-changes-intro/hls/playlist.m3u8'
+  - id: 266846
+    key: e176503b-3eae-4b22-a1b3-2953bab3d5e5
+    locale: en-us
+    version: 1.0.0
+    title: Modifying The Last Commit
+    semantic_type: Concept
+    updated_at: 'Wed Feb 15 2017 23:04:20 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 266854
+      - 266855
+    atoms:
+      - id: 266854
+        key: e7b6ae7b-f7b0-4709-8ff1-32bca403eaf3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:03:54 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Changing The Last Commit
+
+          You've already made plenty of commits with the `git commit` command. Now with the `--amend` flag, you can alter the _most-recent_ commit.
+
+          ```bash
+          $ git commit --amend
+          ```
+
+          If your Working Directory is clean (meaning there aren't any uncommitted changes in the repository), then running `git commit --amend` will let you provide a new commit message. Your code editor will open up and display the original commit message. Just fix a misspelling or completely reword it! Then save it and close the editor to lock in the new commit message.
+        instructor_notes: ''
+        resources: null
+      - id: 266855
+        key: 1e7f5cd9-1931-4aa4-bba9-f26c4f13eaae
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:04:14 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Add Forgotten Files To Commit
+
+          Alternatively, `git commit --amend` will let you include files (or changes to files) you might've forgotten to include. Let's say you've updated the color of all navigation links across your entire website. You committed that change and thought you were done. But then you discovered that a special nav link buried deep on a page doesn't have the new color. You _could_ just make a new commit that updates the color for that one link, but that would have two back-to-back commits that do practically the exact same thing (change link colors).
+
+          Instead, you can amend the last commit (the one that updated the color of all of the other links) to include this forgotten one. To do get the forgotten link included, just:
+          * edit the file(s)
+          * save the file(s)
+          * stage the file(s)
+          * and run `git commit --amend`
+
+          So you'd make changes to the necessary CSS and/or HTML files to get the forgotten link styled correctly, then you'd save all of the files that were modified, then you'd use `git add` to stage all of the modified files (just as if you were going to make a new commit!), but then you'd run `git commit --amend` to update the most-recent commit instead of creating a new one.
+        instructor_notes: ''
+        resources: null
+  - id: 266847
+    key: 2e4b1c76-466d-494d-959c-a1f2aef5c7f7
+    locale: en-us
+    version: 1.0.0
+    title: Reverting A Commit
+    semantic_type: Concept
+    updated_at: 'Wed Feb 15 2017 23:07:09 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 266856
+      - 266858
+      - 266859
+      - 266860
+      - 266861
+      - 266862
+    atoms:
+      - id: 266856
+        key: 93d715f5-9d6d-4c0a-a3c8-a9b239dad9a5
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:04:41 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ##  What Is A Revert?
+
+          When you tell Git to **revert** a specific commit, Git takes the changes that were made in commit and does the exact opposite of them. Let's break that down a bit. If a character is added in commit A, if Git _reverts_ commit A, then Git will make a new commit where that character is deleted. It also works the other way where if a character/line is removed, then reverting that commit will _add_ that content back!
+
+          We ended the previous lesson with a merge conflict and resolved that conflict by setting the heading to `Adventurous Quest`. Let's say that there's a commit in your repository that changes the heading now to `Quests & Crusades`.
+        instructor_notes: ''
+        resources: null
+      - id: 266858
+        key: f6eebf34-1af6-476e-bc3e-c39cbd6d745d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 23:05:12 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4de9e_ud123-l6-git-revert-prep/ud123-l6-git-revert-prep.png'
+        width: 1172
+        height: 632
+        caption: _The Terminal application showing the log of a repository. The most-recent commit changes the heading from "Adventurous Quest" to "Quests & Crusades"._
+        resources: null
+        instructor_notes: null
+      - id: 266859
+        key: 5733df47-0335-47c1-a8f3-2f8f25c62d71
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:05:44 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## The `git revert` Command
+
+          Now that I've made a commit with some changes, I can revert it with the `git revert` command
+
+          ```bash
+          $ git revert <SHA-of-commit-to-revert>
+          ```
+
+          Since the SHA of the most-recent commit is `db7e87a`, to revert it:
+          I'll just run `git revert db7e87a` (this will pop open my code editor to edit/accept the provided commit message)
+
+          I'll get the following output:
+        instructor_notes: ''
+        resources: null
+      - id: 266860
+        key: 0bd442e8-61de-4f42-a964-28f74871b666
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 23:06:14 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4dedb_ud123-l6-git-revert-post/ud123-l6-git-revert-post.png'
+        width: 1172
+        height: 400
+        caption: _The Terminal application showing the output of reverting a commit. The output provides the commit message of the commit that was reverted. It also creates a new commit to record this change._
+        resources: null
+        instructor_notes: null
+      - id: 266861
+        key: fddaf43b-6ac5-490a-bf0d-5c8e3af9449c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:06:25 GMT+0000 (UTC)'
+        is_public: true
+        text: Did you see how the output of the `git revert` command tells us what it reverted? It uses the commit message of the commit that I told it to revert. Something that's also important is that it creates _a new commit_.
+        instructor_notes: ''
+        resources: null
+      - id: 266862
+        key: d7a2ad6f-d634-44f0-bd46-09259c3dc522
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Mar 22 2017 19:07:23 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Revert Recap
+
+          To recap, the `git revert` command is used to reverse a previously made commit:
+
+          ```bash
+          $ git revert <SHA-of-commit-to-revert>
+          ```
+
+          This command:
+          * will undo the changes that were made by the provided commit
+          * creates a new commit to record the change
+
+          ### Further Research
+          * [git-revert](https://git-scm.com/docs/git-revert) from Git Docs
+          * [git revert](https://www.atlassian.com/git/tutorials/undoing-changes) Atlassian tutorial
+        instructor_notes: ''
+        resources: null
+  - id: 266848
+    key: fed81eb7-49b4-4129-9f6b-8201e0796fd8
+    locale: en-us
+    version: 1.0.0
+    title: Resetting Commits
+    semantic_type: Concept
+    updated_at: 'Sat Mar 04 2017 00:43:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 266863
+      - 266865
+      - 266869
+      - 266870
+      - 266871
+      - 266872
+      - 266873
+      - 266874
+      - 273035
+      - 266876
+      - 266877
+      - 266878
+      - 266879
+      - 266880
+      - 266881
+      - 266882
+      - 266883
+      - 266889
+      - 266888
+      - 266891
+      - 266892
+    atoms:
+      - id: 266863
+        key: 03354b5e-a36f-4344-8141-c8f40d37a57a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:07:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Reset vs Revert
+
+          At first glance, _resetting_ might seem coincidentally close to _reverting_, but they are actually quite different. Reverting creates a new commit that reverts or undos a previous commit. Resetting, on the other hand, _erases_ commits!
+        instructor_notes: ''
+        resources: null
+      - id: 266865
+        key: a0201847-a8d5-4df3-9c54-3b6344a4e615
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:09:13 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## ⚠️ Resetting Is Dangerous ⚠️
+
+          > You've got to be careful with Git's resetting capabilities. This is one of the few commands that lets you erase commits from the repository. If a commit is no longer in the repository, then its content is gone.
+
+          > To alleviate the stress a bit, Git _does_ keep track of everything for about 30 days before it completely erases anything. To access this content, you'll need to use the `git reflog` command. Check out these links for more info:
+
+          > * [git-reflog](https://git-scm.com/docs/git-reflog)
+          * [Rewriting History](https://www.atlassian.com/git/tutorials/rewriting-history)
+          * [reflog, your safety net](http://gitready.com/intermediate/2009/02/09/reflog-your-safety-net.html)
+        instructor_notes: ''
+        resources: null
+      - id: 266869
+        key: 81991f8d-5c18-458b-9ece-14532b613cf2
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:14:09 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Relative Commit References
+
+          You already know that you can reference commits by their SHA, by tags, branches, and the special `HEAD` pointer. Sometimes that's not enough, though. There will be times when you'll want to reference a commit relative to another commit. For example, there will be times where you'll want to tell Git about the commit that's one before the current commit...or two before the current commit. There are special characters called "Ancestry References" that we can use to tell Git about these relative references. Those characters are:
+          * `^` – indicates the parent commit
+          * `~` – indicates the _first_ parent commit
+
+          Here's how we can refer to previous commits:
+          * the parent commit – the following indicate the parent commit of the current commit
+              * HEAD^
+              * HEAD~
+              * HEAD~1
+          * the grandparent commit – the following indicate the grandparent commit of the current commit
+              * HEAD^^
+              * HEAD~2 
+          * the great-grandparent commit – the following indicate the great-grandparent commit of the current commit
+              * HEAD^^^
+              * HEAD~3
+
+          The main difference between the `^` and the `~` is when a commit is created _from a merge_. A merge commit has _two_ parents. With a merge commit, the `^` reference is used to indicate the _first_ parent of the commit while `^2` indicates the _second_ parent. The first parent is the branch you were on when you ran `git merge` while the second parent is the branch that was merged in.
+
+          It's easier if we look at an example. This what my `git log` currently shows:
+
+          ```bash
+          * 9ec05ca (HEAD -> master) Revert "Set page heading to "Quests & Crusades""
+          * db7e87a Set page heading to "Quests & Crusades"
+          *   796ddb0 Merge branch 'heading-update'
+          |\  
+          | * 4c9749e (heading-update) Set page heading to "Crusade"
+          * | 0c5975a Set page heading to "Quest"
+          |/  
+          *   1a56a81 Merge branch 'sidebar'
+          |\  
+          | * f69811c (sidebar) Update sidebar with favorite movie
+          | * e6c65a6 Add new sidebar content
+          * | e014d91 (footer) Add links to social media
+          * | 209752a Improve site heading for SEO
+          * | 3772ab1 Set background color for page
+          |/  
+          * 5bfe5e7 Add starting HTML structure
+          * 6fa5f34 Add .gitignore file
+          * a879849 Add header to blog
+          * 94de470 Initial commit
+          ```
+
+          Let's look at how we'd refer to some of the previous commits. Since `HEAD` points to the `9ec05ca` commt:
+          * `HEAD^` is the `db7e87a` commit
+          * `HEAD~1` is also the `db7e87a` commit
+          * `HEAD^^` is the `796ddb0` commit
+          * `HEAD~2` is also the `796ddb0` commit
+          * `HEAD^^^` is the `0c5975a` commit
+          * `HEAD~3` is also the `0c5975a` commit
+          * `HEAD^^^2` is the `4c9749e` commit (this is the grandparent's (`HEAD^^`) _second parent_ (`^2`))
+        instructor_notes: ''
+        resources: null
+      - id: 266870
+        key: 4748ada6-eafb-46cc-a2e4-bd83464d6321
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:15:28 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Which Commit?
+
+          Use this repository to answer the following quiz questions:
+
+
+          ```bash
+          * 9ec05ca (HEAD -> master) Revert "Set page heading to "Quests & Crusades""
+          * db7e87a Set page heading to "Quests & Crusades"
+          *   796ddb0 Merge branch 'heading-update'
+          |\  
+          | * 4c9749e (heading-update) Set page heading to "Crusade"
+          * | 0c5975a Set page heading to "Quest"
+          |/  
+          *   1a56a81 Merge branch 'sidebar'
+          |\  
+          | * f69811c (sidebar) Update sidebar with favorite movie
+          | * e6c65a6 Add new sidebar content
+          * | e014d91 (footer) Add links to social media
+          * | 209752a Improve site heading for SEO
+          * | 3772ab1 Set background color for page
+          |/  
+          * 5bfe5e7 Add starting HTML structure
+          * 6fa5f34 Add .gitignore file
+          * a879849 Add header to blog
+          * 94de470 Initial commit
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 266871
+        key: 3dd6117c-4754-4dc1-a290-cefacc642b07
+        locale: en-us
+        version: 1.0.0
+        title: Which commit?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Feb 15 2017 23:16:43 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Which commit is referenced by `HEAD~6`?
+          correct_feedback: Yep! You just start at the current commit and work back 6 commits.
+          video_feedback: null
+          default_feedback: That doesn't look right. Remember that the `~` indicates the first parent and that the number (in this case `6`) indicates how many parents to count back. So find the commit that `HEAD` points to and go back six commits.
+          answers:
+            - id: a1487200543058
+              text: 4c9749e
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487200564347
+              text: 0c5975a
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487200565134
+              text: 1a56a81
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487200566410
+              text: f69811c
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487200566949
+              text: e014d91
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487200577899
+              text: 209752a
+              is_correct: true
+              incorrect_feedback: null
+      - id: 266872
+        key: 57144021-1d3b-4cda-a23c-32a8b66e3f2a
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Thu Mar 23 2017 01:34:09 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'You did so well on that last one, why not give this one a go! Using the same repository, which commit is referenced by `HEAD~4^2`?'
+          default_feedback: That doesn't look right… What's the difference between the `~` and `^` icons? Remember that `^2` doesn't mean the same thing as `~2`!
+          correct_feedback: That's right! `HEAD~4` references the fourth parent commit of the current one and then the `^2` tells us that it's the _second_ parent of the merge commit (the one that got merged in!).
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: f69811c
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+      - id: 266873
+        key: 23c9c63c-89aa-4f65-b549-f6a704295033
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Mar 22 2017 19:08:29 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## The `git reset` Command
+
+          The `git reset` command is used to reset (erase) commits:
+
+          ```bash
+          $ git reset <reference-to-commit>
+          ```
+
+          It can be used to:
+          * move the HEAD and current branch pointer to the referenced commit
+          * erase commits
+          * move committed changes to the staging index
+          * unstage committed changes
+        instructor_notes: ''
+        resources: null
+      - id: 266874
+        key: 03375d86-763e-4711-ad00-c46827c34e5e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:18:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Git Reset's Flags
+
+          The way that Git determines if it erases, stages previously committed changes, or unstages previously committed changes is by the flag that's used. The flags are:
+          * `--mixed`
+          * `--soft`
+          * `--hard`
+
+          It's easier to understand how they work with a little animation.
+        instructor_notes: ''
+        resources: null
+      - id: 273035
+        key: fff106c3-cbd2-4a43-a98e-f77faabf7897
+        locale: en-us
+        version: 1.0.0
+        title: Nd016 WebND Ud123 Gitcourse BETAMOJITO L6 17 Soft Vs Medium Vs Hard Walkthrough
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:18:19 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51046'
+          youtube_id: UN7ki2G2yKc
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58b9dc90_nd016-webnd-ud123-gitcourse-betamojito-l6-17-soft-vs-medium-vs-hard-walkthrough/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc90_nd016-webnd-ud123-gitcourse-betamojito-l6-17-soft-vs-medium-vs-hard-walkthrough/nd016-webnd-ud123-gitcourse-betamojito-l6-17-soft-vs-medium-vs-hard-walkthrough_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc90_nd016-webnd-ud123-gitcourse-betamojito-l6-17-soft-vs-medium-vs-hard-walkthrough/nd016-webnd-ud123-gitcourse-betamojito-l6-17-soft-vs-medium-vs-hard-walkthrough_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc90_nd016-webnd-ud123-gitcourse-betamojito-l6-17-soft-vs-medium-vs-hard-walkthrough/nd016-webnd-ud123-gitcourse-betamojito-l6-17-soft-vs-medium-vs-hard-walkthrough_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc90_nd016-webnd-ud123-gitcourse-betamojito-l6-17-soft-vs-medium-vs-hard-walkthrough/nd016-webnd-ud123-gitcourse-betamojito-l6-17-soft-vs-medium-vs-hard-walkthrough_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc90_nd016-webnd-ud123-gitcourse-betamojito-l6-17-soft-vs-medium-vs-hard-walkthrough/hls/playlist.m3u8'
+      - id: 266876
+        key: 63aea17f-4a37-4142-88a7-2dd5e9ed08e4
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:19:21 GMT+0000 (UTC)'
+        is_public: true
+        text: "> ## \uD83D\uDCA1 Backup Branch \uD83D\uDCA1\n\n> Remember that using the `git reset` command will _erase_ commits from the current branch. So if you want to follow along with all the resetting stuff that's coming up, you'll need to create a branch on the current commit that you can use as a backup. \n\n> Before I do any resetting, I usually create a `backup` branch on the most-recent commit so that I can get back to the commits if I make a mistake:\n\n> ```bash\n$ git branch backup\n```"
+        instructor_notes: ''
+        resources: null
+      - id: 266877
+        key: 60984e31-fcbb-4eb1-83c4-e2dfd811bc25
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:20:12 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Reset's `--mixed` Flag
+
+          Let's look at each one of these flags.
+
+          ```bash
+          * 9ec05ca (HEAD -> master) Revert "Set page heading to "Quests & Crusades""
+          * db7e87a Set page heading to "Quests & Crusades"
+          * 796ddb0 Merge branch 'heading-update'
+          ```
+
+          Using the sample repo above with `HEAD` pointing to `master` on commit `9ec05ca`, running `git reset --mixed HEAD^` will take the changes made in commit `9ec05ca` and move them to the working directory.
+        instructor_notes: ''
+        resources: null
+      - id: 266878
+        key: 3ff45517-b0a8-42f0-b9c1-9ccb0d6b281b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 23:20:52 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4e242_ud123-l6-git-revert-mixed/ud123-l6-git-revert-mixed.png'
+        width: 1277
+        height: 661
+        caption: _The Terminal application showing the result of resetting with the `--mixed` flag. The changes are unstaged._
+        resources: null
+        instructor_notes: null
+      - id: 266879
+        key: c84501cd-8774-44d4-a75a-6f5df9cc7135
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:21:30 GMT+0000 (UTC)'
+        is_public: true
+        text: "> ## \uD83D\uDCA1 Back To Normal \uD83D\uDCA1\n\n> If you created the `backup` branch prior to resetting anything, then you can easily get back to having the `master` branch point to the same commit as the `backup` branch. You'll just need to:\n1. remove the uncommitted changes from the working directory\n* merge `backup` into `master` (which will cause a Fast-forward merge and move `master` up to the same point as `backup`)\n\n> ```bash\n$ git checkout -- index.html\n$ git merge backup\n```"
+        instructor_notes: ''
+        resources: null
+      - id: 266880
+        key: 26729e51-6ff2-4c20-bf03-8d6a566a8f87
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:21:56 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Reset's `--soft` Flag
+
+          Let's use the same few commits and look at how the `--soft` flag works:
+
+          ```bash
+          * 9ec05ca (HEAD -> master) Revert "Set page heading to "Quests & Crusades""
+          * db7e87a Set page heading to "Quests & Crusades"
+          * 796ddb0 Merge branch 'heading-update'
+          ```
+
+          Running `git reset --soft HEAD^` will take the changes made in commit `9ec05ca` and move them directly to the Staging Index.
+        instructor_notes: ''
+        resources: null
+      - id: 266881
+        key: 49c58cdd-1b50-4683-8b86-b6e2fab321ad
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 23:22:12 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4e29a_ud123-l6-git-revert-soft/ud123-l6-git-revert-soft.png'
+        width: 1277
+        height: 545
+        caption: _The Terminal application showing the result of resetting with the `--soft` flag. The changes are moved to the Staging Index._
+        resources: null
+        instructor_notes: null
+      - id: 266882
+        key: 4589e92d-bb58-4d1a-869d-22a3c313b620
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:22:35 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Reset's `--hard` Flag
+
+          Last but not least, let's  look at the `--hard` flag:
+
+          ```bash
+          * 9ec05ca (HEAD -> master) Revert "Set page heading to "Quests & Crusades""
+          * db7e87a Set page heading to "Quests & Crusades"
+          * 796ddb0 Merge branch 'heading-update'
+          ```
+
+          Running `git reset --hard HEAD^` will take the changes made in commit `9ec05ca` and erases them.
+        instructor_notes: ''
+        resources: null
+      - id: 266883
+        key: d917a9f9-665d-4e61-8c1c-2339f16af4f7
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 23:22:51 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4e2c2_ud123-l6-git-revert-hard/ud123-l6-git-revert-hard.png'
+        width: 1277
+        height: 545
+        caption: _The Terminal application showing the result of resetting with the `--hard` flag. The changes are moved erased._
+        resources: null
+        instructor_notes: null
+      - id: 266889
+        key: c7f0aff8-cf01-4c47-b80f-057038d03cc5
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:24:41 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Now it's your turn!
+
+          Refer to the following repository:
+
+          ```bash
+          * e014d91 (HEAD -> master, footer) Add links to social media
+          * 209752a Improve site heading for SEO
+          * 3772ab1 Set background color for page
+          * 5bfe5e7 Add starting HTML structure
+          * 6fa5f34 Add .gitignore file
+          * a879849 Add header to blog
+          * 94de470 Initial commit
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 266888
+        key: a1229e6c-1a39-4fd1-8b41-e64e11aa8e51
+        locale: en-us
+        version: 1.0.0
+        title: Where's The Content?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Feb 15 2017 23:24:15 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'What will happen to the changes from the `3772ab1` commit if `git reset --hard HEAD~3` is run? Will the changes be in the Staging Index, in the Working Directory, or complete erased?'
+          correct_feedback: 'Yep! If the `--hard` flag is used, the changes are thrown out!'
+          video_feedback: null
+          default_feedback: That doesn't look right… Pay attention to what _flag_ is being used with the `git reset` command.
+          answers:
+            - id: a1487200983003
+              text: Staging Index
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487201004561
+              text: Working Directory
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487201005053
+              text: erased
+              is_correct: true
+              incorrect_feedback: null
+      - id: 266891
+        key: 1326ce4a-19bf-48ff-a7ac-6c1a2b6f34bf
+        locale: en-us
+        version: 1.0.0
+        title: Where's The Content 2?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Feb 15 2017 23:25:35 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'What will happen to the changes from the `209752a` commit if `git reset --soft HEAD^^` is run? Will the changes be in the Staging Index, in the Working Directory, or complete erased?'
+          correct_feedback: 'Yep! If the `--soft` flag is used, the changes are moved to the Staging Index!'
+          video_feedback: null
+          default_feedback: That doesn't look right… What does the `--soft` flag do?
+          answers:
+            - id: a1487201103314
+              text: Staging Index
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1487201111082
+              text: Working Directory
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487201111663
+              text: erased
+              is_correct: false
+              incorrect_feedback: null
+      - id: 266892
+        key: 3d0d5f52-3786-4275-a578-9619daa9d04e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:26:40 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Reset Recap
+
+          To recap, the `git reset` command is used erase commits:
+
+          ```bash
+          $ git reset <reference-to-commit>
+          ```
+
+          It can be used to:
+          * move the HEAD and current branch pointer to the referenced commit
+          * erase commits with the `--hard` flag
+          * moves committed changes to the staging index with the `--soft` flag
+          * unstages committed changes `--mixed` flag
+
+          Typically, ancestry references are used to indicate previous commits. The ancestry references are:
+          * `^` – indicates the parent commit
+          * `~` – indicates the first parent commit
+
+          ### Further Research
+          * [git-reset](https://git-scm.com/docs/git-reset) from Git docs
+          * [Reset Demystified](https://git-scm.com/blog) from Git Blog
+          * [Ancestry References](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection#Ancestry-References) from Git Book
+        instructor_notes: ''
+        resources: null
+  - id: 266849
+    key: cfec1ae1-81c7-49ca-a2e8-899449763bf4
+    locale: en-us
+    version: 1.0.0
+    title: Lesson Outro
+    semantic_type: Concept
+    updated_at: 'Sat Mar 04 2017 00:43:51 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 273036
+    atoms:
+      - id: 273036
+        key: 8ac2e955-9c86-48d9-a393-90cdaec34ccb
+        locale: en-us
+        version: 1.0.0
+        title: Nd016 WebND Ud123 Gitcourse BETAMOJITO L6 29 Undoing Changes
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:19:35 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51047'
+          youtube_id: '-_PPVk2UZMU'
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58b9dc95_nd016-webnd-ud123-gitcourse-betamojito-l6-29-undoing-changes/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc95_nd016-webnd-ud123-gitcourse-betamojito-l6-29-undoing-changes/nd016-webnd-ud123-gitcourse-betamojito-l6-29-undoing-changes_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc95_nd016-webnd-ud123-gitcourse-betamojito-l6-29-undoing-changes/nd016-webnd-ud123-gitcourse-betamojito-l6-29-undoing-changes_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc95_nd016-webnd-ud123-gitcourse-betamojito-l6-29-undoing-changes/nd016-webnd-ud123-gitcourse-betamojito-l6-29-undoing-changes_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc95_nd016-webnd-ud123-gitcourse-betamojito-l6-29-undoing-changes/nd016-webnd-ud123-gitcourse-betamojito-l6-29-undoing-changes_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc95_nd016-webnd-ud123-gitcourse-betamojito-l6-29-undoing-changes/hls/playlist.m3u8'
+  - id: 266850
+    key: 60d2b050-0b84-4342-8d76-fe9b98887839
+    locale: en-us
+    version: 1.0.0
+    title: Course Outro
+    semantic_type: Concept
+    updated_at: 'Mon Mar 20 2017 21:52:22 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 283738
+      - 266893
+    atoms:
+      - id: 283738
+        key: 43eb2745-56f5-4b65-b4ce-6af80f970ef2
+        locale: en-us
+        version: 1.0.0
+        title: Gitfinal L6 30 Course Outro
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:19:35 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51658'
+          youtube_id: twn_cheqoK8
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58cc8108_gitfinal-l6-30-course-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc8108_gitfinal-l6-30-course-outro/gitfinal-l6-30-course-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc8108_gitfinal-l6-30-course-outro/gitfinal-l6-30-course-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc8108_gitfinal-l6-30-course-outro/gitfinal-l6-30-course-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc8108_gitfinal-l6-30-course-outro/gitfinal-l6-30-course-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc8108_gitfinal-l6-30-course-outro/hls/playlist.m3u8'
+      - id: 266893
+        key: 2d89f294-bc05-41a3-92d7-e48428f1855f
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:28:12 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Expand On Your Git Skills
+
+          * take the companion GitHub course
+          * create a repo to track your computer's settings - [https://dotfiles.github.io/](https://dotfiles.github.io/)
+          * develop the next, awesome feature for your personal project 
+        instructor_notes: ''
+        resources: null

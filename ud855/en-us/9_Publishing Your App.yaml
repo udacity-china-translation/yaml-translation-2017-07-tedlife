@@ -1,0 +1,1230 @@
+id: 268704
+key: e8a12d52-65b1-4f20-9fe4-5622c992631f
+locale: en-us
+version: 1.0.0
+title: Publishing Your App
+semantic_type: Lesson
+updated_at: 'Tue Jun 13 2017 16:16:29 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/5903cd27_screen-shot-2017-04-28-at-4.15.14-pm/screen-shot-2017-04-28-at-4.15.14-pm.png'
+  width: 876
+  height: 894
+video: null
+summary: 'This lesson will walk you through all the steps to set up your app for success, publish your app, and continue to grow your audience post-launch in Google Play!'
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+_concepts_ids:
+  - 291842
+  - 298518
+  - 291843
+  - 291844
+  - 291845
+  - 291846
+  - 298536
+  - 291847
+  - 291848
+  - 291849
+  - 291850
+  - 298545
+  - 291851
+  - 291852
+  - 291853
+  - 291854
+  - 291855
+  - 291857
+_project_id: null
+concepts:
+  - id: 291842
+    key: 8cf23a50-e2ba-422e-9344-032656630682
+    locale: en-us
+    version: 1.0.0
+    title: Introduction to Publishing
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:32:24 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 298332
+      - 292482
+    atoms:
+      - id: 298332
+        key: 7a6244c9-d949-43ff-9500-289df748f48e
+        locale: en-us
+        version: 1.0.0
+        title: 01 Intro
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:55 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53603'
+          youtube_id: x7Ok1Td1Po0
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f537fb_01-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f537fb_01-intro/01-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f537fb_01-intro/01-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f537fb_01-intro/01-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f537fb_01-intro/01-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f537fb_01-intro/hls/playlist.m3u8'
+      - id: 292482
+        key: 2af336e5-c231-47c9-9f46-28e335aae205
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 11 2017 17:40:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          The Android platform has immense reach! 
+
+          And with over 1 billion active Android users, Google Play Store is the ecosystem for developers to engage the world with their app.  
+
+          Here are just a few [powerful stories](https://developer.android.com/stories/index.html) of developers whose ideas have transformed their users’ and their own lives. 
+        instructor_notes: ''
+        resources: null
+  - id: 298518
+    key: 3908d2b5-4a8a-4760-a459-9304ad6ac3bd
+    locale: en-us
+    version: 1.0.0
+    title: Publishing Process
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:32:26 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 298527
+      - 298531
+      - 298530
+      - 298529
+      - 298528
+    atoms:
+      - id: 298527
+        key: 708d9a6b-ab6d-4210-b6be-127b27299f56
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 18 2017 20:58:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          The publishing process can be categorized into 3 phases
+          - Preparation for Release
+          - Distribution to Users
+          - Engagement and Growth of your Userbase
+
+          Each of these phases is just as important as the development of the app itself. To make sure your app shines in Google Play, and increase the chances that users will download it, let's review Google's <a href="https://developer.android.com/distribute/marketing-tools/launch-checklist.html" target="_blank">Launch Checklist</a>, which summarizes tasks to complete before publishing your app on Google Play. 
+
+          Don’t worry about implementing any of the tasks yet, this is just an overview so you're prepared to complete the tasks later.
+
+          Throughout the publishing process, you’ll be using the <a href="https://developer.android.com/distribute/console/index.html" target="_blank">Google Play Developer Console</a>. It’s your one-stop shop for managing your app’s life-cycle, from pre-launch testing to tracking your app’s acquisition stats and revenue reports afterwards.
+
+          Checkout the <a href="https://developer.android.com/distribute/console/features.html" target="_blank">features</a> it offers, and sign-up for an account. 
+        instructor_notes: ''
+        resources: null
+      - id: 298531
+        key: c19a0145-98f7-4ef1-81a3-bfa7a2e074dd
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Tue Apr 18 2017 20:58:20 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58f67de7_screen-shot-2017-04-18-at-1.56.11-pm/screen-shot-2017-04-18-at-1.56.11-pm.png'
+        width: 1374
+        height: 820
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 298530
+        key: 567827b1-85c9-4fcf-a24f-72d1cbb51304
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 18 2017 20:58:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          To use the Developer Console, sign in with a Google account, read and agree to the Google Play Developer distribution agreement, double-check the country where you're planning to distribute is listed, and prepare to have a credit card to pay the $25 registration fee. 
+
+          After you register, you’ll see your dashboard.
+        instructor_notes: ''
+        resources: null
+      - id: 298529
+        key: ad3ca348-7812-4201-ac4d-5c96a3c10438
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Tue Apr 18 2017 20:57:25 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58f67db0_screen-shot-2017-04-18-at-1.56.26-pm/screen-shot-2017-04-18-at-1.56.26-pm.png'
+        width: 1718
+        height: 884
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 298528
+        key: 4786f5f1-7636-48b2-b9c0-c34c26dee23b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 18 2017 21:01:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Use the tabs to navigate through all the many features in the console: check out all the apps you’ve created, create a new app, use Google Play game service, and more. In the Order Management tab, you can set-up a merchant account if your app is for-pay or has in-app products, and view your Crash Reports, Reviews, Stats and Financial Reports. 
+
+          From this quick overview, you can see Developer Console is pretty powerful!
+        instructor_notes: ''
+        resources: null
+  - id: 291843
+    key: 968ef580-2322-41f0-a2e3-3b8c6994b0b1
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Publishing Process'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:32:29 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 292483
+    atoms:
+      - id: 292483
+        key: 013be98e-58da-4411-bb9e-2fe77aa464c2
+        locale: en-us
+        version: 1.0.0
+        title: Familiarize Yourself with the Publishing Process
+        semantic_type: TaskListAtom
+        updated_at: 'Thu Apr 13 2017 18:48:06 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 'Review [Launch Checklist](https://developer.android.com/distribute/marketing-tools/launch-checklist.html)'
+          - 'Review [Google Play Developer Console](https://developer.android.com/distribute/console/index.html) features'
+          - Create a Google Play Developer Console Account
+        positive_feedback: Off to a great start! We'll take you through all the steps and show you the tools needed to launch your app in Google Play. Let's got!
+        video_feedback: null
+        description: 'Take some time to read through the documents listed below. No need to execute any of the tasks in the Launch Checklist, it is meant to give you an overview of the Publishing process.'
+  - id: 291844
+    key: 0f76a949-84aa-46df-a2fc-531efcf6f60d
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Policy Agreements'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:32:31 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 298335
+      - 292680
+      - 292687
+    atoms:
+      - id: 298335
+        key: 52072db8-0096-48fd-840c-cf261f6707cc
+        locale: en-us
+        version: 1.0.0
+        title: Publishing 3 Policy Agreements SC
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:55 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53605'
+          youtube_id: fgkNLu6pRHc
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5380a_publishing-3-policy-agreements-sc/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5380a_publishing-3-policy-agreements-sc/publishing-3-policy-agreements-sc_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5380a_publishing-3-policy-agreements-sc/publishing-3-policy-agreements-sc_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5380a_publishing-3-policy-agreements-sc/publishing-3-policy-agreements-sc_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5380a_publishing-3-policy-agreements-sc/publishing-3-policy-agreements-sc_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5380a_publishing-3-policy-agreements-sc/hls/playlist.m3u8'
+      - id: 292680
+        key: 0eb6a613-2e10-4045-bd3e-26117ccb54c4
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 11 2017 21:49:44 GMT+0000 (UTC)'
+        is_public: true
+        text: '"Let’s build the world’s most trusted source for apps and games" ([cite](https://play.google.com/about/developer-content-policy/))'
+        instructor_notes: ''
+        resources: null
+      - id: 292687
+        key: afed05bb-352a-4c83-aaa6-ab8c29f89e04
+        locale: en-us
+        version: 1.0.0
+        title: Review Policy Agreements
+        semantic_type: TaskListAtom
+        updated_at: 'Thu Apr 13 2017 18:48:17 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 'Review the [Google Play Policies and Guidelines](https://play.google.com/about/developer-content-policy/)'
+          - 'Review the [Google Developer Distribution Agreement](https://play.google.com/intl/ALL_us/about/developer-distribution-agreement.html)'
+        positive_feedback: 'With those policies under our belts, let''s move on to quality testing!'
+        video_feedback: null
+        description: |-
+          We're on Step #2 of the Launch Checklist - Understand Google Play Policies and Agreements
+
+          Take some time make sure you understand and comply with the Google Play program policies. Google Play does actively enforce the policies and any violations can lead to app suspension and even termination of your developer account. Do take these seriously.
+  - id: 291845
+    key: acf44a84-df2b-4f0e-b2a6-5a5e692d8fa8
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Quality Testing'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:32:34 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 298337
+      - 292695
+    atoms:
+      - id: 298337
+        key: 4a8c1d30-ce87-4a98-a73d-6166bed6e0a1
+        locale: en-us
+        version: 1.0.0
+        title: Publishing 4 Quality Testing SC
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:55 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53606'
+          youtube_id: GovA5OXsetk
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f53810_publishing-4-quality-testing-sc/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f53810_publishing-4-quality-testing-sc/publishing-4-quality-testing-sc_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f53810_publishing-4-quality-testing-sc/publishing-4-quality-testing-sc_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f53810_publishing-4-quality-testing-sc/publishing-4-quality-testing-sc_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f53810_publishing-4-quality-testing-sc/publishing-4-quality-testing-sc_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f53810_publishing-4-quality-testing-sc/hls/playlist.m3u8'
+      - id: 292695
+        key: 99d4cd6b-5a1d-449b-a1b0-82e92b2e1ffc
+        locale: en-us
+        version: 1.0.0
+        title: Quality Testing
+        semantic_type: TaskListAtom
+        updated_at: 'Thu Apr 13 2017 18:48:25 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - '[Core App Quality guidelines](https://developer.android.com/develop/quality-guidelines/core-app-quality.html) (Applies to all apps)'
+          - '[Tablet App Quality guidelines](https://developer.android.com/develop/quality-guidelines/tablet-app-quality.html) (If targeting tablets)'
+          - '[Education Guidelines](https://developers.google.com/edu/guidelines) (If app will be on Google Play for Education)'
+        positive_feedback: Nice job ensuring that your app meets these quality expectations. Your users will really appreciate it!
+        video_feedback: null
+        description: |-
+          We're at Step #3 in the Launch Checklist - Test for Quality. 
+
+          Setup a test environment to test your app against these guidelines:
+  - id: 291846
+    key: ca6d428f-fbbd-451b-bcef-5dff152d7866
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Determining App Setup'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:32:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 292735
+      - 292721
+    atoms:
+      - id: 292735
+        key: 52da3230-7fa5-4ebd-9fc2-2aff73a89241
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Apr 12 2017 00:16:11 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Determining App Setup
+
+          Now’s the time to determine much of your app’s setup. When publishing to Google Play, you’ll need to decide on a certain number of details:
+
+          ### Content Rating Level
+          Your app's content rating level inform users of it's maturity level. The possible rating levels are:
+          - Everyone
+          - Low maturity
+          - Medium maturity
+          - High maturity 
+
+
+          ### Country Distribution
+          Determine what countries and territories you'd like to distribute your app in. Usually, developers want to distribute as widely as possible to grow their customer base, but you may decide there are certain app requirements, launch dependencies or business needs which may cause you to exclude certain countries.
+
+          The countries you decide to launch in will affect:
+          - The need for localized app resources
+          - The need for localized app descriptions in the Developer Console
+          - Country specific requirements
+          - Time zone support
+          - Local pricing
+
+          ### App's Overall Size
+          As of the time of this publishing, the max size for an APK published on Google Play is 100MB. If your app is larger than this, Google Play allows you to attach two large expansion files that supplement your APK. To set this up, use [APK Expansion Files](https://developer.android.com/google/play/expansion-files.html). 
+
+          Also, before you build your release-ready APK, run [Proguard](https://developer.android.com/studio/build/shrink-code.html) to remove unused code and resources to shrink the size of your app binary.
+
+          ### Confirm Target Platform Versions & Device Screens
+          Ensure your app runs on the Android platform versions and device screen sizes you plan on.
+
+          Double-check the *minSdkVersion* which is the minimum version your app will be compatible with. Android platform versions are defined by the [API level](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels). 
+
+          For device screen sizes, run the app on a range of screen sizes and pixel densities. Checkout the [Support Multiple Screens](https://developer.android.com/guide/practices/screens_support.html) guide to understand how to prepare your app. Additionally, see the current breakdown of Android platform versions and screen sizes available in the world in the [Device Dashboard](https://developer.android.com/about/dashboards/index.html) to help you decide which versions and screen sizes to you'd like to target.  
+
+          Additionally, there are a number of 3rd party testing platforms that allow you to test your app on many real devices all in the cloud. For example, [Xamarin Test Cloud](https://www.xamarin.com/test-cloud). 
+
+          ### Free or Priced App?
+          You can publish your app as free to download or priced.
+
+          Free apps can be downloaded by any Android user in Google Play. Free apps must remain free; however, you can still sell [In-app Products](https://developer.android.com/google/play/billing/billing_overview.html#products) and [Subscriptions](https://developer.android.com/google/play/billing/billing_subscriptions.html) via Google Play's In-app [Billing Service](https://developer.android.com/google/play/billing/index.html). 
+
+          Priced apps can be downloaded only by users who are in a country that supports paid downloads and have registered a form of payment in Google Play, such as a credit card or Direct Carrier Billing. Priced apps can be changed to free at any time.
+
+          If you do decide on a priced app or are selling in-app products, you'll need to setup a [Google payments merchant account](https://developer.android.com/distribute/best-practices/launch/index.html) before you can publish.
+
+          ### In-app Billing or Android Pay
+
+          If your are looking for more ways to monetize your app and build engagement, you should consider [In-app Billing](https://developer.android.com/google/play/billing/index.html) 
+           which allows you to you sell either downloadable digital content in your app such media files or photos or Android Pay which simplifies selling physical goods and services such as food or clothing to your users.
+
+          ### Set Product Prices
+          If your app is priced or you’re selling in-app or physical products, determine the currency or types of currencies you’d like to accept. You have the flexibility in the Developer Console to price products individually in different currencies so you can adjust according to exchange rates and market conditions.
+
+          - [Offer apps in multiple currencies](https://support.google.com/googleplay/android-developer/answer/1169947)
+          - [Setup prices & app distribution for your app's country](https://support.google.com/googleplay/android-developer/answer/6334373?visit_id=1-636275525080183095-4138352002&rd=1#paid_free)
+          - [Transaction fees](https://support.google.com/googleplay/android-developer/answer/112622)
+          - [Tax rates & value-added tax](https://support.google.com/googleplay/android-developer/answer/138000)
+
+          ### Start Localization
+          Lastly, make sure your app meets localization needs. This includes app resources (e.g. strings, images, etc), your app's Google Play store listing details, and graphic assets screenshots, and videos.
+
+          Review the  [Localization Checklist](https://developer.android.com/distribute/best-practices/launch/localization-checklist.html) for key steps. 
+
+          For Resource localization, checkout the [Localizing with Resources](https://developer.android.com/guide/topics/resources/localization.html) guide. 
+        instructor_notes: ''
+        resources: null
+      - id: 292721
+        key: 1c94092b-e0e3-463d-8535-90393b12e99c
+        locale: en-us
+        version: 1.0.0
+        title: Determining App Setup
+        semantic_type: TaskListAtom
+        updated_at: 'Thu Apr 13 2017 18:48:33 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 'Step #4 - [Determine your App''s Content Rating](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#determine-rating)'
+          - 'Step #5 - [Determine Country Distribution](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#determine-country)'
+          - 'Step #6 - [Confirm Overall Size](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#confirm-size)'
+          - 'Step #7 - [Confirm Platform and Screen Ranges](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#confirm-platform)'
+          - 'Step #8 - [Decide Free or Priced](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#decide-price)'
+          - 'Step #9 - [Use In-app Billing](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#consider-billing)'
+          - 'Step #10 - [Set Prices for your Products](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#set-prices)'
+          - 'Step #11 - [Start Localization](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#start-localization)'
+        positive_feedback: 'With these basic setup decisions made, let''s move on and prepare the release-ready version of your app.'
+        video_feedback: null
+        description: 'Complete Steps #4 - 11 in the Launch Checklist.'
+  - id: 298536
+    key: e0b49044-e4d1-4dd7-9f94-e80dfbcba164
+    locale: en-us
+    version: 1.0.0
+    title: Prep for Release-Ready APK
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:32:38 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 298539
+      - 298541
+      - 298544
+    atoms:
+      - id: 298539
+        key: a3259bdf-b627-40bc-ae87-246a2934f785
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 18 2017 21:43:22 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # Prep for Release-Ready APK
+
+          Almost time for launch! After preparing your app to meet UI, compatibility, and quality requirements, it’s time to configure your app for release, upload the release-ready APK to your Developer Console and distribute to users.
+
+          Preparing the application for release is a required development task for all Android apps, and involves configuring, building, and testing a release version of the app. Before we begin this process, let's determine the materials and resources we’ll need to gather.
+
+          ## Cryptographic Key
+
+          First, you’ll need a Cryptographic key. Applications installed on an Android device must be digitally signed with a certificate that is owned by the app’s developer. In other words, the developer holds a private key to the app’s certificate. This certificate is used to identify the creator of the app and to maintain trust between applications.  
+
+          <a href="https://developer.android.com/studio/publish/app-signing.html" target="_blank">How to obtain a certificate to sign your application.</a>
+
+          ## App Icon
+
+          Next, double-check that your app’s icon meets the <a href="https://developer.android.com/guide/practices/ui_guidelines/icon_design_launcher.html" target="_blank">app launcher icon guidelines</a>.
+
+          An app’s launcher icon has 3 goals:
+          - Promotes the brand and tells the app’s story
+          - Helps users discover the app on Google Play
+          - Functions well in the launcher (meaning it looks great on any background and placed next to other icons) 
+        instructor_notes: ''
+        resources: null
+      - id: 298541
+        key: ca28926c-f076-4bda-9352-e8e92412c6a2
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Apr 24 2017 18:32:28 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## End-User License Agreement (EULA)
+
+          Earlier, in Step 2 of the checklist, we reviewed the <a href="https://play.google.com/intl/ALL_us/about/developer-distribution-agreement.html" target="_blank">Developer Distribution Agreement</a>, which is an agreement between Google and you, the developer. 
+
+          A EULA, on the other hand, is an agreement between you, the developer, and the end-user.
+
+          If we look at Section 5.4 of the Developer Distribution Agreement, it states:
+
+          *5.4 You grant to the user a non-exclusive, worldwide, and perpetual license to perform, display, and use the Product on the Device...If you choose, you may include a separate end user license agreement (EULA) in your Product that will govern the user’s rights to the Product, but, to the extent that EULA conflicts with this Agreement, this Agreement shall supersede the EULA.*
+
+          In other words, drafting your own EULA is not required, but could be helpful in protecting your intellectual property rights, limit your liability, and disclaim warranties. 
+
+          If you decide to draft your own EULA and need some examples to help get you started, you can check out the licenses for popular github projects:
+
+          - <a href="https://square.github.io/" target="_blank">Square Open Source</a> has several open source projects with license agreements that could fit your situation. Navigate to the License file for any project, to see which license they use. 
+          - The <a href="https://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">Apache License</a> is an open source software license popularly used for products users can freely use, modify, and distribute. 
+          - Another popular open source license is the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT license</a>. The MIT license is shorter, simpler, and allows users more freedom in using your product than the Apache License does.  
+          - If you need help choosing between types of open source licenses, check out <a href="http://www.choosealicense.com" target="_blank">www.choosealicense.com</a> to help you decide which open source license best fits your situation.
+
+          You can also check out the EULA for apps you commonly use already. 
+
+          If you have downloaded the Udacity app on your device, you can see the license wording we use directly in the app in the Settings menu, under License.
+
+          Google also has specific EULAs for their apps - for example, check out the one in Maps under the Settings menu.
+        instructor_notes: ''
+        resources: null
+      - id: 298544
+        key: 38e3a1f5-4593-4759-ac01-fa8a58429f8c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 18 2017 21:54:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Promotional Materials
+
+          Lastly, make sure you have the promotional or marketing materials ready to showcase your app so that it attracts new users on Google Play. For more info, see the <a href="https://support.google.com/googleplay/android-developer/answer/1078870" target="_blank">Graphic Assets for your Application documentation.</a>
+
+          Prepare screenshots for each supported device -- phone, tablet, TV, or wear. Make sure they meet the min and max dimensions so they represent your app in the best light on Google Play. Remember, all apps listed must have a high-res icon. A Feature graphic, displayed at the top of your Store Listing Page can grab a new user’s attention. 
+
+          Also consider promotional graphics, banner assets (for Android TV), 360 degree stereoscopic images (for Daydream-enabled apps), and a potential promo video.
+        instructor_notes: ''
+        resources: null
+  - id: 291847
+    key: bce4538d-6f38-46f0-b894-4db77f59f90c
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Prep for Release-Ready APK'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:32:41 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 292961
+      - 292971
+    atoms:
+      - id: 292961
+        key: 1ffff2bf-ba0b-4c9c-b384-575221a67fe7
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Apr 12 2017 17:05:35 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### Resources
+
+          **Cryptopgraphy Key**
+          - [Signing Your App - Certificates and Keystores](https://developer.android.com/studio/publish/app-signing.html)
+
+          **App Icon**
+          - [Launcher Icon Guidelines](https://developer.android.com/guide/practices/ui_guidelines/icon_design_launcher.html)
+          - [Graphic Assets for your Application documentation](https://support.google.com/googleplay/android-developer/answer/1078870)
+
+          **Resources to Write a EULA**
+          - [Square Open Source](https://square.github.io/)
+          - [Help choosing a license](https://choosealicense.com/)
+          - In the [Udacity App](https://play.google.com/store/apps/details?id=com.udacity.android&hl=en) -> Settings -> License
+
+          **Promo Materials**
+          - [Graphic Assets for your Application documentation](https://support.google.com/googleplay/android-developer/answer/1078870)
+        instructor_notes: ''
+        resources: null
+      - id: 292971
+        key: 89f8359e-89ce-4b65-bcf6-df29d1f3f631
+        locale: en-us
+        version: 1.0.0
+        title: 'Exercise: Prep for Release-ready APK'
+        semantic_type: TaskListAtom
+        updated_at: 'Thu Apr 13 2017 18:48:54 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 'Read the "Introduction" and "Gathering Materials and Resources" section of [Prepare for Release](https://developer.android.com/studio/publish/preparing.html)'
+          - 'Obtain a *Cryptopgraphy Key* - [Signing Your App - Certificates and Keystores](https://developer.android.com/studio/publish/app-signing.html)'
+          - Check that your *App’s icon meets the icon guidelines*
+          - Prep an *End-User License Agreement (EULA)*
+          - Prep *promotional or marketing materials*
+        positive_feedback: 'With that preparation complete, let''s move on to configuring your app.'
+        video_feedback: null
+        description: 'Almost time for launch! After preparing your app to meet UI, compatibility, and quality requirements, it’s time to configure your app for release, upload the release-ready APK to your Developer Console and distribute to users!'
+  - id: 291848
+    key: 91bd956a-d4bd-482e-be6b-0bf249e05958
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Configuring Your App for Release'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:32:44 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 292994
+      - 293469
+    atoms:
+      - id: 292994
+        key: 46f52ae7-a4e9-4669-8562-f8d030f9626b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Apr 24 2017 18:35:55 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # Configuring Your App for Release
+
+          With all the necessary materials gathered, let’s start configuring your app for release. This step involves making some configuration changes to the source code, resource files, and app manifest. Some of these steps are optional, but highly encouraged as good coding practices.
+
+          Follow these steps (All steps listed below have been taken from the [Configuring Your Application for Release](https://developer.android.com/studio/publish/preparing.html#publishing-configure) section of the [Prepare for Release](https://developer.android.com/studio/publish/preparing.html) guide):
+
+          ### Choose a good package name
+          Make sure you choose a package name that is suitable over the life of your application. You cannot change the package name after you distribute your application to users. You can set the package name in application's manifest file. For more information, see the [package](https://developer.android.com/guide/topics/manifest/manifest-element.html#package) attribute documentation.
+
+          ### Turn off logging and debugging
+          Make sure you deactivate logging and disable the debugging option before you build your application for release. You can deactivate logging by removing calls to [Log](https://developer.android.com/reference/android/util/Log.html)methods in your source files. You can disable debugging by removing the *android:debuggable* attribute from the *<application>* tag in your manifest file, or by setting the *android:debuggable* attribute to *false* in your manifest file. 
+          Also, remove any log files or static test files that were created in your project.
+
+          Also, you should remove all [Debug](https://developer.android.com/reference/android/os/Debug.html) tracing calls that you added to your code, such as [startMethodTracing()](https://developer.android.com/reference/android/os/Debug.html#startMethodTracing()) and [stopMethodTracing()](https://developer.android.com/reference/android/os/Debug.html#stopMethodTracing()) method calls.
+
+          ### Clean up your project directories
+          Clean up your project and make sure it conforms to the directory structure described in [Android Projects](https://developer.android.com/studio/projects/index.html#ApplicationProjects). Leaving stray or orphaned files in your project can prevent your application from compiling and cause your application to behave unpredictably. At a minimum you should do the following cleanup tasks:
+
+          - Review the contents of your *jni/, lib/, and src/* directories. The *jni/* directory should contain only source files associated with the [Android NDK](https://developer.android.com/ndk/index.html), such as *.c, .cpp, .h, and .mk* files. The *lib/* directory should contain only third-party library files or private library files, including prebuilt shared and static libraries (for example, *.so* files). The *src/* directory should contain only the source files for your application (*.java* and *.aidl* files). The *src/* directory should not contain any *.jar* files.
+
+          - Check your project for private or proprietary data files that your application does not use and remove them. For example, look in your project's *res/* directory for old drawable files, layout files, and values files that you are no longer using and delete them.
+
+          - Check your *lib/* directory for test libraries and remove them if they are no longer being used by your application.
+
+          - Review the contents of your *assets/* directory and your *res/raw/* directory for raw asset files and static files that you need to update or remove prior to release.
+
+
+          ### Review and update your manifest and Gradle build settings
+          Verify that the following manifest and build files items are set correctly:
+
+          - [<uses-permission>](https://developer.android.com/guide/topics/manifest/uses-permission-element.html) element. You should specify only those permissions that are relevant and required for your application.
+
+          - *android:icon* and *android:label* attributes. You must specify values for these attributes, which are located in the [<application>](https://developer.android.com/guide/topics/manifest/application-element.html) element. 
+
+          - *android:versionCode* and *android:versionName* attributes. We recommend that you specify values for these attributes, which are located in the [<manifest>](https://developer.android.com/guide/topics/manifest/manifest-element.html) element. For more information see [Versioning your Application](https://developer.android.com/studio/publish/versioning.html)
+
+          There are several additional manifest or build file elements that you can set if you are releasing your application on Google Play. For example, the *android:minSdkVersion* and *android:targetSdkVersion* attributes, which are located in the [<uses-sdk>](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html) element. For more information about these and other Google Play settings, see [Filters on Google Play](https://developer.android.com/google/play/filters.html)
+
+
+          ### Address compatibility issues
+          Android provides several tools and techniques to make your application compatible with a wide range of devices. To make your application available to the largest number of users, consider doing the following:
+
+          - **Add support for multiple screen configurations**: Make sure you meet the [best practices for supporting multiple screens](https://developer.android.com/guide/practices/screens_support.html#screen-independence). By supporting multiple screen configurations you can create an application that functions properly and looks good on any of the screen sizes supported by Android.
+
+          - **Optimize your application for Android tablet devices.**: If your application is designed for devices older than Android 3.0, make it compatible with Android 3.0 devices by following the guidelines and best practices described in [Optimizing Apps for Android 3.0](https://developer.android.com/guide/practices/optimizing-for-3.0.html).
+
+          - **Consider using the Support Library**: If your application is designed for devices running Android 3.x, make your application compatible with older versions of Android by adding the [Support Library](https://developer.android.com/topic/libraries/support-library/index.html) to your application project. The Support Library provides static support libraries that you can add to your Android application, which enables you to use APIs that are either not available on older platform versions or use utility APIs that are not part of the framework APIs.
+
+          ### Update URLs for servers and services
+          If your application accesses remote servers or services, make sure you are using the production URL or path for the server or service and not a test URL or path.
+
+          ### Implement Licensing (if you are releasing on Google Play)
+          If you are releasing a paid application through Google Play, consider adding support for Google Play Licensing. Licensing lets you control access to your application based on whether the current user has purchased it. Using Google Play Licensing is optional even if you are releasing your app through Google Play.
+
+          For more information about Google Play Licensing Service and how to use it in your application, see [Application Licensing](https://developer.android.com/google/play/licensing/index.html).
+
+        instructor_notes: ''
+        resources: null
+      - id: 293469
+        key: 56db7e13-5f26-4dfb-a322-4925eafa28c8
+        locale: en-us
+        version: 1.0.0
+        title: Configuring Your App for Release
+        semantic_type: TaskListAtom
+        updated_at: 'Thu Apr 13 2017 18:49:03 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - Choose a good package name
+          - Turn off logging and debugging
+          - Clean up your project directories
+          - Review and update your manifest and Gradle build settings
+          - Address compatibility issues
+          - Update URLs for servers and services
+          - Implement Licensing (if you are releasing on Google Play)
+        positive_feedback: 'With the configuration all done, we''re ready to build!'
+        video_feedback: null
+        description: 'Follow each step detailed in the [Configuring Your Application for Release](https://developer.android.com/studio/publish/preparing.html#publishing-configure) section.Check off each steps when you’ve completed it.'
+  - id: 291849
+    key: 5c682800-fd1c-49bf-8dae-be23d4faca99
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Building Your App for Release'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:21:24 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 293558
+      - 293593
+      - 293612
+    atoms:
+      - id: 293558
+        key: 57e2a2a3-caad-43c4-8f9a-4ba9b0853e91
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Apr 13 2017 00:11:43 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # Building Your App for Release
+
+          All APKs must be digitally signed with a certificate before they can be installed. To sign your release build, you can either:
+
+          (1) Use Android Studio to manually generated signed APKs, either one at a time or for multiple variants at once. Detailed [steps to manually sign your release build here](https://developer.android.com/studio/publish/app-signing.html#release-mode). 
+
+          or 
+
+          (2) Configure your Gradle build settings to handle signing automatically during the build process. Detailed steps to [Configure the build process to automatically sign your APK here](https://developer.android.com/studio/publish/app-signing.html#sign-auto). 
+
+        instructor_notes: ''
+        resources: null
+      - id: 293593
+        key: e89c20e5-57f5-4378-8f71-071b85d7f1a1
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Apr 12 2017 23:51:05 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### Secure your private key!!!
+          Keep your keystore (with private key) in a SAFE and SECURE place, and ensure that you have secure backups of them. If you publish an app to Google Play and then lose the key with which you signed your app, you will not be able to publish any updates to your app, since you must always sign all versions of your app with the same key. Don't end up as one of [these unhappy developers](http://stackoverflow.com/search?q=lost+my+android+keystore).
+        instructor_notes: ''
+        resources: null
+      - id: 293612
+        key: 35680ce2-03ae-468e-8afd-5b6e831a609d
+        locale: en-us
+        version: 1.0.0
+        title: Building Your App for Release
+        semantic_type: TaskListAtom
+        updated_at: 'Thu Apr 13 2017 18:49:10 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 'Sign Your Release Build either [manually](https://developer.android.com/studio/publish/app-signing.html#release-mode) or [automatically](https://developer.android.com/studio/publish/app-signing.html#sign-auto) by configuring your Gradle build'
+          - Secure a backup of your private key in a SAFE and SECURE place!
+        positive_feedback: 'Worth repeating, make sure you have a backup of your private key in a secure place!'
+        video_feedback: null
+        description: ''
+  - id: 291850
+    key: 246b90f1-a7e8-4ffb-88a8-12ab13baf428
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Testing Your App for Release'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:21:14 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 293614
+      - 293616
+    atoms:
+      - id: 293614
+        key: 50b892e8-2422-40fc-82f3-0aec7f3acc30
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Apr 13 2017 00:18:51 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Testing Your App for Release
+
+          Test the release build on at least 1 target handset device and 1 target tablet device.
+
+          Check that the UI elements are size correctly, app performance and battery efficiency function as expected. 
+           
+        instructor_notes: ''
+        resources: null
+      - id: 293616
+        key: bca2bb4b-ce84-4356-ad04-571d794a720e
+        locale: en-us
+        version: 1.0.0
+        title: Testing Your App for Release
+        semantic_type: TaskListAtom
+        updated_at: 'Thu Apr 13 2017 18:49:18 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - Release build has been tested on at least 1 target handset device and 1 target tablet device
+        positive_feedback: Woohoo! Time to get it into the hands of some users!
+        video_feedback: null
+        description: ''
+  - id: 298545
+    key: d5a85601-0e65-4080-9ef5-897a8a22758f
+    locale: en-us
+    version: 1.0.0
+    title: Alpha/Beta Testing
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:21:11 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 298546
+      - 298547
+      - 298549
+    atoms:
+      - id: 298546
+        key: 46b8eb8e-dda8-4a52-83e5-f2aab61bd2b2
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Apr 24 2017 19:30:05 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Alpha/Beta Testing
+
+          We're all done with Release Prep! All the work you put into preparing your app will be worth it when users get it into their hands.
+
+          **Before opening the floodgates and letting anyone access your app, it’s highly, highly recommended that you user test.**
+
+          User testing means finding real, live users to use your application, gathering their feedback on what works well and what doesn't to improve your app's experience.
+
+          During the development process, you should be testing along the way to catch any bugs and to make sure you’re moving the the right direction. 
+
+          User testing, especially pre-launch, can help you optimize for the smoothest user experience. Listening to your users is crucial to building features they actually want so they keep coming back. 
+
+          The Google Play Developer Console helps you test with an initial small group, called alpha testers, before moving on to a larger group of beta testers.
+
+          These testers cannot leave reviews or ratings, so there is no risk to your app’s Google Play rating.
+
+          ## Find Testers
+
+          First you’ll need to find testers. Consider your personal circles - friends, family, coworkers, classmates, and community members. For example, if you built an app for dog lovers to track their daily walks, you might find dog enthusiasts at Meetup groups who could be your future users.
+
+          Another source is an online site such as Reddit, which has sub-reddits specifically for <a href="https://www.reddit.com/r/alphaandbetausers/" target="_blank">alpha/beta testers</a>, beta testers, and Android apps.
+        instructor_notes: ''
+        resources: null
+      - id: 298547
+        key: 2606bd15-5045-4035-9a71-d387c0698082
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 18 2017 22:05:09 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Closed or Open Beta
+
+          During the beta testing phase, you can either run a  closed beta or open beta. 
+
+          A closed beta which means you test on a smaller group, or have a specific group of users you want to test your app. This is useful if you’re testing an existing app that you’ve published before, so only users in your test group will receive an update for updated test version. 
+
+          An open beta is run on a large group, AND your app is surfaced on the Play Store with a label that it’s a beta version.
+
+          If you run an open beta test, ANYONE can join your beta program and submit feedback privately to you. If you choose this option, really make sure your app is ready for this level of visibility. 
+
+          Again, open and closed beta testers reviews are NOT public. 
+        instructor_notes: ''
+        resources: null
+      - id: 298549
+        key: 533acb43-1021-4ed9-9fb7-54b30e2a2261
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 18 2017 22:07:11 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Get User Feedback
+          After you’ve selected who your users will be, how do you get feedback? 
+
+          You can get feedback by email, websites, a message forum such as Google Groups or G+ Communities, or other channels. 
+
+          If you're running an open test your testers can also provide you with <a href="https://support.google.com/googleplay/android-developer/answer/138230#browse_reviews" target="_blank">private feedback through the Play Store</a>.
+
+          Now’s your turn. Setup an alpha or beta test for your app to make sure it gets real-life review before going live!
+
+          Remember, your testers want to help you make the app experience awesome! Also remember to thank them for their time and feedback. Have fun in the testing process, and use it as a chance to learn more about how you can continue building the best product.
+        instructor_notes: ''
+        resources: null
+  - id: 291851
+    key: 6570ba40-ad4b-415c-9808-57249d455e77
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Alpha/Beta Testing'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:21:08 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 293617
+    atoms:
+      - id: 293617
+        key: ff589fea-f606-47da-8980-1b804d282a49
+        locale: en-us
+        version: 1.0.0
+        title: Alpha/Beta Testing
+        semantic_type: TaskListAtom
+        updated_at: 'Thu Apr 13 2017 18:49:24 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - '[Setup an Alpha/Beta Test](https://support.google.com/googleplay/android-developer/answer/3131213)'
+          - 'Gather feedback by email, websites, message forums, Google Groups, or in the [Developer Console](https://support.google.com/googleplay/android-developer/answer/138230#browse_reviews)'
+          - Incorporate user feedback from tests into app
+        positive_feedback: 'Understanding when and how to properly gather and incorporate user feedback can help you understand which parts of your app to focus on. Checkout some [great best practices](https://developer.android.com/distribute/best-practices/grow/user-reviews.html) here.'
+        video_feedback: null
+        description: ''
+  - id: 291852
+    key: 31c7e6c0-26f7-45ff-a11a-0809b4210af3
+    locale: en-us
+    version: 1.0.0
+    title: Pre-Launch Report
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:21:06 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 293618
+    atoms:
+      - id: 293618
+        key: c3523451-c8e4-4327-b5a9-d4d029dfa43e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Apr 13 2017 00:32:49 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Pre-Launch Report
+
+          Once you’ve uploaded and published an alpha or beta APK, enable [pre-launch report](https://support.google.com/googleplay/android-developer/answer/7002270?hl=en) in your Developer Console to generate a pre-launch report.
+
+          This report is an awesome summary providing you with information about *Crashes during testing*, *Screenshots from test devices*, and *any Security issues* found when testing your app on a wide range of devices!
+
+          With pre-launch report enabled, all your future alpha and beta APKs will be automatically tested for device compatibility, display issues, and security vulnerabilities.
+
+          [This Medium post](https://medium.com/@AruLNadhaN/awesome-pre-launch-reports-for-alpha-beta-apks-9960ac5c403c) has a useful walk-through of the Pre-Launch report features. 
+        instructor_notes: ''
+        resources: null
+  - id: 291853
+    key: 8d5a556f-53d9-4d0a-8897-34150f95219f
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Store Listing, Play Badge & Linking'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:21:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 293619
+      - 293620
+    atoms:
+      - id: 293619
+        key: 4079b773-5d92-4758-a4d8-c4b366a40924
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Apr 13 2017 00:39:10 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Completing the App’s Store Listing
+
+          With all that pre-launch preparation completed, you’re ready to showcase your app in all its glory to the world!
+
+          Review the reminders in Launch Checklist - [Step #15. Complete the App’s Store Listing](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#complete-details).
+
+          # Using Google Play Badges and Links to Promote your App
+
+          Use [Google Play badges](https://play.google.com/intl/en_us/badges/) to help promote your apps to Android users. Badges can link users to your products from web pages, ads, reviews etc. Additionally, use [link formats](https://developer.android.com/distribute/marketing-tools/linking-to-google-play.html) to link directly to your store listing page, to a list of your products, or to search results. 
+
+          These methods combined with social media, blog posts, videos, and other promotions can help drive more users to your app once it’s launched. 
+
+          Review additional details in Launch Checklist - [Step #16. Use Google Play Badges and Links in your Promotional Campaigns](https://developer.android.com/distribute/marketing-tools/launch-checklist.html).
+        instructor_notes: ''
+        resources: null
+      - id: 293620
+        key: 232b0a1f-d779-4087-a259-45fc813f0545
+        locale: en-us
+        version: 1.0.0
+        title: 'Store Listing, Play Badge & Linking'
+        semantic_type: TaskListAtom
+        updated_at: 'Thu Apr 13 2017 18:49:54 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - '[Complete the App’s Store Listing](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#complete-details)'
+          - 'Determine how you''ll [use Google Play Badges and Links in your Promotional Campaigns](https://developer.android.com/distribute/marketing-tools/launch-checklist.html)'
+        positive_feedback: Drum roll for the finale please...
+        video_feedback: null
+        description: ''
+  - id: 291854
+    key: 58be111e-8bbb-4bf4-a664-5448060e8ed2
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: You''re Ready to Publish!'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:21:00 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 293621
+      - 293756
+    atoms:
+      - id: 293621
+        key: 8ff6ce60-2a90-4d5d-907b-fa37c42c283b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Apr 13 2017 19:01:41 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # You’re Ready to Publish!
+
+          *High-five!* You’ve done a lot of prep work to set yourself up for success. Take a few moments to double-check task list items. Doing so will help prepare you for a smooth launch (unwanted surprises during launch are not fun).  
+
+          Once done, click the big ol’ **Publish** button in the Developer Console and do a happy dance! You’ve launched an app into the world!!!
+
+          Your app and related links will be available to users and be searchable in Google Play within a few hours. If you plan on releasing an update, review the [requirements for publishing updates](https://support.google.com/googleplay/android-developer/answer/113476?hl=en&topic=2365760&ctx=topic). 
+        instructor_notes: ''
+        resources: null
+      - id: 293756
+        key: 837e8f01-60cb-431f-834c-480b07c07cd0
+        locale: en-us
+        version: 1.0.0
+        title: Final Checks
+        semantic_type: TaskListAtom
+        updated_at: 'Thu Apr 13 2017 19:04:32 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - Developer profile has accurate information
+          - Correct version of app is uploaded
+          - 'Store listing is fully setup (e.g. graphic assets, screenshots, video, localized descriptions)'
+          - App is properly listed as free or priced
+          - Targeted country and currency are set
+          - '"Compatible devices" matches the devices you’re targeting'
+          - Correct website and support email address are linked
+          - 'App follows [content policy guidelines](https://play.google.com/about/developer-content-policy/)'
+          - 'App meets guidelines for Android content on Google Play and US export laws in the [Developer Distribution Agreement](https://play.google.com/intl/ALL_us/about/developer-distribution-agreement.html)'
+        positive_feedback: |-
+          Your app is ready to be published!
+          Release it into the world!
+        video_feedback: null
+        description: 'Double-check these items before clicking "Publish":'
+  - id: 291855
+    key: 4146b6b3-f4cc-4680-99c1-23e25be64a11
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Engage and Grow User Base'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:20:56 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 293623
+      - 293625
+      - 293626
+      - 293627
+      - 293628
+      - 293629
+    atoms:
+      - id: 293623
+        key: 86a66ac6-a1f2-40d8-81b4-a34da63c193e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Apr 13 2017 01:04:18 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # Engage and Grow User base
+
+          The fun of launching doesn’t end once you hit "Publish". To create the best experience for your users, it’s important to listen to their feedback and proactively act on it.
+
+          Examples of possible user feedback:
+        instructor_notes: ''
+        resources: null
+      - id: 293625
+        key: e8cba944-19e7-4f92-bee0-98a8e28c3bb1
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Thu Apr 13 2017 00:59:38 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58eecd6c_screen-shot-2017-04-12-at-5.58.53-pm/screen-shot-2017-04-12-at-5.58.53-pm.png'
+        width: 858
+        height: 274
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 293626
+        key: 539a1da6-0134-4f1c-96ea-560253612d4a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Thu Apr 13 2017 01:00:07 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58eecd92_screen-shot-2017-04-12-at-5.59.00-pm/screen-shot-2017-04-12-at-5.59.00-pm.png'
+        width: 858
+        height: 294
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 293627
+        key: 86aa6c4c-4255-4660-b632-47091ddcf4d3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Apr 13 2017 01:01:24 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          The Launch Checklist provides several useful suggestions for how to best to [Support Users after Launch](https://developer.android.com/distribute/marketing-tools/launch-checklist.html#support-users). 
+
+
+          The Developer Console is also a powerful tool in helping you continue to engage and grow your users. Check out how it can help you:
+          - Understand a boost [User Acquisition](https://developer.android.com/distribute/console/features.html#user-acquisition)
+          - Analyze [User feedback](https://developer.android.com/distribute/console/features.html#user-feedback)
+          - Receive [Notifications](https://developer.android.com/distribute/console/features.html#team-access-and-notifications) about your app’s status, reviews, financial data, and much more
+        instructor_notes: ''
+        resources: null
+      - id: 293628
+        key: 8977342d-814f-4630-bba7-7960de624290
+        locale: en-us
+        version: 1.0.0
+        title: Reacting to User Feedback - Negative Review
+        semantic_type: ReflectAtom
+        updated_at: 'Thu Apr 13 2017 19:06:45 GMT+0000 (UTC)'
+        is_public: true
+        instructor_notes: null
+        resources: null
+        question:
+          title: null
+          semantic_type: TextQuestion
+          evaluation_id: null
+          text: Suppose you received the feedback from user "Nosmo King" above. What proactive steps would you take to handle that situation?
+        answer:
+          text: |-
+            Nosmo King's comment is useful in pinpointing which version there's an issue in. It's also good to verify that the issue isn't happening in other versions. 
+
+            The user would also appreciate it if you as the developer acknowledged their concerns and let them know you are actively working on the issues.
+
+            Regarding the change in UI, some users may disagree with updates you (or your team decides) on. Watch for recurring themes and decide if this is a one off complaint of if there is a need to refactor the design decision. 
+          video: null
+      - id: 293629
+        key: b4c9cdf9-37fc-484f-a34e-a4bfa07ad46e
+        locale: en-us
+        version: 1.0.0
+        title: Reacting to User Feedback - Positive Review
+        semantic_type: ReflectAtom
+        updated_at: 'Thu Apr 13 2017 19:06:47 GMT+0000 (UTC)'
+        is_public: true
+        instructor_notes: null
+        resources: null
+        question:
+          title: null
+          semantic_type: TextQuestion
+          evaluation_id: null
+          text: Suppose your app received the feedback from user "JavaQueen" above. What proactive steps would you take to handle that situation?
+        answer:
+          text: |-
+            Thank her for her feedback and continued endorsement of your app. She may be a great advocate or potentially even a power user. Such users could be great as future user testers.
+
+            It could also be useful to reach out and ask her if she has any suggestions for improvements.
+          video: null
+  - id: 291857
+    key: 8577d54b-f751-4272-98e1-1b34525671ba
+    locale: en-us
+    version: 1.0.0
+    title: Success on Google Play
+    semantic_type: Concept
+    updated_at: 'Mon Jun 12 2017 20:14:00 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 330453
+      - 293622
+    atoms:
+      - id: 330453
+        key: 0026d75c-96ed-44f7-bc43-b1648e5e8df0
+        locale: en-us
+        version: 1.0.0
+        title: Success On Google Play
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:39:38 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58098'
+          youtube_id: wH5JIGLYPoo
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593ef57f_publishing15-success-on-google-play-sc-1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593ef57f_publishing15-success-on-google-play-sc-1/publishing15-success-on-google-play-sc-1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593ef57f_publishing15-success-on-google-play-sc-1/publishing15-success-on-google-play-sc-1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593ef57f_publishing15-success-on-google-play-sc-1/publishing15-success-on-google-play-sc-1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593ef57f_publishing15-success-on-google-play-sc-1/publishing15-success-on-google-play-sc-1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593ef57f_publishing15-success-on-google-play-sc-1/hls/playlist.m3u8'
+      - id: 293622
+        key: 09d06fe2-5ce9-4a6e-a9cb-f17f66515c8b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu May 11 2017 21:56:24 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### Resources
+
+          - [Building for Billions](https://developer.android.com/develop/quality-guidelines/building-for-billions.html) - Advice on connectivity, device capatability, data cost, battery consumption, and content for large markets
+
+          - [Earn](https://developer.android.com/distribute/best-practices/earn/index.html) - How to build and grow your app’s revenue streams
+
+          - [Developer Stories](https://developer.android.com/stories/index.html) - How developers are finding success with Android and Google Play
+
+          - Improve Conversion Rates with [Firebase Analytics](https://developer.android.com/distribute/best-practices/earn/improve-conversions.html)
+        instructor_notes: ''
+        resources: null

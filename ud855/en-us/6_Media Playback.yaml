@@ -1,0 +1,980 @@
+id: 268647
+key: 89b6a627-f121-498c-aa53-26304544b5f3
+locale: en-us
+version: 1.0.0
+title: Media Playback
+semantic_type: Lesson
+updated_at: 'Wed Jun 07 2017 22:39:55 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/59025440_nd801-ud855-media-playback/nd801-ud855-media-playback.png'
+  width: 928
+  height: 886
+video: null
+summary: 'In this lesson, you''ll learn about Media Playback by implementing the ExoPlayer library in a music quiz app. You''ll also learn about background playback, external clients, media sessions and more! '
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+_concepts_ids:
+  - 298221
+  - 292494
+  - 292495
+  - 298225
+  - 292496
+  - 292493
+  - 292497
+  - 292498
+  - 297445
+  - 292499
+  - 292508
+  - 297448
+  - 297446
+  - 292530
+  - 292531
+  - 297449
+  - 297450
+_project_id: null
+concepts:
+  - id: 298221
+    key: 4960f9d7-f7f9-43fe-a91e-078958479540
+    locale: en-us
+    version: 1.0.0
+    title: Introduction to Media Playback
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:24:22 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 298223
+    atoms:
+      - id: 298223
+        key: 945f35d0-e7c3-4f12-a190-eaa1e3dbdc8f
+        locale: en-us
+        version: 1.0.0
+        title: Introduction to Media Playback
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:55 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53572'
+          youtube_id: fkyVGHZSaCo
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50a3e_01-media-intro-hs-a/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50a3e_01-media-intro-hs-a/01-media-intro-hs-a_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50a3e_01-media-intro-hs-a/01-media-intro-hs-a_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50a3e_01-media-intro-hs-a/01-media-intro-hs-a_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50a3e_01-media-intro-hs-a/01-media-intro-hs-a_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50a3e_01-media-intro-hs-a/hls/playlist.m3u8'
+  - id: 292494
+    key: 1acff325-45d3-4527-a43b-674c121cc555
+    locale: en-us
+    version: 1.0.0
+    title: Player UI Structure
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:24:25 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 300181
+    atoms:
+      - id: 300181
+        key: 1a740b57-912f-4369-b1da-cdadeda29c6f
+        locale: en-us
+        version: 1.0.0
+        title: Player UI Structure
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:53 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54075'
+          youtube_id: 73iql6CCcbU
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe7599_02-l-player-ui-structure/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe7599_02-l-player-ui-structure/02-l-player-ui-structure_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe7599_02-l-player-ui-structure/02-l-player-ui-structure_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe7599_02-l-player-ui-structure/02-l-player-ui-structure_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe7599_02-l-player-ui-structure/02-l-player-ui-structure_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe7599_02-l-player-ui-structure/hls/playlist.m3u8'
+  - id: 292495
+    key: d614c7df-38d3-4746-b7c5-bdeb525de703
+    locale: en-us
+    version: 1.0.0
+    title: Audio Video
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:24:29 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 300176
+    atoms:
+      - id: 300176
+        key: 54d67fd9-77b9-4011-abd4-09b114125d54
+        locale: en-us
+        version: 1.0.0
+        title: Audio Video
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:53 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54076'
+          youtube_id: nIbvaXjqWnM
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe759d_03-audio-video-hs-a/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe759d_03-audio-video-hs-a/03-audio-video-hs-a_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe759d_03-audio-video-hs-a/03-audio-video-hs-a_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe759d_03-audio-video-hs-a/03-audio-video-hs-a_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe759d_03-audio-video-hs-a/03-audio-video-hs-a_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe759d_03-audio-video-hs-a/hls/playlist.m3u8'
+  - id: 298225
+    key: 8af7b44d-8f97-42e0-8fac-37e3d760c331
+    locale: en-us
+    version: 1.0.0
+    title: Comparing Players
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:24:32 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 298226
+    atoms:
+      - id: 298226
+        key: e82140fe-2e7a-46cf-baab-ee404605641a
+        locale: en-us
+        version: 1.0.0
+        title: Comparing Players
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:53 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          <a href="https://developers.google.com/youtube/" target="_blank">YouTube Developer APIs</a>
+
+          Media APIs: <a href="https://developer.android.com/reference/android/media/MediaCodec.html" target="_blank">MediaCodec</a>, <a href="https://developer.android.com/reference/android/media/AudioTrack.html" target="_blank">AudioTrack</a>, and <a href="https://developer.android.com/reference/android/media/MediaDrm.html" target="_blank">MediaDrm</a>
+        resources: null
+        video:
+          id: '53562'
+          youtube_id: rQ3JepTGook
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50296_04-l-comparing-players/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50296_04-l-comparing-players/04-l-comparing-players_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50296_04-l-comparing-players/04-l-comparing-players_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50296_04-l-comparing-players/04-l-comparing-players_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50296_04-l-comparing-players/04-l-comparing-players_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50296_04-l-comparing-players/hls/playlist.m3u8'
+  - id: 292496
+    key: fe3afd25-fc4c-4a6a-9581-91d132f062e3
+    locale: en-us
+    version: 1.0.0
+    title: Media Formats
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:24:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 298227
+    atoms:
+      - id: 298227
+        key: a720ded4-a39e-45e7-925b-e7dccce7bb41
+        locale: en-us
+        version: 1.0.0
+        title: Media Formats
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:53 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          - <a href="https://google.github.io/ExoPlayer/supported-formats.html" target="_blank">ExoPlayer documentation</a> 
+          - <a href="https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming" target="_blank">More on adaptive bitrate streaming</a>
+        resources: null
+        video:
+          id: '53563'
+          youtube_id: EO5BVMjGqJs
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5029c_05-l-media-formats/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5029c_05-l-media-formats/05-l-media-formats_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5029c_05-l-media-formats/05-l-media-formats_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5029c_05-l-media-formats/05-l-media-formats_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5029c_05-l-media-formats/05-l-media-formats_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f5029c_05-l-media-formats/hls/playlist.m3u8'
+  - id: 292493
+    key: 0c7e0179-5e36-454a-94fc-96529e08bb53
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Download Starting Code'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:24:39 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 297513
+    atoms:
+      - id: 297513
+        key: a57841be-5739-4c75-990c-60f8a10a16e9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Apr 24 2017 19:27:52 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Media Playback 
+
+          The code for this app can be found in the <a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz" target="_blank">Media Playback repository</a>. Download this repository using the command:
+
+          ```bash
+          git clone https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz.git
+          ```
+
+          If you need to a refresher on how the code is organized, please refer to the first lesson in this course.
+
+          ### Exercise Code
+          **Exercise:** <a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.00-StartingCode" target="_blank">TMED.00-StartingCode</a>
+        instructor_notes: ''
+        resources: null
+  - id: 292497
+    key: 062710bc-5531-407d-bc7a-10cb77eb645e
+    locale: en-us
+    version: 1.0.0
+    title: Starting Code Overview
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:24:49 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 298230
+    atoms:
+      - id: 298230
+        key: 424b541d-3aa6-4bc6-b949-4e85185db717
+        locale: en-us
+        version: 1.0.0
+        title: Starting Code Overview
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:55 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          - <a href="http://www.vogella.com/tutorials/JSON/article.html" target="_blank">JSON Tutorial (Vogella)</a>
+          - <a href="https://developer.android.com/reference/android/util/JsonReader.html" target="_blank">JsonReader Documentation</a>
+
+          When opening the project code in Android Studio, you may receive a gradle error regarding **extras;android;m2repository**. You can resolve this error by downloading and installing the missing repository.
+        resources: null
+        video:
+          id: '53564'
+          youtube_id: wjQBGcz2tS4
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502ac_06-l-starting-code-overview/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502ac_06-l-starting-code-overview/06-l-starting-code-overview_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502ac_06-l-starting-code-overview/06-l-starting-code-overview_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502ac_06-l-starting-code-overview/06-l-starting-code-overview_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502ac_06-l-starting-code-overview/06-l-starting-code-overview_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502ac_06-l-starting-code-overview/hls/playlist.m3u8'
+  - id: 292498
+    key: d9589bdf-a288-45d8-87ca-eeccb5d4ea11
+    locale: en-us
+    version: 1.0.0
+    title: Add ExoPlayer Intro
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:24:52 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 300179
+    atoms:
+      - id: 300179
+        key: fcacb3f3-bb0d-4046-a371-68dd0cf9dd1f
+        locale: en-us
+        version: 1.0.0
+        title: Add ExoPlayer Intro
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:53 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54077'
+          youtube_id: XFZXfWBeQxo
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a0_07-l-add-exoplayer-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a0_07-l-add-exoplayer-intro/07-l-add-exoplayer-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a0_07-l-add-exoplayer-intro/07-l-add-exoplayer-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a0_07-l-add-exoplayer-intro/07-l-add-exoplayer-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a0_07-l-add-exoplayer-intro/07-l-add-exoplayer-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a0_07-l-add-exoplayer-intro/hls/playlist.m3u8'
+  - id: 297445
+    key: d1be88a3-77bd-4581-b2f4-662d92f6e590
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Add SimpleExoPlayerView'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:24:55 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 298237
+      - 297514
+      - 297517
+    atoms:
+      - id: 298237
+        key: b8ca6e78-aa7a-4f99-86e4-494fbc3b9f23
+        locale: en-us
+        version: 1.0.0
+        title: Add SimpleExoPlayerView
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:55 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53566'
+          youtube_id: cyjDhf9FnH8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502be_08-l-add-simple-exoplayer-view/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502be_08-l-add-simple-exoplayer-view/08-l-add-simple-exoplayer-view_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502be_08-l-add-simple-exoplayer-view/08-l-add-simple-exoplayer-view_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502be_08-l-add-simple-exoplayer-view/08-l-add-simple-exoplayer-view_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502be_08-l-add-simple-exoplayer-view/08-l-add-simple-exoplayer-view_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502be_08-l-add-simple-exoplayer-view/hls/playlist.m3u8'
+      - id: 297514
+        key: ccd3d5f5-851a-4502-87e5-37a74090d017
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jul 13 2017 21:40:13 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Add SimpleExoPlayerView
+
+          In this exercise, you'll add ExoPlayer, and extensible media player library, to the Classical Music Quiz app. You'll also hook it up to a SimpleExoPlayerView, a UI element that is part of the ExoPlayer library which includes playback controls and album art.
+
+          ### Exercise Code
+          **Exercise:** <a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.01-Exercise-AddExoPlayer" target="_blank">TMED.01-Exercise-AddExoPlayer</a>
+        instructor_notes: ''
+        resources: null
+      - id: 297517
+        key: 637165c0-0c74-4d95-90c8-84ed4b2eb5ab
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Mon Apr 24 2017 20:27:19 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - Replace the Composer ImageView with a SimpleExoPlayerView
+          - 'Replace the ImageView with the SimpleExoPlayerView, and remove the method calls on the composerView'
+          - Replace the default artwork in the SimpleExoPlayerView
+          - Create a Sample object using the Sample.getSampleByID() method
+          - Create a method called initializePlayer()
+          - Instantiate a SimpleExoPlayer object using DefaultTrackSelector and DefaultLoadControl
+          - Prepare the MediaSource using DefaultDataSourceFactory and DefaultExtractorsFactory
+          - 'Prepare the ExoPlayer with the MediaSource, start playing the sample and set the SimpleExoPlayer to the SimpleExoPlayerView'
+          - Stop the playback when you go to the next question
+          - 'Change the default artwork in the SimpleExoPlayerView to show the picture of the composer, when the user has answered the question'
+        positive_feedback: |-
+          Excellent work!
+
+          **Solution:** <a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.01-Solution-AddExoPlayer" target="_blank">TMED.01-Solution-AddExoPlayer</a>
+
+          <a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/compare/TMED.01-Exercise-AddExoPlayer...TMED.01-Solution-AddExoPlayer?expand=1" target="_blank">Diff</a>
+        video_feedback: null
+        description: ''
+  - id: 292499
+    key: 5d62a7ef-df84-43e1-8c64-882169c3044b
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Customize SimpleExoPlayerView'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:24:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 292506
+      - 297521
+      - 297525
+    atoms:
+      - id: 292506
+        key: 73226842-e671-4cbb-a1b3-a2d0ae5fd552
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed May 10 2017 18:34:54 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # Customizing ExoPlayer UI
+
+          We chose to use SimpleExoPlayerView because of its simplicity. It can be hooked up to ExoPlayer with a single line of code and greatly simplifies the UI portion of a media application since we don't have to code anything ourselves. However, such simplicity usually comes at the cost of customization: you might think that we are stuck with the provided UI since it comes ready out of the box. Not so with ExoPlayer! 
+
+          ExoPlayer comes with two notable out of the box UI elements:
+
+          * PlaybackControlView is a view for controlling ExoPlayer instances. It displays standard playback controls including a play/pause button, fast-forward and rewind buttons, and a seek bar.
+          * SimpleExoPlayerView is a high level view for SimpleExoPlayer media playbacks. It displays video (or album art in our case) and displays playback controls using a PlaybackControlView.
+
+
+          These ExoPlayer UI components were created with customization in mind, in the following ways:
+
+          ## Attributes
+
+          The XML items support a variety of xml attributes that customize the look of the UI. Take a look at the documentation for the UI element to see the list of possible attributes (and their corresponding Java methods).
+
+          ## Overriding layout files
+          When these views are inflated, they use specific layout files to determine what the UI looks like.
+          For SimpleExoPlayerView, this file is called: <a href="https://github.com/google/ExoPlayer/blob/release-v2/library/ui/src/main/res/layout/exo_simple_player_view.xml" target="_blank">exo_simple_player_view.xml</a>. This layout file includes a PlayBackControlView (once it's inflated, it replaces the exo_controller_placeholder item) which also uses its own layout file: <a href="https://github.com/google/ExoPlayer/blob/release-v2/library/ui/src/main/res/layout/exo_playback_control_view.xml" target="_blank">exo_playback_control_view.xml</a>.
+
+          If you include any layout files with the same names, ExoPlayer will use them instead of these default ones. This allows you to fully customize what the UI looks like. 
+
+          One caveat: Use of standard ids (such as exo_play) is required so that child views can be identified, bound to the player and updated in an appropriate way. A full list of the standard ids for each view can be found in the Javadoc for [PlaybackControlView](http://google.github.io/ExoPlayer/doc/reference/index.html?com/google/android/exoplayer2/ui/PlaybackControlView.html) and [SimpleExoPlayerView](http://google.github.io/ExoPlayer/doc/reference/index.html?com/google/android/exoplayer2/ui/SimpleExoPlayerView.html). Use of each standard id is optional, which is why we’ll be able to omit some of the usual playback controls in our example.
+
+          ## Custom Layout Files
+          The issue with the above method is that it customizes the UI for every instance of SimpleExoPlayerView (and/or PlaybackControlView). For our use case, this doesn't matter since we only have one player view. However, if you need to customize individual instances, you can use a combination of the two above methods: use the player_layout_id  attribute for a custom SimpleExoPlayerView, or the controller_layout_id for a custom PlaybackControlView and specify a custom layout file to override the layout for that specific instance.
+
+          We don't need individual instance customization, so override the exo_playback_control_view.xml layout file for the playback control view (included in our SimpleExoPlayerView) and remove the skip to next, fastforward and rewind buttons (you can copy the default layout [here](https://github.com/google/ExoPlayer/blob/release-v2/library/ui/src/main/res/layout/exo_playback_control_view.xml)).
+
+          After completing this, run the app and notice the change in the UI!
+
+
+
+        instructor_notes: ''
+        resources: null
+      - id: 297521
+        key: fd2a76df-f16c-46ab-89fb-d0110307f42b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 14 2017 21:59:48 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Customize SimpleExoPlayerView
+
+          In this exercise, you'll customize the SimpleExoPlayerView to only include the playback controls you want to support.
+
+          ### Exercise Code
+          **Exercise:** [TMED.02-Exercise-CustomizeLayout](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.02-Exercise-CustomizeLayout)
+        instructor_notes: ''
+        resources: null
+      - id: 297525
+        key: 42c7f0d4-7dd3-406d-a0b4-f08d4c256594
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Mon Apr 24 2017 22:46:38 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - Create a layout file called exo_playback_control_view to override the playback control layout
+        positive_feedback: |-
+          Excellent work!
+
+          **Solution:** [[TMED.02-Solution-CustomizeLayout](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.02-Solution-CustomizeLayout)][[Diff](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/compare/TMED.02-Exercise-CustomizeLayout...TMED.02-Solution-CustomizeLayout?expand=1)]
+        video_feedback: null
+        description: ''
+  - id: 292508
+    key: 48914024-46e6-4c24-8de6-4ab0284ecaba
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: ExoPlayer Event Listening'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:25:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 300177
+      - 300121
+      - 297538
+      - 297541
+      - 292528
+    atoms:
+      - id: 300177
+        key: 638da2c4-32f9-4dd4-a180-bedb8bca68ae
+        locale: en-us
+        version: 1.0.0
+        title: ExoPlayer Event Listening
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:43:39 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54078'
+          youtube_id: _DH2YhiaaF0
+          subtitles: []
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a2_10-l-exoplayer-event-listening/10-l-exoplayer-event-listening_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a2_10-l-exoplayer-event-listening/10-l-exoplayer-event-listening_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a2_10-l-exoplayer-event-listening/10-l-exoplayer-event-listening_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a2_10-l-exoplayer-event-listening/10-l-exoplayer-event-listening_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a2_10-l-exoplayer-event-listening/hls/playlist.m3u8'
+      - id: 300121
+        key: 39c6341e-55a9-4f8a-b0fd-3b5390cf8ed0
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Apr 24 2017 20:50:11 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Introduction
+          Now we have a customized media player that works perfectly for our app. The last step is to make it play well with external clients and other apps. But before we can set up a Media Session, we need to find out what the state of ExoPlayer is so that we can keep our Media Session in sync. We learned that state changes happen automatically with our `SimpleExoPlayerView`, but how are we going to get that information over to the Media Session? Go to the next video to find out!
+        instructor_notes: ''
+        resources: null
+      - id: 297538
+        key: 536e5e43-be26-446e-aeaf-347f3a4c0dfb
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Apr 24 2017 22:48:05 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # ExoPlayer Event Listening
+
+          In this exercise, you'll monitor the state changes of the ExoPlayer using an EventListener, and log the state every time it changes.
+
+          ### Exercise Code
+          **Exercise:** [TMED.03-Exercise-EventListening](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.03-Exercise-EventListening)
+        instructor_notes: ''
+        resources: null
+      - id: 297541
+        key: b3f53970-6ac4-419a-a372-be671fcbf26e
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Mon Apr 24 2017 22:48:12 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 'For the QuizActivity, implement ExoPlayer.EventListener and add the required methods'
+          - 'For QuizActivity, Set the ExoPlayer.EventListener'
+          - Add conditional logging statements to the onPlayerStateChanged() method that log when ExoPlayer is playing or paused
+        positive_feedback: |-
+          Status logged! Woot!
+
+          **Solution:** [[TMED.03-Solution-EventListening](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.03-Solution-EventListening)][[Diff](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/compare/TMED.03-Exercise-EventListening...TMED.03-Solution-EventListening?expand=1)]
+        video_feedback: null
+        description: ''
+      - id: 292528
+        key: 3034708b-a909-49c0-b08f-7c3499dd6074
+        locale: en-us
+        version: 1.0.0
+        title: ExoPlayer Event
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Tue Apr 11 2017 18:43:47 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: In which method should you update the state of the MediaSession?
+          correct_feedback: 'onPlayerStateChanged(), this is an ExoPlayer.EventListener and will be called everytime the player state changes, so this is where we update the Media Session.'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1491936046995
+              text: onPlay()
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1491936075400
+              text: MySessionCallbacks
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1491936084527
+              text: onPlayerStateChanged()
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1491936093145
+              text: onCreate()
+              is_correct: false
+              incorrect_feedback: null
+  - id: 297448
+    key: c3b45607-b1ce-40d6-91c0-ef6d71bb2e5f
+    locale: en-us
+    version: 1.0.0
+    title: Add Media Session - Part 1
+    semantic_type: Concept
+    updated_at: 'Tue May 16 2017 23:49:13 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 300184
+      - 321953
+    atoms:
+      - id: 300184
+        key: 9460595b-4388-4a43-993e-7f9831965822
+        locale: en-us
+        version: 1.0.0
+        title: Add Media Session - Part 1
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:43:35 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54079'
+          youtube_id: urdyOlcisqg
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a4_11-add-media-session/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a4_11-add-media-session/11-add-media-session_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a4_11-add-media-session/11-add-media-session_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a4_11-add-media-session/11-add-media-session_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a4_11-add-media-session/11-add-media-session_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a4_11-add-media-session/hls/playlist.m3u8'
+      - id: 321953
+        key: 2e2cb83e-b884-40c3-b34e-fc4fc9bb863a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue May 16 2017 23:49:13 GMT+0000 (UTC)'
+        is_public: true
+        text: '<a href="https://developer.android.com/guide/topics/media-apps/working-with-a-media-session.html" target="_blank">Working with a Media Session</a>'
+        instructor_notes: ''
+        resources: null
+  - id: 297446
+    key: 2a7ad530-1fb9-4483-ac37-70acaa65f97a
+    locale: en-us
+    version: 1.0.0
+    title: ExoPlayer Event
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:25:09 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 297558
+    atoms:
+      - id: 297558
+        key: 3df136e3-d889-40c1-b4bf-6ddd677d6b92
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Apr 14 2017 23:49:31 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            In which method should you update the state of the MediaSession?
+          correct_feedback: 'onPlayerStateChanged(), this is an ExoPlayer.EventListener and will be called everytime the player state changes, so this is where we update the Media Session.'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1492213715073
+              text: '`onPlay()`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1492213733919
+              text: '`MySessionCallbacks`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1492213740711
+              text: '`onPlayerStateChanged()`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1492213748049
+              text: '`onCreate()`'
+              is_correct: false
+              incorrect_feedback: null
+  - id: 292530
+    key: f7b7f8b8-e6db-4665-b3af-190e6fc47838
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: Add Media Session - Part 2'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:25:12 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 297542
+      - 300185
+      - 297543
+    atoms:
+      - id: 297542
+        key: 7e77f5be-030e-48a7-be14-d9ee6317bd3a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 14 2017 22:26:14 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Add Media Session
+
+          ### Exercise Code
+          **Exercise:** [TMED.04-Exercise-AddMediaSession](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.04-Exercise-AddMediaSession)
+        instructor_notes: ''
+        resources: null
+      - id: 300185
+        key: 48b95be2-1e27-402d-896b-da73eaec11a4
+        locale: en-us
+        version: 1.0.0
+        title: Add Media Session - Part 2
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:53 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54080'
+          youtube_id: F2z2GuFXgfg
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a6_13-add-media-session-2-a/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a6_13-add-media-session-2-a/13-add-media-session-2-a_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a6_13-add-media-session-2-a/13-add-media-session-2-a_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a6_13-add-media-session-2-a/13-add-media-session-2-a_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a6_13-add-media-session-2-a/13-add-media-session-2-a_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58fe75a6_13-add-media-session-2-a/hls/playlist.m3u8'
+      - id: 297543
+        key: edc0aba0-bccc-4777-94a6-0cb53f4d1210
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Apr 14 2017 22:30:00 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - Create a method to initialize the MediaSession
+          - Create an inner class that extends MediaSessionCompat.Callbacks and override the required methods
+          - Update PlayBackState appropriately depending on if ExoPlayer is playing or paused
+          - 'When the activity is destroyed, set the MediaSession to inactive'
+        positive_feedback: |-
+          Excellent work!
+
+          **Solution:** [[TMED.04-Solution-AddMediaSession](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.04-Solution-AddMediaSession)][[Diff](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/compare/TMED.04-Exercise-AddMediaSession...TMED.04-Solution-AddMediaSession?expand=1)]
+        video_feedback: null
+        description: ''
+  - id: 292531
+    key: 71c77fa7-b8e2-42af-ad0d-2883f9b49b18
+    locale: en-us
+    version: 1.0.0
+    title: 'Exercise: MediaStyle Notification'
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:25:15 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 298241
+      - 297544
+      - 297545
+      - 297549
+      - 297553
+    atoms:
+      - id: 298241
+        key: 74f28351-708b-4dc1-8a04-ddc6397efccc
+        locale: en-us
+        version: 1.0.0
+        title: MediaStyle Notification
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:40:53 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: '<a href="https://developer.android.com/reference/android/support/v7/app/NotificationCompat.MediaStyle.html" target="_blank">Documentation on MediaStyle Notification</a>'
+        resources: null
+        video:
+          id: '53570'
+          youtube_id: 0fxdMQlkErE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502df_14-mediastyle-notification-s/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502df_14-mediastyle-notification-s/14-mediastyle-notification-s_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502df_14-mediastyle-notification-s/14-mediastyle-notification-s_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502df_14-mediastyle-notification-s/14-mediastyle-notification-s_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502df_14-mediastyle-notification-s/14-mediastyle-notification-s_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f502df_14-mediastyle-notification-s/hls/playlist.m3u8'
+      - id: 297544
+        key: 28a6f997-112a-4fdd-bbdd-06b3201f78a7
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 14 2017 22:52:47 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Add MediaStyle Notification
+
+          In this exercise, you'll create MediaStyle notification that can act as an external client for controlling the Media Session, and therefore the media playback.You'll then fix the MediaStyle notification actions by creating a MediaButtonReceiver that can respond to external client actions
+
+          ### Exercise Code
+          **Exercise:** [TMED.05-Exercise-AddMediaNotification](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.05-Exercise-AddMediaNotification)
+        instructor_notes: ''
+        resources: null
+      - id: 297545
+        key: bf752b02-6e55-4b93-ace7-7cbff2c790ca
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Mon Apr 24 2017 22:08:14 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 'Create a method that shows a MediaStyle notification with two actions (play/pause, skip to previous)'
+          - Call the method to show the notification
+        positive_feedback: |-
+          New Notification - MediaStyle Notification Done :)
+
+          **Solution:** <a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.05-Solution-AddMediaNotification" target="_blank">TMED.05-Solution-AddMediaNotification</a>
+          <a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/compare/TMED.05-Exercise-AddMediaNotification...TMED.05-Solution-AddMediaNotification?expand=1" target="_blank">Diff</a>
+        video_feedback: null
+        description: ''
+      - id: 297549
+        key: fdf07d11-b1ae-4a72-8858-8d4b0cee3cbc
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 14 2017 23:01:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Add Media Button Receiver
+
+          ### Exercise Code
+          **Exercise:** [TMED.06-Exercise-AddMediaButtonReceiver](https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.06-Exercise-AddMediaButtonReceiver)
+        instructor_notes: ''
+        resources: null
+      - id: 297553
+        key: baa2c07f-9d47-4af1-aa17-0dcf03e245e8
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Mon Apr 24 2017 22:08:14 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - Create a static inner class that extends Broadcast Receiver and implement the onReceive() method
+          - all MediaButtonReceiver.handleIntent and pass in the incoming intent and MediaSession object
+          - Create a receiver tag for the receiver you create in QuizActivity and add an Intent Filter
+        positive_feedback: |-
+          Classical Quiz Complete!
+
+          **Solution:** <a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/tree/TMED.06-Solution-AddMediaButtonReceiver" target="_blank">TMED.06-Solution-AddMediaButtonReceiver</a>
+          <a href="https://github.com/udacity/AdvancedAndroid_ClassicalMusicQuiz/compare/TMED.06-Exercise-AddMediaButtonReceiver...TMED.06-Solution-AddMediaButtonReceiver?expand=1" target="_blank">Diff</a>
+        video_feedback: null
+        description: ''
+  - id: 297449
+    key: 43629d9f-b08e-499d-9300-125b8cb8ebbc
+    locale: en-us
+    version: 1.0.0
+    title: Introduction to Audio Focus and Extra ExoPlayer Features
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:25:19 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 298537
+    atoms:
+      - id: 298537
+        key: 8536e578-91a1-4535-825b-41f7a8f2fa79
+        locale: en-us
+        version: 1.0.0
+        title: Introduction to Audio Focus and Extra ExoPlayer Features
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:29:46 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53574'
+          youtube_id: RZv_dU8gHTE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50fd2_15-extras-intro-hs/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50fd2_15-extras-intro-hs/15-extras-intro-hs_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50fd2_15-extras-intro-hs/15-extras-intro-hs_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50fd2_15-extras-intro-hs/15-extras-intro-hs_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50fd2_15-extras-intro-hs/15-extras-intro-hs_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f50fd2_15-extras-intro-hs/hls/playlist.m3u8'
+  - id: 297450
+    key: c6a354c3-217d-439f-a298-4f1840211796
+    locale: en-us
+    version: 1.0.0
+    title: Audio Focus and Extra ExoPlayer Features
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 18:25:22 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 297557
+    atoms:
+      - id: 297557
+        key: bb63958b-f8e6-4841-a3bd-05fa52e3601b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 14 2017 23:48:17 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # Android Media Framework Extras
+           
+          ### Audio Focus
+
+          This is how the Android framework knows about different applications using audio. If you want your app to fade out when other important notifications (such as navigation) occur, you'll need to learn how your app can "hop in line" to be the one in charge of audio playback, until another app requests focus.
+
+          ### Noisy Intent
+
+          There are certain conditions that you will want to check for. For example, imagine you are blasting your favorite song at full volume. Little does anyone know, but your favorite song is "Itsy Bitsy Spider". Right when it's about to get to the best part, you trip and yank out the headphones from the audio port. Suddenly the whole world knows your secret. Not the best experience right? Luckily the android framework sends out the  [ACTION_AUDIO_BECOMING_NOISY](https://developer.android.com/reference/android/media/AudioManager.html#ACTION_AUDIO_BECOMING_NOISY) intent when this occurs. This allows you to register a broadcast receiver and take a specific action when this occurs (like pausing the music and saving yourself of embarrassment). 
+
+          ### Audio Stream
+
+          Android uses separate audio streams for playing music, alarms, notifications, the incoming call ringer, system sounds, in-call volume, and DTMF tones. This allows users to control the volume of each stream independently.
+
+          By default, pressing the volume control modifies the volume of the active audio stream. If your app isn't currently playing anything, hitting the volume keys adjusts the ringer volume.
+          To ensure that volume controls adjust the correct stream, you should call [setVolumeControlStream()](https://developer.android.com/reference/android/app/Activity.html#setVolumeControlStream(int) passing in [AudioManager.STREAM_MUSIC](https://developer.android.com/reference/android/media/AudioManager.html#STREAM_MUSIC).
+
+          # ExoPlayer Extras
+
+          ### Subtitle Side Loading
+
+          Given a video file and a separate subtitle file, MergingMediaSource can be used to merge them into a single source for playback.
+
+          ``` java
+          MediaSource videoSource = new ExtractorMediaSource(videoUri, ...);
+          MediaSource subtitleSource = new SingleSampleMediaSource(subtitleUri, ...);
+          // Plays the video with the sideloaded subtitle.
+          MergingMediaSource mergedSource =
+              new MergingMediaSource(videoSource, subtitleSource);
+          ```
+
+          ### Looping a video
+
+          A video can be seamlessly looped using a LoopingMediaSource. The following example loops a video indefinitely. It’s also possible to specify a finite loop count when creating a LoopingMediaSource.
+
+          ```java
+          MediaSource source = new ExtractorMediaSource(videoUri, ...);
+          // Loops the video indefinitely.
+          LoopingMediaSource loopingSource = new LoopingMediaSource(source);
+          ```
+        instructor_notes: ''
+        resources: null

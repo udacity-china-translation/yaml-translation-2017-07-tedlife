@@ -1,0 +1,2296 @@
+id: 256064
+key: 61776182-df3f-4767-9558-5d1591c1a709
+locale: en-us
+version: 1.0.0
+title: 'Tagging, Branching, and Merging'
+semantic_type: Lesson
+updated_at: 'Wed Jul 05 2017 20:56:29 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58fa7637_lesson-teal/lesson-teal.png'
+  width: 500
+  height: 500
+video: null
+summary: Being able to work on your project in isolation from other changes will multiply your productivity. You'll learn how to do this isolated development with Git's branches.
+lesson_type: Classroom
+duration: 150
+is_project_lesson: false
+_concepts_ids:
+  - 265006
+  - 265007
+  - 265008
+  - 265009
+  - 265010
+  - 265011
+  - 265012
+_project_id: null
+concepts:
+  - id: 265006
+    key: 886b5f73-40c8-4fd0-a800-cdc1d0cb5801
+    locale: en-us
+    version: 1.0.0
+    title: Intro
+    semantic_type: Concept
+    updated_at: 'Mon Mar 20 2017 21:51:30 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 283735
+    atoms:
+      - id: 283735
+        key: 620f86ad-7e0f-4cfb-97ef-fead5299d556
+        locale: en-us
+        version: 1.0.0
+        title: 'Tagging, Branching, And Merging - Intro'
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:19:35 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51659'
+          youtube_id: sMf_r4_z-Ls
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58cc8136_gitfinal-l5-01-tagging-branching-and-merging-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc8136_gitfinal-l5-01-tagging-branching-and-merging-intro/gitfinal-l5-01-tagging-branching-and-merging-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc8136_gitfinal-l5-01-tagging-branching-and-merging-intro/gitfinal-l5-01-tagging-branching-and-merging-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc8136_gitfinal-l5-01-tagging-branching-and-merging-intro/gitfinal-l5-01-tagging-branching-and-merging-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc8136_gitfinal-l5-01-tagging-branching-and-merging-intro/gitfinal-l5-01-tagging-branching-and-merging-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cc8136_gitfinal-l5-01-tagging-branching-and-merging-intro/hls/playlist.m3u8'
+  - id: 265007
+    key: f22ea0e4-4a68-4d3a-91c8-0c19915af71f
+    locale: en-us
+    version: 1.0.0
+    title: Tagging
+    semantic_type: Concept
+    updated_at: 'Wed May 17 2017 00:09:49 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 265015
+      - 273029
+      - 265017
+      - 265018
+      - 265019
+      - 265023
+      - 265021
+      - 265024
+      - 265025
+      - 265026
+      - 265027
+      - 265028
+      - 321955
+      - 321956
+      - 265029
+      - 265030
+      - 265031
+      - 265032
+      - 265033
+      - 265034
+      - 265035
+      - 265036
+      - 265037
+      - 265038
+    atoms:
+      - id: 265015
+        key: 0eb25264-5b11-4480-afea-62bc68ebfd5f
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Feb 14 2017 23:36:55 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          So far in this course, we've been zoomed in on the specific Git commands. We've learned how they work in detail and what it looks like running them on the Terminal.
+
+          Let's zoom out a bit to look at how a Git tag fits into a repository.
+        instructor_notes: ''
+        resources: null
+      - id: 273029
+        key: bde9382c-48f4-40c6-838d-355e6ba576a4
+        locale: en-us
+        version: 1.0.0
+        title: Nd016 WebND Ud123 Gitcourse BETAMOJITO L5 03 Tagging Overview
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:17:08 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51040'
+          youtube_id: D4VdXT72ASE
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58b9dc50_nd016-webnd-ud123-gitcourse-betamojito-l5-03-tagging-overview/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc50_nd016-webnd-ud123-gitcourse-betamojito-l5-03-tagging-overview/nd016-webnd-ud123-gitcourse-betamojito-l5-03-tagging-overview_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc50_nd016-webnd-ud123-gitcourse-betamojito-l5-03-tagging-overview/nd016-webnd-ud123-gitcourse-betamojito-l5-03-tagging-overview_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc50_nd016-webnd-ud123-gitcourse-betamojito-l5-03-tagging-overview/nd016-webnd-ud123-gitcourse-betamojito-l5-03-tagging-overview_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc50_nd016-webnd-ud123-gitcourse-betamojito-l5-03-tagging-overview/nd016-webnd-ud123-gitcourse-betamojito-l5-03-tagging-overview_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc50_nd016-webnd-ud123-gitcourse-betamojito-l5-03-tagging-overview/hls/playlist.m3u8'
+      - id: 265017
+        key: 632e9d8a-0a8d-4820-8674-ed332d855cde
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Feb 14 2017 23:37:57 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Where Are We?
+
+          You can do these steps in either project, but I'm be doing them in the `new-git-project` project.
+
+          Let's take a look at the log of the project so far:
+        instructor_notes: ''
+        resources: null
+      - id: 265018
+        key: 9a7beeee-5fca-44ac-bd92-9cf28ac40f8c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Tue Feb 14 2017 23:38:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a39500_ud123-l5-git-log-pre-tag/ud123-l5-git-log-pre-tag.png'
+        width: 1778
+        height: 1280
+        caption: _The Terminal application showing the output from running `git log --oneline`._
+        resources: null
+        instructor_notes: null
+      - id: 265019
+        key: ee746cd8-611e-4b17-8493-176b682c9f76
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Feb 14 2017 23:39:16 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Git Tag Command
+
+          Pay attention to what's shown (just the SHA and the commit message)
+
+          The command we'll be using to interact with the repository's tags is the `git tag` command:
+
+          ```bash
+          $ git tag -a v1.0
+          ```
+
+          This will open your code editor and wait for you supply a message for the tag. How about the message "Ready for content"?
+        instructor_notes: ''
+        resources: null
+      - id: 265023
+        key: f0d8a547-0cd4-44a4-bc72-36b929303263
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 00:08:24 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a39be9_ud123-l5-editor-with-tag-message/ud123-l5-editor-with-tag-message.png'
+        width: 2740
+        height: 1758
+        caption: _Code editor waiting for the tag's message to be supplied._
+        resources: null
+        instructor_notes: null
+      - id: 265021
+        key: 3a40a6e6-0ea0-4dd0-9a0d-c700241379a4
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 23 2017 01:10:57 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > CAREFUL: In the command above (`git tag -a v1.0`) the `-a` flag is used. This flag tells Git to create an _annotated_ flag. If you don't provide the tag (i.e. `git tag v1.0`) then it'll create what's called a _lightweight_ tag.
+
+          > Annotated tags are recommended because they include a lot of extra information such as:
+          * the person who made the tag
+          * the date the tag was made
+          * a message for the tag
+
+          > Because of this, you should always use annotated tags.
+        instructor_notes: ''
+        resources: null
+      - id: 265024
+        key: 01ebadf3-e925-4d3b-8099-2611aaf5e1fb
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 00:08:44 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Verify Tag
+
+          After saving and quitting the editor, nothing is displayed on the command line. So how do we know that a tag was actually added to the project? If you type out just `git tag`, it will display all tags that are in the repository.
+        instructor_notes: ''
+        resources: null
+      - id: 265025
+        key: ef436798-619e-46ab-97bf-d62c3c48753e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 00:12:35 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a39cdf_ud123-l5-git-tag/ud123-l5-git-tag.png'
+        width: 2142
+        height: 1280
+        caption: _The Terminal application showing the output of the `git tag` command. The tag `v1.0` is listed._
+        resources: null
+        instructor_notes: null
+      - id: 265026
+        key: aa31c6da-66b3-4e94-9d9b-0f2a6fc100a3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 00:13:01 GMT+0000 (UTC)'
+        is_public: true
+        text: 'So we''ve verified that it''s in the repository, but let''s actually see _where_ it is inside the repository. To do that, we''ll go back to our good old friend, `git log`! '
+        instructor_notes: ''
+        resources: null
+      - id: 265027
+        key: 25c1c715-0267-4487-9a10-46c4d0619232
+        locale: en-us
+        version: 1.0.0
+        title: Can You See The Tag?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Feb 15 2017 00:14:26 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'Using what you know of the `git log` command, do you see the tag in log''s output?'
+          correct_feedback: 'That''s right, we can''t see it yet with what we know. We have to add a new `git log` flag to our repertoire!'
+          video_feedback: null
+          default_feedback: Try running `git log` and using some of the flags you know to see if you can locate the newly added tag.
+          answers:
+            - id: a1487117600936
+              text: 'Yes'
+              is_correct: false
+              incorrect_feedback: 'Really? I don''t see it when I run `git log`, `git log --oneline`, `git log -p`, or even `git show`.'
+            - id: a1487117607351
+              text: 'No'
+              is_correct: true
+              incorrect_feedback: null
+      - id: 265028
+        key: 526a4c8e-836b-45df-9f0b-472a8a858289
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed May 17 2017 00:02:26 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Git Log's --decorate Flag
+
+          As you've learned, `git log` is a pretty powerful tool for letting us check out a repository's commits. We've already looked at a couple of its flags, but it's time to add a new one to our toolbelt. The `--decorate` flag will show us some details that are hidden from the default view.
+        instructor_notes: ''
+        resources: null
+      - id: 321955
+        key: 00fbafed-8bbc-4a82-88e1-58dcaf565079
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed May 17 2017 00:02:24 GMT+0000 (UTC)'
+        is_public: true
+        text: Try running `git log --decorate` now!
+        instructor_notes: ''
+        resources: null
+      - id: 321956
+        key: 9abefc84-fa0c-4c9b-b214-580be53df7df
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed May 17 2017 00:09:48 GMT+0000 (UTC)'
+        is_public: true
+        text: "> ## \uD83D\uDCA1 `--decorate` Flag Changes in Git 2.13  \uD83D\uDCA1 \n\n> In the 2.13 update to Git, the `log` command has changed to automatically enable the `--decorate` flag. This means that you do not need to include the `--decorate` flag in your command, since it is automatically included, anyway! So the following commands result in the exact same output:\n\n> ```shell\n$ git log --decorate\n$ git log\n```\n\n> Check out [the 2.13 release notes](https://github.com/git/git/blob/v2.13.0/Documentation/RelNotes/2.13.0.txt#L176-L177)."
+        instructor_notes: ''
+        resources: null
+      - id: 265029
+        key: 17cab282-f405-4200-84a6-7142a6800d56
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 00:15:48 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a39d95_ud123-l5-git-log-decorate/ud123-l5-git-log-decorate.png'
+        width: 2246
+        height: 1280
+        caption: _The Terminal application showing the output of the `git log --decorate` command. The log output now displays the newly created tag._
+        resources: null
+        instructor_notes: null
+      - id: 265030
+        key: 0a95d7a6-3dea-409d-a592-00d7bffc7b21
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 00:16:27 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          The tag information is at the very end of the first line:
+
+          ```bash
+          commit 6fa5f34790808d9f4dccd0fa8fdbc40760102d6e (HEAD -> master, tag: v1.0)
+          ```
+
+          See how it say `tag: v1.0`? That's the tag! Remember that tags are associated with a specific commit. This is why the tag is on the same line as the commit's SHA.
+        instructor_notes: ''
+        resources: null
+      - id: 265031
+        key: 1916f801-426b-47fc-aa04-ded1341119a0
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 00:16:48 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## HEAD -> master?
+
+          > Did you notice that, in addition to the tag information being displayed in the log, the `--decorate` also revealed `HEAD -> master`? That's information about a _branch_! We'll be looking at branches in Git, next.
+        instructor_notes: ''
+        resources: null
+      - id: 265032
+        key: 79215abc-e861-4537-bfe7-eb498effbbee
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 00:17:12 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Deleting A Tag
+
+          What if you accidentally misspelled something in the tag's message, or mistyped the actual tag name (`v0.1` instead of `v1.0`). How could you fix this? The easiest way is just to delete the tag and make a new one.
+
+          A Git tag can be deleted with the `-d` flag (for _delete_!) and the name of the tag:
+
+          ```bash
+          $ git tag -d v1.0
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 265033
+        key: cf1b013c-588b-4f37-b7fc-30bcc9b09047
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 00:17:46 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a39e16_ud123-l5-git-tag-delete/ud123-l5-git-tag-delete.png'
+        width: 2246
+        height: 1280
+        caption: _The Terminal application showing the removal of a tag by using the `-d` flag. The command that is run is `git tag -d v1.0`._
+        resources: null
+        instructor_notes: null
+      - id: 265034
+        key: fddb0d6b-d8bb-4ead-bc93-091ea16c20bc
+        locale: en-us
+        version: 1.0.0
+        title: Where Are The Tags?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Feb 15 2017 00:19:01 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'By default, a Git tag will not appear in a log. What flag must be used to display the tag information in the output of `git log`?'
+          correct_feedback: "Woohoo, that's the one! \uD83D\uDE4C\uD83C\uDFFC"
+          video_feedback: null
+          default_feedback: That doesn't look right. Why don't you try out the flag to see if it works.
+          answers:
+            - id: a1487117898240
+              text: '--show-tags'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487117911707
+              text: '--tags'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487117912363
+              text: '--display-all'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487117912891
+              text: '--decorate'
+              is_correct: true
+              incorrect_feedback: null
+      - id: 265035
+        key: a1f05cad-108d-465d-ab02-3fd691399c11
+        locale: en-us
+        version: 1.0.0
+        title: Delete That Tag?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Feb 15 2017 00:19:57 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Which of the following will delete the tag `v-1`?
+          correct_feedback: That's right! Remember that it's helpful to think that the `-d` flag is short for _delete_.
+          video_feedback: null
+          default_feedback: 'That doesn''t look right. How about checking out the [Git Tag docs](https://git-scm.com/docs/git-tag).'
+          answers:
+            - id: a1487117949183
+              text: git tag --delete v-1
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487117956923
+              text: git remove v-1
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487117957429
+              text: git tag -d v-1
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1487117958062
+              text: git delete v-1
+              is_correct: false
+              incorrect_feedback: null
+      - id: 265036
+        key: ae6b1f0d-80cd-44b2-9836-a8f53c037e95
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Apr 04 2017 22:20:54 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Adding A Tag To A Past Commit
+
+          Running `git tag -a v1.0` will tag the most recent commit. But what if you wanted to tag a commit that occurred farther back in the repo's history? 
+
+          All you have to do is provide the SHA of the commit you want to tag!
+
+          ```bash
+          $ git tag -a v1.0 a87984
+          ```
+
+          (after popping open a code editor to let you supply the tag's message) this command will tag the commit with the SHA `a87084` with the tag `v1.0`. Using this technique, you can tag any commit in the entire git repository! Pretty neat, right?...and it's just a simple addition to add the SHA of a commit to the Git tagging command you already know.
+        instructor_notes: ''
+        resources: null
+      - id: 265037
+        key: 69e97312-a26f-464c-b2bc-764b853bc901
+        locale: en-us
+        version: 1.0.0
+        title: Tag Older Commit?
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Wed Feb 15 2017 00:23:42 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Using the following `git log --oneline` information, what command would you run to give the commit with the message "style page header" with a tag of `beta`?
+
+            ```bash
+            2a9e9f3 add breakpoint for large-sized screens
+            137a0bd add breakpoint for medium-sized screens
+            c5ee895 add space around page edge
+            b552fa5 style page header
+            f8c87c7 convert social links from text to images
+            ```
+          default_feedback: That doesn't look right. Don't forget that you should create an _annotated_ tag.
+          correct_feedback: That's right; awesome job!
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: git tag -a beta b552fa5
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: git tag beta b552fa5
+              expression_description: null
+              flags: ''
+              incorrect_feedback: That's almost right! You created a _regular_ tag. Change this to an _annotated_ tag and it'll be perfect!
+      - id: 265038
+        key: 1fdab2d4-e9b0-40e5-bf6b-6deb1f95d594
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 00:25:12 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Git Tag Recap
+
+          To recap, the `git tag` command is used to add a marker on a specific commit. The tag does not move around as new commits are added.
+
+          ```shell
+          $ git tag -a beta
+          ```
+
+          This command will:
+          * add a tag to the most recent commit
+          * add a tag to a specific commit _if a SHA is passed_
+
+          ### Further Research
+          * [Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) from the Git Book
+          * [Git Tag](https://git-scm.com/docs/git-tag) from the Git Docs
+        instructor_notes: ''
+        resources: null
+  - id: 265008
+    key: 89a3a3ca-c47d-4e5f-87c7-cbc838f62232
+    locale: en-us
+    version: 1.0.0
+    title: Branching
+    semantic_type: Concept
+    updated_at: 'Sat Mar 04 2017 00:41:27 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 265039
+      - 273030
+      - 265041
+      - 265042
+      - 265043
+      - 265044
+      - 265045
+      - 266758
+      - 266759
+      - 266760
+      - 266761
+      - 266762
+      - 266763
+      - 266764
+      - 266765
+      - 266766
+      - 266767
+      - 266768
+      - 266769
+    atoms:
+      - id: 265039
+        key: 30647156-9ab8-4346-a9ee-944b48b4cc5f
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 00:28:35 GMT+0000 (UTC)'
+        is_public: true
+        text: 'It''s time to delve into the wonderful world of branches! Branches in Git are flexible and let you do some really powerful things. Before we get into the nitty gritty details of the commands, let''s take another step back and look at the big picture of what branches are and how they function.'
+        instructor_notes: ''
+        resources: null
+      - id: 273030
+        key: 094aefc4-f58b-45a7-b41e-eb7ec6d0a4a0
+        locale: en-us
+        version: 1.0.0
+        title: Nd016 WebND Ud123 Gitcourse BETAMOJITO L5 26 Branching Overview
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:19:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51041'
+          youtube_id: ywcOC6CLG4s
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58b9dc52_nd016-webnd-ud123-gitcourse-betamojito-l5-26-branching-overview/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc52_nd016-webnd-ud123-gitcourse-betamojito-l5-26-branching-overview/nd016-webnd-ud123-gitcourse-betamojito-l5-26-branching-overview_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc52_nd016-webnd-ud123-gitcourse-betamojito-l5-26-branching-overview/nd016-webnd-ud123-gitcourse-betamojito-l5-26-branching-overview_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc52_nd016-webnd-ud123-gitcourse-betamojito-l5-26-branching-overview/nd016-webnd-ud123-gitcourse-betamojito-l5-26-branching-overview_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc52_nd016-webnd-ud123-gitcourse-betamojito-l5-26-branching-overview/nd016-webnd-ud123-gitcourse-betamojito-l5-26-branching-overview_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc52_nd016-webnd-ud123-gitcourse-betamojito-l5-26-branching-overview/hls/playlist.m3u8'
+      - id: 265041
+        key: 29854875-59f0-4d8a-bf60-f2564530afcc
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 00:29:29 GMT+0000 (UTC)'
+        is_public: true
+        text: 'So that''s the big picture of how branches work and how to switch between branches. Did you know that you''ve already seen the master branch on the command line? Because of the setup files you added in the first lesson, the current branch is displayed right in the command prompt.'
+        instructor_notes: ''
+        resources: null
+      - id: 265042
+        key: 1a6aa741-88c9-4e44-958e-5b5d48839044
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 00:30:04 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a3a0fe_ud123-l5-branch-current/ud123-l5-branch-current.png'
+        width: 1536
+        height: 382
+        caption: _The Terminal application showing the current branch in the command prompt. The current branch is the "master" branch._
+        resources: null
+        instructor_notes: null
+      - id: 265043
+        key: 844d2130-d3b3-499d-9080-f55d55de4b83
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 00:30:38 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## The `git branch` command
+
+          The `git branch` command is used to interact with Git's branches:
+
+          ```bash
+          $ git branch
+          ```
+
+          It can be used to:
+          * list all branch names in the repository
+          * create new branches
+          * delete branches
+
+          If we type out just `git branch` it will list out the branches in a repository:
+        instructor_notes: ''
+        resources: null
+      - id: 265044
+        key: 178f9635-9479-4529-b163-700b9165ae41
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 00:31:05 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a3a139_ud123-l5-git-branch/ud123-l5-git-branch.png'
+        width: 1756
+        height: 1398
+        caption: _The Terminal application showing the output of the `git branch` command. The master branch is displayed._
+        resources: null
+        instructor_notes: null
+      - id: 265045
+        key: 7c3de544-9015-4291-a898-9ee64f779e09
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 00:31:24 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Create A Branch
+
+          To create a branch, all you have to do is use `git branch` and provide it the name of the branch you want it to create. So if you want a branch called "sidebar", you'd run this command:
+
+          ```bash
+          $ git branch sidebar
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 266758
+        key: bd62ce2c-dc5e-4747-8611-bdcbab243eb3
+        locale: en-us
+        version: 1.0.0
+        title: Does The Command Prompt Change?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Feb 15 2017 21:18:58 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Remember that there are a number of branches in the repository, but that the command prompt displays the _current branch_.
+
+            Now that we just created a new "sidebar" branch, does the command prompt display `sidebar` or `master`?
+          correct_feedback: 'That''s right! Even though you created the `sidebar` branch, it''s not the current branch just yet. We need to switch to it.'
+          video_feedback: null
+          default_feedback: 'That doesn''t look right. Using the `git branch` command, create a new "sidebar" branch. Then check out the shell''s prompt. '
+          answers:
+            - id: a1487193375843
+              text: sidebar
+              is_correct: false
+              incorrect_feedback: Make sure that you _just_ use the `git branch` command to create a new branch.
+            - id: a1487193402877
+              text: master
+              is_correct: true
+              incorrect_feedback: null
+      - id: 266759
+        key: 1af6f45e-35ad-4591-abf9-4a400f191343
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 21:19:53 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## The `git checkout` Command
+
+          Remember that when a commit is made that it will be added to the current branch. So even though we created the new `sidebar`, no new commits will be added to it since we haven't _switched to it_, yet. If we made a commit right now, that commit would be added to the `master` branch, _not_ the `sidebar` branch. We've already seen this in the demo, but to switch between branches, we need to use Git's `checkout` command.
+
+          ```bash
+          $ git checkout sidebar
+          ```
+
+          It's important to understand how this command works. Running this command will:
+          * remove all files and directories from the Working Directory that Git is tracking
+              * (files that Git tracks are stored in the repository, so nothing is lost)
+          * go into the repository and pull out all of the files and directories of the commit that the branch points to
+
+          So this will remove all of the files that are referenced by commits in the master branch. It will replace them with the files that are referenced by the commits in the sidebar branch. This is very important to understand, so go back and read these last two sentences.
+
+          The funny thing, though, is that both `sidebar` and `master` are pointing _at the same commit_, so it will look like nothing changes when you switch between them. But the command prompt will show "sidebar", now:
+        instructor_notes: ''
+        resources: null
+      - id: 266760
+        key: b2d2a7d2-287b-41a3-b831-7d4b6c48ec97
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 21:20:42 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4c60a_ud123-l5-git-checkout-sidebar/ud123-l5-git-checkout-sidebar.png'
+        width: 1756
+        height: 1398
+        caption: _The Terminal application showing the "sidebar" branch in the command prompt._
+        resources: null
+        instructor_notes: null
+      - id: 266761
+        key: f2831ca3-214f-44e2-8d71-e4dce56a8959
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 21:21:23 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Branches In The Log
+
+          The branch information in the command prompt is helpful, but the clearest way to see it is by looking at the output of `git log`. But just like we had to use the `--decorate` flag to display Git tags, we need it to display branches.
+
+          ```bash
+          $ git log --oneline --decorate
+          ```
+
+          This is what my log output displays (yours might look different depending on what commits you've made):
+        instructor_notes: ''
+        resources: null
+      - id: 266762
+        key: cd6e6a72-f0cc-4750-b900-f3b576eb0645
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 21:21:56 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4c65f_ud123-l5-git-log-branches/ud123-l5-git-log-branches.png'
+        width: 1756
+        height: 1398
+        caption: _The Terminal application showing the output of the `git log --oneline --decorate` command. The word "HEAD" has an arrow pointing to "sidebar" which is the active branch._
+        resources: null
+        instructor_notes: null
+      - id: 266763
+        key: a9db1d08-a5dd-41e6-9201-b5906a360ac9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 21:22:08 GMT+0000 (UTC)'
+        is_public: true
+        text: 'In the output above, notice how the special "HEAD" indicator we saw earlier has an arrow pointing to the sidebar branch. It''s pointing to sidebar because the sidebar branch is the current branch, and any commits made right now will be added to the sidebar branch.'
+        instructor_notes: ''
+        resources: null
+      - id: 266764
+        key: 9edfe7cf-d938-49f2-8790-563aa77d8e7d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 21:24:41 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## The Active Branch
+
+          The command prompt will display the _active_ branch. But this is a special customization we made to our prompt. If you find yourself on a different computer, the _fastest_ way to determine the active branch is to look at the output of the `git branch` command. An asterisk will appear next to the name of the active branch.
+        instructor_notes: ''
+        resources: null
+      - id: 266765
+        key: 45b208cb-b5e9-4ffc-a7da-b73b49071cf3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 21:23:09 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4c6aa_ud123-l5-git-branch-asterisk/ud123-l5-git-branch-asterisk.png'
+        width: 1756
+        height: 950
+        caption: '_The Terminal application showing the output of the `git branch` command. The active branch (in this case, the "sidebar" branch) has an asterisk next to it._'
+        resources: null
+        instructor_notes: null
+      - id: 266766
+        key: 297d01f0-00a2-4de2-9197-510998b03bc6
+        locale: en-us
+        version: 1.0.0
+        title: Create Git Branch At Location?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Thu Jun 08 2017 16:21:49 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            From what you know about both the `git branch` and `git tag` commands, what do you think the following command will do?
+
+            ```bash
+            $ git branch alt-sidebar-loc 42a69f
+            ```
+          correct_feedback: That's right! It creates a new branch called `alt-sidebar-loc` and has it pointing at the commit with the SHA `42a69f`
+          video_feedback: null
+          default_feedback: That doesn't look right. Think about what happens with Git tags when you pass a SHA. A similar thing happens when you pass a SHA to the `git branch` command! Why not give this quiz another try?
+          answers:
+            - id: a1487193898208
+              text: will create a branch `alt` at the same commit as the `master` branch
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487193910461
+              text: 'will create the 3 branches `alt`, `sidebar`, `loc`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487193911811
+              text: will move the master branch to the commit with SHA `42a69f`
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487193912349
+              text: will create the `alt-sidebar-loc` branch and have it point to the commit with SHA `42a69f`
+              is_correct: true
+              incorrect_feedback: null
+      - id: 266767
+        key: 5bded3f3-d1d7-479c-ac45-bd71f1b4efeb
+        locale: en-us
+        version: 1.0.0
+        title: Which Branch Is Active?
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Wed Feb 15 2017 21:27:44 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Given the following output from `git branch`:
+
+            ```bash
+            $ git branch
+              barbara
+            * footer-fix
+              master
+              richard
+              sidebar
+              social-icons
+            ```
+
+            Which branch is the active branch?
+          default_feedback: That doesn't look right. Pay attention to the asterisk.
+          correct_feedback: 'That''s right! Because the asterisk is next to `footer-fix`, that means it''s the active branch.'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: footer-fix
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+      - id: 266768
+        key: 1d857219-061b-4da7-8f11-4261c9faf1ce
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Apr 10 2017 16:11:52 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Delete A Branch
+
+          A branch is used to do development or make a fix to the project that won't affect the project (since the changes are made on a branch). Once you make the change on the branch, you can combine that branch into the `master` branch (this "combining of branches" is called "merging" and we'll look at shortly).
+
+          Now after a branch's changes have been merged, you probably won't need the branch anymore. If you want to delete the branch, you'd use the `-d` flag. The command below includes the `-d` flag which tells Git to _delete_ the provided branch (in this case, the "sidebar" branch).
+
+          ```bash
+          $ git branch -d sidebar
+          ```
+
+          One thing to note is that you can't delete a branch that you're currently on. So to delete the `sidebar` branch, you'd have to switch to either the `master` branch or create and switch to a new branch.
+
+          Deleting something can be quite nerve-wracking. Don't worry, though. Git won't let you delete a branch if it has commits on it that aren't on any other branch (meaning the commits are unique to the branch that's about to be deleted). If you created the `sidebar` branch, added commits to it, and then tried to delete it with the `git branch -d sidebar`, Git wouldn't let you delete the branch because you can't delete a branch that you're currently on. If you switched to the `master` branch and tried to delete the `sidebar` branch, Git _also_ wouldn't let you do that because those new commits on the `sidebar` branch would be lost! To force deletion, you need to use a capital D flag - `git branch -D sidebar`.
+        instructor_notes: ''
+        resources: null
+      - id: 266769
+        key: 22f92e55-2af3-40ab-8bae-15ea071dd2d1
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 21:29:49 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Git Branch Recap
+
+          To recap, the `git branch` command is used to manage branches in Git:
+
+          ```bash
+          # to list all branches
+          $ git branch
+
+          # to create a new "footer-fix" branch
+          $ git branch footer-fix
+
+          # to delete the "footer-fix" branch
+          $ git branch -d footer-fix
+          ```
+
+          This command is used to:
+
+          * list out local branches
+          * create new branches
+          * remove branches
+
+
+          ### Further Research
+          * [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) from the Git Docs
+          * [Learn Git Branching](http://learngitbranching.js.org/)
+          * [Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches) from the Atlassian Blog
+        instructor_notes: ''
+        resources: null
+  - id: 265009
+    key: b86879e8-45d6-4600-94f2-a11564e7d1f8
+    locale: en-us
+    version: 1.0.0
+    title: Branching Effectively
+    semantic_type: Concept
+    updated_at: 'Sat Mar 04 2017 00:41:51 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 266773
+      - 266774
+      - 266775
+      - 266776
+      - 266777
+      - 266778
+      - 266779
+      - 266780
+      - 266781
+      - 266782
+      - 273031
+      - 266784
+      - 266785
+      - 266787
+      - 266788
+      - 266789
+      - 266790
+      - 266791
+      - 266793
+      - 266794
+      - 266795
+      - 266796
+      - 266797
+      - 266798
+      - 266799
+      - 266800
+      - 266801
+    atoms:
+      - id: 266773
+        key: a825b443-4eb7-4201-9dcc-b1f5efb87ef0
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 21:50:28 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Alright! Now that you've learned how to create, list, and delete branches, let's put that knowledge to use!
+
+          First, make sure we're on the same page and have the same starter code. We're going to be working in the `new-git-project` project. The project has the following files:
+          * `index.html`
+          * `css/app.css` (empty)
+          * `js/app.js` (empty)
+
+          The CSS and JavaScript files are empty. Make sure the index file has the following content:
+        instructor_notes: ''
+        resources: null
+      - id: 266774
+        key: ee1ca7a6-df52-4009-aa66-e1ced34044ca
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 21:50:39 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ```html
+          <!doctype html>
+          <html lang="en">
+          <head>
+              <meta charset="utf-8">
+              <title>Blog Project</title>
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <meta name="description" content="">
+              <link rel="stylesheet" href="css/app.css">
+          </head>
+          <body>
+
+              <header>
+                  <h1>Expedition</h1>
+              </header>
+
+              <div class="container">
+                  <main>
+                      
+                  </main>
+              </div>
+
+              <footer>
+                  Made with ♥ @ Udacity
+              </footer>
+              <script src="js/app.js"></script>
+          </body>
+          </html>
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 266775
+        key: 144ad1c9-ca59-40c9-af3f-45479b5fffe0
+        locale: en-us
+        version: 1.0.0
+        title: Project Is Set Up
+        semantic_type: TaskListAtom
+        updated_at: 'Thu Mar 23 2017 01:25:54 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - I have an `index.html` file with the starter code from above
+          - I have an `app.css` file inside a `css` directory
+          - I have an `app.js` file inside a `js` directory
+          - all files have been saved
+          - all files have been staged and committed to the repository
+          - the current branch is the `master` branch
+          - I have deleted all other branches
+          - the output from running `git status` on the command line includes the text `working directory clean`
+        positive_feedback: Fantastic work! Let's get crackin'!
+        video_feedback: null
+        description: 'Before we proceed, let''s make sure we have the same setup. Check off each of the following:'
+      - id: 266776
+        key: 037cd78b-b1f5-4b12-996e-ff47bf79307b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 21:55:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## The Game Plan
+
+          Right now we have all of our code on the `master` branch (which is the default branch). We're about to work with branches, by:
+          * adding content to them
+          * creating new branches
+          * switching back and forth between them
+
+          Let's use branches to make the following changes:
+          1. on the master branch - add a default color to the page
+          * create a sidebar branch - create a sidebar for the page
+          * on the master branch - change the heading of the page
+          * on the sidebar branch - add more content to the sidebar
+          * create a footer branch - add social links to the footer
+        instructor_notes: ''
+        resources: null
+      - id: 266777
+        key: e8f3480d-6189-4d87-ac28-c858ed6dde7e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 21:55:27 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Change 1 - Add Page Color
+
+          Make sure you're on the `master` branch and add the following content to `css/app.css`:
+
+          ```css
+          body {
+              background-color: #00cae4;
+          }
+          ```
+
+          Save the file. Then add the file to the staging index and commit it to the repository.
+        instructor_notes: ''
+        resources: null
+      - id: 266778
+        key: f0eb19d8-cbe4-43e4-9a0e-6088a9a1f596
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 21:56:19 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4ce74_ud123-l5-changes-add-color/ud123-l5-changes-add-color.png'
+        width: 2224
+        height: 974
+        caption: _The Terminal application showing the output of the `git log --oneline --decorate` command. The most-recent commit adds a default background color to the page._
+        resources: null
+        instructor_notes: null
+      - id: 266779
+        key: 2c1e6c1d-0dd6-4026-b921-cae02752d11c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 21:57:32 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Change 2 - Add Sidebar
+
+          Let's add a sidebar to the page. But let's say that we're not really sure if we like the new background color. So we'll place the sidebar branch on the commit _before_ the one that sets the page's color. Your SHAs will be different, but, for me, the commit that's before the one that adds the color has a SHA of `5bfe5e7`. So adding the branch to that commit would look like:
+
+          ```bash
+          $ git branch sidebar 5bfe5e7
+          ```
+
+          Now use the `git checkout` command to switch to the new `sidebar` branch. Running a `git log --oneline --decorate` shows me:
+        instructor_notes: ''
+        resources: null
+      - id: 266780
+        key: 6c1f7853-8f48-454a-a175-24eed97367f4
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Thu Mar 23 2017 01:27:49 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4cee4_ud123-l5-git-branch-sidebar/ud123-l5-git-branch-sidebar.png'
+        width: 2224
+        height: 974
+        caption: _The Terminal application showing the output of `git log --oneline --decorate`. The output does *NOT* include the `master` branch - it has disappeared._
+        resources: null
+        instructor_notes: null
+      - id: 266781
+        key: f94d0d4f-24bc-43fe-b3bc-c975b4b40b51
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 21:58:24 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Did you notice that the `master` branch does not display in the output? Where did it go!?! Is it lost? Don't worry, it's still there, we'll see how to get it to display in just a second.
+
+          But first, in your code editor, switch to the `app.css` file. Notice that it does not have the CSS we previously entered! Because of this, if you load the project up in the browser, the page won't have a colored background. This makes sense since the CSS file is empty, but do you know why?
+        instructor_notes: ''
+        resources: null
+      - id: 266782
+        key: 264f6bfa-7fd3-4e49-a95e-ef7f0a0c3ed9
+        locale: en-us
+        version: 1.0.0
+        title: Where's the CSS?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Feb 15 2017 22:01:00 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'Thinking back to the branching repository video from the previous lesson, why would the CSS file be empty?'
+          correct_feedback: That's right! The content is stored safely on another branch!
+          video_feedback: null
+          default_feedback: 'That''s not right. Because the content has been committed, it _is_ in the repository.'
+          answers:
+            - id: a1487195917493
+              text: The content has been erased.
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487195933402
+              text: The content is stored safely on another branch.
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1487195934091
+              text: The content is in a temporary file that needs to be saved.
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487195934667
+              text: A bear ate it.
+              is_correct: false
+              incorrect_feedback: "Nom nom nom \uD83D\uDC3B  Sadly, this is not correct."
+      - id: 273031
+        key: 3b18fe7e-e7c6-4d55-8af9-f3da21bc9a1b
+        locale: en-us
+        version: 1.0.0
+        title: Nd016 WebND Ud123 Gitcourse BETAMOJITO L5 54 Content On Different Branches
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:18:03 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51042'
+          youtube_id: Px6EUylw8Uw
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58b9dc52_nd016-webnd-ud123-gitcourse-betamojito-l5-54-content-on-different-branches/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc52_nd016-webnd-ud123-gitcourse-betamojito-l5-54-content-on-different-branches/nd016-webnd-ud123-gitcourse-betamojito-l5-54-content-on-different-branches_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc52_nd016-webnd-ud123-gitcourse-betamojito-l5-54-content-on-different-branches/nd016-webnd-ud123-gitcourse-betamojito-l5-54-content-on-different-branches_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc52_nd016-webnd-ud123-gitcourse-betamojito-l5-54-content-on-different-branches/nd016-webnd-ud123-gitcourse-betamojito-l5-54-content-on-different-branches_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc52_nd016-webnd-ud123-gitcourse-betamojito-l5-54-content-on-different-branches/nd016-webnd-ud123-gitcourse-betamojito-l5-54-content-on-different-branches_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc52_nd016-webnd-ud123-gitcourse-betamojito-l5-54-content-on-different-branches/hls/playlist.m3u8'
+      - id: 266784
+        key: cd26ac4c-8f9e-40d1-a246-f8c6dd8d8538
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:04:45 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Create a sidebar by adding the following `<aside>` code to the HTML file:
+
+          ```html
+          <div class="container">
+              <main>
+
+              </main>
+          </div>
+
+          <!-- start of new content -->
+          <aside>
+              <h2>About Me</h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, debitis earum molestias veniam suscipit aliquam totam exercitationem tempore neque vitae. Minima, corporis pariatur facere at quo porro beatae similique! Odit.</p>
+          </aside>
+          <!-- end of new content -->
+
+          <footer>
+              Made with ♥ @ Udacity
+          </footer>
+          ```
+
+          I added my `<aside>` content next to the `<main>` element as a fellow child of the `<div class="container">` element.
+
+          Feel free to add any content inside the `<aside>` element!
+        instructor_notes: ''
+        resources: null
+      - id: 266785
+        key: 98a41109-ad84-4acb-b784-ea1ac2d97145
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:05:54 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## ⚠️ Don't Change the CSS
+
+          > WARNING: It's very important that you _*do not change the CSS file*_. 
+
+          > We'll change it later, but if you make a change right now, we'll end up having what's known as a "merge conflict". We'll manually cause a merge conflict in a bit, but we don't want to have one right now, so just don't make any changes to the CSS file, yet.
+        instructor_notes: ''
+        resources: null
+      - id: 266787
+        key: 0607a90d-8aef-419f-b523-1f65a097472c
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Wed Feb 15 2017 22:25:27 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - I've saved `index.html`
+          - I've staged `index.html`
+          - I've committed `index.html` to the repsitory
+        positive_feedback: "Great job! \uD83C\uDF89"
+        video_feedback: null
+        description: 'We''re done with this step, so it''s time to commit the changes.'
+      - id: 266788
+        key: 9559b157-76a2-405f-b58f-6bfc5b8e8b9c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:10:40 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Change 3 - Change Heading On Master
+
+          Let's switch back to the master branch and update the page heading.
+
+          Use the `git checkout` command to switch back to the `master` branch. (Notice that the HTML for the new sidebar is no longer there(!) because all that code is stored safely on the `sidebar` branch.)
+
+          Now change the `<h1>` heading of the page from "Expedition" to something else. How about something exciting like the word "Adventure"!?!
+        instructor_notes: ''
+        resources: null
+      - id: 266789
+        key: a5e4d20e-0731-40af-8dc0-b70f7a2c2a2d
+        locale: en-us
+        version: 1.0.0
+        title: See Changes Made?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Feb 15 2017 22:11:25 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'Pop quiz time! How do you have Git show you the changes you''ve saved, but not yet committed?'
+          correct_feedback: That's right! The `git diff` command will show you the changes that have not yet been committed.
+          video_feedback: null
+          default_feedback: 'Hmmm, did you actually run that command? Try running it and see if you can locate the changed heading information in its output.'
+          answers:
+            - id: a1487196644318
+              text: git show --diff
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487196658665
+              text: git log -p
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487196659223
+              text: git diff
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1487196659848
+              text: git log --stat
+              is_correct: false
+              incorrect_feedback: null
+      - id: 266790
+        key: 25e377f2-2537-4b52-8f43-6ea3731bc5dd
+        locale: en-us
+        version: 1.0.0
+        title: Heading Change Have Been Saved And Committed
+        semantic_type: TaskListAtom
+        updated_at: 'Wed Feb 15 2017 22:25:27 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - I've saved `index.html`
+          - I've staged `index.html`
+          - I've committed `index.html` to the repsitory
+        positive_feedback: Stupendous job!
+        video_feedback: null
+        description: 'Now it''s time to save the `index.html` file and make a commit to add this change to the repository. (I used the commit message "Improve site heading for SEO", but see if you can think of a better one)'
+      - id: 266791
+        key: 57349e08-f83f-4709-980e-68adaa3a6d1d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:13:49 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Change 4 - Add More Content To Sidebar
+
+          Switch back to the `sidebar` branch (notice, again, that content we've added to the `master` branch isn't visible on the `sidebar` branch).
+
+          Now just add some content inside the `<aside>` element. Add something about yourself - your favorite movie or book (my favorite is LOTR!). Anything will work, you just need to add some content.
+
+          Again, make sure that you do not make changes to the CSS file.
+
+          Now save the `index.html` file and make a commit.
+        instructor_notes: ''
+        resources: null
+      - id: 266793
+        key: 46d3c3ce-38ab-4b16-bf61-5889ac9c831a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:17:34 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Change 5 - Add Social Links To Footer
+
+          We've made a number of changes, and we're about to make our last one. Let's add some social icons to the page's footer. For grins and giggles, let's make this change on a new footer branch that's based off the `master` branch. So we need to create a new `footer` branch, first.
+        instructor_notes: ''
+        resources: null
+      - id: 266794
+        key: 33f82009-8ceb-46e3-9f5e-3bc6f57b38d4
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:19:24 GMT+0000 (UTC)'
+        is_public: true
+        text: "> ## \uD83D\uDCA1 Switch and Create Branch In One Command\uD83D\uDCA1 \n\n>The way we currently work with branches is to create a branch with the `git branch` command and then switch to that newly created branch with the `git checkout` command.\n\n> But did you know that the `git checkout` command can actually create a new branch, too? If you provide the `-b` flag, you can create a branch _and_ switch to it all in one command.\n\n> ```bash\n$ git checkout -b richards-branch-for-awesome-changes\n```\n\n> It's a pretty useful command, and I use it often."
+        instructor_notes: ''
+        resources: null
+      - id: 266795
+        key: c7c1f449-c3eb-4df9-9977-aa21522e9d07
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:19:49 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Let's use this new feature of the `git checkout` command to create our new `footer` branch and have this footer branch start at the same location as the master branch:
+
+          ```bash
+          $ git checkout -b footer master
+          ```
+
+          Now if we run a quick `git log --oneline --decorate`, we should see (your commit messages might be different):
+        instructor_notes: ''
+        resources: null
+      - id: 266796
+        key: 665d46d2-5da8-4d72-aa9d-8dd3a3da7445
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 22:20:58 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4d41d_ud123-l5-git-checkout-b-footer-master/ud123-l5-git-checkout-b-footer-master.png'
+        width: 2224
+        height: 974
+        caption: _The Terminal application showing the output of `git log --oneline --decorate`. The special `HEAD` pointer is pointing at the `footer` branch. The `footer` branch is on the same commit as the "master" branch._
+        resources: null
+        instructor_notes: null
+      - id: 266797
+        key: 2c00e808-424e-4b89-80ff-3bf4da10fbbe
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:22:49 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### Add Social Links
+
+          Now that we're on a new branch, let's add some social links to the page's footer. I've added the following content:
+
+          ```html
+          <footer>
+              <!-- start of new content -->
+              <section>
+                  <h3 class="visuallyhidden">Social Links</h3>
+                  <a class="social-link" href="https://twitter.com/udacity">
+                      <img src="img/social-twitter.png" alt="Twitter">
+                  </a>
+                  <a class="social-link" href="https://www.instagram.com/udacity/">
+                      <img src="img/social-instagram.png" alt="Instagram">
+                  </a>
+                  <a class="social-link" href="https://plus.google.com/+Udacity">
+                      <img src="img/social-google.png" alt="Google Plus">
+                  </a>
+              </section>
+              <!-- end of new content -->
+          </footer>
+          ```
+
+          Feel free to link to your own social accounts.
+        instructor_notes: ''
+        resources: null
+      - id: 266798
+        key: 9eafbeff-a750-40c1-8d97-0c98d288b9e8
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Wed Feb 15 2017 22:25:27 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - I've saved `index.html`
+          - I've staged `index.html`
+          - I've committed `index.html` to the repsitory
+        positive_feedback: "Outstanding work! \uD83D\uDC4F"
+        video_feedback: null
+        description: 'Now save the file and make a commit. (I used the commit message "Add links to social media", but definitely try coming up with a better one)'
+      - id: 266799
+        key: f7a7ee58-6d09-4f58-8c39-a45d46166c10
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:24:08 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## See All Branches At Once
+
+          We've made it to the end of all the changes we needed to make! Awesome job!
+
+          Now we have multiple sets of changes on three different branches. We can't see other branches unless in the `git log` output unless we switch to a branch. Wouldn't it be nice if we could see _all_ branches at once in the `git log` output. 
+
+          As you've hopefully learned by now, the `git log` command is pretty powerful and _can_ show us this information. We'll use the new `--graph` and `--all` flags:
+
+          ```bash
+          $ git log --oneline --decorate --graph --all
+          ```
+
+          The `--graph` flag adds the bullets and lines to the leftmost part of the output. This shows the actual _branching_ that's happening. The `--all` flag is what displays _all_ of the branches in the repository.
+
+          Running this command will show all branches and commits in the repository:
+        instructor_notes: ''
+        resources: null
+      - id: 266800
+        key: 1e40b6ef-cc1c-4f78-876c-73c8f90c3e19
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 22:24:46 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4d51e_ud123-l5-git-log-graph-all/ud123-l5-git-log-graph-all.png'
+        width: 2224
+        height: 974
+        caption: _The Terminal application showing the output of `git log --oneline --graph --decorate --all`. This shows all branches and therefore all commits in the repository._
+        resources: null
+        instructor_notes: null
+      - id: 266801
+        key: c4375d39-6d27-426c-a068-82b97e12f911
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:25:16 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Recap Of Changes
+
+          We've made the following changes:
+          1. on the master branch, we added a default color to the page
+          * we created a sidebar branch and added code for a sidebar
+          * on the master branch, we changed the heading of the page
+          * on the sidebar branch, we added more content to the sidebar
+          * we created a footer branch and added social links to the footer
+
+          These changes are all on their own, separate branches. Let's have Git combine these changes together. Combining branches together is called **merging**.
+        instructor_notes: ''
+        resources: null
+  - id: 265010
+    key: 3a831268-c6c7-4d10-a755-37e1232a2b4c
+    locale: en-us
+    version: 1.0.0
+    title: Merging
+    semantic_type: Concept
+    updated_at: 'Sat Mar 04 2017 00:42:29 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 266802
+      - 273032
+      - 266804
+      - 266805
+      - 266806
+      - 266808
+      - 266809
+      - 266810
+      - 266811
+      - 266812
+      - 266813
+      - 266814
+      - 266816
+      - 266817
+    atoms:
+      - id: 266802
+        key: ee19effe-4bb7-41e4-a374-46c5f5a31979
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Mar 22 2017 19:03:35 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Remember that the purpose of a topic branch (like `sidebar`) is that it lets you make changes that do not affect the `master` branch. Once you make changes on the topic branch, you can either decide that you don't like the changes on the branch and you can just delete that branch, or you can decide that you want to keep the changes on the topic branch and combine those changes in with those on another branch.
+
+          Combining branches together is called **merging**.
+
+          Git can automatically merge the changes on different branches together. This branching and merging ability is what makes Git _incredibly powerful_! You can make small or extensive changes on branches, and then just use Git to combine those changes together. 
+
+          Let's see how this works, in theory. Pay attention to the two main types of merges in Git, a regular **merge** and a **Fast-forward merge**.
+        instructor_notes: ''
+        resources: null
+      - id: 273032
+        key: c4f25391-7354-4b54-b72b-33e0f32a1564
+        locale: en-us
+        version: 1.0.0
+        title: Nd016 WebND Ud123 Gitcourse BETAMOJITO L5 71 Merging
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:19:00 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51043'
+          youtube_id: gQiWicrreJg
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58b9dc53_nd016-webnd-ud123-gitcourse-betamojito-l5-71-merging/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc53_nd016-webnd-ud123-gitcourse-betamojito-l5-71-merging/nd016-webnd-ud123-gitcourse-betamojito-l5-71-merging_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc53_nd016-webnd-ud123-gitcourse-betamojito-l5-71-merging/nd016-webnd-ud123-gitcourse-betamojito-l5-71-merging_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc53_nd016-webnd-ud123-gitcourse-betamojito-l5-71-merging/nd016-webnd-ud123-gitcourse-betamojito-l5-71-merging_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc53_nd016-webnd-ud123-gitcourse-betamojito-l5-71-merging/nd016-webnd-ud123-gitcourse-betamojito-l5-71-merging_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc53_nd016-webnd-ud123-gitcourse-betamojito-l5-71-merging/hls/playlist.m3u8'
+      - id: 266804
+        key: b4fee657-95fc-4f5e-9d94-b228ac99e0bb
+        locale: en-us
+        version: 1.0.0
+        title: Quick Check In
+        semantic_type: TaskListAtom
+        updated_at: 'Wed Mar 22 2017 19:10:18 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - I am in the `new-git-project` project
+          - I have checked out the `master` branch
+          - the output of `git status` includes the text `working directory clean`
+        positive_feedback: 'Alrighty, let''s begin!'
+        video_feedback: null
+        description: 'Let''s do a quick check-in to make sure we''re both starting at the same point. Check off each of the following:'
+      - id: 266805
+        key: b3ea4063-593e-465c-bb8a-26d50494c8c7
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 23 2017 01:32:22 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## ⚠️ Know The Branch ⚠️
+
+          > It's very important to know which branch you're on when you're about to merge branches together. Remember that making a merge makes a commit.
+
+          > As of right now, we do not know how to _undo_ changes. We'll go over it in the next lesson, but if you make a merge on the wrong branch, use this command to undo the merge:
+
+          > `git reset --hard HEAD^`
+
+          > (Make sure to include the `^` character! It's a known as a "Relative Commit Reference" and indicates "the parent commit". We'll look at Relative Commit References in the next lesson.)
+        instructor_notes: ''
+        resources: null
+      - id: 266806
+        key: 7e678f1a-8d95-4b39-b634-c4954715de27
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:28:55 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## The Merge Command
+
+          The `git merge` command is used to combine Git branches:
+
+          ```bash
+          $ git merge <name-of-branch-to-merge-in>
+          ```
+
+          When a merge happens, Git will:
+          * look at the branches that it's going to merge
+          * look back along the branch's history to find a single commit that _both_ branches have in their commit history
+          * combine the lines of code that were changed on the separate branches together
+          * makes a commit to record the merge
+        instructor_notes: ''
+        resources: null
+      - id: 266808
+        key: 17ae13f4-48aa-4067-8436-79ef02c8d737
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:31:26 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### Fast-forward Merge
+
+          In our project, I've checked out the `master` branch and I want _it_ to have the changes that are on the `footer` branch. If I wanted to verbalize this, I could say this is - "I want to merge in the `footer` branch". That "merge in" is important; when a merge is performed, the _other_ branch's changes are brought into the branch that's currently checked out.
+
+          Let me stress that again - When we merge, we're merging some other branch into the current (checked-out) branch. We're not merging two branches into a new branch. We're not merging the current branch into the other branch.
+
+          Now, since `footer` is directly ahead of `master`, this merge is one of the easiest merges to do. Merging `footer` into `master` will cause a **Fast-forward merge**. A Fast-forward merge will just move the currently checked out branch _forward_ until it points to the same commit that the other branch (in this case, `footer`) is pointing to.
+
+          To merge in the `footer` branch, run:
+
+          ```bash
+          $ git merge footer
+          ```
+
+          This is what my Terminal displays after running the command:
+        instructor_notes: ''
+        resources: null
+      - id: 266809
+        key: a7794263-281e-463d-8556-26de2dfd6b92
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 22:32:57 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4d706_ud123-l5-merge-fast-forward/ud123-l5-merge-fast-forward.gif'
+        width: 1020
+        height: 490
+        caption: _The Terminal application showing the result of merging the `footer` branch _into_ the `master` branch._
+        resources: null
+        instructor_notes: null
+      - id: 266810
+        key: 14f1fe21-ec45-4565-b613-8530332477be
+        locale: en-us
+        version: 1.0.0
+        title: Branches At Same Location?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Feb 15 2017 22:35:50 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'Take a look at the repository, again, now that you''ve merged the two branches together. Do the `master` branch and the `footer` branch point to the same commit?'
+          correct_feedback: That's right! Both `footer` and `master` are pointing at the same commit.
+          video_feedback: null
+          default_feedback: 'Hmm, are you sure you performed a `merge`? Go back and try merging `master` and `footer` again to see what you get.'
+          answers:
+            - id: a1487197986349
+              text: 'Yes'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1487198027495
+              text: 'No'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 266811
+        key: f440e00e-035b-4d7f-b873-563c0d6bf240
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:37:50 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Perform A Regular Merge
+
+          Fantastic work doing a Fast-forward merge! That wasn't too hard, was it? 
+
+          But you might say - "Of course that was easy, all of the commits are already there and the branch pointer just moved forward!"...and you'd be right. It's the simplest of merges. 
+
+          So let's do the more common kind of merge where two _divergent_ branches are combined. You'll be surprised that to merge in a divergent branch like `sidebar` is actually no different!
+
+          To merge in the `sidebar` branch, make sure you're on the `master` branch and run:
+
+          ```bash
+          $ git merge sidebar
+          ```
+
+          Because this combines two divergent branches, a commit is going to be made. And when a commit is made, a commit message needs to be supplied. Since this is a _merge commit_ a default message is already supplied. You can change the message if you want, but it's common practice to use the default merge commit message. So when your code editor opens with the message, just close it again and accept that commit message.
+
+          This is what my Terminal shows after using the default commit message:
+        instructor_notes: ''
+        resources: null
+      - id: 266812
+        key: 7e777705-6ae1-41f0-8cb8-99397d235f6c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 22:38:16 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4d84e_ud123-l5-git-merge-sidebar/ud123-l5-git-merge-sidebar.png'
+        width: 2224
+        height: 1032
+        caption: _The Terminal application showing the result of merging the `sidebar` branch._
+        resources: null
+        instructor_notes: null
+      - id: 266813
+        key: 14808f27-c54c-4b18-b2ae-5409369a7188
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:38:27 GMT+0000 (UTC)'
+        is_public: true
+        text: 'Aaaand that''s all there is to merging! It''s pretty simple, isn''t it? You might read a lot of material that makes branching and merging seem overly complicated, but it''s really not too bad at all.'
+        instructor_notes: ''
+        resources: null
+      - id: 266814
+        key: 68e80616-386c-4969-a6e6-3b926146a46c
+        locale: en-us
+        version: 1.0.0
+        title: Which Branch Moves?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Feb 15 2017 22:39:39 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            How about a quick quiz to see if you're following along with how merging works. 
+
+            Let's say a repository has 4 branches in it:
+            * master
+            * allisons-mobile-footer-fix
+            * nav-updates
+            * jonathans-seo-changes
+
+            The changes on `master` and `allisons-mobile-footer-fix` need to be merged together. If HEAD points to `allisons-mobile-footer-fix`, which branch will move when the merge is performed?
+          correct_feedback: 'That''s right! Whichever branch the special `HEAD` pointer is pointing at, that''s the branch that will have the merge commit.'
+          video_feedback: null
+          default_feedback: That's not right. Think back to what `HEAD` indicates and where commits go when they're created.
+          answers:
+            - id: a1487198316971
+              text: master
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487198333854
+              text: allisons-mobile-footer-fix
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1487198335177
+              text: nav-updates
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1487198357539
+              text: jonathans-seo-changes
+              is_correct: false
+              incorrect_feedback: null
+      - id: 266816
+        key: 19a8f14e-446b-4a88-8143-90a9f3261281
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:40:09 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          ## What If A Merge Fails?
+
+          The merges we just did were able to merge successfully. Git is able to intelligently combine lots of work on different branches. However, there are times when it can't combine branches together. When a merge is performed and fails, that is called a **merge conflict**. We'll look at merge conflicts, what causes them, and how to resolve them in the next lesson.
+
+        instructor_notes: ''
+        resources: null
+      - id: 266817
+        key: 502d162b-dec5-4741-83b6-aa665181932c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:41:29 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Merge Recap
+
+          To recap, the `git merge` command is used to combine branches in Git:
+
+          ```bash
+          $ git merge <other-branch>
+          ```
+
+          There are two types of merges:
+
+          * Fast-forward merge – the branch being merged in must be _ahead_ of the checked out branch. The checked out branch's pointer will just be moved forward to point to the same commit as the other branch.
+          * the regular type of merge
+              * two divergent branches are combined
+              * a merge commit is created
+
+          ### Further Research
+          * [Basic Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#Basic-Merging) from Git Book
+          * [git-merge](https://git-scm.com/docs/git-merge) from Git Docs
+          * [git merge](https://www.atlassian.com/git/tutorials/git-merge) from Atlassian blog
+        instructor_notes: ''
+        resources: null
+  - id: 265011
+    key: 84037f3a-2ba6-4317-a705-4dc5f342295e
+    locale: en-us
+    version: 1.0.0
+    title: Merge Conflicts
+    semantic_type: Concept
+    updated_at: 'Fri Feb 17 2017 19:24:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 266818
+      - 266824
+      - 266819
+      - 266820
+      - 266821
+      - 266822
+      - 266825
+      - 266826
+      - 266827
+      - 266828
+      - 266830
+      - 266834
+      - 266835
+      - 267148
+      - 266837
+      - 266838
+      - 267147
+      - 266840
+      - 266843
+      - 266844
+    atoms:
+      - id: 266818
+        key: e0cf0330-9680-4c3f-b07e-3658d2122133
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:48:39 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Sometimes Merges Fail
+
+          Most of the time Git will be able to merge branches together without any problem. However, there are instances when a merge cannot be _fully_ performed automatically. When a merge fails, it's called a **merge conflict**. 
+
+          If a merge conflict does occur, Git will try to combine as much as it can, but then it will leave special markers (e.g. `>>>` and `<<<`) that tell you where you (yep, you the programmer!) needs to manually fix. 
+
+          ### What Causes A Merge Conflict
+          As you've learned, Git tracks _lines_ in files. A merge conflict will happen when _the exact same line(s)_ are changed in separate branches. For example, if you're on a `alternate-sidebar-style` branch and change the sidebar's heading to "About Me" but then on a different branch and change the sidebar's heading to "Information About Me", which heading should Git choose? You've changed the heading on both branches, so there's no way Git will know which one you actually want to keep. And it sure isn't going to just randomly pick for you!
+
+          Let's force a merge conflict so we can learn to resolve it. Trust me, it's simple once you get the hang of it! Remember that a merge conflict occurs when Git isn't sure which line(s) you want to use from the branches that are being merged. So we need to edit _the same line on two different branches_...and then try to merge them.
+        instructor_notes: ''
+        resources: null
+      - id: 266824
+        key: a40269b0-e25c-44a7-8154-7e80b0aae331
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:52:24 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Forcing A Merge Conflict!
+
+          Remember that a merge conflict occurs when _the exact same line(s) are changed in separate branches_. Let's alter the page's heading on two different branches. So Let's:
+
+          * change the heading on the `master` branch
+          * create a `heading-update` branch _that's located on the commit right before the recently modified `master` branch_
+          * change the _same_ heading
+          * switch back to the `master` branch
+          * merge in the `heading-update` branch
+        instructor_notes: ''
+        resources: null
+      - id: 266819
+        key: a651eeaa-10ed-45e9-9f93-4576159d42f9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:44:35 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Change Heading On Branch 1
+
+          Since the `master` branch is just a regular ol' branch like all the rest, let's just alter the heading while we're on the `master` branch. So change the `<h1>` heading from whatever you have it to something else. For me, the heading is currently "Adventure" on line 13, and I'm changing it to "Quest".
+
+          Once you've made the change, save the file and commit it to the repository.
+        instructor_notes: ''
+        resources: null
+      - id: 266820
+        key: 49709dc9-b85e-4f8d-b9ba-bd77c01e1846
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:44:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Change Heading On Branch 2
+
+          Now we need to create a different branch and update the heading on that branch.
+
+          Now this is important, we need to create a branch that's _not branching from the master branch_. If we make a change that branches _off_ of the master branch, then _that_ change will be "ahead" of this one and Git will just use that change instead of the one we just made on `master`. So we need to put the branch "in the past".
+
+          Let's just create a branch that's on the commit right _before_ the most recent one. So use Git log to get the previous commit's SHA and create a branch on that commit. Here's what my Git log looks like after creating a `heading-update` branch:
+        instructor_notes: ''
+        resources: null
+      - id: 266821
+        key: 7edd79d5-434c-49fd-bd67-e06457b51e2a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 22:46:48 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4da49_ud123-l5-git-merge-conflict-prep/ud123-l5-git-merge-conflict-prep.png'
+        width: 2314
+        height: 1264
+        caption: _The Terminal application showing the output of `git log --oneline --decorate --graph --all`. The `heading-update` branch is currently checked out._
+        resources: null
+        instructor_notes: null
+      - id: 266822
+        key: d457a2cd-ec3c-4993-86f6-1bd363278707
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:48:09 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Ok, now that we've got our branch created, we just need to update the heading, again. Now make sure you change _the exact same line_ that you changed on the `master` branch. I'm changing "Adventure" on line 13 to "Crusade".
+
+          Then save the file and commit it to the repository.
+        instructor_notes: ''
+        resources: null
+      - id: 266825
+        key: 15bc28a8-36fc-42ae-a4ac-a773ca28a561
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 22:53:05 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4dbc5_ud123-l5-git-merge-conflict-prep2/ud123-l5-git-merge-conflict-prep2.png'
+        width: 2314
+        height: 1264
+        caption: _The Terminal application showing the output of `git log --oneline --decorate --graph --all`. Both the `master` branch and the `heading-update` branch alter the same line of the same file._
+        resources: null
+        instructor_notes: null
+      - id: 266826
+        key: 2f5bdd8b-399e-459c-b3d3-34c87c859342
+        locale: en-us
+        version: 1.0.0
+        title: Prepped For Merge Conflict
+        semantic_type: TaskListAtom
+        updated_at: 'Wed Feb 15 2017 22:53:59 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - I've made a commit on the `master` branch that changes the heading
+          - I've made a commit on the `heading-update` branch that _also_ changes the heading
+          - I am currently on the `master` branch
+        positive_feedback: Awesome! Let's proceed.
+        video_feedback: null
+        description: 'Ok, we''re just about to cause a merge conflict, make sure you''re at the same place I am:'
+      - id: 266827
+        key: a82efaec-85d6-44bc-b1eb-be7de9631995
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:54:12 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Make sure you're on the master branch (we could really do this on either branch, but I just have a habit of keeping the `master` branch the main one that other topic branches get merged into) and merge in the `heading-update` branch:
+
+          ```bash
+          $ git merge heading-update
+          ```
+
+          You should see the following:
+        instructor_notes: ''
+        resources: null
+      - id: 266828
+        key: d23607af-f999-4947-92d3-67868a354ec2
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Feb 15 2017 22:54:39 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a4dc22_ud123-l5-git-merge-conflict/ud123-l5-git-merge-conflict.png'
+        width: 2314
+        height: 1264
+        caption: _The Terminal application showing the output of a merge that resulted in a merge conflict. The word "CONFLICT" appears and says that the conflict occurred in the index.html file._
+        resources: null
+        instructor_notes: null
+      - id: 266830
+        key: d5426353-0a77-44bb-8b3e-cf9d2b30551c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:55:14 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Merge Conflict Output Explained
+
+          The output that shows in the Terminal is:
+
+          ```bash
+          $ git merge heading-update 
+          Auto-merging index.html
+          CONFLICT (content): Merge conflict in index.html
+          Automatic merge failed; fix conflicts and then commit the result.
+          ```
+
+          Notice that right after the `git merge heading-update` command, it tries merging the file that was changed on both branches (`index.html`), but that there was a conflict. Also, notice that it tells you what happened - "Automatic merge failed; fix conflicts and then commit the result".
+
+          Remember our good friend `git status`? Well he'll come in really handy when working with merge conflicts.
+        instructor_notes: ''
+        resources: null
+      - id: 266834
+        key: 4777593d-4f8a-4036-ac9d-45f0d204ee52
+        locale: en-us
+        version: 1.0.0
+        title: Merge Conflict's Status?
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Wed Feb 15 2017 22:56:12 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Try running `git status` right now. Which of the following information does it show?
+          correct_feedback: That's right! All of them are displayed in the output!
+          video_feedback: null
+          default_feedback: That doesn't look right. Try running `git status` and compare its output to the quiz options.
+          answers:
+            - id: a1487199322718
+              text: You have unmerged paths
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1487199330549
+              text: Unmerged paths
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1487199331117
+              text: fix conflicts and run "git commit"
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1487199331717
+              text: use "git add <file>..." to mark resolution
+              is_correct: true
+              incorrect_feedback: null
+      - id: 266835
+        key: a68afd48-2bd0-4824-9b9f-d3e2eb0eba95
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:56:23 GMT+0000 (UTC)'
+        is_public: true
+        text: The `git status` output tells us to that the merge conflict is inside `index.html`. So check out that file in your code editor!
+        instructor_notes: ''
+        resources: null
+      - id: 267148
+        key: e732b6a7-a3b9-49fb-9b2c-f0ae89d6895d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Feb 17 2017 19:24:37 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a74de1_ud123-l5-git-merge-conflict-indicators/ud123-l5-git-merge-conflict-indicators.png'
+        width: 2542
+        height: 1780
+        caption: _Code editor showing the merge conflict indicators._
+        resources: null
+        instructor_notes: null
+      - id: 266837
+        key: f3dd33f4-4879-4b04-b9b2-3db84c2b8e0a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:57:22 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Merge Conflict Indicators Explanation
+
+          The editor has the following merge conflict indicators:
+          * `<<<<<<< HEAD` everything below this line (until the next indicator) shows you what's on the current branch
+          * `||||||| merged common ancestors` everything below this line (until the next indicator) shows you what the original lines were
+          * `=======` is the end of the original lines, everything that follows (until the next indicator) is what's on the branch that's being merged in
+          * `>>>>>>> heading-update` is the ending indicator of what's on the branch that's being merged in (in this case, the `heading-update` branch)
+        instructor_notes: ''
+        resources: null
+      - id: 266838
+        key: c5564b18-74b4-41c9-abe6-d0a35b7c0c96
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Feb 17 2017 19:20:48 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Resolving A Merge Conflict
+
+          Git is using the merge conflict indicators to show you what lines caused the merge conflict on the two different branches as well as what the original line used to have. So to resolve a merge conflict, you need to:
+          1. choose which line(s) to keep
+          * remove all lines with indicators
+
+          For some reason, I'm not happy with the word "Crusade" right now, but "Quest" isn't all that exciting either. How about "Adventurous Quest" as a heading?!? 
+        instructor_notes: ''
+        resources: null
+      - id: 267147
+        key: 4e812d50-7ff5-43e5-88c4-302bf7d08512
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Feb 17 2017 19:20:23 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a74ced_ud123-l5-resolve-merge-conflict/ud123-l5-resolve-merge-conflict.gif'
+        width: 1160
+        height: 780
+        caption: _Code editor where showing the merge conflict indicators being removed and the page heading being updated._
+        resources: null
+        instructor_notes: null
+      - id: 266840
+        key: 5bba13df-c5f5-4990-a39b-41aaa23b8c8b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 22:59:15 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Commit Merge Conflict
+
+          Once you've removed all lines with merge conflict indicators and have selected what heading you want to use, just save the file, add it to the staging index, and commit it! Just like with a regular merge, this will pop open your code editor for you to supply a commit message. Just like before, it's common to use the provided merge commit message, so after the editor opens, just close it to use the provided commit message.
+
+          And that's it! Merge conflicts really aren't all that challenging once you understand what the merge conflict indicators are showing you.
+        instructor_notes: ''
+        resources: null
+      - id: 266843
+        key: 6e47c06c-5573-486b-9111-68134c4167aa
+        locale: en-us
+        version: 1.0.0
+        title: Can Merge Conflict Indicators Be Committed?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Feb 15 2017 23:00:02 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'You''ve made numerous commits so far in your exploration of Git. If a merge conflict occurs in a file and you edit the file, save it, stage it, and commit it but _forget_ to remove the merge conflict indicators, will Git commit the file?'
+          correct_feedback: 'That''s right! Git will commit the lines with the merge conflict indicators! They''re just regular characters, so there''s no reason Git will stop the commit because of them. It''s up to you to actually remove them. Don''t forget to use `git diff` to check what''s going to be staged/committed!'
+          video_feedback: null
+          default_feedback: Did you try this? That's not what happened for me.
+          answers:
+            - id: a1487199561900
+              text: 'Yes'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1487199583358
+              text: 'No'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 266844
+        key: d6c2fd78-1b6a-455f-aa2a-5ded8d3958a9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Feb 15 2017 23:01:11 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Merge Conflict Recap
+
+          A merge conflict happens when the same line or lines have been changed on different branches that are being merged. Git will pause mid-merge telling you that there is a conflict and will tell you in what file or files the conflict occurred. To resolve the conflict in a file:
+          * locate and remove all lines with merge conflict indicators
+          * determine what to keep
+          * save the file(s)
+          * stage the file(s)
+          * make a commit
+
+          Be careful that a file might have merge conflicts in multiple parts of the file, so make sure you check the entire file for merge conflict indicators - a quick search for `<<<` should help you locate all of them.
+
+          ### Further Research
+          * [Basic Merge Conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#Basic-Merge-Conflicts) from the Git book
+          * [How Conflicts Are Presented](https://git-scm.com/docs/git-merge#_how_conflicts_are_presented) from the Git docs
+        instructor_notes: ''
+        resources: null
+  - id: 265012
+    key: 36702d2f-8d5c-4019-ad0a-67fd0b54d46a
+    locale: en-us
+    version: 1.0.0
+    title: Outro
+    semantic_type: Concept
+    updated_at: 'Sat Mar 04 2017 00:42:50 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 273033
+    atoms:
+      - id: 273033
+        key: c3fd9059-a22a-48b4-9a0f-c4478734ff16
+        locale: en-us
+        version: 1.0.0
+        title: Outro
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:19:43 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51044'
+          youtube_id: ot4fPX1jzOI
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58b9dc58_nd016-webnd-ud123-gitcourse-betamojito-l5-102-tagging-branching-and-merging-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc58_nd016-webnd-ud123-gitcourse-betamojito-l5-102-tagging-branching-and-merging-outro/nd016-webnd-ud123-gitcourse-betamojito-l5-102-tagging-branching-and-merging-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc58_nd016-webnd-ud123-gitcourse-betamojito-l5-102-tagging-branching-and-merging-outro/nd016-webnd-ud123-gitcourse-betamojito-l5-102-tagging-branching-and-merging-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc58_nd016-webnd-ud123-gitcourse-betamojito-l5-102-tagging-branching-and-merging-outro/nd016-webnd-ud123-gitcourse-betamojito-l5-102-tagging-branching-and-merging-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc58_nd016-webnd-ud123-gitcourse-betamojito-l5-102-tagging-branching-and-merging-outro/nd016-webnd-ud123-gitcourse-betamojito-l5-102-tagging-branching-and-merging-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58b9dc58_nd016-webnd-ud123-gitcourse-betamojito-l5-102-tagging-branching-and-merging-outro/hls/playlist.m3u8'

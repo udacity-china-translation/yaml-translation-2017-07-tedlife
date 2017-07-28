@@ -1,0 +1,3716 @@
+id: 231939
+key: a6927fc9-e963-4403-847d-0a79c8b16a46
+locale: en-us
+version: 1.0.0
+title: Data structures and Loops
+semantic_type: Lesson
+updated_at: 'Wed Jul 05 2017 19:43:11 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: 'In this lesson you will learn how to use Python''s collections: lists, sets and dictionaries. You will learn how to iterate over these collections with for loops and while loops. You will also learn how to build compound data structures that combine these collections. We will practice the software engineering skills of refactoring and self-reliant problem solving.'
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+_concepts_ids:
+  - 231962
+  - 248039
+  - 248106
+  - 248113
+  - 248129
+  - 248137
+  - 248153
+  - 249181
+  - 249192
+  - 249195
+  - 249215
+  - 249233
+  - 255726
+_project_id: null
+concepts:
+  - id: 231962
+    key: 67bfa90e-d496-49ba-9b62-49f96fdc8996
+    locale: en-us
+    version: 1.0.0
+    title: Welcome Back!
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:35:52 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 287890
+    atoms:
+      - id: 287890
+        key: 4e9fb568-7595-4d7f-8ff8-72d9c0b2c958
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L301 Welcome To Lesson 3
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 04:40:00 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52075'
+          youtube_id: ikOWhrOUgLc
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d40ceb_ud1110-intropy-l301-welcome-to-lesson-3/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40ceb_ud1110-intropy-l301-welcome-to-lesson-3/ud1110-intropy-l301-welcome-to-lesson-3_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40ceb_ud1110-intropy-l301-welcome-to-lesson-3/ud1110-intropy-l301-welcome-to-lesson-3_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40ceb_ud1110-intropy-l301-welcome-to-lesson-3/ud1110-intropy-l301-welcome-to-lesson-3_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40ceb_ud1110-intropy-l301-welcome-to-lesson-3/ud1110-intropy-l301-welcome-to-lesson-3_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40ceb_ud1110-intropy-l301-welcome-to-lesson-3/hls/playlist.m3u8'
+  - id: 248039
+    key: f580c0dc-123a-45be-b569-dbb7e01c9e38
+    locale: en-us
+    version: 1.0.0
+    title: Lists
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:35:58 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 248040
+      - 289081
+      - 248042
+      - 248041
+      - 248043
+      - 248044
+      - 248045
+      - 248046
+      - 248055
+      - 248047
+      - 248058
+      - 288298
+      - 287902
+      - 248072
+      - 248082
+      - 248089
+      - 289082
+      - 248095
+      - 248100
+      - 248096
+      - 248101
+      - 248104
+      - 248108
+    atoms:
+      - id: 248040
+        key: 49509fe1-5096-4d1f-896c-9925094ba8a7
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 18:09:44 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Lists
+          ===
+          So far we've been working with individual pieces of data, like a string or a number. We can write much more powerful programs when we can work with collections of data, so let's introduce our first collection: lists.
+
+          ```python
+          python_versions = [1.0, 1.5, 1.6, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6]
+          ```
+
+          This code defines a variable, `python_versions`, which contains a list of floats. Each element in the list is the version number of a significant Python release. A list is defined using square brackets (`[` and `]`), and the elements of the list are separated by commas.
+
+          We can look up individual elements in the list by their index. We can look up version numbers like this:
+
+          ```python
+          >>> python_versions[0]
+          1.0
+
+          >>> python_versions[1]
+          1.5
+
+          >>> python_versions[7]
+          2.4
+          ```
+
+          Notice that the first element in the list, `1.0` is located at index 0 rather than index 1. Many programming languages follow this convention, called "zero based indexing". If zero based indexing is confusing, consider it this way: an element's index describes how far the element is from the beginning of the list. The first element is 0 elements away from the beginning, the second is one element away, and so on.
+
+          We can also index from the end of the list rather than front like we have been doing so far.
+          To do this we use negative indexes, for example we can get the most recent Python version in the list like this:
+
+          ```python
+          >>> python_versions[-1]
+          3.6
+          ```
+          The index `-1` refers to the last element of the list, `-2` to the second to last, and so on.
+        instructor_notes: ''
+        resources: null
+      - id: 289081
+        key: 42b026d6-71c2-4a30-a9cd-d2628d005a94
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Mar 31 2017 15:35:46 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Index Errors 
+          =========
+          If you attempt to access an index in a list that does not exist in this list you will get a List Index Exception. This is Python's way of telling you that you are trying to access an index that is not in the list.
+          For example, let's define the following list:
+
+          ```python
+          >>> my_list = ['a','b','c','d','e']
+          ```
+          This list has five elements, with the indices 0, 1, 2, 3 and 4
+          ```python
+          >>> my_list[4]
+          'e'
+          ```
+          As you can see, `my_list[4]` returns the last element of this list. But what would happen if we tried to access an element at index 5? 
+
+          ```python
+          >>> my_list[5]
+          Traceback (most recent call last):
+            File "<stdin>", line 1, in <module>
+          IndexError: list index out of range
+          ```
+          Because the list only contains 5 elements, attempting to access an element at index 5 is really asking Python to give you the sixth element in this list. Since this element does not exist, we received an `IndexError`.
+
+          Getting Index Errors is quite common, especially if you're not used to indexing in Python. You might get these errors quite a lot in the beginning. As you become more experienced in Python, you will see less of them, but might still get them occasionally. The most common reason for getting an Index Error is using an index that is off by 1, but there may be other reasons why you would get such an error. It is always a good idea to use `print` statements and debug with a small example- this can tell you if your indexing is off and by how much. 
+        instructor_notes: ''
+        resources: null
+      - id: 248042
+        key: 6345f3ed-e3b8-4f6e-bdfd-94952a1a9f16
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 23 2017 19:01:08 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: List Indexing
+          ==========
+
+          Complete this function, `how_many_days`, that takes as its input a number representing the month, and returns how many days are in that month. The `days_in_month` function that we've defined for you is a list of how many days are in each month. For example, `days_in_month(8)` should return 31 because the eighth month, August, has 31 days.
+
+          Remember to account for zero-based indexing!
+        instructor_notes: ''
+        resources: null
+      - id: 248041
+        key: 1b994ca7-6277-4762-bbf1-036918d66d2b
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Tue Mar 28 2017 19:48:56 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5605624130961408'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              import random
+
+              try:
+                  from HowManyDays import how_many_days
+                  
+                  if how_many_days(8) != 31:
+                      print('error1-secretstring')
+                  if how_many_days(1) != 31:
+                      print('error2-secretstring')
+                  if how_many_days(12) != 31:
+                      print('error3-secretstring')
+                  if how_many_days(2) != 28:
+                      print('error4-secretstring-{}-{}'.format(pop, area))
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import HowManyDays
+            gae_grading_code: |-
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format('how_many_days(8)', 31))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('how_many_days(1)', 31))
+                  if 'error3-secretstring' in s:
+                      errors.append(explanation_str.format('how_many_days(12)', 31))
+                  if 'error4-secretstring' in s:
+                      errors.append(explanation_str.format('how_many_days(2)', 28))
+                  if errors:
+                      errors.append('Do you have an off-by-one indexing bug?')
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append('''This is my solution:
+              ```python
+              def how_many_days(month_number):
+                  days_in_month = [31,28,31,30,31,30,31,31,30,31,30,31]
+                  return days_in_month[month_number-1]
+              ```
+              Subtracting one from month_number is necessary because of zero-based indexing. There's an entire category of bugs called "off by one errors" that are caused by confusion involving zero-based indexing. With experience though off by one errors are easy to avoid.''')
+              #feedback.append("Click *NEXT* to see our solution.")
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 248043
+        key: 470e0a5c-dc98-43f7-8046-15d2b6ac7039
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 18:15:39 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Slicing Lists
+          ========
+
+          In addition to accessing individual elements from a list we can use Python's slicing notation to access a subsequence of a list. Consider this list of months,
+          ```python
+          months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+          ```
+
+          We can slice the third quarter of the year from the months list like this:
+          ```python
+          >>> q3 = months[6:9]
+          >>> print(q3)
+          ['July', 'August', 'September']
+          >>> print(months)
+          ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 248044
+        key: 0e1ca001-c5dd-4461-9495-bb6bfb573928
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon Jan 09 2017 18:20:52 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/5873d44b_slicing/slicing.png'
+        width: 507
+        height: 235
+        caption: '`q3 = months[6:9]`'
+        resources: null
+        instructor_notes: null
+      - id: 248045
+        key: ee06171f-6acd-4b32-add7-ce62b8b534a6
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 18:20:58 GMT+0000 (UTC)'
+        is_public: true
+        text: 'The index to the left of the colon, 6, is where the slice begins. The slice continues up to the second index, 9.'
+        instructor_notes: ''
+        resources: null
+      - id: 248046
+        key: 30b8a355-67a1-4a25-9d27-710a5d42e780
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 18:23:12 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Slicing Shortcuts
+          ===========
+
+          There are a couple of slicing shortcuts that simplify common situations. If you would like to make a slice that begins at the very beginning of the original list, or that ends at the very end of the original list, you can omit the start or end index like this:
+
+          ```python
+          >>> first_half = months[:6]
+          >>> print(first_half)
+          ['January', 'February', 'March', 'April', 'May', 'June']
+          >>> second_half = months[6:]
+          >>> print(second_half)
+          ['July', 'August', 'September', 'October', 'November', 'December']
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 248055
+        key: 79848595-8989-4ce3-857c-28860339ac97
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 18:34:45 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Slicing Lists
+          ==========
+
+          Select the three most recent dates from this list using list slicing notation. Hint: negative indexes work in slices!
+        instructor_notes: ''
+        resources: null
+      - id: 248047
+        key: affc5e21-063c-47a8-b69b-630787c27cad
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Tue Mar 28 2017 19:48:58 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6005503906938880'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: import slicing
+            executor_test_code: import slicing
+            gae_grading_code: |+
+              student_output = executor_result['stdout'].strip()
+
+              grade_result['correct'] = True
+              grade_result['comment'] = "pineapples!"
+
+              correct_answer = "['November 13, 2012', 'March 20, 2015', 'March 9, 2016']"
+
+              if student_output != correct_answer:
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Double check your slicing! Your code should print a list of the last three dates from the original list, and nothing else."
+              else:
+                  grade_result['comment'] = '''My solution is this: `eclipse_dates[-3:]`
+              This slice uses a negative index to begin slicing three elements from the end of the list. The end index can be omitted because this slice continues until the end of the list.'''
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occured while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an error. Test Run your code to verify that it prints the right things!"
+
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 248058
+        key: 21359d9e-aec2-4614-adb5-96c495161a6f
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 18:43:04 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Lists, Strings, and Mutability
+          ==================
+
+          `list` is a type, like `string`, `float` and `int`. Of the types we've seen, lists are most like strings: both types support indexing, slicing, the `len` function and the `in` operator.
+
+          ```python
+          >>> sample_string = "And Now For Something Completely Different"
+          >>> sample_list = ['Graham', 'John', 'Terry', 'Eric', 'Terry', 'Michael']
+          >>> sample_string[4]
+          'N'
+          >>> sample_list[4]
+          'Terry'
+          >>> sample_string[12:21]
+          'Something'
+          >>> sample_list[2:4]
+          ['Terry', 'Eric']
+          >>> len(sample_string)
+          42
+          >>> len(sample_list)
+          6
+          >>> 'thing' in sample_string
+          True
+          >>> 'Rowan' in sample_list
+          False
+          ```
+          So, how are lists different from strings? The obvious difference is that strings are sequences of letters, while list elements can be **any** type of object. A more subtle difference is that lists can be modified, but strings can't be:
+
+          ```python
+          >>> sample_list[3] = 'Eric'
+          >>> print(sample_list)
+          ['Graham', 'John', 'Terry', 'Eric', 'Terry', 'Michael']
+          >>> sample_string[8] = 'f'
+          TypeError: 'str' object does not support item assignment
+          ```
+          The technical term for whether an object can be modified is **mutability**. Lists are mutable, while strings are immutable. Next we'll explore the methods and functions that work on lists, and we'll take advantage of list mutability in our programs.
+        instructor_notes: ''
+        resources: null
+      - id: 288298
+        key: 789515b1-3477-4d4e-8697-c3ebfc663e96
+        locale: en-us
+        version: 1.0.0
+        title: Mutability Matching Quiz
+        semantic_type: MatchingQuizAtom
+        updated_at: 'Tue Mar 28 2017 20:03:10 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          complex_prompt:
+            text: |-
+              Suppose we have the following two expressions, `sentence1` and `sentence2`:
+              ```python
+              sentence1 = "I wish to register a complaint."
+              sentence2 = ["I", "wish", "to", "register", "a", "complaint", "."]
+              ```
+              Match the python code below with the value of the modified `sentence1` or `sentence2`. If the code results in an error, match it with “Error”.
+          default_feedback: 'Hint: think about which objects in Python are mutable and which are not. Are strings mutable? How about lists?'
+          correct_feedback: |-
+            Here's my answer:
+
+            `sentence1` is a string, and is therefore an immutable object. That means that while you can refer to individual characters in `sentence1` (e.g., you can write things like `sentence1[5]`) you cannot assign value to them (you cannot write things like `sentence1[5] = 'a'`). Therefore the third  expression will result in an error.
+
+            `sentence2` is a list, and lists are mutable, meaning that you can change the value of individual items in `sentence2`:
+            In the first expression we changed the value of the last item in `sentence2` from "." to "!".
+            In the second expression we changed the value of the first item in `sentence2` from "I" to "Our Majesty".
+            In the last expression we used slicing to simultaneously change the value of both the first and the second item in `sentence2` from "I" and "wish" to "We" and "want".
+          video_feedback: null
+          concepts_label: Python code
+          answers_label: Value of `sentence1` or `sentence2`
+          concepts:
+            - text: '`sentence2[6]="!"`'
+              default_concept_feedback: ''
+              correct_answer:
+                id: a1490730669503
+                text: '["I", "wish", "to", "register", "a", "complaint", "!"]'
+              incorrect_feedbacks: []
+            - text: '`sentence2[0]= "Our Majesty"`'
+              default_concept_feedback: ''
+              correct_answer:
+                id: a1490730709235
+                text: '["Our Majesty", "wish", "to", "register", "a", "complaint", "."]'
+              incorrect_feedbacks: []
+            - text: '`sentence1[30]="!"`'
+              default_concept_feedback: '`sentence1` is a string. Are strings mutable or immutable?'
+              correct_answer:
+                id: a1490730802508
+                text: Error
+              incorrect_feedbacks: []
+            - text: '`sentence2[0:2] = ["We", "want"]`'
+              default_concept_feedback: ''
+              correct_answer:
+                id: a1490730825330
+                text: '["We", "want", "to", "register", "a", “complaint”, "."]'
+              incorrect_feedbacks: []
+          answers:
+            - id: a1490730825330
+              text: '["We", "want", "to", "register", "a", “complaint”, "."]'
+            - id: a1490730669503
+              text: '["I", "wish", "to", "register", "a", "complaint", "!"]'
+            - id: a1490730709235
+              text: '["Our Majesty", "wish", "to", "register", "a", "complaint", "."]'
+            - id: a1490730849467
+              text: '"I wish to register a complaint!"'
+            - id: a1490730802508
+              text: Error
+      - id: 287902
+        key: 9b11e668-80ed-4dda-bd3e-56774e7ed37c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Mar 27 2017 16:25:44 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Variable that holds a list
+          ====================
+          Previously, when we created a variable that held an immutable object, the value of that immutable object was saved in memory. Here we create `name` with value `"Old Woman"` and assign it to another variable called `person`. 
+          ```
+          >>> name = "Old Woman"
+          >>> person = name
+          >>> name = "Dennis"
+          >>> print(name)
+          Dennis
+          >>> print(person)
+          Old Woman
+          ```
+          It is the string "Old Woman" that is assigned to `person`, so when we reassign `name` to update it to `"Dennis"`, this change is not reflected in the value of `person`.
+
+
+          Lists are different from strings as they are mutable. Here, we create a list called `dish` with the ingredients of a dish at a café. We assign this same list to the variable `mr_buns_order` and when we change (mutate) the `dish` list because an ingredient is unavailable, this affects both `dish` and `mr_buns_order`. 
+          ```
+          >>> dish = ["Spam", "Spam", "Spam", "Spam", "Spam", "Spam", "baked beans", "Spam", "Spam", "Spam", "Spam"]
+          >>> mr_buns_order = dish
+          >>> print(dish)
+          ['Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'baked beans', 'Spam', 'Spam', 'Spam', 'Spam']
+          >>> print(mr_buns_order)
+          ['Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'baked beans', 'Spam', 'Spam', 'Spam', 'Spam']
+          >>> dish[6] = "Spam" #baked beans are off
+          >>> print(mr_buns_order)
+          ['Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'Spam']
+          >>> print(dish)
+          ['Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'Spam', 'Spam']
+          ```
+          Both `dish` and `mr_buns_order` are variable names for the same underlying list, and either name can be used to access and change that list.
+
+          The behaviour of variables containing mutable and immutable objects is very different and might even seem surprising at times! 
+          Experiment, use print statements and double-check your work where you can, to make sure that your programs correctly keep track of their data.
+        instructor_notes: ''
+        resources: null
+      - id: 248072
+        key: 5a701d5b-d41d-44c0-840a-bb7568117d2b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Mar 31 2017 15:58:41 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Working with Lists
+          ==============
+
+          These are functions that are useful for working with lists:
+
+          `len(some_list)`
+          ------------------------
+
+          Returns how many elements are in `some_list`
+
+          `max(some_list)`
+          ------------------------
+          Returns the greatest element of the list. How the greatest element is determined depends on what type objects are in the list. The maximum element in a list of numbers is the largest number:
+          ```python
+          >>> batch_sizes = [15, 6, 89, 34, 65, 35]
+          >>> max(batch_sizes)
+          89
+          ```
+          The maximum elements in a list of strings is element that would occur last of the list were sorted alphabetically:
+          ```python
+          >>> python_varieties = ['Burmese Python', 'African Rock Python', 'Ball Python', 'Reticulated Python', 'Angolan Python']
+          >>> max(python_varieties)
+          'Reticulated Python'
+          ```
+          This works because the the `max` function is defined in terms of `>`, the greater than comparison operator. The `>` operator is defined for many non-numeric types; if you're working with objects that can be compared with `>` then you can use `max` on a list of the objects. For strings the standard comparison is alphabetical, so the maximum of this list is the element that appears last alphabetically.
+
+          The `max` function is undefined for lists that contain elements from different, incomparable types:
+          ```python
+          >>> max([42, 'African Swallow'])
+          TypeError: unorderable types: str() > int()
+          ``` 
+          This is because `max` is defined in terms of `>`. If two objects in the list can't be compared, the maximum element can't be determined.
+
+          `min(some_list)`
+          ------------------------
+          Returns the smallest element in a list. `min` is the opposite of `max`.
+
+          `sorted(some_list)` 
+          ------------------------
+          Returns a copy of `some_list` in order from smallest to largest, leaving `some_list` unchanged. You can sort from largest to smallest by adding the optional argument `reverse=True`.
+          ```python
+          >>> sorted(batch_sizes)
+          [6, 15, 34, 35, 65, 89]
+          >>> sorted(batch_sizes, reverse=True)
+          [89, 65, 35, 34, 15, 6]
+          >>> print(batch_sizes)
+          [15, 6, 89, 34, 65, 35]
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 248082
+        key: 1025be33-e6b7-4132-9996-e47956ff0f75
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Mar 31 2017 16:07:13 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Joining Lists
+          ========
+
+          Let's introduce a new string method, `join`:
+          ```python
+          >>> nautical_directions = "\n".join(["fore", "aft", "starboard", "port"])
+          >>> print(nautical_directions)
+          fore
+          aft
+          starboard
+          port
+          ```
+          The join takes a list as an argument, and returns a string consisting of the list elements joined by a separator string. In this example we use the string `\n` as the separator so that there is a newline between each element. 
+        instructor_notes: ''
+        resources: null
+      - id: 248089
+        key: 0f1cedb9-f814-47a1-aa46-156ee76035fd
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon Jan 09 2017 19:36:04 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/5873e61f_join/join.png'
+        width: 603
+        height: 195
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 289082
+        key: 538b2464-8003-416e-b3db-a5228a142c55
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Mar 31 2017 16:14:39 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          We can also use other strings (instead of `'\n'`) with `.join` For instance:
+          ```python
+          >>> names = ["García", "O'Kelly", "Davis"]
+          >>> "-".join(names)
+          "García-O'Kelly-Davis"
+          ```
+          It is important to remember to separate each of the items in the list you are joining with a comma (`,`). Forgetting to do so will not trigger an error, but will also give you unexpected results. In the example below omitting the comma between "García" and "O'Kelly" results in the following:
+          ```python
+          >>> names = ["García" "O'Kelly", "Davis"]
+          >>> "-".join(names)
+          "GarcíaO'Kelly-Davis"
+          ```
+          Notice how the '-' separator is missing between "García" and "O'Kelly" and instead the two strings were appended? This happens because of Python's default string-literal appending. If `.join` returns different results then expected, it is a good idea to check for missing comas.
+
+          Also note that`join` will trigger an error if we try to join anything other than strings. For example:
+          ```python
+          >>> stuff = ["thing", 42, "nope"]
+          >>> " and ".join(stuff)
+          Traceback (most recent call last):
+            File "<stdin>", line 1, in <module>
+          TypeError: sequence item 1: expected str instance, int found
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 248095
+        key: 84e01ac7-965d-45aa-b70d-a18a5ae8ad3f
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 19:38:05 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Appending to Lists
+          ==============
+
+          The `append` method of list objects adds an element to the end of the list. 
+          ```python
+          >>> python_varieties.append('Blood Python')
+          >>> print(python_varieties)
+          ['Burmese Python', 'African Rock Python', 'Ball Python', 'Reticulated Python', 'Angolan Python', 'Blood Python']
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 248100
+        key: 2b5fc2c0-d4b0-4505-9c4d-5dc4be2c5c0b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 23 2017 21:07:39 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Top Three
+          ===========
+
+          Write a function, `top_three`, that takes a list as its argument, and returns a list of the three largest elements. For example, `top_three([2,3,5,6,8,4,2,1]) == [8, 6, 5]`
+        instructor_notes: ''
+        resources: null
+      - id: 248096
+        key: 03dc81ea-d062-4d82-883d-5755dc0f403d
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Fri Mar 31 2017 16:23:18 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5741180747907072'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |
+              try:
+                  from top3 import top_three
+                  
+                  if top_three([2, 3, 5, 6, 8, 4, 2, 1]) != [8, 6, 5]:
+                      print('error1-secretstring')
+                      
+                  if top_three([1, 2]) != [2, 1]:
+                      print('error2-secretstring')
+                      
+                  if top_three(['cat', 'dog', 'python', 'cuttlefish']) != ['python', 'dog', 'cuttlefish']:
+                      print('error3-secretstring')
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import top3
+            gae_grading_code: |-
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format("top_three([2, 3, 5, 6, 8, 4, 2, 1])", "[8, 6, 5]"))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format("top_three([1, 2])", "[2, 1]"))
+                  if 'error3-secretstring' in s:
+                      errors.append(explanation_str.format("top_three(['cat', 'dog', 'python', 'cuttlefish'])", "['python', 'dog', 'cuttlefish']"))
+                
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              solution_text = """Our solution is this:
+              ```python
+              def top_three(input_list):
+                  return sorted(input_list, reverse=True)[:3]
+              ```
+
+              This could be written in two simpler lines if you prefer:
+
+              ```python
+              def top_three(input_list):
+                  input_list = sorted(input_list(reverse=True))
+                  return input_list[:3]
+              ```
+                  """
+
+              hint = """
+              Hint: you can use the `sorted` function to first create a sorted list, and then return the first 3 elements of the sorted list.
+              """
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              else:
+                  feedback.append(hint)
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 248101
+        key: 70b279cf-7a83-4bf2-966e-9315f75c12be
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 19:46:16 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Quiz: Median
+          =========
+
+          The function in this quiz, `median`, returns the median value of an input list. Unfortunately it only works with lists that have an odd number of elements. Modify the function so that when `median` is given a list with an even number of elements, it returns the mean of the two central elements. The provided test cases demonstrate the expected behavior.
+        instructor_notes: ''
+        resources: null
+      - id: 248104
+        key: 433d30f1-e615-46b6-b0a9-c1a4e2c6a2c8
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Tue Mar 28 2017 19:48:56 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5596945310679040'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              try:
+                  from median import median
+                  
+                  if median([1,2,3]) != 2:
+                      print('error1-secretstring')
+                  if median([1,2,3,4]) != 2.5:
+                      print('error2-secretstring')
+                  if median([77, 53, 12, 65, 7, 420, 317, 88]) != 71:
+                      print('error3-secretstring')
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import median
+            gae_grading_code: |-
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format('median([1,2,3])', 2))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('median([1,2,3,4])', 2.5))
+                  if 'error3-secretstring' in s:
+                      errors.append(explanation_str.format('median([77, 53, 12, 65, 7, 420, 317, 88])', 71))
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+              feedback.append("Click *NEXT* to see our solution.")
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 248108
+        key: e224eb6b-8445-4cf6-bd44-6e4b595cf243
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 19:49:38 GMT+0000 (UTC)'
+        is_public: true
+        text: Click "Next" to see my solution to this quiz.
+        instructor_notes: ''
+        resources: null
+  - id: 248106
+    key: b2e76180-b32a-4cd4-952e-acc18c6464a9
+    locale: en-us
+    version: 1.0.0
+    title: Lists II
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:36:19 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 248107
+      - 248112
+    atoms:
+      - id: 248107
+        key: 7cd0d5e7-f59c-42da-a19c-085dab19f5dc
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 19:48:50 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Solution: Median
+          ===========
+        instructor_notes: ''
+        resources: null
+      - id: 248112
+        key: 8dd42315-e2e4-46ef-b46d-14ff88694ea5
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 23 2017 22:24:09 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          There are two cases the median function needs to handle: inputs with even lengths and inputs with odd lengths. I can use an if statement to determine whether the list's length is even or odd.
+
+          ```python
+          def median(numbers):
+              numbers.sort() 
+              if len(numbers) % 2:
+                  # if the list has an odd number of elements,
+                  # the median is the middle element
+                  middle_index = int(len(numbers)/2)
+                  return numbers[middle_index]
+              else:
+                  # if the list has an even number of elements,
+                  # the median is the average of the middle two elements
+                  right_of_middle = len(numbers)//2 
+                  left_of_middle = right_of_middle - 1
+                  return (numbers[right_of_middle] + numbers[left_of_middle])/2
+          ```
+        instructor_notes: ''
+        resources: null
+  - id: 248113
+    key: 06888cd6-6f49-4fcf-9f0a-829acdfac850
+    locale: en-us
+    version: 1.0.0
+    title: For Loops
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:36:23 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 248114
+      - 248115
+      - 248116
+      - 248117
+      - 248118
+      - 248120
+      - 248121
+      - 248122
+      - 248123
+      - 248124
+      - 248125
+      - 248126
+      - 248127
+      - 248128
+      - 248133
+    atoms:
+      - id: 248114
+        key: e7dae03e-b4d8-4576-a3f7-c1a3ea2b1537
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 20:24:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          For Loops
+          ========
+
+          We use lists to store sequences of data, and we use for loops to iterate over lists. Consider this for loop that capitalizes the each name in a list of names and prints them:
+
+          ```python
+          names = ['charlotte hippopotamus turner', 'oliver st. john-mollusc',
+                   'nigel incubator-jones', 'philip diplodocus mallory']
+
+          for name in names:
+              print(name.title())
+          ```
+
+          Running this code gives this output:
+          ```text
+          Charlotte Hippopotamus Turner
+          Oliver St. John-Mollusc
+          Nigel Incubator-Jones
+          Philip Diplodocus Mallory
+          ```
+
+          Let's examine the for loop syntax:
+        instructor_notes: ''
+        resources: null
+      - id: 248115
+        key: 4633cfec-e20e-4e4f-9cc2-36618616fb4e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon Jan 09 2017 20:23:35 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/5873f13f_for-loop/for-loop.png'
+        width: 1232
+        height: 676
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 248116
+        key: d15651c2-63bc-4167-a5b3-fced69d6a4dd
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 07 2017 14:10:10 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          1. The `for` keyword signals that this is a for loop.
+          2. The rest of the line specifies what we're iterating over. `names` is the list that this for loop iterates over. `name` is this loop's iteration variable. The body of the for loop will be executed once for each element in `names`, and the iteration variable `name` can be used in the loop's body to refer to the element that the loop is currently processing. 
+          3. The body of a for loop is indented four spaces, and is run once for each element in the list. 
+
+          **A note about naming** You can name iteration variables however you like. This example demonstrates a common pattern though, the list `names` has a plural name ending in "s", and the iteration variable is the singular word with no "s". Naming lists and iteration variables in this style makes it easier for other programmers to understand what the different variables are for.
+        instructor_notes: ''
+        resources: null
+      - id: 248117
+        key: 7c7812b2-cb41-44b7-9d23-550c404b66f3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Mar 28 2017 20:46:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Quiz: Sum of a List
+          ==============
+
+          Define a function, `list_sum`, that takes a list as its argument and returns the sum of the elements in the list. Use a for loop to iterate over the list
+        instructor_notes: ''
+        resources: null
+      - id: 248118
+        key: abee6df5-ed88-45f8-a951-371d3a4b732d
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Fri Apr 07 2017 14:50:35 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6379850437885952'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              try:
+                  from sum import list_sum
+                  
+                  if list_sum([]) != 0:
+                      print('error1-secretstring')
+                      
+                  if list_sum([42]) != 42:
+                      print('error2-secretstring')
+                  
+                  my_list = [7, 8, -3]    
+                  if list_sum(my_list) != 12:
+                      print('error3-secretstring')
+                  
+                  #running twice in the same list to detect if the function changed the list    
+                  if list_sum(my_list) != 12:
+                      print('error4-secretstring')
+
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import sum
+            gae_grading_code: |-
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format('list_sum([])', 0))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('list_sum([42])', 42))
+                  if 'error3-secretstring' in s:
+                      errors.append(explanation_str.format("list_sum([7, 8, -3])", 12))
+                  if 'error4-secretstring' in s:
+                      errors.append("It looks like your function changes the values of the list it is given as input. That is not the expected behavior.")
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              solution_text= """ This is how we implemented the function:
+              ```python
+              def list_sum(input_list):
+                  sum = 0
+                  for element in input_list:
+                      sum += element
+                  return sum
+              ```
+              """
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              #feedback.append("Click *NEXT* to see our solution.")
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 248120
+        key: 3802073f-e33e-4dad-9a1f-12166187e0a5
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 07 2017 15:05:42 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: XML Tag Counter
+          ================
+          Write a function, `tag_count`, that takes as its argument a list of strings. It should return a count of how many of those strings are [XML tags](https://en.wikipedia.org/wiki/XML). XML is a data language similar to HTML. You can tell if a string is an XML tag if it begins with a left angle bracket "<" and end with a right angle bracket ">".
+
+          You can assume that the list of string that will be given as input will not contain empty strings.
+        instructor_notes: ''
+        resources: null
+      - id: 248121
+        key: 3630b9ef-8994-4346-9f32-e1c4849d9ead
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Fri Apr 07 2017 15:20:51 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5933602765406208'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |-
+              try:
+                  from XMLTagCounter import tag_count
+                  
+                  if tag_count(['<greeting>', 'Hello World!', '</greeting>']) != 2:
+                      print('error1-secretstring')
+                      
+                  if tag_count(['badgers!']) != 0:
+                      print('error2-secretstring')
+                      
+                  if tag_count(['<em>', '>>>', 'Badgers!', '<<<', '</em>']) != 2:
+                      print('error3-secretstring')
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import XMLTagCounter
+            gae_grading_code: |-
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format("tag_count(['&lt;greeting>', 'Hello World!', '&lt;/greeting>'])", 2))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format("tag_count(['badgers!'])", 0))
+                  if 'error3-secretstring' in s:
+                      errors.append(explanation_str.format("tag_count(['&lt;em>', '>>>', 'Badgers!', '<<<', '&lt;/em>'])", 2))
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              solution_text = """My solution looks like this. I named my function's input "tokens", and so my iteration variable is "token" (A "token" is just a standard way in computer science to talk about a part or a component of something. In this case you can think of "token" as equivalent to "item" in a list).
+
+              ```python
+              def tag_count(tokens):
+                  count = 0
+                  for token in tokens:
+                      if token[0] == '<' and token[-1] == '>':
+                          count += 1
+                  return count
+              ```
+              I use string indexing to find out if each token begins and ends with angle brackets.
+              """
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 248122
+        key: 6e4e0c88-40e3-41e9-bb3a-efddad8294b2
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 07 2017 15:31:06 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Building Lists with Loops
+          ====================
+
+          The loops we've written so far extract information from lists. We can also use for loops to create lists, and to modify lists. Consider our list of uncapitalized names from earlier,
+
+          ```python
+          names = ['charlotte hippopotamus turner', 'oliver st. john-mollusc',
+                   'nigel incubator-jones', 'philip diplodocus mallory']
+          ```
+
+          We might want to make a new list of capitalized names. Here's how we can do that with loops:
+
+          ```python
+          # create a new list of capitalized names without modifying the original list
+          capitalized_names = [] #create a new, empty list
+          for name in names:
+              capitalized_names.append(name.title()) #add elements to the new list
+          ```
+
+          If we don't want to keep the uncapitalized list around, we can overwrite it instead of making a new list.
+
+          ```python
+          # modify the names list in place
+          for index in range(len(names)): # iterate over the index numbers of the names list
+              names[index] = names[index].title() # modify each element of names
+          ```
+
+          To create a new list we can start with an empty list (`[]`) and then use the `append` method to add new items. Modifying a list is a bit more involved, and requires the use of a new function: `range`. The `range` function takes one argument, an integer n, and returns the sequence of numbers from zero to n-1.
+
+          ```python
+          >>> for number in range(4):
+          >>>     print(number)
+          0
+          1
+          2
+          3
+          ```
+          We use the range function to generate the indexes for each value in the the names list. This lets us access the elements of the list with `names[index]` so that we can update the values in the `names` list.
+        instructor_notes: ''
+        resources: null
+      - id: 248123
+        key: e6247f34-df4f-4dc9-85ef-9b9d060294c6
+        locale: en-us
+        version: 1.0.0
+        title: Why `range`?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Tue Mar 28 2017 22:23:24 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Using `range` to generate indices to modify a list seems rather roundabout, why is it necessary? Try this simpler approach see what happens:
+
+            ```python
+            names = ['charlotte hippopotamus turner', 'oliver st. john-mollusc', 'nigel incubator-jones', 'philip diplodocus mallory']
+
+            for name in names:
+                name = name.title()
+
+            print(names)
+            ```
+
+            What does this code do?
+          correct_feedback: |-
+            The code has no effect. 
+            During each iteration, the `name` variable is set to a string taken from the list. Then the assignment statement creates a new string (`name.title()`) and changes the `name` variable to that string. It doesn't modify the contents of the list at all. To modify the list you must operate on the list itself, as we did earlier.
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1483994414451
+              text: Modifies the names list so that each name is capitalized
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483994485416
+              text: Causes a runtime error
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1483994486263
+              text: The code has no effect
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1483994487103
+              text: Deletes the list
+              is_correct: false
+              incorrect_feedback: null
+      - id: 248124
+        key: e19a44d8-0025-42bf-b9cc-35f6919a2cf6
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 20:51:41 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Create an HTML List
+          =====================
+
+          Write the `html_list` function. The function takes one argument, a list of strings, and returns a single string which is an HTML list. For example, if the function should produce the following string when provided the list `['first string', 'second string']`.
+          ```text
+          <ul>
+          <li>first string</li>
+          <li>second string</li>
+          </ul>
+          ```
+          That is, the string's first line should be the opening tag `<ul>`. Following that is one line per element in the source list, surrounded by `<li>` and `</li>` tags. The final line of the string should be the closing tag `</ul> `.
+        instructor_notes: ''
+        resources: null
+      - id: 248125
+        key: d7a1483d-f68a-4393-99b9-3503da19d2e6
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Fri Apr 07 2017 14:11:34 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5147060371324928'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |
+              try:
+                  from htmllist import html_list
+                  
+                  if html_list(['first string', 'second string']).strip() != """<ul>
+              <li>first string</li>
+              <li>second string</li>
+              </ul>""":
+                      print('error1-secretstring')
+                      
+                  if html_list(['1', '2', '3']).strip() != """<ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              </ul>""":
+                      print('error2-secretstring')
+                      
+                  if html_list(["strings", '2.0', 'True', "and other types too!"]).strip() != """<ul>
+              <li>strings</li>
+              <li>2.0</li>
+              <li>True</li>
+              <li>and other types too!</li>
+              </ul>""":
+                      print('error3-secretstring')
+                      
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import htmllist
+            gae_grading_code: |
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              The expected output is:
+              ```html
+              {}
+              ```'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format("html_list(['first string', 'second string'])", """<ul>
+              <li>first string</li>
+              <li>second string</li>
+              </ul>"""))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('html_list([1, 2, 3])', """<ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              </ul>"""))
+                  if 'error3-secretstring' in s:
+                      errors.append(explanation_str.format('["strings", 2.0, True, "and other types too!"]', """<ul>
+              <li>strings</li>
+              <li>2.0</li>
+              <li>True</li>
+              <li>and other types too!</li>
+              </ul>"""))
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              solution_text = """This is our solution:
+              ```python
+              def html_list(list_items):
+                  HTML_string = "<ul>\\n"
+                  for item in list_items:
+                      HTML_string += "<li>{}</li>\\n".format(item)
+                  HTML_string += "</ul>"
+                  return HTML_string```"""
+
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              # feedback.append("Click *NEXT* to see our solution.") #uncomment if the feedback really is on the next concept
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 248126
+        key: 480623c1-4e24-44ab-9020-246f3d4a90fd
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 20:52:33 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Other Applications of the `range` Function
+          =====================
+          While list modification is one application of the `range` function, that isn't the only thing it's useful for. We can also use it to repeat an action a certain number of times.
+
+          ```python
+          >>> for i in range(3):
+          ...     print("Camelot!")
+          ... 
+          Camelot!
+          Camelot!
+          Camelot!
+          >>> print("It's only a model.")
+          It's only a model.
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 248127
+        key: 8e13c7fb-e714-410b-b07c-51ec2318bb72
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 24 2017 19:23:45 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Starbox
+          =========
+
+          The `starbox` function in the quiz below prints a box made out of asterisks. The function takes two arguments, width and height, that specify how many characters wide the box is and how many lines tall it is.
+          The function isn't quite complete: it prints boxes of the correct width, but the height argument is ignored. Complete the function so that both of the provided test cases print boxes that are the correct size. **Hint:** The `range` function could be helpful!
+        instructor_notes: ''
+        resources: null
+      - id: 248128
+        key: 93fed313-af59-4c8d-ae7d-f58222d9094b
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Fri Apr 07 2017 14:11:32 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '4642945396506624'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              import starbox
+
+              print("SECRET STRING1")
+              starbox.starbox(5, 5)
+              starbox.starbox(2, 3)
+              print("SECRET STRING2")
+            executor_test_code: import starbox
+            gae_grading_code: |-
+              def find_answer(s):
+                  start_token = 'SECRET STRING1'
+                  end_token = 'SECRET STRING2'
+                  
+                  answer_start = s.find(start_token) + len(start_token)
+                  answer_end = s.find(end_token)
+                  
+                  return s[answer_start:answer_end]
+
+              student_output = find_answer(executor_result['stdout']).strip()
+
+              grade_result['correct'] = True
+
+              correct_answer = """*****
+              *   *
+              *   *
+              *   *
+              *****
+              **
+              **
+              **
+              """.strip()
+
+              if student_output != correct_answer:
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your function doesn't print the right output. Test run your code with the provided test cases."
+              else:
+                  grade_result['comment'] = "You correctly modified the function. Nice work!\n You an see our solution on the next page."
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occured while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an error. Test Run your code to verify that it prints the right things!"
+
+              def find_answer(s):
+                  start_token = 'SECRET STRING1'
+                  end_token = 'SECRET STRING2'
+                  
+                  answer_start = s.find(start_token) + len(start_token)
+                  answer_end = s.find(end_token)
+                  
+                  return s[answer_start:answer_end]
+                  
+                  
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 248133
+        key: a09c1568-1505-475c-a239-ea46128b1e61
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 20:56:31 GMT+0000 (UTC)'
+        is_public: true
+        text: Click "Next" to see my solution to this quiz.
+        instructor_notes: ''
+        resources: null
+  - id: 248129
+    key: bfe80fb0-4dd8-4d31-808e-ae5aec03e59e
+    locale: en-us
+    version: 1.0.0
+    title: For Loops II
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:00:26 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 248131
+    atoms:
+      - id: 248131
+        key: 54f5de0e-c36d-4d7e-abd0-d61ac05f4649
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 20:55:48 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Solution: Starbox
+          ==========
+
+          I modified the function to print the correct number of lines with this loop:
+          ```python
+          for _ in range(height-2):
+                  print("*" + " " * (width-2) + "*")
+          ```
+          This loop uses range as a simple counter, the body of the loop executes `height - 2` times. I named the iteration variable `_` to indicate that it's a dummy variable, its value isn't used in the loop body.
+
+          This is my complete solution:
+          ```python
+          def starbox(width, height):
+              """print a box made up of asterisks.
+
+              width: width of box in characters, must be at least 2
+              height: height of box in lines, must be at least 2
+              """
+              print("*" * width) #print top edge of box
+             
+              # print sides of box
+              for _ in range(height-2):
+                  print("*" + " " * (width-2) + "*") 
+
+              print("*" * width) #print bottom edge of box
+          ```
+        instructor_notes: ''
+        resources: null
+  - id: 248137
+    key: 839460eb-f4af-47c1-a330-e2728c23ac8c
+    locale: en-us
+    version: 1.0.0
+    title: While Loops
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:00:22 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 248138
+      - 248139
+      - 248140
+      - 248141
+      - 248142
+      - 248144
+      - 248146
+      - 248149
+      - 248150
+    atoms:
+      - id: 248138
+        key: e532c320-c2e6-4afe-8c66-5d5d9d0dc7c5
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 21:08:40 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          While Loops
+          ======
+          For loops are an example of "definite iteration" meaning that the loop's body is run a predefined number of times. A for loop over a list executes the body once for each element in the list. A for loop using the `range` function will execute the number of times specified by the range function call.
+          This differs from "indefinite iteration" which is when a loop repeats an unknown number of times and ends when some condition is met. Consider this while loop that simulates a blackjack dealer by drawing cards from a deck list into a hand list, stopping when the value of the cards in the hand is 17 or more.
+
+          ```python
+          card_deck = [4, 11, 8, 5, 13, 2, 8, 10]
+          hand = []
+
+          while sum(hand) <= 17:
+              hand.append(card_deck.pop())
+
+          print(hand)
+          ```
+          This example features a new function, `sum`, and a new list method, `pop`. `sum` is pretty intuitive, it calculates the sum of the elements in a list. The `pop` method is the inverse of the `append` method, `pop` removes an element from a list and returns it. You can read more about the pop method in [the official documentation](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists).
+
+
+          Let's examine the syntax of while loops:
+        instructor_notes: ''
+        resources: null
+      - id: 248139
+        key: 9c8164e8-a722-48a5-b11e-d0efcac1b6c2
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon Jan 09 2017 21:09:16 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/5873fbe3_screen-shot-2017-01-09-at-1.08.23-pm/screen-shot-2017-01-09-at-1.08.23-pm.png'
+        width: 594
+        height: 256
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 248140
+        key: b5f092e8-316c-4837-8851-e58222560db6
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 21:09:34 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          1. The `while` keyword indicates that this is a while loop 
+          2. Next is a test expression, in this example `sum(hand) <= 21`. If this expression is true, the loop's body will be executed. The test expression is evaluated again after the loop's body runs. This process of checking the test expression and running the loop repeats until the expression becomes false.
+          3. The loop's body is indented with four spaces. The loop's body should somehow modify ony of the variables in the test expression. If the value of the test expression never changes, the result is an infinite loop! In this example the loop's body appends numbers to the `hand` list, which increases the value of `sum(hand)`.
+        instructor_notes: ''
+        resources: null
+      - id: 248141
+        key: 836ae6f1-8569-4252-89e4-7f721002119c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 21:10:53 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Nearest Square
+          ===========
+          Implement the nearest_square function. The function takes an integer argument `limit`, and returns the largest square number that is less than `limit`. A square number is the product of an integer multiplied by itself, for example 36 is a square number because it equals 6*6.
+
+          There's more than one way to write this code, but I suggest you use a while loop!
+
+          Here is a test case you can copy to test your code. Feel free to write additional tests too!
+
+          ```python
+          test1 = nearest_square(40)
+          print("expected result: 36, actual result: {}".format(test1))
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 248142
+        key: 4cc1e26b-ac8c-4ccd-b600-9acce025105a
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Wed Mar 29 2017 00:59:14 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6289409835139072'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              import random
+
+              def nearest_square_solution(limit):
+                  answer = 0
+                  while (answer+1)**2 < limit:
+                      answer += 1
+                  return answer**2
+
+
+              try:
+                  from nearestsquare import nearest_square
+                  
+                  if nearest_square(40) != 36:
+                      print('error1-secretstring')
+                      
+                  if nearest_square(10) != 9:
+                      print('error2-secretstring')
+                      
+                  limit = random.randint(25000, 100000)
+                  if nearest_square(limit) != nearest_square_solution(limit):
+                      print('error3-secretstring-{}-{}'.format(limit, nearest_square_solution(limit)))
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import nearestsquare
+            gae_grading_code: |-
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format('nearest_square(40)', 36))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('nearest_square(10)', 9))
+                  if 'error3-secretstring' in s:
+                      tokens = s.split('-')
+                      limit, solution = tokens[-2], tokens[-1]
+                      errors.append(explanation_str.format('nearest_square({})'.format(limit), solution))
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              solution_text = """Our implementation works like this:
+              ```python
+              def nearest_square(limit):
+                  answer = 0
+                  while (answer+1)**2 < limit:
+                      answer += 1
+                  return answer**2
+              ```"""
+
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 248144
+        key: 69f5c2d6-fa4e-4c33-bc48-dd73035a50f3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Mar 29 2017 01:12:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Stopping for a `break`
+          ================
+
+          For loops iterate over every elements in a sequence, and while loops iterate until their stopping condition is met. This is sufficient for most purposes, but we sometimes need more precise control over when a loop should end. In these cases, we use the `break` keyword.
+
+          A loop will terminate immediately if it encounters a break statement. We can use this to end a loop if we detect that some condition has been met. The `break` keyword can be used in both `for` and `while` loops. 
+
+          In the example below we will see how `break` can be used. Suppose you wanted to load a cargo ship with a list of items. Each item weighs a certain amount and the ship has a maximum weight capacity. Ideally you would like to load all the items on the ship, but you do not want to overload the ship. Therefore when the ship's capacity is reached you should stop loading. To accomplish that we will use a `for` loop, loading each item and keeping track of the weight of all the items we have loaded so far. We will use a `break` statement to stop loading once the ship reaches capacity.
+
+          **Note:** The `manifest` in this example is a list of list. We have seen lists before, and you can also have list elements that are themselves lists- this is the case with the `manifest` variable. Each element in the `manifest` list is a list itself, one that contains two things: an item and its weight.
+
+          ```python
+          # each item in the manifest is an item and its weight
+          manifest = [["bananas", 15], ["mattresses", 34], ["dog kennels",42], ["machine that goes ping!", 120], ["tea chests", 10], ["cheeses", 0]]
+
+          cargo_weight = 0
+          cargo_hold = []
+
+          for cargo in manifest:
+              if cargo_weight >= 100:
+                  break
+              else:
+                  cargo_hold.append(cargo[0])
+                  cargo_weight += cargo[1]
+          ```
+
+          The code is intended to stop the weight of the cargo on the boat from going over the stated limit of 100. Let's check what we've put in the boat.
+
+          ```python
+          >>> print(cargo_weight)
+          211
+          >>> print(cargo_hold)
+          ['bananas', 'mattresses', 'dog kennels', 'machine that goes ping!']
+          ```
+          Hmm, that's not good - the boat is severely over its weight limit. The break statement prevented us for putting every item on the boat, but we still exceeded the limit.
+
+          It's difficult to see what's gone wrong. One strategy we can use is to include calls to `print` in the code. This is a really handy technique, as it can give us some insight into the state of the data as the code is running step-by-step. If we choose what to print well (and give context), this might help us to find the bug.
+
+          Here's the loop with debugging statements added.
+          ```python
+          cargo_weight = 0
+          cargo_hold = []
+
+          for cargo in manifest:
+              print("debug: the weight is currently: {}".format(cargo_weight))
+              if cargo_weight >= 100:
+                  print("debug: breaking loop now!")
+                  break
+              else:
+                  print("debug: adding item: {}".format(cargo[0]))
+                  print("debug: with weight: {}".format(cargo[1]))
+                  cargo_hold.append(cargo[0])
+                  cargo_weight += cargo[1]
+          ```
+
+          And this is output of the annotated loop:
+          ```text
+          debug: the weight is currently: 0
+          debug: adding item: bananas
+          debug: with weight: 15
+          debug: the weight is currently: 15
+          debug: adding item: mattresses
+          debug: with weight: 34
+          debug: the weight is currently: 49
+          debug: adding item: dog kennels
+          debug: with weight: 42
+          debug: the weight is currently: 91
+          debug: adding item: machine that goes ping!
+          debug: with weight: 120
+          debug: the weight is currently: 211
+          debug: breaking loop now!
+          ```
+
+          By reading this printed debug log we can see that the loop adds items to the cargo hold correctly, but it adds one extra item after the weight limit is met.
+        instructor_notes: ''
+        resources: null
+      - id: 248146
+        key: 4939a260-cabf-472b-aaec-e179e373954a
+        locale: en-us
+        version: 1.0.0
+        title: Reflect
+        semantic_type: ReflectAtom
+        updated_at: 'Wed Mar 29 2017 01:16:22 GMT+0000 (UTC)'
+        is_public: true
+        instructor_notes: null
+        resources: null
+        question:
+          title: null
+          semantic_type: TextQuestion
+          evaluation_id: null
+          text: |
+            Can you understand why one extra item is added to the list? Explain the problem in the box below.
+        answer:
+          text: |
+            Thanks for thinking about this! The problem is that the `if` condition that causes the loop to `break` is only triggered if the *current* weight is over the limit. Instead, it should check whether the *new* weight after the next item is added will be over the limit. 
+
+            This new code should solve the issue:
+            ```python
+            for cargo in manifest:
+                if cargo_weight + cargo[1] >= 100:
+                    break
+                else:
+                    cargo_hold.append(cargo[0])
+                    cargo_weight += cargo[1]
+            ```
+            You could add `print` statements again, to see how it is working.
+          video: null
+      - id: 248149
+        key: 79171ec8-2153-42af-ab3e-b3cc7dcc2586
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 21:15:33 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Quiz: Break the String
+          ==========
+
+          Time to write your own loop with a break statement. Your task is to create a string, `news_ticker` that is exactly 140 characters long. You should create the news ticker by adding headlines from the `headlines` list, inserting a space in between each headline. If necessary, truncate the last headline in the middle so that `news_ticker` is exactly 140 characters long.
+
+          Remember that `break` works in both for and while loops. Use whichever loop seems most appropriate. Consider adding `print` statements to your code to help you resolve bugs.
+        instructor_notes: ''
+        resources: null
+      - id: 248150
+        key: 36a9b1c2-64eb-46ff-92a9-777077c69fce
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Wed Mar 29 2017 02:13:37 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5808871445757952'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              import ticker
+              print('SECRET STRING1')
+              print(ticker.news_ticker)
+              print('SECRET STRING2')
+            executor_test_code: import ticker
+            gae_grading_code: |
+              def find_answer(s):
+                  start_token = 'SECRET STRING1'
+                  end_token = 'SECRET STRING2'
+                  
+                  answer_start = s.find(start_token) + len(start_token)
+                  answer_end = s.find(end_token)
+                  
+                  return s[answer_start:answer_end]
+                  
+              student_output = find_answer(executor_result['stdout']).strip()
+
+              correct_answer = "Local Bear Eaten by Man Legislature Announces New Laws Peasant Discovers Violence Inherent in System Cat Rescues Fireman Stuck in Tree Brave"
+
+              if student_output != correct_answer:
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Make sure you're inserting spaces between each headline, and that the ticker is exactly 140 chartacters long"
+              else:
+                  grade_result['correct'] = True
+                  grade_result['comment'] = """Nice work!\nI calculated my answer like this:
+              ```python
+              for headline in headlines:
+                  news_ticker += headline + " "
+                  if len(news_ticker) >= 140:
+                      news_ticker = news_ticker[:140]
+                      break
+              ```"""
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occured while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an exception. Test Run to verify that it works!"
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 248153
+    key: 95a307ad-93bf-4fc0-b415-db8398c1328a
+    locale: en-us
+    version: 1.0.0
+    title: Reorganizing Code
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 05:36:44 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 287811
+      - 248157
+      - 249178
+      - 249179
+      - 249180
+    atoms:
+      - id: 287811
+        key: 0e58e7cf-6c10-4b24-9940-2d59d0820708
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L3 37 Reading Existing Code
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 04:40:31 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52167'
+          youtube_id: 0Pg3HryU9Z4
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d5da57_ud1110-intropy-l3-37-reading-existing-code/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5da57_ud1110-intropy-l3-37-reading-existing-code/ud1110-intropy-l3-37-reading-existing-code_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5da57_ud1110-intropy-l3-37-reading-existing-code/ud1110-intropy-l3-37-reading-existing-code_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5da57_ud1110-intropy-l3-37-reading-existing-code/ud1110-intropy-l3-37-reading-existing-code_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5da57_ud1110-intropy-l3-37-reading-existing-code/ud1110-intropy-l3-37-reading-existing-code_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d5da57_ud1110-intropy-l3-37-reading-existing-code/hls/playlist.m3u8'
+      - id: 248157
+        key: b593ddf5-f01e-4775-8623-f88f3db6752b
+        locale: en-us
+        version: 1.0.0
+        title: Reflect
+        semantic_type: ReflectAtom
+        updated_at: 'Wed Mar 29 2017 21:26:44 GMT+0000 (UTC)'
+        is_public: true
+        instructor_notes: null
+        resources: null
+        question:
+          title: null
+          semantic_type: TextQuestion
+          evaluation_id: null
+          text: |-
+            The function below, `check_answers()`, is designed to take as input a list of five answers from a quiz along with a list of the five correct solutions. It checks the answers against the solutions and outputs a message. The code currently functions as intended, but it's not an ideal implementation. Feel free to run the code on your own machine to test it.
+
+            In this quiz, you should identify ways in which the implementation of this function could be improved, without removing its current usage. Here are some questions to get you started thinking about this, but you should use your own judgement!
+            * Reading the code, is it clear what each piece does? How could it be be easier?
+            * If you needed to change some part of the functionality, would that be easy? Would you have to change the same thing in several places?
+            * If you break down what the function does into steps, how many steps are there? It's best to have each function doing only one thing.
+            * Is there unnecessary repetition? Does every piece of code get used? Could anything be more succinct whilst still being readable? This is called the [DRY (Don't Repeat Yourself) principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
+
+            ```python
+            def check_answers(my_answers,answers):
+                """
+                Checks the five answers provided to a multiple choice quiz and returns the results.
+                """
+                results= [None, None, None, None, None]
+                if my_answers[0] == answers[0]:
+                    results[0] = True
+                elif my_answers[0] != answers[0]:
+                    results[0] = False
+                if my_answers[1] == answers[1]:
+                    results[1] = True
+                elif my_answers[1] != answers[0]:
+                    results[1] = False
+                if my_answers[2] == answers[2]:
+                    results[2] = True
+                elif my_answers[2] != answers[2]:
+                    results[2] = False
+                if my_answers[3] == answers[3]:
+                    results[3] = True
+                elif my_answers[3] != answers[3]:
+                    results[3] = False
+                if my_answers[4] == answers[4]:
+                    results[4] = True
+                elif my_answers[4] != answers[4]:
+                    results[4] = False
+                count_correct = 0
+                count_incorrect = 0
+                for result in results:
+                    if result == True:
+                        count_correct += 1
+                    if result != True:
+                        count_incorrect += 1
+                if count_correct/5 > 0.7:
+                    return "Congratulations, you passed the test! You scored " + str(count_correct) + " out of 5."
+                elif count_incorrect/5 >= 0.3:
+                    return "Unfortunately, you did not pass. You scored " + str(count_correct) + " out of 5."
+            ```
+        answer:
+          text: Well done for thinking about problems with the code!
+          video: null
+      - id: 249178
+        key: 486e3b5a-1347-4d78-b35b-a79a891a847a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 21:31:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Here are some of the things we didn't like about the code, we've added comments to the trouble spots we found.
+
+          ```python
+          def check_answers(my_answers,answers):
+              #1 variable names are not easy to tell apart
+              """
+              Checks the five answers provided to a multiple choice quiz and returns the results.
+              """
+              #2 Code will only work if there are exactly five answers
+              results= [None, None, None, None, None]
+              #3 Repeated code would be better as a separate function
+              if my_answers[0] == answers[0]:
+                  results[0] = True
+              elif my_answers[0] != answers[0]:
+                  results[0] = False
+              #4 if and elif could be clearer with if and else
+              if my_answers[1] == answers[1]:
+                  results[1] = True
+              elif my_answers[1] != answers[0]:
+                  results[1] = False
+              if my_answers[2] == answers[2]:
+                  results[2] = True
+              elif my_answers[2] != answers[2]:
+                  results[2] = False
+              if my_answers[3] == answers[3]:
+                  results[3] = True
+              elif my_answers[3] != answers[3]:
+                  results[3] = False
+              if my_answers[4] == answers[4]:
+                  results[4] = True
+              elif my_answers[4] != answers[4]:
+                  results[4] = False
+              #6 this function does several things in one long block
+              count_correct = 0
+              count_incorrect = 0
+              for result in results:
+              #7 The code counts both correct and incorrect answers.
+                  if result == True:
+                      count_correct += 1
+                  if result != True:
+                      count_incorrect += 1
+              if count_correct/5 > 0.7:
+              #8 The pass rate has been hard-coded into the function
+                  return "Congratulations, you passed the test! You scored " + str(count_correct) + " out of 5."
+              elif count_incorrect/5 >= 0.3:
+                  return "Unfortunately, you did not pass. You scored " + str(count_correct) + " out of 5."
+          ```
+
+          **1:** The names `my_answers` and `answers` were quite similar, which made it a bit confusing. Set better names for these parameters and put their definitions in the docstring for reference.
+
+
+          **2:** The fact that there are five questions in the quiz is vital to the working of the code. Although this constraint doesn't stop it working properly, if one day we had a quiz with ten questions it would be nice to be able to reuse that same code.
+
+          **3:** The parts that checked the answers
+
+          ```python
+              if my_answers[1] == answers[1]:
+                  results[1] = True
+              elif my_answers[1] != answers[0]:
+                  results[1] = False
+          ```
+          were repeated five times! This would be far better as a separate function that checks an answer.
+
+          **4:** There are a few places where `if` and `elif` were used but the boolean expression in the `elif` clause is just what's leftover after the `if`. The program would work the same but be easier to read if we used `if` and `else` in those cases.
+
+          **5:** There are no inline comments explaining what the code does. 
+
+          **6:** It seems as though this function does several things -- it checks each answer, and then it adds up the number of correct and incorrect answers, and then it outputs a message. At least some of that should be separated out.
+
+          **7:** If every question is either correct or incorrect, and we know how many questions there are, there's no need to count both the number of correct and incorrect answers. We could also make the code shorter by using a `sum` to count the correct answers in `results`.
+
+          **8:** The proportion of correct answers in the boundary of passing the quiz is hard-coded, and doesn't need to be.
+
+          There are plenty of ways we can improve this function!
+        instructor_notes: ''
+        resources: null
+      - id: 249179
+        key: 43f38e5d-f751-4073-bc69-640ab2917797
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 21:33:04 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Refactor the Code
+          ===============
+          This was a pretty long list of ways to improve this code! Don't be daunted, we don't have to take them all on at once - in fact, it's better to make one change at a time, and test the results.
+
+          In this quiz, make two changes to the program:
+
+          1. Move (refactor) the code that checks the answers into a separate function. Give it a good name. Use a loop to call that function on each answer, so that there aren't five calls to the function.
+          2. Improve the docstring and add comments to make the code easier to understand.
+
+          This doesn't cover the whole list of improvements, but it's a good start! If you want to do more, feel free. Your code will be tested on some test cases, so just make sure it still works correctly!
+        instructor_notes: ''
+        resources: null
+      - id: 249180
+        key: aad36582-4d67-4ab0-82cf-195dc9262ece
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Fri Apr 07 2017 17:29:44 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6472316251930624'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              try:
+                  from refactor import check_answers
+                  
+                  if check_answers([1,2,3,4,5],[1,2,3,4,5]) != "Congratulations, you passed the test! You scored 5 out of 5.":
+                      print('error1-secretstring')
+                      
+                  if check_answers([1,2,3,4,5],["badger","badger","badger","badger","badger"]) != "Unfortunately, you did not pass. You scored 0 out of 5.":
+                      print('error2-secretstring')
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import refactor
+            gae_grading_code: |-
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format("check_answers([1,2,3,4,5],[1,2,3,4,5])", "Congratulations, you passed the test! You scored 5 out of 5."))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('check_answers([1,2,3,4,5],["badger","badger","badger","badger","badger"])', "Unfortunately, you did not pass. You scored 0 out of 5."))
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              solution_text = """The submit button is checking that the code works - it does! Don't forget to refactor and improve the code, don't keep it as it is.\n\n
+              Test cases are the best way to be sure that a refactoring hasn't subtly changed the behavior of some code. When you refactor real code, write test cases first!
+              Here is my solution:
+              ```python
+              def check_answer(my_answer, answer):
+                  if my_answer == answer:
+                      return True
+                  else:
+                      return False
+
+              def check_answers(my_answers,answers):
+                  #Checks the five answers provided to a multiple choice quiz and returns the results.
+                  results = []
+                  for i in range(len(my_answers)):
+                      results.append(check_answer(my_answers[i], answers[i]))
+                  count_correct = 0
+                  
+                  for result in results:
+                      if result:
+                          count_correct += 1
+                  
+                  if count_correct/len(results) > 0.7:
+                      return "Congratulations, you passed the test!"
+                  elif (len(results) - count_correct)/len(results) >= 0.3:
+                      return "Unfortunately, you did not pass."
+                  ```
+                  """
+
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              # feedback.append("Click *NEXT* to see our solution.") #uncomment if the feedback really is on the next concept
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 249181
+    key: 703a21e3-94c9-4038-8556-c9a1dd1f291b
+    locale: en-us
+    version: 1.0.0
+    title: Sets
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:00:30 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 249183
+      - 249184
+      - 249187
+      - 291705
+      - 249188
+      - 249190
+      - 249191
+      - 249193
+    atoms:
+      - id: 249183
+        key: b986aa40-83cc-4ba0-acde-89b5e1aa76ec
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 21:36:43 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Removing Duplicates from Lists
+          ==============
+          Imagine that you run a popular search engine and you've surveyed your users to see where they're browsing from. You've collected the 785 responses and have assembled them into a list of countries:
+
+          ```python
+          >>> len(countries)
+          785
+          >>> countries[:5]
+          ['Angola', 'Maldives', 'India', 'United States', 'India']
+          ``` 
+          There aren't 785 countries in the world, which means that there are probably duplicate entries in the `countries` list. Slicing the list to see the first few elements confirms this. It would be useful to remove the duplicates to produce a list of all of the countries that users browse from.
+        instructor_notes: ''
+        resources: null
+      - id: 249184
+        key: 22189606-2796-4e0a-84b0-0588db7d50b4
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 21:37:26 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          Quiz: Deduplication
+          ==========
+          Write a function, `remove_duplicates` that takes a list as its argument and returns a new list containing the unique elements of the original list. The elements in the new list without duplicates can be in any order.
+
+          Suggested test cases:
+          Try an input list with no duplicate elements. The output list should be the same size as the original list.
+          Try a small input list with a known number of unique entries, and some duplicates. Verify that the list without duplicates has the correct length.
+
+        instructor_notes: ''
+        resources: null
+      - id: 249187
+        key: 9002ea88-ee12-4ef1-b6d3-6455b9085884
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Thu Mar 30 2017 14:01:54 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '4728247473537024'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              try:
+                  from deduplicate import remove_duplicates
+
+                  t1 = remove_duplicates([1,2,3])
+                  if len(t1) != 3 or 1 not in t1 or 2 not in t1 or 3 not in t1:
+                      print('error1-secretstring')
+                  
+                  t2 = remove_duplicates([1,2,3,2])
+                  if len(t2) != 3 or 1 not in t2 or 2 not in t2 or 3 not in t2:
+                      print(t2)
+                      print('error2-secretstring')
+
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import deduplicate
+            gae_grading_code: |-
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              Make sure the returned list has the correct elements, with no duplicates.'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format("remove_duplicates([1,2,3])"))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format("remove_duplicates([1,2,3,2])"))
+                
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              solution_text = """This is our solution:
+              ```python
+              def remove_duplicates(source):
+                  target = []
+
+                  for element in source:
+                      if element not in target:
+                          target.append(element)
+
+                  return target
+              ```"""
+
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              # feedback.append("Click *NEXT* to see our solution.") #uncomment if the feedback really is on the next concept
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 291705
+        key: e9daf4ef-e73a-4a85-bb40-4e7fb0b394ea
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 07 2017 17:35:37 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Solution to the Deduplication Quiz:
+          =======
+          This is our solution:
+          ```python
+          def remove_duplicates(source):
+              target = []
+
+              for element in source:
+                  if element not in target:
+                      target.append(element)
+
+              return target
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 249188
+        key: 675b010d-a286-4b9e-887b-e8813c79b53d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 21:39:28 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Sets
+          ===
+          Removing duplicates from lists with a `for` loop works, but there is an alternative technique. Python includes several data structures other than lists for storing collections, and one of them is perfectly suited for storing unique elements: sets.
+
+          Sets are collections of unique elements without any particular ordering. We can create a set from a list like this:
+
+          ```python
+          >>> country_ set = set(countries)
+          >>> len(country_set)
+          196
+          ```
+          Sets support the `in` operator the same as lists do:
+
+          ```python
+          >>> 'Mauritius' in countries
+          True
+          >>> 'Mauritius' in country_set
+          True
+          ```
+
+          You can add elements to sets, but you don't use the `append` method like lists, instead sets have the `add` method:
+
+          ```python
+          country_set.add("Florin")
+          ```
+          Sets also have a `pop` method, just like lists. When you `pop` an element from a set a random element is removed (remember that sets, unlike lists, are unordered so there is no "last element").
+
+          You can iterate over a set using a for loop in the same manner that you can iterate over a list.
+        instructor_notes: ''
+        resources: null
+      - id: 249190
+        key: 9f0d5b81-853e-447e-94c7-80948d3637d6
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 21:41:53 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Build a Set
+          =============
+
+          In a similar way to building an empty list with `my_list = []`, you can create an empty set with `my_set = set()`.
+          Using this technique, and the `add` method, build a set of all of the square numbers greater than 0 and less than 2,000. For reference, I included my implementation of `nearest_square` function from an earlier quiz. You may call the function in your code, integrate it into your code, or ignore it altogether.
+        instructor_notes: ''
+        resources: null
+      - id: 249191
+        key: b944cd7c-1a81-47bc-aadb-72d27804f0d7
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Wed Mar 29 2017 21:44:53 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '4753394809044992'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              #model solution
+              squares = set()
+              n = 1
+              while n**2 < 2000:
+                  squares.add(n**2)
+                  n += 1
+
+              import squareset
+              print('SECRET STRING1')
+              if squareset.squares == squares:
+                  print('correct')
+              else:
+                  print('wrong')
+              print('SECRET STRING2')
+            executor_test_code: import squareset
+            gae_grading_code: |
+              def find_answer(s):
+                  start_token = 'SECRET STRING1'
+                  end_token = 'SECRET STRING2'
+                  
+                  answer_start = s.find(start_token) + len(start_token)
+                  answer_end = s.find(end_token)
+                  
+                  return s[answer_start:answer_end]
+
+              executor_output = find_answer(executor_result['stdout']).strip()
+
+              if executor_output != 'correct':
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your answer is off. Did you forget to include 1? Verify that you don't add one too few or one too many elements to the set."
+              else:
+                  grade_result['correct'] = True
+                  grade_result['comment'] = """Nice work!\nYou can see our solution in the next page."""
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occured while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an exception. Test Run to verify that it works!"
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 249193
+        key: c0d37152-c881-4c85-a359-0c120039b559
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 21:43:49 GMT+0000 (UTC)'
+        is_public: true
+        text: Click "Next" to see the solution to this quiz.
+        instructor_notes: ''
+        resources: null
+  - id: 249192
+    key: 541d29e2-f0ae-46b3-995d-5c01183325ed
+    locale: en-us
+    version: 1.0.0
+    title: Sets II
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:00:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 249194
+    atoms:
+      - id: 249194
+        key: 1f8b1db7-110b-448e-b575-c8336d0b3dc7
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 21:44:56 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Solution: Build a Set
+          ============
+
+          For my solution, I reworked the loop from the `nearest_square` function to add elements to the `squares` set:
+          ```python
+          n = 1
+          while n**2 < 2000:
+              squares.add(n**2)
+              n += 1
+          ```
+          It was tempting to simply use the `nearest_square` function as originally written by calling it repeatedly in a loop, but I realized that this would cause my computer to do the same calculations repeatedly. For example, if the loop called `nearest_square(1999)` and then `nearest_square(2000)`,it would have to iterate from 1 to 1,999 all over again to produce a result.
+        instructor_notes: ''
+        resources: null
+  - id: 249195
+    key: 91817ced-1d7f-4d19-a24e-9dbcfa59a264
+    locale: en-us
+    version: 1.0.0
+    title: Dictionaries
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:01:37 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 249198
+      - 249213
+      - 249214
+    atoms:
+      - id: 249198
+        key: b4b7804a-6e31-4175-bfb6-726873aeb1eb
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 22:00:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Dictionaries
+          =========
+
+          Sets are simple data structures, and they have one main use: collecting unique elements. Our next data structures, dictionaries, are more flexible. Rather than storing single objects like lists and sets do, dictionaries store pairs of elements: **keys** and **values**. In this example we define a dictionary where the keys are element names and the values are their corresponding atomic numbers.
+
+          ```python
+          elements = {'hydrogen': 1, 'helium': 2, 'carbon': 6}
+          ```
+
+          We can look up values in the dictionary using square brackets enclosing a key:
+
+          ```python
+          >>> print(element['carbon'])
+          6
+          ```
+          We can also insert new values into the dictionary with square brackets:
+          ```python
+          >>> elements['lithium'] = 3
+          >>> print(elements['lithium'])
+          3
+          ```
+
+          Dictionary keys are similar to list indices: we can select elements from the data structure by putting the index/key in square brackets. Unlike lists, dictionaries can have keys of any immutable type, not just integers. The `element` dictionary uses **strings** for its keys. However, it's not even necessary for every key to have the same type!
+        instructor_notes: ''
+        resources: null
+      - id: 249213
+        key: 2f4701d9-646b-44be-8d89-905c647d5e21
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 23:03:51 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Define a Dictionary
+          ================
+          Define a dictionary named `population` that contains this data:
+
+          |  **Keys** | **Values**  |
+          |---|---|
+          |  Shanghai | 17.8  |
+          |  Istanbul | 13.3  |
+          |  Karachi |  13.0 |
+          |  Mumbai | 12.5  |
+        instructor_notes: ''
+        resources: null
+      - id: 249214
+        key: c28574f4-62f6-466d-bc9e-572ee01d5647
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Wed Jan 25 2017 00:30:56 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5261477595447296'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              #model solution
+              population = {"Shanghai": 17.8, 
+                            "Istanbul": 13.3,
+                            "Karachi": 13.0,
+                            "Mumbai": 12.5}
+
+              try:
+                  import popdict
+                  print('SECRET STRING1')
+                  if popdict.population == population:
+                      print('correct')
+                  else:
+                      print('wrong')
+                  if len(popdict.population) != 4:
+                      print("wrongnum")
+                  if 17800000 in popdict.population.values():
+                      print("wrong values")
+                  
+                  print('SECRET STRING2')
+              except Exception as e:
+                  import sys
+                  print(e, file=sys.stderr)
+            executor_test_code: import popdict
+            gae_grading_code: |
+              def find_answer(s):
+                  start_token = 'SECRET STRING1'
+                  end_token = 'SECRET STRING2'
+                  
+                  answer_start = s.find(start_token) + len(start_token)
+                  answer_end = s.find(end_token)
+                  
+                  return s[answer_start:answer_end]
+
+              executor_output = find_answer(executor_result['stdout']).strip()
+
+              if 'correct' in executor_output:
+                  grade_result['correct'] = True
+                  grade_result['comment'] = """Nice work!\nYou can see our solution in the next page."""
+              else:
+                  grade_result['correct'] = False
+                  if "wrongnum" in executor_output:
+                      grade_result['comment'] =  "Your dictionary should have four key-value pairs in it."
+                  elif "wrong values" in executor_output:
+                      grade_result['comment'] = "Your dicitonary values should be floats like `17.8`."
+                  else:
+                      grade_result['comment'] = "Double check your code, does it deine a dictionary named `population`?"
+
+              if executor_result['stderr']:
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an exception, test run it to verify its operation: "+executor_result['stderr']
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 249215
+    key: b54d90bc-b5ab-4cbd-b48c-09afd5d4a6e2
+    locale: en-us
+    version: 1.0.0
+    title: Dictionaries II
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:01:41 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 249217
+      - 249225
+      - 249226
+      - 249228
+      - 249229
+      - 249230
+      - 249243
+      - 249267
+      - 249259
+    atoms:
+      - id: 249217
+        key: efcfe215-0901-4527-aa36-706274a782c4
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 30 2017 21:28:37 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Solution: Define a Dictionary
+          =============
+
+          We can define the dictionary like this,
+          ```python
+          >>> population = {'Shanghai': 17.8,
+                        'Istanbul': 13.3,
+                        'Karachi': 13.0,
+                        'Mumbai': 12.5}
+          ```
+          I chose to put each key-value pair on its own line to make this dictionary definition easier to read, but where and whether you use line breaks is simply a stylistic choice. This code works just as well:
+
+          ```python
+          >>> population = {'Shanghai': 17.8, 'Istanbul': 13.3, 'Karachi': 13.0, 'Mumbai': 12.5}
+          ``` 
+        instructor_notes: ''
+        resources: null
+      - id: 249225
+        key: 7eca0dba-0435-4053-83d8-d5abcb338592
+        locale: en-us
+        version: 1.0.0
+        title: Immutable Keys
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Wed Mar 29 2017 22:34:32 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            Which of these could be used as the key for a dictionary? Hint: Dictionary keys must be immutable, that is, they must be of a type that is not modifiable.
+          correct_feedback: 'Each of these types except for `list` can be used as a key. Since lists can be changed by adding and removing elements, they are mutable.'
+          video_feedback: null
+          default_feedback: Did you check each of the immutable types?
+          answers:
+            - id: a1484003318866
+              text: '`str`'
+              is_correct: true
+              incorrect_feedback: ''
+            - id: a1484003333525
+              text: '`list`'
+              is_correct: false
+              incorrect_feedback: ''
+            - id: a1484003334280
+              text: '`int`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1484003335062
+              text: '`float`'
+              is_correct: true
+              incorrect_feedback: null
+      - id: 249226
+        key: 23179604-560f-417c-b514-d6ea6ec33d5b
+        locale: en-us
+        version: 1.0.0
+        title: 'Quiz: Looking Up What Isn''t There'
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Jan 11 2017 22:15:50 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'What happens if we look up a value that isn''t in the dictionary? On your own computer, create a test dictionary and use the square brackets to lookup a value that you haven''t defined. What happens?'
+          correct_feedback: 'A `KeyError` occurs. It would be cool if Python could search the Internet for the answer to any question, but if Python were that smart the world wouldn''t need programmers! The other two options are possible with a bit more programming, but they are not how dictionaries work on their own.'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1484003471533
+              text: The lookup returns `None`
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484003504254
+              text: The key is added to the dictionary with a default value of None
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484003504878
+              text: A `KeyError` occurs
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1484003505578
+              text: Python searches the Internet for an appropriate value
+              is_correct: false
+              incorrect_feedback: null
+      - id: 249228
+        key: 5b05bde1-4f92-4b99-b536-f668ee958669
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 07 2017 17:47:35 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          What's in the Dictionary?
+          =============
+
+          We can check whether a value is in a dictionary on the same way we check whether a value is in a list or set with the `in` keyword.
+
+          ```python
+          if 'mithril' in elements:
+              print("That's a real element!")
+          else:
+              print("There's no such element!')
+          ```
+
+          We can use `in` to verify whether a key is in the dictionary before looking it up, if there's a possibility that the key isn't there.
+
+          Dicts have a related method that's also useful, `get`. `get` looks up values in a dictionary, but unlike square brackets, `get` returns `None` (or a default value of your choice) if the key isn't found. If you expect lookups to sometimes fail, `get` might be a better tool than normal square bracket lookups.
+
+          ```python
+          >>> elements.get('dilithium')
+          None
+          >>> elements['dilithium']
+          KeyError: 'dilithium'
+          >>> elements.get('kryptonite', 'There\'s no such element!')
+          "There's no such element!"
+          ```
+          In the last example we specified a default value (the `string` `'There\'s no such element!'`) to be returned instead of `None` when the key is not found.
+        instructor_notes: ''
+        resources: null
+      - id: 249229
+        key: db6490f9-6fb6-406c-a3ac-fdc77c4f68b8
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Mar 29 2017 23:43:52 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Users by Country
+          ================
+
+          Let's revisit the survey information from earlier. Before we used a set to determine how many unique countries were in the dataset. Suppose this dataset actually contains information about users who downloaded and installed a certain application: for each user that did this their country appears in the list. Now let's use a dict to perform a more sophisticated analysis: how many users there are from each country? 
+
+          Create a dict, `country_counts` whose keys are country names, and whose values are the number of times the country occurs in the `countries` list. Write your code in the app.py file.
+        instructor_notes: ''
+        resources: null
+      - id: 249230
+        key: b467409b-17d8-447f-828c-10691894ab2a
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Wed Mar 29 2017 23:33:59 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5244591663087616'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: >-
+              #import main
+
+
+              #def model_solution
+
+              right_answer = {'Mongolia': 3, 'Korea South': 1, 'Greece': 3, 'Sweden': 2, 'Saint Vincent & the Grenadines': 2, 'Bolivia': 6, 'Turkmenistan': 6, 'Liechtenstein': 3, 'Turkey': 2, 'Hungary': 5, 'Iraq': 4, 'Belgium': 2, 'New Zealand': 7, 'Antigua & Deps': 9, 'Nepal': 4, 'Dominican Republic': 5, 'Panama': 6, 'Indonesia': 3, 'El Salvador': 5, 'Dominica': 4, 'Portugal': 3, 'Tuvalu': 1, 'Colombia': 2, 'Kuwait': 7, 'Morocco': 9, 'Singapore': 2, 'Nicaragua': 4, 'Benin': 7, 'Kosovo': 6, 'Yemen': 3, 'Myanmar, {Burma}': 4, 'Guinea': 5, 'Marshall Islands': 7, 'Ireland {Republic}': 1, 'Canada': 6, 'Honduras': 5, 'Sri Lanka': 2, 'Vietnam': 5, 'Gabon': 4, 'Sierra Leone': 5, 'Switzerland': 5, 'Haiti': 4, 'Czech Republic': 6, 'Georgia': 6, 'Argentina': 3, 'Nauru': 3, 'Zambia': 9, 'Korea North': 4, 'Brunei': 3, 'Zimbabwe': 5, 'Vanuatu': 2, 'Nigeria': 3, 'Slovenia': 6, 'Burkina': 5, 'Netherlands': 6, 'Congo {Democratic Rep}': 4, 'Samoa': 5, 'Slovakia': 2, 'Papua New Guinea': 5, 'Egypt': 3,
+              'Fiji': 4, 'Mauritius': 6, 'United States': 6, 'Solomon Islands': 2, 'Barbados': 3, 'Ivory Coast': 5, 'Senegal': 5, 'Tanzania': 5, 'Mali': 8, 'Tonga': 5, 'Pakistan': 8, 'Serbia': 3, 'Venezuela': 3, 'Seychelles': 6, 'Maldives': 3, 'Congo': 3, 'Denmark': 2, 'Guatemala': 2, 'Finland': 4, 'Grenada': 5, 'Montenegro': 2, 'Thailand': 4, 'Saudi Arabia': 6, 'East Timor': 4, 'Kyrgyzstan': 3, 'Bahrain': 5, 'Australia': 3, 'Bhutan': 8, 'Madagascar': 3, 'Jordan': 2, 'St Kitts & Nevis': 4, 'Albania': 8, 'Brazil': 3, 'United Kingdom': 5, 'Togo': 3, 'Tunisia': 4, 'Jamaica': 4, 'Romania': 2, 'Palau': 4, 'Norway': 4, 'Taiwan': 8, 'Malaysia': 5, 'Macedonia': 3, 'Poland': 5, 'Andorra': 3, 'France': 5, 'Comoros': 5, 'Ukraine': 4, 'Mozambique': 4, 'Tajikistan': 5, 'Japan': 3, 'India': 5, 'Bulgaria': 2, 'Laos': 2, 'Armenia': 2, 'Kenya': 3, 'Guinea-Bissau': 6, 'Central African Rep': 4, 'Vatican City': 4, 'Cape Verde': 5, 'Monaco': 2, 'Germany': 6, 'Suriname': 3, 'San Marino': 3, 'Botswana': 4,
+              'Peru': 2, 'Lithuania': 2, 'Djibouti': 2, 'United Arab Emirates': 4, 'Lesotho': 2, 'Chad': 3, 'Eritrea': 6, 'South Sudan': 7, 'Israel': 4, 'Bahamas': 6, 'Croatia': 1, 'Luxembourg': 5, 'Uruguay': 2, 'Niger': 2, 'Micronesia': 1, 'Belarus': 2, 'St Lucia': 5, 'Cameroon': 3, 'Rwanda': 4, 'Cambodia': 7, 'Cuba': 4, 'Ethiopia': 2, 'Latvia': 3, 'Angola': 5, 'Guyana': 3, 'Somalia': 4, 'Namibia': 4, 'Mauritania': 3, 'Equatorial Guinea': 4, 'Qatar': 7, 'Syria': 6, 'Libya': 6, 'Sao Tome & Principe': 5, 'Gambia': 4, 'Uzbekistan': 1, 'Kazakhstan': 3, 'Liberia': 4, 'Ghana': 8, 'Mexico': 4, 'Sudan': 10, 'Lebanon': 3, 'Algeria': 11, 'South Africa': 5, 'Austria': 4, 'Paraguay': 6, 'Chile': 2, 'Kiribati': 4, 'Ecuador': 4, 'Philippines': 5, 'Azerbaijan': 2, 'Malta': 3, 'Malawi': 2, 'Russian Federation': 2, 'Bosnia Herzegovina': 4, 'Spain': 2, 'Italy': 3, 'Belize': 5, 'Moldova': 4, 'Afghanistan': 1, 'Swaziland': 2, 'Bangladesh': 2, 'Burundi': 3, 'Oman': 6, 'Iceland': 1, 'Trinidad & Tobago': 1,
+              'China': 5, 'Uganda': 2, 'Cyprus': 2}
+
+
+              try:
+                  from app import country_counts
+                  match = True
+                  for keys in right_answer:
+                      if keys not in country_counts:
+                          match = False
+                          break
+                      if right_answer[keys] != country_counts[keys]:
+                          match = False
+                          break
+                      
+                  if not match:
+                      print('error1-secretstring')
+                      #if list_sum([]) != 0:
+                      #    print('error1-secretstring')
+                      
+                      #if list_sum([42]) != 42:
+                      #    print('error2-secretstring')
+                      
+                      #if list_sum([7, 8, -3]) != 12:
+                      #    print('error3-secretstring')
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: |-
+              import app
+              #print('something')
+            gae_grading_code: |+
+              solution_text = '''This is my code for counting how many times each country appears in the `countries` list.
+
+              ```python
+              for country in countries:
+                  if country in country_counts:
+                      country_counts[country] += 1
+                  else:
+                      country_counts[country] = 1
+              ```
+              We can use this dictionary to answer questions like "which country is home to the largest group of our users?".
+
+              '''
+
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str)
+                  
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              #feedback.append("Click *NEXT* to see our solution.")
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 249243
+        key: de457f97-71a1-4863-afc2-0ef35975d2fe
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 00:58:29 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Iterating over Dicts and Sets
+          ============
+
+          We can use for loops to iterate over sets and dicts, much in the same way we iterate over lists. We iterate over sets like this:
+
+
+          ```Python
+          >>> colors = set(['Pthalo Blue', 'Indian Yellow', 'Sap Green'])
+          >>> for color in colors:
+          ...    print(color)
+          ...
+          Indian Yellow
+          Sap Green
+          Pthalo Blue
+          ```
+
+          Notice that the for loop didn't print the colors in the same order they were inserted into the set. Sets don't track ordering the way lists do, so iterating over them produces values in an arbitrary order.
+
+          The syntax for iterating over dictionaries is very similar. The difference is that dicts store key value pairs, and when we loop over them we iterate through the keys:
+
+          ```python
+          Beatles_Discography = {"Please Please Me": 1963, "With the Beatles": 1963, 
+              "A Hard Day's Night": 1964, "Beatles for Sale": 1964, "Twist and Shout": 1964,
+              "Help": 1965, "Rubber Soul": 1965, "Revolver": 1966,
+              "Sgt. Pepper's Lonely Hearts Club Band": 1967,
+              "Magical Mystery Tour": 1967, "The Beatles": 1968,
+              "Yellow Submarine": 1969 ,'Abbey Road': 1969,
+              "Let It Be": 1970}
+
+          for album_title in Beatles_Discography:
+              print("title: {}, year: {}".format(album_title, Beatles_Discography[album_title]))
+          ```
+
+          We can use the key `album_title` to get to each value in the the dict: `Beatles_Discography[album_title]`.
+        instructor_notes: ''
+        resources: null
+      - id: 249267
+        key: 3bae4920-3481-441f-8e5b-0309fb1395bd
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 01:01:29 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Prolific Year
+          ==========
+
+          Write a function `most_prolific` that takes a dict formatted like `Beatles_Discography` example above and returns the year in which the most albums were released. If you call the function on the `Beatles_Discography` it should return 1964, which saw more releases than any other year in the discography.
+
+          If there are multiple years with the same maximum number of releases, the function should return a list of years.
+        instructor_notes: ''
+        resources: null
+      - id: 249259
+        key: 51ab59e5-60ef-4294-a145-d66a9d4e5d60
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Thu Jul 13 2017 19:53:07 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6576683957223424'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |-
+              try:
+                  from prolificyear import most_prolific
+                  test_case1 =  {"Please Please Me": 1963, "With the Beatles": 1963, 
+                  "A Hard Day's Night": 1964, "Beatles for Sale": 1964, "Twist and Shout": 1964,
+                  "Help": 1965, "Rubber Soul": 1965, "Revolver": 1966,
+                  "Sgt. Pepper's Lonely Hearts Club Band": 1967,
+                  "Magical Mystery Tour": 1967, "The Beatles": 1968,
+                  "Yellow Submarine": 1969 ,'Abbey Road': 1969,
+                  "Let It Be": 1970}
+                  
+
+                      
+                  if most_prolific(test_case1) != 1964:
+                      print('error1-secretstring')
+                  
+                  test_case2 = {"Queen": 1973, "Queen II": 1974, 
+                  "Sheer Heart Attack":1974, "A Night at the Opera": 1975,
+                  "A Day at the Races": 1976, "News of the World": 1977,
+                  "Jazz": 1978, "The Game": 1980} #not the full discography
+                  
+                
+                  
+                  if most_prolific(test_case2) != 1974:
+                      print('error2-secretstring')
+                      
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import prolificyear
+            gae_grading_code: |+
+              def find_errors(s):
+
+                  explanation_str = '''Your function produced the wrong result when called with:\n {}\n
+              expected result is {}.'''
+
+                  test_case1 =  {"Please Please Me": 1963, "With the Beatles": 1963, 
+                  "A Hard Day's Night": 1964, "Beatles for Sale": 1964, "Twist and Shout": 1964,
+                  "Help": 1965, "Rubber Soul": 1965, "Revolver": 1966,
+                  "Sgt. Pepper's Lonely Hearts Club Band": 1967,
+                  "Magical Mystery Tour": 1967, "The Beatles": 1968,
+                  "Yellow Submarine": 1969 ,'Abbey Road': 1969,
+                  "Let It Be": 1970}
+                  
+                  test_case2 = {"Queen": 1973, "Queen II": 1974, 
+                  "Sheer Heart Attack":1974, "A Night at the Opera": 1975,
+                  "A Day at the Races": 1976, "News of the World": 1977,
+                  "Jazz": 1978, "The Game": 1980}
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format(test_case1, "1964"))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format(test_case2, "1974"))
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              solution_text = '''There are many different ways to accomplish this. Here is my solution:
+              ```python
+              def most_prolific(discs): 
+              #We will store a dictionary of years 
+              #and number of albums per year     
+                  years = {} 
+                  maxyears = [] 
+                  maxnumber = 0 
+                  for disc in discs: 
+                      year = discs[disc]
+                      if year in years: 
+                          years[year] += 1 
+                      else: 
+                          years[year] = 1 
+
+              #find the year in which the maximum 
+              #number of albums was published 
+              #there are more elegant ways of accomplishing this, 
+              #but the code below works 
+                  for year in years:
+                      if years[year] > maxnumber: 
+                          maxyears=[] 
+                          maxyears.append(year) 
+                          maxnumber = years[year] 
+                      elif years[year] == maxnumber and not (year in maxyears): 
+                          maxyears.append(year) 
+                  if (len(maxyears) == 1): 
+                      return maxyears[0] 
+                  else: 
+                      return maxyears
+                  ```
+              '''
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+
+              #feedback.append("Click *NEXT* to see our solution.")
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 249233
+    key: 7114184b-9319-4c67-8e8c-59b73bc49101
+    locale: en-us
+    version: 1.0.0
+    title: Compound Data Structures
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:01:47 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 249234
+      - 249235
+      - 249236
+      - 288970
+      - 288971
+      - 288972
+      - 288973
+      - 249240
+      - 249241
+    atoms:
+      - id: 249234
+        key: 2a9fab41-5ccd-4a1c-bd1b-b5ec14721ef7
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 23:24:11 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          A Dictionary of Dictionaries
+          ================
+          Let's revisit the `elements` dictionary,
+
+          ```python
+          elements = {'hydrogen': 1, 'helium': 2, 'carbon': 6}
+          ```
+
+          This dictionary maps element names (strings) to their atomic numbers (ints). But what if we wanted to store more information about each element, like their weight and symbol? We can do that by adjusting the dictionary so that it maps element names (strings) to a dictionary that stores that collection of data:
+
+          ```python
+          elements = {'hydrogen': {'number': 1, 'weight': 1.00794, 'symbol': 'H'},
+                      'helium': {'number': 2, 'weight': 4.002602, 'symbol': 'He'}}
+
+          ```
+
+          We can look the information about an entry in this nested dictionary in the same ways we did before, with square brackets or the `get` method:
+
+          ```python
+          >>> print(elements['helium'])
+          {'number': 2, 'symbol': 'He', 'weight': 4.002602}
+          >>> print(elements.get('unobtainium', 'There\'s no such element!'))
+          There's no such element!
+          ```
+
+          We can look up specific information from the helium dictionary like this:
+
+          ```python
+          >>> print(elements['helium']['weight'])
+          4.002602
+          ```
+          This code is first looking up the key "helium" in the elements dictionary, producing the helium dictionary. The second lookup, `['weight']` then looks up the "weight" key in that helium dictionary to find helium's atomic weight.
+        instructor_notes: ''
+        resources: null
+      - id: 249235
+        key: 75523930-a81b-4505-b62c-1ba90f8c635b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 30 2017 14:42:09 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Adding Values to Nested Dictionaries
+          ==============
+
+          Try your hand at working with nested dictionaries. Add another entry, 'is_noble_gas' to each dictionary in the `elements` dictionary. After inserting the new entries you should be able to perform these lookups:
+
+          ```python
+          >>> print(elements['hydrogen']['is_noble_gas'])
+          False
+          >>> print(elements['helium']['is_noble_gas'])
+          True
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 249236
+        key: ef3364c2-6e2a-4b42-864b-37609377d7ce
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Thu Mar 30 2017 15:14:27 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6557026428780544'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              try:
+                  from elements import elements
+                  
+                  if not('is_noble_gas' in elements['hydrogen'].keys()):
+                      print('error3-secretstring')
+                  elif elements['hydrogen']['is_noble_gas'] != False:
+                      print('error1-secretstring')
+                  
+                  if not('is_noble_gas' in elements['helium'].keys()):
+                      print('error4-secretstring')
+                  elif elements['helium']['is_noble_gas'] != True:
+                      print('error2-secretstring')
+                      
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import elements
+            gae_grading_code: |-
+              solution_text = """This is how I added values to the `elements` dict. The syntax for adding elements to nested data structures is about the same as it is for reading from them.
+
+              ```python
+              elements['hydrogen']['is_noble_gas'] = False
+              elements['helium']['is_noble_gas'] = True
+              ```
+              """
+
+              def find_errors(s):
+                  explanation_str = '''Your code produced the wrong result. Looks like you did not add the 'is_noble_gas' property properly for {}.'''
+
+                  errors = []
+
+                  if ('error1-secretstring' in s) or ('error3-secretstring' in s):
+                      errors.append(explanation_str.format("'hydrogen'"))
+                  if ('error2-secretstring' in s) or ('error4-secretstring' in s):
+                      errors.append(explanation_str.format("'helium'"))
+                
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              # feedback.append("Click *NEXT* to see our solution.") #uncomment if the feedback really is on the next concept
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 288970
+        key: 393afb0c-44a2-496e-8784-6e20dd2840f4
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 30 2017 15:39:55 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Collections
+          =========
+          When we have a group of data we can think about it as a collection (of data elements). In this lesson we have seen many different data structures that Python provides for storing, accessing and manipulating collections of data. In particular we have seen lists, sets and dictionaries.
+
+          In the next few quizzes you will have a chance to practice and review the properties of lists, sets and dictionaries.
+        instructor_notes: ''
+        resources: null
+      - id: 288971
+        key: 89182409-7b47-4156-9b60-ab6684f9931c
+        locale: en-us
+        version: 1.0.0
+        title: 'Comparing Collections, Lists'
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Thu Mar 30 2017 15:40:29 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'Check the attributes of a collection for which using a Python list would be appropriate. '
+          correct_feedback: 'Great work! List are sortable, you can add an item to a list with `.append` and list items are always indexed with numbers starting at 0.'
+          video_feedback: null
+          default_feedback: Think about the lists examples we have seen in this lesson. How do we add items to lists? Are lists indexed? Does the order in which you add items to a list matter? Can you sort lists?
+          answers:
+            - id: a1490887847415
+              text: The order in which you add items doesn't matter
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1490887946481
+              text: Items are always indexed with numbers starting at 0
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1490888012154
+              text: Sortable
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1490888039627
+              text: Add items with `.append`
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1490888281097
+              text: Add items with `.add`
+              is_correct: false
+              incorrect_feedback: null
+      - id: 288972
+        key: a711729c-4292-4632-a753-4ea47ed34c63
+        locale: en-us
+        version: 1.0.0
+        title: 'Comparing Collections, Sets'
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Thu Mar 30 2017 16:15:35 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'Check the attributes of a collection for which using a Python set would be appropriate. '
+          correct_feedback: |-
+            Great job! Sets are not ordered, so the order in which items appear can be inconsistent and you add items to sets with `.add`.  Like dictionaries and lists, sets are mutable.
+
+            You cannot have the same item twice and you cannot sort sets. For these two properties a list would be more appropriate.
+          video_feedback: null
+          default_feedback: Think about how we used sets in this lesson. In particular think about how they differ from lists.
+          answers:
+            - id: a1490888437123
+              text: Order in which items appear can be inconsistent
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1490888499626
+              text: You can have the same entry multiple times
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1490888525322
+              text: Mutable (you can change it)
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1490888541874
+              text: Add items with `.add`
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1490888560568
+              text: Sortable
+              is_correct: false
+              incorrect_feedback: null
+      - id: 288973
+        key: bae464fa-1675-415c-b796-fc97436481b8
+        locale: en-us
+        version: 1.0.0
+        title: 'Comparing Collections, Dictionaries'
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Thu Mar 30 2017 15:51:12 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'Check the attributes of a collection for which using a Python dictionary would be appropriate. '
+          correct_feedback: |-
+            Great job! Each item in a dictionary contains two parts: a key and a value, the items in dictionary are not ordered, and we have seen in this lesson examples of nested dictionaries.
+            Because dictionaries are not ordered they are not sortable, and you do not add items to a dictionary with `.append`
+          video_feedback: null
+          default_feedback: Think about the examples of dictionaries that we have seen in this lesson. How do dictionaries differ from lists and sets?
+          answers:
+            - id: a1490888820737
+              text: Each item contains two parts
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1490888872556
+              text: Add items with `.append`
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1490888886697
+              text: Order in which items appear can be inconsistent
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1490888904118
+              text: Sortable
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1490888934204
+              text: Can be nested
+              is_correct: true
+              incorrect_feedback: null
+      - id: 249240
+        key: 97c1d12c-a184-4849-a798-4536309c6825
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 00:23:26 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Flying Circus Records
+          ==================
+
+          A regular flying circus happens twice or three times a month. For each month, information about the amount of money taken at each event is saved in a list, so that the amounts appear in the order in which they happened. The months' data is all collected in a dictionary called `monthly_takings`.
+
+          For this quiz, write a function `total_takings`that calculates the sum of takings from every circus in the year.
+        instructor_notes: ''
+        resources: null
+      - id: 249241
+        key: 2f875a59-e351-4b3d-8455-0678f910df0b
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Thu Mar 30 2017 16:34:07 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6318961894490112'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              try:
+                  from circus import total_takings
+                  monthly_takings = {'January': [54, 63], 'February': [64, 60], 'March': [63, 49],
+                                 'April': [57, 42], 'May': [55, 37], 'June': [34, 32],
+                                 'July': [69, 41, 32], 'August': [40, 61, 40], 'September': [51, 62],
+                                 'October': [34, 58, 45], 'November': [67, 44], 'December': [41, 58]}
+
+                  if total_takings(monthly_takings)!= 1353:
+                      print('error1-secretstring')
+                      
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import circus
+            gae_grading_code: |-
+              solution_text = """This is my solution:
+
+              ```python
+              def total_takings(yearly_record):
+                  #total is used to sum up the monthly takings
+                  total = 0
+                  for month in monthly_takings.keys():
+                      #I use the Python function sum to sum up over 
+                      #all the elements in a list
+                      total = total + sum(monthly_takings[month])
+                  return total
+              ```
+              """
+
+              def find_errors(s):
+                  explanation_str = '''Your code produced the wrong result. Expected result is 1353.'''
+
+                  errors = []
+
+                  if ('error1-secretstring' in s):
+                      errors.append(explanation_str)
+                  
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+                  feedback.append(solution_text)
+              # feedback.append("Click *NEXT* to see our solution.") #uncomment if the feedback really is on the next concept
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+              #grade_result['comment'] += executor_result['stderr']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 255726
+    key: 998cc146-378a-4545-8912-d0a94fe4a164
+    locale: en-us
+    version: 1.0.0
+    title: Problem Solving Skills
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:01:50 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 287624
+    atoms:
+      - id: 287624
+        key: f9f8351d-12d2-4758-a8af-bd5c14f11225
+        locale: en-us
+        version: 1.0.0
+        title: Problem Solving Skills
+        semantic_type: VideoAtom
+        updated_at: 'Mon Jul 17 2017 17:56:41 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: '**Note**: The Lab assignment mentioned towards the end of the video is currently unavailable (as of 2017 July). Sorry for the inconvenience!'
+        resources: null
+        video:
+          id: '52077'
+          youtube_id: el9knzvU4TM
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d40d02_ud1110-intropy-l359-how-to-solve-problems-headshot/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40d02_ud1110-intropy-l359-how-to-solve-problems-headshot/ud1110-intropy-l359-how-to-solve-problems-headshot_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40d02_ud1110-intropy-l359-how-to-solve-problems-headshot/ud1110-intropy-l359-how-to-solve-problems-headshot_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40d02_ud1110-intropy-l359-how-to-solve-problems-headshot/ud1110-intropy-l359-how-to-solve-problems-headshot_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40d02_ud1110-intropy-l359-how-to-solve-problems-headshot/ud1110-intropy-l359-how-to-solve-problems-headshot_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40d02_ud1110-intropy-l359-how-to-solve-problems-headshot/hls/playlist.m3u8'

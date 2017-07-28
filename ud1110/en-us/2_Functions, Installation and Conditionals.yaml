@@ -1,0 +1,3016 @@
+id: 231938
+key: ee5eb8d0-dc89-4b42-8feb-9fbe35a5fecd
+locale: en-us
+version: 1.0.0
+title: 'Functions, Installation and Conditionals'
+semantic_type: Lesson
+updated_at: 'Wed Jul 05 2017 19:42:53 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: 'In this lesson you will install Python on your own computer. You will learn how to define functions, and how to use conditional statements to write more elaborate programs. We will also practice  our software engineering skills by learning how to break programs down into manageable pieces.'
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+_concepts_ids:
+  - 231960
+  - 246551
+  - 246576
+  - 246611
+  - 246613
+  - 247637
+  - 247713
+  - 248034
+  - 248097
+  - 248134
+  - 248155
+  - 249182
+  - 249224
+  - 249245
+  - 249255
+  - 249271
+  - 249275
+  - 249282
+_project_id: null
+concepts:
+  - id: 231960
+    key: 2c21dcba-f074-4139-aec1-b8718aab312f
+    locale: en-us
+    version: 1.0.0
+    title: Welcome Back!
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:15:38 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 287756
+    atoms:
+      - id: 287756
+        key: 283bb325-f3de-4fdb-810e-bfe6dae1039f
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L201 Welcome Back!
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 03:43:31 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52069'
+          youtube_id: oCCMSsCc4Iw
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d40caf_ud1110-intropy-l201-welcome-back/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40caf_ud1110-intropy-l201-welcome-back/ud1110-intropy-l201-welcome-back_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40caf_ud1110-intropy-l201-welcome-back/ud1110-intropy-l201-welcome-back_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40caf_ud1110-intropy-l201-welcome-back/ud1110-intropy-l201-welcome-back_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40caf_ud1110-intropy-l201-welcome-back/ud1110-intropy-l201-welcome-back_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40caf_ud1110-intropy-l201-welcome-back/hls/playlist.m3u8'
+  - id: 246551
+    key: bcd75648-55c5-4634-873a-acdb308cb9c1
+    locale: en-us
+    version: 1.0.0
+    title: Defining Functions I
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:15:41 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 287940
+      - 287936
+      - 246554
+      - 246581
+      - 292324
+      - 246556
+      - 246569
+      - 246570
+    atoms:
+      - id: 287940
+        key: 8ce4f6e5-8f39-4066-a8b7-b1fa3ccb0674
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Mar 27 2017 18:39:33 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Volume of a Cylinder function
+          =================
+          Previously, we used several of Python's built-in functions. Now let's write functions of our own.
+
+          We'll write a function that calculates the volume of a cylinder: the cylinder's height, multiplied by the square of its radius and multiplied by pi.
+        instructor_notes: ''
+        resources: null
+      - id: 287936
+        key: 735575fb-40a1-483c-8081-cdf0b7296a24
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon Mar 27 2017 18:37:17 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58d95b7b_intropy-l2-circular-cylinder-rh/intropy-l2-circular-cylinder-rh.svg'
+        width: 425
+        height: 480
+        caption: |-
+          A cylinder with its radius (r) and height (h) indicated.
+          Image adapted from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Circular_cylinder_rh.svg)
+        resources: null
+        instructor_notes: null
+      - id: 246554
+        key: c1b0f33d-d78d-4301-989a-c532d9ea37b7
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jan 05 2017 18:49:57 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          This is the definition of a function that calculates the volume of a cylinder:
+
+          ```python
+          def cylinder_volume(height, radius):
+              pi = 3.14159
+              return height * pi * radius ** 2 
+          ```
+
+          After defining the `cylinder_volume` function, we can use it like this:
+          ```python
+          >>> cylinder_volume(10, 3)
+          282.7431
+          ```
+
+          Let's take a closer look at this function's definition:
+        instructor_notes: ''
+        resources: null
+      - id: 246581
+        key: b82f6c96-d39b-4564-8114-2cc75e604e29
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jan 05 2017 23:06:33 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          The Anatomy of a Function definition
+          ====================
+        instructor_notes: ''
+        resources: null
+      - id: 292324
+        key: 519a242c-53d3-4646-a5ae-901107d58f9c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon Apr 10 2017 16:00:40 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ebabc1_intropy-l1-elements-of-function-definition2/intropy-l1-elements-of-function-definition2.png'
+        width: 964
+        height: 522
+        caption: The elements of a function definition
+        resources: null
+        instructor_notes: null
+      - id: 246556
+        key: 26c6a84c-1043-4d24-8e02-08cc9f683c5f
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 30 2017 23:29:10 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Function Header
+          ------------------------
+          1. The `def` keyword indicates that the code that follows is a function definition.
+          2. Following `def` is the name of the function, in this case `cylinder_volume`. This needs to be one word, with no gaps - that's why this one has an underscore.
+          3. The first line of a function definition has one final element, the arguments the function expects (the rules for function names are the same as the rules for variable names). The arguments of a function are values passed in when the function is called; they are used in the body of the function. The arguments are separated by commas and placed in a pair of parentheses. If you write a function that doesn't take arguments, then use an empty pair of parentheses, `()`. The first line of the function definition ends with a colon, `:`.
+
+          Here is an example of a function that takes no arguments:
+          ```python
+          def print_greeting():
+              print('Hello World!')
+          ```
+          The function prints "Hello World". Since it takes no arguments we used an empty pair of parentheses.
+
+          Function Body
+          ---------------------
+          4. The body of the function is indented by four spaces. The function body is where the function does its work. In the body we can refer to the argument variables and define new variables. The `pi` variable that we define here is a local variable, meaning that it can only be used within the body of the `cylinder_volume` function. Attempting to access the variable anywhere else would cause an error.
+          5. The `return` keyword is used to get results out of the function. The value of the expression that follows `return` is the output of the function.
+          6. In this example we return the value of an expression, the formula for the volume of a cylinder. Note that `radius ** 2` is calculated before the rest of the expression because exponentiation comes before multiplication in the mathematical order of operations. (That said, it never hurts to add a pair of extra brackets- especially in expressions involving a lot of mathematical operations, where it can become confusing which operation is performed first. Returning `height * pi * (radius ** 2)` would have been just fine.)
+          Rather than returning the value as it is calculated, an alternative technique would be to calculate the volume earlier in the function body, and then store it in a variable named `volume`. That would allow us to `return volume`. 
+        instructor_notes: ''
+        resources: null
+      - id: 246569
+        key: 3886b3ec-9f15-4577-993c-c0e3d1a6f25e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jan 05 2017 22:01:46 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Population density function
+          =============
+          Write a function named `population_density` that takes two arguments, `population` and `land_area` (in square kilometres), and returns a population density calculated from those values. I've included two test cases that you can use to verify that your function works correctly. Once you've written your function, use the Test Run button to test your code.
+        instructor_notes: ''
+        resources: null
+      - id: 246570
+        key: 11203165-e55a-47d3-9cd6-567c319ea059
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Fri Mar 24 2017 19:57:44 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6308877915258880'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              import random
+
+              try:
+                  from pop_density import population_density
+                  
+                  if population_density(10, 1) != 10/1:
+                      print('error1-secretstring')
+                      
+                  if population_density(864816, 121.4) != 864816 / 121.4:
+                      print('error2-secretstring')
+                      
+                  if population_density(1234321, 42) != 1234321 / 42:
+                      print('error3-secretstring')
+                      
+                  pop = random.randint(100000, 1000000)
+                  area = random.randint(100, 10000)
+                  
+                  if population_density(pop, area) != pop / area:
+                      print('error4-secretstring-{}-{}'.format(pop, area))
+              except NameError:
+                  print('error5-secretstring')
+            executor_test_code: import pop_density
+            gae_grading_code: |+
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format('population_density(10, 1)', 10./1))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('population_density(864816, 121.4)', 864816./121.4))
+                  if 'error3-secretstring' in s:
+                      errors.append(explanation_str.format('population_density(1234321, 42)', 1234321./ 42))
+                  if 'error4-secretstring' in s:
+                      tokens = s.split('-')
+                      pop, area = float(tokens[-2]), float(tokens[-1])
+                      errors.append(explanation_str.format('population_density({}, {})'.format(pop, area), pop/area))
+                  if 'error5-secretstring' in s:
+                      errors.append("Your code doesn't define the `population_density` funciton.")
+                  
+                  return errors
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occured while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an error. Test Run your code to verify that it prints the right things!"
+              else:
+                  feedback = find_errors(executor_result['stdout'])
+
+                  grade_result['correct'] = not bool(feedback)
+                  feedback.append("Click *NEXT* to see our solution.")
+                  grade_result['comment'] = '\n\n'.join(feedback)
+
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 246576
+    key: 6f282eeb-c6fe-4ef3-a80b-c1fde200daeb
+    locale: en-us
+    version: 1.0.0
+    title: Defining Functions II
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:15:45 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 246577
+      - 246578
+      - 246579
+      - 246583
+      - 246609
+      - 246610
+    atoms:
+      - id: 246577
+        key: 36d0763c-8de7-4c75-804f-4d77e7a54099
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jan 05 2017 23:07:45 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz Solution: Population density function
+          =============
+          My solution looks like this,
+          ```python
+          def population_density(population, land_area):
+              return population/land_area
+          ```
+
+          I used a one line function body because my personal preference is to keep my functions brief, if it doesn't make the code confusing. You could also perform the calculation on its own line separate from the return statement.
+        instructor_notes: ''
+        resources: null
+      - id: 246578
+        key: bd7e8987-23b6-4d6f-9bfe-984bcd33405b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jan 05 2017 23:08:16 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Indentation
+          ==========
+
+          As you have just seen, indentation is important. It's how we tell Python what code is in the body of a function, and which code is outside of the function. Indentation doesn't just matter in function definitions. Soon, you will use indentation in other contexts. Some other languages use braces like `{` and `}` to show where blocks of code begin and end. In Python we use indentation to enclose blocks of code.
+
+          In Python, indentation conventionally comes in multiples of four spaces. It's important to be strict about following this convention, because changing the indentation can completely change the meaning of the code. If you are working on a team of Python programmers it's important that everyone follows the same indentation convention!
+        instructor_notes: ''
+        resources: null
+      - id: 246579
+        key: 57bfbc6e-4435-4be4-8f2f-aa4efcc6bbaf
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jan 05 2017 23:20:17 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Documenting functions
+          =============
+          One of the key advantages of functions is that they can help to break a program down into smaller chunks. This makes code easier to write, and also easier to read because they're reusable. If a program needs to calculate multiple population densities, it can call `population_density` multiple times which is tidier than writing out the formula over and over again.
+
+          Functions make code easier to read because they give human-readable names to processes. While the population density formula isn't that complicated, it is still harder to recognize than a precisely named function.
+
+          There is one further technique for making functions more readable, documentation strings (also called "docstrings"). Docstrings are a type of comment used to explain the purpose of a function, and how it should be used. Here's the population_density function, with a docstring.
+
+
+          ```python
+          def population_density(population, land_area):
+              """Calculate the population density of an area.
+
+              population: int. The population of the area
+              land_area: int or float. This function is unit-agnostic, if you pass
+                         in values in terms of square km or square miles the
+                         function will return a density in those units.
+              """
+              return population / land_area
+          ```
+
+          Docstrings are surrounded by triple quotes, `"""`. The first line of the docstring is a brief explanation of the function's purpose. If you feel that this is sufficient documentation you can end the docstring at this point, single line docstrings are perfectly acceptable. If you think that the function is complicated enough to warrant a longer description, you can add a more thorough paragraph after the one line summary.
+
+          The next element of a docstring is an explanation of the function's arguments. Here you list the arguments, state their purpose, and what types the arguments should be.
+
+          Each of these pieces of the docstring is optional, as is the docstring itself. Remember though, it's always easier to write code than to read it! If you can make things easier for your collaborators (which includes future you!) to read your code, then you should.
+
+          You can read a more thorough explanation of docstring conventions at https://www.python.org/dev/peps/pep-0257/.
+        instructor_notes: ''
+        resources: null
+      - id: 246583
+        key: 33aa154a-dba7-45b1-be19-888ea9da4b55
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Mar 28 2017 19:49:20 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          A Function That Doesn't Return Anything
+          ==================
+
+          Functions can be imagined as little machines that take inputs (arguments) and process them into results (return values). This is a good image, but it's incomplete. Some functions, like `print`, don't return anything at all:
+
+          ```python
+          >>> return_value = print("I wish to register a complaint.")
+          I wish to register a complaint.
+          >>> print(return_value)
+          None 
+          ```
+          `print` **displays** text on the console, but as we see here it **returns** `None`. `None` is a special value in Python. It represents the absence of value. `None` is what a function will return by default if it doesn't explicitly return anything else.
+
+          Let's see an example of that. This is the test code from the previous quiz wrapped into a reusable function:
+
+          ```python
+          def print_testcase(expected_value, actual_value):
+              print("expected value: {}, actual value: {}".format(expected_value, actual_value))
+          ```
+
+          This function doesn't have a return statement like the earlier examples did, but it's still a valid function. Let's try it out:
+
+          ```python
+          >>> return_value = print_testcase(42, 42)
+          expected value: 42, actual value: 42
+          ```
+          The output was `print`ed when the function was called. But what was assigned to `return_value`? We can use `print` on `return_value` to check!
+
+          ```python
+          >>> print(return_value)
+          None
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 246609
+        key: f66f9f37-c14e-46d5-9be4-8272fe18cde9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Mar 28 2017 19:49:40 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: `readable_timedelta`
+          ================
+
+          Write a function named `readable_timedelta`. The function should take one argument, an integer `days`, and return a string that says how many weeks and days that is. For example, `readable_timedelta(10)` should return, `1 week(s) and 3 day(s)`.
+
+          Include a docstring that explains what the function does.
+        instructor_notes: ''
+        resources: null
+      - id: 246610
+        key: 31d1c9c7-adbb-424f-b824-996e05842b5d
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Tue Mar 28 2017 19:49:57 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6468074837508096'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |-
+              import random
+
+              def readable_timedelta_soltn(days):
+                  """Print the number of weeks and days in a number of days."""
+                  weeks = days // 7
+                  remainder = days % 7
+                  return "{} week(s) and {} day(s)".format(weeks,remainder)
+
+              try:
+                  from student import readable_timedelta
+                  
+                  if readable_timedelta(1) != readable_timedelta_soltn(1):
+                      print('error1-secretstring')
+                  if readable_timedelta(6) != readable_timedelta_soltn(6):
+                      print('error2-secretstring')
+                  if readable_timedelta(7) != readable_timedelta_soltn(7):
+                      print('error3-secretstring')
+                  if readable_timedelta(9) != readable_timedelta_soltn(9):
+                      print('error4-secretstring')
+                  
+                  if not readable_timedelta.__doc__:
+                      print('error4.5-secretstring')
+                  
+                  rand_days = random.randint(100, 10000)
+                  if readable_timedelta(rand_days) != readable_timedelta_soltn(rand_days):
+                      print('error5-secretstring-{}'.format(rand_days))
+              except NameError:
+                  print('error6-secretstring')
+            executor_test_code: import student
+            gae_grading_code: |-
+              def readable_timedelta_soltn(days):
+                  """Print the number of weeks and days in a number of days."""
+                  weeks = days // 7
+                  remainder = days % 7
+                  return "{} week(s) and {} day(s)".format(weeks,remainder)
+
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\t
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format('readable_timedelta(1)',
+                                                              readable_timedelta_soltn(1)))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('readable_timedelta(6)',
+                                                              readable_timedelta_soltn(6)))
+                  if 'error3-secretstring' in s:
+                      errors.append(explanation_str.format('readable_timedelta(7)',
+                                                              readable_timedelta_soltn(7)))
+                  if 'error4-secretstring' in s:
+                      errors.append(explanation_str.format('readable_timedelta(9)',
+                                                              readable_timedelta_soltn(9)))   
+                  if 'error5-secretstring' in s:
+                      tokens = s.split('-')
+                      rand_days = int(tokens[-1])
+                      errors.append(explanation_str.format('readable_timedelta({})'.format(rand_days),
+                                                                  readable_timedelta_soltn(rand_days)))
+                  if 'error4.5-secretstring' in s:
+                      errors.append("Your function doesn't have a docstring! Add one that explains the function's purpose.")
+                  
+                  if 'error6-secretstring' in s:
+                      errors.append("Your code doesn't define the `readable_timedelta` funciton.")
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              grade_result['correct'] = not bool(feedback)
+              feedback.append("Click *NEXT* to see our solution.")
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occured while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an error. Test Run your code to verify that it prints the right things!"
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 246611
+    key: a46a918c-cee7-4f8d-8831-766171b6efec
+    locale: en-us
+    version: 1.0.0
+    title: Defining Functions III
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:15:47 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 246612
+    atoms:
+      - id: 246612
+        key: ed47f225-e73b-49e0-95d1-7f7df343dd71
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 30 2017 23:38:38 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz Solution: readable_timedelta
+          ==============
+
+          ```python
+          def readable_timedelta(days):
+              """Print the number of weeks and days in a number of days."""
+              #to get the number of weeks we use integer division
+              weeks = days // 7
+              #to get the number of days that remain we use %, the modulus operator
+              remainder = days % 7
+              return "{} week(s) and {} day(s)".format(weeks, remainder)
+          ```
+
+          Nice work on writing your first functions! You'll see and write more functions soon!
+        instructor_notes: ''
+        resources: null
+  - id: 246613
+    key: 8c26d7e4-8178-40e6-b9e4-23a1b8d45868
+    locale: en-us
+    version: 1.0.0
+    title: Put a Python In Your Computer
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:15:50 GMT+0000 (UTC)'
+    is_public: true
+    resources:
+      files:
+        - name: my_first_script.py
+          uri: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/586ff235_my-first-script/my-first-script.py'
+      google_plus_link: null
+      career_resource_center_link: null
+      coaching_appointments_link: null
+      office_hours_link: null
+    _atoms_ids:
+      - 287792
+      - 246615
+      - 289067
+      - 289065
+      - 289069
+      - 289068
+      - 246635
+      - 247614
+      - 247616
+      - 247626
+    atoms:
+      - id: 287792
+        key: 17dcbcc4-66bc-481a-afd2-67ded8c2af0b
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L212 Put A Python In Your Computer
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 03:23:46 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52070'
+          youtube_id: P-Lr3WED7pg
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d40cb5_ud1110-intropy-l212-put-a-python-in-your-computer/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cb5_ud1110-intropy-l212-put-a-python-in-your-computer/ud1110-intropy-l212-put-a-python-in-your-computer_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cb5_ud1110-intropy-l212-put-a-python-in-your-computer/ud1110-intropy-l212-put-a-python-in-your-computer_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cb5_ud1110-intropy-l212-put-a-python-in-your-computer/ud1110-intropy-l212-put-a-python-in-your-computer_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cb5_ud1110-intropy-l212-put-a-python-in-your-computer/ud1110-intropy-l212-put-a-python-in-your-computer_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cb5_ud1110-intropy-l212-put-a-python-in-your-computer/hls/playlist.m3u8'
+      - id: 246615
+        key: c5961f2f-5950-427f-8b2f-a43546229ca0
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Mar 31 2017 14:33:27 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Installing Python 3
+
+          We’re using the most recent major version of Python, Python 3. Although Python 2 is still being used in many places, it is no longer being updated. In order to keep up compatibility with future improvements to Python, we recommend using Python 3.
+
+          In order to complete this step you will need to use the command line. We will walk you through all the details, so don't worry if you have never used a command line before!  If you feel that you would like to learn a little more about command lines, we have a [Shell Workshop](http://www.udacity.com/course/shell-workshop--ud206) where you can learn more about the Unix Shell.
+
+          ## Is there already a Python in your computer?
+
+          Mac OS X and Linux usually come with Python 2 already installed. We DO NOT recommend that you make any changes to this Python, since parts of the operating system are using Python. However, it shouldn't do any harm to your system to install Python 3 separately, too.
+
+          Windows doesn't usually come with Python included, but you can still check whether you have it installed before going ahead. So, first, check that you’ve not already got Python 3 installed.
+
+          Open up your Terminal or Command Line. On Windows you can get to the command prompt by going to `run…` and typing in `cmd` then pressing `Enter`.
+
+          In a new terminal or command prompt, type
+          ```bash
+          $ python --version
+          ```
+          and press `Enter`.
+
+          You might get a response that says something like `Python 2.7.9`. If the version number starts with a 3, then you already have Python 3 installed! Don't install Python again! Alternatively, you might see an error message - don't worry about that for now, just try the next steps.
+        instructor_notes: ''
+        resources: null
+      - id: 289067
+        key: e41a646d-bbc9-4078-9319-eafe19799aaf
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Mar 31 2017 14:45:04 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58de6aa0_intropt-l2-looking-for-python-big/intropt-l2-looking-for-python-big.png'
+        width: 1000
+        height: 530
+        caption: Looking for Python on a Mac machine
+        resources: null
+        instructor_notes: null
+      - id: 289065
+        key: 59744ec7-0f48-435f-9857-7136435f68c0
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Mar 31 2017 14:43:10 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          If the previous response started with a 2 or if there is some kind of error message, you haven't found Python 3, so try another command:
+          ```bash
+          $ python3 --version
+          ```
+          and press enter. 
+          If you get a response with a Python version number starting with 3, there’s your Python 3! 
+          **You do not need to install Python again.** 
+        instructor_notes: ''
+        resources: null
+      - id: 289069
+        key: f1d1d662-47d2-4330-8cc9-ce5fd65367b5
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Mar 31 2017 14:44:55 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58de6b21_intropy-looking-for-python3-big/intropy-looking-for-python3-big.png'
+        width: 1000
+        height: 530
+        caption: Looking for Python 3 on a Mac machine
+        resources: null
+        instructor_notes: null
+      - id: 289068
+        key: 56ff2ef1-07d1-403d-a30d-553bb23aa229
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Mar 31 2017 14:43:23 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          If you don’t have Python 3, you’ll get an error message. On Mac this will be something like: `-bash: python3: command not found` and on Linux it will be `The program 'python3' is not currently installed.`
+
+          On Windows the error message might be `'python3' is not recognized as an internal or external command, operable program or batch file.`. On Windows, if you get this response, you should check whether you can find Python installed by another method. In your command line type:
+          ```bash
+          > dir C:\py*
+          ```
+          and press enter. If necessary, replace `C` with the drive upon which you think your existing Python installation might be. If Python is installed, this may help you to find where it is. If you find a directory name like `Python3`, you already have Python 3 installed! Skip the installation step, but make sure that Python 3 is added to your path using [these instructions from the Python documentation](https://docs.python.org/3/using/windows.html#excursus-setting-environment-variables). If the directory name is Python27 or similar, you have found Python 2 and you will still need to install Python 3. If it says `File Not Found`, you might not have any Python installed yet.
+
+          If you haven’t found an existing Python 3 on your machine, it’s time to install one!
+
+          ## Installing a new Python
+          Go to the [Python download page](https://www.python.org/downloads/) and find the latest release with a 3 at the front (for example Python 3.5.2) for your operating system. 
+
+
+          For Windows and Mac we find it simplest to download installers directly from the Python download site and run them. If you are using Linux, the Python download page provides source code to download and build. Alternatively, you can use an installation tool such as APT to install Python 3.
+
+          If you're using Windows, make sure that you select options to `Add Python 3.5 to PATH` or `Add Python to environment variables` when you get the chance during installation - this will ensure that you can access Python from your command line prompt. 
+          If you're on Windows and already have Python installed without this, you'll need to add Python to your PATH. This will tell the command line to run Python 3 if you type `python`. If you missed this option, or it doesn't seem to be working when you move to the next stage, use [these instructions from the Python documentation](https://docs.python.org/3/using/windows.html#excursus-setting-environment-variables) to get Python added to your PATH.
+
+          Once you've followed all the steps from the installer or built the source, the installation is done - you're ready to use Python 3 on your own machine!
+
+          If you run into problems, don't worry. Use the usual channels of support, such as the [Discussion Forum](discussions.udacity.com), to get the help you need. In the meantime, keep working - even after this installation section you'll still able to do the programming exercises inside the classroom, so carry on learning!
+        instructor_notes: ''
+        resources: null
+      - id: 246635
+        key: f729c8bb-794e-4007-8dd5-0070a7b7fc89
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jan 06 2017 18:29:25 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Take your new Python for a test-drive!
+          ================
+          Now that you’ve got Python 3 installed, let’s make sure it’s working correctly.
+
+          Open up a new terminal or command line (use `run` then `cmd` to get there on Windows) and type `python3` . If everything's OK, you should see something like this:
+        instructor_notes: ''
+        resources: null
+      - id: 247614
+        key: 7c48ce7f-70ce-48b7-9058-f5c229634e14
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Thu Mar 30 2017 23:51:29 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/586fe44b_python-in-terminal/python-in-terminal.png'
+        width: 1126
+        height: 530
+        caption: Screenshot of a terminal window
+        resources: null
+        instructor_notes: null
+      - id: 247616
+        key: 84f5f9f0-bd0d-434e-8b60-0a386e40eaaf
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jan 06 2017 18:52:51 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Interactive Interpreter
+          ===================
+
+          After Python opens, you see a prompt that looks like:
+          ```python
+          >>>
+          ```
+          This is the Python interactive interpreter! You can type your code to interact with it directly, press Enter, and output will appear on the following line. This is a good place to try out some short bits of Python like those you've already seen and written.
+
+          Try something out! Enter these lines one at a time, and press enter after each line to execute it.
+
+          ```python
+          >>> print("I've got my very own Python!")
+          ```
+
+
+          ```python
+          >>> print(type(455.2))
+          ```
+
+          You can write multiple lines of code in the interactive interpreter. For example, if you start to define a function you will see a change in the prompt, to signify that this is a continuation line. You'll have to include your own indentation as you define the function.
+
+          ```python
+          >>> def cylinder_volume(height,radius):
+          ...    pi = 3.14159
+          ...    return height * pi * radius ** 2
+          ```
+
+          If you made a mistake when typing this, or forgot to indent the body of the function, you might spot a drawback of the Python interactive interpreter… it's tricky to edit your code! 
+
+          HINT: Use the up arrow button (and down arrow button) to cycle through your recent commands at the interactive prompt. This can be useful to re-run or adapt code you've already tried.
+
+          However, you can't use the mouse to click your cursor where you want it, you have to navigate with arrow keys to move the cursor forwards and backwards through the line itself for editing. You can copy text into the interpreter, but it's best to copy just one line at a time.
+          Fortunately, the interactive interpreter is not the only way to use Python - next up, we'll discuss Python scripts and how to run them.
+
+          To quit the Python interactive interpreter, use the command `exit()`, or hit `ctrl-D` (on Windows `ctrl-Z` then Enter).
+        instructor_notes: ''
+        resources: null
+      - id: 247626
+        key: fbd216c4-8d0f-480c-b1ea-1de1f6319204
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Mar 31 2017 15:08:54 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Running A Python Script
+          ============
+
+          An alternative to the interactive interpreter is to run a Python script. A Python script is just a text file with a `.py` extension. A Python script needs to contain correct Python code - running a script means executing the code contained within the file.
+
+          Download the file `my_first_script.py` from the supporting materials at the bottom of this page and move it to a suitable directory on your computer. This might be a good time to set up a new directory for your learning, if you don't have one already. Get the file where you want to keep it.
+
+          Make sure that you are not currently in the interactive Python interpreter (use `ctrl-D` (`ctrl-Z` then `Enter` on Windows) or `exit()` to get out if you are) and open up a Terminal/ command prompt. 
+          Use the `cd` command to move to the folder where you've placed the file `my_first_script.py`. If navigation in the Terminal/command line is new for you, find instructions that apply to your operating system - they're all slightly different. Here are hints for some common operating systems: [Windows](http://www.watchingthenet.com/how-to-navigate-through-folders-when-using-windows-command-prompt.html) , [Mac](https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855) and [Linux](http://linuxcommand.org/lc3_lts0020.php). If you're using Mac or Linux then you might like to check out the [Command Line Basics course](https://www.udacity.com/course/linux-command-line-basics--ud595) to learn more command line skills.
+
+          Once you've moved, you can use `ls` (Mac and Linux) or `dir` (Windows) to check that you can see the filename listed as you expect.
+
+          Now it's time for you to run the script `my_first_script.py`. At a Terminal/Command Line prompt, type:
+          ```bash
+          $ python3 my_first_script.py
+          ```
+
+          If everything is working correctly, you should get this output:
+          ```bash
+          Welcome to this Python script, Udacity Student!
+          ```
+          When you type `python3` without a filename afterwards, you get the interactive Python interpreter, you can interact it and end your session with `exit()` or ctrl-D (or ctrl-Z then Enter). When you type `python3` and follow it by a filename for a python script, that script is run and the output is shown immediately afterwards. Once the code's finished running and all output has been shown, your Terminal/Command Line prompt reappears.
+        instructor_notes: ''
+        resources: null
+  - id: 247637
+    key: 9a8a9282-12cb-4889-ab9d-be9d64fb739b
+    locale: en-us
+    version: 1.0.0
+    title: Python Programming Setup
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:15:55 GMT+0000 (UTC)'
+    is_public: true
+    resources:
+      files:
+        - name: my_first_script.py
+          uri: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/586ff235_my-first-script/my-first-script.py'
+      google_plus_link: null
+      career_resource_center_link: null
+      coaching_appointments_link: null
+      office_hours_link: null
+    _atoms_ids:
+      - 287795
+      - 247640
+      - 247643
+      - 247688
+      - 247648
+    atoms:
+      - id: 287795
+        key: 7bd8da93-46cf-498e-ade3-76da0f2b8279
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L218 My Python Programming Setup
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 04:48:58 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52071'
+          youtube_id: wrnov8J5zto
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d40cbb_ud1110-intropy-l218-my-python-programming-setup/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cbb_ud1110-intropy-l218-my-python-programming-setup/ud1110-intropy-l218-my-python-programming-setup_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cbb_ud1110-intropy-l218-my-python-programming-setup/ud1110-intropy-l218-my-python-programming-setup_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cbb_ud1110-intropy-l218-my-python-programming-setup/ud1110-intropy-l218-my-python-programming-setup_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cbb_ud1110-intropy-l218-my-python-programming-setup/ud1110-intropy-l218-my-python-programming-setup_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cbb_ud1110-intropy-l218-my-python-programming-setup/hls/playlist.m3u8'
+      - id: 247640
+        key: dff3df57-c4b5-45a7-90a4-0c77208508a1
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Mar 28 2017 20:13:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Configure Your Own Python Programming Setup
+          =============
+          Now you've seen my setup, take a moment to get yourself comfortable on your own computer.
+          Here are a few of our favourite text editors, if you want to try one.
+
+          ### For Mac:
+          * [Atom](https://atom.io/)  
+          * [Sublime Text](http://www.sublimetext.com/)  
+          * [TextWrangler](http://www.barebones.com/products/textwrangler/)  
+          * [emacs](https://www.gnu.org/software/emacs/)  
+          * [vim](http://www.vim.org/)
+
+          ### For Windows: 
+          * [Atom](https://atom.io/)  
+          * [Sublime Text](http://www.sublimetext.com/)  
+          * [Notepad++](https://notepad-plus-plus.org/)  
+
+          ### For Linux:
+          * [Atom](https://atom.io/)  
+          * [Sublime Text](http://www.sublimetext.com/)  
+          * [emacs](https://www.gnu.org/software/emacs/)  
+          * [vim](http://www.vim.org/)  
+
+          Get your screen set up with a text editor, terminal/command line and the Udacity classroom in a web browser, so you can iterate on your Python script. Play with the display options to see what you find most comfortable to look at, and see if you can find a tab-to-four-spaces option - that'll be very useful for Python indentation.
+        instructor_notes: ''
+        resources: null
+      - id: 247643
+        key: 5c85a5ed-9d64-4ba2-818b-f40d7d6528b4
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jan 06 2017 19:43:18 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Editing A Python Script
+          ==================
+          Open `my_first_script.py` in a text editor and take a look.
+
+          Make an edit to the standard message in the definition of the `welcome_message()` function.
+          Save your work and run
+
+          ```bash
+          $ python3 my_first_script.py
+          ```
+          in the terminal. You should see the change you made.
+
+          Next try making an edit to the argument passed to the `welcome_message()` function when it gets run on line 10. Who do you want to welcome?
+
+          Experiment by adding more print statements and more functions to your script. Try out the things you've already learned in a new environment! Leave comments in the script so that when you come back to it, you know what you were trying to do. 
+
+          From now on, we recommend that you try out all of your code in this way. Put code into a new file in your text editor (don't forget to give it a `.py` extension), make sure you're in the correct directory in your terminal/command line, and then run it! You might like to make a new file for each new quiz or idea.
+        instructor_notes: ''
+        resources: null
+      - id: 247688
+        key: f5ba6efc-5fe5-43f4-9df6-e66df3af707e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jan 06 2017 22:26:24 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Write a script of your own
+          ===================
+          Open up a brand new empty file in your text editor, name it and save it in the place where you're keeping the files for your Python learning. Put the following code into it.
+
+          ```python
+          how_many_snakes = 1
+          snake_string = """
+          Welcome to Python3!
+
+                       ____
+                      / . .\\
+                      \  ---<
+                       \  /
+             __________/ /
+          -=:___________/
+
+          <3, Philip and Charlie
+          """
+
+
+          print(snake_string * how_many_snakes)
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 247648
+        key: 17fcf04f-a6df-4d8e-8a6f-ec507912fe6f
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Fri Jan 06 2017 23:13:29 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'Run the file with Python 3, and put the output in the quiz box.'
+          default_feedback: Your output doesn't match what we expected. Did you make an edit to the script?
+          correct_feedback: 'Nice work, you wrote a Python script and got the expected output!'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: '\n?Welcome to Python3!\n\n             ____\n            \/ \. \.\\\n            \\  ---<\n             \\  \/\n   __________\/ \/\n-=:___________\/\n\n<3, Philip and Charlie\n?'
+              expression_description: correct
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: '\n?Welcome to Python3!\n\n             ____\n            \/ \. \.\\\\\n            \\  ---<\n             \\  \/\n   __________\/ \/\n-=:___________\/\n\n<3, Philip and Charlie\n?'
+              expression_description: copy and pasted
+              flags: ''
+              incorrect_feedback: 'It looks like you copied and pasted the code straight into the box! Try copying and pasting into a Python script, running the script, and copying and pasting the output from that.'
+  - id: 247713
+    key: 58b6ab9c-d283-4c00-bbe5-f8a518787088
+    locale: en-us
+    version: 1.0.0
+    title: Code with Branches I
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:31:06 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 247714
+      - 292327
+      - 247716
+      - 247726
+      - 247727
+      - 247735
+      - 248027
+      - 248031
+    atoms:
+      - id: 247714
+        key: dff8dce7-a8f9-4cf0-97d2-341364a24ba3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jan 06 2017 23:22:21 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          `if` in Python
+          =============
+
+          Code with branches - in which the code that gets executed depends on some condition or conditions - is really useful in many programming situations. We use a **conditional expression** or **`if` statement**, to control whether a block of code will be run. Let's look at an example of a conditional expression in Python. 
+
+          It's part of a billing system for a pay-as-you-go mobile phone. The customer can set up a link to their bank account so that if their phone credit balance goes below a threshold amount, more credit is added and their bank balance is billed.
+
+
+          # The anatomy of a conditional expression
+        instructor_notes: ''
+        resources: null
+      - id: 292327
+        key: 0f06548f-1428-4978-8083-846cee3d3407
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Mon Apr 10 2017 16:20:24 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ebb099_intropy-l2-if-example/intropy-l2-if-example.png'
+        width: 656
+        height: 406
+        caption: |-
+          ```python
+          if phone_balance < 10:
+              phone_balance += 10
+             bank_balance -= 10
+          ```
+        resources: null
+        instructor_notes: null
+      - id: 247716
+        key: 4a795b2c-9e71-4531-9d77-1d7f72e496c5
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Mar 24 2017 23:08:39 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          1. The `if` keyword indicates that this line is a conditional expression.
+          2. Following `if` is `phone_balance < 10`, the condition to be checked. This part is a *boolean expression* - an expression that evaluates to either True or False. 
+          3. The conditional expression (or "`if` statement") ends with a colon.
+          4. This line is followed by an indented block of code, in this case:
+          ```python
+              phone_balance += 10   
+              bank_balance -= 10
+          ```
+          This indented block of code will be executed if the boolean expression evaluates to True. If the boolean expression evaluates to False, the indented block will not be executed.
+
+          The value of the **boolean expression** -- the piece of the conditional expression that evaluates to either `True` or `False` is the part of the code that defines what happens when the code is run. 
+          One common format of a boolean expression is to use a **comparison operator**, such as >, <=, == or !=. In the example, the code in the indented block gets executed if the value of `phone_balance` is less than 10. 
+          More complicated boolean expressions can be useful, too. If the condition is numerical, you might want to check whether a value lies in a certain range, or even do some calculation in order to make a comparison. 
+
+          ```python
+          if 18.5 <= weight_in_kg / (height_in_m)**2 < 25:
+              print("BMI is considered 'normal'.")
+          ```
+
+          However simple or complex, a boolean expression must evaluate to either `True` or `False` and it is this value that decides whether the indented block executes or not.
+        instructor_notes: ''
+        resources: null
+      - id: 247726
+        key: 46b933e6-6929-4dd8-8a07-500ac27d08ba
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Jan 07 2017 00:25:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Code with more branches: `if`, `elif`, and `else`
+          ===========
+
+          Sometimes, we want to do one thing if a condition is true, and a different thing if that condition is false. The code block indented after the `if` statement will be run if the boolean expression evaluates to `True`. We can use the `else` keyword to give the alternative: what to do if the boolean expression is `False`.
+
+          This code prints a message indicating whether an integer (called `number`) is even or odd.
+          ```python
+          if number % 2 == 0:
+              print("The number " + str(number) + " is even.")
+          else:
+              print("The number " + str(number) + " is odd.")
+          ```
+          The `else` keyword is always followed by a colon and doesn't need a boolean expression - it is simply what happens when the boolean expression from the `if` statement is `False`.
+
+          If there were more possible cases than two, it would be useful to have another conditional expression along with the `else` case. Python has a special keyword, `elif` (short for `else - if`) to deal with this situation. This saves the multiple indentation that would be needed if we used `else` and then another `if` statement inside the `else` block.
+
+          In this example, the conditional statements are inside a function called `garden_calendar`.
+          ```python
+          def garden_calendar(season):
+              if season == "spring":
+                  print("time to plant the garden!")
+              elif season == "summer":
+                  print("time to water the garden!")
+              elif season == "autumn" or season == "fall":
+                  print("time to harvest the garden!")
+              elif season == "winter":
+                  print("time to stay indoors and drink tea!")
+              else:
+                  print("I don't recognize that season")
+          ```
+
+          Like `if`, an `elif` statement always requires a conditional expression. 
+        instructor_notes: ''
+        resources: null
+      - id: 247727
+        key: dd8a1f9b-29f0-4230-8589-b7018c64d0f3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 17:43:45 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Go with the flow!
+          ============
+
+          Try running the following code which uses `if` and `else`. Experiment with different inputs and use `print` to look at the outputs. Can you follow the flow of logic to figure out which code will get run? If you're not sure, add additional `print` statements to help you spot how it works. This is a useful technique whenever you're developing new code or understanding something that's already been written.
+        instructor_notes: ''
+        resources: null
+      - id: 247735
+        key: 441c5170-44ae-4f8d-bd41-2d0c9ef009dd
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Thu Jan 19 2017 00:42:19 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6379351550590976'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: ''
+            executor_test_code: import control_flow_playground
+            gae_grading_code: |-
+              grade_result['correct'] = None
+              grade_result['comment'] = "This quiz has no right or wrong answers. Feel free to experiment!"
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 248027
+        key: e0dfed42-dc06-46f1-a5e0-8185e39077ef
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jun 08 2017 17:27:46 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Which prize?
+          =============
+          In this quiz, implement a function called `which_prize()` that notifies a competitor of the prize they have won in a game, depending on the number of points they've scored.
+
+          | Points | Prize |
+          | --- | --- |
+          | 0 - 50 | wooden rabbit|
+          | 51 - 150 | No prize |
+          | 151 - 180 | wafer-thin mint |
+          | 181 - 200| penguin |
+
+          The input to `which_prize()` will be the number of points (an integer). The function `which_prize()` should return the text `"Congratulations! You have won a [prize name]!"` with the prize name included if they have won a prize and the text `"Oh dear, no prize this time."` if there is no prize. As always, test your function to check whether it's performing correctly.
+        instructor_notes: ''
+        resources: null
+      - id: 248031
+        key: 9c7d7a4f-6c5d-40e9-9301-3499ee749594
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 17 2017 18:17:02 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5223504715841536'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              import random
+
+              try:
+                  from which_prize import which_prize
+
+                  for x in [12, 149, 164, 198]:
+                      if which_prize(x) is None:
+                          print('error0-secretstring')
+
+                  if which_prize(12) != "Congratulations! You have won a wooden rabbit!":
+                      print('error1-secretstring')
+                      
+                  if which_prize(149) != "Oh dear, no prize this time.":
+                      print('error2-secretstring')
+                      
+                  if which_prize(164) != "Congratulations! You have won a wafer-thin mint!":
+                      print('error3-secretstring')
+
+                  if which_prize(198) != "Congratulations! You have won a penguin!":
+                      print('error4-secretstring')
+                      
+              except NameError:
+                  print('error5-secretstring')
+            executor_test_code: import which_prize
+            gae_grading_code: |
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error0-secretstring' in s:
+                      errors.append("Your function didn't return a value on one of the tests. Make sure to use the `return` keyword.")
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format('which_prize(12)', '"Congratulations! You have won a wooden rabbit!"'))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('which_prize(149)', '"Oh dear, no prize this time."'))
+                  if 'error3-secretstring' in s:
+                      errors.append(explanation_str.format('which_prize(164)', '"Congratulations! You have won a wafer-thin mint!"'))
+                  if 'error4-secretstring' in s:
+                      errors.append(explanation_str.format('which_prize(194)', '"Congratulations! You have won a penguin!"'))
+                  if 'error5-secretstring' in s:
+                      errors.append("Your code doesn't define the `which_prize` function.")
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              grade_result['correct'] = not bool(feedback)
+              feedback.append("Click *NEXT* to see our solution.")
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              if executor_result['stderr']:
+                  # This detects detects if an exception occurred while running the student's code
+                  grade_result['correct'] = False
+                  grade_result['comment'] = "Your code raised an error. Test Run your code to verify that it prints the right things!"
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 248034
+    key: 90e16f83-95d3-4a82-8b0c-e8be86e94cac
+    locale: en-us
+    version: 1.0.0
+    title: Code with Branches II
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:31:25 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 248035
+      - 248048
+      - 248074
+    atoms:
+      - id: 248035
+        key: 10af409b-da50-4085-ba9e-446c3b3e4939
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Mar 24 2017 23:26:53 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz Solution: Which Prize?
+          =============
+          Here's our implementation:
+          ```python
+          def which_prize(points):
+              """
+              Returns the prize-winning message, given a number of points
+              """
+              if points <= 50:
+                  return "Congratulations! You have won a wooden rabbit!"
+              elif points <= 150:
+                  return "Oh dear, no prize this time."
+              elif points <= 180:
+                  return "Congratulations! You have won a wafer-thin mint!"
+              else:
+                  return "Congratulations! You have won a penguin!"
+          ```
+          We checked each of the cases in order of the number of points and left the last case to be caught in the `else` clause, as there is no other possible value of the prize.
+        instructor_notes: ''
+        resources: null
+      - id: 248048
+        key: fb1c82e8-8389-466c-babb-06f10ebb66b3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 18:27:48 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Composing boolean expressions
+          =============
+
+          So far, all of the `if` and `elif` statements we've seen have been followed by simple boolean expressions that check a single condition. However, some situations call for more complex conditions. If it's raining and sunny, I might look for a rainbow! 
+
+          Here is a more complex example. I want to send a promotional email to a customer if they have not requested to be taken off the email list and if they're in a location where they'll be able to redeem the offer. Otherwise, I should not bother them with my message.
+
+          To check compound conditions like these in conditional expressions, we use [boolean operations](https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not) in Python -- keywords like `and`, `or` and `not` -- to put simpler boolean expressions together.
+          So these examples could be put into code as:
+
+          ```python
+          if is_raining and is_sunny:
+              print("Is there a rainbow?")
+          ```
+
+          ```python
+          if (not do_not_email) and (location == "USA" or location == "CAN"):
+              send_email()
+          ```
+
+          We use `and`, `or` and `not` to combine and change boolean expressions, following the usual rules of logic. The final result after combining all boolean expressions is what will determine whether or not the code in the indented `if` block is run or not.
+
+          `and` and `or` each work on two boolean expressions, one before and one afterwards.
+          `and` will give the result `True` if and only if *both* of two expressions are `True`, otherwise it will be `False`.
+          `or` will give the result `True` if at least one of the two expressions is `True` - only if both are `False` will it give the result `False`. (Note that if both are `True`, `or` will still give `True`.)
+
+          The boolean operation `not` works on a single boolean to swap it: so `not True` is `False` and vice versa.
+
+          For really complicated conditions you might need to combine some `and`s, `or`s and `not`s together - use parentheses `(` and `)` if you need to to make the combinations clear!
+        instructor_notes: ''
+        resources: null
+      - id: 248074
+        key: f71820c7-146f-4890-8247-6973bd511b5b
+        locale: en-us
+        version: 1.0.0
+        title: 'Quiz: Evaluate composed boolean expressions'
+        semantic_type: MatchingQuizAtom
+        updated_at: 'Mon Jan 09 2017 19:41:29 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          complex_prompt:
+            text: |2
+               Imagine an air traffic control program that tracks three variables, `altitude`, `speed` and `propulsion` which for a particular aeroplane have the values specified below.
+
+              ```python
+              altitude = 10000
+              speed = 250
+              propulsion = "Propeller"
+              ```
+              For each of the following boolean expressions, work out whether it evaluates to `True` or `False` and match the correct value.
+          default_feedback: Click `Next` to see how we worked it out.
+          correct_feedback: Well done on getting the right answer. Click `Next` to see how we worked it out.
+          video_feedback: null
+          concepts_label: Expression
+          answers_label: '`True` or `False`'
+          concepts:
+            - text: '`altitude < 1000 and speed > 100`'
+              default_concept_feedback: Check your working on the first expression. Is it `True` or `False`?
+              correct_answer:
+                id: a1483988685403
+                text: '`False`'
+              incorrect_feedbacks: []
+            - text: '`(propulsion == "Jet" or propulsion == "Turboprop") and speed < 300 and altitude > 20000`'
+              default_concept_feedback: Check your working on the second expression. Is it `True` or `False`?
+              correct_answer:
+                id: a1483988809239
+                text: '`False`'
+              incorrect_feedbacks: []
+            - text: '`not (speed > 400 and propulsion == "Propeller")`'
+              default_concept_feedback: Check your working on the third expression. Is it `True` or `False`?
+              correct_answer:
+                id: a1483988821858
+                text: '`True`'
+              incorrect_feedbacks: []
+            - text: '`(altitude > 500 and speed > 100) or not propulsion = "Propeller"`'
+              default_concept_feedback: Check your working on the fourth expression. Is it `True` or `False`?
+              correct_answer:
+                id: a1483988836702
+                text: '`True`'
+              incorrect_feedbacks: []
+          answers:
+            - id: a1483988968187
+              text: '`True`'
+            - id: a1483988821858
+              text: '`True`'
+            - id: a1483988836702
+              text: '`True`'
+            - id: a1483988964422
+              text: '`True`'
+            - id: a1483988685403
+              text: '`False`'
+            - id: a1483988971019
+              text: '`False`'
+            - id: a1483988976255
+              text: '`False`'
+            - id: a1483988809239
+              text: '`False`'
+  - id: 248097
+    key: d2778762-9538-4a2c-8b36-448bcb68bfd6
+    locale: en-us
+    version: 1.0.0
+    title: Code with Branches III
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:31:32 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 248098
+      - 248099
+      - 248111
+      - 248130
+      - 248132
+    atoms:
+      - id: 248098
+        key: 26bd3127-42ec-42f3-b21a-49377220f83f
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 19:43:14 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Quiz Solution: Evaluate composed boolean expressions
+          =========
+          ```python
+          altitude < 1000 and speed > 100
+          ```
+          `altitude < 1000` is `False`, so we don't even need to check the second condition - the whole expression is `False`.
+
+          ```python
+          (propulsion == "Jet" or propulsion == "Turboprop") and speed < 300 and altitude > 20000
+          ```
+          `propulsion == "Jet"` is `False`, and `propulsion == "Turboprop"` is `False`, so the whole expression inside the parentheses is `False`. It is combined with the other expressions with `and`, so we don't even need to check these - the whole expression must be `False` because the first part is `False`.
+
+          ```python
+          not (speed > 400 and propulsion == "Propeller")
+          ```
+          To work this one out, we need to look at the inside of the parentheses first, then apply `not` to that. `speed > 400` is False, and because we are using `and` this makes the whole of the expression inside the parentheses `False`. Applying `not` reverses this, so this expression is `True`.
+
+          ```python
+          (altitude > 500 and speed > 100) or not propulsion = "Propeller"
+          ```
+          Let's start by looking inside the parentheses. `altitude > 500` is `True`, and `speed`  is greater than `100`, so the expression inside the parenthesis is `True`. Whatever the value of the other expression, because they are connected by `or`, the whole expression will evaluate to `True`.
+        instructor_notes: ''
+        resources: null
+      - id: 248099
+        key: 8821f6cf-0f60-4e36-9db6-bbcc42dd258d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 19:52:39 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Bad examples of boolean expressions
+          ==============
+
+          ### Bad Example 1:
+          ```python
+          if True:
+              print("This indented code will always get run.")
+          ```
+
+          Whilst `True` is a valid boolean expression, it's useless in a conditional expression as it is always `True`, so the indented code will always get run. (Think about `if False:` should you ever write that?)
+
+          ### Bad Example 2:
+          ```python
+          if is_cold or not is_cold:
+              print("The weather is either cold or not cold.")
+          ```
+          In this example `is_cold or not is_cold` will always evaluate to `True`. (If it is cold, then `is_cold` will be `True`, if it is not cold then `not is_cold` will be `True`.) This is no use in a conditional expression, because the indented code will always get run!
+
+          ### Non-example 3:
+          ```python
+          if castle == "Camelot" or "Loimbard":
+              attack(castle)
+          ```
+          This is not a boolean expression, even though it reads like one. The reason that this is not a boolean expression is that the expression to the right of the `or` is not a boolean expression - it's a string! This code is valid Python though, it does not produce an error when run. Later we'll discuss what happens when you use non-boolean-type objects in place of booleans.
+
+          ### Correct example 3:
+          ```python
+          castle == "Camelot" or castle == "Loimbard"
+          ```
+          It takes a few more characters, but this is now unambiguously a boolean expression - the expressions either side of the `or` are each checking something.
+
+          ### Bad example 4:
+          ```
+          if ran_away == True:
+              print("Brave Sir Robin ran away!")
+          ```
+          This one *is* a valid conditional expression, but we could (and should) express the conditional more briefly and more clearly. If `ran_away` is equal to `True`, then it is a boolean expression in its own right. We can make the code more readable by instead using:
+
+          ### Better example 4:
+          ```
+          if ran_away:
+              print("Brave Sir Robin ran away!")
+          ```
+
+          ### Lessons from these examples:
+          - `True` and `False` are both booleans but it is not a good idea to use `if True:` or `if False:`.
+          - Boolean operators `and`, `or` and `not` have specific meanings that aren't quite the same as their common meanings - don't fall into the trap of writing plain English unless it's also valid Python!
+          - Do not compare a variable that is a boolean with `== True` or `== False` - it's more readable to avoid such a comparison. If you want to check whether a boolean is `False`, you can use `not`, for example 
+              ```python
+              if not real_grail:
+                  print("It's a grail-shaped beacon!")
+              ```
+        instructor_notes: ''
+        resources: null
+      - id: 248111
+        key: 798a7718-7288-4ca4-9fbb-3e79364d6feb
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 19:56:32 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Functions with multiple possible returns
+          ===============
+
+          One interesting application of using branches in code is that we can start to create functions that have more than one `return` in their definition! We've already seen that calling a function will `return` at most once (some of them not at all). 
+          However, we can include multiple `return` statements in the definition of a function. Only one of them will return when the function is run.
+
+          By using conditional statements, we can make code more readable and concise. Let's look at an example that we think is easier to read when you implement it using multiple return statements.
+
+          ```python
+          def punctuate(sentence, phrase_type):
+              """
+              Create a punctuated sentence from a string. Defaults to an ordinary
+              sentence with a full stop.
+
+              sentence: string, the phrase that is to have punctuation added
+              phrase_type: string, defines what kind of sentence to create. 
+                          "exclamation", "question" and "aside" are known values.
+              """
+              if phrase_type == "exclamation":
+                  sentence_punct = sentence + "!"
+              elif phrase_type == "question":
+                  sentence_punct = sentence + "?"
+              elif phrase_type == "aside":
+                  sentence_punct = "(" + sentence + ".)"
+              else:
+                  sentence_punct = sentence + "."
+              return sentence_punct
+          ```
+
+          In this implementation of the function, we create a punctuated sentence from the input sentence and appropriate punctuation in each case, depending on the kind of punctuation required. 
+
+          Once the punctuated sentence has been constructed, the work of the function has been mostly done, but we're waiting until the end to `return` the constructed sentence.
+
+          An alternative would be:
+          ```python
+          def punctuate2(sentence, phrase_type):
+              """
+              Create a punctuated sentence from a string. Defaults to an ordinary
+              sentence with a full stop.
+
+              sentence: string, the phrase that is to have punctuation added
+              phrase_type: string, defines what kind of sentence to create. 
+                          "exclamation", "question" and "aside" are known values
+              """
+              if phrase_type == "exclamation":
+                  return sentence + "!"
+              elif phrase_type == "question":
+                  return sentence + "?"
+              elif phrase_type == "aside":
+                  return "(" + sentence + ")"
+              else:
+                  return sentence + "."
+          ```
+
+          In this version, the `return` statements come inside the indented blocks after conditional statements. Because the main work of the function is really done inside each of the branches (and no later), we can `return` as soon as the output of the function (the punctuated sentence) is ready! There's no need for a variable holding that punctuated sentence, which gives the reader fewer things to keep track of.
+
+          Note that as soon as `return` is executed in a function, execution will leave that function. This means that you should see every `return` as a possible exit from the function, and make sure that there isn't something else you want to do afterwards. The ordering of instructions in your code is extremely important!
+        instructor_notes: ''
+        resources: null
+      - id: 248130
+        key: a326d319-b118-481f-b803-fa471fedac3b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 20:54:57 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Write your own function with multiple returns
+          ============
+          The `cylinder_surface_area` function calculates the surface area of cylinders that are solid or hollow. The `has_top_and_bottom` argument is `True` or `False` depending on whether the cylinder is solid or hollow. The surface area of a solid cylinder includes the areas of the top and bottom
+
+          Restructure this function definition so that it has two `return` statements in its body. 
+        instructor_notes: ''
+        resources: null
+      - id: 248132
+        key: 745caafa-a8f0-4822-9747-cf2f056bb866
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Sat Mar 25 2017 00:04:57 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6034787933487104'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              import random
+              import sys
+
+              def solution(radius, height, has_top_and_bottom):
+                  side_area = height * 6.28 * radius
+                  if has_top_and_bottom:
+                      top_area = 3.14 * radius ** 2
+                      return 2*top_area + side_area
+                  else:
+                      return side_area
+
+
+              try:
+                  from cylinder_surface import cylinder_surface_area
+                  
+                  with open("cylinder_surface.py") as f:
+                      if f.read().count('return') < 2:
+                          print("error0-secretstring")
+                  
+                  if cylinder_surface_area(10, 5, False) != solution(10, 5, False):
+                      print('error1-secretstring')
+                      
+                  if cylinder_surface_area(10, 5, True) != solution(10, 5, True):
+                      print('error2-secretstring')
+                      
+                  r = random.randint(1, 10)
+                  h = random.randint(1, 10)
+                  if cylinder_surface_area(r, h, True) != solution(r, h, True):
+                      print('error3-secretstring-{}-{}'.format(r, h))
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import cylinder_surface
+            gae_grading_code: |
+              def solution(radius, height, has_top_and_bottom):
+                  side_area = height * 6.28 * radius
+                  if has_top_and_bottom:
+                      top_area = 3.14 * radius ** 2
+                      return 2 * top_area + side_area
+                  else:
+                      return side_area
+
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error0-secretstring' in s:
+                      errors.append('Rewrite the function so it has two distinct return statements.')
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format('cylinder_surface_area(10, 5, False)', solution(10,5,False)))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('cylinder_surface_area(10, 5, True)', solution(10,5,True)))
+                  if 'error3-secretstring' in s:
+                      tokens = s.split('-')
+                      r, h = float(tokens[-2]), float(tokens[-1])
+                      errors.append(explanation_str.format('cylinder_surface_area({}, {}, True)'.format(r, h), solution(r,h,True)))
+                  if 'error4-secretstring' in s:
+                      errors.append("Your code doesn't define the `cylinder_surface_area` function.")
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              grade_result['correct'] = not bool(feedback)
+              feedback.append("Click *NEXT* to see our solution.")
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              # uncomment For EXECUTION CODE debugging
+              #grade_result['comment'] = executor_result['stdout']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 248134
+    key: a81008be-fb28-4ca0-8956-83d14563889b
+    locale: en-us
+    version: 1.0.0
+    title: Code with Branches IV
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:33:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 248135
+      - 248136
+      - 248143
+      - 248151
+    atoms:
+      - id: 248135
+        key: 9159db64-0598-4eb2-9ba3-a57e33e04505
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jan 19 2017 22:59:14 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz Solution: Write your own function with multiple returns
+          =========
+          Here's our restructuring of the code:
+
+          ```python
+          def cylinder_surface_area(radius, height, has_top_and_bottom):
+              side_area = height * 6.28 * radius
+              if has_top_and_bottom:
+                  top_area = 3.14 * radius ** 2
+                  return top_area + side_area
+              else:
+                  return side_area
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 248136
+        key: daf5b1b5-d3b6-4ff8-827b-6a91dfa8cda3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 21:05:54 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Truth values of non-boolean objects 
+          =========
+          The structure of a conditional expression so far has been
+
+          ```python
+          if boolean_expression:
+              indented_code
+          ```
+          and the `boolean_expression`s we have seen have been expressions that evaluate to a boolean object - either `True` or `False`.
+
+          If we put some other object that is not a boolean in the `if` statement in place of the boolean expression, Python will check for its *truth value* and use that to decide whether or not to run the indented code.
+
+          The [Python documentation](https://docs.python.org/3/library/stdtypes.html#truth-value-testing
+          ) lists all the objects that are considered `False` in this situation. (Don't worry that some of them have not yet been covered, you will meet them soon.) Any number that is `0`, an object that is `None` or an empty string will have a truth value of `False`. Anything that isn't listed as having a truth value `False` will count as `True`.
+
+
+          ```python
+          errors = 3
+          if errors:
+              print("There are " + errors + " mistakes. Please correct.")
+          else:
+              print("No mistakes here!")
+          ```
+
+          In this code, `errors` has the truth value `True` because it's a non-zero number, so the error message is printed. The `if` statement is succinct.
+        instructor_notes: ''
+        resources: null
+      - id: 248143
+        key: 5b821160-6277-4a90-ac8d-c5cb0d10e986
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Mar 25 2017 00:21:14 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Quiz: Using Truth Values of objects in `which_prize()`
+          =============
+          Rewrite the [`which_prize()` function from earlier](58b6ab9c-d283-4c00-bbe5-f8a518787088) to use what you've learned about truth values. 
+          Start your function by setting the variable `prize = None`, change the `prize` depending on the number of points and then use another conditional to return a message depending on whether `prize` is there or not. This will avoid repeating the `return` part of the code.
+        instructor_notes: ''
+        resources: null
+      - id: 248151
+        key: 2896d3d4-ea41-4eef-a95e-fba21274ad2d
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Fri Jan 20 2017 22:12:45 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: 'You can refer back to your previous work on this function [here](58b6ab9c-d283-4c00-bbe5-f8a518787088) to get you started.'
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '4756409842532352'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |
+              import sys
+
+              try:
+                  from which_prize2 import which_prize
+
+                  with open("which_prize2.py") as f:
+                      text = f.read()
+                      print(text, file=sys.stderr)
+                      if 'prize = None' not in text:
+                          print("implementation-error-secretstring-0")
+                      if 'if prize:' not in text:
+                          print("implementation-error-secretstring-1")
+                  
+                  if which_prize(12) != "Congratulations! You have won a wooden rabbit!":
+                      which_prize(12)
+                      print('error1-secretstring')
+                      
+                  if which_prize(149) != "Oh dear, no prize this time.":
+                      print('error2-secretstring')
+                      
+                  if which_prize(164) != "Congratulations! You have won a wafer-thin mint!":
+                      print('error3-secretstring')
+
+                  if which_prize(198) != "Congratulations! You have won a penguin!":
+                      print('error4-secretstring')
+                      
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import which_prize2
+            gae_grading_code: |-
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format('which_prize(12)', '"Congratulations! You have won a wooden rabbit!"'))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('which_prize(149)', '"Oh dear, no prize this time."'))
+                  if 'error3-secretstring' in s:
+                      errors.append(explanation_str.format('which_prize(164)', '"Congratulations! You have won a wafer-thin mint!"'))
+                  if 'error4-secretstring' in s:
+                      errors.append(explanation_str.format('which_prize(194)', '"Congratulations! You have won a penguin!"'))
+                  if "implementation-error-secretstring-0" in s:
+                      errors.append("Your code doesn't include this variable definition, `prize = None`. Did you structure the function as suggested in the instructions?")
+                  if "implementation-error-secretstring-1" in s:
+                      errors.append("Your code doesn't include this snippet to see if the prize variable contains anything, `if prize:`. Did you structure the function as suggested in the instructions?")
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+
+                  return errors
+
+              feedback = find_errors(executor_result['stdout'])
+
+              grade_result['correct'] = not bool(feedback)
+
+
+              feedback.append("Click *NEXT* to see our solution.")
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              # uncomment to debug Execution Code
+              # grade_result['comment'] += executor_result['stderr']
+              # grade_result['comment'] += executor_result['stdout']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 248155
+    key: 2a5fc3c8-7f04-4f78-8fc5-d3460d5c7ff8
+    locale: en-us
+    version: 1.0.0
+    title: Code with Branches V
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:33:05 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 248156
+    atoms:
+      - id: 248156
+        key: 9944c336-a5d9-4931-828e-7addeac16553
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jan 20 2017 17:42:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz Solution: Using Truth Values of objects in `which_prize()`
+          ===========
+          Here's our solution - first we set `prize = None`, then update `prize` if the points require it. Finally we used the truth value of `prize` to print out a message when there is a prize and a message when there is no prize.
+          ```python
+          def which_prize2(points):
+              """
+              Returns the number of prize-winning message, given a number of points
+              """
+              prize = None
+              if points <= 50:
+                  prize = "a wooden rabbit"
+              elif 150 <= points <= 180:
+                  prize = "a wafer-thin mint"
+              elif points >= 181:
+                  prize = "a penguin"
+              if prize:
+                  return "Congratulations! You have won " + prize + "!"
+              else:
+                  return "Oh dear, no prize this time."
+          ```
+        instructor_notes: ''
+        resources: null
+  - id: 249182
+    key: 06ee921c-2c03-4521-80da-f0b95b29ea78
+    locale: en-us
+    version: 1.0.0
+    title: Breaking Programs Into Smaller Pieces
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:33:12 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 287806
+      - 249197
+      - 249189
+    atoms:
+      - id: 287806
+        key: 18f04350-91c4-41f8-ac5b-e7c018399564
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L237 Break Up Your Code Ideas
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 03:59:21 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52072'
+          youtube_id: qrp8r48BPUs
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d40cbb_ud1110-intropy-l237-break-up-your-code-ideas/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cbb_ud1110-intropy-l237-break-up-your-code-ideas/ud1110-intropy-l237-break-up-your-code-ideas_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cbb_ud1110-intropy-l237-break-up-your-code-ideas/ud1110-intropy-l237-break-up-your-code-ideas_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cbb_ud1110-intropy-l237-break-up-your-code-ideas/ud1110-intropy-l237-break-up-your-code-ideas_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cbb_ud1110-intropy-l237-break-up-your-code-ideas/ud1110-intropy-l237-break-up-your-code-ideas_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cbb_ud1110-intropy-l237-break-up-your-code-ideas/hls/playlist.m3u8'
+      - id: 249197
+        key: f7214a18-6825-4747-9d8d-8226ee12f9a3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Mar 31 2017 00:23:32 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Scores To Rating Function Design
+          ================
+
+          Let's work through building up the structure of a new function. Imagine that you work for a consumer ratings website. Users submit reviews and scores for products they use, and you show the results so that consumers can make informed choices.
+
+          Throughout this section we will write a function that takes as input five scores and aggregates them to output a single rating.
+
+          Because the highest and lowest scores might be outliers and skew the results, we will take the three middle scores out of the five, discarding the highest and lowest. 
+
+          Then we will take the average (mean) of those three middle scores.
+
+          For example, if the scores are 1,2,2,4,4 then we take the average of 2, 2 and 4 to get 2.6666666666.
+
+          Then we will map that average score to a written rating like this:
+
+          | Average Score | Rating|
+          |---|---|
+          |0 <= score < 1 | Terrible |
+          | 1 <= score < 2 | Bad |
+          | 2 <= score < 3 | OK |
+          | 3 <= score < 4 | Good |
+          | 4 <= score <= 5 | Excellent|
+
+          Oh, and the input data might be messy - sometimes a string, not necessarily a float or an int. So we should check and convert it if necessary in order to do the calculations.
+
+          Sounds like a lot? Don't worry, we will walk you through the process of breaking the problem into smaller bits and combining them together into a solution.
+        instructor_notes: ''
+        resources: null
+      - id: 249189
+        key: ed70b8d8-4654-4a2c-ac1b-bfd5e3a58ef3
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: ReflectAtom
+        updated_at: 'Mon Jan 09 2017 21:51:38 GMT+0000 (UTC)'
+        is_public: true
+        instructor_notes: null
+        resources: null
+        question:
+          title: null
+          semantic_type: TextQuestion
+          evaluation_id: null
+          text: |-
+            Break the function down into 3-5 steps and write them in words in the box, in the order in which they will get performed on the input data. Include the input and the output of each step.
+            This answer will not get graded but we'll share what we think afterwards. There is not a single right answer to a question like this, so just give it a try!
+        answer:
+          text: |
+            Thanks for thinking about this design decision!
+
+            Here are our four steps:
+
+            1. Take each of the raw scores and convert each of them to a numerical type.  
+            **Input:** score as string/float/int. **Output:** score as float or int.   
+            2. Choose the middle 3 values from the set of 5 scores.  
+            **Input:** 5 scores as float or int. **Output:** 3 scores (same type).  
+            3. Take the average of three scores.  
+            **Input:** 3 scores as float or int. **Output:** 1 average score (float).  
+            4. Choose the correct word rating for the average score.  
+            **Input:** average score as float. **Output:** Rating as a string.
+          video: null
+  - id: 249224
+    key: f4874914-ad98-41df-8bb5-971e6e41dd53
+    locale: en-us
+    version: 1.0.0
+    title: Outlining and Buildling a Program
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:33:15 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 249227
+      - 249231
+      - 249232
+    atoms:
+      - id: 249227
+        key: 8dd1b12d-51b6-44ac-b9e1-3fd62766b07b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 23:16:08 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          Outline of the Scores to Rating function
+          =================
+
+          I'm going to use the steps I have already written to create an outline of the function I want to create. It's not going to work straight away, but we'll get the ideas of the pieces put into place.
+
+
+          ```python
+          def scores_to_rating(score1,score2,score3,score4,score5):
+              """
+              Turns five scores into a rating by averaging the
+              middle three of the five scores and assigning this average
+              to a written rating.
+              """
+              # THE CODE GOES HERE!
+
+              return rating
+          ```
+
+          This is just the skeleton of what the function will actually do, but it's got the inputs and the output and the docstring to describe what it's going to do.
+
+          I'm going to put the steps into the function now.
+
+          ```python
+          def scores_to_rating(score1,score2,score3,score4,score5):
+              """
+              Turns five scores into a rating by averaging the
+              middle three of the five scores and assigning this average
+              to a written rating.
+              """
+              #STEP 1 convert scores to numbers
+              score1 = convert_to_numeric(score1)
+              score2 = convert_to_numeric(score2)
+              score3 = convert_to_numeric(score3)
+              score4 = convert_to_numeric(score4)
+              score5 = convert_to_numeric(score5)
+
+              #STEP 2 find middle three scores
+              #how am I going to do this?
+
+              #STEP 3 take average of middle three scores
+              average_score = # (sum of the middle scores)/3
+
+              #STEP 4 turn average score into a rating
+              rating = score_to_rating_string(average_score)
+
+              return rating
+          ```
+          By adding the steps into the function, I've realised that we need a couple of helper functions: `convert_to_numeric` and `score_to_rating_string`. It's OK that they're not written yet, but I should at least build their outlines and docstrings soon.
+
+          There's also a confusing area in the middle of the function where I'm not sure how to implement Step 2, which means that we don't yet know exactly what the input to Step 3 should be.
+
+          Getting the middle values seems tricky right now (you'll learn about good tools to help with this later) but, looking at Step 3, we only need the sum of the scores, not the actual values. Python has built-in functions for `min()` and `max()`.
+
+          ```python
+          sum_of_three_middle_scores = sum_of_all_five_scores - min(all five scores) - max(all five scores)
+          ```
+
+          Separating Step 2 and Step 3 made sense at the time, but turned out to be the wrong way to implement this- the implementation is easier if we merge them and avoid having to figure out the three middle scores separately. Planning out the function in advance helped us to identify the difficulty and the solution, and we can now adjust. Here's a new outline of the `scores_to_rating()` function.
+
+          ```python
+          def scores_to_rating(score1,score2,score3,score4,score5):
+              """
+              Turns five scores into a rating by averaging the
+              middle three of the five scores and assigning this average
+              to a written rating.
+              """
+              #STEP 1 convert scores to numbers
+              score1 = convert_to_numeric(score1)
+              score2 = convert_to_numeric(score2)
+              score3 = convert_to_numeric(score3)
+              score4 = convert_to_numeric(score4)
+              score5 = convert_to_numeric(score5)
+
+              #STEP 2 and STEP 3 find the average of the middle three scores
+              average_score =  sum_of_middle_three(score1,score2,score3,score4,score5)/3
+
+              #STEP 4 turn average score into a rating
+              rating = score_to_rating_string(average_score)
+
+              return rating
+          ```
+
+
+        instructor_notes: ''
+        resources: null
+      - id: 249231
+        key: c067058b-2b67-4cbb-acb0-0f30aaf77335
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 00:37:34 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Outline The Helper Functions
+          =============
+          In this quiz add outlines for the helper functions that are needed for `scores_to_rating`.  Include the definition line, a docstring describing the function and a return statement. There is no need to actually include any of the code contained in the function at this stage. If you don't provide this code, your solution will not run - that's OK right now!
+
+          The functions you need to outline are:
+          - `convert_to_numeric` for STEP 1
+          - `sum_of_middle_three` for STEP 2 and STEP 3
+          - `score_to_rating_string` for STEP 4
+        instructor_notes: ''
+        resources: null
+      - id: 249232
+        key: d8adc9e4-a2ba-4c5c-b2cd-caff721a9ef0
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Sat Mar 25 2017 02:05:55 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5528916619034624'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |-
+              try:
+                  #import helper_functions
+                  
+                  with open("helper_functions.py") as f:
+                      if f.read().count('def convert_to_numeric') < 1:
+                          print("error0-secretstring")
+                  with open("helper_functions.py") as f:
+                      if f.read().count('def sum_of_middle_three') < 1:
+                          print("error1-secretstring")
+                  with open("helper_functions.py") as f:
+                      if f.read().count('def score_to_rating') < 1:
+                          print("error2-secretstring")
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import helper_functions
+            gae_grading_code: |-
+              grade_result['comment'] = 'Thanks for outlining the functions! To see how we started to outline the helper functions, click Next.'
+              grade_result['correct'] = None
+
+              def find_errors(s):
+                  explanation_str = '''It looks like you did not outline {}'''
+
+                  errors = []
+
+                  if 'error0-secretstring' in s:
+                      errors.append(explanation_str.format('convert_to_numeric'))
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format('sum_of_middle_three'))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('score_to_rating'))
+                  return errors
+
+              feedback = find_errors(executor_result['stdout'])
+
+              grade_result['correct'] = not bool(feedback)
+
+              feedback.append("Click *NEXT* to see our solution.")
+              grade_result['comment'] = '\n\n'.join(feedback)
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 249245
+    key: 2ef4fa14-1728-4ada-81f3-7fb37eb39ff0
+    locale: en-us
+    version: 1.0.0
+    title: Building Program Pieces I
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:33:21 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 249246
+      - 249251
+      - 249253
+    atoms:
+      - id: 249246
+        key: 69aa4e53-ca3c-46b5-9964-9b0b0c78fc96
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 00:48:42 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz Solution: Outline the Helper Functions 
+          ========
+          This code won't actually run at this stage, but here's how we intend to structure it.
+
+          ```python
+          def convert_to_numeric(score):
+              """
+              Convert the score to a numerical type.
+              """
+              converted_score = #convert the score
+              return converted_score
+
+          def sum_of_middle_three(score1,score2,score3,score4,score5):
+              """
+              Find the sum of the middle three numbers out of the five given.
+              """
+              sum = #add them together and take away the max and min
+              return sum
+
+          def score_to_rating_string(score):
+              """
+              Convert the average score, which should be between 0 and 5, 
+              into a string rating.
+              """
+              rating =
+              return rating
+
+          def scores_to_rating(score1,score2,score3,score4,score5):
+              """
+              Turns five scores into a rating by averaging the
+              middle three of the five scores and assigning this average
+              to a written rating.
+              """
+              #STEP 1 convert scores to numbers
+              score1 = convert_to_numeric(score1)
+              score2 = convert_to_numeric(score2)
+              score3 = convert_to_numeric(score3)
+              score4 = convert_to_numeric(score4)
+              score5 = convert_to_numeric(score5)
+
+              #STEP 2 and STEP 3 find the average of the middle three scores
+              average_score =     
+                  sum_of_middle_three(score1,score2,score3,score4,score5)/3
+
+              #STEP 4 turn average score into a rating
+              rating = score_to_rating_string(average_score)
+
+              return rating
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 249251
+        key: 7cb369a8-1928-4bb6-94dd-aef825e6952a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jan 20 2017 18:25:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Build Helper Function `convert_to_numeric`
+          =======
+          It's time to fill in the body of the helper functions. 
+
+          In this quiz, complete the `convert_to_numeric()` function. This function's input could be a string, int, or float. `"3"`, `3` and `3.0` are all valid inputs. The function should return a float.
+
+          Make sure that you test it out by calling the function and printing the output, and maybe the type of the output, too. Start with your or our outline from the previous quiz.
+        instructor_notes: ''
+        resources: null
+      - id: 249253
+        key: 12eeb8a7-4b92-4be0-9ea0-80f1b7adcb8d
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Fri Jan 20 2017 22:07:56 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: 'You should use the outline you wrote in the [previous quiz](f4874914-ad98-41df-8bb5-971e6e41dd53).'
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5370997919318016'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |+
+              try:
+                  from convert_to_numeric import convert_to_numeric
+                  
+                  if convert_to_numeric('3') != 3.0 or type(convert_to_numeric('3')) != float:
+                      print('error1-secretstring')
+                      
+                  if convert_to_numeric(3) != 3 or type(convert_to_numeric(3)) != float:
+                      print('error2-secretstring')
+                      
+                  if convert_to_numeric('3') != 3.0 or type(convert_to_numeric('3')) != float:
+                      print('error3-secretstring')
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+
+            executor_test_code: import convert_to_numeric
+            gae_grading_code: |-
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format('convert_to_numeric("3")', 3.0))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('convert_to_numeric(3)', 3.0))
+                  if 'error3-secretstring' in s:
+                      errors.append(explanation_str.format('convert_to_numeric(3.0)', 3.0))
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              grade_result['correct'] = not bool(feedback)
+              feedback.append("Click *NEXT* to see our solution.")
+              grade_result['comment'] = '\n\n'.join(feedback)
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 249255
+    key: d5a5e19c-b249-4222-a066-4e642a1accd0
+    locale: en-us
+    version: 1.0.0
+    title: Building Program Pieces II
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:33:25 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 249261
+      - 249266
+      - 249270
+    atoms:
+      - id: 249261
+        key: 9904a9b9-3229-4432-a7c1-aeb645b6d76d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Mar 25 2017 02:28:10 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz Solution: Build Helper Function `convert_to_numeric`
+          ==================
+          This can be a very short function: we just converted the score to a float.
+
+          ```python
+          def convert_to_numeric(score):
+              """
+              Convert the score to a float.
+              """
+              converted_score = float(score)
+              return converted_score
+          ```
+
+          An even shorter way to write this function would be:
+
+          ```python
+          def convert_to_numeric(score):
+              """
+              Convert the score to a float.
+              """
+              return float(score)
+          ```
+
+          Either of these is absolutely OK! 
+
+
+          It would even be reasonable to skip this function in `scores_to_rating()` altogether, and just replace it with
+          ```python
+              score1 = float(score1)
+              score2 = float(score2)
+                  …
+          ``` 
+          because the operation is so simple that it could just be done inline. 
+          However, if some additional complications to the inputs come up later, we might be glad that we broke this problem down so finely as we can resolve complications in the helper function rather than in `scores_to_rating()`.
+        instructor_notes: ''
+        resources: null
+      - id: 249266
+        key: 674f8ff6-d83e-4bfa-9d8b-38051ae43da8
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Mar 25 2017 02:29:43 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Build Helper Function `sum_of_middle_three`
+          ===========
+
+          Now it's time to complete the `sum_of_middle_three` function. Make sure that you test it out using print statements. You can start with an [outline you wrote earlier](f4874914-ad98-41df-8bb5-971e6e41dd53). You can find the maximum and the minimum by using `max()` and `min()`. `max()` returns the maximum out of a group of numbers, and `min()` returns the minimum. For example:
+          ```python
+          max(1,2,3,4) #returns 4
+          min(1,2,3,4) #returns 1
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 249270
+        key: f847a31f-a1ea-425e-84b8-2060d9b1fb85
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Sat Mar 25 2017 02:21:17 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5717772639272960'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |+
+              try:
+                  from size_of_middle_three import sum_of_middle_three
+                  
+                  if sum_of_middle_three(1.0, 2.0, 3.0, 4.0, 5.0) != 9.0:
+                      print('error1-secretstring')
+                      
+                  if sum_of_middle_three(1.0, 1.0, 1.0, 1.0, 1.0) != 3.0:
+                      print('error2-secretstring')
+                      
+                  if sum_of_middle_three(1.0, 1.0, 100.0, 200.0, 1.0) != 102.0:
+                      print('error3-secretstring')
+              except Exception as e:
+                  print('error4-secretstring-{}'.format(e))
+
+            executor_test_code: import size_of_middle_three
+            gae_grading_code: |-
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format('sum_of_middle_three(1.0, 2.0, 3.0, 4.0, 5.0)', 8.0))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('sum_of_middle_three(1.0, 1.0, 1.0, 1.0, 1.0)', 3.0))
+                  if 'error3-secretstring' in s:
+                      errors.append(explanation_str.format('sum_of_middle_three(1.0, 1.0, 100.0, 200.0, 1.0)', 3.0))
+                  if 'error4-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+              feedback.append("Click *NEXT* to see our solution.")
+              grade_result['comment'] = '\n\n'.join(feedback)
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 249271
+    key: a17b38c1-b45e-4877-b193-576c34bc9490
+    locale: en-us
+    version: 1.0.0
+    title: Building Program Pieces III
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:33:34 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 249272
+      - 249273
+      - 249274
+    atoms:
+      - id: 249272
+        key: 4ca0c4b7-2733-48e0-ae1c-9f85ced976ef
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 01:17:52 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz Solution: Build Helper Function `size_of_middle_three`
+          =======
+          Here is how we implemented this function.
+          ```python
+          def sum_of_middle_three(score1,score2,score3,score4,score5):
+              """
+              Find the sum of the middle three numbers out of the five given.
+              """
+              max_score = max(score1,score2,score3,score4,score5)
+              min_score = min(score1,score2,score3,score4,score5)
+              sum = score1 + score2 + score3 + score4 + score5 - max_score - min_score
+              return sum
+          ```
+          We calculate the maximum and minimum on separate lines for the sake of readability, before taking them away from the total. 
+        instructor_notes: ''
+        resources: null
+      - id: 249273
+        key: f81d56d9-df43-4e89-9328-f9d0362ddbf6
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 01:23:17 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Quiz: Build Helper Function `score_to_rating_string`
+          ===========
+
+          Time to get that final helper function completed, `score_to_rating_string`! Here's the table to remind you of how the values map to ratings.
+
+          | Average Score | Rating|
+          |---|---|
+          |0 <= score < 1 | Terrible |
+          | 1 <= score < 2 | Bad |
+          | 2 <= score < 3 | OK |
+          | 3 <= score < 4 | Good |
+          | 4 <= score <= 5 | Excellent|
+
+          You'll need to check and deal with each case separately. Don't forget to test out your function with some print statements. You can look back at the outline you wrote earlier [here](f4874914-ad98-41df-8bb5-971e6e41dd53).
+        instructor_notes: ''
+        resources: null
+      - id: 249274
+        key: 32187144-e325-4a35-bcfd-78421727c5d7
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Fri Jan 20 2017 22:08:50 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '4677678125940736'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |
+              try:
+                  from score_to_rating_string import score_to_rating_string
+                  
+                  if score_to_rating_string(0.2) != "Terrible":
+                      print('error1-secretstring')
+                      
+                  if score_to_rating_string(1.2) != "Bad":
+                      print('error2-secretstring')
+                      
+                  if score_to_rating_string(2.2) != "OK":
+                      print('error3-secretstring')
+
+                  if score_to_rating_string(3.2) != "Good":
+                      print('error4-secretstring')
+                      
+                  if score_to_rating_string(4.2) != "Excellent":
+                      print('error5-secretstring')    
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import score_to_rating_string
+            gae_grading_code: |-
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format('score_to_rating_string(0.2)', "Terrible"))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('score_to_rating_string(1.2)', "Bad"))
+                  if 'error3-secretstring' in s:
+                      errors.append(explanation_str.format('score_to_rating_string(2.2)', "OK"))
+                  if 'error4-secretstring' in s:
+                      errors.append(explanation_str.format('score_to_rating_string(3.2)', "Good"))
+                  if 'error5-secretstring' in s:
+                      errors.append(explanation_str.format('score_to_rating_string(4.2)', "Excellent"))
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+              feedback.append("Click *NEXT* to see our solution.")
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 249275
+    key: c97ec7d3-5c6b-4bca-845b-513cf23c8fdd
+    locale: en-us
+    version: 1.0.0
+    title: Building Program Pieces IV
+    semantic_type: Concept
+    updated_at: 'Mon Jun 05 2017 18:50:39 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 249276
+      - 249277
+      - 249278
+    atoms:
+      - id: 249276
+        key: d0c0cae7-6736-47a7-bce4-5efc2a9e80ac
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 05 2017 18:49:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz Solution: Build Helper Function `score_to_rating_string`
+          =====
+
+          We wrote this function like this:
+          ```python
+          def score_to_rating_string(av_score):
+              """
+              Convert the average score, which should be between 0 and 5, 
+              into a rating.
+              """
+              if av_score < 1:
+                  rating = "Terrible"
+              elif av_score < 2:
+                  rating = "Bad"
+              elif av_score < 3:
+                  rating = "OK"
+              elif av_score < 4:
+                  rating = "Good"
+              else:          #Using else at the end, every possible case gets caught
+                  rating = "Excellent"
+              return rating
+          ```
+
+          An alternative solution that we came up with uses the fact that you can have multiple return statements: one for each of the different cases. In this solution, the use of `else` means that this function will always `return` something.
+
+          ```python
+          def score_to_rating_string(av_score): 
+              """
+              Convert the average score, which should be between 0 and 5, 
+              into a rating.
+              """
+              if av_score < 1:
+                  return "Terrible"
+              elif av_score < 2:
+                  return "Bad"
+              elif av_score < 3:
+                  return "OK"
+              elif av_score < 4:
+                  return "Good"
+              else:
+                  return "Excellent"
+          ```
+          How does your solution compare to our ideas? 
+        instructor_notes: ''
+        resources: null
+      - id: 249277
+        key: 2bbcada8-5e74-4260-82ef-2476fb0ce6c0
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 05 2017 18:49:44 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Quiz: Putting `scores_to_rating` back together
+          ==========
+
+          Well done on working on all of these helper functions! Now's your opportunity to put all of this work together and get it working as a whole. 
+
+          In this programming quiz, put each of the helper functions that you've written into the coding window and then use them as you write the function `scores_to_rating`. Remember that this function starts with five scores (possibly not numeric), takes the average of the middle three scores, and converts that score to a written rating which is returned.
+
+          You'll need to ensure you're passing the output from one function properly to the input of the next inside the body of `scores_to_rating`. Adding one piece at a time, adding helpful comments, and testing with calls to `print` will help you keep bugs under control! 
+        instructor_notes: ''
+        resources: null
+      - id: 249278
+        key: 8a053a66-70b0-4ab0-98bb-f3513f229b59
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jun 05 2017 18:50:07 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '4981674434756608'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python3
+            executor_grading_code: |
+              try:
+                  from scores_to_rating_final import scores_to_rating
+                  
+                  if scores_to_rating("1", 0, 0, "1", 5) != "Terrible":
+                      print('error1-secretstring')
+                      
+                  if scores_to_rating("1", 2, 1.3, "2", 5) != "Bad":
+                      print('error2-secretstring')
+                      
+                  if scores_to_rating("1", 2, 3.0, "2", 5) != "OK":
+                      print('error3-secretstring')
+
+                  if scores_to_rating("1", 2, 3.0, "4", 5) != "Good":
+                      print('error4-secretstring')
+                      
+                  if scores_to_rating("100", 2, 3.0, "4", 5) != "Excellent":
+                      print('error5-secretstring')        
+
+              except Exception as e:
+                  print('error6-secretstring-{}'.format(e))
+            executor_test_code: import scores_to_rating_final
+            gae_grading_code: |-
+              def find_errors(s):
+                  explanation_str = '''Your function produced the wrong result when called like this: {}\n
+              The expected output is: {}'''
+
+                  errors = []
+
+                  if 'error1-secretstring' in s:
+                      errors.append(explanation_str.format('scores_to_rating("1", 0, 0, "1", 5)', "Terrible"))
+                  if 'error2-secretstring' in s:
+                      errors.append(explanation_str.format('scores_to_rating("1", 2, 1.3, "2", 5)', "Bad"))
+                  if 'error3-secretstring' in s:
+                      errors.append(explanation_str.format('scores_to_rating("1", 2, 3.0, "2", 5)', "OK"))
+                  if 'error4-secretstring' in s:
+                      errors.append(explanation_str.format('scores_to_rating("1", 2, 3.0, "4", 5)', "Good"))
+                  if 'error5-secretstring' in s:
+                      errors.append(explanation_str.format('scores_to_rating("100", 2, 3.0, "4", 5)', "Excellent"))
+                  if 'error6-secretstring' in s:
+                      tokens = s.split('-')
+                      error_msg = tokens[-1].strip()
+                      errors.append('Your code raised an exception, "{}". Test Run to verify that it works!'.format(error_msg))
+
+                  
+                  return errors
+
+
+              feedback = find_errors(executor_result['stdout'])
+
+              grade_result['correct'] = not bool(feedback)
+              if not feedback:
+                  feedback = ["Your code passes all of our tests, nice work!"]
+              feedback.append("Click *NEXT* to see our solution.")
+              grade_result['comment'] = '\n\n'.join(feedback)
+
+              #uncomment to debug
+              #grade_result['comment'] += executor_result['stdout']
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+  - id: 249282
+    key: 391e1ef5-3057-443a-80ab-4126da977ffe
+    locale: en-us
+    version: 1.0.0
+    title: Putting together the Pieces
+    semantic_type: Concept
+    updated_at: 'Thu Apr 20 2017 06:33:52 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 249283
+      - 249286
+      - 287810
+    atoms:
+      - id: 249283
+        key: 26a9246d-4009-479c-becd-b94314eb2243
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 02:09:47 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Quiz Solution: Putting `scores_to_rating` back together
+          ===============
+          Well done on taking this problem apart, building the pieces, and putting it back together! We'll share our whole solution here:
+          ```python
+          def convert_to_numeric(score):
+              """
+              Convert the score to a float.
+              """
+              converted_score = float(score)
+              return converted_score
+
+          def sum_of_middle_three(score1,score2,score3,score4,score5):
+              """
+              Find the sum of the middle three numbers out of the five given.
+              """
+              max_score = max(score1,score2,score3,score4,score5)
+              min_score = min(score1,score2,score3,score4,score5)
+              sum = score1 + score2 + score3 + score4 + score5 - max_score - min_score
+              return sum
+
+
+          def score_to_rating_string(av_score):
+              """
+              Convert the average score, which should be between 0 and 5, 
+              into a rating.
+              """
+              if av_score < 1:
+                  rating = "Terrible"
+              elif av_score < 2:
+                  rating = "Bad"
+              elif av_score < 3:
+                  rating = "OK"
+              elif av_score < 4:
+                  rating = "Good"
+              else:          #Using else at the end, every possible case gets caught
+                  rating = "Excellent"
+              return rating
+
+
+          def scores_to_rating(score1,score2,score3,score4,score5):
+              """
+              Turns five scores into a rating by averaging the
+              middle three of the five scores and assigning this average
+              to a written rating.
+              """
+              #STEP 1 convert scores to numbers
+              score1 = convert_to_numeric(score1)
+              score2 = convert_to_numeric(score2)
+              score3 = convert_to_numeric(score3)
+              score4 = convert_to_numeric(score4)
+              score5 = convert_to_numeric(score5)
+
+              #STEP 2 and STEP 3 find the average of the middle three scores
+              average_score = sum_of_middle_three(score1,score2,score3,score4,score5)/3
+
+              #STEP 4 turn average score into a rating
+              rating = score_to_rating_string(average_score)
+
+              return rating
+
+          ```
+          If you haven't done this already, open up your text editor and create a new `.py` file with all this code. Add some test cases (try various scores) to the bottom with `print` statements, and run it to see it work using your terminal/command line! Nice job on getting this function done!
+        instructor_notes: ''
+        resources: null
+      - id: 249286
+        key: 7e15d13d-6bc3-4f66-86c8-99206de6322a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 10 2017 02:10:48 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Steps to build a function piece by piece
+          =============
+          Here's a review of what you had to do to build the `scores_to_rating()` function piece by piece
+          1. Gather the requirements for the function, including inputs and output
+          2. Break that process down into steps in plain language first, not code.
+          3. Create an outline of a function that performed each of these steps, including helper functions that had not yet been defined.  
+              At this stage, adjust the steps to make them easier to code up
+          4. Create outlines of the helper functions.
+          5. Fill in the code of the helper functions, testing their functionality.
+          6. Complete the code of the main function to call each of the helper functions, and test the functionality.
+
+          Amazing work! You can follow the same kind of process every time you have a program to build.
+        instructor_notes: ''
+        resources: null
+      - id: 287810
+        key: 762b329d-d42d-443b-9a92-f5764e6395c0
+        locale: en-us
+        version: 1.0.0
+        title: Ud1110 IntroPy L250  End Of Lesson 2
+        semantic_type: VideoAtom
+        updated_at: 'Sun Jul 02 2017 03:49:46 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52073'
+          youtube_id: UhvyD_60esQ
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/March/58d40cbf_ud1110-intropy-l250-end-of-lesson-2/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cbf_ud1110-intropy-l250-end-of-lesson-2/ud1110-intropy-l250-end-of-lesson-2_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cbf_ud1110-intropy-l250-end-of-lesson-2/ud1110-intropy-l250-end-of-lesson-2_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cbf_ud1110-intropy-l250-end-of-lesson-2/ud1110-intropy-l250-end-of-lesson-2_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cbf_ud1110-intropy-l250-end-of-lesson-2/ud1110-intropy-l250-end-of-lesson-2_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d40cbf_ud1110-intropy-l250-end-of-lesson-2/hls/playlist.m3u8'
