@@ -2,14 +2,15 @@
 
 ## 试译流程
 
-到达这一步，你应该已经在 [Google Spreadsheets](https://docs.google.com/spreadsheets/d/1X2D_P4K9YJq6b189vztqHUPDmzsKYvEBW0HiYier8kY/edit?usp=sharing) 中认领了翻译和校对任务，并提交了截止日期。注：yaml 翻译和校对是可选任务，试译必选任务是 2 个字幕翻译和 2 个字幕校对。
+到达这一步，你应该已经在 [Google Spreadsheets](https://docs.google.com/spreadsheets/d/1X2D_P4K9YJq6b189vztqHUPDmzsKYvEBW0HiYier8kY/edit?usp=sharing) 中认领了翻译和校对任务，并提交了截止日期。注：yaml 翻译和校对是可选任务，试译必选任务是 1 个字幕翻译和 3 个字幕校对。
 现在你需要做的是：
 
 1. 使用 git 克隆 repo 至本地，创建新 branch。
 2. 找到相应 yaml 文档，开始校对和修改（请按照[此处的指南](https://gdgdocs.org/document/d/1UrAfW1EY3eaFh4b8LMevqpXL-BR-uuhEiX_fc-FOPLs/pub?embedded=true)校对 yaml 文档）
-3. 在截止日期前完成任务并提交 Pull Request
-4. 等待审核并修改
-5. 审核修改 2 次后达到 96 分即可毕业
+3. en-us 文件夹中是英文版本，zh-cn 中存放翻译后的中文版本，或者待校对的版本
+4. 在截止日期前完成任务并提交 Pull Request
+5. 等待审核并修改
+6. 审核修改 2 次后达到 96 分即可毕业
 
 
 ## 评分标准
