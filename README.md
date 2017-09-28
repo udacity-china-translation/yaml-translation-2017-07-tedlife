@@ -2,7 +2,7 @@
 
 ## 试译流程
 
-到达这一步，你应该已经在 [Google Spreadsheets](https://docs.google.com/spreadsheets/d/1X2D_P4K9YJq6b189vztqHUPDmzsKYvEBW0HiYier8kY/edit?usp=sharing) 中认领了翻译和校对任务，并提交了截止日期。注：yaml 翻译和校对是可选任务，试译必选任务是 1 个字幕翻译和 3 个字幕校对。
+到达这一步，你应该已经在 [Google Spreadsheets](https://docs.google.com/spreadsheets/d/1X2D_P4K9YJq6b189vztqHUPDmzsKYvEBW0HiYier8kY/edit?usp=sharing) 中认领了校对任务，并提交了截止日期。注：yaml 翻译是可选任务，试译必选任务是 1 个 yaml 校对和 2 个字幕校对。
 现在你需要做的是：
 
 1. 使用 git 克隆 repo 至本地，创建新 branch。
