@@ -1,0 +1,718 @@
+id: 385718
+key: 96707de3-075f-4621-858e-d2e3511d574f
+locale: en-us
+version: 1.0.0
+title: 关键指标
+semantic_type: Lesson
+updated_at: 'Mon Sep 11 2017 10:05:56 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: 学习如何使用一系列工具，确定网站与应用的流量、客户满意度、活跃度等等一般指标。
+lesson_type: Classroom
+duration: 180
+is_project_lesson: false
+career_portal_experience_levels: []
+_concepts_ids:
+  - 163544
+  - 163545
+  - 163542
+  - 163546
+  - 163552
+  - 163556
+  - 163554
+  - 163557
+  - 163558
+  - 163559
+_project_id: null
+concepts:
+  - id: 163544
+    key: '42928904300923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 关键指标概述
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:05:50 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163408
+    atoms:
+      - id: 163408
+        key: '4292890430'
+        locale: zh-cn
+        version: 1.0.0
+        title: 关键指标概述
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:05:50 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '32272'
+          youtube_id: xQm1x4IcSYs
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/subtitles/lang_id_vs2.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/subtitles/lang_tr_vs1.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/subtitles/lang_ar_vs5.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/subtitles/lang_ja_vs2.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/subtitles/lang_zh-cn_vs6.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/subtitles/lang_ko_vs3.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/subtitles/lang_pt-br_vs5.srt'
+              language_code: pt-br
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/key-business-metrics-key-metrics-lesson-overview-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/key-business-metrics-key-metrics-lesson-overview-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/key-business-metrics-key-metrics-lesson-overview-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/key-business-metrics-key-metrics-lesson-overview-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1d51d_key-business-metrics-key-metrics-lesson-overview-product-design-udacity/hls/playlist.m3u8'
+  - id: 163545
+    key: '42850402480923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 一般指标
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:05:51 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163409
+    atoms:
+      - id: 163409
+        key: '4285040248'
+        locale: zh-cn
+        version: 1.0.0
+        title: 一般指标
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:05:51 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |-
+          ### 净推荐值（NPS）
+
+          <a href="https://www.groovehq.com/blog/net-promoter-score" target="_blank">学习净推荐值</a><br>
+          <a href="http://en.wikipedia.org/wiki/Net_Promoter" target="_blank">净推荐值</a><br>
+          <a href="https://hbr.org/2003/12/the-one-number-you-need-to-grow" target="_blank">需要增长的数值（NPS）</a><br>
+
+          ### 用户留存率
+
+          <a href="http://www.nirandfar.com/2013/12/are-you-focusing-too-much-on-growth-how-to-measure-habits.html" target="_blank">如何测量增长：组群分析与留存率</a><br>
+          <a href="http://www.newnorth.com/how-to-calculate-metrics-for-customer-retention/" target="_blank">计算用户留存率（固定和滚动）</a><br>
+          <a href="http://www.evergage.com/blog/how-calculate-customer-retention/" target="_blank">如何计算用户留存率以及美元留存率</a><br>
+          <a href="http://www.vindicia.com/measuring-customer-retention-key-metrics-matter/" target="_blank">测量用户留存率：留存率与平均用户生命周期价值</a><br>
+
+          ### 其他指标
+
+          <a href="http://mashable.com/category/metrics-that-matter/" target="_blank">重要指标（数字营销者）</a><br>
+          <a href="http://www.richardprice.io/post/34652740246/growth-hacking-leading-indicators-of-engaged" target="_blank">增长密钥：用户首要指标</a><br>
+          <a href="http://gamua.com/blog/2013/06/key-performance-indicators-and-social-game-metrics/" target="_blank">社交游戏关键指标</a><br>
+          <a href="http://www.forentrepreneurs.com/saas-metrics/" target="_blank">SaaS 指标（软件即服务） — 测量并改善重要指标指南</a><br>
+
+          <a href="http://www.statista.com/statistics/260819/number-of-monthly-active-whatsapp-users/">WhatsApp 月度活跃用户来源</a>
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '37266'
+          youtube_id: VYWy66voBNU
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/subtitles/lang_zh-tw_vs2.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/subtitles/lang_pt-br_vs6.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/subtitles/lang_tr_vs5.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/subtitles/lang_ko_vs5.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/subtitles/lang_ja_vs3.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/subtitles/lang_ar_vs7.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/subtitles/lang_vi_vs6.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/subtitles/lang_id_vs3.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/common-business-metrics-key-business-metrics-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/common-business-metrics-key-business-metrics-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/common-business-metrics-key-business-metrics-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/common-business-metrics-key-business-metrics-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d28cd5_common-business-metrics-key-business-metrics-product-design-udacity/hls/playlist.m3u8'
+  - id: 163542
+    key: '42704202960923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 中心框架
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:05:52 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163410
+    atoms:
+      - id: 163410
+        key: '4270420296'
+        locale: zh-cn
+        version: 1.0.0
+        title: 中心框架
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:05:52 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |
+          @1:21 请原谅这个输入错误。“Task Sucess”应为“Task Success”。
+
+          <a href="http://www.gv.com/lib/how-to-choose-the-right-ux-metrics-for-your-product" target="_blank">如何为产品选择正确的用户体验指标</a> 作者：Kerry Rodden (Google Ventures)
+
+          <a href="http://www.dtelepathy.com/ux-metrics/#intro" target="_blank">中心框架（目标、信号、指标）</a>
+
+          <a href="http://www.nngroup.com/articles/usability-metrics/" target="_blank">易用性指标（Nielson 集团）</a>
+
+          <a href="https://medium.com/@joshelman/the-only-metric-that-matters-ab24a585b5ea" target="_blank">唯一重要指标（仔细确认指标）</a>
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '30950'
+          youtube_id: YugESrDVHuo
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/subtitles/lang_ja_vs12.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/subtitles/lang_id_vs2.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/subtitles/lang_pt-br_vs5.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/subtitles/lang_tr_vs3.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/subtitles/lang_ko_vs3.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/subtitles/lang_ar_vs3.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/the-heart-framework-key-business-metrics-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/the-heart-framework-key-business-metrics-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/the-heart-framework-key-business-metrics-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/the-heart-framework-key-business-metrics-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd0b_the-heart-framework-key-business-metrics-product-design-udacity/hls/playlist.m3u8'
+  - id: 163546
+    key: '42966703000923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 目标、信号、指标
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:05:52 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163411
+    atoms:
+      - id: 163411
+        key: '4296670300'
+        locale: zh-cn
+        version: 1.0.0
+        title: 'Goals, Signals, and Metrics'
+        semantic_type: QuizAtom
+        updated_at: 'Thu Sep 14 2017 07:17:51 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ## 下载“目标、信号、指标”模板，并在 HEART 框架的某些类别中撰写内容。
+          ## 思考下 2 或 3 个你认为需要测量的最重要的目标。
+          准备好继续后，请选中此方框。
+
+          <strong>信号与成功指标之间的区别是什么？</strong>
+
+          信号是指普遍出现让人满意的行为。
+          指标是针对预想行为的量化、数字化的输出。
+
+          <a href="https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd001/HEART+Framework+Goals+Signals+Metrics.docx" target="_blank">中心框架：目标、信号、指标</a>（计划模板）
+          信号是指普遍出现让人满意的行为。
+          指标是针对预想行为的量化、数字化的输出。
+        instruction:
+          video:
+            id: '26791'
+            youtube_id: OiLNIC1Gw7s
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/subtitles/lang_pt-br_vs6.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+                language_code: zh-tw
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/subtitles/lang_ja_vs10.srt'
+                language_code: ja
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/subtitles/lang_ar_vs3.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/subtitles/lang_ko_vs2.srt'
+                language_code: ko
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/subtitles/lang_es_vs1.srt'
+                language_code: es
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/subtitles/lang_vi_vs3.srt'
+                language_code: vi
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/subtitles/lang_tr_vs4.srt'
+                language_code: tr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+                language_code: en-us
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/subtitles/lang_id_vs5.srt'
+                language_code: id
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/subtitles/lang_fr_vs3.srt'
+                language_code: fr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/subtitles/lang_ru_vs2.srt'
+                language_code: ru
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/goals-signals-and-metrics-key-business-metrics-product-design-udacity_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/goals-signals-and-metrics-key-business-metrics-product-design-udacity_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/goals-signals-and-metrics-key-business-metrics-product-design-udacity_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/goals-signals-and-metrics-key-business-metrics-product-design-udacity_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a3f3_goals-signals-and-metrics-key-business-metrics-product-design-udacity/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 'Goals, Signals and Metrics'
+          background_image: '//lh3.googleusercontent.com/_u2pVXK7h0_TTLzxCL3PU_FKMnCXDgQ-OJxoBC8I2p86v4WDuJYIm0q4HupOpXfBnKgubZSj04plJ9YqIXo=s0#w=960&h=540'
+          alt_text: ''
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4329633166'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 163552
+    key: '42815207100923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 收集处理指标数据
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:05:53 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163418
+    atoms:
+      - id: 163418
+        key: '4281520710'
+        locale: zh-cn
+        version: 1.0.0
+        title: 收集处理指标数据
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:05:53 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |-
+          **分析工具**
+
+          <a href="https://mixpanel.com/" target="_blank">MixPanel</a>
+
+          <a href="https://www.google.com/admob/platform.html" target="_blank">AdMob</a>
+
+          <a href="http://www.qualtrics.com/" target="_blank">Qualtrics</a>
+
+          <a href="https://www.surveymonkey.com/" target="_blank">Survey Monkey</a>
+
+          <a href="https://www.google.com/forms/about/" target="_blank">Google Forms</a>
+
+          <a href="https://www.optimizely.com/" target="_blank">Optimizely</a>
+
+          **安装追踪**
+
+          <a href="https://support.google.com/tagmanager/answer/2574305" target="_blank">Google Tag Manager</a>
+           与 
+          <a href="https://support.google.com/tagmanager/answer/3002220?hl=en" target="_blank">视频</a>
+
+          网页GTM：https://support.google.com/tagmanager/answer/2574370?hl=en 
+
+          分析学：https://support.google.com/analytics/answer/1008080?hl=en
+
+          手机GTM：https://support.google.com/tagmanager/answer/3127354?hl=en
+
+          分析学：创建客户控制板！
+
+          **其他资源**
+
+          [发送 NPS 调查的最好方式](https://support.zendesk.com/hc/en-us/articles/203759086)
+
+          [使用 Google Analytics 进行组群分析](https://support.google.com/analytics/answer/6074676)
+
+          [A/B 测试介绍](http://usabilitygeek.com/introduction-a-b-testing/)
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '23160'
+          youtube_id: l6alL2fauAU
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/subtitles/lang_tr_vs5.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/subtitles/lang_pt-br_vs5.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/subtitles/lang_ko_vs4.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/subtitles/lang_fr_vs3.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/subtitles/lang_ja_vs11.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/subtitles/lang_ar_vs3.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1536e_collecting-and-accessing-data-on-metrics-key-business-metrics-product-design-udacity/hls/playlist.m3u8'
+  - id: 163556
+    key: '42815902360923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 行动指标与上线
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:05:53 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163420
+    atoms:
+      - id: 163420
+        key: '4281590236'
+        locale: zh-cn
+        version: 1.0.0
+        title: 行动指标与上线
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:05:53 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |-
+          <a href="http://practicetrumpstheory.com/3-rules-to-actionable-metrics/" target="_blank">行动指标的3大法则</a>
+
+          <a href="http://www.amazon.com/Inside-Intuit-Microsoft-Revolutionized-Industry/dp/1591391369" target="_blank">Intuit 内部：Quicken 制作人怎么打败微软并为整个行业带来革新</a>
+
+          <a href="http://paulgraham.com/equity.håtml" target="_blank">Paul Graham 谈论公平交易等式</a>
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '7198'
+          youtube_id: 1TiD49jrx8o
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/subtitles/lang_id_vs3.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/subtitles/lang_vi_vs3.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/subtitles/lang_pt-br_vs5.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/subtitles/lang_ar_vs5.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/subtitles/lang_ja_vs11.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/subtitles/lang_ko_vs19.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/subtitles/lang_tr_vs8.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/subtitles/lang_zh-tw_vs2.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/actionable-metrics-and-launch-key-business-metrics-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/actionable-metrics-and-launch-key-business-metrics-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/actionable-metrics-and-launch-key-business-metrics-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/actionable-metrics-and-launch-key-business-metrics-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0746a_actionable-metrics-and-launch-key-business-metrics-product-design-udacity/hls/playlist.m3u8'
+  - id: 163554
+    key: '42894006850923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 测量指标的资料
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:05:54 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163421
+    atoms:
+      - id: 163421
+        key: '4289400685'
+        locale: zh-cn
+        version: 1.0.0
+        title: 测量指标的资料
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 10:05:54 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          ## 测量指标的资料
+
+          学习如何建立使用 Google Analytics，查看 Google Play Services 课程的分析课程。
+
+          <a href="https://classroom.udacity.com/courses/ud876-2/lessons/3987338872/concepts/43335400350923" target="_blank">Google Play Services：分析学</a>
+
+          如果你有一款手机应用，查看 Google Play Services 课程的 Admob 一课。该课会讲述一些盈利战略。
+
+          <a href="https://classroom.udacity.com/courses/ud876-3/lessons/4000748701/concepts/43259996580923" target="_blank">Google Play Services: Admob</a>
+
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 163557
+    key: '42891204100923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 课程地图总结
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:05:54 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163422
+    atoms:
+      - id: 163422
+        key: '4289120410'
+        locale: zh-cn
+        version: 1.0.0
+        title: 课程地图总结
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:05:54 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '7340'
+          youtube_id: 2-Vu9mbM2Wg
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/subtitles/lang_vi_vs1.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/subtitles/lang_pt-br_vs5.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/subtitles/lang_ar_vs4.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/subtitles/lang_ja_vs2.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/subtitles/lang_ko_vs6.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/subtitles/lang_tr_vs3.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/subtitles/lang_fr_vs2.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/key-business-metrics-course-map-conclusion-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/key-business-metrics-course-map-conclusion-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/key-business-metrics-course-map-conclusion-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/key-business-metrics-course-map-conclusion-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07551_key-business-metrics-course-map-conclusion-product-design-udacity/hls/playlist.m3u8'
+  - id: 163558
+    key: '42847203700923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 关键指标回顾
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:05:55 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163423
+    atoms:
+      - id: 163423
+        key: '4284720370'
+        locale: zh-cn
+        version: 1.0.0
+        title: 关键指标回顾
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:05:55 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '8295'
+          youtube_id: 46YZ_kDONAM
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/subtitles/lang_vi_vs1.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/subtitles/lang_pt-br_vs5.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/subtitles/lang_ar_vs4.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/subtitles/lang_zh-cn_vs6.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/subtitles/lang_ja_vs2.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/subtitles/lang_ko_vs2.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/subtitles/lang_tr_vs2.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/subtitles/lang_fr_vs2.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/key-business-metrics-lesson-recap-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/key-business-metrics-lesson-recap-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/key-business-metrics-lesson-recap-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/key-business-metrics-lesson-recap-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07bd9_key-business-metrics-lesson-recap-product-design-udacity/hls/playlist.m3u8'
+  - id: 163559
+    key: '43404785350923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 'End of Lesson Notes [HIDE]'
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:05:55 GMT+0000 (UTC)'
+    is_public: false
+    resources: null
+    _atoms_ids:
+      - 163424
+    atoms:
+      - id: 163424
+        key: '4340478535'
+        locale: zh-cn
+        version: 1.0.0
+        title: 'End of Lesson Notes [HIDE]'
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 10:05:55 GMT+0000 (UTC)'
+        is_public: true
+        text: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null

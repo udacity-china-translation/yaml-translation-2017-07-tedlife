@@ -1,0 +1,2282 @@
+id: 384054
+key: 058d4f43-2d09-4024-9ba2-d98db9964aa5
+locale: en-us
+version: 1.0.0
+title: UI 和 UX
+semantic_type: Lesson
+updated_at: 'Mon Sep 11 2017 10:04:22 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: 不仅仅考虑视觉样式，深入理解如何通过材料设计、无障碍、用户流程和用户角色设计强化你的产品。
+lesson_type: Classroom
+duration: 260
+is_project_lesson: false
+career_portal_experience_levels: []
+_concepts_ids:
+  - 384055
+  - 163429
+  - 163426
+  - 163427
+  - 163476
+  - 163477
+  - 163480
+  - 163478
+  - 163479
+  - 163481
+  - 163482
+  - 163483
+  - 163484
+  - 163485
+  - 163487
+  - 163488
+  - 163486
+  - 163489
+  - 163492
+  - 163491
+  - 163493
+  - 163494
+  - 163495
+  - 163496
+  - 163497
+  - 163498
+  - 163499
+  - 163501
+  - 163504
+  - 163506
+  - 163508
+_project_id: null
+concepts:
+  - id: 384055
+    key: 8d3628f5-6e77-4c4b-9b03-d97b4db65825
+    locale: en-us
+    version: 1.0.0
+    title: 欢迎
+    semantic_type: Concept
+    updated_at: 'Thu Sep 14 2017 05:30:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 384061
+    atoms:
+      - id: 384061
+        key: 5e5faf0b-a946-4c63-a863-3fc0194b9e34
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Sep 12 2017 03:18:08 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 欢迎
+
+          ## 课程概述
+
+          - 在本课程中，你将与 **Amir Shevat** 和 **Chris Saden** 一起学习。
+          - 你将学到如何操作用户界面/实践用户体验、使用 Google 的设计冲刺，以及设定和追踪行动指标等相关内容。
+
+          <br>
+
+          **Amir Shevat**：讲师；**Chris Saden**：课程开发
+
+
+
+          ## 学习计划
+
+          ### 用户体验与用户界面
+
+          本课将带你越过视觉样式，了解用于无障碍、用户流程、用户角色设计的 Material Design。你将学习如何制定设计决策，向 Google 高级设计师学习如何利用设计凸显产品功能。
+
+          ### 设计冲刺
+
+          设计冲刺由 Google Ventures 研发，广泛应用于创意设计，原型制作和用户体验，深受研发团队青睐。在本课中，Google 设计冲刺首席设计师将一步步带你完成产品创意的确认和产品模型的建立。
+          ### 关键指标
+
+          在最后一课中，你将学会如何识别网站与应用的流量、客户满意度、互动度等等一般指标。你还将学习监测指标的工具以及创业公司不测量哪些指标的实例。
+
+
+          接下来，让我们与几个创业公司聊一聊，听听他们是如何制作和改善产品的。
+        instructor_notes: ''
+        resources: null
+  - id: 163429
+    key: '43249887560923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 创业公司介绍：Optimizely
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163290
+    atoms:
+      - id: 163290
+        key: '4324988756'
+        locale: zh-cn
+        version: 1.0.0
+        title: 创业公司介绍：Optimizely
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:03 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: '创立于 2010 年，Optimizely 至今已通过 5 轮融资获得 8820 万美元。在旧金山与阿姆斯特丹都设有公司。了解更多信息，请访问 Optimizely [官方网站](https://www.optimizely.com/)。'
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '5067'
+          youtube_id: vNHbgZYlDu8
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/subtitles/lang_ru_vs11.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/subtitles/lang_fr_vs6.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/subtitles/lang_tr_vs3.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/subtitles/lang_ko_vs3.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/subtitles/lang_ja_vs6.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/subtitles/lang_zh-cn_vs3.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/subtitles/lang_ar_vs3.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/subtitles/lang_pt-br_vs70.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/subtitles/lang_vi_vs3.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/subtitles/lang_es_vs6.srt'
+              language_code: es
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/pete-koomen-tells-optimizely-a-b-testing-story-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/pete-koomen-tells-optimizely-a-b-testing-story-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/pete-koomen-tells-optimizely-a-b-testing-story-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/pete-koomen-tells-optimizely-a-b-testing-story-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfbc37_pete-koomen-tells-optimizely-a-b-testing-story-udacity/hls/playlist.m3u8'
+  - id: 163426
+    key: '43149787240923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 创业公司介绍：Locket
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:04 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163293
+    atoms:
+      - id: 163293
+        key: '4314978724'
+        locale: zh-cn
+        version: 1.0.0
+        title: 创业公司介绍：Locket
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:03 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: 'Locket 通过种子基金筹集了 370 万美元，本部位于旧金山。该应用被 Google 选为“2014 年最佳应用”之一。了解更多相关信息，[点击这里](http://getlocket.com/)。'
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '38274'
+          youtube_id: wXU2WFG6TzE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/subtitles/lang_zh-cn_vs4.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/subtitles/lang_es_vs4.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/subtitles/lang_vi_vs5.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/subtitles/lang_ko_vs3.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/subtitles/lang_ru_vs21.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/subtitles/lang_pt-br_vs12.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/subtitles/lang_ar_vs7.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/subtitles/lang_ja_vs3.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/subtitles/lang_zh-cn_vs3.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/subtitles/lang_tr_vs5.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/subtitles/lang_fr_vs3.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/startup-introduction-locket-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/startup-introduction-locket-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/startup-introduction-locket-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/startup-introduction-locket-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29ecb_startup-introduction-locket-udacity/hls/playlist.m3u8'
+  - id: 163427
+    key: '43049890850923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 讲师简介
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:04 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163294
+    atoms:
+      - id: 163294
+        key: '4304989085'
+        locale: zh-cn
+        version: 1.0.0
+        title: 讲师简介
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:04 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '14093'
+          youtube_id: cbBia8lRST4
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/subtitles/lang_es_vs6.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/subtitles/lang_ja_vs3.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/subtitles/lang_vi_vs3.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/subtitles/lang_pt-br_vs6.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/subtitles/lang_ar_vs4.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/subtitles/lang_zh-cn_vs7.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/subtitles/lang_ko_vs3.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/subtitles/lang_tr_vs4.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/subtitles/lang_zh-tw_vs3.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/subtitles/lang_en_vs3.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/subtitles/lang_fr_vs4.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/subtitles/lang_ru_vs5.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/instructor-introductions-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/instructor-introductions-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/instructor-introductions-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/instructor-introductions-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a712_instructor-introductions-product-design-udacity/hls/playlist.m3u8'
+  - id: 163476
+    key: '43859288700923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 用户体验设计
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:05 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163341
+    atoms:
+      - id: 163341
+        key: '4385928870'
+        locale: zh-cn
+        version: 1.0.0
+        title: User Experience Design
+        semantic_type: QuizAtom
+        updated_at: 'Thu Sep 14 2017 05:53:54 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |+
+          ## 以下哪 **5 个核心概念**属于 Richard 对用户设计体验定义的一部分？请选中所有适用项。
+
+          * 背景信息
+          * 工具
+          * 目标  
+          * 用户
+          * 人物角色
+          * 可用性测试
+          * 屏幕 
+          * 用途模式
+          * 任务
+          * 尤达
+
+        instruction:
+          video:
+            id: '12230'
+            youtube_id: A_gHQq9iLxg
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/subtitles/lang_es_vs21.srt'
+                language_code: es
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/subtitles/lang_id_vs2.srt'
+                language_code: id
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+                language_code: zh-tw
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs7.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs3.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs1.srt'
+                language_code: ja
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs1.srt'
+                language_code: ko
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+                language_code: en-us
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs4.srt'
+                language_code: tr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+                language_code: fr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs1.srt'
+                language_code: ru
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/user-experience-design-ux-ui-design-product-design-udacity_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/user-experience-design-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/user-experience-design-ux-ui-design-product-design-udacity_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/user-experience-design-ux-ui-design-product-design-udacity_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f3e_user-experience-design-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+          text: null
+        question:
+          title: User Experience Design
+          background_image: '//lh3.googleusercontent.com/KY-dB0yYLj4K823wx2kMasE3FMog2z3tn-mXdl57lCZRCZ9cUPzOUfwkysfWjxy99GBnLQCwrAsJT9d8VQ=s0#w=1364&h=767'
+          alt_text: ''
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4368174536'
+        answer:
+          text: |-
+            Richard described user experience design as the study of <strong>users</strong> in their <strong>context</strong> in order that others can design <strong>tools</strong> so that the users can complete **tasks** to achieve <strong>goals</strong>.
+
+            context  
+            goals  
+            <s>personas</s>  
+            <s>screens</s>  
+            tasks  
+            <br>
+            tools  
+            users  
+            <s>usability tests</s>  
+            <s>usage patterns</s>  
+            <s>yoda</s>
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 163477
+    key: '43856288310923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 交互设计与任务
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:05 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163342
+    atoms:
+      - id: 163342
+        key: '4385628831'
+        locale: zh-cn
+        version: 1.0.0
+        title: Interaction Design and Tasks
+        semantic_type: QuizAtom
+        updated_at: 'Thu Sep 14 2017 06:05:48 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |
+          ## 思考下用户在 Grocery Shopping App 中会执行的一项任务。例如，用户需要提供付款方式才能购买商品。对于你的任务，请在论坛话题“Interaction Design for the Shopping App”上回答以下问题。
+
+          * 用户需要做什么？
+          * 系统如何做出响应？
+          * 互动看起来怎样？
+
+          准备好继续后，请选中此方框。
+        instruction:
+          video:
+            id: '11819'
+            youtube_id: _vsbkvm1w4w
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs1.srt'
+                language_code: ko
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs4.srt'
+                language_code: tr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+                language_code: fr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+                language_code: en-us
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs7.srt'
+                language_code: ru
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+                language_code: zh-tw
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/subtitles/lang_id_vs1.srt'
+                language_code: id
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs1.srt'
+                language_code: ja
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs2.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs7.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs2.srt'
+                language_code: vi
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/subtitles/lang_es_vs5.srt'
+                language_code: es
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/interaction-design-and-tasks-ux-ui-design-product-design-udacity_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/interaction-design-and-tasks-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/interaction-design-and-tasks-ux-ui-design-product-design-udacity_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/interaction-design-and-tasks-ux-ui-design-product-design-udacity_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09d5d_interaction-design-and-tasks-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+          text: null
+        question:
+          title: Interaction Design and Tasks
+          background_image: '//lh3.googleusercontent.com/7yt1TWUtkkWtMoeL9ea36gNQL3k7N4QOYLNfAcHPrmBfrGxqhN6uiKevyX2eNnLO1doU1gOpI70X0F78Axpp=s0#w=1920&h=1080'
+          alt_text: ''
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4391458544'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 163480
+    key: '43273329830923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 设计流程与用户测试
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:06 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163343
+    atoms:
+      - id: 163343
+        key: '4327332983'
+        locale: zh-cn
+        version: 1.0.0
+        title: 设计流程与用户测试
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:06 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '30946'
+          youtube_id: YpMXmsD3mYA
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs18.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs5.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs10.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs9.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs26.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs3.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs9.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/subtitles/lang_id_vs7.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs7.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/subtitles/lang_es_vs12.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs12.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/designing-experience-and-user-testing-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/designing-experience-and-user-testing-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/designing-experience-and-user-testing-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/designing-experience-and-user-testing-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1cd05_designing-experience-and-user-testing-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163478
+    key: '43024487460923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 设计的不同类型
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:06 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163344
+    atoms:
+      - id: 163344
+        key: '4302448746'
+        locale: zh-cn
+        version: 1.0.0
+        title: 设计的不同类型
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:06 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '10720'
+          youtube_id: 8wx6ViiEOec
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/subtitles/lang_es_vs10.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/subtitles/lang_id_vs8.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs10.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs8.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs4.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs5.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs3.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs1.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs3.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs18.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/design-types-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/design-types-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/design-types-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/design-types-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0988c_design-types-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163479
+    key: '42897789710923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 材料设计
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:07 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163345
+    atoms:
+      - id: 163345
+        key: '4289778971'
+        locale: zh-cn
+        version: 1.0.0
+        title: 材料设计
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:07 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          <a href="http://www.google.com/design/" target="_blank">Google 设计</a>
+
+          <a href="https://s3.cn-north-1.amazonaws.com.cn/u-vid/Q8TXgCzxEnw.mp4" target="_blank">Material Design 介绍视频</a>
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '14465'
+          youtube_id: cNVD_Thus0Q
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs3.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs7.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs3.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs4.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs4.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs6.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs6.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs2.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs20.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/material-design-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/material-design-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/material-design-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/material-design-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0ac11_material-design-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163481
+    key: '42704189260923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 无障碍设计
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:09 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163346
+    atoms:
+      - id: 163346
+        key: '4270418926'
+        locale: zh-cn
+        version: 1.0.0
+        title: 无障碍设计
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:08 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |-
+          <a href="http://en.wikipedia.org/wiki/Universal_design" target="_blank">通用设计</a>
+
+          @3:31 “全面看待残疾率”柱形图根据以下来源的数据制作：世界卫生组织残疾人报告（2013 年）以及本土语言的<a href="http://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers" target="_blank">维基百科</a>（2007 年 10 月）
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '22445'
+          youtube_id: Kh8jpza2C4M
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs8.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/subtitles/lang_es_vs7.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs5.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs8.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs14.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs10.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs2.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs3.srt'
+              language_code: ja
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/accessible-design-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/accessible-design-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/accessible-design-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/accessible-design-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d14549_accessible-design-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163482
+    key: '43420487790923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 无障碍基础知识
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:09 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163347
+    atoms:
+      - id: 163347
+        key: '4342048779'
+        locale: zh-cn
+        version: 1.0.0
+        title: 无障碍基础知识
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:09 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |-
+          <a href="http://www.google.com/design/spec/usability/accessibility.html" target="_blank">无障碍与易用性 — 设计指南</a>（Google）
+
+          <a href="https://developer.apple.com/accessibility/ios/" target="_blank">iOS开发者的无障碍设计</a>（Apple）
+
+          <a href="http://www.w3.org/TR/WCAG20/" target="_blank">网站内容无障碍指南 2.0</a>
+
+          <a href="https://chrome.google.com/webstore/detail/see/dkihcccbkkakkbpikjmpnbamkgbjfdcn?hl=en" target="_blank">参见 Chrome 扩展</a>
+
+          <a href="http://uxmyths.com/post/702066202/myth-6-accessible-sites-are-ugly" target="_blank">迷思：无障碍网址比较难看</a>（UXMyths）
+
+          <a href="http://colorsafe.co/" target="_blank">无障碍设计调色板</a>
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '5555'
+          youtube_id: ucz_noHdq7Y
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs16.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs5.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs6.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs3.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs10.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs3.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs7.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs2.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/subtitles/lang_es_vs18.srt'
+              language_code: es
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/accessibility-basics-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/accessibility-basics-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/accessibility-basics-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/accessibility-basics-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d03560_accessibility-basics-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163483
+    key: '43690485730923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 无障碍产品与指南
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:10 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163348
+    atoms:
+      - id: 163348
+        key: '4369048573'
+        locale: zh-cn
+        version: 1.0.0
+        title: 无障碍产品与指南
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:09 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |-
+          元素应有背景提示，让屏幕阅读器为用户提供导航。（例如“下一页”和“后 50 封邮件”）。
+
+          手机页面的点击对象应为较大设计，并且在点击对象之间保留足够的空间，让用户能够轻松点击。
+
+          颜色对比度应达到特定比。标准<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target="_blank">由网站内容无障碍指南确定</a>。
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '12198'
+          youtube_id: aB7TXIS4Txg
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/subtitles/lang_es_vs13.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/subtitles/lang_id_vs1.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs1.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs15.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs2.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs1.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs1.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs2.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/accessible-products-guidelines-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/accessible-products-guidelines-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/accessible-products-guidelines-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/accessible-products-guidelines-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09f2b_accessible-products-guidelines-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163484
+    key: '42773489570923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 为所有用户设计：无障碍
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:10 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163349
+    atoms:
+      - id: 163349
+        key: '4277348957'
+        locale: zh-cn
+        version: 1.0.0
+        title: 为所有用户设计：无障碍
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:10 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |
+          <a href="http://www.google.com/design/spec/usability/accessibility.html" target="_blank">无障碍与易用性 — 设计指南</a>（Google）
+
+          <a href="https://developer.apple.com/accessibility/ios/" target="_blank">iOS开发者的无障碍设计</a>（Apple）
+
+          <a href="http://www.w3.org/TR/WCAG20/" target="_blank">网站内容无障碍指南 2.0</a>
+
+          <a href="https://chrome.google.com/webstore/detail/see/dkihcccbkkakkbpikjmpnbamkgbjfdcn?hl=en" target="_blank">参见 Chrome 扩展</a>
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '33708'
+          youtube_id: s4gfRGjm83c
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs3.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/subtitles/lang_id_vs6.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs18.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs4.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs5.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs2.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs3.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs8.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/accessibility-designing-for-all-users-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/accessibility-designing-for-all-users-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/accessibility-designing-for-all-users-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/accessibility-designing-for-all-users-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e500_accessibility-designing-for-all-users-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163485
+    key: '43121787150923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 无障碍产品与辅助技术
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:11 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163350
+    atoms:
+      - id: 163350
+        key: '4312178715'
+        locale: zh-cn
+        version: 1.0.0
+        title: Accessible Products & Assistive Tech
+        semantic_type: QuizAtom
+        updated_at: 'Thu Sep 14 2017 06:09:23 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          ## 使用一种辅助技术和你最喜欢的一种移动应用或网站完成任务。
+          ## 在使用无障碍工具的过程中，回答以下问题。
+          * 你能找到所有关键内容吗？
+          * 能够浏览页面并找到所需的链接吗？
+          * 能轻松地完成所选的任务吗？
+
+          准备好继续后，请选中此方框。
+
+          <a href="http://discussions.udacity.com/t/lesson-2-accessible-products-and-assistive-technology/20404" target="_blank">http://discussions.udacity.com/t/lesson-2-accessible-products-and-assistive-technology/20404</a>
+
+          <a href="http://www.google.com/design/spec/usability/accessibility.html" target="_blank">Accessibility and Usability - Design Guidelines</a> (Google)
+
+          <a href="https://developer.apple.com/accessibility/ios/" target="_blank">Accessibility for iOS Developers</a> (Apple)
+
+          <a href="http://www.w3.org/TR/WCAG20/" target="_blank">Web Content Accessibility Guidelines 2.0</a>
+
+          <a href="https://chrome.google.com/webstore/detail/see/dkihcccbkkakkbpikjmpnbamkgbjfdcn?hl=en" target="_blank">SEE Chrome Extension</a>
+          <a href="https://youtu.be/euEsfNR5Zw4" target="_blank">Improve Your Android App's Accessibility</a> (Google I/O 2015 Video 41:18)
+        instruction:
+          video:
+            id: '10684'
+            youtube_id: 8Tzk6LLqLU0
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/subtitles/lang_es_vs1.srt'
+                language_code: es
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/subtitles/lang_id_vs5.srt'
+                language_code: id
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs4.srt'
+                language_code: vi
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs7.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs3.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs5.srt'
+                language_code: ja
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs4.srt'
+                language_code: ko
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+                language_code: en-us
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs2.srt'
+                language_code: tr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+                language_code: zh-tw
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+                language_code: fr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs11.srt'
+                language_code: ru
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0986f_accessible-products-and-assistive-tech-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+          text: null
+        question:
+          title: Accessible Products and Assistive Tech
+          background_image: '//lh3.googleusercontent.com/QdxXjwA-IIunv_l_YyMWRxj7SL1of9p-lUMvg2kXBBHM-KtaHRfgLVHAIHSxATLm6MkDpxEoyh3HGqtAl04=s0#w=960&h=540'
+          alt_text: ''
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4373788579'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 163487
+    key: '42845985390923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 角色模型与无障碍
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:12 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163351
+    atoms:
+      - id: 163351
+        key: '4284598539'
+        locale: zh-cn
+        version: 1.0.0
+        title: 角色模型与无障碍
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:11 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |-
+          <a href="http://uxmyths.com/post/654091803/myth-5-accessibility-is-expensive-and-difficult" target="_blank">迷思：无障碍设计成本高且困难</a>（UXMyths）
+
+          <a href="http://www.slideshare.net/whitneyq/personas-for-accessible-ux" target="_blank">可及性用户体验的人物角色</a>（slideshare）
+
+          <a href="https://eone-time.com/" target="_blank">Bradley 手表</a>
+
+          ------
+
+          ### 无障碍用户研究创意
+
+          我们在这里提供一些创意，帮助你找到无障碍问题的用户测试你的设计。
+
+          1. 通过你的网络，找你认识的可能比你大点或有轻微障碍的人。 
+          2.老年人服务社区，譬如养老院或退休服务等。
+          3. 残疾人帮助中心，比如[残疾人中心](http://www.cpdusu.org/)等
+          4. 领英集团加强无障碍设计
+          5. 编写无障碍设计的制作人与用户体验设计师。他们知道应找寻哪些人帮助你进行无障碍设计测试。
+          6. 推广无障碍的组织，例如 [Web Accessibility Group
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '37516'
+          youtube_id: Waox0ifId6k
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs2.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs16.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs8.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs10.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/subtitles/lang_id_vs6.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs7.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs11.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/subtitles/lang_es_vs17.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs9.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs9.srt'
+              language_code: ko
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/personas-and-accessibility-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/personas-and-accessibility-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/personas-and-accessibility-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/personas-and-accessibility-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d29125_personas-and-accessibility-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163488
+    key: '42932789630923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 角色模型与用户流
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:12 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163352
+    atoms:
+      - id: 163352
+        key: '4293278963'
+        locale: zh-cn
+        version: 1.0.0
+        title: Personas and User Flows
+        semantic_type: QuizAtom
+        updated_at: 'Thu Sep 14 2017 06:12:01 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: "## 创建一个人物角色和用户流程（一组草稿或框架），显示用户如何在主导航界面或产品流程中完成任务和进行互动。\n\t\n准备好继续后，请选中此方框。\n\n<a href=\"https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd001/Shopping+App+User+Journey.pdf\" target=\"_blank\">杂货购物应用用户流程</a> 创建：<a href=\"https://drive.draw.io/\" target=\"_blank\">Draw.io</a>\n\n<a href=\"https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd001/Shopping+App+Personas.pdf\" target=\"_blank\">杂货购物应用角色模型</a>\n\n<em>请注意杂货购物应用的用户流程仅考虑了用户与设备（或电脑）的互动。整个用户流程还应包括人与人的互动以及电脑与电脑间的互动。</em>\n\n<a href=\"http://conversionxl.com/how-to-design-user-flow/\" target=\"_blank\">如何设计用户流程</a>\n\n<br>\n\n<a href=\"http://mcf-design.com/project/retail-user-flow/\" target=\"_blank\">移动端结帐流程</a>\n\n<a href=\"http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2015/03/experience-maps.jpg\" target=\"_blank\">手机与互联网服务用户流程</a>"
+        instruction:
+          video:
+            id: '37573'
+            youtube_id: wClXAzTFUIY
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/subtitles/lang_es_vs1.srt'
+                language_code: es
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+                language_code: zh-tw
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+                language_code: en-us
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+                language_code: fr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs3.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs2.srt'
+                language_code: ko
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/subtitles/lang_id_vs5.srt'
+                language_code: id
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs2.srt'
+                language_code: tr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs5.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs2.srt'
+                language_code: ja
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs7.srt'
+                language_code: ru
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs3.srt'
+                language_code: vi
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/personas-and-user-flows-ux-ui-design-product-design-udacity_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/personas-and-user-flows-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/personas-and-user-flows-ux-ui-design-product-design-udacity_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/personas-and-user-flows-ux-ui-design-product-design-udacity_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d2921d_personas-and-user-flows-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+          text: null
+        question:
+          title: Personas and User Flows
+          background_image: '//lh3.googleusercontent.com/g3yUAOTQIhUCrzILapBpqH79kjOeOJBg30NR_RvmhBf_CmifKwgRSvxgH6v2w6bWA1Yh5873dVsyii5IgMnJ=s0#w=960&h=540'
+          alt_text: ''
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4325162856'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 163486
+    key: '43099885430923'
+    locale: zh-cn
+    version: 1.0.0
+    title: Optimizely 与用户体验
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:13 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163353
+    atoms:
+      - id: 163353
+        key: '4309988543'
+        locale: zh-cn
+        version: 1.0.0
+        title: Optimizely 与用户体验
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:13 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '7581'
+          youtube_id: 2saoXF74KHw
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs4.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs4.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs3.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs6.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs2.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs2.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs18.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/optimizely-and-the-user-experience-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/optimizely-and-the-user-experience-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/optimizely-and-the-user-experience-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/optimizely-and-the-user-experience-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07707_optimizely-and-the-user-experience-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163489
+    key: '42961389050923'
+    locale: zh-cn
+    version: 1.0.0
+    title: Locket 与用户体验
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:14 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163354
+    atoms:
+      - id: 163354
+        key: '4296138905'
+        locale: zh-cn
+        version: 1.0.0
+        title: Locket 与用户体验
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:13 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '25119'
+          youtube_id: n6AatCgHmUs
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs10.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs6.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs5.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs3.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs31.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs2.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/subtitles/lang_es_vs2.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs4.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs4.srt'
+              language_code: vi
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/user-experience-locket-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/user-experience-locket-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/user-experience-locket-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/user-experience-locket-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d17c5f_user-experience-locket-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163492
+    key: '42721806730923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 课程地图回顾
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:14 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163356
+    atoms:
+      - id: 163356
+        key: '4272180673'
+        locale: zh-cn
+        version: 1.0.0
+        title: 课程地图回顾
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:14 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '28045'
+          youtube_id: zamWkGAq9eY
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/subtitles/lang_ja_vs2.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/subtitles/lang_fr_vs2.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/subtitles/lang_ko_vs2.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/subtitles/lang_vi_vs3.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/subtitles/lang_pt-br_vs6.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/subtitles/lang_tr_vs4.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/subtitles/lang_ar_vs3.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/product-design-ux-and-ui-design-course-map-revisited-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/product-design-ux-and-ui-design-course-map-revisited-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/product-design-ux-and-ui-design-course-map-revisited-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/product-design-ux-and-ui-design-course-map-revisited-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b4db_product-design-ux-and-ui-design-course-map-revisited-udacity/hls/playlist.m3u8'
+  - id: 163491
+    key: '42991189790923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 用户体验部件
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:15 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163357
+    atoms:
+      - id: 163357
+        key: '4299118979'
+        locale: zh-cn
+        version: 1.0.0
+        title: 用户体验部件
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:15 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '13692'
+          youtube_id: BvqEwFHyqUc
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs6.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs4.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs2.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs4.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs2.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs8.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/user-experience-components-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/user-experience-components-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/user-experience-components-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/user-experience-components-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a5c5_user-experience-components-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163493
+    key: '43031373200923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 一般设计元素
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:15 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163358
+    atoms:
+      - id: 163358
+        key: '4303137320'
+        locale: zh-cn
+        version: 1.0.0
+        title: 一般设计元素
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 10:04:15 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 一般设计元素
+
+          以下是讨论网页和应用设计时经常遇见的术语。在观看下一个视频之前复习这些术语。
+
+          ### 软文
+
+          是指产品的书写材料（与图片或版面其他元素相对）。
+
+          ### 标题
+
+          传递公司或产品信息的文字；不同的产品和用户目的会使用不同的标题；请做出明智的选择。
+
+          资源：<a href="https://blog.kissmetrics.com/ultimate-home-page-headline/" target="_blank">最终首页标题</a>
+
+          ### 副标题
+
+          副标题为解释产品主要作用与目的的短语。副标题非常重要，这是人们浏览网站时，尤其是对初次访问的访客，了解你的产品的第一步。
+
+          资源：<a href="http://intuitivewebsites.com/articles/website-taglines/" target="_blank">网站副标题</a>  (需翻墙)
+
+          资源：<a href="http://www.1stwebdesigner.com/20-great-headline-copy/" target="_blank">创建让人记忆深刻的标题/副标题：20 个很好的例子</a>
+
+          ### 价值主张
+
+          承诺要传递的价值。客户相信将要得到和经历的价值。价值主张可运用于整个组织或组织的部分，或客户，或产品或服务。
+
+          ### 非首屏
+
+          是指不滚动时在页面上不显眼的区域；很多网站的首页都包含有额外的“非首屏”的内容。
+
+          ### 行为召唤（CTA）
+
+          是指让用户立即给出反应的提示，一般使用祈使语气动词，例如“现在拨打”，“注册”，“现在购买”，或“访问今日商店”；一般以按钮形式出现。
+        instructor_notes: '资源：<a href="http://www.copyblogger.com/call-to-action-buttons/" target="_blank">改进转化：行为召唤按钮</a>'
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 163494
+    key: '42997789480923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 首页设计
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:16 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163359
+    atoms:
+      - id: 163359
+        key: '4299778948'
+        locale: zh-cn
+        version: 1.0.0
+        title: Homepage Design
+        semantic_type: QuizAtom
+        updated_at: 'Thu Sep 14 2017 06:14:26 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: "## 分析三个相对新的公司的首页。对于每个首页，问自己：\n1.\t首页由哪些元素组成？\n2.\t有哪些主要行为号召？\n3.\t首页对公司、其用户和价值主张有何介绍？\n4.\t首页的最可能流程是什么？句话说，你可以在首页上执行什么操作？\n5.\t这些首页之间有何相同点和差别？\n请在论坛上分享这些问题的答案。\n准备好继续后，请选中此方框。\n\n\n<a href=\"http://blog.hubspot.com/blog/tabid/6307/bid/34006/15-Examples-of-Brilliant-Homepage-Design.aspx\" target=\"_blank\">绝佳首页的 15 个例子</a>\n\n[首页设计的 5 个最佳实践](http://blog.hubspot.com/customers/bid/109553/5-Homepage-Design-Best-Practices)\n\n<a href=\"http://www.streamcreative.com/blog/bid/57063/9-Steps-to-Optimize-Your-Website-s-Homepage\" target=\"_blank\">9 步优化你的首页</a>\n\n<a href=\"http://outside.hotjar.com/2014/08/07/we-analyzed-the-homepages-of-30-successful-startups-and-here-is-what-we-learnt\" target=\"_blank\">20 家 SaaS（软件即服务）创业公司的首页</a>\n\n<a href=\"http://uxmovement.com/content/bad-design-practices-to-avoid-on-your-home-page/\" target=\"_blank\">需避免的首页设计实践</a>\n\n<a href=\"http://uxmag.com/articles/when-design-best-practices-become-performance-worst-practices\" target=\"_blank\">当最佳设计实践成为最差表现实践</a>\n\n<a href=\"http://www.copyblogger.com/call-to-action-buttons/\">提高转化：行为召唤按钮</a>\n\n<a href=\"https://signalvnoise.com/posts/1525-writing-decisions-headline-tests-on-the-highrise-signup-page\" target=\"_blank\">Highrise 注册页面的 A/B 测试标题</a>"
+        instruction:
+          video:
+            id: '24907'
+            youtube_id: mUawnZ_MBmw
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/subtitles/lang_es_vs1.srt'
+                language_code: es
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+                language_code: en-us
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs3.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs2.srt'
+                language_code: tr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+                language_code: fr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs4.srt'
+                language_code: ko
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs2.srt'
+                language_code: zh-tw
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/subtitles/lang_id_vs4.srt'
+                language_code: id
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs10.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs6.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs3.srt'
+                language_code: vi
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs20.srt'
+                language_code: ru
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs3.srt'
+                language_code: ja
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/homepage-design-ux-ui-design-product-design-udacity_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/homepage-design-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/homepage-design-ux-ui-design-product-design-udacity_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/homepage-design-ux-ui-design-product-design-udacity_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d175f4_homepage-design-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+          text: null
+        question:
+          title: Homepage Design
+          background_image: '//lh3.googleusercontent.com/8l5BA8gJ1rCeKKT0uypgIjg1eCfsMsGrEAkQcHkcEL4fHn4wvKoCmVEOrPZtj7NujFtZMgj3FaVqpLuCYg=s0#w=960&h=540'
+          alt_text: ''
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4326103110'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 163495
+    key: '42887887420923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 注册与新手入门
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:17 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163360
+    atoms:
+      - id: 163360
+        key: '4288788742'
+        locale: zh-cn
+        version: 1.0.0
+        title: 注册与新手入门
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:16 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |-
+          <a href="http://www.useronboard.com/onboarding-teardowns/" target="_blank">流行网站如何引导用户</a>
+
+          <a href="http://uxarchive.com/tasks/onboarding" target="_blank">用户体验档案：新手入门</a>
+
+          <a href="http://www.fastcodesign.com/3043865/4-ways-to-design-better-login-screens" target="_blank">4 种设计更好登录页面的方法</a>（以 GoSquared 为例）
+
+          <a href="https://medium.com/yammer-product/testing-yammers-signup-flow-13eeb6435a73" target="_blank">测试 Yammers 的注册流程</a>
+
+          <a href="http://www.90percentofeverything.com/2009/04/16/five-ux-antipatterns-to-avoid-when-designing-log-in-registration-areas/" target="_blank">5 种注册页面的用户体验的反面模式</a>
+
+          <a href="http://firsttimeux.tumblr.com/" target="_blank">第一次用户体验</a>
+
+          <a href="http://www.designreviewpodcast.com/03/10/2015/episode-18-onboarding/" target="_blank">Design Review Podcast：新手入门</a>
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '14783'
+          youtube_id: CY7Vt_oh4Bk
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/subtitles/lang_id_vs5.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs19.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs3.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs5.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs4.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs3.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0aeae_homepage-design-sign-ups-and-registration-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163496
+    key: '42751690480923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 付款表格
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:17 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163361
+    atoms:
+      - id: 163361
+        key: '4275169048'
+        locale: zh-cn
+        version: 1.0.0
+        title: 付款表格
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:17 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |-
+          <a href="https://www.mindmeister.com/signup/pro" target="_blank">MindMeister</a>
+
+          <a href="https://gumroad.com/" target="_blank">Gumroad</a>
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '8845'
+          youtube_id: 5FT8zepk_TE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs3.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs10.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs6.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs2.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs2.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs2.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs4.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/homepage-design-payment-forms-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/homepage-design-payment-forms-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/homepage-design-payment-forms-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/homepage-design-payment-forms-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d07f30_homepage-design-payment-forms-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163497
+    key: '42875587050923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 表格
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:18 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163362
+    atoms:
+      - id: 163362
+        key: '4287558705'
+        locale: zh-cn
+        version: 1.0.0
+        title: 表格
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 10:04:18 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 表格
+
+          注册与付款表要求你获取并验证用户的信息。创建表格的建议有很多，我们从现有产品和网页中总结了一些最佳的资源和例子。
+
+          **首先是保持简单。**如果表格非常简单直观，用户会更愿意填写，包括注册和付款表。清晰的描述、垂直的版面、预填充的表格、举例、明显的行为召唤能帮助用户了解表格，让他们更愿意花费时间进行填写。这也意味着你应该只询问你需要的信息。
+
+          **第二，确认用户输入并给予反馈。**然后，通过表格设计，你可以确认用户的类型并给予正确的反馈，比如说建议，从而增加让他们继续使用的机会。用户的电话号码是否格式正确？用户是否选择了已存在的用户名？表格会否在用户完成每个填写项后验证输入？这些是表格的重要功能，能帮助增加用户。
+
+          行内确认表格的例子：
+
+          <img src="https://ws2.sinaimg.cn/large/006tKfTcgy1fjfs4a2yq6j30go0eoabx.jpg" alt="Twitter Form">
+          **最后，一定要测试你的表格。**你可以自己测试。有些小组通过用户和浏览者的角色扮演完成测试。浏览者只对页面上的软文有反应。这个表格是否好填？格式化选项是否清晰？用户是否有感觉被卡住、烦躁或者迷茫？
+
+          如需更多设计表格的信息，查看以下很棒的资源：
+
+          ### 为什么付款的细节非常重要：转化！
+          <a href="http://www.uie.com/articles/three_hund_million_button/" target="_blank"> 3 亿美元按钮</a>
+          BestBuy.com 网站这个小变动让人们可以跳过注册步骤，从而带来了每年 3 亿美元的额外收入。  
+
+          <a href="http://analyticsexpert.net/blog/2010/05/28/change-one-word-double-your-conversion-rate/" target="_blank">可选字段的双倍转化率</a>
+          仅仅因为在手机号码输入栏增添了很明确显眼的“可选”字样，据 ClickTale 统计，注册转化率从 40% 翻了一番，达到 80%。
+
+          ### 有效的表格设计
+
+          <a href="http://blog.usabilla.com/optimizing-forms-greater-conversions" target="_blank">优化表格提高转化率</a>  
+          <a href="http://www.smashingmagazine.com/2011/11/08/extensive-guide-web-form-usability/" target="_blank">网络表格易用性设计指南（Smashing Magazine）</a>  
+          <a href="http://webdesign.tutsplus.com/articles/user-experience-designing-form-validation-the-right-way--webdesign-681" target="_blank">设计表格确认的正确方式</a>  
+          <a href="http://www.uxmatters.com/mt/archives/2010/12/the-top-5-books-about-form-design.php" target="_blank">表格设计的 5 本必读书</a>
+
+          ### 聚焦移动端表格
+
+          <a href="http://www.uxbooth.com/articles/mobile-form-design-strategies/" target="_blank">移动端表格设计策略</a>  
+          <a href="http://www.smashingmagazine.com/2012/05/03/removing-stumbling-blocks-in-mobile-forms/" target="_blank">去掉移动端表格中的障碍</a>  
+          <a href="https://econsultancy.com/blog/64669-21-first-class-examples-of-effective-web-form-design" target="_blank">有效网络表格设计的 21 个一流案例</a>
+
+          ### 付款表
+
+          <a href="http://designmodo.com/ux-credit-card-payment-form/" target="_blank">用户体验与信用卡支付表</a>
+
+          ### 结帐流程
+
+          <a href="https://blog.kissmetrics.com/first-step-of-checkout/" target="_blank">结帐的第一步（KISSmetrics博客）</a>  
+          <a href="http://www.smashingmagazine.com/2011/04/06/fundamental-guidelines-of-e-commerce-checkout-design/" target="_blank">电子商务结帐设计的基础指南</a>  
+          <a href="http://uxmovement.com/forms/5-design-tips-to-prevent-shopping-cart-abandonment/" target="_blank">防止放弃购物车的 5 个设计技巧</a>  
+          <a href="http://conversionxl.com/how-to-design-an-ecommerce-checkout-flow-that-converts/" target="_blank">如何设计高转化率的电子商务结帐流程</a>
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 163498
+    key: '42847688630923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 通知
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:18 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163363
+    atoms:
+      - id: 163363
+        key: '4284768863'
+        locale: zh-cn
+        version: 1.0.0
+        title: 通知
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:18 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |-
+          <a href="http://www.nirandfar.com/2015/03/notifications-that-work.html" target="_blank">通知的心理学</a>
+
+          <a href="http://designmodo.com/user-friendly-notifications/" target="_blank">用户友好的通知</a>
+
+          <a href="http://viget.com/inspire/rethinking-on-site-notifications" target="_blank">网站通知的反思</a>
+
+          <a href="https://medium.com/@holympus/notifications-are-a-ux-anti-pattern-c4d8c9ccce39" target="_blank">通知是用户体验反面模式</a>（使用积极习惯的通知）
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '14429'
+          youtube_id: cKzjFwW3rsM
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/subtitles/lang_id_vs2.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs3.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs7.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs6.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs5.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs4.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs2.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs2.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs12.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/homepage-design-notifications-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/homepage-design-notifications-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/homepage-design-notifications-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/homepage-design-notifications-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0abf6_homepage-design-notifications-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163499
+    key: '42809885840923'
+    locale: zh-cn
+    version: 1.0.0
+    title: Nir Eyal 谈 好的通知
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:19 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163364
+    atoms:
+      - id: 163364
+        key: '4280988584'
+        locale: zh-cn
+        version: 1.0.0
+        title: Nir Eyal 谈好的通知
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:19 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: '<a href="http://www.nirandfar.com/2015/03/notifications-that-work.html" target="_blank">有用的通知</a>'
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '30888'
+          youtube_id: yndvDlF_Pdg
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs2.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs7.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs6.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs3.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs10.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/subtitles/lang_id_vs3.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs10.srt'
+              language_code: vi
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1ccaa_nir-eyal-on-good-product-notifications-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163501
+    key: '42833392530923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 用户反馈与评价
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:20 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163365
+    atoms:
+      - id: 163365
+        key: '4283339253'
+        locale: zh-cn
+        version: 1.0.0
+        title: 用户反馈与评价
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:19 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |-
+          <a href="http://uxmastery.com/better-user-research-through-surveys/" target="_blank">通过调查进行更好的用户研究</a>
+
+          <a href="http://thenextweb.com/entrepreneur/2013/05/04/8-ways-to-incorporate-customer-feedback-into-your-startups-strategy/" target="_blank">制定创业战略时考虑客户反馈</a>
+
+          <a href="https://medium.com/circa/the-right-way-to-ask-users-to-review-your-app-9a32fd604fca" target="_blank">让用户检验应用的正确方式</a>（Circa News）
+
+          <a href="http://blog.invisionapp.com/get-better-qualitative-data-on-your-user-experience-with-microfeedback/" target="_blank">通过微反馈得到更好的用户体验相关的定性数据</a>
+
+          <a href="https://blog.kissmetrics.com/increase-mobile-app-reviews/" target="_blank">增加移动应用审核</a>
+
+          <a href="http://blog.getvero.com/customer-retention/" target="_blank">提高用户留存率</a>
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '20530'
+          youtube_id: IlDtiTm6zsQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/subtitles/lang_id_vs3.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/subtitles/lang_pt-br_vs6.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/subtitles/lang_ar_vs3.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/subtitles/lang_zh-cn_vs3.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/subtitles/lang_ja_vs3.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/subtitles/lang_ko_vs3.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/subtitles/lang_tr_vs1.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/subtitles/lang_ru_vs4.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/user-feedback-and-ratings-ux-ui-design-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/user-feedback-and-ratings-ux-ui-design-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/user-feedback-and-ratings-ux-ui-design-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/user-feedback-and-ratings-ux-ui-design-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d120d4_user-feedback-and-ratings-ux-ui-design-product-design-udacity/hls/playlist.m3u8'
+  - id: 163504
+    key: '42957489360923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 将设计代入产品
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:21 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163369
+    atoms:
+      - id: 163369
+        key: '4295748936'
+        locale: zh-cn
+        version: 1.0.0
+        title: 将设计代入产品
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:20 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '18610'
+          youtube_id: GS6E4LO_okM
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/subtitles/lang_vi_vs3.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs7.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/subtitles/lang_ar_vs3.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/subtitles/lang_ja_vs5.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/subtitles/lang_ko_vs2.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/subtitles/lang_tr_vs7.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/bringing-design-to-the-product-design-sprint-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/bringing-design-to-the-product-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/bringing-design-to-the-product-design-sprint-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/bringing-design-to-the-product-design-sprint-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0fac4_bringing-design-to-the-product-design-sprint-product-design-udacity/hls/playlist.m3u8'
+  - id: 163506
+    key: '43003889560923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 用户体验设计资源
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:21 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163370
+    atoms:
+      - id: 163370
+        key: '4300388956'
+        locale: zh-cn
+        version: 1.0.0
+        title: 用户体验设计资源
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 10:04:21 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 用户体验设计资源
+
+          这些资源能帮助你分析之前的产品，从其他人处学习什么可行，什么不可行。
+
+          <a href="http://uxarchive.com/" target="_blank">用户体验档案</a>  
+          <em>探索其他人怎么设计具体任务</em>
+
+          网站制作人建议你先试用网站（在对比用户流程之前）。一旦完成应用，你可以通过档案对比相同任务的不同设计方法。这能帮助你将所有流程和步骤形成图像，从而更轻松地对比各种方法。从而给予你与你的小组以设计模式和用户流程讨论方面的灵感。
+
+          <a href="http://www.gv.com/lib/gv-guide-to-research" target="_blank"Google Ventures Library: Guide to User Research></a>
+          Google Ventures 有丰富的与用户研究相关的资源。查找你认为对你最有帮助的文字。
+
+          ### 博客，每周学习
+
+          <a href="http://www.productpsychology.com/" target="_blank">产品心理学</a>（Nir Eyal 和很多专家讨论用户行为）  
+          <a href="http://uxmyths.com/" target="_blank">UX Myths</a>  
+          <a href="http://52weeksofux.com/" target="_blank">用户体验的52周</a>
+
+          ## 文章
+
+          <a href="http://thenextweb.com/dd/2015/03/03/the-5-pillars-of-interaction-design/" target="_blank"></a>  
+          <a href="http://blog.production.invision.works/top-3-tips-from-our-webinar-the-7-most-common-usability-issues/" target="_blank"></a>
+          <a href="https://invisionapp.wistia.com/medias/6pkkh5axk3" target="_blank">7种最常见的易用性问题</a> (Invision 应用 <em>与网上研讨会相关</em>)  
+          <a href="https://99designs.com/designer-blog/2014/01/15/7-unbreakable-laws-of-user-interface-design/" target="_blank">用户界面设计的法则</a>  
+          <a href="http://blog.sortlist.com/web-design-usability-lessons-learned/" target="_blank">已学习网络设计易用性课程</a>（AirBnB）  
+          <a href="http://52weeksofux.com/post/531355592/design-for-delight" target="_blank">设计的快乐</a>（用户体验的 52 周）  
+          <a href="http://www.usertesting.com/blog/2015/01/06/invest-in-ux/" target="_blank">为什么对用户体验与用户研究投资？</a>  
+          <a href="http://www.quora.com/What-are-the-best-steps-to-teach-yourself-UI-UX-Design" target="_blank">自学用户界面/用户体验设计的最佳步骤是怎样</a>（Quora）
+
+          ## 书籍
+
+          <a href="http://www.amazon.com/UX-Lean-Startups-Experience-Research/dp/1449334911/" target="_blank">UX Lean 创业公司体验研究</a>  
+          <a href="http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758" target="_blank">不要让我思考</a>  
+          <a href="http://www.amazon.com/Rocket-Surgery-Made-Easy--Yourself/dp/0321657292" target="_blank">妙手回春</a>（怎么做用户测试）  
+          <a href="http://www.amazon.com/Information-Architecture-World-Wide-Web/dp/0596527349" target="_blank">世界范围的网页信息架构</a>  
+          <a href="http://www.amazon.com/A-Practical-Guide-Usability-Testing/dp/1841500208" target="_blank">可用性测试实用指南</a>  
+          <a href="http://www.amazon.com/Defensive-Design-Web-improve-messages/dp/073571410X" target="_blank">网页的防御性设计</a>  
+          <a href="http://www.amazon.com/The-Persona-Lifecycle-Interactive-Technologies/dp/0125662513" target="_blank">用户模型周期：在产品设计阶段时刻铭记用户（交互技术）</a>
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 163508
+    key: '42786289450923'
+    locale: zh-cn
+    version: 1.0.0
+    title: 用户体验与设计回顾
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 10:04:22 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 163373
+    atoms:
+      - id: 163373
+        key: '4278628945'
+        locale: zh-cn
+        version: 1.0.0
+        title: 用户体验与设计回顾
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 10:04:22 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '33570'
+          youtube_id: RXW1hMNULKQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/subtitles/lang_ru_vs3.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/subtitles/lang_ar_vs3.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/subtitles/lang_tr_vs2.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/subtitles/lang_ja_vs2.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/subtitles/lang_pt-br_vs6.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/subtitles/lang_ko_vs2.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/product-design-ux-ui-design-user-experience-and-design-recap-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/product-design-ux-ui-design-user-experience-and-design-recap-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/product-design-ux-ui-design-user-experience-and-design-recap-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/product-design-ux-ui-design-user-experience-and-design-recap-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1e2a1_product-design-ux-ui-design-user-experience-and-design-recap-udacity/hls/playlist.m3u8'

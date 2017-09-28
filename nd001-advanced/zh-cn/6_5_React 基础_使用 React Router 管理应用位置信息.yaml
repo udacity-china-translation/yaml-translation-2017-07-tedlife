@@ -1,0 +1,1179 @@
+id: 357311
+key: 3a472639-ed92-4293-897f-ff8b698030b2
+locale: zh-cn
+version: 1.0.0
+title: 使用 React Router 管理应用位置信息
+semantic_type: Lesson
+updated_at: 'Wed Sep 06 2017 04:18:32 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/June/595195b2_2-5-managing-app-location-with-react-router-2x/2-5-managing-app-location-with-react-router-2x.jpg'
+  width: 592
+  height: 640
+video: null
+summary: 你将学习如何使用 React Router 向 React 应用中添加路由。你将学习 BrowserRouter、Link 和 Route 组件以动态地渲染页面。
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+career_portal_experience_levels: []
+_concepts_ids:
+  - 357290
+  - 357291
+  - 357294
+  - 357295
+  - 357296
+  - 357297
+  - 357299
+  - 357298
+_project_id: null
+concepts:
+  - id: 357290
+    key: 92c6fe7b-962c-42a7-9faf-2312023cc2cd
+    locale: zh-cn
+    version: 1.0.0
+    title: 简介
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 04:18:14 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357211
+      - 357212
+      - 357213
+    atoms:
+      - id: 357211
+        key: f5284dbd-7b7d-4f68-b5b2-ec94b8d8e92a
+        locale: zh-cn
+        version: 1.0.0
+        title: React Router 简介
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:18:13 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57997'
+          youtube_id: johndWAT08Y
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b8118_01-react-router-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8118_01-react-router-intro/01-react-router-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8118_01-react-router-intro/01-react-router-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8118_01-react-router-intro/01-react-router-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8118_01-react-router-intro/01-react-router-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8118_01-react-router-intro/hls/playlist.m3u8'
+      - id: 357212
+        key: 37a4bbbd-204e-4ce2-8413-58d9a697de56
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:13 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## 单页面应用
+           
+          但页面应用可以有多种工作方式。单页面应用的一种加载方式是一次性下载整个网站的内容。这样，当你浏览网站时，一切内容已经出现在浏览器中，不需要刷新页面。单页面应用的另一种工作方式是下载渲染用户请求的页面所需的所有内容。当用户浏览到新页面时，仅对请求的内容发出异步 JavaScript 请求。 
+           
+          优质单页面应用的另一个关键因素是由 URL 控制页面内容。单页面应用互动性非常高，用户希望能够仅使用 URL 就能回到特定的状态。为何这一点很重要？Bookmarkability（书签功能，很确定的是这还不是一个单词）！当你将网站添加到书签中，该书签仅仅是 URL，并没有记录该页面的状态。
+           
+          有没有注意到，你对应用执行的任何操作都不会更新页面的 URL？我们需要创建能够将页面添加到书签中的 React 应用！
+        instructor_notes: ''
+        resources: null
+      - id: 357213
+        key: 4003346c-afb8-4747-9094-00516c11cb4b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:14 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## React Router
+           
+          React Router 会将 React 项目转变成单页面应用。它通过提供大量特殊的组件来实现这一点，这些组件能够管理链接的创建、管理应用的 URL、在不同的 URL 地点之间导航时提供转换，以及很多其他功能。 
+           
+          根据 React Router 网址：
+           
+          > React Router 是一系列**导航式组件**的集合，可以与应用一起以声明的方式编写代码。 
+           
+          如果你感兴趣的话，请参阅以下网站：[https://reacttraining.com/react-router/](https://reacttraining.com/react-router)。
+           
+          在下一部分，我们将根据项目的 `this.state` 对象中的值动态地向页面上渲染内容。我们将使用这个基本示例讲解 React Router 的工作原理，即通过状态控制正在显示的内容。然后，我们将学会如何使用 React Router。我们将逐步介绍如何安装 React Router，将其添加到项目中，并将一切连接到一起，使其能够管理链接和 URL。
+        instructor_notes: ''
+        resources: null
+  - id: 357291
+    key: f95a95a8-c805-42ae-b056-3730dd90a21e
+    locale: zh-cn
+    version: 1.0.0
+    title: 动态地渲染页面
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 04:18:18 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357214
+      - 357215
+      - 357216
+      - 357217
+      - 357218
+      - 357219
+      - 357220
+      - 357221
+      - 357222
+      - 357223
+      - 357224
+    atoms:
+      - id: 357214
+        key: 0dd6fd04-eeb4-4d0c-a9d4-55c777a6d33a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:14 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘对于应用的当前功能，根本没法添加新的通讯录！很遗憾，因为我真的需要将 Richard 添加到我的通讯录里。我们创建一个表格，使我们能够新建通讯录并保存到服务器上。’
+        instructor_notes: ''
+        resources: null
+      - id: 357215
+        key: 42f3e379-bfba-4069-93e5-9a383236139f
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Sep 06 2017 04:18:15 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 我们将创建一个表格来新建通讯录。该表格 UI 的代码应该放在何处？
+          correct_feedback: React 喜欢组合创建组件。因此，我们需要将新的 UI 创建为单独的组件，并使用组合功能将其包含在另一个组件里。
+          video_feedback: null
+          default_feedback: 之前，我们讨论了组合的优势。哪个选项使新的通讯录表格单独称为可重复利用的代码块？
+          answers:
+            - id: a1498004609602
+              text: 在 `App.js` 中
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498004616408
+              text: 在 `ListContacts.js` 中
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498004616925
+              text: 在 `index.js` 中
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498004617499
+              text: 在新组件中
+              is_correct: true
+              incorrect_feedback: null
+      - id: 357216
+        key: 5b05e342-dbd8-417e-b55b-7199ce7ad706
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:15 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘我们不希望该表格一直显示，仅在启用某个设置后，才开始显示该表格。我们将此设置保存在 `this.state` 中。这样使我们能够知道 React Router 的工作原理。’
+        instructor_notes: ''
+        resources: null
+      - id: 357217
+        key: 1355a7d4-2dbe-4b4b-953e-8e07b78c3abb
+        locale: zh-cn
+        version: 1.0.0
+        title: 基于状态的内容渲染
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:18:15 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57998'
+          youtube_id: 5ySqH5Uag2M
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b811d_02-state-based-content-rendering/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b811d_02-state-based-content-rendering/02-state-based-content-rendering_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b811d_02-state-based-content-rendering/02-state-based-content-rendering_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b811d_02-state-based-content-rendering/02-state-based-content-rendering_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b811d_02-state-based-content-rendering/02-state-based-content-rendering_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b811d_02-state-based-content-rendering/hls/playlist.m3u8'
+      - id: 357218
+        key: f7745905-ab14-4dca-b5de-7b0aa33a34ce
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:16 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/db0aafdc7766048c28597d37f31977ac7833a62e)'
+        instructor_notes: ''
+        resources: null
+      - id: 357219
+        key: 5c5f6704-1d9d-4082-be12-5a5d528c3d95
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:16 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          在这个简短的视频中，我们介绍了很多重要的更改。我们创建了 CreateContact 组件，它负责将创建新通讯录的表格。根据 React 对组合功能的青睐，我们创建了这个独立的组件，并使用了组合功能，将其添加到 `App` 组件的 `render()` 方法中。
+           
+          为了非常简单地重现 React Router 的工作原理，我们向 `this.state` 添加了 `screen` 属性， 并使用此属性控制什么内容应该显示在屏幕上。如果 `this.state.screen` 是 `list`，那么我们将显示所有现有通讯录的列表。如果 `this.state.screen` 是 `create`，那么我们将显示 CreateContact 组件。
+        instructor_notes: ''
+        resources: null
+      - id: 357220
+        key: 0df28e8c-33f6-4c32-80ef-12a35d2420ee
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sun Sep 17 2017 07:38:12 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 短路求值语法
+           
+          在此视频中，当我们创建了之前部分的“现正显示”时，我们使用了一种看起来很奇怪的语法：
+           
+          ```js
+          {this.state.screen === 'list' && (
+            <ListContacts
+              contacts={this.state.contacts}
+              onDeleteContact={this.removeContact}
+            />
+          )}
+          ```
+           
+          and
+           
+          ```js
+          {this.state.screen === 'create' && (
+            <CreateContact />
+          )}
+          ```
+           
+          看起来可能有点让人迷惑，既有组件的 JSX 代码，又有运行表达式的代码。但其实就是逻辑表达式 `&&`：
+           
+          ```js
+          expression && expression
+          ```
+           
+          这里使用的是一种叫做**短路求值**的 JavaScript 技巧。如果第一个表达式的值是 `true`，则运行第二个表达式。但是，如果第一个表达式的值是 `false`，则跳过第二个表达式。我们使用这种技巧来首先验证 this.state.screen 的值，然后显示正确的组件。
+           
+          要深入了解这一技巧，请参阅 [MDN 上的短路求值信息](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Short-Circuit_Evaluation)。
+        instructor_notes: ''
+        resources: null
+      - id: 357221
+        key: 067ae250-31a0-4933-a314-3483a4c0957b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:16 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 添加按钮 
+           
+          目前，我们需要手动更改状态以让应用显示不同的屏幕。我们希望用户能够在应用本身里控制这一点，我们添加个按钮吧！
+        instructor_notes: ''
+        resources: null
+      - id: 357222
+        key: f3bc3f44-6dc2-4241-abc8-96d4087e280b
+        locale: zh-cn
+        version: 1.0.0
+        title: 添加“创建通讯录”按钮
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:18:17 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57999'
+          youtube_id: aOfohwGbL-A
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b8130_03-add-the-create-contact-button/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8130_03-add-the-create-contact-button/03-add-the-create-contact-button_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8130_03-add-the-create-contact-button/03-add-the-create-contact-button_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8130_03-add-the-create-contact-button/03-add-the-create-contact-button_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8130_03-add-the-create-contact-button/03-add-the-create-contact-button_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8130_03-add-the-create-contact-button/hls/playlist.m3u8'
+      - id: 357223
+        key: 722fe93a-c528-4616-9006-9cf6e7124b49
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:17 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/23a6a4dde977d7c18a3054a7b0b65f4fb4aad2ea)'
+        instructor_notes: ''
+        resources: null
+      - id: 357224
+        key: 5a2ffb4e-c877-4ca0-ae99-4da5bb44d6f8
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:17 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## 动态路由总结
+           
+          在这部分添加的代码中，我们尝试使用状态来控制向用户显示什么内容。但是当我们使用后退按钮时，我们遇到了问题。 
+           
+          现在，我们改为使用 React Router 来管理应用的屏幕。
+        instructor_notes: ''
+        resources: null
+  - id: 357294
+    key: 8156069e-d9b4-465d-a17a-6d956879e10f
+    locale: zh-cn
+    version: 1.0.0
+    title: BrowserRouter 组件
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 04:18:22 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357249
+      - 357250
+      - 357251
+      - 357252
+      - 357253
+      - 357254
+      - 357255
+      - 357256
+      - 357257
+      - 357258
+    atoms:
+      - id: 357249
+        key: 3d2fa825-673f-412e-b1d8-73a406dc4215
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:18 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          正如我们看到的，当用户点击浏览器中的“后退”按钮时，可能需要刷新页面才能看到该位置的适当内容。这对我们的用户来说体验并不佳！当我们更新位置时，我们可以使用 JavaScript 更新应用，这时候 React Router 就派上用场了。 
+           
+          ## 安装 React Router
+           
+          要在应用中使用 React Router，我们需要安装 [react-router-dom](https://www.npmjs.com/package/react-router-dom)。
+           
+          ```bash
+          npm install --save react-router-dom
+          ```
+           
+          我们看看具体操作流程！
+        instructor_notes: ''
+        resources: null
+      - id: 357250
+        key: 4d7ea18b-f6f3-47c4-8774-11a777b06d9d
+        locale: zh-cn
+        version: 1.0.0
+        title: 安装 React Router
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:18:19 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58001'
+          youtube_id: 5535bLCBGxc
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b8132_05-install-react-router/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8132_05-install-react-router/05-install-react-router_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8132_05-install-react-router/05-install-react-router_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8132_05-install-react-router/05-install-react-router_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8132_05-install-react-router/05-install-react-router_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8132_05-install-react-router/hls/playlist.m3u8'
+      - id: 357251
+        key: 3ce3bc5c-597c-48b4-bc9b-b2280e34bbfd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Sep 08 2017 02:09:20 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/3ac98594059c5c245c6032f1484ee0953331b43f)'
+        instructor_notes: ''
+        resources: null
+      - id: 357252
+        key: 6e36490b-ce01-4090-9262-86a505ff3287
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:19 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## BrowserRouter
+           
+          我们将查看的第一个组件是 BrowserRouter。
+        instructor_notes: ''
+        resources: null
+      - id: 357253
+        key: a98e1571-b3ff-44b5-8c50-6eab5144a5c3
+        locale: zh-cn
+        version: 1.0.0
+        title: BrowserRouter 组件
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:18:20 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58000'
+          youtube_id: KX22H1m_F9k
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b8131_04-the-browserrouter-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8131_04-the-browserrouter-component/04-the-browserrouter-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8131_04-the-browserrouter-component/04-the-browserrouter-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8131_04-the-browserrouter-component/04-the-browserrouter-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8131_04-the-browserrouter-component/04-the-browserrouter-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8131_04-the-browserrouter-component/hls/playlist.m3u8'
+      - id: 357254
+        key: 84afba62-f02d-4041-a976-5c07eb407de7
+        locale: zh-cn
+        version: 1.0.0
+        title: 添加 BrowserRouter
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:18:20 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58002'
+          youtube_id: Re8n-hmkWlY
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b8133_06-add-browserrouter/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8133_06-add-browserrouter/06-add-browserrouter_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8133_06-add-browserrouter/06-add-browserrouter_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8133_06-add-browserrouter/06-add-browserrouter_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8133_06-add-browserrouter/06-add-browserrouter_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8133_06-add-browserrouter/hls/playlist.m3u8'
+      - id: 357255
+        key: 87a9077d-72cd-4d68-b2ce-8838dbf53d58
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:20 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/544d6aff26d6e35b40bd17a633cf7c21c5eb4969)'
+        instructor_notes: ''
+        resources: null
+      - id: 357256
+        key: 3e80e65b-bbb7-400a-821e-de75ff991141
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:21 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          React Router 的好处是一切都是组件。这样使用起来很方便，并且代码阅读起来也更轻松。我们看看 BrowserRouter 的代码原理。
+
+          以下是直接摘自 React Router 资源库的代码。
+
+          ```js
+          class BrowserRouter extends React.Component {
+            static propTypes = {
+              basename: PropTypes.string,
+              forceRefresh: PropTypes.bool,
+              getUserConfirmation: PropTypes.func,
+              keyLength: PropTypes.number,
+              children: PropTypes.node
+            }
+
+            history = createHistory(this.props)
+
+            render() {
+              return <Router history={this.history} children={this.props.children}  />
+            }
+          }
+          ```
+
+          当你使用 `BrowserRouter` 时，其实真正的是在渲染 `Router` 组件并将向其传递 `history` 属性。等等，什么是 `history`? `history` 来自 [history](https://github.com/ReactTraining/history) 库（也是由 React Training 构建的）。该库的整个目标是抽象化不同环境中的区别，并提供最少的 API 来使你管理历史记录堆、导航、确认导航，并在会话之间保持状态。
+
+          简而言之，当你使用 `BrowserRouter` 时，你是在创建 `history` 对象，该对象将监听 URL 中的变化，并使你的应用知道这些变化。
+        instructor_notes: ''
+        resources: null
+      - id: 357257
+        key: 1f7f0232-ecdb-45d9-8ad4-080f46f4b560
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Sep 08 2017 02:42:08 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 我已安装 `react-router-dom` 软件包
+          - 我已在 `src/index.js` 中导入 `BrowserRouter`
+          - 我现在正在 `src/index.js` 中渲染 `<BrowserRouter><App /></BrowserRouter>`
+        positive_feedback: 非常棒！
+        video_feedback: null
+        description: ‘确保你已经完成必要的步骤。请核对并勾选以下每步：'
+      - id: 357258
+        key: 621575d4-d599-457a-95d3-99b198aeca8c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:22 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## `BrowserRouter` 组件总结
+
+          总之，要使 React Router 正常工作，你需要将整个应用封装在 `BrowserRouter` 组件中，此外，`BrowserRouter` 还会封装 history 库，使你的应该能够知道 URL 中的变化。 
+
+          ### 深入研究
+
+          * [history](https://github.com/reacttraining/history)
+        instructor_notes: ''
+        resources: null
+  - id: 357295
+    key: 57731688-a610-4437-b606-3a479a386a4f
+    locale: zh-cn
+    version: 1.0.0
+    title: Link 组件
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 04:18:24 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357259
+      - 357260
+      - 357261
+      - 357262
+      - 357263
+      - 357264
+    atoms:
+      - id: 357259
+        key: fb44d464-be3f-4113-9fab-d8ba73d5b129
+        locale: zh-cn
+        version: 1.0.0
+        title: 08 - Link 组件
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:18:22 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '59036'
+          youtube_id: qbP07LypkN8
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/59520c8c_08-the-link-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8c_08-the-link-component/08-the-link-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8c_08-the-link-component/08-the-link-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8c_08-the-link-component/08-the-link-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8c_08-the-link-component/08-the-link-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8c_08-the-link-component/hls/playlist.m3u8'
+      - id: 357260
+        key: dec7bcf5-d558-4331-86d6-cd02aa350a34
+        locale: zh-cn
+        version: 1.0.0
+        title: 将锚定链接替换为 Link 组件'
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:18:23 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58004'
+          youtube_id: V3kc4Sz1GII
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b813b_09-replace-anchor-links-with-the-link-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b813b_09-replace-anchor-links-with-the-link-component/09-replace-anchor-links-with-the-link-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b813b_09-replace-anchor-links-with-the-link-component/09-replace-anchor-links-with-the-link-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b813b_09-replace-anchor-links-with-the-link-component/09-replace-anchor-links-with-the-link-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b813b_09-replace-anchor-links-with-the-link-component/09-replace-anchor-links-with-the-link-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b813b_09-replace-anchor-links-with-the-link-component/hls/playlist.m3u8'
+      - id: 357261
+        key: af424a48-b41a-462a-98bf-ae1bc315479c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:23 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/4fa3926892f6292fe562902ca1b1e3c9d840f27a)'
+        instructor_notes: ''
+        resources: null
+      - id: 357262
+        key: 0c64148c-9a1e-4cc0-92a8-6f5d53484a48
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:23 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          正如你看到的，`Link` 是提供声明式、可访问的应用导航的简单方式。通过向 `Link` 组件传递 `to` 属性，可以告诉应用要路由到哪个部分。
+
+          ```js
+          <Link to="/about">About</Link>
+          ```
+
+          如果你对网络上的路由熟悉，那么你将知道链接有时候需要稍微复杂下，而不仅仅只是个字符串。例如，可以传递查询参数或链接到页面的特定部分。如果要将状态传递给新的路由，该怎么办？要考虑这些情形，你可以向 `Link` 的 `to` 属性传递对象，而不是字符串，如下所示：
+
+          ```js
+          <Link to={{
+            pathname: '/courses',
+            search: '?sort=name',
+            hash: '#the-hash',
+            state: { fromDashboard: true }
+          }}>
+            Courses
+          </Link>
+          ```
+
+          你不需要时刻使用该功能，但是有必要知道存在这一功能。要详细了解 `Link`，请参阅[官方文档](https://reacttraining.com/react-router/web/api/Link)。
+        instructor_notes: ''
+        resources: null
+      - id: 357263
+        key: e0705690-35a6-4f24-bfd9-e6367b488675
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Sep 06 2017 04:18:23 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: ‘在为应用路由创建锚点时，假设我们想要在 DOM 中出现 `<a href="/members" class="members">成员</a>`。如何使用 React Router 的 `<Link>` 组件编写代码？’
+          correct_feedback: '`<Link>` 的属性将传递到 React Router 创建的锚点。借助 JSX，这是简化浏览应用的很好方式。'
+          video_feedback: null
+          default_feedback: 我们可以使用 React Router 的 `<Link>` 组件（最终是 JSX）为我们在 DOM 中提供普通的锚点。
+          answers:
+            - id: a1498154227014
+              text: '`<Link to="/members" class="members">Members</Link>`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498154593961
+              text: '`<a href="/members" class="members">Members</a>`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498154601369
+              text: '`<Link to="/members" className="members">Members</Link>`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498156764197
+              text: '`<Link to="/members" className="members" linkText="Members" />`'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 357264
+        key: c9ea3aa3-cb78-4044-b7f4-02463f0f50fd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:24 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Link 总结
+
+          React Router 提供了一个 `Link` 组件，使你能够添加声明式、可访问的应用导航功能。你将在锚点标记 (`a`) 中使用它，就像通常使用的那样。React Router 的 `<Link>` 组件是让用户能够导航应用的很好方式。例如，向链接传递 `to` 属性可以将用户指向绝对路径（例如 `/about`）：
+
+          ```js
+          <Link to="/about">About</Link>
+          ```
+
+          因为 `<Link>` 组件使用相应的 `href` 完全渲染合适的锚点标记 (`<a>`)，因此，它的行为和网络上的普通链接的行为一样。
+
+          ## 课外资料
+          * [`<Link>`](https://reacttraining.com/react-router/web/api/Link) React Training
+          * [源代码](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/modules/Link.js)
+          * `<Link`> 组件的[其他属性](http://knowbody.github.io/react-router-docs/api/Link.html)  
+        instructor_notes: ''
+        resources: null
+  - id: 357296
+    key: e6f89f07-7f29-41d9-b600-dcf2a94fb13c
+    locale: zh-cn
+    version: 1.0.0
+    title: Route 组件
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 04:18:27 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357265
+      - 357266
+      - 357267
+      - 357268
+      - 357269
+      - 357270
+    atoms:
+      - id: 357265
+        key: ef793e45-be67-4a03-a910-2fd46f1736bb
+        locale: zh-cn
+        version: 1.0.0
+        title: 10 - Route 组件
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:18:24 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '59037'
+          youtube_id: NlHLfRb6T_E
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/59520c8f_10-the-route-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8f_10-the-route-component/10-the-route-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8f_10-the-route-component/10-the-route-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8f_10-the-route-component/10-the-route-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8f_10-the-route-component/10-the-route-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8f_10-the-route-component/hls/playlist.m3u8'
+      - id: 357266
+        key: a19371df-70b3-4239-b8f2-f65c4b1e5d49
+        locale: zh-cn
+        version: 1.0.0
+        title: 向应用中添加路径
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:18:25 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58006'
+          youtube_id: KsuuFWh1VAg
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b8147_11-add-routes-to-the-app/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8147_11-add-routes-to-the-app/11-add-routes-to-the-app_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8147_11-add-routes-to-the-app/11-add-routes-to-the-app_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8147_11-add-routes-to-the-app/11-add-routes-to-the-app_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8147_11-add-routes-to-the-app/11-add-routes-to-the-app_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8147_11-add-routes-to-the-app/hls/playlist.m3u8'
+      - id: 357267
+        key: da9b8e86-7e69-4d77-ac2d-6eadf853b8f0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:25 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/0c1056088f055e7f1046531142f56201d3f18cd6)'
+        instructor_notes: ''
+        resources: null
+      - id: 357268
+        key: 51d92b60-6fb2-46f3-85a3-7405faa27f8c
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Wed Sep 06 2017 04:18:25 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 如果浏览器加载 URL `/houses/green`，下面的哪个路径将匹配？
+          correct_feedback: 封装在 Router 组件中的组件将仅在匹配（至少一开始的部分）URL 时才会渲染。如果设置了 'exact' 标记，只有完全匹配 URL 时路径才匹配。
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1498087290764
+              text: '`<Route path="/houses" component={Houses} />`'
+              is_correct: true
+              incorrect_feedback: ‘即使只有路径的开始部分匹配 URL，组件也将渲染。’
+            - id: a1498087369429
+              text: '`<Route exact path="/houses" component={Houses} />`'
+              is_correct: false
+              incorrect_feedback: ‘只要向 Route 添加 ''exact'' 标记，则该路径必须完全匹配 URL。’
+            - id: a1498087377989
+              text: '`<Route path="/houses/green" component={Houses} />`'
+              is_correct: true
+              incorrect_feedback: 即使只有路径的开始部分匹配 URL，组件也将渲染。
+            - id: a1498087410949
+              text: '`<Route exact path="/houses/green" component={Houses} />`'
+              is_correct: true
+              incorrect_feedback: 即使只有路径的开始部分匹配 URL，组件也将渲染。
+            - id: a1498087423117
+              text: '`<Route path="/" component={Houses} />`'
+              is_correct: true
+              incorrect_feedback: 即使只有路径的开始部分匹配 URL，组件也将渲染。
+      - id: 357269
+        key: 5f1801a3-6a4e-4ad6-b1f0-6d97a3387fb4
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Wed Sep 06 2017 04:18:26 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 我已在 `src/App.js` 中导入 `Route`
+          - 我已将 `this.state.screen === 'list'` 代码替换为 `Route` 组件
+          - 我已向根 `Route` 添加 `exact` 属性
+          - 我已将 `this.state.screen === create` 代码替换为 `Route` 组件
+          - 我已从 `ListContacts` 中删除 `onNavigate` 函数
+        positive_feedback: 非常棒！
+        video_feedback: null
+        description: ‘就快大功告成了！我们快速检查下我们的进度是否一致。请核对并勾选以下各项：’
+      - id: 357270
+        key: d5d7a27e-cf28-497f-8c4d-128423c63c04
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:26 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Route 组件总结
+
+          这节课的主要内容是，对于 `Route` 组件，如果你希望向 router 将渲染的特定组件传递属性，你需要使用 `Route` 的 `render` 属性。正如你所看到的，`render` 使你能够控制渲染组件，进而使你能够向要渲染的组件传递任何属性。
+
+          总之，`Route` 组件是使用 React Router 构建应用的关键部分，因为该组件将根据当前的 URL 路径决定要渲染哪些组件。 
+        instructor_notes: ''
+        resources: null
+  - id: 357297
+    key: c0ac3de9-54e5-46ce-ae94-aedfc1677632
+    locale: zh-cn
+    version: 1.0.0
+    title: 完成通讯录表格
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 04:18:31 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357271
+      - 357272
+      - 357273
+      - 357274
+      - 357275
+      - 357276
+      - 357277
+      - 357278
+      - 357279
+      - 357280
+      - 357281
+    atoms:
+      - id: 357271
+        key: d755a512-3214-4a6d-9fed-ae0f47a4e492
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:27 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 创建通讯录表格
+           
+          目前，创建通讯录的页面是空的！我们在该页面上构建一个表格，以便开始添加自定义通讯录。
+        instructor_notes: ''
+        resources: null
+      - id: 357272
+        key: 1daee0dd-7c4a-42d6-8b17-0cddcd3d3b12
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:28 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## ⚠️ 必需的文件 ⚠️ 
+           
+          > 在这门课程的开始阶段，我们给了你两个选择：克隆我们的起始项目或使用 [create-react-app](https://github.com/facebookincubator/create-react-app) 从头开始。如果你尚未添加该项目，则对于下面的视频，你需要 [ImageInput.js 文件](https://github.com/udacity/reactnd-contacts-complete/blob/master/src/ImageInput.js)。
+        instructor_notes: ''
+        resources: null
+      - id: 357273
+        key: 9341a978-0e41-4efa-acd3-0020316ef66e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:28 GMT+0000 (UTC)'
+        is_public: true
+        text: ImageInput 组件是自定义 `<input>`，该组件会动态地读取图片文件并且在将图片当做数据 URL 提交到服务器之前重新调整其大小，它还会显示图片预览。我们选择直接将该组件提供给你，而不是让你来构建，因为它包含了与网络文件和图片相关的功能，而这些功能对这门课程来说并不重要。如果你感兴趣的话，可以阅读相关代码，但并不是必修要求。
+        instructor_notes: ''
+        resources: null
+      - id: 357274
+        key: 51d772b5-de43-45b3-9d7e-c7e10d399637
+        locale: zh-cn
+        version: 1.0.0
+        title: 构建通讯录表格
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:18:28 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58052'
+          youtube_id: 8JjYl5r3wLk
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593c910d_sc-07-create-contact-form/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c910d_sc-07-create-contact-form/sc-07-create-contact-form_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c910d_sc-07-create-contact-form/sc-07-create-contact-form_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c910d_sc-07-create-contact-form/sc-07-create-contact-form_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c910d_sc-07-create-contact-form/sc-07-create-contact-form_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c910d_sc-07-create-contact-form/hls/playlist.m3u8'
+      - id: 357275
+        key: f28c4248-b475-4249-8b0d-0cbf445dc55e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:29 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/09d3d6da0fa0e2c40c95c66d99d0a2d31323ae06)'
+        instructor_notes: ''
+        resources: null
+      - id: 357276
+        key: 6b777590-e7e8-429e-9509-f45cf5fcc130
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:29 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 序列号表格数据
+           
+          现在，我们的表格将序列化用户输入的值（即 `name` 和 `email`），将它们当做查询字符串添加到 URL 中。我们可以添加额外的功能，让应用自己序列化这些表格字段。毕竟，我们希望应用能够最终自己创建通讯录并将其保存到状态中。 
+           
+          为了实现这一点，我们将使用 [form-serialize](https://www.npmjs.com/package/form-serialize) 包将此信息当做普通的 JavaScript 对象输出给应用使用。
+           
+          ```bash
+          npm install --save form-serialize
+          ```
+           
+          我们看看具体操作流程！
+        instructor_notes: ''
+        resources: null
+      - id: 357277
+        key: 049f05df-a967-45d2-8ac2-9fb3873f1800
+        locale: zh-cn
+        version: 1.0.0
+        title: 处理通讯录表格提交操作
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:18:29 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58053'
+          youtube_id: nf17fXAaRVs
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593c9118_sc-08-create-contact-form/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c9118_sc-08-create-contact-form/sc-08-create-contact-form_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c9118_sc-08-create-contact-form/sc-08-create-contact-form_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c9118_sc-08-create-contact-form/sc-08-create-contact-form_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c9118_sc-08-create-contact-form/sc-08-create-contact-form_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c9118_sc-08-create-contact-form/hls/playlist.m3u8'
+      - id: 357278
+        key: 55d8a980-34ee-4a20-b373-0a46738c692f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:30 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/554bab12367719b1526900ea27b8bb60237aba0d)'
+        instructor_notes: ''
+        resources: null
+      - id: 357279
+        key: edeca381-e76e-4d4a-8489-672ddb0f92ad
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 使用新的通讯录更新服务器
+           
+          我们创建了通讯录表格。我们序列化了数据并将其传递给父组件。现在只需拥有一个功能完整的应用，以将通讯录保存到服务器上。
+        instructor_notes: ''
+        resources: null
+      - id: 357280
+        key: ee2c3a5a-49b2-44ec-bd57-a0b33c710371
+        locale: zh-cn
+        version: 1.0.0
+        title: 向状态中添加新的通讯录
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:18:30 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58054'
+          youtube_id: hRTQp9pFr_c
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593c911e_sc-09-create-contact-form/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c911e_sc-09-create-contact-form/sc-09-create-contact-form_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c911e_sc-09-create-contact-form/sc-09-create-contact-form_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c911e_sc-09-create-contact-form/sc-09-create-contact-form_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c911e_sc-09-create-contact-form/sc-09-create-contact-form_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c911e_sc-09-create-contact-form/hls/playlist.m3u8'
+      - id: 357281
+        key: f1e8ef1c-2d6a-4548-940f-fccc0abd2fd7
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:30 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/6ea0a9abe23c06465447bc2b0366e6c794eaefbf)'
+        instructor_notes: ''
+        resources: null
+  - id: 357299
+    key: f1e32c27-362a-402a-962f-ca74ff4704bb
+    locale: zh-cn
+    version: 1.0.0
+    title: 课程总结
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 04:18:31 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357282
+      - 357284
+    atoms:
+      - id: 357282
+        key: dfa6ae97-76a4-4bfc-a8e6-cb11ccc214c3
+        locale: zh-cn
+        version: 1.0.0
+        title: React Router 结尾部分
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:18:31 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58007'
+          youtube_id: _tQZiFzaC3k
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b814a_14-react-router-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814a_14-react-router-outro/14-react-router-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814a_14-react-router-outro/14-react-router-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814a_14-react-router-outro/14-react-router-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814a_14-react-router-outro/14-react-router-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814a_14-react-router-outro/hls/playlist.m3u8'
+      - id: 357284
+        key: e04737ab-d11e-4de1-8437-4e428ea62c6d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:18:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 课外资料
+
+          如果你想深入学习 React Router，建议你查看两项资源。第一个是[构建你自己的 React Router v4](https://tylermcginnis.com/build-your-own-react-router-v4/)，这篇文章将指导你实现迷你不版本的 React Router 以深入了解其实现详情。接着是 React Training 专门讲解 React Router 的[免费课程](https://reacttraining.com/online/react-router)。
+        instructor_notes: ''
+        resources: null
+  - id: 357298
+    key: ce71a6eb-ccfa-4adf-909c-067769509c8c
+    locale: zh-cn
+    version: 1.0.0
+    title: 课程结尾部分
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 04:18:32 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357283
+      - 357285
+    atoms:
+      - id: 357283
+        key: 5737d835-2203-4c93-8518-c7ce31c1fc91
+        locale: zh-cn
+        version: 1.0.0
+        title: 课程结尾部分
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:18:32 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58008'
+          youtube_id: SPabAvhrDh4
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b814c_15-course-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814c_15-course-outro/15-course-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814c_15-course-outro/15-course-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814c_15-course-outro/15-course-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814c_15-course-outro/15-course-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814c_15-course-outro/hls/playlist.m3u8'
+      - id: 357285
+        key: 5d7c4025-76bd-4624-a2ab-903494355bf5
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Sep 08 2017 03:40:22 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 继续学习
+
+          很棒！你已经学会如何在 React 中构建应用，但是始终还有更多要学习的知识！请参阅以下资料并磨炼你的技能：
+
+          * [React 文档](https://facebook.github.io/react/docs/hello-world.html)
+          * [Tyler 的博客](https://tylermcginnis.com/)
+
+          ### 值得关注的人士
+
+          无论是热门博文还是在 Twitter 上关注的知名开发人员，充分利用新兴科技在很大程度上都是利用现有的社区资源。因此，我们想和大家分享下在过去的几年内我们发现的很实用的 React 社区资源。希望这些资源对你来说也有帮助。
+
+          * [Dan Abramov](https://twitter.com/dan_abramov)
+          * [Ryan Florence](https://twitter.com/ryanflorence)
+          * [Michael Jackson](https://twitter.com/mjackson)
+          * [Sebastian Markbåge](https://twitter.com/sebmarkbage)
+          * [Henry Zhu](https://twitter.com/left_pad)
+          * [Preethi Kasireddy](https://twitter.com/iam_preethi)
+          * [Merrick Christensen](https://twitter.com/iammerrick)
+          * [Christopher Chedeau](https://twitter.com/vjeux)
+          * [React](https://twitter.com/reactjs)
+          * [Tyler McGinnis](https://twitter.com/tylermcginnis33)
+
+          ### 建议阅读的博文
+
+          * [容易忽略的 React 知识点](https://medium.com/@dan_abramov/youre-missing-the-point-of-react-a20e34a51e1a)
+          * [React “灵光一现”的时刻](https://tylermcginnis.com/react-aha-moments/)
+          * [每位 React.js 初学者都应了解的 9 个知识点](https://camjackson.net/post/9-things-every-reactjs-beginner-should-know)
+          * [React 元素与 React 组件](https://tylermcginnis.com/react-elements-vs-react-components/)
+
+          如果你想深入学习 React 知识，可以参阅 [React Training 的“高级 React”](https://reacttraining.com/online/advanced-react) 课程。
+
+          感谢你一路与我们前行！接下来，我们将学习 Redux！
+        instructor_notes: ''
+        resources: null

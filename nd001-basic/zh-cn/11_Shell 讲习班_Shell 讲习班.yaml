@@ -1,0 +1,1301 @@
+id: 369948
+key: 1cc90ac3-c03a-43e6-8556-dcbd40dfd418
+locale: zh-cn
+version: 1.0.0
+title: Shell 讲习班
+semantic_type: Lesson
+updated_at: 'Mon Sep 11 2017 16:16:20 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58cb08f5_screen-shot-2017-03-16-at-14.50.11/screen-shot-2017-03-16-at-14.50.11.png'
+  width: 500
+  height: 500
+video: null
+summary: Unix shell 对所有领域的开发工程师来说都是一款强大的工具。在这节课，我们将快速讲解下在计算机上使用该工具的基本知识。
+lesson_type: Classroom
+duration: 90
+is_project_lesson: false
+career_portal_experience_levels: []
+_concepts_ids:
+  - 369933
+  - 369932
+  - 369931
+  - 369935
+  - 369938
+  - 369934
+  - 369936
+  - 369937
+  - 369943
+  - 369939
+  - 369940
+  - 369941
+  - 369942
+  - 369944
+  - 369945
+  - 369946
+  - 369947
+_project_id: null
+concepts:
+  - id: 369933
+    key: 68acb17b-161c-42f8-9c1e-fc1460eca322
+    locale: zh-cn
+    version: 1.0.0
+    title: 欢迎！
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:15:38 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369892
+    atoms:
+      - id: 369892
+        key: e44b765f-ffbb-4594-b21e-7f6ccea0b35c
+        locale: zh-cn
+        version: 1.0.0
+        title: Shell 简介
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 25 2017 03:20:43 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51894'
+          youtube_id: '-EtN5oD8MM0'
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179db_ud206-001-shell-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179db_ud206-001-shell-intro/ud206-001-shell-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179db_ud206-001-shell-intro/ud206-001-shell-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179db_ud206-001-shell-intro/ud206-001-shell-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179db_ud206-001-shell-intro/ud206-001-shell-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179db_ud206-001-shell-intro/hls/playlist.m3u8'
+  - id: 369932
+    key: bda4a9b5-46e3-4ce9-b58d-90eded438522
+    locale: zh-cn
+    version: 1.0.0
+    title: Windows：安装 Git Bash
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:15:41 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369888
+      - 369889
+      - 369890
+    atoms:
+      - id: 369888
+        key: 1a1a79fd-6862-46fc-bf0e-e7c86d8b38d6
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 002 P0 Windows：安装 Git Bash
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:15:39 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51895'
+          youtube_id: UQZvV6VTlGQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179dd_ud206-002-p0-windows-installing-git-bash/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179dd_ud206-002-p0-windows-installing-git-bash/ud206-002-p0-windows-installing-git-bash_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179dd_ud206-002-p0-windows-installing-git-bash/ud206-002-p0-windows-installing-git-bash_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179dd_ud206-002-p0-windows-installing-git-bash/ud206-002-p0-windows-installing-git-bash_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179dd_ud206-002-p0-windows-installing-git-bash/ud206-002-p0-windows-installing-git-bash_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179dd_ud206-002-p0-windows-installing-git-bash/hls/playlist.m3u8'
+      - id: 369889
+        key: 4ba231f3-2fab-4377-9ff1-09af28702431
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:15:41 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          **提醒：本页面仅针对 Windows 设备！Mac 和 Linux 用户请跳到下个页面！**
+
+          从以下网页上下载 Git：https://git-scm.com/download/win
+
+          Windows 10 中已经有新的 Linux 兼容性系统，叫做 **Windows Subsystem for Linux (WSL)**。它是运行在 Windows 系统中的实验性迷你 Linux-OS，就像虚拟机。你可以从中访问你的 Windows 文件，但是在 Linux 和 Windows 之间分享文件存在一定的风险。未来，WSL 可能更加稳定，**但是现在，对于这门课程我们将使用 Git Bash。**
+        instructor_notes: ''
+        resources: null
+      - id: 369890
+        key: e60ecaa0-0112-40a4-b2c1-076d853f8b0a
+        locale: zh-cn
+        version: 1.0.0
+        title: Install Git Bash on your Windows computer.
+        semantic_type: TaskListAtom
+        updated_at: 'Mon Sep 11 2017 16:15:41 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 我已从 git-scm.com 下载 Git
+          - 我已安装 Git。
+          - 我已找到 Git Bash 应用并运行该应用。
+          - 我已根据我的需求调整字体。
+        positive_feedback: 很棒！现在你的 Windows 计算机上已经具有兼容 Unix 的 shell。
+        video_feedback: null
+        description: ''
+  - id: 369931
+    key: 9fbb976b-dc7b-4584-a656-b05ab9d7a0c3
+    locale: zh-cn
+    version: 1.0.0
+    title: 打开终端
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:15:42 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369891
+      - 369893
+    atoms:
+      - id: 369891
+        key: 67213a57-4d75-4a1a-90b2-a1b04e4fe094
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 003 Shell P1 - 打开终端
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:15:42 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51896'
+          youtube_id: 4q6Vtym-nno
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179e0_ud206-003-shell-p1-opening-a-terminal/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179e0_ud206-003-shell-p1-opening-a-terminal/ud206-003-shell-p1-opening-a-terminal_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179e0_ud206-003-shell-p1-opening-a-terminal/ud206-003-shell-p1-opening-a-terminal_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179e0_ud206-003-shell-p1-opening-a-terminal/ud206-003-shell-p1-opening-a-terminal_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179e0_ud206-003-shell-p1-opening-a-terminal/ud206-003-shell-p1-opening-a-terminal_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179e0_ud206-003-shell-p1-opening-a-terminal/hls/playlist.m3u8'
+      - id: 369893
+        key: afbaf7d3-fe98-4e90-9b19-bcceef1ebbd3
+        locale: zh-cn
+        version: 1.0.0
+        title: 打开终端！
+        semantic_type: TaskListAtom
+        updated_at: 'Mon Sep 11 2017 16:15:42 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 我已经在另一个窗口中打开终端。
+        positive_feedback: 现在看看可以对其采取哪些操作。
+        video_feedback: null
+        description: ''
+  - id: 369935
+    key: 329dfdb1-9552-4abe-ba9f-565659db4fe7
+    locale: zh-cn
+    version: 1.0.0
+    title: 你的第一个命令 (echo)
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:15:43 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369894
+      - 369895
+    atoms:
+      - id: 369894
+        key: 812f3025-4262-4b76-a78f-52748cf67955
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 004 Shell P2 - 你的第一个命令
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:15:43 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51897'
+          youtube_id: ggf5WhOYy1U
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdd_ud206-004-shell-p2-your-first-command/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdd_ud206-004-shell-p2-your-first-command/ud206-004-shell-p2-your-first-command_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdd_ud206-004-shell-p2-your-first-command/ud206-004-shell-p2-your-first-command_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdd_ud206-004-shell-p2-your-first-command/ud206-004-shell-p2-your-first-command_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdd_ud206-004-shell-p2-your-first-command/ud206-004-shell-p2-your-first-command_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdd_ud206-004-shell-p2-your-first-command/hls/playlist.m3u8'
+      - id: 369895
+        key: 5a1fdd88-1de4-4e73-a7a5-d5408bf59333
+        locale: zh-cn
+        version: 1.0.0
+        title: echo
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:15:43 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            当你运行以下命令时，你认为会发生什么： 
+            `echo $COLUMNS x $LINES`  
+            (Try it!)
+          correct_feedback: null
+          video_feedback:
+            id: '51532'
+            youtube_id: 7NJC7C8MmdY
+            subtitles: null
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3720_ud206-005-shell-p2.1-echo-solution/ud206-005-shell-p2.1-echo-solution_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3720_ud206-005-shell-p2.1-echo-solution/ud206-005-shell-p2.1-echo-solution_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3720_ud206-005-shell-p2.1-echo-solution/ud206-005-shell-p2.1-echo-solution_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3720_ud206-005-shell-p2.1-echo-solution/ud206-005-shell-p2.1-echo-solution_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3720_ud206-005-shell-p2.1-echo-solution/hls/playlist.m3u8'
+          default_feedback: |-
+            不太正确。试试看！
+
+            （向你保证，不会删除文件。）
+          answers:
+            - id: a1489702654681
+              text: 终端使美元乘以美元。
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489702678549
+              text: shell 告诉我我的终端有多大。
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489702679172
+              text: shell 告诉我它有多大。
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489702679836
+              text: 终端正在清除我的文件。
+              is_correct: false
+              incorrect_feedback: null
+  - id: 369938
+    key: a2752f68-82cf-4988-8992-eb891c92f994
+    locale: zh-cn
+    version: 1.0.0
+    title: '浏览目录 (ls, cd, ..)'
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:15:51 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369904
+      - 369905
+    atoms:
+      - id: 369904
+        key: 8cba726a-7e62-41b1-ad16-15e121489ee6
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 006 Shell P3 - 浏览目录
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:15:43 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53029'
+          youtube_id: i9Xp94DmdB8
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/April/58e8846b_ud206-006-shell-p3-navigating-directories/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e8846b_ud206-006-shell-p3-navigating-directories/ud206-006-shell-p3-navigating-directories_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e8846b_ud206-006-shell-p3-navigating-directories/ud206-006-shell-p3-navigating-directories_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e8846b_ud206-006-shell-p3-navigating-directories/ud206-006-shell-p3-navigating-directories_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e8846b_ud206-006-shell-p3-navigating-directories/ud206-006-shell-p3-navigating-directories_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e8846b_ud206-006-shell-p3-navigating-directories/hls/playlist.m3u8'
+      - id: 369905
+        key: 573b6953-893d-467e-a3f3-5a5ec95dbca6
+        locale: zh-cn
+        version: 1.0.0
+        title: ls 和 cd
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:15:44 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            哪些命令会列出 `Pictures` 目录下的内容？?  
+            Mark all that are correct.
+          correct_feedback: |-
+            所有选项都正确！
+
+            `ls Pictures` 是最直接的方式。
+
+            `cd Pictures; ls` 将目录改为 `Pictures` 子目录，然后在该目录中运行 `ls`。
+
+            `ls Pictures/../Pictures` 有点啰嗦，但是可行。
+          video_feedback: null
+          default_feedback: shell 有很多执行任务的方法。请继续了解更多命令！
+          answers:
+            - id: a1489702884747
+              text: '`ls Pictures`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489702897285
+              text: '`cd Pictures; ls`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489702914396
+              text: '`ls Pictures/../Pictures`'
+              is_correct: true
+              incorrect_feedback: null
+  - id: 369934
+    key: 79e6c6b2-93e5-48c6-ad78-0bf5c854ab2b
+    locale: zh-cn
+    version: 1.0.0
+    title: 当前工作目录 (pwd)
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:15:54 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369896
+      - 369897
+    atoms:
+      - id: 369896
+        key: dac97b12-c314-4400-a26e-e9765ad55d0d
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 007 Shell P4 - 当前工作目录
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:15:54 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51898'
+          youtube_id: X7dsy3oMHp0
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdf_ud206-007-shell-p4-current-working-directory/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdf_ud206-007-shell-p4-current-working-directory/ud206-007-shell-p4-current-working-directory_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdf_ud206-007-shell-p4-current-working-directory/ud206-007-shell-p4-current-working-directory_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdf_ud206-007-shell-p4-current-working-directory/ud206-007-shell-p4-current-working-directory_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdf_ud206-007-shell-p4-current-working-directory/ud206-007-shell-p4-current-working-directory_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdf_ud206-007-shell-p4-current-working-directory/hls/playlist.m3u8'
+      - id: 369897
+        key: 53cd0163-8f9b-4b97-a16b-534d10f42bc9
+        locale: zh-cn
+        version: 1.0.0
+        title: 简洁性
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:15:54 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 为何 shell 命令都非常简短？
+          correct_feedback: 一开始设计 Unix 系统时，计算机与终端之间的连接速度很慢，因此采用非常简短的命令使用起来速度更快。不仅 shell 是这样，Unix 系统的其他部分（例如 C 编程语言）也是这样。
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1489703106691
+              text: 要输入的内容更少。
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703116847
+              text: 更容易记住。
+              is_correct: false
+              incorrect_feedback: 但是，简短的命令有时候很难记住。`ls` 并不比 `list` 更好记。
+            - id: a1489703117523
+              text: 让 Unix 专家看起来很神奇。
+              is_correct: false
+              incorrect_feedback: 或许是这样，但在设计 Unix 时，其他操作系统也很神秘。
+  - id: 369936
+    key: 65c5c01a-3c5a-4f31-b3ce-6cef130d972b
+    locale: zh-cn
+    version: 1.0.0
+    title: 参数和选项 (ls -l)
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:15:57 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369898
+      - 369899
+      - 369900
+    atoms:
+      - id: 369898
+        key: 2fcf7ce1-146b-4e04-b230-3711fd2bf905
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 008 Shell P5 - 参数
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:15:55 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51533'
+          youtube_id: UX9mzq11Mmg
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3722_ud206-008-shell-p5-parameters/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3722_ud206-008-shell-p5-parameters/ud206-008-shell-p5-parameters_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3722_ud206-008-shell-p5-parameters/ud206-008-shell-p5-parameters_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3722_ud206-008-shell-p5-parameters/ud206-008-shell-p5-parameters_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3722_ud206-008-shell-p5-parameters/ud206-008-shell-p5-parameters_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3722_ud206-008-shell-p5-parameters/hls/playlist.m3u8'
+      - id: 369899
+        key: 7eca78c8-6c12-43a5-8c16-4b4f22efb7fc
+        locale: zh-cn
+        version: 1.0.0
+        title: 调查 `ls -l`
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:15:55 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            你可以从 `ls -l` 中找到哪些信息？要回答该问题，你可以需要调查下；使用你最喜欢的搜索引擎。
+          correct_feedback: '`ls -l` 输出中还有更多的信息，但是这些非常重要。调查的很棒！'
+          video_feedback: null
+          default_feedback: 对于这道题，可以使用搜索引擎或其他资料寻找答案。要充分了解 shell，你可能需要阅读参考资料、博客、论坛和其他资源。
+          answers:
+            - id: a1489703312453
+              text: 列出的每个文件或目录的名称。
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703331303
+              text: 文件上次修改日期和时间。
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703331960
+              text: 文件的大小（字节）。
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703332604
+              text: 是否检测文件有没有病毒。
+              is_correct: false
+              incorrect_feedback: null
+      - id: 369900
+        key: 8bdb45ab-1284-4e08-b858-f7ee97ec7348
+        locale: zh-cn
+        version: 1.0.0
+        title: 寻找 bear
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:15:56 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 如果你想列出所有名称以单词 `bear` 开头的文件，该如何操作？
+          correct_feedback: '`bear*` 可以匹配任何名称以单词 `bear` 开头的文件。'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1489703472992
+              text: '`ls bear`'
+              is_correct: false
+              incorrect_feedback: 命令 `ls bear` 将仅列出名称正好是 `bear` 的文件（如果有的话）。
+            - id: a1489703506625
+              text: '`ls *.bear`'
+              is_correct: false
+              incorrect_feedback: 命令 `ls *.bear` 将列出名称以 `.bear` 结尾的文件。我们要查找的是名称以 `bear` 开头的文件。
+            - id: a1489703507258
+              text: '`ls bear*`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703507833
+              text: '`ls *bear*`'
+              is_correct: false
+              incorrect_feedback: 命令 `ls *bear*` 将列出名称包含 `bear` 的任何文件，即使位于中间或末尾，而不是开头。
+            - id: a1489703508493
+              text: You can't.
+              is_correct: false
+              incorrect_feedback: 你行的！
+  - id: 369937
+    key: d56564be-f4fe-41a7-8378-508338ecb28a
+    locale: zh-cn
+    version: 1.0.0
+    title: '整理文件 (mkdir, mv)'
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:16:00 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369901
+      - 369903
+      - 369902
+    atoms:
+      - id: 369901
+        key: 173b5b8a-15db-4cdd-ad32-b6c1db9571bd
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 009 Shell P6 - 整理文件
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:15:57 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51534'
+          youtube_id: NZsYyzzpJXA
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3724_ud206-009-shell-p6-organizing-your-files/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3724_ud206-009-shell-p6-organizing-your-files/ud206-009-shell-p6-organizing-your-files_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3724_ud206-009-shell-p6-organizing-your-files/ud206-009-shell-p6-organizing-your-files_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3724_ud206-009-shell-p6-organizing-your-files/ud206-009-shell-p6-organizing-your-files_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3724_ud206-009-shell-p6-organizing-your-files/ud206-009-shell-p6-organizing-your-files_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3724_ud206-009-shell-p6-organizing-your-files/hls/playlist.m3u8'
+      - id: 369903
+        key: 01008773-0ea8-43bf-a254-30287f79252d
+        locale: zh-cn
+        version: 1.0.0
+        title: 再移回来
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:15:58 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            假设我改变了主意，想要将 `epub` 文件从 `Documents/Books` 移回到 `Documents`。如何操作？我当前的工作目录是我的主目录，`Documents` 位于该目录中。 
+            请标记每个可行的答案：
+          correct_feedback: null
+          video_feedback:
+            id: '51535'
+            youtube_id: guJf4041gYI
+            subtitles: null
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-010-shell-p6.1-mv-solution/ud206-010-shell-p6.1-mv-solution_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-010-shell-p6.1-mv-solution/ud206-010-shell-p6.1-mv-solution_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-010-shell-p6.1-mv-solution/ud206-010-shell-p6.1-mv-solution_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-010-shell-p6.1-mv-solution/ud206-010-shell-p6.1-mv-solution_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-010-shell-p6.1-mv-solution/hls/playlist.m3u8'
+          default_feedback: 不太正确！提示下：有三个命令将可行。
+          answers:
+            - id: a1489703663112
+              text: '`mv ''Documents/Books'' Documents`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489703688713
+              text: '`mv ''Documents/Books''/* Documents`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703689341
+              text: '`cd Documents; mv ''Books''/*.epub .`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703689961
+              text: '`cd ''Documents/Books''; mv * ..`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703846914
+              text: '`mv ''Documents/Books/*'' Documents`'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 369902
+        key: a8d37a62-9950-4ce3-ad44-ffa93e2b6456
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:15:59 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          顺便提下，在 shell 中引用内容时，请始终使用直引号。如果你输入到终端窗口中，将会获得相关内容。但是，如果从网页或文档中进行复制，一定要小心不是`“弯引号”`。弯引号在 shell 中_不可行_。
+
+          在 shell 中，单引号和双引号的作用不太一样。如果不确定使用哪种引号，请选择单引号。
+        instructor_notes: ''
+        resources: null
+  - id: 369943
+    key: 0e019f34-19bf-4d63-bbf3-789074bfe268
+    locale: zh-cn
+    version: 1.0.0
+    title: 下载 (curl)
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:16:09 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369916
+      - 369917
+      - 369918
+      - 369919
+      - 369920
+    atoms:
+      - id: 369916
+        key: 49cab642-5109-46ac-8d24-fb61d6358644
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 011 Shell P7 - 下载
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:16:00 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53028'
+          youtube_id: h7FhU1f4TgE
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/April/58e883e2_ud206-011-shell-p7-downloading/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e883e2_ud206-011-shell-p7-downloading/ud206-011-shell-p7-downloading_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e883e2_ud206-011-shell-p7-downloading/ud206-011-shell-p7-downloading_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e883e2_ud206-011-shell-p7-downloading/ud206-011-shell-p7-downloading_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e883e2_ud206-011-shell-p7-downloading/ud206-011-shell-p7-downloading_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e883e2_ud206-011-shell-p7-downloading/hls/playlist.m3u8'
+      - id: 369917
+        key: d5c59b7d-2d51-4f0e-9359-2aabaf9a2cf1
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Sep 18 2017 09:22:58 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: 下载 `dictionary.txt`
+          prompt: |-
+
+
+            输入一个shell命令去下载 https://tinyurl.com/zeyq9vc ，并将它保存为文件 `dictionary.txt`。记住要遵循Web重定向。
+
+            你需要在自己的计算机上运行这个命令下载文件，为后续练习做准备。
+          semantic_type: CodeGradedQuestion
+          evaluation_id: '5049225802022912'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: print(open('studentMain.py').read())
+            gae_grading_code: |-
+              # Get student input.
+              text = executor_result['stdout']
+              problems = []
+
+              # Look for things that need to be there.
+              if not text.startswith('curl '):
+                  problems.append('The command should begin with the name of the program for downloading files from the web.')
+
+              if 'https://tinyurl.com/zeyq9vc' not in text:
+                  if 'http:' in text:
+                      problems.append('Make sure to use the exact URL above.')
+                  else:
+                      problems.append('The command needs to include the URL to download.')
+
+              if 'dictionary.txt' not in text:
+                  problems.append('The output filename `dictionary.txt` needs to appear in your command.')  
+              elif ' -L dictionary.txt' in text or '-o http' in text:
+                  problems.append('The output filename `dictionary.txt` needs to appear immediately after the `-o` option.')
+              elif ' -o dictionary.txt' not in text:
+                  problems.append('Use the `-o` option to send output to the right filename.')
+
+              if not problems and ' -L' not in text:
+                  problems.append('The command needs the `-L` option to follow web redirects.')
+                  
+
+              if not problems:
+                  grade_result['correct'] = True
+                  grade_result['feedback'] = "That looks okay to me, but I'm just a simple script and can't actually run that command for you to test it.\n\nTry that command on your own computer and see if you get a file downloaded!"
+                  grade_result['comment'] = ''
+              else:    
+                  grade_result['correct'] = False
+                  grade_result['feedback'] = '\n\n'.join(problems)
+                  grade_result['comment'] = ''
+                  
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 369918
+        key: 80908d34-fa60-4979-b9a7-39a4556ce4e9
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:16:08 GMT+0000 (UTC)'
+        is_public: true
+        text: '# 解决方案：'
+        instructor_notes: ''
+        resources: null
+      - id: 369919
+        key: 7426956a-7c7c-4663-80bf-50a61196b0f8
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 011 Shell P7.1 - 下载解决方案
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:16:08 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51536'
+          youtube_id: 1oEJUA-b0kE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-011-shell-p7.1-downloading-solution/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-011-shell-p7.1-downloading-solution/ud206-011-shell-p7.1-downloading-solution_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-011-shell-p7.1-downloading-solution/ud206-011-shell-p7.1-downloading-solution_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-011-shell-p7.1-downloading-solution/ud206-011-shell-p7.1-downloading-solution_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-011-shell-p7.1-downloading-solution/ud206-011-shell-p7.1-downloading-solution_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-011-shell-p7.1-downloading-solution/hls/playlist.m3u8'
+      - id: 369920
+        key: 816cfd26-1a96-499a-9772-c151e7ffaf8d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:16:09 GMT+0000 (UTC)'
+        is_public: true
+        text: 顺便提下，很多 URL 中都有特殊字符，例如 `&` 符号，它在 shell 中有特殊的含义。因此我始终将这些 URL 放在引号内，虽然这些示例没有引号也可行，但是有必要养成良好的习惯。
+        instructor_notes: ''
+        resources: null
+  - id: 369939
+    key: d2ad83b4-3fe3-41da-9073-ba27662c4650
+    locale: zh-cn
+    version: 1.0.0
+    title: '查看文件 (cat, less)'
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:16:10 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369906
+      - 369907
+    atoms:
+      - id: 369906
+        key: 0ce1517e-a7fa-45e7-84b7-9c351bb856dc
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 013 Shell P8 - 查看文件
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:16:09 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53027'
+          youtube_id: hPPVMKqbQV0
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/April/58e88383_ud206-013-shell-p8-viewing-files/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e88383_ud206-013-shell-p8-viewing-files/ud206-013-shell-p8-viewing-files_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e88383_ud206-013-shell-p8-viewing-files/ud206-013-shell-p8-viewing-files_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e88383_ud206-013-shell-p8-viewing-files/ud206-013-shell-p8-viewing-files_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e88383_ud206-013-shell-p8-viewing-files/ud206-013-shell-p8-viewing-files_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e88383_ud206-013-shell-p8-viewing-files/hls/playlist.m3u8'
+      - id: 369907
+        key: ef6b54fd-d362-4dcf-9c44-abdbdf3f5ad0
+        locale: zh-cn
+        version: 1.0.0
+        title: What's the next word?
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:16:10 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 使用 `dictionary.txt` 文件和 `less` 命令找出该字典中单词 `goobers` 之后的下个单词。
+          default_feedback: 使用 `less` 查看 `dictionary.txt` 文件，然后使用搜索功能（借助斜杠键）搜索单词 `goobers`。这道测验的答案是它之后下一行上的单词。
+          correct_feedback: 是 `good`！
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: ^good$
+              expression_description: ''
+              flags: ''
+              incorrect_feedback: null
+  - id: 369940
+    key: e3962523-75ee-4b58-93bf-0ade6a0fe786
+    locale: zh-cn
+    version: 1.0.0
+    title: '删除内容 (rm, rmdir)'
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:16:11 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369908
+      - 369909
+    atoms:
+      - id: 369908
+        key: 5d0d1656-f74b-40c1-ba14-7fefe2766eb7
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 014 Shell P9 - 删除内容
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:16:10 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52034'
+          youtube_id: it19PvJarbk
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2f15d_ud206-014-shell-p9-removing-things/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2f15d_ud206-014-shell-p9-removing-things/ud206-014-shell-p9-removing-things_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2f15d_ud206-014-shell-p9-removing-things/ud206-014-shell-p9-removing-things_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2f15d_ud206-014-shell-p9-removing-things/ud206-014-shell-p9-removing-things_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2f15d_ud206-014-shell-p9-removing-things/ud206-014-shell-p9-removing-things_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2f15d_ud206-014-shell-p9-removing-things/hls/playlist.m3u8'
+      - id: 369909
+        key: 6a26da50-2486-4a3f-af12-b2489fb35b51
+        locale: zh-cn
+        version: 1.0.0
+        title: 'Good file, bad face'
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:16:11 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            你有四个文件，名称分别为：
+            1. `Good File`
+            2. `Bad Name Good File`
+            3. `Bad File`
+            4. `Good Name Bad Face`
+
+            你想删掉第 3 个和第 4 个文件，并保留第 1 个和第 2 个文件。下面的两个命令可以实现这一操作，请选择：
+          correct_feedback: null
+          video_feedback:
+            id: '51538'
+            youtube_id: RZgFqAwkjmQ
+            subtitles: null
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3728_ud206-015-shell-p9.1-removing-solution/ud206-015-shell-p9.1-removing-solution_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3728_ud206-015-shell-p9.1-removing-solution/ud206-015-shell-p9.1-removing-solution_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3728_ud206-015-shell-p9.1-removing-solution/ud206-015-shell-p9.1-removing-solution_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3728_ud206-015-shell-p9.1-removing-solution/ud206-015-shell-p9.1-removing-solution_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3728_ud206-015-shell-p9.1-removing-solution/hls/playlist.m3u8'
+          default_feedback: null
+          answers:
+            - id: a1489704901326
+              text: '`rm ''Bad File'' ''Good Name Bad Face''`'
+              is_correct: true
+              incorrect_feedback: 有两个选项是可行的。其中一个很啰嗦。
+            - id: a1489704929921
+              text: '`rm *Bad*`'
+              is_correct: false
+              incorrect_feedback: 命令 `rm *Bad*` 将删除文件 `Good Name Bad Face`，而我们不想删除该文件。
+            - id: a1489704930729
+              text: '`rm Bad!Good`'
+              is_correct: false
+              incorrect_feedback: shell 将无法理解命令 `rm Bad!Good`。
+            - id: a1489704931490
+              text: "`rm *'Bad F'*\f`"
+              is_correct: true
+              incorrect_feedback: 有两个选项是可行的。其中一个会查看文件名的中间内容。
+  - id: 369941
+    key: 5e1f6045-6824-4c73-8ba1-07ce6c9f54a8
+    locale: zh-cn
+    version: 1.0.0
+    title: '搜索和管道 (grep, wc)'
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:16:12 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369910
+      - 369911
+      - 369912
+    atoms:
+      - id: 369910
+        key: e8885826-0fcf-43d5-845c-7ae93c0ac520
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 016 Shell P10 - 搜索和管道
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:16:11 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52340'
+          youtube_id: AWpVScp9z4s
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dac1cb_ud206-016-shell-p10-searching-and-pipes/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dac1cb_ud206-016-shell-p10-searching-and-pipes/ud206-016-shell-p10-searching-and-pipes_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dac1cb_ud206-016-shell-p10-searching-and-pipes/ud206-016-shell-p10-searching-and-pipes_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dac1cb_ud206-016-shell-p10-searching-and-pipes/ud206-016-shell-p10-searching-and-pipes_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dac1cb_ud206-016-shell-p10-searching-and-pipes/ud206-016-shell-p10-searching-and-pipes_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dac1cb_ud206-016-shell-p10-searching-and-pipes/hls/playlist.m3u8'
+      - id: 369911
+        key: 5b62e8b5-fd40-4ae0-aefb-4e2659d0eceb
+        locale: zh-cn
+        version: 1.0.0
+        title: 查找 `ibo`
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:16:11 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            `dictionary.txt` 中有多少个单词符合规律 `ibo`？
+          default_feedback: 请使用 `grep` 和 `wc` 或 `grep -c` 得出该问题的答案！
+          correct_feedback: 从 `Claiborne` 到 `riboflavin`，该文件中有 22 个 `ibo`。
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: '22'
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+      - id: 369912
+        key: de73b556-2650-49e2-9a04-4fa23a2c360a
+        locale: zh-cn
+        version: 1.0.0
+        title: grep 模式叫做什么？
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:16:12 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            请调查下！使用 `grep` 不仅可以匹配单词。`grep` 的功能具有一个特定的术语。
+
+            请使用你喜爱的搜索引擎调查研究下，了解这些规律叫做什么。
+          default_feedback: 有一个特定的计算机科学术语可以用来描述 `grep` 具备的功能。请继续调查！
+          correct_feedback: |
+            正则表达式也叫做 regexps 或 regexes。
+
+            实际上可以使用 `grep` 进行一整套的复杂语言搜索操作，这门课程根本讲不完。
+
+            很多其他程序也用到正则表达式，包括文本编辑器以及这道测验。这道测验的正确答案是正则表达式 `^[Rr]eg.*[Ee]x.*`，表示任何以 `reg` 开头并具有 `ex`，且大写和小写的 R 和 E 都可以的字符串。
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: '^[Rr]eg.*[Ee]x.*'
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: '.*[Gg]lob.*'
+              expression_description: null
+              flags: ''
+              incorrect_feedback: "`*` 运算符在 shell 中是通配符，但在 `grep` 中有点不同。（虽然 \"grep\" 和 \"glob\" 都很奇怪。）\n\n继续调查！\f\n"
+  - id: 369942
+    key: 717cf4a6-fde3-4412-8303-d2a1de8646c8
+    locale: zh-cn
+    version: 1.0.0
+    title: Shell 和环境变量
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:16:14 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369913
+      - 369914
+      - 369915
+    atoms:
+      - id: 369913
+        key: 14263128-a059-4243-b6d9-20e2f5726963
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 017 Shell P11 - 变量
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:16:12 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51540'
+          youtube_id: xe4_Mue2qmk
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372b_ud206-017-shell-p11-variables/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372b_ud206-017-shell-p11-variables/ud206-017-shell-p11-variables_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372b_ud206-017-shell-p11-variables/ud206-017-shell-p11-variables_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372b_ud206-017-shell-p11-variables/ud206-017-shell-p11-variables_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372b_ud206-017-shell-p11-variables/ud206-017-shell-p11-variables_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372b_ud206-017-shell-p11-variables/hls/playlist.m3u8'
+      - id: 369914
+        key: 9653713b-aee1-4cf6-a7e5-1a4b4ad5e341
+        locale: zh-cn
+        version: 1.0.0
+        title: Shell 或环境？
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:16:13 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            你认为 `PWD` 变量是 shell 变量还是环境变量？
+
+            （不知道它是什么？试试 `echo $PWD`。）
+          correct_feedback: '`$PWD` 的值是当前工作目录，和运行 pwd 命令看到的一样。你在类 Unix 系统上运行的每个程序都具有某种工作目录。通常以你启动程序时所在的目录开始。因此 `PWD` 变量是**环境**变量。而不仅仅是 shell 内部变量。'
+          video_feedback: null
+          default_feedback: '`$PWD` 的值是当前工作目录，和运行 pwd 命令看到的一样。你在类 Unix 系统上运行的每个程序都具有某种工作目录。通常以你启动程序时所在的目录开始。'
+          answers:
+            - id: a1489706549683
+              text: Shell 变量
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489706572500
+              text: 环境变量
+              is_correct: true
+              incorrect_feedback: null
+      - id: 369915
+        key: 2c36d1b8-40a1-49aa-9ddf-dce2b651a96d
+        locale: zh-cn
+        version: 1.0.0
+        title: 显示两个变量
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:16:13 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            写一个 shell 命令，使用 `echo` 显示变量 `LOGNAME` 和 `PWD` 的内容，并在二者之间留个空格。
+          default_feedback: 看看你之前使用 shell 变量的示例。
+          correct_feedback: 顺便提下，`LOGNAME` 是环境变量，其中包含你所登录的帐户的用户名。
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: echo \$LOGNAME \$PWD
+              expression_description: ''
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: echo LOGNAME PWD
+              expression_description: null
+              flags: ''
+              incorrect_feedback: There's something you need to put before the name of a variable when you want to use its value.
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: echo \$logname \$pwd
+              expression_description: null
+              flags: ''
+              incorrect_feedback: 'Remember, the shell is case-sensitive. Uppercase `$LOGNAME` and lowercase `$logname` would be two different variables.'
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: echo logname pwd
+              expression_description: null
+              flags: ''
+              incorrect_feedback: 'There''s something you need to put before the name of a variable when you want to use its value. Also, the shell is case-sensitive; make sure to match upper- and lower-case exactly.'
+  - id: 369944
+    key: e8bb8107-2004-4d27-a053-cc7c277cd20b
+    locale: zh-cn
+    version: 1.0.0
+    title: 起始文件 (.bash_profile)
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:16:15 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369921
+      - 369922
+    atoms:
+      - id: 369921
+        key: 3e6b4ba3-5dda-4d38-bfc9-0f1d9181deec
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:16:14 GMT+0000 (UTC)'
+        is_public: true
+        text: ' '
+        instructor_notes: ''
+        resources: null
+      - id: 369922
+        key: 769e63a4-d559-4014-8d31-2930c155351e
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 018 P12 起始文件 (.bash_profile)
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:16:15 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52085'
+          youtube_id: '-zF-XebfzBE'
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d41d57_ud206-018-p12-startup-files-.bash-profile-render/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d41d57_ud206-018-p12-startup-files-.bash-profile-render/ud206-018-p12-startup-files-.bash-profile-render_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d41d57_ud206-018-p12-startup-files-.bash-profile-render/ud206-018-p12-startup-files-.bash-profile-render_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d41d57_ud206-018-p12-startup-files-.bash-profile-render/ud206-018-p12-startup-files-.bash-profile-render_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d41d57_ud206-018-p12-startup-files-.bash-profile-render/ud206-018-p12-startup-files-.bash-profile-render_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d41d57_ud206-018-p12-startup-files-.bash-profile-render/hls/playlist.m3u8'
+  - id: 369945
+    key: ce6e3ca6-768e-4498-a511-f0bd9f046a74
+    locale: zh-cn
+    version: 1.0.0
+    title: 控制 shell 提示符 ($PS1)
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:16:16 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369923
+      - 369924
+      - 369925
+    atoms:
+      - id: 369923
+        key: 6df6cc2c-bff5-4fc1-84e0-09035a31c69a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:16:15 GMT+0000 (UTC)'
+        is_public: true
+        text: ' '
+        instructor_notes: ''
+        resources: null
+      - id: 369924
+        key: 2a41be52-1c37-45ef-bb59-aa4a59abc414
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 020 Shell P13 控制 shell 提示符 ($PS1)
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:16:16 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52005'
+          youtube_id: nnqvRZ-Fx3k
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d414_ud206-020-shell-p13-controlling-the-shell-prompt-ps1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d414_ud206-020-shell-p13-controlling-the-shell-prompt-ps1/ud206-020-shell-p13-controlling-the-shell-prompt-ps1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d414_ud206-020-shell-p13-controlling-the-shell-prompt-ps1/ud206-020-shell-p13-controlling-the-shell-prompt-ps1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d414_ud206-020-shell-p13-controlling-the-shell-prompt-ps1/ud206-020-shell-p13-controlling-the-shell-prompt-ps1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d414_ud206-020-shell-p13-controlling-the-shell-prompt-ps1/ud206-020-shell-p13-controlling-the-shell-prompt-ps1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d414_ud206-020-shell-p13-controlling-the-shell-prompt-ps1/hls/playlist.m3u8'
+      - id: 369925
+        key: d8b79b4b-84a0-4bb3-b428-e7795e66ca0b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:16:16 GMT+0000 (UTC)'
+        is_public: true
+        text: '在本视频快结束时，有一个我用来构建长而复杂的 `$PS1` 提示符的工具的屏幕截图。该工具由 Julien Ricard 构建，网址为 http://bashrcgenerator.com by。请试试！'
+        instructor_notes: ''
+        resources: null
+  - id: 369946
+    key: 640986e9-1da4-4a4f-9bba-3d9927062389
+    locale: zh-cn
+    version: 1.0.0
+    title: 别名
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:16:18 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369926
+      - 369927
+    atoms:
+      - id: 369926
+        key: f5437d1b-ccef-487a-aa32-b037172cfe29
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:16:17 GMT+0000 (UTC)'
+        is_public: true
+        text: ' '
+        instructor_notes: ''
+        resources: null
+      - id: 369927
+        key: f1c7c3bd-239d-4e18-90d1-8cf373911700
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 021 Shell P14 别名
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:16:18 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52007'
+          youtube_id: kINmpgXxayM
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d4b4_ud206-021-shell-p14-aliases/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d4b4_ud206-021-shell-p14-aliases/ud206-021-shell-p14-aliases_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d4b4_ud206-021-shell-p14-aliases/ud206-021-shell-p14-aliases_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d4b4_ud206-021-shell-p14-aliases/ud206-021-shell-p14-aliases_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d4b4_ud206-021-shell-p14-aliases/ud206-021-shell-p14-aliases_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d4b4_ud206-021-shell-p14-aliases/hls/playlist.m3u8'
+  - id: 369947
+    key: aa9e3767-3477-483e-8568-5c1ca02be009
+    locale: zh-cn
+    version: 1.0.0
+    title: 继续学习！
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:16:19 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 369928
+      - 369929
+      - 369930
+    atoms:
+      - id: 369928
+        key: 3df1bb65-487d-4d00-aaf0-3d617d932e37
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:16:18 GMT+0000 (UTC)'
+        is_public: true
+        text: ' '
+        instructor_notes: ''
+        resources: null
+      - id: 369929
+        key: 925bbfbc-1696-4959-83ae-9645cd93e898
+        locale: zh-cn
+        version: 1.0.0
+        title: Ud206 022 Shell 讲习班结尾部分
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:16:19 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51541'
+          youtube_id: 68twTPXPrx0
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372f_ud206-022-shell-workshop-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372f_ud206-022-shell-workshop-outro/ud206-022-shell-workshop-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372f_ud206-022-shell-workshop-outro/ud206-022-shell-workshop-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372f_ud206-022-shell-workshop-outro/ud206-022-shell-workshop-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372f_ud206-022-shell-workshop-outro/ud206-022-shell-workshop-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372f_ud206-022-shell-workshop-outro/hls/playlist.m3u8'
+      - id: 369930
+        key: 2d9ba1a8-26ca-4b8e-af9a-8d030f1d511f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:16:19 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Shell 资源
+
+          * [Bash 学院](http://www.bash.academy/)
+          * [Bash 初学者指南](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/)
+          * [Bash 编程指南](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
+          * [Regexr — 学习正则表达式](http://regexr.com/)
+        instructor_notes: ''
+        resources: null

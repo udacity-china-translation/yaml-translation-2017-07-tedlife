@@ -1,0 +1,902 @@
+id: 357421
+key: 7f45040c-7d92-476d-8ad4-36853d6aa111
+locale: zh-cn
+version: 1.0.0
+title: 使用 React 渲染 UI
+semantic_type: Lesson
+updated_at: 'Wed Sep 06 2017 00:10:23 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/June/59519538_2-2-rendering-ui-with-react-2x/2-2-rendering-ui-with-react-2x.jpg'
+  width: 592
+  height: 640
+video: null
+summary: 你将了解 React 如何创建和渲染元素。你还会将手动元素转换为 JSX，使用 create-react-app 搭建项目，并了解组件的简单介绍。
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+career_portal_experience_levels: []
+_concepts_ids:
+  - 357414
+  - 357418
+  - 357420
+  - 357415
+  - 357419
+_project_id: null
+concepts:
+  - id: 357414
+    key: 9d9d9885-c3c7-4296-ab29-ba51045d7615
+    locale: zh-cn
+    version: 1.0.0
+    title: 渲染 UI 简介
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 00:10:07 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357362
+      - 357363
+      - 357372
+    atoms:
+      - id: 357362
+        key: 859e9121-b060-4fe1-84ab-b320cbb7b369
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 00:10:06 GMT+0000 (UTC)'
+        is_public: true
+        text: ' '
+        instructor_notes: ''
+        resources: null
+      - id: 357363
+        key: 310f498b-f159-40fd-8394-476b36a99e8b
+        locale: zh-cn
+        version: 1.0.0
+        title: 在 React 中渲染 UI
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 00:10:07 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57716'
+          youtube_id: H8zoSVe_CL8
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d6d7_01-ui-rendering-in-react/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6d7_01-ui-rendering-in-react/01-ui-rendering-in-react_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6d7_01-ui-rendering-in-react/01-ui-rendering-in-react_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6d7_01-ui-rendering-in-react/01-ui-rendering-in-react_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6d7_01-ui-rendering-in-react/01-ui-rendering-in-react_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6d7_01-ui-rendering-in-react/hls/playlist.m3u8'
+      - id: 357372
+        key: dc9fc728-35a6-4c70-b823-42cda8b81ddc
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 00:10:07 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          React 使用 JavaScript 对象来创建 React 元素。我们将使用这些 React 元素来描述我们希望页面看起来如何，React 将负责生成 DOM 节点来达到效果。
+           
+          还记得在上节课提到的命令式与声明式代码之间的区别吗？我们编写的 React 代码是声明式，因为我们没有告诉 React _执行什么操作_；我们编写 React 元素来描述页面应该看起来怎么样，React 会执行所有的实现工作。
+           
+          说了很多理论内容了，我们开始创建一些元素吧！
+        instructor_notes: ''
+        resources: null
+  - id: 357418
+    key: d9831309-352a-4e04-83f3-ac3e4e8cac76
+    locale: zh-cn
+    version: 1.0.0
+    title: 创建元素和 JSX
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 00:10:15 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357374
+      - 357375
+      - 357376
+      - 357382
+      - 357383
+      - 357384
+      - 357385
+      - 357386
+      - 357387
+      - 357388
+      - 357389
+      - 357391
+      - 357392
+      - 357393
+      - 357394
+      - 357395
+      - 357396
+      - 357397
+    atoms:
+      - id: 357374
+        key: c6f2a36e-fc03-469b-9bdd-f93539ae9352
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 00:10:08 GMT+0000 (UTC)'
+        is_public: true
+        text: "## 首先观看\n \n在下面的几个视频中，我们将使用 React 的 `.createElement()` 方法。首先，下面是它的签名：\n\n```js\nReact.createElement( /* type */, /* props */, /* content */ );\n```\n\n稍后我们将详细分析！我们将用一个已经设置好的项目开始。暂时不用担心创建项目或跟上进度。很快就会有很多实践内容！我们将在下个部分构建我们的课程内项目 Contacts App。\n \n虽然你将在下面的几个视频中看到，但是确保能了解 React 的 `.createElement()` 方法有多酷！\n\n> ## \uD83D\uDCA1 Trying Out React Code \uD83D\uDCA1\n\n> React 是 JavaScript 的扩展（即 JavaScript 库），但是没有内置在浏览器中。如果你像学习 JavaScript 一样在浏览器控制台中测试 React 代码示例，则无法测试。稍后，我们将了解如何安装和使用 React 环境。然后，你将能够尝试示例代码！\n"
+        instructor_notes: ''
+        resources: null
+      - id: 357375
+        key: 7ddc0d0c-c58e-4473-9f6f-0072eb445fae
+        locale: zh-cn
+        version: 1.0.0
+        title: React 的 CreateElement() 方法
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 00:10:08 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '61400'
+          youtube_id: B3VKTJNx7xQ
+          subtitles:
+            - url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/August/5988fbc6_02-reacts-createelement-method/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/5988fbc6_02-reacts-createelement-method/02-reacts-createelement-method_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/5988fbc6_02-reacts-createelement-method/02-reacts-createelement-method_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/5988fbc6_02-reacts-createelement-method/02-reacts-createelement-method_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/5988fbc6_02-reacts-createelement-method/02-reacts-createelement-method_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/5988fbc6_02-reacts-createelement-method/hls/playlist.m3u8'
+      - id: 357376
+        key: 8c97186b-774c-42d5-ae06-724ca916e663
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 00:10:08 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 在 DOM 上渲染元素
+
+          在上个视频中，我们使用 ReactDOM 的 `render()` 方法将我们的元素渲染到页面的特定区域。具体而言，我们在叫做 `root` 的 DOM 节点上渲染了 `element`。这个 `root` 来自哪里？
+
+          使用 React 构建的应用通常有一个 `root` DOM 节点。例如，一个 HTML 文件可能包含以下 `<div>`：
+
+          ```html
+          <div id='root'></div>
+          ```
+
+          通过将该 DOM 节点传入 `getElementById()`，React 将最终能够控制它的所有内容。另一种思考方法是这个 `<div>` 将充当我们 React 应用的“钩子”；React 将控制该区域并渲染我们的 UI！
+        instructor_notes: ''
+        resources: null
+      - id: 357382
+        key: 013f22f2-49a8-49f4-81a6-6425ca0a177b
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Sep 06 2017 00:10:09 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            运行以下代码时，`myBio` 将存储什么？
+
+            ```js
+            import React from 'react';
+             
+            const myBio = React.createElement(
+                'div',
+                null,
+                'My name is Michael, and I love porcupines.'
+            );
+            ```
+          correct_feedback: React 的 `.createElement()` 方法获得元素的说明并返回简单的 JavaScript 对象。
+          video_feedback: null
+          default_feedback: 我起来不太正确。还记得我在截屏视频中将 `element` 变量输出到控制台了吗？显示了什么？
+          answers:
+            - id: a1497640684246
+              text: DOM 节点的引用
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497640759672
+              text: DOM 节点本身
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497640760505
+              text: JavaScript 对象
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1497640761089
+              text: JavaScript 类
+              is_correct: false
+              incorrect_feedback: null
+      - id: 357383
+        key: 19129bef-b38e-445d-9e4d-52107222fd73
+        locale: zh-cn
+        version: 1.0.0
+        title: 在 CreateElement() 中传入属性
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 00:10:09 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57718'
+          youtube_id: MTXIx7859P0
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d6f2_04-passing-attributes-in-createelement/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f2_04-passing-attributes-in-createelement/04-passing-attributes-in-createelement_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f2_04-passing-attributes-in-createelement/04-passing-attributes-in-createelement_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f2_04-passing-attributes-in-createelement/04-passing-attributes-in-createelement_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f2_04-passing-attributes-in-createelement/04-passing-attributes-in-createelement_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f2_04-passing-attributes-in-createelement/hls/playlist.m3u8'
+      - id: 357384
+        key: 67d5b49f-a2cc-4bcd-84f4-e4f633216806
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Wed Sep 06 2017 00:10:10 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'React 允许将各种 HTML 属性传递给 React 元素。请查看 [React 的 `HTMLDOMPropertyConfig.js` 文件](https://github.com/facebook/react/blob/master/src/renderers/dom/shared/HTMLDOMPropertyConfig.js)，并指出下面的哪些属性是允许传递的：'
+          correct_feedback: 值得注意的一点是，你无法使用默认的 `for` 属性。就像你需要使用 `className` 而不是 `class`，你需要使用 `htmlFor` 而不是 `for`。这是因为 'for' 是 JavaScript 的保留词。
+          video_feedback: null
+          default_feedback: '这些结果并不是我得出的结果。确定阅读了 [React 的 `HTMLDOMPropertyConfig.js` 文件](https://github.com/facebook/react/blob/master/src/renderers/dom/shared/HTMLDOMPropertyConfig.js) 并查看该页面上列出了哪些元素了吗？'
+          answers:
+            - id: a1497640887522
+              text: poster
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1497640891985
+              text: id
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1497640892526
+              text: marginWidth
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1497640893202
+              text: for
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497640913966
+              text: accessKey
+              is_correct: true
+              incorrect_feedback: null
+      - id: 357385
+        key: 847f09d4-9410-41c5-b9db-a13bcb0624dc
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 00:10:10 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          我刚刚使用 React 的 `.createElement()` 方法构建了一个 “React 元素”。`.createElement()` 方法具有以下签名：
+           
+          ```js
+          React.createElement( /* type */, /* props */, /* content */ );  
+          ```
+           
+          我们详细分析下每个项目可以为：
+           
+          * `type` – 字符串或 React 组件
+
+              可以是任何现有 HTML 元素字符串（例如 `‘p’`、`‘span’` 或 `‘header’`），或者你可以传递 React _组件_（稍后我们将使用 JSX 创建组件）。
+
+
+          * `props` – 为 `null` 或一个对象
+
+              这是 HTML 属性的对象以及关于该元素的自定义数据。
+           
+
+          * `content` – `null`、字符串、React 元素或 React 组件
+
+              你在此处传递的任何内容都将为所渲染元素的内容。包括纯文本、JavaScript 代码、其他 React 元素等。
+        instructor_notes: ''
+        resources: null
+      - id: 357386
+        key: b0f7e2d3-7c81-437d-a955-178cd36006e3
+        locale: zh-cn
+        version: 1.0.0
+        title: 嵌套 React.CreateElement() 调用
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 00:10:10 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57719'
+          youtube_id: JRkpQamCWxI
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d6f3_07-nesting-react.createelement-calls/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f3_07-nesting-react.createelement-calls/07-nesting-react.createelement-calls_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f3_07-nesting-react.createelement-calls/07-nesting-react.createelement-calls_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f3_07-nesting-react.createelement-calls/07-nesting-react.createelement-calls_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f3_07-nesting-react.createelement-calls/07-nesting-react.createelement-calls_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f3_07-nesting-react.createelement-calls/hls/playlist.m3u8'
+      - id: 357387
+        key: 9dcfc7c1-da5a-4624-aa54-f1928e52fd2a
+        locale: zh-cn
+        version: 1.0.0
+        title: 数组嵌套
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 00:10:11 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57720'
+          youtube_id: PDT3A1L1sPs
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d6f6_09-nesting-with-an-array/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f6_09-nesting-with-an-array/09-nesting-with-an-array_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f6_09-nesting-with-an-array/09-nesting-with-an-array_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f6_09-nesting-with-an-array/09-nesting-with-an-array_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f6_09-nesting-with-an-array/09-nesting-with-an-array_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f6_09-nesting-with-an-array/hls/playlist.m3u8'
+      - id: 357388
+        key: 774b1487-0c4a-4732-bae2-8919bfab8fc0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 00:10:11 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## `.createElement()` 返回*一个*根元素
+
+          `React.createElement( /* type */, /* props */, /* content */ );` 创建一个特定类型的 React 元素。我们通常会传入一个标记，例如 `<div>` 或 `<span>` 来表示该类型，但是内容参数可以是_另一个_ React 元素！
+
+          看看下面的示例：
+
+          ```js
+          const element = React.createElement('div', null,
+            React.createElement('strong', null, 'Hello world!')
+          );
+          ```
+
+          这里，当此 React 元素渲染为 HTML 时，"Hello world!"将包裹在 `<div>` 内。虽然我们可以嵌套 React 元素，但是注意整个调用仅返回一个元素。
+        instructor_notes: ''
+        resources: null
+      - id: 357389
+        key: fba9501d-99d9-4b63-b78f-2d6e79ed7555
+        locale: zh-cn
+        version: 1.0.0
+        title: JSX 可以实现轻松嵌套
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 00:10:12 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57721'
+          youtube_id: 9kyaEeKDUGE
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d6fa_10-jsx-is-for-easy-nesting/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6fa_10-jsx-is-for-easy-nesting/10-jsx-is-for-easy-nesting_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6fa_10-jsx-is-for-easy-nesting/10-jsx-is-for-easy-nesting_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6fa_10-jsx-is-for-easy-nesting/10-jsx-is-for-easy-nesting_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6fa_10-jsx-is-for-easy-nesting/10-jsx-is-for-easy-nesting_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6fa_10-jsx-is-for-easy-nesting/hls/playlist.m3u8'
+      - id: 357391
+        key: ee22b7e1-e1bd-4118-9ef0-61477cd5d61a
+        locale: zh-cn
+        version: 1.0.0
+        title: React.CreateElement() 到 JSX
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 00:10:12 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57722'
+          youtube_id: h_rHa8mVyBk
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d6ff_11-react.createelement-to-jsx/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6ff_11-react.createelement-to-jsx/11-react.createelement-to-jsx_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6ff_11-react.createelement-to-jsx/11-react.createelement-to-jsx_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6ff_11-react.createelement-to-jsx/11-react.createelement-to-jsx_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6ff_11-react.createelement-to-jsx/11-react.createelement-to-jsx_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6ff_11-react.createelement-to-jsx/hls/playlist.m3u8'
+      - id: 357392
+        key: 52566659-fdf7-4e76-8e6c-aa8ffee2a675
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Sep 06 2017 00:10:12 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            看看下面的 JSX 示例：
+
+            ```js
+            const greeting = (
+              <div className='greeting'>
+                <h2>Hello world!</h2>
+              </div>
+            );
+            ```
+
+            如果你想输出相同的 HTML，在调用 `createElement()` 时，`1`、`2` 和 `3` 应该是什么？
+
+            ```js
+            const greeting = React.createElement(
+              __1__,
+              { className: 'greeting' },
+              React.createElement(
+                __2__,
+                {},
+                __3__
+              )
+            );
+            ```
+          correct_feedback: |-
+            无论是 JSX 还是普通的 JavaScript（使用 `createElement()`），两个示例都生成了相同的 HTML：
+
+            ```html
+            <div class='greeting'><h2>Hello world!</h2></div>
+            ```
+          video_feedback: null
+          default_feedback: '注意，JSX 只是 `React.createElement( /* type */, /* props */, /* content */ );` 的语法扩展。二者最终都会生成相同的 HTML。'
+          answers:
+            - id: a1498260147597
+              text: '`''h2''`, `''div''`, `''Hello world!''`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498260346431
+              text: '`div`, `h2`, `Hello world!`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498260346919
+              text: '`''div''`, `''h2''`, `''Hello world!''`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498260347423
+              text: '`Hello world!`, `div`, `h2`'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 357393
+        key: f19ac44f-4d05-4517-8ec7-8448b852039a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 25 2017 04:25:20 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## JSX 也返回*一个*根元素
+
+          在编写 JSX 时，请记住，它只能返回一个元素。该元素可以有任何数量的子元素，但是只能有一个根元素封装整体 JSX （通常是一个 `<div>` 或 `<span>`）。请看看下面的示例：
+
+          ```js
+          const message = (
+            <div>
+              <h1>All About JSX:</h1>
+              <ul>
+                <li>JSX</li>
+                <li>is</li>
+                <li>awesome!</li>
+              </ul>
+            </div>
+          );
+          ```
+
+          注意到上述代码中只有一个 `<div>` 元素，其他所有 JSX 都嵌套在其中了吗？如果你想要多个元素，就应该这么编写。为了澄清下，下面的示例不正确，将导致错误：
+
+          ```js
+          const message = (
+            <h1>All About JSX:</h1>
+            <ul>
+              <li>JSX</li>
+              <li>is</li>
+              <li>awesome!</li>
+            </ul>
+          );
+          ```
+
+          在此示例中，我们有两个兄弟元素，它们都在根级别（即 `<h1>` 和 `<ul>`）。这样是不可行的，会产生错误。
+
+          > Syntax error: Adjacent JSX elements must be wrapped in an enclosing tag
+
+          因为我们知道 JSX 只是 `.createElement()` 的语法扩展，因此是合理的；`.createElement()` 只获得一个标记名称（字符串）作为其第一个参数。
+        instructor_notes: ''
+        resources: null
+      - id: 357394
+        key: 224d63a3-5453-4b85-adda-f43d08cba848
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 00:10:13 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 组件简介
+
+          到目前为止，我们已经看到 `.createElement()` 和 JSX 可以帮助我们生成一些 HTML。但是，通常我们将使用 React 的主要功能之一来构建 UI：组件。组件是指可以_重复利用_的代码段，最终负责返回要渲染到网页上的 HTML。很多时候，你将看到用 JSX 编写的 React 组件。
+
+          因为 React 的侧重点是简化应用的 UI 构建过程，因此在任何 React 组件类中，只有一个方法是必须的：`render()`。
+
+          我们开始构建我们的首个组件类吧！
+        instructor_notes: ''
+        resources: null
+      - id: 357395
+        key: 5da4e407-d623-4773-a494-48c8e15efcf5
+        locale: zh-cn
+        version: 1.0.0
+        title: 创建组件
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 00:10:14 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57723'
+          youtube_id: qHjr2ndg2UA
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d700_13-create-a-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d700_13-create-a-component/13-create-a-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d700_13-create-a-component/13-create-a-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d700_13-create-a-component/13-create-a-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d700_13-create-a-component/13-create-a-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d700_13-create-a-component/hls/playlist.m3u8'
+      - id: 357396
+        key: 435a9abf-321e-4b74-8b83-38c5d4cbeb74
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 00:10:14 GMT+0000 (UTC)'
+        is_public: true
+        text: "> ## \uD83D\uDCA1 在 React 中声明组件 \uD83D\uDCA1\n\n> 在上个视频中，我们按以下方式定义了 `ContactList` 组件：\n\n> ```js\nclass ContactList extends React.Component {\n// ...\n}\n```\n\n> 换句话说，我们定义了一个其实是 JavaScript 类并且继承自 `React.Component`的组件。\n\n> 在实际使用中（以及这门课程中），你可能还会看到下面的声明：\n\n> ```js\nclass ContactList extends Component {\n// ...\n}\n```\n\n> 两种方法的功能是一样的，但是确保你的模块导入部分能匹配！即，如果你选择像第二个示例那样声明组件，则 `React` 导入应该如下所示：\n\n> ```js\nimport React, { Component } from 'react';\n```"
+        instructor_notes: ''
+        resources: null
+      - id: 357397
+        key: d8e72b59-3340-4799-9c0b-adf61ae85d4a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sun Sep 17 2017 07:29:13 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 创建元素总结
+
+          最后，记住 React 仅关心应用的 View 层级。这是用户能看见和互动的层级。因此，我们可以使用 `.createElement()` 向文档中渲染 HTML。但是更多时候，你将使用语法扩展来描述 UI 的外观应该如何。这种语法扩展称之为 JSX，看起来和编写在 JavaScript 文件中的普通 HTML 很像。JSX 编译为调用 React 的 `.createElement()` 方法，并输出要在浏览器中渲染的 HTML。
+
+          在构建 React 应用时一个便利的思维方式是[考虑组件](https://facebook.github.io/react/docs/thinking-in-react.html)。组件代表的是 React 的模块性和可重复利用性。可以将组件类看做生成组件实例的工厂。这些组件类应该遵守[单一功能原则](https://zh.wikipedia.org/wiki/单一功能原则)，只做一件事。如果管理太多不同的任务，建议将组件拆分为更小的子组件。
+
+          课外资料：
+          * [渲染元素](https://facebook.github.io/react/docs/rendering-elements.html) React 文档
+        instructor_notes: ''
+        resources: null
+  - id: 357420
+    key: 2732ebd0-5868-4c37-ad72-891a367c368f
+    locale: zh-cn
+    version: 1.0.0
+    title: 创建 React 应用
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 00:10:19 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357398
+      - 357400
+      - 357401
+      - 357402
+      - 357403
+      - 357404
+      - 357405
+      - 357406
+      - 357408
+    atoms:
+      - id: 357398
+        key: 8ae8e90c-bfef-4353-ba41-62461cb28d00
+        locale: zh-cn
+        version: 1.0.0
+        title: 16 - 创建 React 应用
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 00:10:16 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57724'
+          youtube_id: dSl0d0jcrSU
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d703_16-create-react-app/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d703_16-create-react-app/16-create-react-app_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d703_16-create-react-app/16-create-react-app_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d703_16-create-react-app/16-create-react-app_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d703_16-create-react-app/16-create-react-app_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d703_16-create-react-app/hls/playlist.m3u8'
+      - id: 357400
+        key: 438548cd-d5cb-4a3d-938e-3b4480265a74
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 00:10:16 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 搭建 React 应用框架
+
+          JSX 很棒，但是它需要反编译为普通的 JavaScript，然后才能提交给浏览器。我们通常使用 [Babel](https://github.com/babel/babel) 等转译器来为我们实现转译。我们可以通过建立工具运行 Babel，例如 [Webpack](https://github.com/facebookincubator/create-react-app)，它可以帮助我们绑定网络项目的所有资源（JavaScript 文件、CSS、图片等）。
+
+          为了简化这一初始配置过程，我们可以使用 Facebook 的 Create React App 包来为我们实现所有设置！该工具非常实用，可以帮助我们开始构建 React 应用，因为它为我们设置了一切，我们无需进行任何配置！请 (通过 [npm](https://www.npmjs.com/get-npm) 命令行）安装 Create React App，然后我们将讲解它的强大之处。
+           
+          ```bash
+          npm install -g create-react-app
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 357401
+        key: 17471062-f9ee-4b9c-b75b-5da2a0492f06
+        locale: zh-cn
+        version: 1.0.0
+        title: 17 - 安装和使用 Create React App 1
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 00:10:16 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '59023'
+          youtube_id: CgHOAYV70Vw
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5951f681_17-install-use-create-react-app-1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f681_17-install-use-create-react-app-1/17-install-use-create-react-app-1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f681_17-install-use-create-react-app-1/17-install-use-create-react-app-1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f681_17-install-use-create-react-app-1/17-install-use-create-react-app-1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f681_17-install-use-create-react-app-1/17-install-use-create-react-app-1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f681_17-install-use-create-react-app-1/hls/playlist.m3u8'
+      - id: 357402
+        key: 21b2dfef-c038-4691-907a-ef7fa090a327
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 00:10:17 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/86824dc9f726e68a516f8cf85243b013a3b5c8b7)'
+        instructor_notes: ''
+        resources: null
+      - id: 357403
+        key: 5759c1b6-5858-4838-8173-a1e5cea8f4bc
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Wed Sep 06 2017 00:10:17 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - '我已经安装 [`create-react-app`](https://github.com/facebookincubator/create-react-app)'
+          - 我已经使用 `create-react-app` 创建 `contacts` 项目
+        positive_feedback: 太棒了！
+        video_feedback: null
+        description: 确保我们保持同一进度。
+      - id: 357404
+        key: 4d4e30a0-0ee3-4873-a410-0db9782c995c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 00:10:17 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## Yarn Package Manager
+           
+          > 在下面的视频和 create-react-app 输出中，我们都需要使用 `yarn start` 来启动开发服务器。如果你从未听说过 [Yarn](https://yarnpkg.com)，它就是一个类似于 NPM 的软件包管理器。Yarn 完全由 Facebook 创建而成，旨在改善 NPM 比较缓慢或缺少的关键部分。
+           
+          > 如果你不想安装 Yarn，也没问题！它的强大之处在于每个 `yarn` 使用情况都可以替换为 `npm`，一切还是正常运行！因此，如果命令是 `yarn start`，你可以使用 `npm start` 来运行同一命令。
+        instructor_notes: ''
+        resources: null
+      - id: 357405
+        key: 35cde7d8-eb9e-425d-86ac-6a5e39e7fcec
+        locale: zh-cn
+        version: 1.0.0
+        title: 19 - Inspect Contacts 项目
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 00:10:18 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '59024'
+          youtube_id: WmYSd7OEjMM
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5951f686_19-inspect-contacts-project/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f686_19-inspect-contacts-project/19-inspect-contacts-project_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f686_19-inspect-contacts-project/19-inspect-contacts-project_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f686_19-inspect-contacts-project/19-inspect-contacts-project_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f686_19-inspect-contacts-project/19-inspect-contacts-project_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f686_19-inspect-contacts-project/hls/playlist.m3u8'
+      - id: 357406
+        key: 9b23426a-eb7e-4ed6-957a-64694face686
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 00:10:19 GMT+0000 (UTC)'
+        is_public: true
+        text: '> 观察力强的学员可能注意到了，我的 `index.js` 文件不包含你的项目中出现的 `registerServiceWorker();` 这一行。在我录完此视频之后，我在 Create React App 中添加了对 Service Worker 的调用。因为我们在此项目中不使用 Service Workers，因此没有任何影响。但是如果你想删掉，也可以！'
+        instructor_notes: ''
+        resources: null
+      - id: 357408
+        key: e3e98bb3-c68d-4b90-9148-67a32292d999
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 00:10:19 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## `create-react-app` 总结
+           
+          Facebook 的 `create-react-app` 是一个可以帮助构建 React 应用的命令行工具。借助该工具，就无需配置 Webpack 等模块绑定程序，或者 Babel 等转译器。它们使用 `create-react-app` 进行预配置（并且隐藏起来），使你能够立即构建应用！
+           
+          请点击以下链接，详细了解 `create-react-app`：
+
+          * GitHub 上的 [create-react-app](https://github.com/facebookincubator/create-react-app)
+          * [create-react-app 发行帖子](https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html) React 博客
+          * [create-react-app 的更新](https://facebook.github.io/react/blog/2017/05/18/whats-new-in-create-react-app.html) React 博客
+        instructor_notes: ''
+        resources: null
+  - id: 357415
+    key: 7e923430-f20c-4d6e-a328-2190b68b6ffe
+    locale: zh-cn
+    version: 1.0.0
+    title: 使用组件进行组合
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 00:10:21 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357354
+      - 357355
+      - 357360
+      - 357373
+    atoms:
+      - id: 357354
+        key: 3ef38e0f-3cdb-4660-b427-2a02bd470900
+        locale: zh-cn
+        version: 1.0.0
+        title: 充分利用组件
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 00:10:20 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57727'
+          youtube_id: '-AVOIP-L7oo'
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d710_21-its-all-about-components/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d710_21-its-all-about-components/21-its-all-about-components_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d710_21-its-all-about-components/21-its-all-about-components_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d710_21-its-all-about-components/21-its-all-about-components_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d710_21-its-all-about-components/21-its-all-about-components_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d710_21-its-all-about-components/hls/playlist.m3u8'
+      - id: 357355
+        key: 17a2418b-3dff-4232-8605-2494ba39c8b2
+        locale: zh-cn
+        version: 1.0.0
+        title: 在 React 中组合
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 00:10:20 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57728'
+          youtube_id: PtospOO4qrs
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d714_22-composing-in-react/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d714_22-composing-in-react/22-composing-in-react_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d714_22-composing-in-react/22-composing-in-react_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d714_22-composing-in-react/22-composing-in-react_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d714_22-composing-in-react/22-composing-in-react_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d714_22-composing-in-react/hls/playlist.m3u8'
+      - id: 357360
+        key: 58cde45d-f426-4be7-881b-293ee6229b91
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 00:10:21 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/069bbfa3f5359849d334a0f58813220291e61dc0)'
+        instructor_notes: ''
+        resources: null
+      - id: 357373
+        key: 95593e56-a1a3-4a86-8d38-8701a6b2ed4a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 00:10:21 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## 优先使用组合而不是继承
+           
+          你可能听过“优先使用组合而不是继承”这一说法。我认为对于现今的编程语言，这种规则很难理解。很多最流行的编程语言经常使用继承，并出现在热门的 UI 框架中，例如 Android 和 iOS SDK。
+           
+          相反，React 使用组合来构建用户界面。没错，我们会扩展 React.Component，但是不会扩展超过一次。我们使用嵌套和 props 以不同的方式组合元素，而不是扩展基本组件来添加更多 UI 或行为。你最终希望你的 UI 组件是独立、聚焦和_可重复利用的_。
+           
+          因此，如果你始终没有明白“优先使用组合而不是继承”的含义，那么强烈建议你学习使用 React！
+        instructor_notes: ''
+        resources: null
+  - id: 357419
+    key: 3bb3c78a-196b-4ac0-ac38-a6ab92015fcb
+    locale: zh-cn
+    version: 1.0.0
+    title: UI 渲染结尾部分
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 00:10:22 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357409
+    atoms:
+      - id: 357409
+        key: 14f1aa1e-9ed7-4024-bac2-3abbf0eac77f
+        locale: zh-cn
+        version: 1.0.0
+        title: UI 渲染结尾部分
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 00:10:22 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57729'
+          youtube_id: 9l4fMVw0kdQ
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d718_24-ui-rendering-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d718_24-ui-rendering-outro/24-ui-rendering-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d718_24-ui-rendering-outro/24-ui-rendering-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d718_24-ui-rendering-outro/24-ui-rendering-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d718_24-ui-rendering-outro/24-ui-rendering-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d718_24-ui-rendering-outro/hls/playlist.m3u8'

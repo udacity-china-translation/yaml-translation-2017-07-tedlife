@@ -1,0 +1,346 @@
+id: 357443
+key: 5d31386c-8c1c-4f32-974d-6bf3c1062cba
+locale: zh-cn
+version: 1.0.0
+title: 项目 - 图书跟踪应用
+semantic_type: Lesson
+updated_at: 'Sun Sep 10 2017 06:56:15 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/June/59519bd7_project-myreads-a-book-tracking-app2x/project-myreads-a-book-tracking-app2x.jpg'
+  width: 592
+  height: 640
+video: null
+summary: 在 MyReads 项目中，你将创建一个网络应用，使你能够选择和归类你阅读过的图书、正在阅读的图书以及想要阅读的图书。
+lesson_type: Classroom
+duration: 300
+is_project_lesson: true
+career_portal_experience_levels: []
+_concepts_ids:
+  - 357439
+  - 357440
+  - 357441
+_project_id: 357442
+concepts:
+  - id: 357439
+    key: e7df4589-29d8-4d49-b760-a1db72d6cbdb
+    locale: zh-cn
+    version: 1.0.0
+    title: 项目概述
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 04:37:10 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357423
+      - 357424
+      - 357425
+      - 357429
+      - 357430
+      - 357426
+      - 357427
+      - 357428
+      - 357431
+      - 357432
+    atoms:
+      - id: 357423
+        key: a379fc06-20bf-40ab-ba10-451a7cf2c89c
+        locale: zh-cn
+        version: 1.0.0
+        title: 17 - 开始项目
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:37:08 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58009'
+          youtube_id: PoAgT72QH-s
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b8151_17-off-to-project/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8151_17-off-to-project/17-off-to-project_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8151_17-off-to-project/17-off-to-project_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8151_17-off-to-project/17-off-to-project_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8151_17-off-to-project/17-off-to-project_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8151_17-off-to-project/hls/playlist.m3u8'
+      - id: 357424
+        key: e0577dad-6000-44c3-90fb-073b881e6a0f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:37:08 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 项目概述
+
+          在 MyReads 项目中，你将创建一个书架应用，使你能够选择和归类你阅读过的图书、正在阅读的图书以及想要阅读的图书。 该项目重点讲解如何使用 React 构建该应用并提供一个 API 服务器和客户端库，使你在与应用互动时能够保存信息。
+
+          你可以分叉并克隆[起始代码模板](https://github.com/udacity/reactnd-project-myreads-starter) 或使用 [create-react-app](https://github.com/facebookincubator/create-react-app) 创建一个新的应用。即使你从头自己创建应用，依然需要使用起始代码模板中包含的 `booksAPI.js` 文件与后端 API 互动。我们在起始代码模板资源库的 `README` 中提供了如何使用 API 方法的说明。
+
+           起始代码模板包含了所有可能用到的 CSS 和 HTML 标记，但是忽略了完成项目所需的 React 代码。如果你不想从头编写 CSS 和 HTML，这样可以为你节省时间。提供的代码将会展示所完成应用的静态 HTML 页面，但是没有互动功能。
+
+          ## 应用功能
+
+          在此应用中，主页面显示了一个“书架”列表（即类别），每个书架都包含一个图书数量。三个书架分别为：
+
+          * 当前阅读
+          * 想要阅读
+          * 已经阅读
+        instructor_notes: ''
+        resources: null
+      - id: 357425
+        key: 110f06fa-4568-4144-9677-c31bfd61e0ce
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Sep 06 2017 04:37:08 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/May/590c0f12_react-project1-a/react-project1-a.png'
+        width: 620
+        height: 710
+        alt: null
+        caption: 静态页面（以及完成的应用）应该看起来如图所示。
+        resources: null
+        instructor_notes: null
+      - id: 357429
+        key: d1c2d5f0-b50c-4520-93c6-709fa3633559
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:37:08 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘每本图书都有一个控件，使你能够为该图书选择书架。当你选择其他书架时，图书就移到该书架上。注意，控件的默认值应该始终为图书当前所在书架。’
+        instructor_notes: ''
+        resources: null
+      - id: 357430
+        key: 931cd3cd-c1d8-4dda-afba-6851e45f6870
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Sep 06 2017 04:37:09 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/May/590c0f26_react-project1-b/react-project1-b.png'
+        width: 620
+        height: 710
+        alt: null
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 357426
+        key: 9b801b2e-8d7e-4c6c-b739-dc76cc2763dc
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:37:09 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          主页面还有一个“搜索”链接，该链接是一个搜索页面，使你能够查找图书并将其添加到书库中。
+
+          搜索页面具有一个文本输入框，可以用来查找图书。当文本输入的值更改后，与该查询匹配的图书将显示在页面上，以及使你将该图书添加到书库中的控件。要使界面保持一致性，你可以考虑重复利用用于在主页面上显示图书的一些代码。
+        instructor_notes: ''
+        resources: null
+      - id: 357427
+        key: 76013ad7-05d2-4a15-b7de-0f5e9097a2a9
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Sep 06 2017 04:37:09 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/May/590c0f40_react-project1-c/react-project1-c.png'
+        width: 620
+        height: 710
+        alt: null
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 357428
+        key: a8271385-d234-470d-8152-b31c19e5a75a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:37:10 GMT+0000 (UTC)'
+        is_public: true
+        text: ‘当图书位于书架上时，它在主应用页面和搜索页面上的状态应该相同。’
+        instructor_notes: ''
+        resources: null
+      - id: 357431
+        key: 76c4ff47-9a3f-40cb-868e-1268d17aa50a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Sep 06 2017 04:37:10 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/July/595d48a9_correct-use-of-state/correct-use-of-state.gif'
+        width: 640
+        height: 400
+        alt: null
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 357432
+        key: 5ce1ed09-882a-4fd9-9192-68f9604a0078
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:37:10 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          搜索页面具有一个指向 `/`（根 URL）的链接，并返回主页面。
+
+          当你从搜索页面返回主页面时，应该立即看到在书库的搜索页面所做的所有选择。
+
+          ## 提交要求
+
+          提交内容应该包括在本地网络服务器上安装和启动你的网络应用所需的所有必要文件。对于包含 JSX 的文件，请不要使用 `.jsx` 扩展名的文件（改为使用 `.js`）。你可以认为审核人员在机器上安装的是 npm。
+
+          即使你没有使用[起始代码](https://github.com/udacity/myreads-starter)，你可能应该依然使用 [create-react-app](https://github.com/facebookincubator/create-react-app) 来生成提交内容，因为这是确保项目审核人员具有安装和运行你的应用所需的所有文件的最简单方式。
+
+          ## 注意事项
+
+          该项目的侧重点是编写能正常运行的 React 代码，不用让页面非常美观。如果你愿意的话，可以花些时间完善布局和 CSS，但是该项目的目标是提供正确的功能。 
+        instructor_notes: ''
+        resources: null
+  - id: 357440
+    key: b82a067e-c14b-4fc6-b5b1-045a5a184005
+    locale: zh-cn
+    version: 1.0.0
+    title: 项目说明和审核标准
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 04:37:12 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357433
+      - 357434
+      - 357435
+      - 357436
+      - 357437
+    atoms:
+      - id: 357433
+        key: 55f0cbcb-e723-4e53-b10b-b13cd3989938
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:37:11 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 提交之前
+
+          确保代码符合我们的 HTML、CSS、JavaScript 和 Git 样式指南。
+
+          * [Udacity 的 HTML 样式指南](http://udacity.github.io/frontend-nanodegree-styleguide/index.html)
+          * [Udacity 的 CSS 样式指南](http://udacity.github.io/frontend-nanodegree-styleguide/css.html)
+          * [Udacity 的 JavaScript 样式指南](http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html)
+          * [Udacity 的 Git 样式指南](https://udacity.github.io/git-styleguide/)
+
+          我们建议从一开始就使用 Git。确保经常 commit 并使用格式合理的 commit 消息，以便符合我们的[指南](https://udacity.github.io/git-styleguide/)。
+        instructor_notes: ''
+        resources: null
+      - id: 357434
+        key: f69f4f33-73ba-4637-a1dc-e1e3c5ed86ba
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 13 2017 06:25:51 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          ## 我们将如何评估此项目？
+
+          优达学城代码审核人员将按照该[审核标准](https://review.udacity.com/#!/rubrics/1198/view)评估你的项目。确保在提交之前，先仔细检查项目。必须符合所有规范要求，才能通过评估。
+
+          在构建该项目时，项目审核标准是最准确的参考标准。请将其保存为浏览器书签，以便随时参考！
+
+        instructor_notes: ''
+        resources: null
+      - id: 357435
+        key: 3d981f7b-a705-4291-8484-d7b7d8469668
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Wed Sep 13 2017 06:26:46 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - '将[项目审核标准](https://review.udacity.com/#!/rubrics/1198/view)添加为书签'
+        positive_feedback: 很棒！你应该经常参考审核标准，确保项目符合规范要求。
+        video_feedback: null
+        description: ''
+      - id: 357436
+        key: 3589be2f-3808-4ff6-8604-eac5e921e350
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:37:11 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 提交说明
+
+          1. 将项目 push 到 GitHub，确保 push 到主分支。
+          * 在项目提交页面上，选择选项'通过 GitHub 进行提交’
+          * 选择该项目的资源库（你可能需要先登录 GitHub 帐户）。
+        instructor_notes: ''
+        resources: null
+      - id: 357437
+        key: bc3effef-9d64-472c-a945-05e871ab786a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 04:37:12 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 遇到问题了？
+
+          如果你在提交项目时遇到问题了，或者想要查看提交状态，请给我们发送电子邮件：**react-support@udacity.com**。
+        instructor_notes: ''
+        resources: null
+  - id: 357441
+    key: ebe15bca-790a-450e-b35d-db202599d753
+    locale: zh-cn
+    version: 1.0.0
+    title: 继续改进
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 04:37:12 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357438
+    atoms:
+      - id: 357438
+        key: 0fdded25-a4c3-461e-8855-b99d50d86240
+        locale: zh-cn
+        version: 1.0.0
+        title: 继续改进
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 04:37:12 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57991'
+          youtube_id: IAgJx38-nRI
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b80d6_04-above-and-beyond/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b80d6_04-above-and-beyond/04-above-and-beyond_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b80d6_04-above-and-beyond/04-above-and-beyond_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b80d6_04-above-and-beyond/04-above-and-beyond_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b80d6_04-above-and-beyond/04-above-and-beyond_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b80d6_04-above-and-beyond/hls/playlist.m3u8'

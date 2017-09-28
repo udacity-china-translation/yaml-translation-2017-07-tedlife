@@ -1,0 +1,1695 @@
+id: 357417
+key: 14331e60-a548-4cfb-a326-054545da8927
+locale: zh-cn
+version: 1.0.0
+title: 状态管理
+semantic_type: Lesson
+updated_at: 'Wed Sep 06 2017 03:51:48 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/June/5951955e_2-3-state-management2x/2-3-state-management2x.jpg'
+  width: 592
+  height: 640
+video: null
+summary: 你将学习如何向组件中传递数据、如何创建函数式组件、何时及如何使用 PropType、如何创建受控制的组件，以及它们提供的优势。
+lesson_type: Classroom
+duration: 180
+is_project_lesson: false
+career_portal_experience_levels: []
+_concepts_ids:
+  - 357390
+  - 357407
+  - 357410
+  - 357399
+  - 357411
+  - 357416
+  - 357413
+  - 357412
+_project_id: null
+concepts:
+  - id: 357390
+    key: 38cbfc18-d355-4297-b45b-db449cb92425
+    locale: zh-cn
+    version: 1.0.0
+    title: 简介
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 01:53:57 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357300
+      - 357303
+      - 357304
+      - 357306
+      - 357301
+      - 357302
+      - 357307
+      - 357308
+    atoms:
+      - id: 357300
+        key: 7954007b-4707-43ad-87a8-6e6ab481c14f
+        locale: zh-cn
+        version: 1.0.0
+        title: 状态管理简介
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 01:53:45 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57963'
+          youtube_id: W8kNdGxfS8A
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b231c_01-state-management-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b231c_01-state-management-intro/01-state-management-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b231c_01-state-management-intro/01-state-management-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b231c_01-state-management-intro/01-state-management-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b231c_01-state-management-intro/01-state-management-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b231c_01-state-management-intro/hls/playlist.m3u8'
+      - id: 357303
+        key: e8eb9557-a978-4c85-81c9-2f67776c7228
+        locale: zh-cn
+        version: 1.0.0
+        title: 应用简介
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 01:53:48 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57980'
+          youtube_id: Ju5mbCEFe9Q
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b2659_app-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2659_app-intro/app-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2659_app-intro/app-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2659_app-intro/app-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2659_app-intro/app-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2659_app-intro/hls/playlist.m3u8'
+      - id: 357304
+        key: 7017f278-52a8-4488-b90b-f6b8541badbe
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Sep 07 2017 07:39:16 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 删除默认文件
+           
+          Create React App 将生成大量默认文件和起始代码，我们需要删掉它们。你需要作出两组更改，删除我们提供给你的起始内容和文件。你可以自己手动删除。或者克隆[此资源库](https://github.com/udacity/reactnd-contacts-complete)并检出  `starter-files-added` 分支，它已经帮你删掉所有要删的文件。
+           
+          如果你想删掉起始代码并手动添加我们的代码，直接操作即可。如果你决定克隆已经做出这些更改的资源库，请跳到此页面并设置后端服务器。
+
+          如果你想手动执行更改，那么第一步是删除 Create React App 添加的这些样板文件。请参阅[此 commit](https://github.com/udacity/reactnd-contacts-complete/commit/b1959521da8d914374bd2a61b17e55088ffab9f5) 以了解具体说明。
+        instructor_notes: ''
+        resources: null
+      - id: 357306
+        key: 352552ce-93f9-4585-8a53-f06a178e8afe
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Mon Sep 25 2017 04:27:41 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 删除文件 `src/App.css`
+          - 删除文件 `src/Logo.svg`
+          - 删除 `src/index.css` 中的所有内容
+          - 删除 `src/App.js` 中我们的内容
+        positive_feedback: 很棒！
+        video_feedback: null
+        description: 删除以下内容：
+      - id: 357301
+        key: 3bf00fcf-8c1b-41fa-ba7d-24f604abdeec
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 01:53:55 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 我们的起始文件
+           
+          在这门课程中，我们的重点是学习 React 和使用它来构建应用。我们不用太关心样式。但是，我们不希望看起来太糟糕，因此为你提供了一些样式和各种图标。
+          必要文件可以在[此 commit](https://github.com/udacity/reactnd-contacts-complete/commit/6f38f078634d104a62e3024cab4cc2d592dd82f6) 中找到。请查看该 commit 中包含的文件路径，并作出相应的修改。如果你要克隆资源库，别忘了运行 `npm install` 以确保安装所有依赖项！
+        instructor_notes: ''
+        resources: null
+      - id: 357302
+        key: 9c29aa57-92c2-4711-8cc9-917bf34e9b07
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Mon Sep 25 2017 04:27:41 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 创建目录 `src/icons/`
+          - 向 `src/icons/` 添加所有图标
+          - 向 `src/index.css` 添加项目样式
+          - 创建目录 `src/utils/`
+          - 向 `src/utils/` 添加 `ContactsAPI.js` 文件
+          - 向 `src/` 添加 `ImageInput.js` 文件
+          - 让 `src/App.js` 中的 `render()` 方法返回 `<div>Hello World</div>`
+        positive_feedback: 太棒了！
+        video_feedback: null
+        description: 添加提供的内容：
+      - id: 357307
+        key: e73670c9-0314-409d-93a1-cae0978c2b39
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sun Sep 17 2017 07:31:45 GMT+0000 (UTC)'
+        is_public: true
+        text: "## 后端服务器\n \n我们要构建的 Contacts 应用项目是一个前端项目。但是，我们最终会将通讯录存储在后端服务器上。因为在这门课程中，我们仅侧重于前端内容，因此我们将为你构建该服务器，使你能够只关注此课程的 React 部分。\n \n服务器只是简单的 Node/Express 应用。该项目的资源库位于 https://github.com/udacity/reactnd-contacts-server 。你只需：\n* 使用 `git clone https://github.com/udacity/reactnd-contacts-server.git` 克隆该项目\n* 使用 `npm install` 安装项目依赖项\n* 使用 `node server.js` 启动该服务器\n \n启动服务器后，就不用管它了。我们将处理的 Contacts 项目将与此服务器互动，但是我们不会修改任何服务器代码。\n\n> ## \uD83D\uDCA1 运行两个服务器\uD83D\uDCA1\n\n> 现在，你应该在你的本地机器上运行两个不同的服务器了：\n\n>* 前端开发服务器：可以在**端口 3000** 上访问（使用 `npm start` 或 `yarn start`）\n* 后端服务器：可以在**端口 5001** 上访问（使用 `node server.js`）\n\n>在继续学习这节课之前，请确保这两个服务器都在运行。"
+        instructor_notes: ''
+        resources: null
+      - id: 357308
+        key: 01a17ca7-3279-4c08-96e4-596528eadadf
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Mon Sep 25 2017 04:27:41 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 已克隆 Contacts 服务器
+          - 已将目录改为 Contacts 目录
+          - 已安装服务器的依赖项
+          - 已启动后端服务器
+        positive_feedback: 很棒，我们开始构建应用吧！
+        video_feedback: null
+        description: 为了确保我们处理的是相同的代码，请检查以下各项：
+  - id: 357407
+    key: 6bc1e32e-089d-43ec-aef4-f83b9f7d37cc
+    locale: zh-cn
+    version: 1.0.0
+    title: 使用属性传递数据
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 02:28:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357319
+      - 357317
+      - 357320
+      - 357321
+      - 357322
+      - 357323
+      - 357324
+      - 357325
+      - 357326
+      - 357327
+      - 357328
+      - 357329
+      - 357330
+      - 357331
+      - 357332
+    atoms:
+      - id: 357319
+        key: 91d62b41-6ca8-4f00-acd2-b1f89f07c194
+        locale: zh-cn
+        version: 1.0.0
+        title: 使用属性传递数据
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 02:30:26 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57978'
+          youtube_id: 10YRWO2e7Y8
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b263b_04-passing-data-with-props/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b263b_04-passing-data-with-props/04-passing-data-with-props_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b263b_04-passing-data-with-props/04-passing-data-with-props_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b263b_04-passing-data-with-props/04-passing-data-with-props_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b263b_04-passing-data-with-props/04-passing-data-with-props_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b263b_04-passing-data-with-props/hls/playlist.m3u8'
+      - id: 357317
+        key: cf2a2101-f4a4-49cb-a9bc-c4a9873c14c2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 01:53:57 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          在接下来的视频中你将需要这个 `contacts` 数组：
+            
+           ```js
+           const contacts = [
+             {
+               "id": "ryan",
+               "name": "Ryan Florence",
+               "email": "ryan@reacttraining.com",
+               "avatarURL": "http://localhost:5001/ryan.jpg"
+             },
+             {
+               "id": "michael",
+               "name": "Michael Jackson",
+               "email": "michael@reacttraining.com",
+               "avatarURL": "http://localhost:5001/michael.jpg"
+             },
+             {
+               "id": "tyler",
+               "name": "Tyler McGinnis",
+               "email": "tyler@reacttraining.com",
+               "avatarURL": "http://localhost:5001/tyler.jpg"
+             }
+           ]
+           ```
+
+           这个 `contacts` 数组只是临时的。最终，我们将从后端服务器检索通讯录并向里面存储通讯录。但是现在，我们不知道如何发出网络请求或向何处发出网络请求。很快会介绍的，暂时先使用这个静态通讯录列表。
+        instructor_notes: ''
+        resources: null
+      - id: 357320
+        key: 3211eb4d-69b8-479e-8f33-d8b87ab48418
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 01:53:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## 应用在运行吗？
+
+          > 为了跟着操作，请确保 Contacts 应用和后端服务器都在运行。
+        instructor_notes: ''
+        resources: null
+      - id: 357321
+        key: 754249e5-0fb1-4491-af59-d3fa32cca5d2
+        locale: zh-cn
+        version: 1.0.0
+        title: 05 - 创建 ListContacts 组件
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 02:30:27 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57964'
+          youtube_id: v3hF0cyPo3M
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b232a_05-create-the-listcontacts-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b232a_05-create-the-listcontacts-component/05-create-the-listcontacts-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b232a_05-create-the-listcontacts-component/05-create-the-listcontacts-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b232a_05-create-the-listcontacts-component/05-create-the-listcontacts-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b232a_05-create-the-listcontacts-component/05-create-the-listcontacts-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b232a_05-create-the-listcontacts-component/hls/playlist.m3u8'
+      - id: 357322
+        key: d958ec23-84ef-4088-9b8b-e922bb58544f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 01:53:58 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/664306f50a05aafe47f4109860e00593fcbf0321)'
+        instructor_notes: ''
+        resources: null
+      - id: 357323
+        key: acf1af8e-d7ac-46e0-92b6-c3fe5b520c63
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: MatchingQuizAtom
+        updated_at: 'Mon Sep 25 2017 04:37:43 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          complex_prompt:
+            text: 将以下项目对应到相应的概念：
+          default_feedback: 函数的_____和组件的_____很相似。
+          correct_feedback: 我们可以认为向组件传递属性就像向函数传递参数。就像我们可以访问传入普通 JavaScript 函数的参数，我们也可以使用 `this.props`（或者在无状态函数式组件中使用 `props`）访问组件的属性。
+          video_feedback: null
+          concepts_label: Concept
+          answers_label: Item
+          concepts:
+            - text: functions
+              default_concept_feedback: null
+              correct_answer:
+                id: a1497650224577
+                text: arguments
+              incorrect_feedbacks: []
+            - text: components
+              default_concept_feedback: null
+              correct_answer:
+                id: a1497650247107
+                text: props
+              incorrect_feedbacks: []
+          answers:
+            - id: a1497650224577
+              text: arguments
+            - id: a1497650247107
+              text: props
+      - id: 357324
+        key: aa23b63d-00ca-4879-94b8-9afa306ea96c
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Sep 06 2017 02:16:07 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 如果你构建的应用中有 `<Clock />` 组件，你如何向其中传入 `currentTime` `属性`？
+          correct_feedback: 大部分情况下，要传入属性，只需输入属性的名称（就像普通的 HTML 属性），虽然也有少数例外情况。
+          video_feedback: null
+          default_feedback: 看起来不正确。JSX 属性看起来像普通的 HTML 属性。上述哪个选项看起来像普通的属性？
+          answers:
+            - id: a1497650401790
+              text: '`<Clock {new Date().getTime()} />`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497650409603
+              text: '`<Clock this.props={new Date().getTime()} />`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497650410210
+              text: '`<Clock currentTime={new Date().getTime()} />`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1497650411588
+              text: '`<Clock this.currentTime={new Date().getTime()} />`'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 357325
+        key: 8390323f-485d-4bcc-9109-33dc449c210f
+        locale: zh-cn
+        version: 1.0.0
+        title: 08 - 显示通讯录姓名
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 02:30:27 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57965'
+          youtube_id: qkKNrTUvGJU
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b233e_08-displaying-the-contact-names/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b233e_08-displaying-the-contact-names/08-displaying-the-contact-names_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b233e_08-displaying-the-contact-names/08-displaying-the-contact-names_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b233e_08-displaying-the-contact-names/08-displaying-the-contact-names_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b233e_08-displaying-the-contact-names/08-displaying-the-contact-names_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b233e_08-displaying-the-contact-names/hls/playlist.m3u8'
+      - id: 357326
+        key: 3aa35880-0871-4b42-8938-6e3385323aa2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 02:25:13 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/eaa138af7d992f05449f524d514ac4224f736ae4)'
+        instructor_notes: ''
+        resources: null
+      - id: 357327
+        key: eee7edf5-ed23-4cf7-8868-0a9b3eb346fe
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Sep 25 2017 04:37:42 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            使用 `<Clock />` 组件的示例：
+
+            ```js
+            <Clock currentTime='3:41pm' />
+            ```
+                         
+            如何在组件中访问值 `3:41pm`？
+          correct_feedback: 任何传入组件的属性都可通过 `this.props` 对象访问。
+          video_feedback: null
+          default_feedback: 注意，传入组件的数据称为`属性`。
+          answers:
+            - id: a1497650682332
+              text: Clock.currentTime
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497650692334
+              text: currentTime
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497650692835
+              text: this.currentTime
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497650693791
+              text: this.props.currentTime
+              is_correct: true
+              incorrect_feedback: null
+      - id: 357328
+        key: 60e77973-dbdf-4395-a5a7-03676754e53f
+        locale: zh-cn
+        version: 1.0.0
+        title: 09 - Add Contact Details
+        semantic_type: VideoAtom
+        updated_at: 'Wed Aug 09 2017 15:33:50 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57966'
+          youtube_id: mnIuUk9cexA
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b2350_09-add-contact-details/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2350_09-add-contact-details/09-add-contact-details_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2350_09-add-contact-details/09-add-contact-details_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2350_09-add-contact-details/09-add-contact-details_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2350_09-add-contact-details/09-add-contact-details_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2350_09-add-contact-details/hls/playlist.m3u8'
+      - id: 357329
+        key: ee61402f-11a4-434f-b161-9a78cb7cc353
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 02:18:51 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/43add2a640214483b00d9ca491990bb86104501e)'
+        instructor_notes: ''
+        resources: null
+      - id: 357330
+        key: d01bd1ea-953d-45dd-9302-74309a949625
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 02:19:15 GMT+0000 (UTC)'
+        is_public: true
+        text: '> 如果你在自己的机器上跟着操作，但是头像没有加载出来，请检查服务器是否在运行。'
+        instructor_notes: ''
+        resources: null
+      - id: 357331
+        key: d907a4dd-f973-4075-aee2-d976f43fd0f6
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Sep 06 2017 02:25:13 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 如何单独向组件中传入多个属性？
+          correct_feedback: 就像对待任何其他 HTML 属性一样传入单个属性。
+          video_feedback: null
+          default_feedback: 注意，属性就像 HTML 属性一样传入。如何添加多个 HTML 属性？
+          answers:
+            - id: a1498520858279
+              text: '`<Clock time={Date.now()} zone=''MST'' />`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498520971532
+              text: '`<Clock props={{time: Date.now(), zone: ''MST''}} />`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498521003774
+              text: '`<Clock [time=Date.now(), zone=''MST''] />`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498521094663
+              text: '`<Clock props={[Date.now(), ''MST'']}/>`'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 357332
+        key: 673fcd1b-0a1d-499d-8ffc-414ae8ad60ec
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 02:25:13 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## 使用属性传递数据总结
+                     
+          `属性`是传递给 React 组件的任何输入内容。就像 HTML 属性一样，`属性`名称和值会添加到组件中。
+                     
+          ```js
+          // passing a prop to a component
+          <LogoutButton text='Wanna log out?' />
+          ```
+                     
+          在上述代码中，`text ` 是`属性`，字符串 `'Wanna log out?'` 是值。
+                     
+          所有属性都存储在 `this.props` 对象上。因此，要在组件中访问此 `text` `属性`，我们使用 `this.props.text`：
+                     
+          ```js
+          // access the prop inside the component
+           ...
+          render() {
+              return <div>{this.props.text}</div>
+          }
+          ...
+          ```
+                     
+          ### 深入研究
+          * [组件和属性](https://facebook.github.io/react/docs/components-and-props.html) React 文档
+        instructor_notes: ''
+        resources: null
+  - id: 357410
+    key: 0be66a50-3b7d-4029-9d3e-7a9b52c6063c
+    locale: zh-cn
+    version: 1.0.0
+    title: 函数式组件
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 02:26:17 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357333
+      - 357334
+      - 357335
+      - 357336
+      - 357337
+      - 357338
+      - 357339
+    atoms:
+      - id: 357333
+        key: 2ad02be8-4ec6-4fa3-9daf-ae01b7ab0df0
+        locale: zh-cn
+        version: 1.0.0
+        title: 10 - 创建函数式组件
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 02:50:41 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57967'
+          youtube_id: 0R3WOH32jlg
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b2354_10-create-functional-components/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2354_10-create-functional-components/10-create-functional-components_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2354_10-create-functional-components/10-create-functional-components_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2354_10-create-functional-components/10-create-functional-components_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2354_10-create-functional-components/10-create-functional-components_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2354_10-create-functional-components/hls/playlist.m3u8'
+      - id: 357334
+        key: 90363e7f-2473-4300-a750-f6ab9c6e48c5
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sun Sep 17 2017 07:33:30 GMT+0000 (UTC)'
+        is_public: true
+        text: "\n> ## \uD83D\uDCA1 模板对象 \uD83D\uDCA1\n\n> 在下面的视频中，你将看到我们在 \"style\" 属性的值中使用反引号 (\\` `\\)。这些[模板对象](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/template_strings)可以用于嵌入表达式。借助模板对象，你可以通过你的应用将表达式当做普通字符串进行插入。\n\n>  要了解详情，请参阅 [ES6 - 改善的 JavaScript](https://www.udacity.com/course/es6-javascript-improved--ud356) 以获悉该语言的最新功能和改进。"
+        instructor_notes: ''
+        resources: null
+      - id: 357335
+        key: 9891a171-6692-4b57-bd6e-91c13327527b
+        locale: zh-cn
+        version: 1.0.0
+        title: 12 - 将 ListContact 转换为无状态函数式组件
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 02:50:42 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57979'
+          youtube_id: tTxLxl_Bk3Y
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b2657_12-convert-listcontacts-to-a-stateless-functional-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2657_12-convert-listcontacts-to-a-stateless-functional-component/12-convert-listcontacts-to-a-stateless-functional-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2657_12-convert-listcontacts-to-a-stateless-functional-component/12-convert-listcontacts-to-a-stateless-functional-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2657_12-convert-listcontacts-to-a-stateless-functional-component/12-convert-listcontacts-to-a-stateless-functional-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2657_12-convert-listcontacts-to-a-stateless-functional-component/12-convert-listcontacts-to-a-stateless-functional-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2657_12-convert-listcontacts-to-a-stateless-functional-component/hls/playlist.m3u8'
+      - id: 357336
+        key: c1cfb2ee-773d-414b-8cc1-e16e7846a0f4
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 02:39:52 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/e763785368c5d99281182f5d11e03b5ba02541e0)'
+        instructor_notes: ''
+        resources: null
+      - id: 357337
+        key: ba4bd643-487d-45e1-8b0a-8c6418205948
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Wed Sep 06 2017 02:42:03 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 何时适合使用无状态函数式组件？请选中所有适用项。
+          correct_feedback: 如果组件仅使用 `render` 方法来显示内容，那么可以转换为无状态函数式组件。
+          video_feedback: null
+          default_feedback: 请注意，这些都叫做无状态函数式组件。无状态意味着这些组件不用负责更改数据，只负责显示数据。
+          answers:
+            - id: a1497651097853
+              text: 当组件需要初始化某些数据时
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497651101437
+              text: 当组件只需 `render` 方法时
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1497651102114
+              text: 当组件没有传入任何属性时
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497651104296
+              text: 当组件不使用 JSX 时
+              is_correct: false
+              incorrect_feedback: null
+      - id: 357338
+        key: 535fc1f6-d137-42ee-a47c-96ed1aa310e6
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Mon Sep 25 2017 04:39:05 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            如果以下代码中的 `<IngredientList />` 组件是无状态函数式组件，你会编写什么样的表达式来访问该组件中的 `items` 属性？
+
+            ```js
+            <IngredientList items={ingredient.items} />
+            ```
+          default_feedback: 注意，对于无状态函数式组件，`props` 被当做参数传递给函数。
+          correct_feedback: 正确！无状态函数式组件除去了 `this` 关键字。
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: ^props\.items$
+              expression_description: ''
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: ^this\.props\.items$
+              expression_description: null
+              flags: ''
+              incorrect_feedback: 注意，对于无状态函数式组件，没有 `this` 关键字，并且 `props` 被当做参数传递给函数。
+      - id: 357339
+        key: d9994c35-773f-4caa-9d48-7bff311466b5
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 25 2017 04:39:05 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 无状态函数式组件总结
+           
+          如果组件不用跟踪内部状态（即它只有 `render()` 方法），你可以将该组件声明为无状态函数式组件。
+
+          最终，React 组件只是返回要渲染的 HTML 的 JavaScript 函数。因此，下面的两个简单电子邮件组件示例是同等的： 
+
+          ```js
+          class Email extends React.Component {
+            render() {
+              return (
+                <div>
+                  {this.props.text}
+                </div>
+              );
+            }
+          };
+          ```
+
+          ```js
+          const Email = (props) => (
+            <div>
+              {props.text}
+            </div>
+          );
+          ```
+
+          在第二个示例（具有隐式返回的 ES6 函数）中，我们可以将属性当做参数直接传入函数本身，而不是通过 `this.props` 访问 `props`。反过来，这个普通的 JavaScript 函数可以作为 Email 组件的 `render()` 参数。
+           
+          ### 深入研究
+          * [创建无状态函数式组件](https://www.reactenlightenment.com/react-state/8.4.html) React 教科书
+          * [函数式组件与无状态函数式组件与无状态组件](https://tylermcginnis.com/functional-components-vs-stateless-functional-components-vs-stateless-components/)（作者 Tyler）
+        instructor_notes: ''
+        resources: null
+  - id: 357399
+    key: c7172108-9c9f-42d7-9f2b-0e42a2f7130b
+    locale: zh-cn
+    version: 1.0.0
+    title: 向组件中添加状态
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 02:51:54 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357309
+      - 357310
+      - 357312
+      - 357313
+      - 357314
+      - 357316
+      - 357315
+      - 357318
+    atoms:
+      - id: 357309
+        key: 6901ae60-8350-49df-80ce-28ea625c8145
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 02:52:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 状态
+
+          在这节课的之前部分，我们了解了 `props` 指的是父组件的属性。最终，属性代表的是不可变的“只读”数据。
+
+          另一方面，组件的状态代表的是可变的数据，并且最终会影响到页面上渲染的内容。状态在内部由组件本身管理，会随着时间的推移而改变，经常因为用户输入（例如点击页面上的按钮）而改变。
+
+          在这部分，我们将了解如何将状态管理的复杂过程封装到单个组件中。
+        instructor_notes: ''
+        resources: null
+      - id: 357310
+        key: 6d43fa95-7c36-43b0-b74f-dcdc5e9a4294
+        locale: zh-cn
+        version: 1.0.0
+        title: 14 - 向组件中添加状态
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 02:52:57 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57968'
+          youtube_id: W-udVlRApio
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b2358_14-add-state-to-components/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2358_14-add-state-to-components/14-add-state-to-components_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2358_14-add-state-to-components/14-add-state-to-components_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2358_14-add-state-to-components/14-add-state-to-components_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2358_14-add-state-to-components/14-add-state-to-components_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2358_14-add-state-to-components/hls/playlist.m3u8'
+      - id: 357312
+        key: 8a907494-5e69-4965-8965-0cff27d37ac0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 02:56:01 GMT+0000 (UTC)'
+        is_public: true
+        text: "## \uD83D\uDCA1 类字段 \uD83D\uDCA1\n\n在上述代码中，我们将 `state` 对象直接放入类中…而不是 `constructor()` 方法中！\n\n```javascript\nclass User extends React.Component {\n  state = {\n    username: 'Tyler'\n  } \n}\n\n// rather than\n\nclass User extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      username: 'Tyler'\n    }\n  }\n}\n```\n\n 这与 Facebook 的 [设置初始状态文档](https://facebook.github.io/react/docs/react-without-es6.html#setting-the-initial-state)稍微不同。\n\n 将 `state` 放在 `constructor()` 外面意味着它是[类字段](https://github.com/tc39/proposal-class-fields)，这是对语言做出新更改的提议。暂时不受 JavaScript 支持，但是在 Babel 的强大转译功能的支持下，我们可以使用它！"
+        instructor_notes: ''
+        resources: null
+      - id: 357313
+        key: 6b58c029-70f8-46c6-9086-bb602e51dd47
+        locale: zh-cn
+        version: 1.0.0
+        title: 15 - 在应用中将 Contacts 数组设为状态
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 03:04:45 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57969'
+          youtube_id: RyO7B5KLXVY
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b236a_15-set-contacts-array-as-state-in-app/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b236a_15-set-contacts-array-as-state-in-app/15-set-contacts-array-as-state-in-app_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b236a_15-set-contacts-array-as-state-in-app/15-set-contacts-array-as-state-in-app_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b236a_15-set-contacts-array-as-state-in-app/15-set-contacts-array-as-state-in-app_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b236a_15-set-contacts-array-as-state-in-app/15-set-contacts-array-as-state-in-app_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b236a_15-set-contacts-array-as-state-in-app/hls/playlist.m3u8'
+      - id: 357314
+        key: 8b6b4c7f-3e18-4ee4-8922-b90cc0846ead
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:04:44 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/c4b43702554a8bf732eef6264c7053c370c6b201)'
+        instructor_notes: ''
+        resources: null
+      - id: 357316
+        key: 348111f1-c4fc-4d45-b967-43381631ace8
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:00:28 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          > ## ⚠️ 初始状态的属性 ⚠️
+          >
+          > 在定义组件的初始状态时，请避免使用 `props` 初始化该状态。这样容易引起错误，因为仅在组件首次被创建时，状态将使用 `props` 进行初始化。
+          >
+          > ```javascript
+          > this.state = {
+          >    user: props.user
+          > }
+          > ```
+          >
+          > 在上述示例中，如果 `props` 被更新了，当前状态不会更改，除非组件“被刷新”。使用 `props` 生成组件的初始状态还会出现重复的数据，不再是可靠的“数据来源”。
+        instructor_notes: ''
+        resources: null
+      - id: 357315
+        key: 5ca0f87f-5f1d-49ae-a62d-66dbb6e293dd
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Wed Sep 06 2017 03:04:44 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 关于 React 中的 `state`，哪些描述是正确的？请选中所有适用项：
+          correct_feedback: 状态是 React 组件的关键属性。熟悉状态的使用方法和设置（重置）方法将有助于简化应用 UI 构建流程。
+          video_feedback: null
+          default_feedback: 和 `props` 不一样，组件会管理自己的 `state`。状态应该（并且将会）在组件的整个生命周期内被更新。
+          answers:
+            - id: a1498169718408
+              text: 组件的状态可以在初始化时加以定义
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498169778233
+              text: 状态通常从组件之外传入进来
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498169780449
+              text: 当你想要存储将始终不变的信息时，应该使用状态
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498170087009
+              text: 组件可以更改它自己的内部状态
+              is_correct: true
+              incorrect_feedback: null
+      - id: 357318
+        key: eb156024-f69c-46a3-88ff-52c2f6f65ec1
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:04:44 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## 状态总结
+
+          通过让组件管理自己的状态，任何时候该状态发生变化了，React 将知道并自动对页面做出必要的更新。
+
+          这是使用 React 构建 UI 组件的关键优势之一：如果要重新渲染页面，我们只需考虑更新状态。每次有更新时，我们不需要知道到底是页面的哪个部分变化了。我们不需要判断如何有效地重新渲染页面。React 会对比之前的输出和新的输出，判断哪些改变了，并为我们做出决策。这种判断之前的输出和新的输出之间哪些变化了的流程称为`核对过程`。
+
+          ### 深入研究
+
+          - [判断状态应该位于何处](https://facebook.github.io/react/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live)  
+        instructor_notes: ''
+        resources: null
+  - id: 357411
+    key: 6e30b216-4065-4c7d-b50b-914dbdf15ec8
+    locale: zh-cn
+    version: 1.0.0
+    title: 使用 SetState 更新状态
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 03:05:30 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357340
+      - 357341
+      - 357342
+      - 357343
+      - 357344
+      - 357345
+    atoms:
+      - id: 357340
+        key: 3b8764de-239a-4ce4-9d50-fc5aa31a311e
+        locale: zh-cn
+        version: 1.0.0
+        title: 16 - 使用 SetState 更新状态
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 03:05:45 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '59026'
+          youtube_id: TU1GGjogtbo
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5951fdf3_16-update-state-with-setstate/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fdf3_16-update-state-with-setstate/16-update-state-with-setstate_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fdf3_16-update-state-with-setstate/16-update-state-with-setstate_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fdf3_16-update-state-with-setstate/16-update-state-with-setstate_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fdf3_16-update-state-with-setstate/16-update-state-with-setstate_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fdf3_16-update-state-with-setstate/hls/playlist.m3u8'
+      - id: 357341
+        key: 9a302316-d2ef-4089-8c7d-ce8f5af05df5
+        locale: zh-cn
+        version: 1.0.0
+        title: 17 - 使用 SetState 删除联系人
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 03:06:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57971'
+          youtube_id: d3UNPA863f4
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b2391_17-using-setstate-to-remove-contact/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2391_17-using-setstate-to-remove-contact/17-using-setstate-to-remove-contact_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2391_17-using-setstate-to-remove-contact/17-using-setstate-to-remove-contact_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2391_17-using-setstate-to-remove-contact/17-using-setstate-to-remove-contact_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2391_17-using-setstate-to-remove-contact/17-using-setstate-to-remove-contact_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2391_17-using-setstate-to-remove-contact/hls/playlist.m3u8'
+      - id: 357342
+        key: c6a30cc8-9bdb-4e97-9193-b601762d7c2d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:06:37 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/f794f553e4937f6b2afaab2acdb14c623d8eb8c1)'
+        instructor_notes: ''
+        resources: null
+      - id: 357343
+        key: 7d49b84b-fbcd-4a1a-99d5-9b8611766054
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:07:40 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 如何设置状态
+
+          之前，我们了解了如何在初始化时定义组件的状态。因为状态表示的是可改变的信息，最终会影响到所渲染的输出内容，因此组件可能还会使用 `this.setState()` 在其生命周期内更新其状态。我们已经知道，每次本地状态变化时，React 将通过调用其 `render()` 方法触发重新渲染组件。
+
+          可以通过两种方法来使用 `setState()`。第一个是合并状态更新。请看看下面的组件代码段：
+
+          ```js
+          class Email extends React.Component {
+            state = {
+              subject: '',
+              message: ''
+            }
+            // ...
+          });
+          ```
+
+          虽然该组件的初始状态包含两个属性（`subject` 和 `message`），但是它们可以被独立地更新。例如：
+
+          ```js
+          this.setState({
+            subject: 'Hello! This is a new subject'
+          })
+          ```
+
+          这样，我们可以让 `this.state.message` 保持不变，但是将 `this.state.subject` 替换为新的值。
+
+          使用 `setState()` 的第二种方式是传入函数，而不是对象。例如：
+
+          ```js
+          this.setState((prevState) => ({
+            count: prevState.count + 1
+          }))
+          ```
+
+          此处，传入的函数具有单个 `prevState` 参数。当组件的新状态取决于上个状态（即我们使上个状态中的 `count` 加一）时，我们需要使用函数 `setState()`。
+        instructor_notes: ''
+        resources: null
+      - id: 357344
+        key: 4f21150d-72ca-49b5-aca8-f4b438649335
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Wed Sep 06 2017 03:18:21 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 关于设置组件中的状态，哪些描述正确？请选中所有适用项：
+          correct_feedback: 最终，UI 只是状态的函数。在重置状态时，能够利用 React 的自动渲染功能使应用的用户真正获得了动态体验。
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1498172386232
+              text: 每当 `setState()` 被调用时，组件还通过新状态调用 `render()`
+              is_correct: true
+              incorrect_feedback: 如果 `setState()` 被调用，你认为组件是否被重新渲染？
+            - id: a1498172743985
+              text: 可以通过向 `setState() 传入对象合并状态更新`
+              is_correct: true
+              incorrect_feedback: '`setState()` 可以接受函数或对象。'
+            - id: a1498172997041
+              text: '当你想要重新渲染组件时，直接更新状态是最佳方法（即，选择 `this.state.message = ''''Hi there'''';` 而不是 `this.setState({ message: ''''Hi there'''' });`）'
+              is_correct: false
+              incorrect_feedback: 直接改变 `this.state` 不会触发重新渲染流程。相反，用户在页面 上看到的内容可能不会反映组件的内部状态。
+            - id: a1498173710585
+              text: 状态更新可以异步（即 `setState()` 可以接受将之前的状态当做其第一个参数的函数）
+              is_correct: true
+              incorrect_feedback: '`setState()` 可以接受函数或对象。'
+            - id: a1498174851529
+              text: '`setState()` 应该在组件的 `render()` 方法内被调用'
+              is_correct: false
+              incorrect_feedback: 请注意，`setState()` 使得 React 重新渲染你的 UI。如果在 `render()` 内调用 `setState()`，将会导致无限循环！
+      - id: 357345
+        key: 91afc87a-1709-46ce-b70d-28feb63175a0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:18:21 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## `setState()` 总结
+
+          虽然组件在初始化时可以设置其状态，但是我们预期状态会随着时间的推移而变化（通常因为用户输入）。组件能够使用 `this.setState()` 更改其内部状态。每次状态发生变化，React 都知道并调用 `render()` 来重新渲染该组件。这样可以快速有效地更新你的应用 UI。
+
+          ### 深入研究
+
+          - [正确使用状态](https://facebook.github.io/react/docs/state-and-lifecycle.html) React 文档
+          - [使用 React 进行构建](http://buildwithreact.com/tutorial/state) 状态文章
+        instructor_notes: ''
+        resources: null
+  - id: 357416
+    key: 5c728bd9-9ed1-47f8-b402-f7ba18c4dbf4
+    locale: zh-cn
+    version: 1.0.0
+    title: PropTypes
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 03:21:22 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357371
+      - 357377
+      - 357378
+      - 357379
+      - 357381
+      - 357380
+    atoms:
+      - id: 357371
+        key: de98831b-57f3-4779-8d2b-07008794a256
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:27:11 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 使用 `PropTypes` 检查组件的属性类型
+
+          当我们向应用中实现更多的功能时，我们可能很快就发现经常需要调试我们的组件。例如，如果传递给组件的 `props` 不是期望的数据类型 （例如是对象，而不是数组），怎么办？PropTypes 是一个软件包，使我们能够在一开始就定义想要看到的数据类型，并且在开发过程中，如果传递给组件的属性不是我们预期的类型，PropTypes 将提醒我们。
+
+          要在应用中使用 PropTypes，我们需要安装 [prop-types](https://facebook.github.io/react/docs/typechecking-with-proptypes.html)：
+
+          ```bash
+          npm install --save prop-types
+          ```
+
+          我们跳转到该软件包，看看如何使用它！
+        instructor_notes: ''
+        resources: null
+      - id: 357377
+        key: b1b3eeff-e201-4a08-9c4a-e8c7e450302f
+        locale: zh-cn
+        version: 1.0.0
+        title: 18 - PropTypes
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 03:27:10 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57972'
+          youtube_id: jorS3jX3ngo
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b23a5_18-proptypes/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23a5_18-proptypes/18-proptypes_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23a5_18-proptypes/18-proptypes_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23a5_18-proptypes/18-proptypes_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23a5_18-proptypes/18-proptypes_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23a5_18-proptypes/hls/playlist.m3u8'
+      - id: 357378
+        key: 77af9470-9b51-412b-af7d-e8c5242602b9
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:27:11 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/a7f4728c61b539863b91752bfe21924eb81f3039)'
+        instructor_notes: ''
+        resources: null
+      - id: 357379
+        key: 364b8c7d-3b19-4079-aa73-690680b547d2
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Wed Sep 06 2017 03:27:12 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - '已安装 [prop-types](https://www.npmjs.com/package/prop-types) package'
+          - 已重启 Contacts 应用服务器
+        positive_feedback: 做的真棒！
+        video_feedback: null
+        description: ''
+      - id: 357381
+        key: b93b6a3d-b4e7-40b6-a84d-a0dcfb924d4c
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Wed Sep 06 2017 03:27:11 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            看看下面的组件：
+
+            ```js
+            import PropTypes from 'prop-types';
+
+            class Email extends React.Component {
+              render() {
+                return (
+                  <h3>Message: {this.props.text}</h3>
+                );
+              }
+            }
+
+            Email.propTypes = {
+              text: // ???
+            };
+            ```
+
+            我们想要验证的确传入的是 `text` 属性，它的数据类型是字符串。上述对象的 `text` 键应该是什么值？
+          default_feedback: 请注意在代码段顶部导入的内容。我们需要验证哪个 JavaScript 基本类型？可以在该调用后面附上什么，以便确保我们没有接收空值？
+          correct_feedback: 当我们验证特定元素（例如 `数组`、`函数`、`数字`等）时，我们还可以附上 `isRequired` 以便如果未提供该属性，则显示警告。
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: ^PropTypes\.string\.isRequired$
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+      - id: 357380
+        key: 5be9f9d2-8a99-4927-8436-4dbace8846e9
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:27:10 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## PropTypes 总结
+
+          总之，PropTypes 是在 React 应用中验证数据类型的很好方式。通过 PropTypes 检查数据类型有助于我们在开发阶段发现 bug，确保用户获得顺畅的体验。
+
+          ## 深入研究
+
+          * [prop-types](https://www.npmjs.com/package/prop-types) npm 库
+          * [使用 Proptypes 检查数据类型](https://facebook.github.io/react/docs/typechecking-with-proptypes.html) React 文档
+        instructor_notes: ''
+        resources: null
+  - id: 357413
+    key: fc3f11d3-8779-4d8a-8a23-1cd782f8ddf3
+    locale: zh-cn
+    version: 1.0.0
+    title: 受控组件
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 03:27:48 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357347
+      - 357346
+      - 357348
+      - 357349
+      - 357350
+      - 357351
+      - 357352
+      - 357353
+      - 357356
+      - 357357
+      - 357358
+      - 357359
+      - 357361
+      - 357364
+      - 357365
+      - 357366
+      - 357367
+      - 357368
+      - 357369
+    atoms:
+      - id: 357347
+        key: 7e207af6-ec31-4652-a764-c49221d476b7
+        locale: zh-cn
+        version: 1.0.0
+        title: 受控组件
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 03:47:26 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57973'
+          youtube_id: ayxG2cTb8q4
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b23bb_19-controlled-components/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23bb_19-controlled-components/19-controlled-components_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23bb_19-controlled-components/19-controlled-components_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23bb_19-controlled-components/19-controlled-components_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23bb_19-controlled-components/19-controlled-components_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23bb_19-controlled-components/hls/playlist.m3u8'
+      - id: 357346
+        key: 1461503b-7da4-4d1c-b9e7-3a2a813d7c80
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:33:19 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## React 开发者工具
+
+          在构建 React 应用时，有时候很难知道组件内部的发生情况。毕竟传递和访问了太多的属性，并嵌套了无数的组件，以及还有所有的 JSX 尚需渲染为 HTML，有时候很难让一切井然有序！
+
+          `React 开发者工具`使你能够检查组件的层次结构以及各自的属性和状态。安装该 [Chrome 扩展程序](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en-US)后，打开 Chrome 控制台并查看 `React` 标签页。要了解详情，请参阅该[官方文档 documentation](https://github.com/facebook/react-devtools)。
+
+          我们看看下面的实际使用案例！
+        instructor_notes: ''
+        resources: null
+      - id: 357348
+        key: fc5272db-5ce5-44e1-bd1c-cafc9333eeb7
+        locale: zh-cn
+        version: 1.0.0
+        title: 搜索字段 - 受控组件
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 03:35:34 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '59027'
+          youtube_id: 1Tkb9SGkOgI
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5951fe01_20-the-search-field-a-controlled-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fe01_20-the-search-field-a-controlled-component/20-the-search-field-a-controlled-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fe01_20-the-search-field-a-controlled-component/20-the-search-field-a-controlled-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fe01_20-the-search-field-a-controlled-component/20-the-search-field-a-controlled-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fe01_20-the-search-field-a-controlled-component/20-the-search-field-a-controlled-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fe01_20-the-search-field-a-controlled-component/hls/playlist.m3u8'
+      - id: 357349
+        key: aeaf1e33-eaef-43d5-b513-6ea5873e7d7f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:35:59 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/ce3a9a8a0f1d8d0224eba663e512cd309fb1f804)'
+        instructor_notes: ''
+        resources: null
+      - id: 357350
+        key: 599e7c57-7e50-45fb-8bbb-453d83cf8c05
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:36:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          注意 `value` 属性在 `<input>` 元素上设置。我们显示的值将始终为组件的`状态`中的值，使`状态`成为“单一数据源”。 
+
+          因为是 React 最终控制输入表格元素的`值`，因此我们将该组件视为[受控组件](https://facebook.github.io/react/docs/forms.html#controlled-components)。
+
+          总结下用户输入如何影响到 `ListContacts` 组件自己的`状态`：
+           
+          1. 用户在输入字段中输入文本。
+          * 事件监听器在每个 `onChange` 事件上触发 `updateQuery()` 函数。
+          * `updateQuery()` 然后调用 `setState()`，合并新状态以更新组件的内部状态。
+          * 因为 `ListContacts` 的状态已变化，所以它会重新渲染。
+           
+          我们看看如何利用这个更新后的`状态`过滤通讯录！为了帮助我们过滤通讯录，我们需要以下软件包：
+
+
+          * [escape-string-regexp](https://www.npmjs.com/package/escape-string-regexp)
+          * [sort-by](https://www.npmjs.com/package/sort-by)
+           
+          ```bash
+          npm install --save escape-string-regexp sort-by
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 357351
+        key: 85a7dc06-854c-4f64-a5aa-c012b37a2668
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Sep 06 2017 03:38:06 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 什么是受控组件？
+          correct_feedback: React 擅长于处理状态。它可能还会处理我们的表格状态！
+          video_feedback: null
+          default_feedback: 思考下在渲染表格时，我们可以如何利用 React 状态。
+          answers:
+            - id: a1498526059926
+              text: 控制其子组件的状态的组件
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498526062151
+              text: 负责渲染表格，但是该表格状态的数据源位于组件状态里，而不是 DOM 里的组件
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498526063016
+              text: 会控制其子组件的 UI 的组件
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498526063804
+              text: 负责渲染表格，但是该表格状态的数据源位于 DOM 里，而不是组件状态里的组件
+              is_correct: false
+              incorrect_feedback: null
+      - id: 357352
+        key: 622e7ece-579b-4455-acc4-472a6ece2a00
+        locale: zh-cn
+        version: 1.0.0
+        title: 显示查询的通讯录
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 03:38:26 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57975'
+          youtube_id: xIlkBGmRq0g
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b23e9_21-display-queried-contacts/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23e9_21-display-queried-contacts/21-display-queried-contacts_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23e9_21-display-queried-contacts/21-display-queried-contacts_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23e9_21-display-queried-contacts/21-display-queried-contacts_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23e9_21-display-queried-contacts/21-display-queried-contacts_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23e9_21-display-queried-contacts/hls/playlist.m3u8'
+      - id: 357353
+        key: cd065c3d-68f5-46ae-af1f-2ed6766b5ae5
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:47:26 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/abd5fccf9a69546e75d9c178379d3ef92405719e)'
+        instructor_notes: ''
+        resources: null
+      - id: 357356
+        key: d36b04f6-8cd8-428a-80c8-c043fb0e99b3
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Wed Sep 06 2017 03:47:26 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - '已安装 [escape-string-regexp package](https://www.npmjs.com/package/escape-string-regexp)'
+          - '已安装 [sort-by package](https://www.npmjs.com/package/sort-by)'
+          - 已重启 Contacts 应用服务器
+        positive_feedback: 哇！继续保持！
+        video_feedback: null
+        description: ''
+      - id: 357357
+        key: 1ea3efb6-805c-4eff-97e6-b6eccdc8ef30
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sun Sep 17 2017 07:35:28 GMT+0000 (UTC)'
+        is_public: true
+        text: "## \uD83D\uDCA1 正则表达式 \uD83D\uDCA1\n\n 在上个视频中，我们创建了一个正则表达式对象并使用该对象检测通讯录姓名的格式。正则表达式太复杂，这节课根本无法深入介绍，但是它们在验证格式方面作用非常大。\n\n请参阅 MDN 对[正则表达式](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)的介绍。此外，请参阅 [String `.match()` 方法](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/match)如何使用正则表达式验证文本格式。\""
+        instructor_notes: ''
+        resources: null
+      - id: 357358
+        key: 62288f66-f7ca-417b-9254-8847e355ff45
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Sep 06 2017 03:47:26 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 哪个优势是受控组件具备而不受控组件不具备的？
+          correct_feedback: 借助受控组件，表格状态将位于组件内。因此，我们可以根据该表格状态轻松更新 UI。
+          video_feedback: null
+          default_feedback: 使用受控组件后，用户输入如何影响到应用？
+          answers:
+            - id: a1498526202927
+              text: 受控组件更像是“React 的处理方式”
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498526225491
+              text: 受控组件需要输入更少的内容
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498526226255
+              text: 受控组件性能更强大
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498526227054
+              text: 受控组件使你能够根据表格本身更新 UI
+              is_correct: true
+              incorrect_feedback: null
+      - id: 357359
+        key: 07e8f64a-3930-4461-96c6-b8cc722dc41c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sun Sep 17 2017 07:35:55 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          目前，我们的组件有点混乱；`render()` 方法经常从状态对象访问 `query` (`this.state.query`)，并从属性对象访问 `contacts` (`this.props.contacts`)。因为属性和状态只是 JavaScript 对象，我们可以使用 ES6 功能将它们拆分为单个变量，而不是每次都将它们当做 `this.state.query` 和 `this.props.contacts`。这种拆分流程叫做[对象解构](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)。
+                     
+           总之，解构对象不会改变代码的返回值，但是可以让内容看起来更清晰。我们看看下面的实际使用案例。
+        instructor_notes: ''
+        resources: null
+      - id: 357361
+        key: 714571ca-4eee-403b-9354-6c6461c81c4b
+        locale: zh-cn
+        version: 1.0.0
+        title: 通过 ES6 解构重构
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 03:47:26 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57976'
+          youtube_id: ut3jxLunZz0
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b23ed_22-refactoring-via-es6-destructuring/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23ed_22-refactoring-via-es6-destructuring/22-refactoring-via-es6-destructuring_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23ed_22-refactoring-via-es6-destructuring/22-refactoring-via-es6-destructuring_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23ed_22-refactoring-via-es6-destructuring/22-refactoring-via-es6-destructuring_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23ed_22-refactoring-via-es6-destructuring/22-refactoring-via-es6-destructuring_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23ed_22-refactoring-via-es6-destructuring/hls/playlist.m3u8'
+      - id: 357364
+        key: eca6c0d9-36ca-404e-b5f9-a56f424e7767
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:47:26 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/4f7055abb1c197c1c5c968b472a643dedcb90ba1)'
+        instructor_notes: ''
+        resources: null
+      - id: 357365
+        key: 52749c73-7116-46dd-b205-52831e8fa6e1
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:44:17 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 显示显示的通讯录条数
+                     
+          我们很快就处理完受控组件了！最后一步是让应用显示目前显示了多少条通讯录，总共有多少条。
+        instructor_notes: ''
+        resources: null
+      - id: 357366
+        key: fb64e36b-6653-47dc-8af7-fcac3c17549b
+        locale: zh-cn
+        version: 1.0.0
+        title: 添加 -目前显示的是- 详情
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 06 2017 03:44:50 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57977'
+          youtube_id: ykZMChM_Uu8
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b240f_23-add-the-now-showing-details/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b240f_23-add-the-now-showing-details/23-add-the-now-showing-details_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b240f_23-add-the-now-showing-details/23-add-the-now-showing-details_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b240f_23-add-the-now-showing-details/23-add-the-now-showing-details_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b240f_23-add-the-now-showing-details/23-add-the-now-showing-details_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b240f_23-add-the-now-showing-details/hls/playlist.m3u8'
+      - id: 357367
+        key: db79a9f9-2db6-4905-a466-498556d17153
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:45:08 GMT+0000 (UTC)'
+        is_public: true
+        text: '[这是本视频中所做更改的 commit。](https://github.com/udacity/reactnd-contacts-complete/commit/1ca08610c76a33da761b6d85e303cd8c436519de)'
+        instructor_notes: ''
+        resources: null
+      - id: 357368
+        key: b276c5a9-3b3d-4a75-b33d-8be79b9452cc
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Wed Sep 06 2017 03:46:42 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            在继续学习下节课之前，来检验下对受控组件的掌握情况！
+
+            关于受控组件的描述，下面哪些描述是正确的？请选中所有适用项？
+          correct_feedback: 借助受控组件，React 状态成为表格数据的“单一数据源”。这就是 `ListContacts` 组件中的用户输入最终如何触发重新渲染页面内容。
+          video_feedback: null
+          default_feedback: 借助受控组件，表格元素的值直接与组件的状态相关联。
+          answers:
+            - id: a1498518524112
+              text: 状态的每次更新都具有相关的处理函数
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498518805577
+              text: 表格元素通过属性接收它们的当前值
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498519048216
+              text: 表格输入值通常存储在组件的状态中
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498519182688
+              text: '`<textarea>` 和 `<select>` 不能是受控元素'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498519794437
+              text: 受控组件的事件句柄会更新组件的状态
+              is_correct: true
+              incorrect_feedback: null
+      - id: 357369
+        key: 9875e6d0-f7c0-4f25-9b5c-4a3ee897714b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 06 2017 03:47:16 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 受控组件总结
+
+          受控组件是指渲染表格的组件，但是该表格状态的“数据源”位于组件状态里，而不是 DOM 里。受控组件的优势包括：
+
+                    * 立即验证输入
+                    * 有条件地停用/启用按钮
+                    * 强制实施输入格式
+
+          在 `ListContacts` 组件中，该组件不仅会渲染表格，而且根据用户输入控制该表格中发生的情况。在这种情况下，事件句柄使用用户的搜索查询更新组件状态。我们已经知道，对 React 状态的任何更改都将导致重新渲染页面内容，并有效地显示实时搜索结果。
+        instructor_notes: ''
+        resources: null
+  - id: 357412
+    key: ae5550f3-1ac9-4e9d-97ba-f6009e9e9567
+    locale: zh-cn
+    version: 1.0.0
+    title: 课程总结
+    semantic_type: Concept
+    updated_at: 'Wed Sep 06 2017 03:47:44 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 357370
+    atoms:
+      - id: 357370
+        key: 71c52dec-90e9-4f65-a64b-9adf069bdbd1
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 25 2017 04:39:45 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## 汇总所有信息
+
+          在跟踪应用数据时，思考下需要如何处理该数据，并且当用户查看应用界面时，数据的外观看起来如何。如果你希望组件存储可变的本地数据，可以考虑使用状态存储该信息。很多时候，系统会使用状态来管理组建中的受控表格元素。
+
+          另一方面，如果某些信息一直不会变化，在整个应用中基本上是“只读”状态，可以考虑改为使用属性。状态和属性通常都是对象形式，更改任何一个都会触发重新渲染组件，但是它们各自在应用中扮演了截然不同的角色。
+
+          在这节课，我们讲解了很多内容，并且你学到了很多知识。以下是可以帮助你巩固这些概念的课外资料：
+
+          * [React 思维方式](https://facebook.github.io/react/docs/thinking-in-react.html)
+          * [函数式组件与无状态函数式组件与无状态组件](https://tylermcginnis.com/functional-components-vs-stateless-functional-components-vs-stateless-components/)
+          * [受控组件](https://facebook.github.io/react/docs/forms.html)
+        instructor_notes: ''
+        resources: null

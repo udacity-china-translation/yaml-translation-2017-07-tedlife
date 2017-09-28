@@ -1,0 +1,2678 @@
+id: 374352
+key: 3925704a-be38-4b70-8c8b-a4a812b6a309
+locale: zh-cn
+version: 1.0.0
+title: ES6 - 函数
+semantic_type: Lesson
+updated_at: 'Wed Sep 20 2017 09:09:40 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/August/59a39f42_1-5-use-functions-fsnd2x/1-5-use-functions-fsnd2x.jpg'
+  width: 592
+  height: 640
+video: null
+summary: 函数是 JavaScript 的核心！在 ES6 中，函数出现了很多必要的改进。在这节课，你将学习很多新内容，包括箭头函数和类。
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+career_portal_experience_levels: []
+_concepts_ids:
+  - 374290
+  - 374291
+  - 374292
+  - 374294
+  - 374298
+  - 374293
+  - 374295
+  - 374296
+  - 374297
+  - 374300
+  - 374301
+  - 374302
+  - 374299
+  - 374303
+  - 374305
+  - 374304
+  - 374306
+  - 374307
+  - 374308
+  - 374310
+  - 374309
+_project_id: null
+concepts:
+  - id: 374290
+    key: 8e1cfa11-b537-4d12-8654-76baf56957e7
+    locale: zh-cn
+    version: 1.0.0
+    title: 函数更新
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:18 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374152
+    atoms:
+      - id: 374152
+        key: 7aa1c84c-dac4-4a29-a296-01ec858319e1
+        locale: zh-cn
+        version: 1.0.0
+        title: 函数更新
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:37:18 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43220'
+          youtube_id: CCfficj6zG0
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/58422696_01-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422696_01-intro/01-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422696_01-intro/01-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422696_01-intro/01-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422696_01-intro/01-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422696_01-intro/hls/playlist.m3u8'
+  - id: 374291
+    key: a85361fb-7015-41ef-a505-abf513873fbd
+    locale: zh-cn
+    version: 1.0.0
+    title: 箭头函数
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:20 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374153
+      - 374154
+      - 374155
+    atoms:
+      - id: 374153
+        key: 3713a7db-672b-4e46-b47a-88294e273ed3
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Sep 19 2017 02:53:46 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          函数是 JavaScript 中的主要数据结构之一；它们一直都存在。
+
+          ## 箭头函数
+
+          ES6 引入了一种新的函数，叫做**箭头函数**。箭头函数和普通函数的行为非常相似，但是在句法构成上非常不同。以下代码获得一个名称列表，并使用普通函数将每个名称转换为大写形式：
+
+          ```js
+          const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(function(name) { 
+            return name.toUpperCase();
+          });
+          ```
+
+          下面的代码操作一样，但是向 `map()` 方法中传入的是箭头函数，而不是普通函数。注意以下代码中的箭头函数中的箭头 ( `=>` )：
+
+          ```js
+          const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(
+            name => name.toUpperCase()
+          );
+          ```
+
+          上述代码的唯一变化是 `map()` 方法内的代码。它将普通函数换成了箭头函数。
+
+          > **注意：** 不知道 `map()` 的原理？它是数组原型上的方法。向其传递一个函数，它会对数组中的每个元素调用该函数。然后从每个函数调用中收集返回的值，并形成新的数组。要了解详情，请参阅 [MDN 的文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)。
+
+          ## 将函数转换为箭头函数
+
+          ```js
+          const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(function(name) { 
+            return name.toUpperCase();
+          });
+          ```
+
+          对于上述函数，将现有的"normal"函数转换为箭头函数只需几步。
+
+          * 删掉关键字 `function`
+          * 删掉圆括号
+          * 删掉左右花括号
+          * 删掉关键字 `return`
+          * 删掉分号
+          * 在参数列表和函数主体之间添加一个箭头 ( `=>` ) 
+        instructor_notes: ''
+        resources: null
+      - id: 374154
+        key: 723ebd59-04dd-489b-b0c3-e080af5ad332
+        locale: zh-cn
+        version: 1.0.0
+        title: 键函数转换为箭头函数
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:37:19 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: '<div style="text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;">将普通函数转换为箭头函数。</div>'
+        resources: null
+        video:
+          id: '44898'
+          youtube_id: CM4j786p3Vs
+          subtitles: null
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/587e7ab0_arrow-functions-animation-new/arrow-functions-animation-new_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/587e7ab0_arrow-functions-animation-new/arrow-functions-animation-new_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/587e7ab0_arrow-functions-animation-new/arrow-functions-animation-new_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/587e7ab0_arrow-functions-animation-new/arrow-functions-animation-new_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/587e7ab0_arrow-functions-animation-new/hls/playlist.m3u8'
+      - id: 374155
+        key: a099f0c8-d61c-4bb8-b37e-ea042ec2e503
+        locale: zh-cn
+        version: 1.0.0
+        title: 箭头函数测验
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:37:20 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            看看下面的代码：
+
+            ```js
+            const names = ['Afghanistan', 'Aruba', 'Bahamas', 'Chile', 'Fiji', 'Gabon', 'Luxembourg', 'Nepal', 'Singapore', 'Uganda', 'Zimbabwe'];
+
+            const longNames = names.filter(function(name) {
+              return name.length > 6;
+            });
+            ```
+
+            下面的哪个选项结果一样，但是将 `.filter()` 函数替换成了箭头函数？
+          correct_feedback: 该箭头函数返回了六个字符或更长的国家/地区名称。
+          video_feedback: null
+          default_feedback: |-
+            该选项存在问题。你找到该问题吗？回忆下将普通函数转换为箭头函数的步骤：
+
+            * 删掉关键字 `function`
+            * 删掉圆括号
+            * 删掉左右花括号
+            * 删掉关键字 `return`
+            * 删掉分号
+            * 在参数列表和函数主体之间添加一个箭头 ( `=>` ) 
+          answers:
+            - id: a1484684437693
+              text: const longNames = names.filter( function(name)  => return name.length > 6; );
+              is_correct: false
+              incorrect_feedback: ''
+            - id: a1484684706076
+              text: const longNames = names.filter( return name.length > 6 );
+              is_correct: false
+              incorrect_feedback: ''
+            - id: a1484684706645
+              text: 'const longNames = names.filter( name => {name.length > 6} );'
+              is_correct: false
+              incorrect_feedback: ''
+            - id: a1484684707191
+              text: const longNames = names.filter( name => name.length > 6 );
+              is_correct: true
+              incorrect_feedback: null
+  - id: 374292
+    key: 1bead0d5-5529-41ce-8202-eef6c8c2cad5
+    locale: zh-cn
+    version: 1.0.0
+    title: 使用箭头函数
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:22 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374156
+      - 374157
+      - 374158
+      - 374159
+      - 374160
+    atoms:
+      - id: 374156
+        key: 32a55a96-247b-46b1-8470-ff3d0d936368
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:20 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          普通函数可以是**函数声明**或**函数表达式**，但是箭头函数_始终是_**表达式**。实际上，它们的全称是“箭头函数表达式”，因此仅在表达式有效时才能使用，包括：
+
+          * 存储在变量中，
+          * 当做参数传递给函数，
+          * 存储在对象的属性中。
+
+          一个令人迷惑的语法是箭头函数存储在变量中。
+
+          ```js
+          const greet = name => `Hello ${name}!`;
+          ```
+
+          在上述代码中，箭头函数存储在变量 `greet` 中，你可以像以下代码这样调用它：
+
+          ```js
+          greet('Asser');
+          ```
+          > **Returns:** Hello Asser!
+
+          ## 圆括号和箭头函数参数
+
+          你可能注意到了 `greet()` 函数的箭头函数看起来如下所示：
+
+          ```js
+          name => `Hello ${name}!` 
+          ```
+
+          参数列表出现在箭头函数的箭头（例如 `=>`）前面。如果列表中只有**一个**参数，那么可以像上述示例函数那样编写代码。但是，如果列表中有**两个或多个**参数，如果有**零个**，则需要将列表放在圆括号内：
+
+          ```js
+          // empty parameter list requires parentheses
+          const sayHi = () => console.log('Hello Udacity Student!');
+          sayHi();
+          ```
+          > **Prints:** Hello Udacity Student!
+
+          ```js
+          // multiple parameters requires parentheses
+          const orderIceCream = (flavor, cone) => console.log(`Here's your ${flavor} ice cream in a ${cone} cone.`);
+          orderIceCream('chocolate', 'waffle');
+          ```
+          > **Prints:** Here's your chocolate ice cream in a waffle cone.
+        instructor_notes: ''
+        resources: null
+      - id: 374157
+        key: 51d59567-f53f-4398-bf2a-61997fa98f5f
+        locale: zh-cn
+        version: 1.0.0
+        title: 箭头函数中的圆括号
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:37:21 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 以下哪些选项的箭头函数格式正确？
+          correct_feedback: 所有四个选项都是有效的箭头函数使用方法。
+          video_feedback: null
+          default_feedback: |-
+            实际上，每个都正确。如果函数没有参数，则仅使用一对圆括号，就像选项 1。此外，有些开发工程师选择使用下划线作为单个参数。下划线从未被使用，因此在函数内是 `undefined`，但这是个常见技巧。
+
+            选项 3 和 4 的唯一区别是在 `letter` 周围使用了圆括号。通常，如果只有一个参数，则不使用圆括号，但使用也没错。
+          answers:
+            - id: a1484686169266
+              text: 'setTimeout(() => {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(''starting the test'');<br>&nbsp;&nbsp;&nbsp;&nbsp;test.start();<br>}, 2000);'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1484686192072
+              text: 'setTimeout( _ => {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(''starting the test'');<br>&nbsp;&nbsp;&nbsp;&nbsp;test.start();<br>}, 2000);'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1484686193023
+              text: const vowels = 'aeiou'.split('');<br>const bigVowels = vowels.map( (letter) => letter.toUpperCase() );
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1484686193816
+              text: const vowels = 'aeiou'.split('');<br>const bigVowels = vowels.map( letter => letter.toUpperCase() );
+              is_correct: true
+              incorrect_feedback: null
+      - id: 374158
+        key: afc3147b-fecd-4b91-8760-5f867d842881
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:21 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 简练主体语法和块体语法
+
+          我们看过的所有箭头函数都只有一个表达式作为函数主体：
+
+          ```js
+          const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(
+            name => name.toUpperCase()
+          );
+          ```
+
+          这种函数主体形式称为*简练主体语法*。简练语法：
+
+          * 在函数主体周围没有花括号
+          * 自动返回表达式。
+
+          如果箭头函数的主体内需要多行代码，则可以使用*块体语法*。
+
+          ```js
+          const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map( name => {
+            name = name.toUpperCase();
+            return `${name} has ${name.length} characters in their name`;
+          });
+          ```
+
+          对于块体语法需要主体的重要事项：
+
+          * 它将函数主体放在花括号内
+          * 需要使用 `return` 语句来返回内容。
+        instructor_notes: ''
+        resources: null
+      - id: 374159
+        key: e15ebe7d-9ad3-481d-9e6a-439d9cedb6c8
+        locale: zh-cn
+        version: 1.0.0
+        title: Return 和花括号
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:37:21 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 根据你所掌握的箭头函数如何处理自动返回和花括号的知识，判断下面的哪些选项是正确的箭头函数格式？
+          correct_feedback: 选项 1 和 4 使用了正确的箭头函数语法。
+          video_feedback: null
+          default_feedback: |-
+            选项 1 正确。因为箭头函数使用了花括号，必须有个 return 语句，返回某个内容。
+
+            选项 2 不正确，因为它有花括号，但是没有 return 语句。该函数会运行，但是没有内容返回到 `crazyColors`。
+
+            选项 3 没有花括号。意味着需要为简练语法，并自动返回表达式，因此不应有 `return` 关键字，因此该选项不正确。
+
+            选项 4 正确。这是你将见到的最常见的箭头函数书写形式，一行内容并自动返回内容。
+          answers:
+            - id: a1484686650389
+              text: 'const colors = [''red'', ''blue'', ''green'', ''yellow'', ''orange'', ''black''];<br><br>const crazyColors = colors.map( color => {<br>&nbsp;&nbsp;&nbsp;&nbsp;const jumble = color.split('''').reverse();<br>&nbsp;&nbsp;&nbsp;&nbsp;return jumble.join('''') + ''!'';<br>});'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1484686718784
+              text: 'const colors = [''red'', ''blue'', ''green'', ''yellow'', ''orange'', ''black''];<br><br>const crazyColors = colors.map( color => {<br>&nbsp;&nbsp;&nbsp;&nbsp;color.split('''').reverse().join('''') + ''!'';<br>});'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484686719393
+              text: 'const colors = [''red'', ''blue'', ''green'', ''yellow'', ''orange'', ''black''];<br>const crazyColors = colors.map( color => return color.split('''').reverse().join('''') + ''!'' );'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484686719921
+              text: 'const colors = [''red'', ''blue'', ''green'', ''yellow'', ''orange'', ''black''];<br>const crazyColors = colors.map( color => color.split('''').reverse().join('''') + ''!'' );'
+              is_correct: true
+              incorrect_feedback: null
+      - id: 374160
+        key: a7d5da3b-79fb-42dd-9577-2b463e0637e7
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Sep 19 2017 03:12:56 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          箭头函数很强大！
+
+          * 语法简短多了，
+          * 更容易编写和阅读简短的单行函数，
+          * 使用简练主体语法时，自动返回内容！
+
+          > **警告**：事情并非总是很完美，有些时候的确不能使用箭头函数。在忘记如何编写普通函数之前，先看看下面的限制：
+
+          > * 箭头函数中的 `this` 关键字存在限制条件
+          >  * 请转到下一节课了解详情！
+          > * 箭头函数只是表达式
+          >  * 没有箭头函数声明
+        instructor_notes: ''
+        resources: null
+  - id: 374294
+    key: 271eee24-ae2a-4fe2-981e-fd59193788be
+    locale: zh-cn
+    version: 1.0.0
+    title: 测验：将函数转换为箭头函数 (2-1)
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:29 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374161
+      - 374162
+    atoms:
+      - id: 374161
+        key: 5e6b76f8-9a5b-459e-a133-8e59ea34a715
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:23 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 指导说明：
+
+          将传递给 `map()` 方法的函数转换为箭头函数。
+
+          ## 你的代码：
+        instructor_notes: ''
+        resources: null
+      - id: 374162
+        key: 892c5160-963e-422b-a4de-78d22409eeb6
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Sep 11 2017 16:37:27 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6106030124695552'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'submit'])
+            executor_test_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'test'])
+            gae_grading_code: |-
+              """Provide feedback to student based on evaluation of JavaScript programming quiz."""
+
+              import json
+
+              # until we check, assume student's submission is incorrect
+              grade_result['correct'] = False
+
+              # don't use, but must set to ' ' to avoid error
+              grade_result['comment'] = ' '
+
+              # use default markdown?
+              use_default_markdown = True
+
+              def parse_swizzled_output(output):
+                  """Analyzes the swizzled output for passing/failing criteria and other feedback.
+                      
+                      Args:
+                      output (string): Output generated when running swizzled main.
+                      """
+                  # keep running total of (passed) criteria
+                  numberOfCriteria = 0
+                  numberOfPasses = 0
+                  passed_criteria = []
+                  failed_criteria = []
+                  feedback = []
+                  # split lines by newline
+                  lines = output.split('\n')
+                  # go line-by-line and find formatted tags for criteria
+                  for line in lines:
+                      if line.startswith('<PASS::>'):
+                          numberOfCriteria += 1
+                          numberOfPasses += 1
+                          # strip tag and add criteria to array
+                          passed_criteria.append(line[8:])
+                      if line.startswith('<FAIL::>'):
+                          numberOfCriteria += 1
+                          # strip tag and add criteria to array
+                          failed_criteria.append(line[8:])
+                      if line.startswith('<FEEDBACK::>'):
+                          # strip tag and add feedback to array
+                          feedback.append(line[12:])
+                  # return results
+                  return (numberOfCriteria == numberOfPasses, passed_criteria, failed_criteria, feedback)
+
+              def default_markdown_from_criteria(passing_criteria, failing_criteria):
+                  """Generates default markdown-like string based on passing/failing criteria.
+
+                      Args:
+                      passing_criteria (list): All passing criteria from quiz
+                      failing_criteria (list): All failing criteria from quiz
+                      """
+                  # init markdown-like string
+                  markdown = ''
+                  # was there more than 1 criteria?
+                  if passing_criteria + failing_criteria > 1:
+                      # add passing criteria to markdown
+                      if len(passing_criteria) >= 1:
+                          markdown += '# What Went Well\n\n'
+                          for criteria in passing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                      # add failing criteria to markdown
+                      if len(failing_criteria) >= 1:
+                          markdown += '# What Went Wrong\n\n'
+                          for criteria in failing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                  else:
+                      # if only 1 criteria, add it without headers to markdown
+                      markdown = passing_criteria[0] if grade_result['correct'] else failing_criteria[0]
+                  # return markdown-like string
+                  return markdown
+
+              def main():
+                  """Analyze the output generated by Falcon and set special key/value pairs for feedback."""
+                  # did the remote execution cause an error?
+                  if executor_result['stderr'] == '':
+                      # nope! analyze the output (JSON-like string)
+                      try:
+                          # convert JSON-like string into Python dictionary
+                          results = json.loads(executor_result['stdout'])
+                          swizzle_out = results['temp/results-out.txt']
+                      except Exception as e:
+                          # if there was an error during the conversion, display it
+                          grade_result['feedback'] = executor_result['stderr']
+                      else:
+                          # did the execution of swizzled main produce an error?
+                          if results['temp/results-err.txt'] == '':
+                              # nope! we can safely use the output of swizzled main
+                              (submission_correct, passing_criteria, failing_criteria, feedback) = parse_swizzled_output(swizzle_out)
+                              # set pass/fail
+                              grade_result['correct'] = submission_correct
+                              if use_default_markdown == True:
+                                  # use default markdown for criteria/feedback
+                                  markdown_feedback = default_markdown_from_criteria(passing_criteria, failing_criteria)
+                                  total_criteria = len(failing_criteria) + len(passing_criteria)
+                                  all_feedback = markdown_feedback + '# Feedback\n\n'
+                                  if len(failing_criteria) == 0:
+                                      all_feedback += 'Your answer passed all our tests! Awesome job!'
+                                  elif len(passing_criteria) >= total_criteria / 2:
+                                      all_feedback += 'Not everything is correct yet, but you\'re close!'
+                                  else:
+                                      all_feedback += 'There\'s work left to do. Try tackling one problem at a time.'
+                                  grade_result['feedback'] = all_feedback
+                                  # grade_result['comment'] = results['temp/student-out.txt']
+                              else:
+                                  # show raw response from REX execution
+                                  grade_result['feedback'] = str(results)
+                          else:
+                              # swizzled main generated some an error, so display it!
+                              grade_result['feedback'] = 'An error occurred while testing your code.\n\nCheck to ensure these items are true:\n\n- clicking **TEST RUN** doesn\'t produce any issues\n- you\'ve followed all instructions\n- you\'ve used the correct names\n\nIf you make all these checks, but it still doesn\'t fix the error, then please contact us at *support@udacity.com* and provide a link to the quiz and a copy of your code.\n\nNOTE: If you cannot find the instructions, click **RESET QUIZ** to reset the quiz to its original state.'
+                  else:
+                      # there was an error with overall execution, so display it!
+                      grade_result['comment'] = executor_result['stderr']
+
+              main()
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs:
+              - key: '5141761099956224'
+                ref: ProgramTemplate
+            included_text_files:
+              - text: |
+                  var logBackup = console.log;
+                  var logMessages = [];
+                  console.log = function() {
+                      logMessages.push.apply(logMessages, arguments);
+                      logBackup.apply(console, arguments);
+                  };
+                name: SwizzleBefore.js
+              - text: |
+                  // tests to verify the student's code
+                  ;(function() {
+                      // require assertion library, javascript parser, querying library, and file system
+                      var chai = require('chai');
+                      var esprima = require('esprima');
+                      var esquery = require('esquery');
+                      var fs = require('fs');
+
+                      var assert = chai.assert;
+                      var tree = '';
+                      var content = '';
+
+                      // get students' file
+                      content = fs.readFileSync(__dirname + '/StudentMain.js', 'utf8');
+                      // generate abstract systax tree (AST)
+                      tree = esprima.parse(content);
+
+                      // define selector
+                      var bodySelector = esquery.parse('[body]');
+                      // query AST with selector
+                      var bodyMatch = esquery.match(tree, bodySelector);
+
+                      // tests
+                      if(bodyMatch[0].body.length !== 0) {
+                          // define selector
+                          var squaresSelector = esquery.parse('[id.name="squares"]');
+                          // query AST with selector
+                          var squaresMatch = esquery.match(tree, squaresSelector);
+                          describe('Your code', function() {
+                              // check if squares exists
+                              it('should have a variable `squares`', function() {
+                                  assert.isDefined(squares, 'The variable `squares` doesn\'t exist');
+                              });
+                          });
+                          if(squaresMatch[0] !== null) {
+                              describe('The variable `squares`', function() {
+                                  // check if squares is an array
+                                  it('should be an array', function() {
+                                    assert.isArray(squares, "The variable `squares` isn't an array");
+                                  });
+                              });
+                              // define selector
+                              var arrowFuncSelector = esquery.parse('VariableDeclarator[id.name="squares"] ArrowFunctionExpression');
+                              // query AST with selector
+                              var arrowFuncMatch = esquery.match(tree, arrowFuncSelector);
+                              if(arrowFuncMatch.length === 1) {
+                                  describe('Your code', function() {
+                                      it('should replace the function expression with an arrow function', function() {
+                                          assert.isOk(true, 'Your code doesn\'t replace the function expression with an arrow function');
+                                      });
+                                  });
+                                  describe('Your arrow function', function() {
+                                      it('should have one parameter called `square`', function() {
+                                          assert.equal(arrowFuncMatch[0].params[0].name, 'square', 'Your arrow function is missing the parameter for `square`');
+                                      });
+                                      it('should square each element in the `squares` array', function() {
+                                          assert.sameMembers(squares, [ 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 ], 'Your arrow function doesn\'t square each element in the `squares` array');
+                                      });
+                                  });
+                              } else {
+                                  describe('Your code', function() {
+                                      it('should replace the function expression with an arrow function', function() {
+                                          assert.isOk(false, 'Your code doesn\'t replace the function expression with an arrow function');
+                                      });
+                                  });
+                              }
+                          }
+                      } else {
+                          describe('Your code', function() {
+                              it('should not be empty', function() {
+                                  assert.isOk(false, 'Your code is missing, hit the "Reset Quiz" button to reset the quiz');
+                              });
+                          });
+                      }
+
+                  }());
+                name: SwizzleAfter.js
+        answer: null
+  - id: 374298
+    key: 92e6caba-43ba-4089-9821-982f22069b73
+    locale: zh-cn
+    version: 1.0.0
+    title: 箭头函数总结
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:30 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374171
+    atoms:
+      - id: 374171
+        key: e9b77df8-32ae-4cf0-8293-3f7d1451eae7
+        locale: zh-cn
+        version: 1.0.0
+        title: 箭头函数总结
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:37:29 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43132'
+          youtube_id: 8xOKUtvI1lc
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/583f7af7_14-arrow-functions/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7af7_14-arrow-functions/14-arrow-functions_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7af7_14-arrow-functions/14-arrow-functions_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7af7_14-arrow-functions/14-arrow-functions_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7af7_14-arrow-functions/14-arrow-functions_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7af7_14-arrow-functions/hls/playlist.m3u8'
+  - id: 374293
+    key: 9cf7a128-1570-4e8e-97b8-047b85a1a122
+    locale: zh-cn
+    version: 1.0.0
+    title: 箭头函数和"this"关键字
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:31 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374163
+    atoms:
+      - id: 374163
+        key: 0364deff-06e0-46f3-b3da-2668e3c44311
+        locale: zh-cn
+        version: 1.0.0
+        title: 箭头函数和"this"关键字
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:37:31 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '44131'
+          youtube_id: JCDcj_tKnmY
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/585cad79_15-intro-v2/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/585cad79_15-intro-v2/15-intro-v2_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/585cad79_15-intro-v2/15-intro-v2_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/585cad79_15-intro-v2/15-intro-v2_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/585cad79_15-intro-v2/15-intro-v2_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/585cad79_15-intro-v2/hls/playlist.m3u8'
+  - id: 374295
+    key: 654cbc3e-5081-49e3-a17e-86198de93db6
+    locale: zh-cn
+    version: 1.0.0
+    title: '"this" 和普通函数'
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374164
+      - 374165
+      - 374166
+    atoms:
+      - id: 374164
+        key: 68f23476-591b-4a15-a46b-38c744bf8eac
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Sep 19 2017 03:19:45 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          要了解箭头函数中的 `this` 有何区别，我们快速总结下标准函数中的 `this` 是如何使用的。如果你已经非常熟悉 `this` 的使用方法，可以跳过此部分。
+
+          `this` 关键字的价值完全取决于它的函数（或方法）是如何被调用的。`this` 可以是以下任何内容：
+
+          ---
+
+          ### 1. 新的对象
+
+          如果函数使用 `new` 被调用：
+
+          ```js
+          const mySundae = new Sundae('Chocolate', ['Sprinkles', 'Hot Fudge']); 
+          ```
+
+          在上述代码中，`Sundae` 构造函数内的 `this` 的值是新的对象，因为它使用 `new` 被调用。
+
+          ---
+
+          ### 2. 指定的对象
+
+          如果函数使用 `call`/`apply` 被调用：
+
+          ```js
+          const result = obj1.printName.call(obj2);
+          ```
+
+          在上述代码中，`printName()` 中的 `this` 的值将指的是 `obj2`，因为 `call()` 的第一个参数明确设定 `this` 指代的是什么。
+
+          ---
+
+          ### 3. 上下文对象
+
+          如果函数是对象方法：
+
+          ```js
+          data.teleport();
+          ```
+
+          在上述代码中，`teleport()` 中的 `this` 的值将指代 `data`。
+
+          ---
+
+          ### 4. 全局对象或 undefined
+
+          如果函数被调用时没有上下文：
+
+          ```js
+          teleport();
+          ```
+
+          在上述代码中，`teleport()` 中的 `this` 的值是全局对象，更严格说来，是 `undefined`。
+
+          ---
+
+          > **提示：**JavaScript 中的 `this` 是个很复杂的概念。我们只是快速复习了下，要详细了解如何判断 `this`，请参阅 [this All Makes Sense Now!](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md)（来自 Kyle Simpson 的图书系列 [《You Don't Know JS》](https://github.com/getify/You-Dont-Know-JS/blob/master/README.md)。
+        instructor_notes: ''
+        resources: null
+      - id: 374165
+        key: 8ff05581-2c1c-4e22-838a-8d66169e631e
+        locale: zh-cn
+        version: 1.0.0
+        title: '`this` 和普通函数 1'
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:37:32 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            下面的 `Train` 构造函数中的 `this` 的值是什么？
+
+            ```js
+            const redTrain = new Train('red');
+            ```
+          correct_feedback: 因为使用了关键字 `new`，所以正确答案是新的对象。
+          video_feedback: null
+          default_feedback: 滚动到顶部的第一部分，看看 `this` 的值可以如何设置。
+          answers:
+            - id: a1485273574059
+              text: 窗口对象
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1485273623417
+              text: 新的对象
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1485273624416
+              text: undefined
+              is_correct: false
+              incorrect_feedback: null
+      - id: 374166
+        key: 872676ca-9990-49bc-8b94-a6b0862cd792
+        locale: zh-cn
+        version: 1.0.0
+        title: '`this` 和普通函数 2'
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:37:33 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            下面的 `increaseSpeed()` 函数中的 `this` 的值是什么？
+
+            ```js
+            const redTrain = new Train('red');
+            redTrain.increaseSpeed(25);
+            ```
+          correct_feedback: 因为从上下文对象 (`redTrain`) 中调用了 the `increaseSpeed()`，该上下文对象将是函数中 `this` 的值。
+          video_feedback: null
+          default_feedback: 滚动到顶部的第一部分，看看 `this` 的值可以如何设置。
+          answers:
+            - id: a1485273749391
+              text: 窗口对象
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1485273786245
+              text: 新的对象
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1485273787022
+              text: redTrain 对象
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1485273787846
+              text: undefined
+              is_correct: false
+              incorrect_feedback: null
+  - id: 374296
+    key: 32f53f68-4b31-40fb-b136-4eda28b8ff57
+    locale: zh-cn
+    version: 1.0.0
+    title: '"this" 和箭头函数'
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:35 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374167
+      - 374168
+    atoms:
+      - id: 374167
+        key: f97df5f7-766a-46d8-add7-db6b1cd50061
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:34 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          对于普通函数，`this` 的值基于函数如何被调用。对于箭头函数，`this` 的值基于函数周围的上下文。换句话说，箭头函数内的，`this` 的值与函数外面的 `this` 的值一样。
+
+          我们先看一个普通函数中的 `this` 示例，再看一个箭头函数是如何使用 `this` 的。
+
+          ```js
+          // constructor
+          function IceCream() {
+            this.scoops = 0;
+          }
+
+          // adds scoop to ice cream
+          IceCream.prototype.addScoop = function() {
+            setTimeout(function() {
+              this.scoops++;
+              console.log('scoop added!');
+            }, 500);
+          };
+
+          const dessert = new IceCream();
+          dessert.addScoop();
+          ```
+          > **Prints:**<br>
+          scoop added!
+
+          运行上述代码后，你会认为半毫秒之后，`dessert.scoops` 会是`1`。但并非这样：
+
+          ```js
+          console.log(dessert.scoops);
+          ```
+
+          > **Prints:**<br>
+          0
+
+          能说说原因吗？
+
+          传递给 `setTimeout()` 的函数被调用时没用到 `new`、`call()` 或 `apply()`，也没用到上下文对象。意味着函数内的 `this` 的值是全局对象，**不是** `dessert` 对象。实际上发生的情况是，创建了新的 `scoops` 变量（默认值为 `undefined`），然后递增（`undefined + 1` 结果为 `NaN`）：
+
+          ```js
+          console.log(scoops);
+          ```
+
+          > **Prints:**<br>
+          NaN
+
+          一种方法是使用：
+
+          ```js
+          // constructor
+          function IceCream() {
+            this.scoops = 0;
+          }
+
+          // adds scoop to ice cream
+          IceCream.prototype.addScoop = function() {
+            const cone = this; // sets `this` to the `cone` variable
+            setTimeout(function() {
+              cone.scoops++; // references the `cone` variable
+              console.log('scoop added!');
+            }, 0.5);
+          };
+
+          const dessert = new IceCream();
+          dessert.addScoop();
+          ```
+
+          上述代码将可行，因为它没有在函数内使用 `this`，而是将 `cone` 变量设为 `this`，然后当函数被调用时查找 `cone` 变量。这样可行，因为是在函数外面使用 `this` 的值。如果现在查看甜点中的勺子数量，正确值将为 `1`：
+
+          ```js
+          console.log(dessert.scoops);
+          ```
+
+          > **Prints:**<br>
+          1
+        instructor_notes: ''
+        resources: null
+      - id: 374168
+        key: 00501450-82a8-47d6-b531-b37b669f57d0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:34 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          这正是箭头函数的作用，我们将传递给 `setTimeout()` 的函数替换为箭头函数：
+
+          ```js
+          // constructor
+          function IceCream() {
+            this.scoops = 0;
+          }
+
+          // adds scoop to ice cream
+          IceCream.prototype.addScoop = function() {
+            setTimeout(() => { // an arrow function is passed to setTimeout
+              this.scoops++;
+              console.log('scoop added!');
+            }, 0.5);
+          };
+
+          const dessert = new IceCream();
+          dessert.addScoop();
+          ```
+
+          因为箭头函数从周围上下文继承了 `this` 值，所以这段代码可行！
+
+          ```js
+          console.log(dessert.scoops);
+          ```
+
+          > **Prints:**<br>
+          > 1
+
+          当 `addScoop()` 被调用时，`addScoop()` 中的 `this` 的值指的是 `dessert`。因为箭头函数被传递给 `setTimeout()`，它使用周围上下文判断它里面的 `this` 指的是什么。因为箭头函数外面的 `this` 指的是 `dessert`，所以箭头函数里面的 `this` 的值也将是 `dessert`。
+
+          如果我们将 `addScoop()` 方法改为箭头函数，你认为会发生什么？
+
+          ```js
+          // constructor
+          function IceCream() {
+              this.scoops = 0;
+          }
+
+          // adds scoop to ice cream
+          IceCream.prototype.addScoop = () => { // addScoop is now an arrow function
+            setTimeout(() => {
+              this.scoops++;
+              console.log('scoop added!');
+            }, 0.5);
+          };
+
+          const dessert = new IceCream();
+          dessert.addScoop();
+          ```
+
+          这段代码并不因为同一原因而可行，即箭头函数从周围上下文中继承了 `this` 值。在 `addScoop()` 方法外面，`this` 的值是全局对象。因此如果 `addScoop()` 是箭头函数，`addScoop()` 中的 `this` 的值是全局对象。这样的话，传递给 `setTimeout()` 的函数中的 `this` 的值也设为该全局对象！
+        instructor_notes: ''
+        resources: null
+  - id: 374297
+    key: 2444913e-a976-4d3e-aafc-f1d60c93b23f
+    locale: zh-cn
+    version: 1.0.0
+    title: 默认函数参数
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374169
+      - 374170
+    atoms:
+      - id: 374169
+        key: 29fa3ac9-6738-4a9f-9221-9287a18f6309
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:35 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          看看下面的代码：
+
+          ```js
+          function greet(name, greeting) {
+            name = (typeof name !== 'undefined') ?  name : 'Student';
+            greeting = (typeof greeting !== 'undefined') ?  greeting : 'Welcome';
+
+            return `${greeting} ${name}!`;
+          }
+
+          greet(); // Welcome Student!
+          greet('James'); // Welcome James!
+          greet('Richard', 'Howdy'); // Howdy Richard!
+          ```
+          > **Returns:**<br>
+          Welcome Student!<br>
+          Welcome James!<br>
+          Howdy Richard!
+
+          `greet()` 函数中混乱的前两行的作用是什么？它们的作用是当所需的参数未提供时，为函数提供默认的值。但是看起来很混乱...
+
+          幸运的是，ES6 引入了一个新的方式来创建默认值。叫做_默认函数参数_。
+
+          ## 默认函数参数
+
+          **默认函数参数**非常容易阅读，因为它们位于函数的参数列表中：
+
+          ```js
+          function greet(name = 'Student', greeting = 'Welcome') {
+            return `${greeting} ${name}!`;
+          }
+
+          greet(); // Welcome Student!
+          greet('James'); // Welcome James!
+          greet('Richard', 'Howdy'); // Howdy Richard!
+          ```
+          > **Returns:**<br>
+          Welcome Student!<br>
+          Welcome James!<br>
+          Howdy Richard!
+
+          哇，代码少了很多，整洁多了，也更容易读懂了！
+
+          要创建默认参数，需要添加等号 ( `=` ) 以及当参数未提供时参数应该设为的默认值。在上述代码中，两个参数的默认值都是字符串，但是可以为任何 JavaScript 类型！
+        instructor_notes: ''
+        resources: null
+      - id: 374170
+        key: ea46de38-b239-4e6d-be99-f0ae456a1c22
+        locale: zh-cn
+        version: 1.0.0
+        title: 默认函数参数
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:37:35 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            看看下面的代码：
+
+            ```js
+            function shippingLabel(name, address) {
+              name = (typeof name !== 'undefined') ? name : 'Richard';
+              address = (typeof address !== 'undefined') ?  address : 'Mountain View';
+              return `To: ${name} In: ${address}`;
+            }
+            ```
+
+            下面的哪些选项是使用默认函数参数编写 `shippingLabel()` 函数的正确方式？
+          correct_feedback: 选项 4 正确地使用了默认函数参数，它直接为参数设置了默认值。
+          video_feedback: null
+          default_feedback: |-
+            选项 1、2 和 3 不正确，我们看看为何原因。
+
+            选项 1 对 `name` 和 `address` 都设定了默认值，但是不是正确的默认值。
+
+            选项 2 使用了甚至更旧的、更有问题的默认值设置方式。
+
+            选项 3 甚至没有默认值。只是使用用户传入的任何内容。
+
+            对于新的默认函数参数，直接向参数添加默认值。选项 4 是唯一这么做的正确选项，因此是正确答案。
+          answers:
+            - id: a1485275075943
+              text: 'function shippingLabel(name = '''', address = '''') {<br>&nbsp;&nbsp;&nbsp;&nbsp;return \`To: ${name} In: ${address}\`;<br>}'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1485275284483
+              text: 'function shippingLabel(name, address) {<br>&nbsp;&nbsp;&nbsp;&nbsp;name = name || ''Richard'';<br>&nbsp;&nbsp;&nbsp;&nbsp;address = address || ''Mountain View'';<br>&nbsp;&nbsp;&nbsp;&nbsp;return \`To: ${name} In: ${address}\`;<br>}'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1485275285034
+              text: 'function shippingLabel(name, address) {<br>&nbsp;&nbsp;&nbsp;&nbsp;return \`To: ${name} In: ${address}\`;<br>}'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1485275285538
+              text: 'function shippingLabel(name = ''Richard'', address = ''Mountain View'') {<br>&nbsp;&nbsp;&nbsp;&nbsp;return \`To: ${name} In: ${address}\`;<br>}'
+              is_correct: true
+              incorrect_feedback: null
+  - id: 374300
+    key: 5368e2c8-157b-4c15-8aa8-e06a699e9798
+    locale: zh-cn
+    version: 1.0.0
+    title: 默认值和解构
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374172
+      - 374173
+      - 374174
+      - 374175
+      - 374176
+    atoms:
+      - id: 374172
+        key: 94d6c9e6-b8ff-4347-98f8-f4742ffe467a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Sep 19 2017 05:17:16 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 默认值和解构数组
+
+          你可以通过 **解构** 将默认函数参数结合到一起，形成非常强大的函数！
+
+          ```js
+          function createGrid([width = 5, height = 5]) {
+            return `Generates a ${width} x ${height} grid`;
+          }
+
+          createGrid([]); // Generates a 5 x 5 grid
+          createGrid([2]); // Generates a 2 x 5 grid
+          createGrid([2, 3]); // Generates a 2 x 3 grid
+          createGrid([undefined, 3]); // Generates a 5 x 3 grid
+          ```
+          > **Returns:**<br>
+          Generates a 5 x 5 grid<br>
+          Generates a 2 x 5 grid<br>
+          Generates a 2 x 3 grid<br>
+          Generates a 5 x 3 grid
+
+          `createGrid()` 函数预期传入的是数组。它通过解构将数组中的第一项设为 `width`，第二项设为 `height`。如果数组为空，或者只有一项，那么就会使用默认参数，并将缺失的参数设为默认值 `5`。
+
+          但是存在一个问题，下面的代码将不可行：
+
+          ```js
+          createGrid(); // throws an error
+          ```
+          > **Uncaught TypeError:** Cannot read property 'Symbol(Symbol.iterator)' of undefined
+
+          出现错误，因为 `createGrid()` 预期传入的是数组，然后对其进行解构。因为函数被调用时没有传入数组，措意出现问题。但是，我们可以使用默认的函数参数！
+
+          ```js
+          function createGrid([width = 5, height = 5] = []) {
+            return `Generating a grid of ${width} by ${height}`;
+          }
+          ```
+
+          看到函数参数中的新 `= []` 了吗？如果 `createGrid()` 在被调用时没有任何参数，它将使用这个默认的空数组。因为数组是空的，因此没有任何内容可以解构为 `width` 和 `height`，因此将应用它们的默认值！通过添加 `= []` 为整个参数设定一个默认值，下面的代码将可行：
+
+          ```js
+          createGrid(); // Generates a 5 x 5 grid
+          ```
+          > **Returns:** Generates a 5 x 5 grid
+        instructor_notes: ''
+        resources: null
+      - id: 374173
+        key: b1166f02-696c-4c0b-9c6a-0bfffafadd8d
+        locale: zh-cn
+        version: 1.0.0
+        title: 使用数组默认参数进行解构
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:37:37 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            看看下面的代码：
+
+            ```js
+            function houseDescriptor([houseColor = 'green', shutterColors = ['red']]) {
+              return `I have a ${houseColor} house with ${shutterColors.join(' and ')} shutters`;
+            }
+            ```
+
+            下面的哪些选项可以正常运行，不会出现错误？
+          correct_feedback: 只有选项 2 和 4 会正常运行，不会出现错误。
+          video_feedback: null
+          default_feedback: |-
+            因为 `houseDescriptor` 预期只传入一个参数（数组），因此选项 1 不对，它使用两个参数调用函数。
+
+            选项 2 正确。
+
+            选项 3 使用一个数组参数调用函数，但是列表中的第二项和 `.join()` 不是字符串方法，因此代码会出现错误。
+
+            选项 4 正确。
+          answers:
+            - id: a1485277080219
+              text: 'houseDescriptor(''red'', [''white'', ''gray'', ''pink'']);'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1485278612080
+              text: 'houseDescriptor([''green'', [''white'', ''gray'', ''pink'']]);'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1485278612753
+              text: 'houseDescriptor([''blue'', ''purple'']);'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1485278613201
+              text: 'houseDescriptor([''green'']);'
+              is_correct: true
+              incorrect_feedback: null
+      - id: 374174
+        key: 8fe8828b-9f89-41d5-8f98-0ea3367de4d5
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:37 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 默认值和解构对象
+
+          就像使用数组默认值解构数组一样，函数可以让对象具有默认参数，并使用对象解构：
+
+          ```js
+          function createSundae({scoops = 1, toppings = ['Hot Fudge']}) {
+            const scoopText = scoops === 1 ? 'scoop' : 'scoops';
+            return `Your sundae has ${scoops} ${scoopText} with ${toppings.join(' and ')} toppings.`;
+          }
+
+          createSundae({}); // Your sundae has 1 scoop with Hot Fudge toppings.
+          createSundae({scoops: 2}); // Your sundae has 2 scoops with Hot Fudge toppings.
+          createSundae({scoops: 2, toppings: ['Sprinkles']}); // Your sundae has 2 scoops with Sprinkles toppings.
+          createSundae({toppings: ['Cookie Dough']}); // Your sundae has 1 scoop with Cookie Dough toppings.
+          ```
+          > **Returns:**<br>
+          Your sundae has 1 scoop with Hot Fudge toppings.<br>
+          Your sundae has 2 scoops with Hot Fudge toppings.<br>
+          Your sundae has 2 scoops with Sprinkles toppings.<br>
+          Your sundae has 1 scoop with Cookie Dough toppings.
+
+          就像上面的数组示例，如果尝试调用函数时不用参数，将不可行：
+
+          ```js
+          createSundae(); // throws an error
+          ```
+          > **Uncaught TypeError:** Cannot match against 'undefined' or 'null'.
+
+          我们可以通过向函数提供默认对象来防止出现此问题：
+
+          ```js
+          function createSundae({scoops = 1, toppings = ['Hot Fudge']} = {}) {
+            const scoopText = scoops === 1 ? 'scoop' : 'scoops';
+            return `Your sundae has ${scoops} ${scoopText} with ${toppings.join(' and ')} toppings.`;
+          }
+          ```
+
+          通过添加空对象作为默认参数，以防未提供参数，现在调用函数时没有任何参数将可行。
+
+          ```js
+          createSundae(); // Your sundae has 1 scoop with Hot Fudge toppings.
+          ```
+          > **Returns:** Your sundae has 1 scoop with Hot Fudge toppings.
+        instructor_notes: ''
+        resources: null
+      - id: 374175
+        key: 6ae998a7-b2d3-416a-ad6c-d2a4d6be6fda
+        locale: zh-cn
+        version: 1.0.0
+        title: 使用对象默认参数进行解构
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:37:37 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            看看下面的代码：
+
+            ```js
+            function houseDescriptor({houseColor = 'green', shutterColors = ['red']} = {}) {
+              return `I have a ${houseColor} house with ${shutterColors.join(' and ')} shutters`;
+            }
+            ```
+
+            下面的哪些选项可以正常运行，不会出现错误？
+          correct_feedback: 实际上，每个函数调用都能正确运行！
+          video_feedback: null
+          default_feedback: 自己运行代码，测试下，看看每个函数调用是否能运行。
+          answers:
+            - id: a1485279245716
+              text: 'houseDescriptor({houseColor: ''red'', shutterColors: [''white'', ''gray'', ''pink'']});'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1485279263632
+              text: 'houseDescriptor({houseColor: ''red''});'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1485279264263
+              text: houseDescriptor();
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1485279264768
+              text: 'houseDescriptor({shutterColors: [''orange'', ''blue'']});'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1485279265695
+              text: 'houseDescriptor({});'
+              is_correct: true
+              incorrect_feedback: null
+      - id: 374176
+        key: 13ba0cf6-fcc5-4858-bff8-6e81e63e24db
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:38 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 数组默认值与对象默认值
+
+          默认函数参数只是个简单的添加内容，但是却带来很多便利！与数组默认值相比，对象默认值具备的一个优势是能够处理跳过的选项。看看下面的代码：
+
+          ```js
+          function createSundae({scoops = 1, toppings = ['Hot Fudge']} = {}) { … }
+          ```
+
+          ...with the `createSundae()` 函数使用对象默认值进行解构后，如果你想使用 `scoops` 的默认值，但是更改 `toppings`，那么只需使用 `toppings` 传入一个对象：
+
+          ```js
+          createSundae({toppings: ['Hot Fudge', 'Sprinkles', 'Caramel']});
+          ```
+
+          将上述示例与使用数组默认值进行解构的同一函数相对比。
+
+          ```js
+          function createSundae([scoops = 1, toppings = ['Hot Fudge']] = []) { … }
+          ```
+
+          对于这个函数，如果想使用 `scoops` 的默认数量，但是更改 `toppings`，则需要有点奇怪地调用你的函数：
+
+          ```js
+          createSundae([undefined, toppings: ['Hot Fudge', 'Sprinkles', 'Caramel']]);
+          ```
+
+          因为数组基于位置，我们需要传入 `undefined` 以跳过第一个参数（并接受默认值）并到达第二个参数。
+
+          除非你有很充足的理由来使用数组默认值进行数组解构，否则建议使用对象默认值进行对象解构！
+        instructor_notes: ''
+        resources: null
+  - id: 374301
+    key: 161138bd-464c-4ccf-a7fd-2dded2cca5a4
+    locale: zh-cn
+    version: 1.0.0
+    title: 测验：使用默认函数参数 (2-2)
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:45 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374177
+      - 374178
+    atoms:
+      - id: 374177
+        key: 39735309-579c-4f2c-8a6f-5677c8d1fe65
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:40 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 指导说明：
+
+          创建一个接受对象作为默认参数的 `buildHouse()` 函数。该对象应该将以下属性设为这些默认值：
+
+          * `floors = 1`
+          * `color = 'red'`
+          * `walls = 'brick'`
+
+          如果没有向函数传入参数或传入空对象，函数应该返回以下内容。
+
+          ```text
+          Your house has 1 floor(s) with red brick walls.
+          ```
+
+          ## 你的代码：
+        instructor_notes: ''
+        resources: null
+      - id: 374178
+        key: 99b7e4de-ae4f-4799-ac8c-24e12a896e2a
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Sep 11 2017 16:37:44 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5460848022781952'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'submit'])
+            executor_test_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'test'])
+            gae_grading_code: |-
+              """Provide feedback to student based on evaluation of JavaScript programming quiz."""
+
+              import json
+
+              # until we check, assume student's submission is incorrect
+              grade_result['correct'] = False
+
+              # don't use, but must set to ' ' to avoid error
+              grade_result['comment'] = ' '
+
+              # use default markdown?
+              use_default_markdown = True
+
+              def parse_swizzled_output(output):
+                  """Analyzes the swizzled output for passing/failing criteria and other feedback.
+                      
+                      Args:
+                      output (string): Output generated when running swizzled main.
+                      """
+                  # keep running total of (passed) criteria
+                  numberOfCriteria = 0
+                  numberOfPasses = 0
+                  passed_criteria = []
+                  failed_criteria = []
+                  feedback = []
+                  # split lines by newline
+                  lines = output.split('\n')
+                  # go line-by-line and find formatted tags for criteria
+                  for line in lines:
+                      if line.startswith('<PASS::>'):
+                          numberOfCriteria += 1
+                          numberOfPasses += 1
+                          # strip tag and add criteria to array
+                          passed_criteria.append(line[8:])
+                      if line.startswith('<FAIL::>'):
+                          numberOfCriteria += 1
+                          # strip tag and add criteria to array
+                          failed_criteria.append(line[8:])
+                      if line.startswith('<FEEDBACK::>'):
+                          # strip tag and add feedback to array
+                          feedback.append(line[12:])
+                  # return results
+                  return (numberOfCriteria == numberOfPasses, passed_criteria, failed_criteria, feedback)
+
+              def default_markdown_from_criteria(passing_criteria, failing_criteria):
+                  """Generates default markdown-like string based on passing/failing criteria.
+
+                      Args:
+                      passing_criteria (list): All passing criteria from quiz
+                      failing_criteria (list): All failing criteria from quiz
+                      """
+                  # init markdown-like string
+                  markdown = ''
+                  # was there more than 1 criteria?
+                  if passing_criteria + failing_criteria > 1:
+                      # add passing criteria to markdown
+                      if len(passing_criteria) >= 1:
+                          markdown += '# What Went Well\n\n'
+                          for criteria in passing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                      # add failing criteria to markdown
+                      if len(failing_criteria) >= 1:
+                          markdown += '# What Went Wrong\n\n'
+                          for criteria in failing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                  else:
+                      # if only 1 criteria, add it without headers to markdown
+                      markdown = passing_criteria[0] if grade_result['correct'] else failing_criteria[0]
+                  # return markdown-like string
+                  return markdown
+
+              def main():
+                  """Analyze the output generated by Falcon and set special key/value pairs for feedback."""
+                  # did the remote execution cause an error?
+                  if executor_result['stderr'] == '':
+                      # nope! analyze the output (JSON-like string)
+                      try:
+                          # convert JSON-like string into Python dictionary
+                          results = json.loads(executor_result['stdout'])
+                          swizzle_out = results['temp/results-out.txt']
+                      except Exception as e:
+                          # if there was an error during the conversion, display it
+                          grade_result['feedback'] = executor_result['stderr']
+                      else:
+                          # did the execution of swizzled main produce an error?
+                          if results['temp/results-err.txt'] == '':
+                              # nope! we can safely use the output of swizzled main
+                              (submission_correct, passing_criteria, failing_criteria, feedback) = parse_swizzled_output(swizzle_out)
+                              # set pass/fail
+                              grade_result['correct'] = submission_correct
+                              if use_default_markdown == True:
+                                  # use default markdown for criteria/feedback
+                                  markdown_feedback = default_markdown_from_criteria(passing_criteria, failing_criteria)
+                                  total_criteria = len(failing_criteria) + len(passing_criteria)
+                                  all_feedback = markdown_feedback + '# Feedback\n\n'
+                                  if len(failing_criteria) == 0:
+                                      all_feedback += 'Your answer passed all our tests! Awesome job!'
+                                  elif len(passing_criteria) >= total_criteria / 2:
+                                      all_feedback += 'Not everything is correct yet, but you\'re close!'
+                                  else:
+                                      all_feedback += 'There\'s work left to do. Try tackling one problem at a time.'
+                                  grade_result['feedback'] = all_feedback
+                                  # grade_result['comment'] = results['temp/student-out.txt']
+                              else:
+                                  # show raw response from REX execution
+                                  grade_result['feedback'] = str(results)
+                          else:
+                              # swizzled main generated some an error, so display it!
+                              grade_result['feedback'] = 'An error occurred while testing your code.\n\nCheck to ensure these items are true:\n\n- clicking **TEST RUN** doesn\'t produce any issues\n- you\'ve followed all instructions\n- you\'ve used the correct names\n\nIf you make all these checks, but it still doesn\'t fix the error, then please contact us at *support@udacity.com* and provide a link to the quiz and a copy of your code.\n\nNOTE: If you cannot find the instructions, click **RESET QUIZ** to reset the quiz to its original state.'
+                  else:
+                      # there was an error with overall execution, so display it!
+                      grade_result['comment'] = executor_result['stderr']
+
+              main()
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs:
+              - key: '5141761099956224'
+                ref: ProgramTemplate
+            included_text_files:
+              - text: |
+                  var logBackup = console.log;
+                  var logMessages = [];
+                  console.log = function() {
+                      logMessages.push.apply(logMessages, arguments);
+                      logBackup.apply(console, arguments);
+                  };
+                name: SwizzleBefore.js
+              - text: |
+                  // tests to verify the student's code
+                  ;(function() {
+                      // require assertion library, javascript parser, querying library, and file system
+                      var chai = require('chai');
+                      var esprima = require('esprima');
+                      var esquery = require('esquery');
+                      var fs = require('fs');
+
+                      var assert = chai.assert;
+                      var tree = '';
+                      var content = '';
+
+                      // get students' file
+                      content = fs.readFileSync(__dirname + '/StudentMain.js', 'utf8');
+                      // generate abstract systax tree (AST)
+                      tree = esprima.parse(content);
+
+                      // define selector
+                      var bodySelector = esquery.parse('[body]');
+                      // query AST with selector
+                      var bodyMatch = esquery.match(tree, bodySelector);
+
+                      // tests
+                      if(bodyMatch[0].body.length !== 0) {
+                          // define selector
+                          var buildSelector = esquery.parse('[id.name="buildHouse"]');
+                          // query AST with selector
+                          var buildMatch = esquery.match(tree, buildSelector);
+                          describe('Your code', function() {
+                              // check if buildHouse exists
+                              it('should have a function `buildHouse()`', function() {
+                                  assert.isFunction(buildHouse, "The function `buildHouse()` doesn't exist");
+                              });
+                          });
+                          if(buildMatch[0] !== null) {
+                              describe('Your `buildHouse()` function', function() {
+                                  it('should have one parameter', function() {
+                                      assert.equal(buildMatch[0].params.length, 1, 'Your `buildHouse()` function should only have one parameter');
+                                  });
+                                  // define selector
+                                  var objectPatternSelector = esquery.parse('ObjectPattern');
+                                  var objectExpressionSelector = esquery.parse('ObjectExpression');
+                                  // query AST with selector
+                                  var objectPatternMatch = esquery.match(buildMatch[0], objectPatternSelector);
+                                  var objectExpressionMatch = esquery.match(buildMatch[0], objectExpressionSelector);
+                                  if(objectPatternMatch[0] !== undefined && objectExpressionMatch[0] !== undefined) {
+                                      it('should accept an object and an empty object as a default parameter', function() {
+                                          var both = objectPatternMatch.length + objectExpressionMatch.length
+                                          assert.equal(both, 2, 'Your `buildHouse()` function doesn\'t accept an object and an empty object as a default parameter');
+                                      });
+                                      if(objectPatternMatch[0] !== null && objectExpressionMatch[0] !== null) {
+                                          it('should set the `floors`, `color`, and `walls` properties to default values', function() {
+                                              var x = objectPatternMatch[0].properties[0].key.name;
+                                              var y = objectPatternMatch[0].properties[1].key.name;
+                                              var z = objectPatternMatch[0].properties[2].key.name;
+                                              assert.sameMembers([ x, y, z ], [ 'floors', 'color', 'walls' ], 'Your `buildHouse()` function doesn\'t set the `floors`, `color`, and `walls` properties to default values');
+                                          });
+                                          it('should produce the correct output when no arguments or any empty object is passed to it', function () {
+                                              var correctOutput = 'Your house has 1 floor(s) with red brick walls.';
+                                              var studentOutput = buildHouse();
+                                              var studentOutput2 = buildHouse({});
+                                              assert.includeMembers([ studentOutput, studentOutput2 ], [ correctOutput ], 'Your `buildHouse()` function doesn\'t produce the correct output when no arguments or any empty object is passed to it');
+                                          });
+                                          it('should produce the correct output when a valid object is passed to it', function () {
+                                              var correctOutput = 'Your house has 3 floor(s) with yellow brick walls.';
+                                              var studentOutput = buildHouse({floors: 3, color: 'yellow'});
+                                              assert.equal(studentOutput, correctOutput, 'Your `buildHouse()` function doesn\'t produce the correct output when a valid object is passed to it');
+                                          });
+                                      }
+                                  } else {
+                                      it('should accept an object and an empty object as a default parameter', function() {
+                                          assert.isOk(false, 'Your `buildHouse()` function doesn\'t accept an object and an empty object as a default parameter');
+                                      });
+                                  }
+                              });
+                          }
+                      } else {
+                          describe('Your code', function() {
+                              it('should not be empty', function() {
+                                  assert.isOk(false, 'Your code is missing, hit the "Reset Quiz" button to reset the quiz');
+                              });
+                          });
+                      }
+
+                  }());
+                name: SwizzleAfter.js
+        answer: null
+  - id: 374302
+    key: 5191a936-3491-4a25-a429-5d72acc35163
+    locale: zh-cn
+    version: 1.0.0
+    title: 类预览
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:45 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374179
+    atoms:
+      - id: 374179
+        key: cc1cd079-9bd3-4d48-b01a-c5f6d997ad31
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:45 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # 类预览
+          下面快速查看下 JavaScript 类的外观：
+
+          ```js
+          class Dessert {
+            constructor(calories = 250) {
+              this.calories = calories;
+            }
+          }
+
+          class IceCream extends Dessert {
+            constructor(flavor, calories, toppings = []) {
+              super(calories);
+              this.flavor = flavor;
+              this.toppings = toppings;
+            }
+            addTopping(topping) {
+              this.toppings.push(topping);
+            }
+          }
+          ```
+
+          注意到 `Dessert` 和 `IceCream`, 前面的新关键字 `class` 或 `class IceCream extends Dessert` 中的新关键字 `extends` 了吗？还有 IceCream 的 `constructor()` 方法中对 `super()` 的调用。
+
+          在创建 JavaScript 类时，可以使用大量新的关键字和语法了。但是，在具体讲解如何编写 JavaScript 类之前，我们需要指出与基于类的语言相比，非常令人困惑的 JavaScript 部分。
+        instructor_notes: ''
+        resources: null
+  - id: 374299
+    key: 8f5f9b2b-c38c-47f6-af21-ae90eda29780
+    locale: zh-cn
+    version: 1.0.0
+    title: 对 JavaScript 类的错觉
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:47 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374180
+    atoms:
+      - id: 374180
+        key: 852d1ff2-f15d-4224-8962-985ec90aa72c
+        locale: zh-cn
+        version: 1.0.0
+        title: 对 JavaScript 类的错觉
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:37:46 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43134'
+          youtube_id: ISfkX503dlQ
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/583f7b04_33-javascripts-illusion-of-classes/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7b04_33-javascripts-illusion-of-classes/33-javascripts-illusion-of-classes_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7b04_33-javascripts-illusion-of-classes/33-javascripts-illusion-of-classes_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7b04_33-javascripts-illusion-of-classes/33-javascripts-illusion-of-classes_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7b04_33-javascripts-illusion-of-classes/33-javascripts-illusion-of-classes_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7b04_33-javascripts-illusion-of-classes/hls/playlist.m3u8'
+  - id: 374303
+    key: a9105c4c-2ffb-4865-b24e-de09f570eb37
+    locale: zh-cn
+    version: 1.0.0
+    title: JavaScript 类
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:49 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374181
+    atoms:
+      - id: 374181
+        key: d5dde60a-6a0b-43a6-8894-574ce5fc6f81
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:49 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## ES5 “类”总结
+
+          因为 ES6 类只是一个“幻景”，原型继承实际上被隐藏起来了，我们快速了解下如何用 ES5 代码创建”类” ：
+
+          ```js
+          function Plane(numEngines) {
+            this.numEngines = numEngines;
+            this.enginesActive = false;
+          }
+
+          // methods "inherited" by all instances
+          Plane.prototype.startEngines = function () {
+            console.log('starting engines...');
+            this.enginesActive = true;
+          };
+
+          const richardsPlane = new Plane(1);
+          richardsPlane.startEngines();
+
+          const jamesPlane = new Plane(4);
+          jamesPlane.startEngines();
+          ```
+
+          在上述代码中，`Plane` 函数是一个*构造函数*，它将创建新的 Plane 对象。具体的 Plane 对象的数据被传递给 `Plane` 函数，并设置到该对象上。每个 Plane 对象继承的方法被放置在 `Plane.prototype` 对象上。然后，`richardsPlane` 被创建后有一个引擎，而 `jamesPlane` 被创建后有四个引擎。但是，这两个对象都使用相同的 `startEngines` 方法来激活各自的引擎。
+
+          需要注意的事项：
+
+          * 构造函数使用 `new` 关键字被调用
+          * 按照惯例，构造函数以大写字母开头
+          * 构造函数控制将被创建的对象上数据的设置
+          * “继承的”方法被放置在构造函数的原型对象上
+
+          当我们了解 ES6 类的原理时，请记住这几点，因为 ES6 类都在后台帮你设置了所有这些。
+
+          ## ES6 类
+
+          以下是同一 `Plane` 类使用新的 `class` 语法编写后的代码：
+
+          ```js
+          class Plane {
+            constructor(numEngines) {
+              this.numEngines = numEngines;
+              this.enginesActive = false;
+            }
+
+            startEngines() {
+              console.log('starting engines…');
+              this.enginesActive = true;
+            }
+          }
+          ```
+        instructor_notes: ''
+        resources: null
+  - id: 374305
+    key: 87ea1632-2d15-4185-8c4a-2061dcc71fd3
+    locale: zh-cn
+    version: 1.0.0
+    title: 将函数转换为类
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:50 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374182
+    atoms:
+      - id: 374182
+        key: 55602fd2-c4d0-44b2-aa52-fd5484b7b054
+        locale: zh-cn
+        version: 1.0.0
+        title: 将函数转换为类
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:37:49 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43135'
+          youtube_id: JvpG_hX0-_0
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/583f7b06_36-l-convert-a-function-to-a-class/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7b06_36-l-convert-a-function-to-a-class/36-l-convert-a-function-to-a-class_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7b06_36-l-convert-a-function-to-a-class/36-l-convert-a-function-to-a-class_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7b06_36-l-convert-a-function-to-a-class/36-l-convert-a-function-to-a-class_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7b06_36-l-convert-a-function-to-a-class/36-l-convert-a-function-to-a-class_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7b06_36-l-convert-a-function-to-a-class/hls/playlist.m3u8'
+  - id: 374304
+    key: 93153a84-fbee-4200-8ec6-6a41830e419f
+    locale: zh-cn
+    version: 1.0.0
+    title: 使用 JavaScript 类
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:52 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374183
+      - 374184
+      - 374185
+      - 374186
+    atoms:
+      - id: 374183
+        key: 75d2ac9d-5bdc-4ee9-9b4a-0343aeb935bb
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:50 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 类只是一种函数
+
+          为了证明`类`没有任何特别之处，我们来看看下面的代码：
+
+          ```js
+          class Plane {
+            constructor(numEngines) {
+              this.numEngines = numEngines;
+              this.enginesActive = false;
+            }
+
+            startEngines() {
+              console.log('starting engines…');
+              this.enginesActive = true;
+            }
+          }
+
+          typeof Plane; // function
+          ```
+          > **Returns:** function
+
+          没错，它只是个函数！甚至没有向 JavaScript 添加新类型。
+        instructor_notes: ''
+        resources: null
+      - id: 374184
+        key: f0651bfc-f3d5-47db-81bf-47c5f697fc3c
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:51 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## ⚠️  逗号都去哪了？ ⚠️  
+
+          > 你是否注意到，类中的方法定义之间没有任何逗号了？在类中，不用逗号来区分属性或方法。如果添加逗号，将出现 `SyntaxError`：`unexpected token`
+        instructor_notes: ''
+        resources: null
+      - id: 374185
+        key: 5aeefaa6-f3f5-4aa3-9f45-46b7aa630cdb
+        locale: zh-cn
+        version: 1.0.0
+        title: ES6 类
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:37:52 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            看看下面的代码：
+
+            ```js
+            class Animal {
+              constructor(name = 'Sprinkles', energy = 100) {
+                this.name = name;
+                this.energy = energy;
+              }
+
+              eat(food) {
+                this.energy += food / 3;
+              }
+            }
+            ```
+
+            下面的哪些选项正确？
+          correct_feedback: 选项 1 和 3 都正确。出现在类定义中的方法放在类的原型对象上，类只是一种函数。
+          video_feedback: null
+          default_feedback: |-
+            选项 1 正确。出现在类定义中的方法属于后台内容，并放在类的原型对象上。
+
+            选项 2 不正确。类其实就是函数。
+
+            选项 3 正确。类是一种函数。
+          answers:
+            - id: a1485281919970
+              text: '`eat()` 方法出现在 `Animal.prototype` 上。'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1485281974750
+              text: typeof Animal === 'class'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1485281975278
+              text: typeof Animal === 'function'
+              is_correct: true
+              incorrect_feedback: null
+      - id: 374186
+        key: 8afd56ad-c479-4177-aabd-0f3139ca3108
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:52 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 静态方法
+
+          要添加静态方法，请在方法名称前面加上关键字 `static`。请看看下面的代码中的 `badWeather()` 方法。
+
+          ```js
+          class Plane {
+            constructor(numEngines) {
+              this.numEngines = numEngines;
+              this.enginesActive = false;
+            }
+
+            static badWeather(planes) {
+              for (plane of planes) {
+                plane.enginesActive = false;
+              }
+            }
+
+            startEngines() {
+              console.log('starting engines…');
+              this.enginesActive = true;
+            }
+          }
+          ```
+
+          注意 `badWeather()` 在前面具有单词 `static`，而 `startEngines()` 没有？这样使得 `badWeather()` 可以在 `Plane` 类上直接访问的方法，因此你可以这样调用它：
+
+          ```js
+          Plane.badWeather([plane1, plane2, plane3]);
+          ```
+
+          > **注意：**对构造函数、类方法或原型继承的原理有点困惑？我们专门开设了一门课程。请参阅[面向对象的 JavaScript](https://www.udacity.com/course/object-oriented-javascript--ud015)。
+
+          ## 类的优势
+
+          1. 设置内容更少
+            * 创建函数要编写的代码少多了
+          2. 清晰地定义了构造函数
+            * 在类定义总，可以清晰地指定构造函数。
+          3. 一起都包含起来
+            * 类需要的所有代码都包含在类声明中。你可以同时设定一切内容，而不用在一个位置编写构造函数，然后向原型一个一个地添加方法！
+
+          ## 使用类时需要注意的事项
+
+          1. `class` 不是魔术
+            * 关键字 `class` 带来了其他基于类的语言中的很多后台结构。它没有像变魔术一样向 JavaScript 类添加了此功能。
+          2. `class` 是原型继承的抽象形式
+            * 我们已经多次提到，JavaScript 类实际上使用的就是原型继承。
+          3. 使用类需要用到 `new`
+            * 在创建 JavaScript 类的新实例时，必须使用关键字 `new`
+
+          例如
+
+          ```js
+          class Toy {
+             ...
+          }
+
+          const myToy1 = Toy(); // throws an error
+          ```
+          > **Uncaught TypeError:** Class constructor Toy cannot be invoked without 'new'
+
+          但是，添加关键字 `new` 后问题就解决了
+
+          ```js
+          const myToy2 = new Toy(); // this works!
+          ```
+        instructor_notes: ''
+        resources: null
+  - id: 374306
+    key: 6b91f1d9-e0e0-43b7-815f-1a9a47b78a1d
+    locale: zh-cn
+    version: 1.0.0
+    title: super 和 extends
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:53 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374187
+    atoms:
+      - id: 374187
+        key: 4f06fd12-a120-4fa0-b116-eba75cd6eb87
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:53 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## ES6 中的子类
+
+          我们已经了解了如何在 JavaScript 中创建类。现在使用新的 `super` 和 `extends` 关键字扩展类。
+
+          ```js
+          class Tree {
+            constructor(size = '10', leaves = {spring: 'green', summer: 'green', fall: 'orange', winter: null}) {
+              this.size = size;
+              this.leaves = leaves;
+              this.leafColor = null;
+            }
+
+            changeSeason(season) {
+              this.leafColor = this.leaves[season];
+              if (season === 'spring') {
+                this.size += 1;
+              }
+            }
+          }
+
+          class Maple extends Tree {
+            constructor(syrupQty = 15, size, barkColor, leaves) {
+              super(size, barkColor, leaves);
+              this.syrupQty = syrupQty;
+            }
+
+            changeSeason(season) {
+              super.changeSeason(season);
+              if (season === 'spring') {
+                this.syrupQty += 1;
+              }
+            }
+
+            gatherSyrup() {
+              this.syrupQty -= 3;
+            }
+          }
+
+          const myMaple = new Maple(15, 5);
+          myMaple.changeSeason('fall');
+          myMaple.gatherSyrup();
+          myMaple.changeSeason('spring');
+          ```
+
+          `Tree` 和 `Maple` 都是 JavaScript 类。`Maple` 类是 `Tree` 的子类，并使用关键字 `extends` 将其自己设为子类。要从子类转到父类，需要使用关键字 `super`。注意到 `super` 有两种使用方式吗？在 `Maple` 的构造方法中，`super` 被用作函数。在 `Maple` 的`changeSeason()` 方法中，`super` 被用作对象！
+
+          ## 与 ES5 子类对比
+
+          我们看看用 ES5 代码编写的相同功能：
+
+          ```js
+          function Tree() {
+            this.size = size || 10;
+            this.leaves = leaves || {spring: 'green', summer: 'green', fall: 'orange', winter: null};
+            this.leafColor;
+          }
+
+          Tree.prototype.changeSeason = function(season) {
+            this.leafColor = this.leaves[season];
+            if (season === 'spring') {
+              this.size += 1;
+            }
+          }
+
+          function Maple (syrupQty, size, barkColor, leaves) {
+            Tree.call(this, size, barkColor, leaves);
+            this.syrupQty = syrupQty || 15;
+          }
+
+          Maple.prototype = Object.create(Tree.prototype);
+          Maple.prototype.constructor = Maple;
+
+          Maple.prototype.changeSeason = function(season) {
+            Tree.prototype.changeSeason.call(this, season);
+            if (season === 'spring') {
+              this.syrupQty += 1;
+            }
+          }
+
+          Maple.prototype.gatherSyrup = function() {
+            this.syrupQty -= 3;
+          }
+
+          const myMaple = new Maple(15, 5);
+          myMaple.changeSeason('fall');
+          myMaple.gatherSyrup();
+          myMaple.changeSeason('spring');
+          ```
+
+          这段代码和上面的类样式代码都实现了相同的功能。
+        instructor_notes: ''
+        resources: null
+  - id: 374307
+    key: 358ada89-6344-4eda-bdec-3ffe27918773
+    locale: zh-cn
+    version: 1.0.0
+    title: 从 ES5 到 ES6 的类扩展
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:54 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374188
+    atoms:
+      - id: 374188
+        key: c338be91-9a76-447f-922e-9d77989e129d
+        locale: zh-cn
+        version: 1.0.0
+        title: 从 ES5 到 ES6 的类扩展
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:37:53 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43222'
+          youtube_id: b8fEBUFk-Oo
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/5842269e_44-l-comparing-es5-and-es6-code/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/5842269e_44-l-comparing-es5-and-es6-code/44-l-comparing-es5-and-es6-code_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/5842269e_44-l-comparing-es5-and-es6-code/44-l-comparing-es5-and-es6-code_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/5842269e_44-l-comparing-es5-and-es6-code/44-l-comparing-es5-and-es6-code_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/5842269e_44-l-comparing-es5-and-es6-code/44-l-comparing-es5-and-es6-code_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/5842269e_44-l-comparing-es5-and-es6-code/hls/playlist.m3u8'
+  - id: 374308
+    key: 6d5a83b9-159a-458b-83f9-573f7372f874
+    locale: zh-cn
+    version: 1.0.0
+    title: 使用 JavaScript 子类
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:55 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374189
+      - 374190
+      - 374191
+    atoms:
+      - id: 374189
+        key: d226819c-bcd9-4a3b-94ff-53e1d8762e00
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:54 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 使用子类
+
+          就像很多新增功能一样，使用 `class`、`super` 和 `extends` 创建子类时设置代码少了很多，语法更清晰。
+
+          只需记住，在后台，函数和类型之间的连接是一样的。
+
+          ### `super` 必须在 `this` 之前被调用
+
+          在子类构造函数中，在使用 `this` 之前，必须先调用超级类。
+
+          ```js
+          class Apple {}
+          class GrannySmith extends Apple {
+            constructor(tartnessLevel, energy) {
+              this.tartnessLevel = tartnessLevel; // `this` before `super` will throw an error!
+              super(energy); 
+            }
+          }
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 374190
+        key: f2087099-1587-4188-8678-19cdf2fdbbb6
+        locale: zh-cn
+        version: 1.0.0
+        title: instanceOf 测验
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:37:55 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            看看下面的代码：
+
+            ```js
+            class Toy {}
+            class Dragon extends Toy {}
+            const dragon1 = new Dragon();
+            ```
+
+            对于上述代码，下面的语句正确还是错误？
+
+            ```js
+            dragon1 instanceof Toy;
+            ```
+          correct_feedback: '`dragon1` 变量是 `Dragon` 类创建的对象，因为 `Dragon` 类扩展自 `Toy` 类，所以, `dragon1` 也是 `Toy` 的一个实例。'
+          video_feedback: null
+          default_feedback: '`dragon1` 变量是 `Dragon` 类创建的对象，因为 `Dragon` 类扩展自 `Toy` 类，所以, `dragon1` 也是 `Toy` 的一个实例。'
+          answers:
+            - id: a1485284684918
+              text: 'true'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1485284732754
+              text: 'false'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 374191
+        key: 883c746c-2173-4ede-9907-321aef986f1e
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Sep 11 2017 16:37:55 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            假设存在 `Toy` 类，`Dragon` 类扩展自 `Toy` 类。
+
+            哪个是在 `Dragon` 类的`构造函数`方法中创建 `Toy` 对象的正确方式？
+          correct_feedback: 选项 1 是从子类的构造函数中调用超级类的正确方式。
+          video_feedback: null
+          default_feedback: 选项 1 是从子类的构造函数中调用超级类的正确方式。
+          answers:
+            - id: a1485284836854
+              text: super();
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1485284856342
+              text: super.call(this);
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1485284856945
+              text: parent();
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1485284857401
+              text: Toy();
+              is_correct: false
+              incorrect_feedback: null
+  - id: 374310
+    key: 54bdd363-83d7-46e2-81d1-9d1d647a908f
+    locale: zh-cn
+    version: 1.0.0
+    title: 测验：构建类和子类 (2-3)
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374192
+      - 374193
+    atoms:
+      - id: 374192
+        key: 8d486683-555a-46e7-8da5-c589b6b72229
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Sep 11 2017 16:37:56 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 指导说明：
+
+          创建一个扩展自 `Vehicle` 类的 `Bicycle` 子类。`Bicycle` 子类应该覆盖 `Bicycle` 的构造函数：将 `wheels` 的默认值从 `4` 改为 `2`，并将 `horn` 从 `'beep beep'` 改为 `'honk honk'`。
+
+          ## 你的代码：
+        instructor_notes: ''
+        resources: null
+      - id: 374193
+        key: a2d476ce-f0fb-41be-8aed-fc2ea8b15cf2
+        locale: zh-cn
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Sep 11 2017 16:37:57 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6444210480873472'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'submit'])
+            executor_test_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'test'])
+            gae_grading_code: |-
+              """Provide feedback to student based on evaluation of JavaScript programming quiz."""
+
+              import json
+
+              # until we check, assume student's submission is incorrect
+              grade_result['correct'] = False
+
+              # don't use, but must set to ' ' to avoid error
+              grade_result['comment'] = ' '
+
+              # use default markdown?
+              use_default_markdown = True
+
+              def parse_swizzled_output(output):
+                  """Analyzes the swizzled output for passing/failing criteria and other feedback.
+                      
+                      Args:
+                      output (string): Output generated when running swizzled main.
+                      """
+                  # keep running total of (passed) criteria
+                  numberOfCriteria = 0
+                  numberOfPasses = 0
+                  passed_criteria = []
+                  failed_criteria = []
+                  feedback = []
+                  # split lines by newline
+                  lines = output.split('\n')
+                  # go line-by-line and find formatted tags for criteria
+                  for line in lines:
+                      if line.startswith('<PASS::>'):
+                          numberOfCriteria += 1
+                          numberOfPasses += 1
+                          # strip tag and add criteria to array
+                          passed_criteria.append(line[8:])
+                      if line.startswith('<FAIL::>'):
+                          numberOfCriteria += 1
+                          # strip tag and add criteria to array
+                          failed_criteria.append(line[8:])
+                      if line.startswith('<FEEDBACK::>'):
+                          # strip tag and add feedback to array
+                          feedback.append(line[12:])
+                  # return results
+                  return (numberOfCriteria == numberOfPasses, passed_criteria, failed_criteria, feedback)
+
+              def default_markdown_from_criteria(passing_criteria, failing_criteria):
+                  """Generates default markdown-like string based on passing/failing criteria.
+
+                      Args:
+                      passing_criteria (list): All passing criteria from quiz
+                      failing_criteria (list): All failing criteria from quiz
+                      """
+                  # init markdown-like string
+                  markdown = ''
+                  # was there more than 1 criteria?
+                  if passing_criteria + failing_criteria > 1:
+                      # add passing criteria to markdown
+                      if len(passing_criteria) >= 1:
+                          markdown += '# What Went Well\n\n'
+                          for criteria in passing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                      # add failing criteria to markdown
+                      if len(failing_criteria) >= 1:
+                          markdown += '# What Went Wrong\n\n'
+                          for criteria in failing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                  else:
+                      # if only 1 criteria, add it without headers to markdown
+                      markdown = passing_criteria[0] if grade_result['correct'] else failing_criteria[0]
+                  # return markdown-like string
+                  return markdown
+
+              def main():
+                  """Analyze the output generated by Falcon and set special key/value pairs for feedback."""
+                  # did the remote execution cause an error?
+                  if executor_result['stderr'] == '':
+                      # nope! analyze the output (JSON-like string)
+                      try:
+                          # convert JSON-like string into Python dictionary
+                          results = json.loads(executor_result['stdout'])
+                          swizzle_out = results['temp/results-out.txt']
+                      except Exception as e:
+                          # if there was an error during the conversion, display it
+                          grade_result['feedback'] = executor_result['stderr']
+                      else:
+                          # did the execution of swizzled main produce an error?
+                          if results['temp/results-err.txt'] == '':
+                              # nope! we can safely use the output of swizzled main
+                              (submission_correct, passing_criteria, failing_criteria, feedback) = parse_swizzled_output(swizzle_out)
+                              # set pass/fail
+                              grade_result['correct'] = submission_correct
+                              if use_default_markdown == True:
+                                  # use default markdown for criteria/feedback
+                                  markdown_feedback = default_markdown_from_criteria(passing_criteria, failing_criteria)
+                                  total_criteria = len(failing_criteria) + len(passing_criteria)
+                                  all_feedback = markdown_feedback + '# Feedback\n\n'
+                                  if len(failing_criteria) == 0:
+                                      all_feedback += 'Your answer passed all our tests! Awesome job!'
+                                  elif len(passing_criteria) >= total_criteria / 2:
+                                      all_feedback += 'Not everything is correct yet, but you\'re close!'
+                                  else:
+                                      all_feedback += 'There\'s work left to do. Try tackling one problem at a time.'
+                                  grade_result['feedback'] = all_feedback
+                                  # grade_result['comment'] = results['temp/student-out.txt']
+                              else:
+                                  # show raw response from REX execution
+                                  grade_result['feedback'] = str(results)
+                          else:
+                              # swizzled main generated some an error, so display it!
+                              grade_result['feedback'] = 'An error occurred while testing your code.\n\nCheck to ensure these items are true:\n\n- clicking **TEST RUN** doesn\'t produce any issues\n- you\'ve followed all instructions\n- you\'ve used the correct names\n\nIf you make all these checks, but it still doesn\'t fix the error, then please contact us at *support@udacity.com* and provide a link to the quiz and a copy of your code.\n\nNOTE: If you cannot find the instructions, click **RESET QUIZ** to reset the quiz to its original state.'
+                  else:
+                      # there was an error with overall execution, so display it!
+                      grade_result['comment'] = executor_result['stderr']
+
+              main()
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs:
+              - key: '5141761099956224'
+                ref: ProgramTemplate
+            included_text_files:
+              - text: |
+                  var logBackup = console.log;
+                  var logMessages = [];
+                  console.log = function() {
+                      logMessages.push.apply(logMessages, arguments);
+                      logBackup.apply(console, arguments);
+                  };
+                name: SwizzleBefore.js
+              - text: |-
+                  // tests to verify the student's code
+                  ;(function() {
+                      // require assertion library, javascript parser, querying library, and file system
+                      var chai = require('chai');
+                      var esprima = require('esprima');
+                      var esquery = require('esquery');
+                      var fs = require('fs');
+
+                      var assert = chai.assert;
+                      var tree = '';
+                      var content = '';
+
+                      // get students' file
+                      content = fs.readFileSync(__dirname + '/StudentMain.js', 'utf8');
+                      // generate abstract systax tree (AST)
+                      tree = esprima.parse(content);
+
+                      // define selector
+                      var bodySelector = esquery.parse('[body]');
+                      // query AST with selector
+                      var bodyMatch = esquery.match(tree, bodySelector);
+
+                      // tests
+                      if(bodyMatch[0].body.length !== 0) {
+                          // define selector
+                          var vehicleSelector = esquery.parse('ClassDeclaration[id.name="Vehicle"]');
+                          var bycicleSelector = esquery.parse('ClassDeclaration[id.name="Bicycle"]');
+                          // query AST with selector
+                          var vehicleMatch = esquery.match(tree, vehicleSelector);
+                          var bycicleMatch = esquery.match(tree, bycicleSelector);
+                          describe('Your code', function() {
+                              // check if Vehicle exists
+                              it('should have a class `Vehicle`', function() {
+                                  assert.equal(vehicleMatch.length, 1, "The class `Vehicle` doesn't exist");
+                              });
+                              // check if Bicycle exists
+                              it('should have a class `Bicycle`', function() {
+                                  assert.equal(bycicleMatch.length, 1, "The class `Bicycle` doesn't exist");
+                              });
+                          });
+                          if(vehicleMatch[0] !== null && bycicleMatch[0] !== null) {
+                              describe('Your class `Bicycle`', function() {
+                                  // check if Bicycle extends Vehicle
+                                  it('should be a subclass of the class `Vehicle`', function() {
+                                      if(bycicleMatch[0].superClass !== null) {
+                                          assert.equal(bycicleMatch[0].superClass.name, 'Vehicle', 'Your class `Bicycle` isn\'t a subclass of the class `Vehicle`');
+                                      } else {
+                                          assert.isOk(false, 'Your class `Bicycle` isn\'t a subclass of the class `Vehicle`');
+                                      }
+                                  });
+                              });
+                              // define selector
+                              var constructorSelector = esquery.parse('MethodDefinition[key.name="constructor"]');
+                              // query AST with selector
+                              var constructorMatch = esquery.match(bycicleMatch[0], constructorSelector);
+                              if(constructorMatch[0] !== undefined) {
+                                  describe('Your class `Bicycle`', function() {
+                                      it('should have a constructor', function() {
+                                          assert.isOk(true);
+                                      });
+                                  });
+                                  describe('Your `Bicycle`\'s constructor', function() {
+                                      if(constructorMatch[0].value.params.length === 3) {
+                                          it('should set default values for `color`, `wheels`, and `horn`', function() {
+                                              var x;
+                                              if(constructorMatch[0].value.params[0].left === undefined) {
+                                                  x = constructorMatch[0].value.params[0].name;
+                                              } else {
+                                                  x = constructorMatch[0].value.params[0].left.name;
+                                              }
+                                              var y = constructorMatch[0].value.params[1].left.name;
+                                              var z = constructorMatch[0].value.params[2].left.name;
+                                              assert.sameMembers([ x, y, z ], [ 'color', 'wheels', 'horn' ], 'Your `Bicycle`\s constructor doesn\'t set default values for `color`, `wheels`, and `horn`');
+                                          });
+                                      } else {
+                                          it('should set default values for `color`, `wheels`, and `horn`', function() {
+                                              assert.isOk(false, 'Your `Bicycle`\s constructor doesn\'t set default values for `color`, `wheels`, and `horn`');
+                                          });
+                                      }
+                                  });
+                                  describe('Your `Bicycle`\'s constructor', function() {
+                                      it('should override `Vehicle`\'s constructor as specified in the directions', function() {
+                                          var studentBicycle = new Bicycle();
+                                          var check1 = studentBicycle.color === 'blue';
+                                          var check2 = studentBicycle.wheels === 2;
+                                          var check3 = studentBicycle.horn === 'honk honk';
+                                          assert.equal(check1 && check2 && check3, true, 'Your `Bicycle`\'s constructor doesn\'t override `Vehicle`\'s constructor as specified in the directions');
+                                      });
+                                  });
+                              } else {
+                                  describe('Your class `Bicycle`', function() {
+                                      it('should have a constructor', function() {
+                                          assert.isOk(false, 'Your class `Bicycle` doesn\'t have a constructor');
+                                      });
+                                  });
+                              }
+                          }
+                      } else {
+                          describe('Your code', function() {
+                              it('should not be empty', function() {
+                                  assert.isOk(false, 'Your code is missing, hit the "Reset Quiz" button to reset the quiz');
+                              });
+                          });
+                      }
+
+                  }());
+                name: SwizzleAfter.js
+        answer: null
+  - id: 374309
+    key: 478312f8-cc06-4190-8bb9-f9b4445f1596
+    locale: zh-cn
+    version: 1.0.0
+    title: 第 2 节课总结
+    semantic_type: Concept
+    updated_at: 'Mon Sep 11 2017 16:37:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 374194
+    atoms:
+      - id: 374194
+        key: e631456e-0cc0-4d9d-9dce-7acb2489f7b5
+        locale: zh-cn
+        version: 1.0.0
+        title: 第 2 节课总结
+        semantic_type: VideoAtom
+        updated_at: 'Mon Sep 11 2017 16:37:59 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43137'
+          youtube_id: x-2IDhoLS_g
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/583f7b0c_48-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7b0c_48-outro/48-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7b0c_48-outro/48-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7b0c_48-outro/48-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7b0c_48-outro/48-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7b0c_48-outro/hls/playlist.m3u8'
