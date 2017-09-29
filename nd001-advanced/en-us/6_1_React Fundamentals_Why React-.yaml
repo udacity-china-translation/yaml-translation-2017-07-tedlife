@@ -1,0 +1,1762 @@
+id: 298447
+key: 9a065aa0-91d4-44a3-ad96-8d9b44be4d11
+locale: en-us
+version: 1.0.0
+title: Why React?
+semantic_type: Lesson
+updated_at: 'Sat Aug 12 2017 21:52:17 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/June/5951956c_2-1-why-react2x/2-1-why-react2x.jpg'
+  width: 592
+  height: 640
+video: null
+summary: 'You''ll discover what makes React great. You will compose simple functions together to create complex ones, write declarative code, discover unidirectional data flow, and that React is just JavaScript.'
+lesson_type: Classroom
+duration: 90
+is_project_lesson: false
+career_portal_experience_levels: null
+_concepts_ids:
+  - 299473
+  - 328423
+  - 328427
+  - 328429
+  - 328432
+  - 328435
+_project_id: null
+concepts:
+  - id: 299473
+    key: e993fa14-8768-4c09-a9df-de2e454ff1cf
+    locale: en-us
+    version: 1.0.0
+    title: Introduction
+    semantic_type: Concept
+    updated_at: 'Mon Jul 03 2017 21:35:31 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 328422
+      - 340419
+    atoms:
+      - id: 328422
+        key: 8157ee38-aab6-4fb5-a3c0-2fdca9473d02
+        locale: en-us
+        version: 1.0.0
+        title: What Makes React Special
+        semantic_type: VideoAtom
+        updated_at: 'Fri Sep 01 2017 22:33:32 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57710'
+          youtube_id: Jsyn_HgimCc
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d66d_01-what-makes-react-special-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d66d_01-what-makes-react-special-intro/01-what-makes-react-special-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d66d_01-what-makes-react-special-intro/01-what-makes-react-special-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d66d_01-what-makes-react-special-intro/01-what-makes-react-special-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d66d_01-what-makes-react-special-intro/01-what-makes-react-special-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d66d_01-what-makes-react-special-intro/hls/playlist.m3u8'
+      - id: 340419
+        key: ae2f96ce-f381-4f55-9ac5-bb46e5c0b141
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 27 2017 16:14:52 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Welcome!
+           
+          Welcome to this course covering the fundamentals of React. We're so glad you're here!
+        instructor_notes: ''
+        resources: null
+  - id: 328423
+    key: a4123f05-9331-4144-8a25-36949c80f22a
+    locale: en-us
+    version: 1.0.0
+    title: What is Composition?
+    semantic_type: Concept
+    updated_at: 'Tue Aug 08 2017 05:24:50 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 330960
+      - 356752
+      - 330962
+      - 330964
+      - 330966
+    atoms:
+      - id: 330960
+        key: 03cb5cd7-df60-435b-80a7-f2543fa9a2d3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jun 14 2017 19:13:49 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          From <a href="https://en.wikipedia.org/wiki/Function_composition_(computer_science)">Wikipedia</a>, Composition is:
+           
+          > to combine simple functions to build more complicated ones
+           
+          Let's take a look at how we can build up complex functions just by combining simple ones together.
+        instructor_notes: ''
+        resources: null
+      - id: 356752
+        key: dd47006c-48f0-4690-8b4d-f721dd0e4023
+        locale: en-us
+        version: 1.0.0
+        title: How Composition Works
+        semantic_type: VideoAtom
+        updated_at: 'Tue Aug 08 2017 06:10:04 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '61411'
+          youtube_id: F0erKLsfCMk
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/August/598949fc_02-how-composition-works/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/598949fc_02-how-composition-works/02-how-composition-works_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/598949fc_02-how-composition-works/02-how-composition-works_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/598949fc_02-how-composition-works/02-how-composition-works_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/598949fc_02-how-composition-works/02-how-composition-works_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/598949fc_02-how-composition-works/hls/playlist.m3u8'
+      - id: 330962
+        key: b6c564ae-cf02-4261-8002-5d7eafbd32d3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jun 22 2017 21:55:40 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Benefits of Composition
+           
+          Because the concept of composition is such a large part of what makes React awesome and incredible to work with, let's dig into it a little bit. Remember that composition is just combining simple functions together to create complex functions. There are a couple of key ingredients here that we don't want to lose track of. These ingredients are:
+           
+          * simple functions
+          * combined to create another function
+           
+          Composition is built from _simple_ functions. Let's look at an example:
+           
+          ```js
+          function getProfileLink (username) {
+            return 'https://github.com/' + username
+          }
+          ```
+           
+          This function is _ridiculously_ simple, isn't it? It's just one line! Similarly, the `getProfilePic` function is _also_ just a single line:
+           
+          ```js
+          function getProfilePic (username) {
+            return 'https://github.com/' + username + '.png?size=200'
+          }
+          ```
+           
+          These are definitely _simple_ functions, so to compose them, we'd just _combine_ them together inside another function:
+           
+          ```js
+          function getProfileData (username) {
+            return {
+              pic: getProfilePic(username),
+              link: getProfileLink(username)
+            }
+          }
+          ```
+           
+          Now we _could_ have written `getProfileData` _without_ composition by providing the data directly:
+           
+          ```js
+          function getProfileData (username) {
+            return {
+              pic: 'https://github.com/' + username + '.png?size=200',
+              link: 'https://github.com/' + username
+            }
+          }
+          ```
+           
+          There's nothing technically wrong with this at all; this is entirely accurate JavaScript code. But this _isn't_ composition. There are also a couple of potential issues with this version that _isn't_ using composition. If the user's link to GitHub is needed somewhere else, then duplicate code would be needed. A good function should follow the "DOT" rule:
+           
+          > Do One Thing
+           
+          This function is doing a couple of different (however minor) things; it's creating two different URLs, storing them as properties on an object, and then returning that object. In the composed version, each function just does one thing:
+           
+          * `getProfileLink` – just builds up a string of the user's GitHub profile link
+          * `getProfilePic` – just builds up a string the user's GitHub profile picture
+          * `getProfileData` – returns a new object
+        instructor_notes: ''
+        resources: null
+      - id: 330964
+        key: 469cb43a-0c37-4345-b107-75dc4225a1dc
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jun 22 2017 21:57:58 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## React & Composition
+           
+          React makes use of the power of composition, heavily! React builds up pieces of a UI using **components**. Let's take a look at some pseudo code for an example. Here are three different components:
+           
+          ```js
+          <Page />
+          <Article />
+          <Sidebar />
+          ```
+           
+          Now let's take these _simple_ components, combine them together, and create a more complex component (aka, composition in action!):
+           
+          ```js
+          <Page>
+            <Article />
+            <Sidebar />
+          </Page>
+          ```
+           
+          Now the `Page` component has the `Article` and `Sidebar` components _inside_. This is just like the earlier example where `getProfileData` had `getProfileLink` and `getProfilePic` inside it.
+           
+          We'll dig into components soon, but just know that composition plays a huge part in building React components.
+        instructor_notes: ''
+        resources: null
+      - id: 330966
+        key: 4b122215-1807-4ffc-bf29-7b981a22a25a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jun 22 2017 23:10:39 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Composition Recap
+           
+          Composition occurs when _simple_ functions are _combined_ together to create _more complex_ functions. Think of each function as a single building block that _does one thing_ (DOT). When you combine these simple functions together to form a more complex function, this is **composition**.
+           
+          ### Further Research
+
+          * [Compose me That: Function Composition in JavaScript](https://www.linkedin.com/pulse/compose-me-function-composition-javascript-kevin-greene)
+          * [Functional JavaScript: Function Composition For Every Day Use](https://hackernoon.com/javascript-functional-composition-for-every-day-use-22421ef65a10)
+        instructor_notes: ''
+        resources: null
+  - id: 328427
+    key: dad1ab97-c06e-43fa-a29a-827a9518812e
+    locale: en-us
+    version: 1.0.0
+    title: What is Declarative Code?
+    semantic_type: Concept
+    updated_at: 'Wed Jul 12 2017 17:47:48 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 328428
+      - 330967
+      - 330968
+      - 330969
+      - 338016
+      - 330970
+      - 330971
+    atoms:
+      - id: 328428
+        key: eea9f257-1270-40b3-9e2c-5e68987e2248
+        locale: en-us
+        version: 1.0.0
+        title: Declarative Code
+        semantic_type: VideoAtom
+        updated_at: 'Tue Aug 15 2017 00:00:18 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57712'
+          youtube_id: 2H6XjKCfuXM
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d67f_05-declarative-code/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d67f_05-declarative-code/05-declarative-code_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d67f_05-declarative-code/05-declarative-code_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d67f_05-declarative-code/05-declarative-code_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d67f_05-declarative-code/05-declarative-code_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d67f_05-declarative-code/hls/playlist.m3u8'
+      - id: 330967
+        key: cca964fb-235a-4ac5-8ed8-043140a60a08
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jun 22 2017 23:42:27 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Imperative Code
+           
+          A lot of JavaScript is **imperative code**. If you don't know what "imperative" means here, then you might be scratching your head a bit. [According to the dictionary](http://www.dictionary.com/browse/imperative), "imperative" means:
+           
+          > expressing a command; commanding
+           
+          When JavaScript code is written _imperatively_, we tell JavaScript exactly **what** to do and **how** to do it. Think of it as if we're giving JavaScript _commands_ on exactly what steps it should take. For example, I give you the humble `for` loop:
+           
+          ```js
+          const people = ['Amanda', 'Geoff', 'Michael', 'Richard', 'Ryan', 'Tyler']
+          const excitedPeople = []
+           
+          for (let i = 0; i < people.length; i++) {
+            excitedPeople[i] = people[i] + '!'
+          }
+          ```
+           
+          If you've worked with JavaScript any length of time, then this should be pretty straightforward. We're looping through each item in the `people` array, adding an exclamation mark to their name, and storing the new string in the `excitedPeople` array. Pretty simple, right? 
+           
+          This is _imperative_ code, though. We're commanding JavaScript what to do at every single step. We have to give it commands to:
+           
+          * set an initial value for the iterator - (`let i = 0`)
+          * tell the `for` loop when it needs to stop - (`i < people.length`)
+          * get the person at the current position and add an exclamation mark - (`people[i] + '!'`)
+          * store the data in the `i`<sup style="position:relative; top:-0.5em; font-size:0.8em">th</sup> position in the other array - (`excitedPeople[i]`)
+          * increment the `i` variable by one - (`i++`)
+           
+          Remember the example of keeping the air temperature at 71º? In my old car, I would turn the knob to get the cold air flowing. But if it got too cold, then I'd turn the knob up higher. Eventually, it would get too warm, and I'd have to turn the knob down a bit, again. I'd have to manage the temperature myself with every little change. Doesn't this sound like an imperative situation to you? I have to manually do multiple steps. It's not ideal, so let's improve things!
+        instructor_notes: ''
+        resources: null
+      - id: 330968
+        key: 9a0fc4f7-c2d8-45eb-820a-60f2a7bbca79
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jun 22 2017 23:27:08 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Declarative Code
+           
+          In contrast to imperative code, we've got **declarative code**. With declarative code, we don't code up all of the steps to get us to the end result. Instead, we _declare_ what we want done, and JavaScript will take care of doing it. This explanation is a bit abstract, so let's look at an example. Let's take the imperative `for` loop code we were just looking at and refactor it to be more declarative.
+           
+          With the imperative code we were performing all of the steps to get to the end result. What _is_ the end result that we actually want, though? Well, our starting point was just an array of names:
+           
+          ```js
+          const people = ['Amanda', 'Geoff', 'Michael', 'Richard', 'Ryan', 'Tyler']
+          ```
+           
+          The end goal that we want is an array of the same names but where each name ends with an exclamation mark:
+           
+          ```js
+          ["Amanda!", "Geoff!", "Michael!", "Richard!", "Ryan!", "Tyler!"]
+          ```
+           
+          To get us from the starting point to the end, we'll just use JavaScript's [`.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map?v=example) function to declare what we want done.
+           
+          ```js
+          const excitedPeople = people.map(name => name + '!')
+          ```
+           
+          That's it! Notice that with this code we haven't:
+           
+          * created an iterator object
+          * told the code when it should stop running
+          * used the iterator to access a specific item in the `people` array
+          * stored each new string in the `excitedPeople` array
+           
+          ...all of those steps are taken care of by JavaScript's `.map()` Array method.
+        instructor_notes: ''
+        resources: null
+      - id: 330969
+        key: e6814446-10ed-44ad-b2cc-462fb0bd9edd
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Jun 14 2017 19:25:33 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            Is the following code imperative or declarative?
+             
+            ```js
+            const people = ['Amanda', 'Geoff', 'Michael', 'Richard', 'Ryan', 'Tyler']
+            const longNames = people.filter(name => name.length > 6)
+            ```
+          correct_feedback: 'We didn''t provide all of the steps that JavaScript should take to cycle through the list. Instead, we just told it to filter the list. This is declarative.'
+          video_feedback: null
+          default_feedback: 'Review the code again, did we tell JavaScript _how_ to cycle through the list of names? Did we create a variable to iterate through them? Did we set up some code to tell the iteration to stop? All of these would be steps that are needed in imperative code.'
+          answers:
+            - id: a1497468293985
+              text: Imperative
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497468302072
+              text: Declarative
+              is_correct: true
+              incorrect_feedback: null
+      - id: 338016
+        key: 256ee60a-3dd8-4c42-b43c-ac3177e7933a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jun 22 2017 23:49:19 GMT+0000 (UTC)'
+        is_public: true
+        text: "> ## \uD83D\uDCA1 `.map()` and `.filter()`  \uD83D\uDCA1 \n \n> A bit rusty on JavaScript's `.map()` and `.filter()` Array methods? Or perhaps they're brand new to you. In either case, we'll be diving into them in the [React is \"just JavaScript\" section](https://classroom.udacity.com/nanodegrees/nd019/parts/331aa737-9e87-42e2-8348-f97d51424b1a/modules/82766b2b-1870-4904-aa90-8ccbe63928c5/lessons/9a065aa0-91d4-44a3-ad96-8d9b44be4d11/concepts/1342b34f-f9f4-4ceb-96e7-6ef0680a26bd). Hold tight!"
+        instructor_notes: ''
+        resources: null
+      - id: 330970
+        key: 1ac0b913-2308-4deb-a954-410587b86218
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sun Aug 06 2017 02:26:35 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## React Is Declarative
+           
+          We'll get to writing React code very soon, but let's take another glimpse at it to show how it's declarative. 
+           
+          ```js
+          <button onClick={activateTeleporter}>Activate Teleporter</button>
+          ```
+           
+          It might seem odd, but this is valid React code and should be pretty easy to understand. Notice that there's just an `onClick` attribute on the button... we aren't using `.addEventListener()` to set up event handling with all of the steps involved to set it up. Instead, we're just declaring that we want the `activateTeleporter` function to run when the button is clicked. 
+        instructor_notes: ''
+        resources: null
+      - id: 330971
+        key: 1a68d29b-07b7-4b26-ae0f-49e986f28bdd
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 00:51:49 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Declarative Code Recap
+
+          _Imperative_ code instructs JavaScript on _how_ it should perform each step. With _declarative_ code, we tell JavaScript _what_ we want to be done, and let JavaScript take care of performing the steps.
+           
+          React is declarative because we write the code that we _want_, and React is in charge of taking our declared code and performing all of the JavaScript/DOM steps to get us to our desired result.
+           
+          ### Further Research
+
+          * Tyler's [Imperative vs Declarative Programming](https://tylermcginnis.com/imperative-vs-declarative-programming/) blog post
+          * [Difference between declarative and imperative in React.js?](https://stackoverflow.com/questions/33655534/difference-between-declarative-and-imperative-in-react-js) from StackOverflow
+        instructor_notes: ''
+        resources: null
+  - id: 328429
+    key: 03b53d7e-ae83-4846-bff3-bc4015cd8d76
+    locale: en-us
+    version: 1.0.0
+    title: Unidirectional Data Flow
+    semantic_type: Concept
+    updated_at: 'Tue Jun 27 2017 15:54:06 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 328430
+      - 330972
+      - 330973
+      - 340415
+      - 330974
+      - 330976
+      - 338019
+      - 331002
+      - 331003
+    atoms:
+      - id: 328430
+        key: 0c77a38a-9506-4b42-8141-1b453ecee479
+        locale: en-us
+        version: 1.0.0
+        title: Data Flow In React
+        semantic_type: VideoAtom
+        updated_at: 'Tue Aug 15 2017 00:00:11 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57713'
+          youtube_id: TmhAf3bAc1Q
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d682_06-data-flow-in-react/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d682_06-data-flow-in-react/06-data-flow-in-react_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d682_06-data-flow-in-react/06-data-flow-in-react_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d682_06-data-flow-in-react/06-data-flow-in-react_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d682_06-data-flow-in-react/06-data-flow-in-react_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d682_06-data-flow-in-react/hls/playlist.m3u8'
+      - id: 330972
+        key: 05f70810-1c23-41f8-a992-d58328cc2740
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jun 22 2017 23:53:13 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Data-Binding In Other Frameworks
+           
+          Front-end frameworks like [Angular](https://angular.io/) and [Ember](https://emberjs.com/) make use of two-way data bindings. In two-way data binding, the data is kept in sync throughout the app no matter where it is updated. If a model changes the data, then the data updates in the view. Alternatively, if the user changes the data in the view, then the data is updated in the model. Two-way data binding sounds really powerful, but it can make the application harder to reason about and know where the data is actually being updated.
+           
+          ### Further Research
+           
+          * [Angular's two-way data binding](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#two-way)
+          * [Ember's two-way data binding](https://guides.emberjs.com/v2.13.0/object-model/bindings/)
+        instructor_notes: ''
+        resources: null
+      - id: 330973
+        key: 221d2ad5-0b43-42b7-a53e-b4a69527af25
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jun 14 2017 19:32:25 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## React's Data-flow
+           
+          Data moves differently with React's unidirectional data flow. In React, the data flows from the parent component to a child component.
+        instructor_notes: ''
+        resources: null
+      - id: 340415
+        key: b4150a78-596a-4aed-8379-55f826516ae8
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Tue Jun 27 2017 15:54:03 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/June/59527f8d_nd019-c1-l1-reacts-data-flow/nd019-c1-l1-reacts-data-flow.png'
+        width: 4001
+        height: 2251
+        alt: null
+        caption: _Data flows down from parent component to child component. Data updates are sent to the parent component where the parent performs the actual change._
+        resources: null
+        instructor_notes: null
+      - id: 330974
+        key: 5c7abba1-bb92-47c0-b216-9cde73aa3286
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jul 25 2017 18:29:46 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          In the image above, we have two components:
+           
+          * a parent component
+          * a child component
+           
+          The data lives in the parent component and is passed down to the child component. Even though the data lives in the parent component, both the parent and the child components can use the data. However, if the data must be updated, then only the parent component should perform the update. If the child component needs to make a change to the data, then it would send the updated data to the parent component where the change will actually be made. Once the change _is_ made in the parent component, the child component will be passed the data (that has just been updated!).
+           
+          Now, this might seem like extra work, but having the data flow in one direction and having one place where the data is modified makes it much easier to understand how the application works.
+        instructor_notes: ''
+        resources: null
+      - id: 330976
+        key: 6a513ce5-4cf0-4df9-956d-7114d170e706
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 23 2017 00:13:19 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            A `FlightPlanner` component stores the information for booking a flight. It also contains `DatePicker` and `DestinationPicker` as child components. Here's what the code might look like:
+             
+            ```js
+            <FlightPlanner>
+              <DatePicker />
+              <DestinationPicker />
+            </FlightPlanner>
+            ```
+             
+            If this were a React application, which component(s) should be in charge of making updates to the data? Check all that apply.
+          correct_feedback: 'Since `FlightPlanner` is the parent component and stores the data, any changes to the data should be made by this component.'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1497468806256
+              text: '`FlightPlanner`'
+              is_correct: true
+              incorrect_feedback: 'If `FlightPlanner` stores all of the data for the app, then should it be in charge of modifying the data?'
+            - id: a1497468817824
+              text: '`DatePicker`'
+              is_correct: false
+              incorrect_feedback: '`DatePicker` is a child component of `FlightPlanner`. If the data lives in the `FlightPlanner` component and if data flows from parent to child, where should the change be made?'
+            - id: a1497468818497
+              text: '`DestinationPicker`'
+              is_correct: false
+              incorrect_feedback: Remember that data changes should be made in a parent component. Is `DestinationPicker` a parent or child component?
+      - id: 338019
+        key: b1b66e4f-69c2-44db-aa59-a1de91e66eee
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 21:07:11 GMT+0000 (UTC)'
+        is_public: true
+        text: 'Now let''s say that the `FlightPlanner` component has two child components: `LocationPicker` and `DatePicker`. `LocationPicker` itself is a parent component that has two child components: `OriginPicker` and `DestinationPicker`.'
+        instructor_notes: ''
+        resources: null
+      - id: 331002
+        key: dd730e8e-72c4-45a7-bf39-7f416034de0d
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Thu Sep 14 2017 21:10:31 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            If the following sample code were a React application, which of the following components should be in charge of making updates to data? Check all that apply.
+
+            ```js
+            <FlightPlanner>
+
+              <LocationPicker>
+                <OriginPicker />
+                <DestinationPicker />
+              </LocationPicker>
+
+              <DatePicker />
+
+            </FlightPlanner>
+            ```
+          correct_feedback: The component that stores the data should be the one that updates the data.
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1497471810994
+              text: '`FlightPlanner`'
+              is_correct: true
+              incorrect_feedback: 'Since `FlightPlanner` is the parent component and stores all of the flight data, any changes to the data should be made by this component. '
+            - id: a1497471813172
+              text: '`DatePicker`'
+              is_correct: false
+              incorrect_feedback: 'Since `DatePicker` receives the data from its parent, then should updates be made here in `DatePicker`?'
+            - id: a1497471813790
+              text: '`LocationPicker`'
+              is_correct: true
+              incorrect_feedback: 'Because `LocationPicker` is a parent component, it would make sense that it would handle all changes for its child components. It might be a good idea to consider this one in your response!'
+            - id: a1497471814870
+              text: '`OriginPicker`'
+              is_correct: false
+              incorrect_feedback: 'Since `OriginPicker` receives the data from its parent, then should updates be made here in `OriginPicker`?'
+            - id: a1497471815928
+              text: '`DestinationPicker`'
+              is_correct: false
+              incorrect_feedback: 'Since `DestinationPicker` receives the data from its parent, then should updates be made here in `DestinationPicker`?'
+      - id: 331003
+        key: ad5ff433-2f49-4b95-a9fa-7c7cc25dcfa3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 00:19:28 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Data-flow In React Recap
+           
+          In React, data flows in only one direction, from parent to child. If data is shared between sibling child components, then the data should be stored in the parent component and passed to both of the child components that need it.
+        instructor_notes: ''
+        resources: null
+  - id: 328432
+    key: 1342b34f-f9f4-4ceb-96e7-6ef0680a26bd
+    locale: en-us
+    version: 1.0.0
+    title: React Is "Just JavaScript"
+    semantic_type: Concept
+    updated_at: 'Mon Jul 10 2017 18:28:37 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 328433
+      - 331004
+      - 331231
+      - 331234
+      - 331232
+      - 345433
+      - 331235
+      - 331237
+      - 331236
+      - 345435
+      - 331238
+      - 331239
+      - 331240
+      - 345439
+      - 331005
+    atoms:
+      - id: 328433
+        key: 8537c5b7-5e3f-4853-975a-c626cb03a937
+        locale: en-us
+        version: 1.0.0
+        title: React is Just JavaScript
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:43:40 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57714'
+          youtube_id: FTSYIXx2R10
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d684_08-react-is-just-javascript/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d684_08-react-is-just-javascript/08-react-is-just-javascript_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d684_08-react-is-just-javascript/08-react-is-just-javascript_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d684_08-react-is-just-javascript/08-react-is-just-javascript_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d684_08-react-is-just-javascript/08-react-is-just-javascript_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d684_08-react-is-just-javascript/hls/playlist.m3u8'
+      - id: 331004
+        key: 66c080bb-a158-4550-a1cf-741349ddefbc
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sun Aug 06 2017 02:27:29 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## It's Just JavaScript
+           
+          One of the great things about React is that a lot of what you'll be using is regular JavaScript. Over the past couple of years, functional programming has had a large impact on the JavaScript ecosystem and community. Functional programming is an advanced topic in JavaScript and fills hundreds of books. It's too complex to delve into the benefits of functional programming (we've got to get to React content, right?!?). But React builds on a lot of the techniques of functional programming... techniques that you'll learn as you go through this program. However, there are a couple of important JavaScript functions that are vital to functional programming that we should look at. These are the `.map()` and `.filter()` methods.
+           
+          Let's check out the `.map()` and `.filter()` Array methods in more detail.
+        instructor_notes: ''
+        resources: null
+      - id: 331231
+        key: 83208923-7e24-47ee-8525-88098bc4092e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 00:40:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Array's `.map()` Method
+           
+          If you're not familiar with JavaScript's [Array `.map()` method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), it gets called on an existing array and returns a new array based what's returned from the function that's passed as an argument. Let's take a look:
+           
+          ```js
+          const names = ['Michael', 'Ryan', 'Tyler'];
+           
+          const nameLengths = names.map( name => name.length );
+          ```
+           
+          Let's go over what's happening here. The `.map()` method works on arrays, so we have to have an array to start with:
+           
+          ```js
+          const names = ['Michael', 'Ryan', 'Tyler'];
+          ```
+           
+          We call `.map()` on the `names` array and pass it a function as an argument:
+           
+          ```js
+          names.map( name => name.length );
+          ```
+           
+          The arrow function that's passed to `.map()` gets called _for each item_ in the `names` array! The arrow function receives the first name in the array, stores it in the `name` variable and returns its length. Then it does that again for the remaining two names. 
+           
+          `.map()` returns a new array with the values that are returned from the arrow function:
+           
+          ```js
+          const nameLengths = names.map( name => name.length );
+          ```
+           
+          So `nameLengths` will be a _new_ array `[7, 4, 5]`. This is important to understand; **the `.map()` method returns a new array, it does not modify the original array**.
+           
+          This was just a brief overview of how the `.map()` method works. For a deeper dive, check out [`.map()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
+        instructor_notes: ''
+        resources: null
+      - id: 331234
+        key: 6028a721-ad88-483c-9eee-55aa270c58ee
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Aug 31 2017 21:06:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ### `.map()` Quiz
+
+          Use the provided music data array and the `.map()` method to create a new array that contains items in the format:
+           
+          ```text
+          <album-name> by <artist> sold <sales> copies
+          ```
+           
+          Store the new array in an `albumSalesStrings` array. So the first item in the `albumSalesStrings` array should be `"25 by Adele sold 1731000 copies"`
+        instructor_notes: ''
+        resources: null
+      - id: 331232
+        key: 3b6758c9-a3a4-4294-bd3e-e981bea09522
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Mon Jul 10 2017 23:51:00 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5356124634218496'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'submit'])
+            executor_test_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'test'])
+            gae_grading_code: |-
+              """Provide feedback to student based on evaluation of JavaScript programming quiz."""
+
+              import json
+
+              # until we check, assume student's submission is incorrect
+              grade_result['correct'] = False
+
+              # don't use, but must set to ' ' to avoid error
+              grade_result['comment'] = ' '
+
+              # use default markdown?
+              use_default_markdown = True
+
+              def parse_swizzled_output(output):
+                  """Analyzes the swizzled output for passing/failing criteria and other feedback.
+                      
+                      Args:
+                      output (string): Output generated when running swizzled main.
+                      """
+                  # keep running total of (passed) criteria
+                  numberOfCriteria = 0
+                  numberOfPasses = 0
+                  passed_criteria = []
+                  failed_criteria = []
+                  feedback = []
+                  # split lines by newline
+                  lines = output.split('\n')
+                  # go line-by-line and find formatted tags for criteria
+                  for line in lines:
+                      if line.startswith('<PASS::>'):
+                          numberOfCriteria += 1
+                          numberOfPasses += 1
+                          # strip tag and add criteria to array
+                          passed_criteria.append(line[8:])
+                      if line.startswith('<FAIL::>'):
+                          numberOfCriteria += 1
+                          # strip tag and add criteria to array
+                          failed_criteria.append(line[8:])
+                      if line.startswith('<FEEDBACK::>'):
+                          # strip tag and add feedback to array
+                          feedback.append(line[12:])
+                  # return results
+                  return (numberOfCriteria == numberOfPasses, passed_criteria, failed_criteria, feedback)
+
+              def default_markdown_from_criteria(passing_criteria, failing_criteria):
+                  """Generates default markdown-like string based on passing/failing criteria.
+
+                      Args:
+                      passing_criteria (list): All passing criteria from quiz
+                      failing_criteria (list): All failing criteria from quiz
+                      """
+                  # init markdown-like string
+                  markdown = ''
+                  # was there more than 1 criteria?
+                  if passing_criteria + failing_criteria > 1:
+                      # add passing criteria to markdown
+                      if len(passing_criteria) >= 1:
+                          markdown += '# What Went Well\n\n'
+                          for criteria in passing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                      # add failing criteria to markdown
+                      if len(failing_criteria) >= 1:
+                          markdown += '# What Went Wrong\n\n'
+                          for criteria in failing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                  else:
+                      # if only 1 criteria, add it without headers to markdown
+                      markdown = passing_criteria[0] if grade_result['correct'] else failing_criteria[0]
+                  # return markdown-like string
+                  return markdown
+
+              def main():
+                  """Analyze the output generated by Falcon and set special key/value pairs for feedback."""
+                  # did the remote execution cause an error?
+                  if executor_result['stderr'] == '':
+                      # nope! analyze the output (JSON-like string)
+                      try:
+                          # convert JSON-like string into Python dictionary
+                          results = json.loads(executor_result['stdout'])
+                          swizzle_out = results['temp/results-out.txt']
+                      except Exception as e:
+                          # if there was an error during the conversion, display it
+                          grade_result['feedback'] = executor_result['stderr']
+                      else:
+                          # did the execution of swizzled main produce an error?
+                          if results['temp/results-err.txt'] == '':
+                              # nope! we can safely use the output of swizzled main
+                              (submission_correct, passing_criteria, failing_criteria, feedback) = parse_swizzled_output(swizzle_out)
+                              # set pass/fail
+                              grade_result['correct'] = submission_correct
+                              if use_default_markdown == True:
+                                  # use default markdown for criteria/feedback
+                                  markdown_feedback = default_markdown_from_criteria(passing_criteria, failing_criteria)
+                                  total_criteria = len(failing_criteria) + len(passing_criteria)
+                                  all_feedback = markdown_feedback + '# Feedback\n\n'
+                                  if len(failing_criteria) == 0:
+                                      all_feedback += 'Your answer passed all our tests! Awesome job!'
+                                  elif len(passing_criteria) >= total_criteria / 2:
+                                      all_feedback += 'Not everything is correct yet, but you\'re close!'
+                                  else:
+                                      all_feedback += 'There\'s work left to do. Try tackling one problem at a time.'
+                                  grade_result['feedback'] = all_feedback
+                                  # grade_result['comment'] = results['temp/student-out.txt']
+                              else:
+                                  # show raw response from REX execution
+                                  grade_result['feedback'] = str(results)
+                          else:
+                              # swizzled main generated some an error, so display it!
+                              grade_result['feedback'] = 'An error occurred while testing your code.\n\nCheck to ensure these items are true:\n\n- clicking **TEST RUN** doesn\'t produce any issues\n- you\'ve followed all instructions\n- you\'ve used the correct names\n\nIf you make all these checks, but it still doesn\'t fix the error, then please contact us at *support@udacity.com* and provide a link to the quiz and a copy of your code.\n\nNOTE: If you cannot find the instructions, click **RESET QUIZ** to reset the quiz to its original state.'
+                  else:
+                      # there was an error with overall execution, so display it!
+                      grade_result['comment'] = executor_result['stderr']
+
+              main()
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs:
+              - key: '5141761099956224'
+                ref: ProgramTemplate
+            included_text_files:
+              - text: |
+                  /* eslint no-unused-vars: "off" */
+
+                  var logBackup = console.log;
+                  var logMessages = [];
+
+                  console.log = function () {
+                      logMessages.push.apply(logMessages, arguments);
+                      logBackup.apply(console, arguments);
+                  };
+
+                  function getASTMatches(esquery, tree, selector) {
+                      var result = esquery.parse(selector);
+                      return esquery.match(tree, result);
+                  }
+
+                  function bodyElementIsNotEmpty(body) {
+                      return body[0].body.length !== 0;
+                  }
+                name: SwizzleBefore.js
+              - text: |
+                  /* eslint-env es6 */
+                  /* global getASTMatches, bodyElementIsNotEmpty, musicData, albumSalesStrings */
+
+                  ;(function () {
+                      const assert = require('chai').assert;
+                      const esprima = require('esprima');
+                      const esquery = require('esquery');
+                      const content = require('fs').readFileSync(__dirname + '/StudentMain.js', 'utf8');
+
+                      const AST = esprima.parse(content);
+                      const body = getASTMatches(esquery, AST, '[body]');
+
+                      if (bodyElementIsNotEmpty(body)) {
+                          describe('Your code', function () {
+                              it('should have a variable `musicData`', function () {
+                                  assert.isDefined(musicData, "The variable `musicData` doesn't exist");
+                              });
+                          });
+
+                          describe('The `musicData` variable', function () {
+                              it('should be an array', function () {
+                                  assert.typeOf(musicData, 'array', '`musicData` should be an array');
+                              });
+                          });
+
+                          describe('Your code', function () {
+                              it('should have a variable `albumSalesStrings`', function () {
+                                  assert.isDefined(albumSalesStrings, "The variable `albumSalesStrings` doesn't exist");
+                              });
+
+                              it('should call `.map()` on `musicData`', function () {
+                                  const mapResults = getASTMatches(esquery, AST, 'CallExpression [object.name="musicData"] [name="map"]');
+
+                                  assert.lengthOf(mapResults, 1, "It looks like you're not calling `.map()` on `musicData`");
+                              });
+
+                              it('should produce the expected output', function () {
+                                  const originalData = [
+                                      { artist: 'Adele', name: '25', sales: 1731000 },
+                                      { artist: 'Drake', name: 'Views', sales: 1608000 },
+                                      { artist: 'Beyonce', name: 'Lemonade', sales: 1554000 },
+                                      { artist: 'Chris Stapleton', name: 'Traveller', sales: 1085000 },
+                                      { artist: 'Pentatonix', name: 'A Pentatonix Christmas', sales: 904000 },
+                                      { artist: 'Original Broadway Cast Recording', name: 'Hamilton: An American Musical', sales: 820000 },
+                                      { artist: 'Twenty One Pilots', name: 'Blurryface', sales: 738000 },
+                                      { artist: 'Prince', name: 'The Very Best of Prince', sales: 668000 },
+                                      { artist: 'Rihanna', name: 'Anti', sales: 603000 },
+                                      { artist: 'Justin Bieber', name: 'Purpose', sales: 554000 }
+                                  ];
+
+                                  const expectedArray = originalData.map(album => `${album.name} by ${album.artist} sold ${album.sales} copies`);
+
+                                  assert.deepEqual(albumSalesStrings, expectedArray, 'Your `albumSalesStrings` array does not match the expected result');
+                              });
+                          });
+                      } else {
+                          describe('Your code', function () {
+                              it('should not be empty', function () {
+                                  assert.isOk(false, 'Your code is missing, hit the "Reset Quiz" button to reset the quiz');
+                              });
+                          });
+                      }
+                  }());
+                name: SwizzleAfter.js
+        answer: null
+      - id: 345433
+        key: d93ba375-2187-4ac5-b65e-d148f28e2b38
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 10 2017 22:27:33 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### Map Quiz Solution Code
+
+          <div class="react-quiz-solution">
+          Once you've tried your hand at solving this quiz, hover your mouse here for one possible solution. 
+          <style>
+          .react-quiz-solution .react-quiz-code-snippet { display: none;}
+          .react-quiz-solution:hover .react-quiz-code-snippet { display: block;}
+          </style>
+          <pre class="react-quiz-code-snippet">const albumSalesStrings = musicData.map(album => \`${album.name} by ${album.artist} sold ${album.sales} copies\`);</pre>
+          </div>
+        instructor_notes: ''
+        resources: null
+      - id: 331235
+        key: ce9bf783-9d81-44d5-bd72-4707eac63138
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 00:41:15 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Array's `.filter()` Method
+           
+          JavaScript's [Array `.filter()` method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) is similar to the `.map()` method:
+           
+          * it is called on an array
+          * it takes a function as an argument
+          * it returns a new array
+           
+          The difference is that the function passed to `.filter()` is used as a test, and only items in the array that pass the test are included in the new array. Let's take a look at an example:
+           
+          ```js
+          const names = ['Michael', 'Ryan', 'Tyler'];
+           
+          const shortNames = names.filter( name => name.length < 5 );
+          ```
+           
+          Just as before, we have the starting array:
+           
+          ```js
+          const names = ['Michael', 'Ryan', 'Tyler'];
+          ```
+           
+          We call `.filter()` on the `names` array and pass it a function as an argument:
+           
+          ```js
+          names.filter( name => name.length < 5 );
+          ```
+           
+          Again, just like with `.map()` the arrow function that's passed to `.filter()` gets called _for each item_ in the `names` array. The first item (i.e. `'Michael'`) is stored in the `name` variable. Then the test is performed - this is what's doing the actual filtering. It checks the length of the name. If it's `5` or greater, then it's skipped (and _not_ included in the new array!). But if the length of the name is less than `5`, then `name.length < 5` returns `true` and the name _is_ included in the new array!
+           
+          And lastly, just like with `.map()` the `.filter()` method returns a _new_ array instead of modifying the original array:
+           
+          ```js
+          const shortNames = names.filter( name => name.length < 5 );
+          ```
+           
+          So `shortNames` will be the new array `['Ryan']`. Notice that it only has one name in it now, because both `'Michael'` and `'Tyler'` are `5` characters or longer and were filtered out.
+           
+          This was just a brief overview of how the `.filter()` method works. For a deeper dive, check out [`.filter()` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter). 
+        instructor_notes: ''
+        resources: null
+      - id: 331237
+        key: 595fbc9e-7dc6-43e2-8859-14ca89f288ca
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jun 22 2017 17:23:39 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### `.filter()` Quiz
+
+          Use the provided music data array and the `.filter()` method to create a new array that only contains albums with names between `10` and `25` characters long. Store the new array in a variable called `results`.
+        instructor_notes: ''
+        resources: null
+      - id: 331236
+        key: 26e093ca-a8c5-416b-a6a4-df3c5577ea02
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Sun Sep 24 2017 22:40:31 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6314935280861184'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'submit'])
+            executor_test_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'test'])
+            gae_grading_code: |-
+              """Provide feedback to student based on evaluation of JavaScript programming quiz."""
+
+              import json
+
+              # until we check, assume student's submission is incorrect
+              grade_result['correct'] = False
+
+              # don't use, but must set to ' ' to avoid error
+              grade_result['comment'] = ' '
+
+              # use default markdown?
+              use_default_markdown = True
+
+              def parse_swizzled_output(output):
+                  """Analyzes the swizzled output for passing/failing criteria and other feedback.
+                      
+                      Args:
+                      output (string): Output generated when running swizzled main.
+                      """
+                  # keep running total of (passed) criteria
+                  numberOfCriteria = 0
+                  numberOfPasses = 0
+                  passed_criteria = []
+                  failed_criteria = []
+                  feedback = []
+                  # split lines by newline
+                  lines = output.split('\n')
+                  # go line-by-line and find formatted tags for criteria
+                  for line in lines:
+                      if line.startswith('<PASS::>'):
+                          numberOfCriteria += 1
+                          numberOfPasses += 1
+                          # strip tag and add criteria to array
+                          passed_criteria.append(line[8:])
+                      if line.startswith('<FAIL::>'):
+                          numberOfCriteria += 1
+                          # strip tag and add criteria to array
+                          failed_criteria.append(line[8:])
+                      if line.startswith('<FEEDBACK::>'):
+                          # strip tag and add feedback to array
+                          feedback.append(line[12:])
+                  # return results
+                  return (numberOfCriteria == numberOfPasses, passed_criteria, failed_criteria, feedback)
+
+              def default_markdown_from_criteria(passing_criteria, failing_criteria):
+                  """Generates default markdown-like string based on passing/failing criteria.
+
+                      Args:
+                      passing_criteria (list): All passing criteria from quiz
+                      failing_criteria (list): All failing criteria from quiz
+                      """
+                  # init markdown-like string
+                  markdown = ''
+                  # was there more than 1 criteria?
+                  if passing_criteria + failing_criteria > 1:
+                      # add passing criteria to markdown
+                      if len(passing_criteria) >= 1:
+                          markdown += '# What Went Well\n\n'
+                          for criteria in passing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                      # add failing criteria to markdown
+                      if len(failing_criteria) >= 1:
+                          markdown += '# What Went Wrong\n\n'
+                          for criteria in failing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                  else:
+                      # if only 1 criteria, add it without headers to markdown
+                      markdown = passing_criteria[0] if grade_result['correct'] else failing_criteria[0]
+                  # return markdown-like string
+                  return markdown
+
+              def main():
+                  """Analyze the output generated by Falcon and set special key/value pairs for feedback."""
+                  # did the remote execution cause an error?
+                  if executor_result['stderr'] == '':
+                      # nope! analyze the output (JSON-like string)
+                      try:
+                          # convert JSON-like string into Python dictionary
+                          results = json.loads(executor_result['stdout'])
+                          swizzle_out = results['temp/results-out.txt']
+                      except Exception as e:
+                          # if there was an error during the conversion, display it
+                          grade_result['feedback'] = executor_result['stderr']
+                      else:
+                          # did the execution of swizzled main produce an error?
+                          if results['temp/results-err.txt'] == '':
+                              # nope! we can safely use the output of swizzled main
+                              (submission_correct, passing_criteria, failing_criteria, feedback) = parse_swizzled_output(swizzle_out)
+                              # set pass/fail
+                              grade_result['correct'] = submission_correct
+                              if use_default_markdown == True:
+                                  # use default markdown for criteria/feedback
+                                  markdown_feedback = default_markdown_from_criteria(passing_criteria, failing_criteria)
+                                  total_criteria = len(failing_criteria) + len(passing_criteria)
+                                  all_feedback = markdown_feedback + '# Feedback\n\n'
+                                  if len(failing_criteria) == 0:
+                                      all_feedback += 'Your answer passed all our tests! Awesome job!'
+                                  elif len(passing_criteria) >= total_criteria / 2:
+                                      all_feedback += 'Not everything is correct yet, but you\'re close!'
+                                  else:
+                                      all_feedback += 'There\'s work left to do. Try tackling one problem at a time.'
+                                  grade_result['feedback'] = all_feedback
+                                  # grade_result['comment'] = results['temp/student-out.txt']
+                              else:
+                                  # show raw response from REX execution
+                                  grade_result['feedback'] = str(results)
+                          else:
+                              # swizzled main generated some an error, so display it!
+                              grade_result['feedback'] = 'An error occurred while testing your code.\n\nCheck to ensure these items are true:\n\n- clicking **TEST RUN** doesn\'t produce any issues\n- you\'ve followed all instructions\n- you\'ve used the correct names\n\nIf you make all these checks, but it still doesn\'t fix the error, then please contact us at *support@udacity.com* and provide a link to the quiz and a copy of your code.\n\nNOTE: If you cannot find the instructions, click **RESET QUIZ** to reset the quiz to its original state.'
+                  else:
+                      # there was an error with overall execution, so display it!
+                      grade_result['comment'] = executor_result['stderr']
+
+              main()
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs:
+              - key: '5141761099956224'
+                ref: ProgramTemplate
+            included_text_files:
+              - text: |
+                  /* eslint no-unused-vars: "off" */
+
+                  var logBackup = console.log;
+                  var logMessages = [];
+
+                  console.log = function () {
+                      logMessages.push.apply(logMessages, arguments);
+                      logBackup.apply(console, arguments);
+                  };
+
+                  function getASTMatches(esquery, tree, selector) {
+                      var result = esquery.parse(selector);
+                      return esquery.match(tree, result);
+                  }
+
+                  function bodyElementIsNotEmpty(body) {
+                      return body[0].body.length !== 0;
+                  }
+                name: SwizzleBefore.js
+              - text: |
+                  /* eslint-env es6 */
+                  /* global getASTMatches, bodyElementIsNotEmpty, musicData, results */
+
+                  ;(function () {
+                      const assert = require('chai').assert;
+                      const esprima = require('esprima');
+                      const esquery = require('esquery');
+                      const content = require('fs').readFileSync(__dirname + '/StudentMain.js', 'utf8');
+
+                      const AST = esprima.parse(content);
+                      const body = getASTMatches(esquery, AST, '[body]');
+
+                      if (bodyElementIsNotEmpty(body)) {
+                          describe('Your code', function () {
+                              it('should have a variable `musicData`', function () {
+                                  assert.isDefined(musicData, "The variable `musicData` doesn't exist");
+                              });
+                          });
+
+                          describe('The `musicData` variable', function () {
+                              it('should be an array', function () {
+                                  assert.typeOf(musicData, 'array', '`musicData` should be an array');
+                              });
+                          });
+
+                          describe('Your code', function () {
+                              it('should call `.filter()` on `musicData`', function () {
+                                  const filterResults = getASTMatches(esquery, AST, 'CallExpression [object.name="musicData"] [name="filter"]');
+
+                                  assert.lengthOf(filterResults, 1, "It looks like you're not calling `.fliter()` on `musicData`");
+                              });
+
+                              it('should have a variable `results`', function () {
+                                  assert.isDefined(results, "The variable `results` doesn't exist");
+                              });
+
+                              it('should produce the expected output', function () {
+                                  const originalData = [
+                                      { artist: 'Adele', name: '25', sales: 1731000 },
+                                      { artist: 'Drake', name: 'Views', sales: 1608000 },
+                                      { artist: 'Beyonce', name: 'Lemonade', sales: 1554000 },
+                                      { artist: 'Chris Stapleton', name: 'Traveller', sales: 1085000 },
+                                      { artist: 'Pentatonix', name: 'A Pentatonix Christmas', sales: 904000 },
+                                      { artist: 'Original Broadway Cast Recording', name: 'Hamilton: An American Musical', sales: 820000 },
+                                      { artist: 'Twenty One Pilots', name: 'Blurryface', sales: 738000 },
+                                      { artist: 'Prince', name: 'The Very Best of Prince', sales: 668000 },
+                                      { artist: 'Rihanna', name: 'Anti', sales: 603000 },
+                                      { artist: 'Justin Bieber', name: 'Purpose', sales: 554000 }
+                                  ];
+
+                                  const expectedArray = originalData.filter(album => album.name.length <= 25 && album.name.length >= 10);
+
+                                  assert.deepEqual(results, expectedArray, 'Your `results` array does not match the expected result');
+                              });
+                          });
+                      } else {
+                          describe('Your code', function () {
+                              it('should not be empty', function () {
+                                  assert.isOk(false, 'Your code is missing, hit the "Reset Quiz" button to reset the quiz');
+                              });
+                          });
+                      }
+                  }());
+                name: SwizzleAfter.js
+        answer: null
+      - id: 345435
+        key: 3a5ade69-be62-4c81-9d24-c7b32f7b0bef
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 10 2017 22:26:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### Filter Quiz Solution Code
+
+          <div class="react-quiz-solution">
+          Once you've tried your hand at solving this quiz, hover your mouse here for one possible solution. 
+          <style>
+          .react-quiz-solution .react-quiz-code-snippet { display: none;}
+          .react-quiz-solution:hover .react-quiz-code-snippet { display: block;}
+          </style>
+          <pre class="react-quiz-code-snippet">const results = musicData.filter(album => album.name.length <= 25 && album.name.length >= 10);</pre>
+          </div>
+        instructor_notes: ''
+        resources: null
+      - id: 331238
+        key: 1ea93ee7-2328-4299-97f7-94ddccd63b55
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 00:42:36 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Combining `.map()` And `.filter()` Together
+           
+          What makes `.map()` and `.filter()` so powerful is that they can be combined. Because both methods return arrays, we can chain the method calls together so that the returned data from one can be a new array for the next.
+           
+          ```js
+          const names = ['Michael', 'Ryan', 'Tyler'];
+           
+          const shortNamesLengths = names.filter( name => name.length < 5 ).map( name => name.length );
+          ```
+           
+          To break it down, the `names` array is filtered, which returns a new array, but then `.map()` is called on that new array, and returns a new array of its own! This new array that's returned from `.map()` is what's stored in `shortNamesLengths`.
+           
+          ### `.filter()` First!
+           
+          On a side note, you'll want to run things in this order (`.filter()` first and then `.map()`). Because `.map()` runs the function once _for each item_ in the array, it will be faster if the array were already filtered.
+        instructor_notes: ''
+        resources: null
+      - id: 331239
+        key: 27d43b0d-8d58-4c32-b96b-b04b26c80b55
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 00:44:07 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ### `.filter()` and `.map()` Quiz
+
+          Using the same music data, use `.filter()` and `.map()` to filter and map over the list and store the result in a variable named `popular`. Use `.filter()` to filter the list down to just the albums that have sold over 1,000,000 copies. Then chain `.map()` onto the returned array to create a new array that contains items in the format:
+           
+          ```text
+          <artist> is a great performer
+          ```
+           
+          The first item in the `popular` array will be `'Adele is a great performer'`.
+        instructor_notes: ''
+        resources: null
+      - id: 331240
+        key: 5a8341c0-4ca2-4551-99f7-a22df5b28c19
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 18:02:53 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6062349495697408'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'submit'])
+            executor_test_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'test'])
+            gae_grading_code: |-
+              """Provide feedback to student based on evaluation of JavaScript programming quiz."""
+
+              import json
+
+              # until we check, assume student's submission is incorrect
+              grade_result['correct'] = False
+
+              # don't use, but must set to ' ' to avoid error
+              grade_result['comment'] = ' '
+
+              # use default markdown?
+              use_default_markdown = True
+
+              def parse_swizzled_output(output):
+                  """Analyzes the swizzled output for passing/failing criteria and other feedback.
+                      
+                      Args:
+                      output (string): Output generated when running swizzled main.
+                      """
+                  # keep running total of (passed) criteria
+                  numberOfCriteria = 0
+                  numberOfPasses = 0
+                  passed_criteria = []
+                  failed_criteria = []
+                  feedback = []
+                  # split lines by newline
+                  lines = output.split('\n')
+                  # go line-by-line and find formatted tags for criteria
+                  for line in lines:
+                      if line.startswith('<PASS::>'):
+                          numberOfCriteria += 1
+                          numberOfPasses += 1
+                          # strip tag and add criteria to array
+                          passed_criteria.append(line[8:])
+                      if line.startswith('<FAIL::>'):
+                          numberOfCriteria += 1
+                          # strip tag and add criteria to array
+                          failed_criteria.append(line[8:])
+                      if line.startswith('<FEEDBACK::>'):
+                          # strip tag and add feedback to array
+                          feedback.append(line[12:])
+                  # return results
+                  return (numberOfCriteria == numberOfPasses, passed_criteria, failed_criteria, feedback)
+
+              def default_markdown_from_criteria(passing_criteria, failing_criteria):
+                  """Generates default markdown-like string based on passing/failing criteria.
+
+                      Args:
+                      passing_criteria (list): All passing criteria from quiz
+                      failing_criteria (list): All failing criteria from quiz
+                      """
+                  # init markdown-like string
+                  markdown = ''
+                  # was there more than 1 criteria?
+                  if passing_criteria + failing_criteria > 1:
+                      # add passing criteria to markdown
+                      if len(passing_criteria) >= 1:
+                          markdown += '# What Went Well\n\n'
+                          for criteria in passing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                      # add failing criteria to markdown
+                      if len(failing_criteria) >= 1:
+                          markdown += '# What Went Wrong\n\n'
+                          for criteria in failing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                  else:
+                      # if only 1 criteria, add it without headers to markdown
+                      markdown = passing_criteria[0] if grade_result['correct'] else failing_criteria[0]
+                  # return markdown-like string
+                  return markdown
+
+              def main():
+                  """Analyze the output generated by Falcon and set special key/value pairs for feedback."""
+                  # did the remote execution cause an error?
+                  if executor_result['stderr'] == '':
+                      # nope! analyze the output (JSON-like string)
+                      try:
+                          # convert JSON-like string into Python dictionary
+                          results = json.loads(executor_result['stdout'])
+                          swizzle_out = results['temp/results-out.txt']
+                      except Exception as e:
+                          # if there was an error during the conversion, display it
+                          grade_result['feedback'] = executor_result['stderr']
+                      else:
+                          # did the execution of swizzled main produce an error?
+                          if results['temp/results-err.txt'] == '':
+                              # nope! we can safely use the output of swizzled main
+                              (submission_correct, passing_criteria, failing_criteria, feedback) = parse_swizzled_output(swizzle_out)
+                              # set pass/fail
+                              grade_result['correct'] = submission_correct
+                              if use_default_markdown == True:
+                                  # use default markdown for criteria/feedback
+                                  markdown_feedback = default_markdown_from_criteria(passing_criteria, failing_criteria)
+                                  total_criteria = len(failing_criteria) + len(passing_criteria)
+                                  all_feedback = markdown_feedback + '# Feedback\n\n'
+                                  if len(failing_criteria) == 0:
+                                      all_feedback += 'Your answer passed all our tests! Awesome job!'
+                                  elif len(passing_criteria) >= total_criteria / 2:
+                                      all_feedback += 'Not everything is correct yet, but you\'re close!'
+                                  else:
+                                      all_feedback += 'There\'s work left to do. Try tackling one problem at a time.'
+                                  grade_result['feedback'] = all_feedback
+                                  # grade_result['comment'] = results['temp/student-out.txt']
+                              else:
+                                  # show raw response from REX execution
+                                  grade_result['feedback'] = str(results)
+                          else:
+                              # swizzled main generated some an error, so display it!
+                              grade_result['feedback'] = 'An error occurred while testing your code.\n\nCheck to ensure these items are true:\n\n- clicking **TEST RUN** doesn\'t produce any issues\n- you\'ve followed all instructions\n- you\'ve used the correct names\n\nIf you make all these checks, but it still doesn\'t fix the error, then please contact us at *support@udacity.com* and provide a link to the quiz and a copy of your code.\n\nNOTE: If you cannot find the instructions, click **RESET QUIZ** to reset the quiz to its original state.'
+                  else:
+                      # there was an error with overall execution, so display it!
+                      grade_result['comment'] = executor_result['stderr']
+
+              main()
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs:
+              - key: '5141761099956224'
+                ref: ProgramTemplate
+            included_text_files:
+              - text: |
+                  /* eslint no-unused-vars: "off" */
+
+                  var logBackup = console.log;
+                  var logMessages = [];
+
+                  console.log = function () {
+                      logMessages.push.apply(logMessages, arguments);
+                      logBackup.apply(console, arguments);
+                  };
+
+                  function getASTMatches(esquery, tree, selector) {
+                      var result = esquery.parse(selector);
+                      return esquery.match(tree, result);
+                  }
+
+                  function bodyElementIsNotEmpty(body) {
+                      return body[0].body.length !== 0;
+                  }
+                name: SwizzleBefore.js
+              - text: |
+                  /* eslint-env es6 */
+                  /* global getASTMatches, bodyElementIsNotEmpty, musicData, popular */
+
+                  ;(function () {
+                      const assert = require('chai').assert;
+                      const esprima = require('esprima');
+                      const esquery = require('esquery');
+                      const content = require('fs').readFileSync(__dirname + '/StudentMain.js', 'utf8');
+
+                      const AST = esprima.parse(content);
+                      const body = getASTMatches(esquery, AST, '[body]');
+
+                      if (bodyElementIsNotEmpty(body)) {
+                          describe('Your code', function () {
+                              it('should have a variable `musicData`', function () {
+                                  assert.isDefined(musicData, "The variable `musicData` doesn't exist");
+                              });
+                          });
+
+                          describe('The `musicData` variable', function () {
+                              it('should be an array', function () {
+                                  assert.typeOf(musicData, 'array', '`musicData` should be an array');
+                              });
+                          });
+
+                          describe('Your code', function () {
+                              it('should call `.filter()` on `musicData`', function () {
+                                  const mapResults = getASTMatches(esquery, AST, 'CallExpression [object.name="musicData"] [name="filter"]');
+
+                                  assert.lengthOf(mapResults, 1, "It looks like you're not calling `.filter()` on `musicData`");
+                              });
+
+                              it('should call `.map()` on the array returned by `.filter()`', function () {
+                                  const mapResults = getASTMatches(esquery, AST, 'CallExpression [object.callee.property.name="filter"] [name="map"]');
+
+                                  assert.lengthOf(mapResults, 1, "Your code doesn't appear to call `.map()` on the array returned from `.filter()`");
+                              });
+
+                              it('should have a variable `popular`', function () {
+                                  assert.isDefined(popular, "The variable `popular` doesn't exist");
+                              });
+
+                              it('should produce the expected output', function () {
+                                  const originalData = [
+                                      { artist: 'Adele', name: '25', sales: 1731000 },
+                                      { artist: 'Drake', name: 'Views', sales: 1608000 },
+                                      { artist: 'Beyonce', name: 'Lemonade', sales: 1554000 },
+                                      { artist: 'Chris Stapleton', name: 'Traveller', sales: 1085000 },
+                                      { artist: 'Pentatonix', name: 'A Pentatonix Christmas', sales: 904000 },
+                                      { artist: 'Original Broadway Cast Recording', name: 'Hamilton: An American Musical', sales: 820000 },
+                                      { artist: 'Twenty One Pilots', name: 'Blurryface', sales: 738000 },
+                                      { artist: 'Prince', name: 'The Very Best of Prince', sales: 668000 },
+                                      { artist: 'Rihanna', name: 'Anti', sales: 603000 },
+                                      { artist: 'Justin Bieber', name: 'Purpose', sales: 554000 }
+                                  ];
+
+                                  const expectedArray = originalData.filter(album => album.sales > 1000000)
+                                                                  .map(album => `${album.artist} is a great performer`);
+
+                                  assert.deepEqual(popular, expectedArray, 'Your `popular` array does not match the expected result');
+                              });
+                          });
+                      } else {
+                          describe('Your code', function () {
+                              it('should not be empty', function () {
+                                  assert.isOk(false, 'Your code is missing, hit the "Reset Quiz" button to reset the quiz');
+                              });
+                          });
+                      }
+                  }());
+                name: SwizzleAfter.js
+        answer: null
+      - id: 345439
+        key: 4cd10ccd-dabc-4803-92bf-0fb7386a8b0e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 10 2017 18:28:37 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### Filter & Map Quiz Solution Code
+
+          <div class="react-quiz-solution">
+          Once you've tried your hand at solving this quiz, hover your mouse here for one possible solution. 
+          <style>
+          .react-quiz-solution .react-quiz-code-snippet { display: none;}
+          .react-quiz-solution:hover .react-quiz-code-snippet { display: block;}
+          </style>
+          <pre class="react-quiz-code-snippet">const popular = musicData
+            .filter(album => album.sales > 1000000)
+            .map(album => \`${album.artist} is a great performer\`);</pre>
+          </div>
+        instructor_notes: ''
+        resources: null
+      - id: 331005
+        key: b9b6096f-2775-435a-8fa8-29627ef4f41e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sun Aug 06 2017 02:31:08 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## React is Just JavaScript Recap
+           
+          React builds on what you already know — JavaScript! You don't have to learn a special template library or a new way of doing things. 
+           
+          Two of the main methods that you'll be using quite a lot are:
+           
+          * [`.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+          * [`.filter()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+           
+          It's important that you're comfortable using these methods, so take some time to practice using them. Why not look through some of your existing code and try converting your `for` loops to `.map()` calls or see if you can remove any `if` statements by using `.filter()`.
+        instructor_notes: ''
+        resources: null
+  - id: 328435
+    key: 96de82e9-38b6-4b05-b30e-fb2edce245d3
+    locale: en-us
+    version: 1.0.0
+    title: Lesson Summary
+    semantic_type: Concept
+    updated_at: 'Wed Jun 14 2017 20:29:52 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 328436
+      - 331006
+    atoms:
+      - id: 328436
+        key: 511725c2-6445-4bc0-b78d-8f8cf23a86d0
+        locale: en-us
+        version: 1.0.0
+        title: What Makes React Special - Outro
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 27 2017 18:53:01 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57715'
+          youtube_id: G7n0jtxsFh0
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d685_09-what-makes-react-special-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d685_09-what-makes-react-special-outro/09-what-makes-react-special-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d685_09-what-makes-react-special-outro/09-what-makes-react-special-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d685_09-what-makes-react-special-outro/09-what-makes-react-special-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d685_09-what-makes-react-special-outro/09-what-makes-react-special-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d685_09-what-makes-react-special-outro/hls/playlist.m3u8'
+      - id: 331006
+        key: c9d4bb02-97bc-4ddc-84cc-b6198e56ce5b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 27 2017 19:40:59 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Let's recap on some of the things we covered in this lesson on why React is great:
+          * its compositional model
+          * its declarative nature
+          * the way data flows from parent to child
+          * and that React is really just JavaScript
+
+          For further reading, feel free to check out the following:
+          * [Virtual DOM](https://facebook.github.io/react/docs/optimizing-performance.html#avoid-reconciliation) from the React Docs. The Virtual DOM reflects a tree in which each node is an HTML element. React is able to traverse and carry out operations on this Virtual DOM, saving our app from having "costly" activity on the _actual_ DOM.
+          * [The Diffing Algorithm](https://facebook.github.io/react/docs/reconciliation.html#the-diffing-algorithm) from the React Docs. Diffing determines how to make efficient changes to the DOM. With diffing, old DOM nodes are taken out and replaced only when necessary. This way, our app doesn't perform any unnecessary operations to figure out when to render content.
+        instructor_notes: ''
+        resources: null

@@ -1,0 +1,3191 @@
+id: 196651
+key: 1b997dce-e2ce-4246-b5ae-d39ca175f887
+locale: en-us
+version: 1.0.0
+title: Built-ins
+semantic_type: Lesson
+updated_at: 'Wed Jul 05 2017 19:33:15 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: 'The JavaScript environment provides you with a number of features by default. In this lesson, we''ll take a look at Sets, Maps, Proxies, Generators, how iteration works, and more!'
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+career_portal_experience_levels: null
+_concepts_ids:
+  - 213354
+  - 213350
+  - 196721
+  - 196722
+  - 196723
+  - 256107
+  - 256111
+  - 256114
+  - 261435
+  - 196724
+  - 261442
+  - 213349
+  - 196725
+  - 256130
+  - 256132
+  - 196726
+  - 213352
+  - 196727
+  - 213359
+  - 213351
+  - 196728
+  - 257554
+  - 257556
+  - 196729
+  - 257565
+  - 257573
+  - 196715
+_project_id: null
+concepts:
+  - id: 213354
+    key: 6efc26e1-d752-42a1-9184-04f73b6b4088
+    locale: en-us
+    version: 1.0.0
+    title: New Built-ins
+    semantic_type: Concept
+    updated_at: 'Sat Apr 22 2017 06:05:03 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 218171
+    atoms:
+      - id: 218171
+        key: 94bcc833-83c8-48f5-ae10-6174a204fca9
+        locale: en-us
+        version: 1.0.0
+        title: New Built-ins
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:18:12 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43223'
+          youtube_id: qfTkmFoLyfw
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/584229d9_01-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/584229d9_01-intro/01-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/584229d9_01-intro/01-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/584229d9_01-intro/01-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/584229d9_01-intro/01-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/584229d9_01-intro/hls/playlist.m3u8'
+  - id: 213350
+    key: 1e3f0012-b247-4325-a5e7-c10651481f20
+    locale: en-us
+    version: 1.0.0
+    title: Symbols Intro
+    semantic_type: Concept
+    updated_at: 'Fri Dec 23 2016 04:56:31 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 232938
+    atoms:
+      - id: 232938
+        key: c4fc6ef2-d4fd-4049-af72-3001ae15fdd7
+        locale: en-us
+        version: 1.0.0
+        title: Symbols Intro
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:20:50 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43139'
+          youtube_id: kbVmzEQ4Hr0
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/583f7c62_02-symbols-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c62_02-symbols-intro/02-symbols-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c62_02-symbols-intro/02-symbols-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c62_02-symbols-intro/02-symbols-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c62_02-symbols-intro/02-symbols-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c62_02-symbols-intro/hls/playlist.m3u8'
+  - id: 196721
+    key: 100b565f-0e61-42e9-a2f4-332aa2f1a1b6
+    locale: en-us
+    version: 1.0.0
+    title: Symbols
+    semantic_type: Concept
+    updated_at: 'Sat Jan 14 2017 01:00:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 256101
+      - 256102
+    atoms:
+      - id: 256101
+        key: 85abe3e7-7937-4522-aaf1-46ec095b3ec9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Sep 05 2017 17:04:21 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Symbols
+
+          A **symbol** is a unique and immutable data type that is often used to identify object properties.
+
+          To create a symbol, you write `Symbol()` with an optional string as its **description**.
+
+          ```js
+          const sym1 = Symbol('apple');
+          console.log(sym1);
+          ```
+          > `Symbol(apple)`
+
+          This will create a unique symbol and store it in `sym1`. The description `"apple"` is just a way to describe the symbol, but it can’t be used to access the symbol itself.
+
+          And just to show you how this works, if you compare two symbols with the same description… 
+
+          ```js
+          const sym2 = Symbol('banana');
+          const sym3 = Symbol('banana');
+          console.log(sym2 === sym3);
+          ```
+          > `false`
+
+          …then the result is `false` because the description is _only_ used to described the symbol. It’s not used as part of the symbol itself—each time a new symbol is created, regardless of the description.
+        instructor_notes: ''
+        resources: null
+      - id: 256102
+        key: add1fba9-dbc4-49f4-89bc-4d5c8b53769a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Jan 14 2017 00:47:07 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Still, this can be hard to wrap your head around, so let’s use the example from the previous video to see how symbols can be useful. Here’s the code to represent the bowl from the example.
+
+          ```js
+          const bowl = {
+            'apple': { color: 'red', weight: 136.078 },
+            'banana': { color: 'yellow', weight: 183.15 },
+            'orange': { color: 'orange', weight: 170.097 }
+          };
+          ```
+
+          The bowl contains fruit which are objects that are properties of the bowl. But, we run into a problem when the second banana gets added.
+
+          ```js
+          const bowl = {
+            'apple': { color: 'red', weight: 136.078 },
+            'banana': { color: 'yellow', weight: 183.151 },
+            'orange': { color: 'orange', weight: 170.097 },
+            'banana': { color: 'yellow', weight: 176.845 }
+          };
+          console.log(bowl);
+          ```
+          > `Object {apple: Object, banana: Object, orange: Object}`
+
+          Instead of adding another banana to the bowl, our previous banana is overwritten by the new banana being added to the bowl. To fix this problem, we can use symbols.
+
+          ```js
+          const bowl = {
+            [Symbol('apple')]: { color: 'red', weight: 136.078 },
+            [Symbol('banana')]: { color: 'yellow', weight: 183.15 },
+            [Symbol('orange')]: { color: 'orange', weight: 170.097 },
+            [Symbol('banana')]: { color: 'yellow', weight: 176.845 }
+          };
+          console.log(bowl);
+          ```
+          > `Object {Symbol(apple): Object, Symbol(banana): Object, Symbol(orange): Object, Symbol(banana): Object}`
+
+          By changing the bowl’s properties to use symbols, each property is a unique Symbol and the first banana doesn’t get overwritten by the second banana.
+        instructor_notes: ''
+        resources: null
+  - id: 196722
+    key: 966cea8f-5583-4d46-80ef-ed4c829c63c7
+    locale: en-us
+    version: 1.0.0
+    title: Iteration & Iterable Protocols
+    semantic_type: Concept
+    updated_at: 'Thu Apr 27 2017 04:24:50 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 256103
+      - 301622
+    atoms:
+      - id: 256103
+        key: 9c22771b-3a5c-42e7-9bb6-3cf1a4cb2196
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Apr 26 2017 23:44:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Before you move on, let’s spend some time looking at two new protocols in ES6:
+
+          * the **iterable** protocol
+          * the **iterator** protocol
+
+          These protocols aren’t built-ins, but they will help you understand the new concept of iteration in ES6, as well as show you a use case for symbols.
+
+          # The Iterable Protocol
+
+          The **iterable protocol** is used for defining and customizing the iteration behavior of objects. What that really means is you now have the _flexibility_ in ES6 to specify a way for iterating through values in an object. For some objects, they already come built-in with this behavior. For example, strings and arrays are examples of built-in iterables.
+
+          ```js
+          const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+          for (const digit of digits) {
+            console.log(digit);
+          }
+          ```
+          > 0 <br>
+          > 1 <br>
+          > 2 <br>
+          > 3 <br>
+          > 4 <br>
+          > 5 <br>
+          > 6 <br>
+          > 7 <br>
+          > 8 <br>
+          > 9 <br>
+
+          If you recall from earlier lesson 1, any object that is iterable can use the new `for...of` loop. Later in this lesson, you’ll also learn about Sets and Maps which are other examples of built-in iterables.
+
+          ## How it Works
+
+          In order for an object to be iterable, it must implement the **iterable interface**. If you come from a language like Java or C, then you’re probably familiar with interfaces, but for those of you who aren’t, that basically means that in order for an object to be iterable it must contain a default iterator method. This method will define how the object should be iterated.
+
+          The **iterator method**, which is available via the constant `[Symbol.iterator]`, is a zero arguments function that returns an iterator object. An iterator object is an object that conforms to the iterator protocol.
+
+          # The Iterator Protocol
+
+          The **iterator protocol** is used to define a standard way that an object produces a sequence of values. What that really means is you now have a process for defining how an object will iterate. This is done through implementing the `.next()` method.
+
+          ## How it Works
+
+          An object becomes an iterator when it implements the `.next()` method. The `.next()` method is a zero arguments function that returns an object with two properties:
+
+          1. `value` : the data representing the next value in the sequence of values within the object
+          2. `done` : a boolean representing if the iterator is _done_ going through the sequence of values
+            * If done is _true_, then the iterator has reached the end of its sequence of values.
+            * If done is _false_, then the iterator is able to produce another value in its sequence of values.
+
+          Here’s the example from earlier, but instead we are using the array’s default iterator to step through the each value in the array.
+
+          ```js
+          const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+          const arrayIterator = digits[Symbol.iterator]();
+
+          console.log(arrayIterator.next());
+          console.log(arrayIterator.next());
+          console.log(arrayIterator.next());
+          ```
+          > ```js
+          Object {value: 0, done: false}
+          Object {value: 1, done: false}
+          Object {value: 2, done: false}
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 301622
+        key: f8630634-ab9d-4d02-84d6-2182f0b38d26
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Thu Apr 27 2017 04:27:56 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '5615841350647808'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'submit'])
+            executor_test_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'test'])
+            gae_grading_code: |-
+              """Provide feedback to student based on evaluation of JavaScript programming quiz."""
+
+              import json
+
+              # until we check, assume student's submission is incorrect
+              grade_result['correct'] = False
+
+              # don't use, but must set to ' ' to avoid error
+              grade_result['comment'] = ' '
+
+              # use default markdown?
+              use_default_markdown = True
+
+              def parse_swizzled_output(output):
+                  """Analyzes the swizzled output for passing/failing criteria and other feedback.
+                      
+                      Args:
+                      output (string): Output generated when running swizzled main.
+                      """
+                  # keep running total of (passed) criteria
+                  numberOfCriteria = 0
+                  numberOfPasses = 0
+                  passed_criteria = []
+                  failed_criteria = []
+                  feedback = []
+                  # split lines by newline
+                  lines = output.split('\n')
+                  # go line-by-line and find formatted tags for criteria
+                  for line in lines:
+                      if line.startswith('<PASS::>'):
+                          numberOfCriteria += 1
+                          numberOfPasses += 1
+                          # strip tag and add criteria to array
+                          passed_criteria.append(line[8:])
+                      if line.startswith('<FAIL::>'):
+                          numberOfCriteria += 1
+                          # strip tag and add criteria to array
+                          failed_criteria.append(line[8:])
+                      if line.startswith('<FEEDBACK::>'):
+                          # strip tag and add feedback to array
+                          feedback.append(line[12:])
+                  # return results
+                  return (numberOfCriteria == numberOfPasses, passed_criteria, failed_criteria, feedback)
+
+              def default_markdown_from_criteria(passing_criteria, failing_criteria):
+                  """Generates default markdown-like string based on passing/failing criteria.
+
+                      Args:
+                      passing_criteria (list): All passing criteria from quiz
+                      failing_criteria (list): All failing criteria from quiz
+                      """
+                  # init markdown-like string
+                  markdown = ''
+                  # was there more than 1 criteria?
+                  if passing_criteria + failing_criteria > 1:
+                      # add passing criteria to markdown
+                      if len(passing_criteria) >= 1:
+                          markdown += '# What Went Well\n\n'
+                          for criteria in passing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                      # add failing criteria to markdown
+                      if len(failing_criteria) >= 1:
+                          markdown += '# What Went Wrong\n\n'
+                          for criteria in failing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                  else:
+                      # if only 1 criteria, add it without headers to markdown
+                      markdown = passing_criteria[0] if grade_result['correct'] else failing_criteria[0]
+                  # return markdown-like string
+                  return markdown
+
+              def main():
+                  """Analyze the output generated by Falcon and set special key/value pairs for feedback."""
+                  # did the remote execution cause an error?
+                  if executor_result['stderr'] == '':
+                      # nope! analyze the output (JSON-like string)
+                      try:
+                          # convert JSON-like string into Python dictionary
+                          results = json.loads(executor_result['stdout'])
+                          swizzle_out = results['temp/results-out.txt']
+                      except Exception as e:
+                          # if there was an error during the conversion, display it
+                          grade_result['feedback'] = executor_result['stderr']
+                      else:
+                          # did the execution of swizzled main produce an error?
+                          if results['temp/results-err.txt'] == '':
+                              # nope! we can safely use the output of swizzled main
+                              (submission_correct, passing_criteria, failing_criteria, feedback) = parse_swizzled_output(swizzle_out)
+                              # set pass/fail
+                              grade_result['correct'] = submission_correct
+                              if use_default_markdown == True:
+                                  # use default markdown for criteria/feedback
+                                  markdown_feedback = default_markdown_from_criteria(passing_criteria, failing_criteria)
+                                  total_criteria = len(failing_criteria) + len(passing_criteria)
+                                  all_feedback = markdown_feedback + '# Feedback\n\n'
+                                  if len(failing_criteria) == 0:
+                                      all_feedback += 'Your answer passed all our tests! Awesome job!'
+                                  elif len(passing_criteria) >= total_criteria / 2:
+                                      all_feedback += 'Not everything is correct yet, but you\'re close!'
+                                  else:
+                                      all_feedback += 'There\'s work left to do. Try tackling one problem at a time.'
+                                  grade_result['feedback'] = all_feedback
+                                  # grade_result['comment'] = results['temp/student-out.txt']
+                              else:
+                                  # show raw response from REX execution
+                                  grade_result['feedback'] = str(results)
+                          else:
+                              # swizzled main generated some an error, so display it!
+                              grade_result['feedback'] = 'An error occurred while testing your code.\n\nCheck to ensure these items are true:\n\n- clicking **TEST RUN** doesn\'t produce any issues\n- you\'ve followed all instructions\n- you\'ve used the correct names\n\nIf you make all these checks, but it still doesn\'t fix the error, then please contact us at *support@udacity.com* and provide a link to the quiz and a copy of your code.\n\nNOTE: If you cannot find the instructions, click **RESET QUIZ** to reset the quiz to its original state.'
+                  else:
+                      # there was an error with overall execution, so display it!
+                      grade_result['comment'] = executor_result['stderr']
+
+              main()
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs:
+              - key: '5141761099956224'
+                ref: ProgramTemplate
+            included_text_files:
+              - text: |
+                  /* eslint no-unused-vars: "off" */
+
+                  var logBackup = console.log;
+                  var logMessages = [];
+
+                  console.log = function () {
+                      logMessages.push.apply(logMessages, arguments);
+                      logBackup.apply(console, arguments);
+                  };
+
+                  function getASTMatches(esquery, tree, selector) {
+                      var result = esquery.parse(selector);
+                      return esquery.match(tree, result);
+                  }
+
+                  function bodyElementIsNotEmpty(body) {
+                      return body[0].body.length !== 0;
+                  }
+                name: SwizzleBefore.js
+              - text: |
+                  /* eslint-env es6 */
+                  /* global getASTMatches, bodyElementIsNotEmpty, james */
+
+                  (function () {
+                      const assert = require('chai').assert;
+                      const esprima = require('esprima');
+                      const esquery = require('esquery');
+                      const content = require('fs').readFileSync(__dirname + '/StudentMain.js', 'utf8');
+
+                      const AST = esprima.parse(content);
+                      const body = getASTMatches(esquery, AST, '[body]');
+
+                      if (bodyElementIsNotEmpty(body)) {
+                          describe('The `james` object', function () {
+                              it('should have a `Symbol.iterator` method', function () {
+                                  assert.property(james, Symbol.iterator, 'You need to add a `Symbol.iterator` method');
+                              });
+
+                              it('should create an iterator', function () {
+                                  const iterator = james[Symbol.iterator]();
+
+                                  assert.property(iterator, 'next', "Calling `james[Symbol.iterator]()` doesn't produce an object with a `.next()` method.");
+                              });
+                          });
+
+                          describe('Your code', function () {
+                              it('should produce the expected result', function () {
+                                  const iterator = james[Symbol.iterator]();
+                                  const actual1 = iterator.next();
+                                  const actual2 = iterator.next();
+                                  const actual3 = iterator.next();
+                                  const expected1 = { value: 'James', key: 'name', done: false };
+                                  const expected2 = { value: `5'10"`, key: 'height', done: false };
+                                  const expected3 = { value: 185, key: 'weight', done: true };
+
+                                  assert.deepEqual(actual1, expected1, `The first call to \`iterator.next()\` should print ${JSON.stringify(expected1)}, but saw ${JSON.stringify(actual1)}`);
+                                  assert.deepEqual(actual2, expected2, `The second call to \`iterator.next()\` should print ${JSON.stringify(expected2)}, but saw ${JSON.stringify(actual2)}`);
+                                  assert.deepEqual(actual3, expected3, `The third call to \`iterator.next()\` should print ${JSON.stringify(expected3)}, but saw ${JSON.stringify(actual3)}`);
+                              });
+                          });
+                      } else {
+                          describe('Your code', function () {
+                              it('should not be empty', function () {
+                                  assert.isOk(false, 'Your code is missing, hit the "Reset Quiz" button to reset the quiz');
+                              });
+                          });
+                      }
+
+                  }());
+                name: SwizzleAfter.js
+        answer: null
+  - id: 196723
+    key: 2f7b76c6-d4a1-4168-98e4-662a17c3dd53
+    locale: en-us
+    version: 1.0.0
+    title: Sets
+    semantic_type: Concept
+    updated_at: 'Thu Mar 16 2017 21:43:09 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 256104
+      - 256105
+      - 256106
+    atoms:
+      - id: 256104
+        key: 58ba210b-0f56-4f3b-ad1b-ae03b1ffc86b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 21 2017 20:59:56 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          # A Set in Mathematics
+
+          If you think back to mathematics, a set is a collection of distinct items. For example, `{2, 4, 5, 6}` is a set because each number is unique and appears only once. However, `{1, 1, 2, 4}` is _not_ a set because it _contains duplicate entries_ (the 1 is in there more than once!).
+
+          In JavaScript, we can already represent something similar to a mathematical set using an array.
+
+          ```js
+          const nums = [2, 4, 5, 6];
+          ```
+
+          However, arrays _do not enforce items to be unique_. If we try to add another `2` to `nums`, JavaScript won't complain and will add it without any issue.
+
+          ```js
+          nums.push(2);
+          console.log(nums);
+          ```
+          > `[2, 4, 5, 6, 2]`
+
+          …and now `nums` is no longer a set in the mathematical sense.
+        instructor_notes: ''
+        resources: null
+      - id: 256105
+        key: f7ced6ec-92a5-44ee-982a-1364c7c823f8
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 21 2017 21:09:42 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Sets
+
+          In ES6, there’s a new built-in object that behaves like a mathematical set and works similarly to an array. This new object is conveniently called a "Set". The biggest differences between a set and an array are:
+
+          * Sets are not indexed-based - you do not refer to items in a set based on their position in the set
+          * items in a Set can’t be accessed individually
+
+          Basically, a Set is an object that lets you store unique items. You can add items to a Set, remove items from a Set, and loop over a Set. These items can be either primitive values or objects.
+
+          ## How to Create a Set
+
+          There’s a couple of different ways to create a Set. The first way, is pretty straightforward:
+
+          ```js
+          const games = new Set();
+          console.log(games);
+          ```
+          > `Set {}`
+
+          This creates an empty Set `games` with no items.
+
+          If you want to create a Set from a list of values, you use an array:
+
+          ```js
+          const games = new Set(['Super Mario Bros.', 'Banjo-Kazooie', 'Mario Kart', 'Super Mario Bros.']);
+          console.log(games);
+          ```
+          > `Set {'Super Mario Bros.', 'Banjo-Kazooie', 'Mario Kart'}`
+
+          Notice the example above automatically removes the duplicate entry `"Super Mario Bros."` when the Set is created. Pretty neat!
+        instructor_notes: ''
+        resources: null
+      - id: 256106
+        key: b473de9c-52e1-4098-afc2-7e7fdfb4cde8
+        locale: en-us
+        version: 1.0.0
+        title: Unique Sets
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Wed May 10 2017 19:53:03 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Select the collections below that represent a Set in JavaScript.
+          correct_feedback: Nice work! The choices you've selected represent sets since all their items are unique.
+          video_feedback: null
+          default_feedback: A set is an object that has no repeating values.  What other objects have no repeating values?
+          answers:
+            - id: a1484355919814
+              text: '`{1, ''Basketball'', true, false, ''1''}`'
+              is_correct: true
+              incorrect_feedback: ''
+            - id: a1484355942292
+              text: '`{}`'
+              is_correct: true
+              incorrect_feedback: ''
+            - id: a1484355950153
+              text: '`{1, 1, 1, 1}`'
+              is_correct: false
+              incorrect_feedback: ''
+            - id: a1484355956904
+              text: '`{false, ''0'', 0, ''Soccer'', 3.14, 25, 0}`'
+              is_correct: false
+              incorrect_feedback: ''
+            - id: a1484355964353
+              text: '`{''Gymnastics'', ''Swimming'', 2}`'
+              is_correct: true
+              incorrect_feedback: ''
+  - id: 256107
+    key: 0396aaa7-ccc8-49b5-93ad-725c2f61f889
+    locale: en-us
+    version: 1.0.0
+    title: Modifying Sets
+    semantic_type: Concept
+    updated_at: 'Sat Jan 14 2017 01:16:00 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 256108
+      - 256110
+    atoms:
+      - id: 256108
+        key: b9764f7f-22a7-4ad3-a8d5-6024eda50cc0
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 21 2017 21:12:20 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Modifying Sets
+
+          After you’ve created a Set, you’ll probably want to add and delete items from the Set. So how do you that? You use the appropriately named, `.add()` and `.delete()` methods:
+
+          ```js
+          const games = new Set(['Super Mario Bros.', 'Banjo-Kazooie', 'Mario Kart', 'Super Mario Bros.']);
+
+          games.add('Banjo-Tooie');
+          games.add('Age of Empires');
+          games.delete('Super Mario Bros.');
+
+          console.log(games);
+          ```
+          > `Set {'Banjo-Kazooie', 'Mario Kart', 'Banjo-Tooie', 'Age of Empires'}`
+
+          On the other hand, if you want to delete all the items from a Set, you can use the `.clear()` method.
+
+          ```js
+          games.clear()
+          console.log(games);
+          ```
+          > `Set {}`
+        instructor_notes: ''
+        resources: null
+      - id: 256110
+        key: d432d46b-8238-424a-ba4f-d18dfacda17d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 20 2017 17:05:49 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > **TIP**: If you attempt to `.add()` a duplicate item to a Set, you won’t receive an error, but the item will not be added to the Set. Also, if you try to `.delete()` an item that is not in a Set, you won’t receive an error, and the Set will remain unchanged. 
+
+          > `.add()` returns the `Set` if an item is successfully added. On the other hand, `.delete()` returns a Boolean (`true` or `false`) depending on successful deletion.
+        instructor_notes: ''
+        resources: null
+  - id: 256111
+    key: 50d51cb3-016f-432d-9de0-9f3b9b32f006
+    locale: en-us
+    version: 1.0.0
+    title: Working with Sets
+    semantic_type: Concept
+    updated_at: 'Sat Jan 14 2017 01:16:06 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 256112
+      - 256113
+    atoms:
+      - id: 256112
+        key: 8e1e3910-21b4-47fc-82f5-790d30b48478
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 21 2017 21:15:15 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Working With Sets
+
+          ### Checking The Length
+          Once you’ve constructed your Set, there are a couple of different properties and methods you can use to work with Sets.
+
+          Use the `.size` property to return the number of items in a Set:
+
+          ```js
+          const months = new Set(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']);
+          console.log(months.size);
+          ```
+          > `12`
+
+          Remember, Sets can’t be accessed by their index like an array, so you use the `.size` property instead of `.length` property to get the size of the Set.
+
+          ### Checking If An Item Exists
+          Use the `.has()` method to check if an item exists in a Set. If the item is in the Set, then `.has()` will return `true`. If the item doesn’t exist in the Set, then `.has()` will return `false`.
+
+          ```js
+          console.log(months.has('September'));
+          ```
+          > `true`
+
+          ### Retrieving All Values
+          Finally, use the `.values()` method to return the values in a Set. The return value of the `.values()` method is a `SetIterator` object.
+
+          ```js
+          console.log(months.values());
+          ```
+          > `SetIterator {'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'}`
+
+          More on the `SetIterator` object in a second!
+        instructor_notes: ''
+        resources: null
+      - id: 256113
+        key: c6c67475-5e42-4ea7-98c5-b8626e786872
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Jan 14 2017 01:15:37 GMT+0000 (UTC)'
+        is_public: true
+        text: '> **TIP**: The `.keys()` method will behave the exact same way as the `.values()` method by returning the values of a Set within a new Iterator Object. The `.keys()` method is an alias for the `.values()` method for similarity with maps. You’ll see the `.keys()` method later in this lesson during the Maps section.'
+        instructor_notes: ''
+        resources: null
+  - id: 256114
+    key: 32a8b076-b891-4993-9e47-648b9f7485c0
+    locale: en-us
+    version: 1.0.0
+    title: Sets & Iterators
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 22:24:56 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 256115
+      - 301406
+      - 256118
+    atoms:
+      - id: 256115
+        key: 3ff30bf8-0e91-4463-ade7-fa0849a5d8dd
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 21 2017 21:17:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          The last step to working with Sets is looping over them.
+
+          If you remember back to our discussion on the new _iterable_ and _iterator protocols_ in ES6, then you’ll recall that Sets are built-in iterables. This means two things in terms of looping:
+
+          1. You can use the Set’s default iterator to step through each item in a Set, one by one.
+          2. You can use the new `for...of` loop to loop through each item in a Set.
+
+          ## Using the SetIterator
+
+          Because the `.values()` method returns a new iterator object (called `SetIterator`), you can store that iterator object in a variable and loop through each item in the Set using `.next()`.
+
+          ```js
+          const iterator = months.values();
+          iterator.next();
+          ```
+          > `Object {value: 'January', done: false}`
+
+          And if you run `.next()` again?
+
+          ```js
+          iterator.next();
+          ```
+          > `Object {value: 'February', done: false}`
+
+          And so on until `done` equals `true` which marks the end of the Set.
+        instructor_notes: ''
+        resources: null
+      - id: 301406
+        key: 3bd264cf-5967-461a-b394-186371840ca6
+        locale: en-us
+        version: 1.0.0
+        title: Sets and iterators animation
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:43:23 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54438'
+          youtube_id: Hd205fgC7qo
+          subtitles: []
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/59011dfa_ud356-l3-sets-and-iterators-animation/ud356-l3-sets-and-iterators-animation_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/59011dfa_ud356-l3-sets-and-iterators-animation/ud356-l3-sets-and-iterators-animation_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/59011dfa_ud356-l3-sets-and-iterators-animation/ud356-l3-sets-and-iterators-animation_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/59011dfa_ud356-l3-sets-and-iterators-animation/ud356-l3-sets-and-iterators-animation_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/59011dfa_ud356-l3-sets-and-iterators-animation/hls/playlist.m3u8'
+      - id: 256118
+        key: 0b40a6b3-46a6-4ce4-8ccf-9c78e8f7378b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Jan 14 2017 01:22:13 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Using a `for...of` Loop
+
+          An easier method to loop through the items in a Set is the `for...of` loop.
+
+          ```js
+          const colors = new Set(['red', 'orange', 'yellow', 'green', 'blue', 'violet', 'brown', 'black']);
+          for (const color of colors) {
+            console.log(color);
+          }
+          ```
+          > red <br>
+          > orange <br>
+          > yellow <br>
+          > green <br>
+          > blue <br>
+          > violet <br>
+          > brown <br>
+          > black
+        instructor_notes: ''
+        resources: null
+  - id: 261435
+    key: 98ba5617-7451-4f82-847a-cf407c35150c
+    locale: en-us
+    version: 1.0.0
+    title: 'Quiz: Using Sets'
+    semantic_type: Concept
+    updated_at: 'Fri Apr 21 2017 23:14:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 299591
+      - 293728
+    atoms:
+      - id: 299591
+        key: 47e86266-5d89-43a2-aa19-dc62ea906430
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 21 2017 23:14:46 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Directions:
+
+          Create a variable with the name `myFavoriteFlavors` and give it the value of an empty `Set` object. Then use the `.add()` method to add the following strings to it:
+
+          * "chocolate chip"
+          * "cookies and cream"
+          * "strawberry"
+          * "vanilla"
+
+          Then use the `.delete()` method to remove "strawberry" from the set.
+
+          ## Your Code:
+        instructor_notes: ''
+        resources: null
+      - id: 293728
+        key: 0630be03-0b91-4024-b9b8-3c3a6bde89ce
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Fri Apr 21 2017 23:19:29 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '4901671546257408'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'submit'])
+            executor_test_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'test'])
+            gae_grading_code: |-
+              """Provide feedback to student based on evaluation of JavaScript programming quiz."""
+
+              import json
+
+              # until we check, assume student's submission is incorrect
+              grade_result['correct'] = False
+
+              # don't use, but must set to ' ' to avoid error
+              grade_result['comment'] = ' '
+
+              # use default markdown?
+              use_default_markdown = True
+
+              def parse_swizzled_output(output):
+                  """Analyzes the swizzled output for passing/failing criteria and other feedback.
+                      
+                      Args:
+                      output (string): Output generated when running swizzled main.
+                      """
+                  # keep running total of (passed) criteria
+                  numberOfCriteria = 0
+                  numberOfPasses = 0
+                  passed_criteria = []
+                  failed_criteria = []
+                  feedback = []
+                  # split lines by newline
+                  lines = output.split('\n')
+                  # go line-by-line and find formatted tags for criteria
+                  for line in lines:
+                      if line.startswith('<PASS::>'):
+                          numberOfCriteria += 1
+                          numberOfPasses += 1
+                          # strip tag and add criteria to array
+                          passed_criteria.append(line[8:])
+                      if line.startswith('<FAIL::>'):
+                          numberOfCriteria += 1
+                          # strip tag and add criteria to array
+                          failed_criteria.append(line[8:])
+                      if line.startswith('<FEEDBACK::>'):
+                          # strip tag and add feedback to array
+                          feedback.append(line[12:])
+                  # return results
+                  return (numberOfCriteria == numberOfPasses, passed_criteria, failed_criteria, feedback)
+
+              def default_markdown_from_criteria(passing_criteria, failing_criteria):
+                  """Generates default markdown-like string based on passing/failing criteria.
+
+                      Args:
+                      passing_criteria (list): All passing criteria from quiz
+                      failing_criteria (list): All failing criteria from quiz
+                      """
+                  # init markdown-like string
+                  markdown = ''
+                  # was there more than 1 criteria?
+                  if passing_criteria + failing_criteria > 1:
+                      # add passing criteria to markdown
+                      if len(passing_criteria) >= 1:
+                          markdown += '# What Went Well\n\n'
+                          for criteria in passing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                      # add failing criteria to markdown
+                      if len(failing_criteria) >= 1:
+                          markdown += '# What Went Wrong\n\n'
+                          for criteria in failing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                  else:
+                      # if only 1 criteria, add it without headers to markdown
+                      markdown = passing_criteria[0] if grade_result['correct'] else failing_criteria[0]
+                  # return markdown-like string
+                  return markdown
+
+              def main():
+                  """Analyze the output generated by Falcon and set special key/value pairs for feedback."""
+                  # did the remote execution cause an error?
+                  if executor_result['stderr'] == '':
+                      # nope! analyze the output (JSON-like string)
+                      try:
+                          # convert JSON-like string into Python dictionary
+                          results = json.loads(executor_result['stdout'])
+                          swizzle_out = results['temp/results-out.txt']
+                      except Exception as e:
+                          # if there was an error during the conversion, display it
+                          grade_result['feedback'] = executor_result['stderr']
+                      else:
+                          # did the execution of swizzled main produce an error?
+                          if results['temp/results-err.txt'] == '':
+                              # nope! we can safely use the output of swizzled main
+                              (submission_correct, passing_criteria, failing_criteria, feedback) = parse_swizzled_output(swizzle_out)
+                              # set pass/fail
+                              grade_result['correct'] = submission_correct
+                              if use_default_markdown == True:
+                                  # use default markdown for criteria/feedback
+                                  markdown_feedback = default_markdown_from_criteria(passing_criteria, failing_criteria)
+                                  total_criteria = len(failing_criteria) + len(passing_criteria)
+                                  all_feedback = markdown_feedback + '# Feedback\n\n'
+                                  if len(failing_criteria) == 0:
+                                      all_feedback += 'Your answer passed all our tests! Awesome job!'
+                                  elif len(passing_criteria) >= total_criteria / 2:
+                                      all_feedback += 'Not everything is correct yet, but you\'re close!'
+                                  else:
+                                      all_feedback += 'There\'s work left to do. Try tackling one problem at a time.'
+                                  grade_result['feedback'] = all_feedback
+                                  # grade_result['comment'] = results['temp/student-out.txt']
+                              else:
+                                  # show raw response from REX execution
+                                  grade_result['feedback'] = str(results)
+                          else:
+                              # swizzled main generated some an error, so display it!
+                              grade_result['feedback'] = 'An error occurred while testing your code.\n\nCheck to ensure these items are true:\n\n- clicking **TEST RUN** doesn\'t produce any issues\n- you\'ve followed all instructions\n- you\'ve used the correct names\n\nIf you make all these checks, but it still doesn\'t fix the error, then please contact us at *support@udacity.com* and provide a link to the quiz and a copy of your code.\n\nNOTE: If you cannot find the instructions, click **RESET QUIZ** to reset the quiz to its original state.'
+                  else:
+                      # there was an error with overall execution, so display it!
+                      grade_result['comment'] = executor_result['stderr']
+
+              main()
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs:
+              - key: '5141761099956224'
+                ref: ProgramTemplate
+            included_text_files:
+              - text: |
+                  /* eslint no-unused-vars: "off" */
+
+                  function getASTMatches(esquery, tree, selector) {
+                      var result = esquery.parse(selector);
+                      return esquery.match(tree, result);
+                  }
+
+                  function bodyElementIsNotEmpty(body) {
+                      return body[0].body.length !== 0;
+                  }
+                name: SwizzleBefore.js
+              - text: |
+                  /* global getASTMatches, bodyElementIsNotEmpty, myFavoriteFlavors */
+
+                  ;(function () { // eslint-disable-line no-extra-semi
+                      const assert = require('chai').assert;
+                      const esprima = require('esprima');
+                      const esquery = require('esquery');
+                      const content = require('fs').readFileSync(__dirname + '/StudentMain.js', 'utf8');
+
+                      const AST = esprima.parse(content);
+                      const body = getASTMatches(esquery, AST, '[body]');
+
+                      if (bodyElementIsNotEmpty(body)) {
+                          describe('Your code', function () {
+                              it('should have a variable `myFavoriteFlavors`', function () {
+                                  assert.isDefined(myFavoriteFlavors, 'You need to define the `myFavoriteFlavors` variable');
+                              });
+
+                              it('should use the `.add()` method to add required items to the set', function () {
+                                  const callsToAddMethod = getASTMatches(esquery, AST, 'CallExpression [name="add"]');
+
+                                  assert.equal(callsToAddMethod.length, 4, 'You did not use `.add()` the correct number of times.');
+                              });
+
+                              const callToDeleteMethod = getASTMatches(esquery, AST, 'ExpressionStatement [callee.property.name="delete"]');
+                              it('should use the `.delete()` method to remove "strawberry"', function () {
+                                  const [deleteObj] = callToDeleteMethod;
+
+                                  assert.equal(deleteObj.arguments[0].value, 'strawberry', 'You should use `.delete()` to remove "strawberry"');
+                              });
+
+                              it('should use the `.delete()` method only once', function () {
+                                  assert.equal(callToDeleteMethod.length, 1, 'You should only use the `.delete()` method once.');
+                              });
+                          });
+
+                          describe('The `myFavoriteFlavors` object', function () {
+                              it('should contain "chocolate chip"', function () {
+                                  assert.isTrue(myFavoriteFlavors.has('chocolate chip'), '`myFavoriteFlavors` should contain "chocolate chip"');
+                              });
+
+                              it('should contain "cookies and cream"', function () {
+                                  assert.isTrue(myFavoriteFlavors.has('cookies and cream'), '`myFavoriteFlavors` should contain "cookies and cream"');
+                              });
+
+                              it('should contain "vanilla"', function () {
+                                  assert.isTrue(myFavoriteFlavors.has('vanilla'), '`myFavoriteFlavors` should contain "vanilla"');
+                              });
+
+                              it('should not contain "strawberry"', function () {
+                                  assert.isFalse(myFavoriteFlavors.has('strawberry'), '`myFavoriteFlavors` should not contain "strawberry"');
+                              });
+                          });
+                      } else {
+                          describe('Your code', function () {
+                              it('should not be empty', function () {
+                                  assert.isOk(false, 'Your code is missing, hit the "Reset Quiz" button to reset the quiz');
+                              });
+                          });
+                      }
+
+                  }());
+                name: SwizzleAfter.js
+        answer: null
+  - id: 196724
+    key: 5c3fd7d7-66b4-4a9c-b61d-33dd85b8cc0e
+    locale: en-us
+    version: 1.0.0
+    title: WeakSets
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 22:19:18 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 256119
+      - 256120
+      - 301397
+      - 256122
+    atoms:
+      - id: 256119
+        key: 04f4319d-9fda-448e-9d2c-0d67b49e7535
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Apr 21 2017 23:22:13 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # What is a WeakSet?
+
+          A WeakSet is just like a normal Set with a few key differences:
+
+          1. a WeakSet can only contain objects
+          2. a WeakSet is not iterable which means it can’t be looped over
+          3. a WeakSet does not have a `.clear()` method
+
+          You can create a WeakSet just like you would a normal Set, except that you use the `WeakSet` constructor.
+
+          ```js
+          const student1 = { name: 'James', age: 26, gender: 'male' };
+          const student2 = { name: 'Julia', age: 27, gender: 'female' };
+          const student3 = { name: 'Richard', age: 31, gender: 'male' };
+
+          const roster = new WeakSet([student1, student2, student3]);
+          console.log(roster);
+          ```
+          > `WeakSet {Object {name: 'Julia', age: 27, gender: 'female'}, Object {name: 'Richard', age: 31, gender: 'male'}, Object {name: 'James', age: 26, gender: 'male'}}`
+
+          …but if you try to add something other than an object, you’ll get an error!
+
+          ```js
+          roster.add('Amanda');
+          ```
+          > `Uncaught TypeError: Invalid value used in weak set(…)`
+
+          This is expected behavior because WeakSets can only contain objects. But why should it only contain objects? Why would you even use a WeakSet if normal Sets can contain objects and other types of data? Well, the answer to that question has more to do with why WeakSets do not have a `.clear()` method...
+        instructor_notes: ''
+        resources: null
+      - id: 256120
+        key: d9047af6-b408-426a-932c-457b0bf26ad7
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Jan 14 2017 01:28:52 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Garbage Collection
+
+          In JavaScript, memory is allocated when new values are created and is "automatically" freed up when those values are no longer needed. This process of freeing up memory after it is no longer needed is what is known as **garbage collection**.
+
+          WeakSets take advantage of this by exclusively working with objects. If you set an object to `null`, then you’re essentially deleting the object. And when JavaScript’s garbage collector runs, the memory that object previously occupied will be freed up to be used later in your program.
+
+          ```js
+          student3 = null;
+          console.log(roster);
+          ```
+          > `WeakSet {Object {name: 'Julia', age: 27, gender: 'female'}, Object {name: 'James', age: 26, gender: 'male'}}`
+        instructor_notes: ''
+        resources: null
+      - id: 301397
+        key: 7c674835-62e2-4a41-acc6-36a5f5b2d04f
+        locale: en-us
+        version: 1.0.0
+        title: WeakSets Animation
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:43:24 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: |+
+
+        resources: null
+        video:
+          id: '54435'
+          youtube_id: Z0t-ZaR38ME
+          subtitles: []
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/59011aea_ud356-l3-weaksets-animation/ud356-l3-weaksets-animation_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/59011aea_ud356-l3-weaksets-animation/ud356-l3-weaksets-animation_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/59011aea_ud356-l3-weaksets-animation/ud356-l3-weaksets-animation_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/59011aea_ud356-l3-weaksets-animation/ud356-l3-weaksets-animation_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/59011aea_ud356-l3-weaksets-animation/hls/playlist.m3u8'
+      - id: 256122
+        key: 60f214e0-a466-41d0-930b-c3e322bc3717
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 25 2017 22:00:46 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          What makes this so useful is you don’t have to worry about deleting references to deleted objects in your WeakSets, JavaScript does it for you! When an object is deleted, the object will also be deleted from the WeakSet when garbage collection runs. This makes WeakSets useful in situations where you want an efficient, lightweight solution for creating groups of objects.
+
+          The point in time when garbage collection happens depends on a lot of different factors. Check out [MDN’s documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management#Garbage_collection) to learn more about the algorithms used to handle garbage collection in JavaScript.
+        instructor_notes: ''
+        resources: null
+  - id: 261442
+    key: 17d90bf6-2ce7-45df-8f61-2a50da1b0123
+    locale: en-us
+    version: 1.0.0
+    title: 'Quiz: Working With WeakSets'
+    semantic_type: Concept
+    updated_at: 'Sat Apr 22 2017 00:16:32 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 299606
+      - 299611
+    atoms:
+      - id: 299606
+        key: 911639c9-eb7c-4cb9-b3d5-7feb6c659e79
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Apr 22 2017 00:17:13 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Directions:
+
+          Create the following variables:
+
+          * `uniqueFlavors` and give it the value of an empty `WeakSet` object
+          * `flavor1`, and set it to the object `{ flavor: 'chocolate' }`
+          * `flavor2`, and set it to an object with a property of `flavor` and a value of your choice
+
+          Use the `.add()` method to add the objects `flavor1` and `flavor2` to `uniqueFlavors`.
+
+          Use the `.add()` method to add the `flavor1` object to the `uniqueFlavors` set, again.
+
+          ## Your Code:
+        instructor_notes: ''
+        resources: null
+      - id: 299611
+        key: 6f12039b-d0ca-4df5-abfc-7d27b0151f4b
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Thu Apr 27 2017 04:33:31 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6432334028079104'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'submit'])
+            executor_test_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'test'])
+            gae_grading_code: |-
+              """Provide feedback to student based on evaluation of JavaScript programming quiz."""
+
+              import json
+
+              # until we check, assume student's submission is incorrect
+              grade_result['correct'] = False
+
+              # don't use, but must set to ' ' to avoid error
+              grade_result['comment'] = ' '
+
+              # use default markdown?
+              use_default_markdown = True
+
+              def parse_swizzled_output(output):
+                  """Analyzes the swizzled output for passing/failing criteria and other feedback.
+                      
+                      Args:
+                      output (string): Output generated when running swizzled main.
+                      """
+                  # keep running total of (passed) criteria
+                  numberOfCriteria = 0
+                  numberOfPasses = 0
+                  passed_criteria = []
+                  failed_criteria = []
+                  feedback = []
+                  # split lines by newline
+                  lines = output.split('\n')
+                  # go line-by-line and find formatted tags for criteria
+                  for line in lines:
+                      if line.startswith('<PASS::>'):
+                          numberOfCriteria += 1
+                          numberOfPasses += 1
+                          # strip tag and add criteria to array
+                          passed_criteria.append(line[8:])
+                      if line.startswith('<FAIL::>'):
+                          numberOfCriteria += 1
+                          # strip tag and add criteria to array
+                          failed_criteria.append(line[8:])
+                      if line.startswith('<FEEDBACK::>'):
+                          # strip tag and add feedback to array
+                          feedback.append(line[12:])
+                  # return results
+                  return (numberOfCriteria == numberOfPasses, passed_criteria, failed_criteria, feedback)
+
+              def default_markdown_from_criteria(passing_criteria, failing_criteria):
+                  """Generates default markdown-like string based on passing/failing criteria.
+
+                      Args:
+                      passing_criteria (list): All passing criteria from quiz
+                      failing_criteria (list): All failing criteria from quiz
+                      """
+                  # init markdown-like string
+                  markdown = ''
+                  # was there more than 1 criteria?
+                  if passing_criteria + failing_criteria > 1:
+                      # add passing criteria to markdown
+                      if len(passing_criteria) >= 1:
+                          markdown += '# What Went Well\n\n'
+                          for criteria in passing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                      # add failing criteria to markdown
+                      if len(failing_criteria) >= 1:
+                          markdown += '# What Went Wrong\n\n'
+                          for criteria in failing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                  else:
+                      # if only 1 criteria, add it without headers to markdown
+                      markdown = passing_criteria[0] if grade_result['correct'] else failing_criteria[0]
+                  # return markdown-like string
+                  return markdown
+
+              def main():
+                  """Analyze the output generated by Falcon and set special key/value pairs for feedback."""
+                  # did the remote execution cause an error?
+                  if executor_result['stderr'] == '':
+                      # nope! analyze the output (JSON-like string)
+                      try:
+                          # convert JSON-like string into Python dictionary
+                          results = json.loads(executor_result['stdout'])
+                          swizzle_out = results['temp/results-out.txt']
+                      except Exception as e:
+                          # if there was an error during the conversion, display it
+                          grade_result['feedback'] = executor_result['stderr']
+                      else:
+                          # did the execution of swizzled main produce an error?
+                          if results['temp/results-err.txt'] == '':
+                              # nope! we can safely use the output of swizzled main
+                              (submission_correct, passing_criteria, failing_criteria, feedback) = parse_swizzled_output(swizzle_out)
+                              # set pass/fail
+                              grade_result['correct'] = submission_correct
+                              if use_default_markdown == True:
+                                  # use default markdown for criteria/feedback
+                                  markdown_feedback = default_markdown_from_criteria(passing_criteria, failing_criteria)
+                                  total_criteria = len(failing_criteria) + len(passing_criteria)
+                                  all_feedback = markdown_feedback + '# Feedback\n\n'
+                                  if len(failing_criteria) == 0:
+                                      all_feedback += 'Your answer passed all our tests! Awesome job!'
+                                  elif len(passing_criteria) >= total_criteria / 2:
+                                      all_feedback += 'Not everything is correct yet, but you\'re close!'
+                                  else:
+                                      all_feedback += 'There\'s work left to do. Try tackling one problem at a time.'
+                                  grade_result['feedback'] = all_feedback
+                                  # grade_result['comment'] = results['temp/student-out.txt']
+                              else:
+                                  # show raw response from REX execution
+                                  grade_result['feedback'] = str(results)
+                          else:
+                              # swizzled main generated some an error, so display it!
+                              grade_result['feedback'] = 'An error occurred while testing your code.\n\nCheck to ensure these items are true:\n\n- clicking **TEST RUN** doesn\'t produce any issues\n- you\'ve followed all instructions\n- you\'ve used the correct names\n\nIf you make all these checks, but it still doesn\'t fix the error, then please contact us at *support@udacity.com* and provide a link to the quiz and a copy of your code.\n\nNOTE: If you cannot find the instructions, click **RESET QUIZ** to reset the quiz to its original state.'
+                  else:
+                      # there was an error with overall execution, so display it!
+                      grade_result['comment'] = executor_result['stderr']
+
+              main()
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs:
+              - key: '5141761099956224'
+                ref: ProgramTemplate
+            included_text_files:
+              - text: |
+                  /* eslint no-unused-vars: "off" */
+
+                  function getASTMatches(esquery, tree, selector) {
+                      var result = esquery.parse(selector);
+                      return esquery.match(tree, result);
+                  }
+
+                  function bodyElementIsNotEmpty(body) {
+                      return body[0].body.length !== 0;
+                  }
+                name: SwizzleBefore.js
+              - text: |
+                  /* global getASTMatches, bodyElementIsNotEmpty, uniqueFlavors, flavor1, flavor2 */
+
+                  ;(function () { // eslint-disable-line no-extra-semi
+                      const assert = require('chai').assert;
+                      const esprima = require('esprima');
+                      const esquery = require('esquery');
+                      const content = require('fs').readFileSync(__dirname + '/StudentMain.js', 'utf8');
+
+                      const AST = esprima.parse(content);
+                      const body = getASTMatches(esquery, AST, '[body]');
+
+                      if (bodyElementIsNotEmpty(body)) {
+                          describe('Your code', function () {
+                              it('should have a variable `uniqueFlavors`', function () {
+                                  assert.isDefined(uniqueFlavors, 'You need to define the `uniqueFlavors` variable.');
+                              });
+
+                              it('should have a variable `flavor1`', function () {
+                                  assert.isDefined(flavor1, 'You need to define the `flavor1` variable.');
+                              });
+
+                              it('should have a variable `flavor2`', function () {
+                                  assert.isDefined(flavor2, 'You need to define the `flavor2` variable.');
+                              });
+
+                              it('should use the `.add()` method three times to add required items to the set', function () {
+                                  const callsToAddMethod = getASTMatches(esquery, AST, 'CallExpression [name="add"]');
+
+                                  assert.equal(callsToAddMethod.length, 3, 'You did not use `.add()` the required 3 times.');
+                              });
+                          });
+
+                          describe('The `uniqueFlavors` object', function () {
+                              it('should contain a "chocolate" flavor object', function () {
+                                  assert.isTrue(uniqueFlavors.has(flavor1), '`uniqueFlavors` does not contain a "chocolate" flavor object');
+                              });
+
+                              it('should contain a custom flavor object', function () {
+                                  assert.isTrue(uniqueFlavors.has(flavor2), '`uniqueFlavors` does not contain your custom object');
+                              });
+                          });
+                      } else {
+                          describe('Your code', function () {
+                              it('should not be empty', function () {
+                                  assert.isOk(false, 'Your code is missing, hit the "Reset Quiz" button to reset the quiz');
+                              });
+                          });
+                      }
+
+                  }());
+                name: SwizzleAfter.js
+        answer: null
+  - id: 213349
+    key: f8afc5fb-d3e1-416f-87dc-9745d6fc09d1
+    locale: en-us
+    version: 1.0.0
+    title: Maps
+    semantic_type: Concept
+    updated_at: 'Wed Jan 25 2017 23:06:00 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 232939
+    atoms:
+      - id: 232939
+        key: b3f6b78c-4fd3-4544-8873-816ab11d1809
+        locale: en-us
+        version: 1.0.0
+        title: From Sets to Maps
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:16:44 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43224'
+          youtube_id: H5DJPfcN2P4
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/58422b43_24-transition-from-sets-to-maps-1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422b43_24-transition-from-sets-to-maps-1/24-transition-from-sets-to-maps-1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422b43_24-transition-from-sets-to-maps-1/24-transition-from-sets-to-maps-1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422b43_24-transition-from-sets-to-maps-1/24-transition-from-sets-to-maps-1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422b43_24-transition-from-sets-to-maps-1/24-transition-from-sets-to-maps-1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422b43_24-transition-from-sets-to-maps-1/hls/playlist.m3u8'
+  - id: 196725
+    key: a9340848-55d9-490a-8ebd-72da5b111578
+    locale: en-us
+    version: 1.0.0
+    title: Creating & Modifying Maps
+    semantic_type: Concept
+    updated_at: 'Sat Jan 14 2017 01:43:46 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 256123
+      - 256126
+      - 256127
+    atoms:
+      - id: 256123
+        key: f4a417af-c319-4597-b9d9-c398b2ab98cf
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 25 2017 23:12:56 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Maps
+
+          If Sets are similar to Arrays, then Maps are similar to Objects because Maps store key-value pairs similar to how objects contain named properties with values. 
+
+          Essentially, a Map is an object that lets you store key-value pairs where both the keys and the values can be objects, primitive values, or a combination of the two.
+
+          ## How to Create a Map
+
+          To create a Map, simply type:
+
+          ```js
+          const employees = new Map();
+          console.log(employees);
+          ```
+          > `Map {}`
+
+          This creates an empty Map `employee` with no key-value pairs.
+        instructor_notes: ''
+        resources: null
+      - id: 256126
+        key: 666b348b-f195-4235-b7d5-ab838fc1e67c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Apr 22 2017 04:44:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Modifying Maps
+
+          Unlike Sets, you can’t create Maps from a list of values; instead, you add key-values by using the Map’s `.set()` method. 
+
+          ```js
+          const employees = new Map();
+
+          employees.set('james.parkes@udacity.com', { 
+              firstName: 'James',
+              lastName: 'Parkes',
+              role: 'Content Developer' 
+          });
+          employees.set('julia@udacity.com', {
+              firstName: 'Julia',
+              lastName: 'Van Cleve',
+              role: 'Content Developer'
+          });
+          employees.set('richard@udacity.com', {
+              firstName: 'Richard',
+              lastName: 'Kalehoff',
+              role: 'Content Developer'
+          });
+
+          console.log(employees);
+          ```
+          > `Map {'james.parkes@udacity.com' => Object {...}, 'julia@udacity.com' => Object {...}, 'richard@udacity.com' => Object {...}}`
+
+          The `.set()` method takes two arguments. The first argument is the key, which is used to reference the second argument, the value.
+
+          To remove key-value pairs, simply use the `.delete()` method.
+
+          ```js
+          employees.delete('julia@udacity.com');
+          employees.delete('richard@udacity.com');
+          console.log(employees);
+          ```
+          > `Map {'james.parkes@udacity.com' => Object {firstName: 'James', lastName: 'Parkes', role: 'Course Developer'}}`
+
+          Again, similar to Sets, you can use the `.clear()` method to remove all key-value pairs from the Map.
+
+          ```js
+          employees.clear()
+          console.log(employees);
+          ```
+          > `Map {}`
+        instructor_notes: ''
+        resources: null
+      - id: 256127
+        key: 6d1c85b1-0012-4642-8d4b-49a982dc6bff
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Sep 05 2017 19:00:22 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > **TIP**: If you `.set()` a key-value pair to a Map that already uses the same key, you won’t receive an error, but the key-value pair will overwrite what currently exists in the Map. Also, if you try to `.delete()` a key-value that is not in a Map, you won’t receive an error, and the Map will remain unchanged.
+
+          >The `.delete()` method returns `true` if a key-value pair is successfully deleted from the `Map` object, and `false` if unsuccessful. The return value of `.set()` is the `Map` object itself if successful.
+        instructor_notes: ''
+        resources: null
+  - id: 256130
+    key: e5bcc668-11da-4ec0-84ef-d9f51e19f2b4
+    locale: en-us
+    version: 1.0.0
+    title: Working with Maps
+    semantic_type: Concept
+    updated_at: 'Sat Jan 14 2017 01:43:44 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 256131
+    atoms:
+      - id: 256131
+        key: 8fff6f20-e040-463a-9d0b-c0814072f94e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Apr 22 2017 04:45:34 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Working with Maps
+
+          After you’ve built your Map, you can use the `.has()` method to check if a key-value pair exists in your Map by passing it a key.
+
+          ```js
+          const members = new Map();
+
+          members.set('Evelyn', 75.68);
+          members.set('Liam', 20.16);
+          members.set('Sophia', 0);
+          members.set('Marcus', 10.25);
+
+          console.log(members.has('Xavier'));
+          console.log(members.has('Marcus'));
+          ```
+          > `false`<br>
+          > `true`
+
+          And you can also retrieve values from a Map, by passing a key to the `.get()` method.
+
+          ```js
+          console.log(members.get('Evelyn'));
+          ```
+          > `75.68`
+        instructor_notes: ''
+        resources: null
+  - id: 256132
+    key: e221c233-0e17-4b16-8aba-c42212c33250
+    locale: en-us
+    version: 1.0.0
+    title: Looping Through Maps
+    semantic_type: Concept
+    updated_at: 'Thu Mar 16 2017 22:27:13 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 256133
+      - 256134
+      - 261451
+      - 261450
+    atoms:
+      - id: 256133
+        key: e976b1b6-4715-4f6e-a880-c1b450544a8b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Apr 22 2017 04:47:08 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Looping Through Maps
+          You’ve created a Map, added some key-value pairs, and now you want to loop through your Map. Thankfully, you’ve got three different options to choose from:
+
+          1. Step through each key or value using the Map’s default iterator
+          2. Loop through each key-value pair using the new `for...of` loop
+          3. Loop through each key-value pair using the Map’s `.forEach()` method
+
+          ## 1. Using the MapIterator
+
+          Using both the `.keys()` and `.values()` methods on a Map will return a new iterator object called `MapIterator`. You can store that iterator object in a new variable and use `.next()` to loop through each key or value. Depending on which method you use, will determine if your iterator has access to the Map’s keys or the Map’s values.
+
+          ```js
+          let iteratorObjForKeys = members.keys();
+          iteratorObjForKeys.next();
+          ```
+          > `Object {value: 'Evelyn', done: false}`
+
+          Use `.next()` to the get the next key value.
+
+          ```js
+          iteratorObjForKeys.next();
+          ```
+          > `Object {value: 'Liam', done: false}`
+
+          And so on.
+
+          ```js
+          iteratorObjForKeys.next();
+          ```
+          > `Object {value: 'Sophia', done: false}`
+
+          On the flipside, use the `.values()` method to access the Map’s values, and then repeat the same process.
+
+          ```js
+          let iteratorObjForValues = members.values();
+          iteratorObjForValues.next();
+          ```
+          > `Object {value: 75.68, done: false}`
+        instructor_notes: ''
+        resources: null
+      - id: 256134
+        key: dca659d0-f686-4f6c-ad9c-8749d880a8d5
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Apr 22 2017 04:50:07 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 2. Using a for...of Loop
+
+          Your second option for looping through a Map is with a `for...of` loop.
+
+          ```js
+          for (const member of members) {
+            console.log(member);
+          }
+          ```
+          > ```
+           ['Evelyn', 75.68]
+           ['Liam', 20.16]
+           ['Sophia', 0]
+           ['Marcus', 10.25]
+          ```
+
+          However, when you use a `for...of` loop with a Map, you don’t exactly get back a key or a value. Instead, the key-value pair is split up into an array where the first element is the key and the second element is the value. If only there were a way to fix this?
+        instructor_notes: ''
+        resources: null
+      - id: 261451
+        key: ac6347f1-4a78-4f1a-8f4c-00e657c67521
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Sat Apr 22 2017 00:39:38 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: ''
+          semantic_type: ProgrammingQuestion
+          evaluation_id: '6350730081468416'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'submit'])
+            executor_test_code: |-
+              import falcon.util as util
+
+              util.run_program(['python', 'falcon.py', '-s', 'js_mocha', '-m', 'test'])
+            gae_grading_code: |-
+              """Provide feedback to student based on evaluation of JavaScript programming quiz."""
+
+              import json
+
+              # until we check, assume student's submission is incorrect
+              grade_result['correct'] = False
+
+              # don't use, but must set to ' ' to avoid error
+              grade_result['comment'] = ' '
+
+              # use default markdown?
+              use_default_markdown = True
+
+              def parse_swizzled_output(output):
+                  """Analyzes the swizzled output for passing/failing criteria and other feedback.
+                      
+                      Args:
+                      output (string): Output generated when running swizzled main.
+                      """
+                  # keep running total of (passed) criteria
+                  numberOfCriteria = 0
+                  numberOfPasses = 0
+                  passed_criteria = []
+                  failed_criteria = []
+                  feedback = []
+                  # split lines by newline
+                  lines = output.split('\n')
+                  # go line-by-line and find formatted tags for criteria
+                  for line in lines:
+                      if line.startswith('<PASS::>'):
+                          numberOfCriteria += 1
+                          numberOfPasses += 1
+                          # strip tag and add criteria to array
+                          passed_criteria.append(line[8:])
+                      if line.startswith('<FAIL::>'):
+                          numberOfCriteria += 1
+                          # strip tag and add criteria to array
+                          failed_criteria.append(line[8:])
+                      if line.startswith('<FEEDBACK::>'):
+                          # strip tag and add feedback to array
+                          feedback.append(line[12:])
+                  # return results
+                  return (numberOfCriteria == numberOfPasses, passed_criteria, failed_criteria, feedback)
+
+              def default_markdown_from_criteria(passing_criteria, failing_criteria):
+                  """Generates default markdown-like string based on passing/failing criteria.
+
+                      Args:
+                      passing_criteria (list): All passing criteria from quiz
+                      failing_criteria (list): All failing criteria from quiz
+                      """
+                  # init markdown-like string
+                  markdown = ''
+                  # was there more than 1 criteria?
+                  if passing_criteria + failing_criteria > 1:
+                      # add passing criteria to markdown
+                      if len(passing_criteria) >= 1:
+                          markdown += '# What Went Well\n\n'
+                          for criteria in passing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                      # add failing criteria to markdown
+                      if len(failing_criteria) >= 1:
+                          markdown += '# What Went Wrong\n\n'
+                          for criteria in failing_criteria:
+                              markdown += '<li style="list-style-type: none;">- ' + criteria + '</li>'
+                          markdown += '\n'
+                  else:
+                      # if only 1 criteria, add it without headers to markdown
+                      markdown = passing_criteria[0] if grade_result['correct'] else failing_criteria[0]
+                  # return markdown-like string
+                  return markdown
+
+              def main():
+                  """Analyze the output generated by Falcon and set special key/value pairs for feedback."""
+                  # did the remote execution cause an error?
+                  if executor_result['stderr'] == '':
+                      # nope! analyze the output (JSON-like string)
+                      try:
+                          # convert JSON-like string into Python dictionary
+                          results = json.loads(executor_result['stdout'])
+                          swizzle_out = results['temp/results-out.txt']
+                      except Exception as e:
+                          # if there was an error during the conversion, display it
+                          grade_result['feedback'] = executor_result['stderr']
+                      else:
+                          # did the execution of swizzled main produce an error?
+                          if results['temp/results-err.txt'] == '':
+                              # nope! we can safely use the output of swizzled main
+                              (submission_correct, passing_criteria, failing_criteria, feedback) = parse_swizzled_output(swizzle_out)
+                              # set pass/fail
+                              grade_result['correct'] = submission_correct
+                              if use_default_markdown == True:
+                                  # use default markdown for criteria/feedback
+                                  markdown_feedback = default_markdown_from_criteria(passing_criteria, failing_criteria)
+                                  total_criteria = len(failing_criteria) + len(passing_criteria)
+                                  all_feedback = markdown_feedback + '# Feedback\n\n'
+                                  if len(failing_criteria) == 0:
+                                      all_feedback += 'Your answer passed all our tests! Awesome job!'
+                                  elif len(passing_criteria) >= total_criteria / 2:
+                                      all_feedback += 'Not everything is correct yet, but you\'re close!'
+                                  else:
+                                      all_feedback += 'There\'s work left to do. Try tackling one problem at a time.'
+                                  grade_result['feedback'] = all_feedback
+                                  # grade_result['comment'] = results['temp/student-out.txt']
+                              else:
+                                  # show raw response from REX execution
+                                  grade_result['feedback'] = str(results)
+                          else:
+                              # swizzled main generated some an error, so display it!
+                              grade_result['feedback'] = 'An error occurred while testing your code.\n\nCheck to ensure these items are true:\n\n- clicking **TEST RUN** doesn\'t produce any issues\n- you\'ve followed all instructions\n- you\'ve used the correct names\n\nIf you make all these checks, but it still doesn\'t fix the error, then please contact us at *support@udacity.com* and provide a link to the quiz and a copy of your code.\n\nNOTE: If you cannot find the instructions, click **RESET QUIZ** to reset the quiz to its original state.'
+                  else:
+                      # there was an error with overall execution, so display it!
+                      grade_result['comment'] = executor_result['stderr']
+
+              main()
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs:
+              - key: '5141761099956224'
+                ref: ProgramTemplate
+            included_text_files:
+              - text: |
+                  /* eslint no-unused-vars: "off" */
+
+                  function getASTMatches(esquery, tree, selector) {
+                      var result = esquery.parse(selector);
+                      return esquery.match(tree, result);
+                  }
+
+                  function bodyElementIsNotEmpty(body) {
+                      return body[0].body.length !== 0;
+                  }
+                name: SwizzleBefore.js
+              - text: |
+                  /* global getASTMatches, bodyElementIsNotEmpty, members */
+
+                  ;(function () { // eslint-disable-line no-extra-semi
+                      const assert = require('chai').assert;
+                      const esprima = require('esprima');
+                      const esquery = require('esquery');
+                      const content = require('fs').readFileSync(__dirname + '/StudentMain.js', 'utf8');
+
+                      const AST = esprima.parse(content);
+                      const body = getASTMatches(esquery, AST, '[body]');
+
+                      if (bodyElementIsNotEmpty(body)) {
+                          describe('Your code', function () {
+                              it('should have a `members` variable', function () {
+                                  assert.isDefined(members, '`members` does not exist');
+                              });
+
+                              it('should use destructuring', function () {
+                                  var destructoringMatch = getASTMatches(esquery, AST, 'ForOfStatement ArrayPattern');
+
+                                  assert.equal(destructoringMatch.length, 1, 'Your code does not use array destructuring');
+                              });
+                          });
+
+                          describe('`members`', function () {
+                              it('should be a Map', function () {
+                                  assert.isTrue(members instanceof Map, '`members` should be a Map object');
+                              });
+                          });
+                      } else {
+                          describe('Your code', function () {
+                              it('should not be empty', function () {
+                                  assert.isOk(false, 'Your code is missing, hit the "Reset Quiz" button to reset the quiz');
+                              });
+                          });
+                      }
+
+                  }());
+                name: SwizzleAfter.js
+        answer: null
+      - id: 261450
+        key: b18db3a8-86ce-4408-9aaf-39ce44fa864a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Sep 05 2017 18:01:04 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 3. Using a forEach Loop
+
+          Your last option for looping through a Map is with the `.forEach()` method.
+
+          ```js
+          members.forEach((key, value) => console.log(key, value));
+          ```
+          > ```
+           'Evelyn' 75.68
+           'Liam' 20.16
+           'Sophia' 0
+           'Marcus' 10.25
+          ```
+
+          Notice how with the help of an arrow function, the `forEach` loop reads fairly straightforward. For each `value` and `key` in `members`, log the `value` and `key` to the console.
+        instructor_notes: ''
+        resources: null
+  - id: 196726
+    key: ae0439c3-436c-4c2f-ba69-8bfc7f947a6c
+    locale: en-us
+    version: 1.0.0
+    title: WeakMaps
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 22:22:25 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 256137
+      - 256139
+      - 256140
+      - 301398
+      - 256146
+    atoms:
+      - id: 256137
+        key: f61c5595-2770-49a1-b9dc-3bdbf90b883d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jan 26 2017 01:04:19 GMT+0000 (UTC)'
+        is_public: true
+        text: '> **TIP**: If you’ve gone through the WeakSets section, then this section should be somewhat of a review. WeakMaps exhibit the same behavior as a WeakSets, except WeakMaps work with key-values pairs instead of individual items.'
+        instructor_notes: ''
+        resources: null
+      - id: 256139
+        key: 1b60cad4-fcb7-4fdc-a883-9230477ab2c4
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed May 10 2017 19:52:40 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # What is a WeakMap?
+
+          A WeakMap is just like a normal Map with a few key differences:
+
+          1. a WeakMap can only contain objects as keys,
+          2. a WeakMap is not iterable which means it can’t be looped and
+          3. a WeakMap does not have a `.clear()` method.
+
+          You can create a WeakMap just like you would a normal Map, except that you use the `WeakMap` constructor.
+
+          ```js
+          const book1 = { title: 'Pride and Prejudice', author: 'Jane Austen' };
+          const book2 = { title: 'The Catcher in the Rye', author: 'J.D. Salinger' };
+          const book3 = { title: 'Gulliver’s Travels', author: 'Jonathan Swift' };
+
+          const library = new WeakMap();
+          library.set(book1, true);
+          library.set(book2, false);
+          library.set(book3, true);
+
+          console.log(library);
+          ```
+          > `WeakMap {Object {title: 'Pride and Prejudice', author: 'Jane Austen'} => true, Object {title: 'The Catcher in the Rye', author: 'J.D. Salinger'} => false, Object {title: 'Gulliver’s Travels', author: 'Jonathan Swift'} => true}`
+
+          …but if you try to add something other than an object as a key, you’ll get an error!
+
+          ```js
+          library.set('The Grapes of Wrath', false);
+          ```
+          > `Uncaught TypeError: Invalid value used as weak map key(…)`
+
+          This is expected behavior because WeakMap can only contain objects as keys. Again, similar to WeakSets, WeakMaps leverage garbage collection for easier use and maintainability.
+        instructor_notes: ''
+        resources: null
+      - id: 256140
+        key: 67d295c9-31b2-409b-aaab-4f9ab8c6fba1
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Jan 14 2017 01:59:42 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Garbage Collection
+
+          In JavaScript, memory is allocated when new values are created and is "automatically" freed up when those values are no longer needed. This process of freeing up memory after it is no longer needed is what is known as *garbage collection*.
+
+          WeakMaps take advantage of this by exclusively working with objects as keys. If you set an object to `null`, then you’re essentially deleting the object. And when JavaScript’s garbage collector runs, the memory that object previously occupied will be freed up to be used later in your program.
+
+          ```js
+          book1 = null;
+          console.log(library);
+          ```
+          > `WeakMap {Object {title: 'The Catcher in the Rye', author: 'J.D. Salinger'} => false, Object {title: 'Gulliver’s Travels', author: 'Jonathan Swift'} => true}`
+        instructor_notes: ''
+        resources: null
+      - id: 301398
+        key: 147acdd2-2fb0-4ffc-8b06-7ad35c5609c2
+        locale: en-us
+        version: 1.0.0
+        title: WeakMaps Animation
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:43:24 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '54437'
+          youtube_id: sUE_JjiF_q4
+          subtitles: []
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/59011d62_ud356-l3-weakmaps-animation/ud356-l3-weakmaps-animation_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/59011d62_ud356-l3-weakmaps-animation/ud356-l3-weakmaps-animation_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/59011d62_ud356-l3-weakmaps-animation/ud356-l3-weakmaps-animation_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/59011d62_ud356-l3-weakmaps-animation/ud356-l3-weakmaps-animation_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/59011d62_ud356-l3-weakmaps-animation/hls/playlist.m3u8'
+      - id: 256146
+        key: 6774b4fd-8305-40ef-b5cc-63cf9e60ab4b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Jan 14 2017 02:00:50 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          What makes this so useful is you don’t have to worry about deleting keys that are referencing deleted objects in your WeakMaps, JavaScript does it for you! When an object is deleted, the object key will also be deleted from the WeakMap when garbage collection runs. This makes WeakMaps useful in situations where you want an efficient, lightweight solution for creating groupings of objects with metadata.
+
+          The point in time when garbage collection happens is dependent on a lot of different factors. Check out [MDN’s documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management#Garbage_collection) to learn more about the algorithms used to handle garbage collection in JavaScript.
+        instructor_notes: ''
+        resources: null
+  - id: 213352
+    key: c445893d-48a1-422c-9201-f69b4cda71d8
+    locale: en-us
+    version: 1.0.0
+    title: Promises Intro
+    semantic_type: Concept
+    updated_at: 'Fri Dec 23 2016 04:59:18 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 232940
+    atoms:
+      - id: 232940
+        key: 98c39f5d-7e0c-43a1-90ed-e0dc4b3287fe
+        locale: en-us
+        version: 1.0.0
+        title: Promises Intro
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:16:23 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43141'
+          youtube_id: 8L1a-_c8mCg
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/583f7c74_40-promises-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c74_40-promises-intro/40-promises-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c74_40-promises-intro/40-promises-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c74_40-promises-intro/40-promises-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c74_40-promises-intro/40-promises-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c74_40-promises-intro/hls/playlist.m3u8'
+  - id: 196727
+    key: efb32aa3-9b21-4f1e-acf1-162d0498472b
+    locale: en-us
+    version: 1.0.0
+    title: Promises
+    semantic_type: Concept
+    updated_at: 'Sat Jan 14 2017 02:07:18 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 256147
+      - 256148
+      - 256149
+      - 256150
+    atoms:
+      - id: 256147
+        key: d5c3f1b5-2e0a-44f5-888d-03e4d0b14cc1
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 16 2017 23:33:51 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # Promises
+          A JavaScript Promise is created with the new [Promise constructor function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) - `new Promise()`. A promise will let you start some work that will be done **asynchronously** and let you get back to your regular work. When you create the promise, you must give it the code that will be run asynchronously. You provide this code as the argument of the constructor function:
+
+          ```js
+          new Promise(function () {
+              window.setTimeout(function createSundae(flavor = 'chocolate') {
+                  const sundae = {};
+                  // request ice cream
+                  // get cone
+                  // warm up ice cream scoop
+                  // scoop generous portion into cone!
+              }, Math.random() * 2000);
+          });
+          ```
+
+          This code creates a promise that will start in a few seconds after I make the request. Then there are a number of steps that need to be made in the `createSundae` function. 
+
+          ## Indicated a Successful Request or a Failed Request
+
+          But once that's all done, how does JavaScript notify us that it's finished and ready for us to pick back up? It does that by passing two functions into our initial function. Typically we call these `resolve` and `reject`.
+        instructor_notes: ''
+        resources: null
+      - id: 256148
+        key: 6ad64ae8-4bdc-40fe-91e9-513df3823a15
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Jan 14 2017 02:04:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          The function gets passed to the function we provide the Promise constructor - typically the word "resolve" is used to indicate that this function should be called when the request completes successfully. Notice the `resolve` on the first line:
+
+          ```js
+          new Promise(function (resolve, reject) {
+              window.setTimeout(function createSundae(flavor = 'chocolate') {
+                  const sundae = {};
+                  // request ice cream
+                  // get cone
+                  // warm up ice cream scoop
+                  // scoop generous portion into cone!
+                  resolve(sundae);
+              }, Math.random() * 2000);
+          });
+          ```
+
+          Now when the sundae has been successfully created, it calls the `resolve` method and passes it the data we want to return - in this case the data that's being returned is the completed sundae. So the `resolve` method is used to indicate that the request is complete and that it completed *successfully*. 
+        instructor_notes: ''
+        resources: null
+      - id: 256149
+        key: 4cd01a23-da42-4937-9ab6-dd6a621fc2c3
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 16 2017 23:48:06 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          If there is a problem with the request and it couldn't be completed, then we could use the second function that's passed to the function. Typically, this function is stored in an identifier called "reject" to indicate that this function should be used if the request fails for some reason. Check out the `reject` on the first line:
+
+          ```js
+          new Promise(function (resolve, reject) {
+              window.setTimeout(function createSundae(flavor = 'chocolate') {
+                  const sundae = {};
+                  // request ice cream
+                  // get cone
+                  // warm up ice cream scoop
+                  // scoop generous portion into cone!
+                  if ( /* iceCreamConeIsEmpty(flavor) */ ) {
+                      reject(`Sorry, we're out of that flavor :-(`);
+                  }
+                  resolve(sundae);
+              }, Math.random() * 2000);
+          });
+          ```
+
+          So the `reject` method is used when the request *could not be completed*. Notice that even though the request fails, we can still return data - in this case we're just returning text that says we don't have the desired ice cream flavor.
+        instructor_notes: ''
+        resources: null
+      - id: 256150
+        key: 2f74361b-0a7d-4fc0-9b8d-4581d4db8d22
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 16 2017 23:50:46 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          A Promise constructor takes a function that will run and then, after some amount of time, will either complete successfully (using the `resolve` method) or unsuccessfully (using the `reject` method). When the outcome has been finalized (the request has either completed successfully or unsuccessfully), the promise is now *fulfilled* and will notify us so we can decide what to do with the response.
+
+          ## Promises Return Immediately
+          The first thing to understand is that a Promise will immediately return an object.
+
+          ```js
+          const myPromiseObj = new Promise(function (resolve, reject) {
+              // sundae creation code
+          });
+          ```
+
+          That object has a `.then()` method on it that we can use to have it notify us if the request we made in the promise was either successful or failed. The `.then()` method takes two functions:
+
+          1. the function to run if the request completed successfully
+          * the function to run if the request failed to complete
+
+          ```js
+          mySundae.then(function(sundae) {
+              console.log(`Time to eat my delicious ${sundae}`);
+          }, function(msg) {
+              console.log(msg);
+              self.goCry(); // not a real method
+          });
+          ```
+
+          As you can see, the first function that's passed to `.then()` will be called and passed the data that the Promise's `resolve` function used. In this case, the function would receive the `sundae` object. The second function will be called and passed the data that the Promise's `reject` function was called with. In this case, the function receives the error message "Sorry, we're out of that flavor :-(" that the `reject` function was called with in the Promise code above. 
+        instructor_notes: ''
+        resources: null
+  - id: 213359
+    key: 70ec68a8-7d13-4ec7-8b98-303d7bbc78a8
+    locale: en-us
+    version: 1.0.0
+    title: More Promises
+    semantic_type: Concept
+    updated_at: 'Tue Jun 06 2017 00:12:49 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 232941
+      - 327896
+    atoms:
+      - id: 232941
+        key: a4c106d8-657c-4b1c-9862-c000f852d1de
+        locale: en-us
+        version: 1.0.0
+        title: More Promises
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:16:31 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43225'
+          youtube_id: 8CxDIR2tH9A
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/58422c79_45-handoff/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422c79_45-handoff/45-handoff_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422c79_45-handoff/45-handoff_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422c79_45-handoff/45-handoff_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422c79_45-handoff/45-handoff_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422c79_45-handoff/hls/playlist.m3u8'
+      - id: 327896
+        key: 8fd703f1-21c0-477e-84d5-ffcbc6ef3ab6
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 06 2017 00:12:49 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Check out our [Promises course](https://www.udacity.com/course/javascript-promises--ud898) where we'll take a deep dive into:
+
+          * JavaScript Promises
+          * how to handle returned data and errors
+          * build an app called Exoplanet Explorer that uses JavaScript Promises to fetch remote data asynchronously
+        instructor_notes: ''
+        resources: null
+  - id: 213351
+    key: 8e7ad09f-5f31-4a62-b6ee-9fed8b177474
+    locale: en-us
+    version: 1.0.0
+    title: Proxies Intro
+    semantic_type: Concept
+    updated_at: 'Fri Dec 23 2016 05:00:34 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 232942
+    atoms:
+      - id: 232942
+        key: 8d305bd8-295f-4ea4-a036-8e7407c682ea
+        locale: en-us
+        version: 1.0.0
+        title: Proxies Intro
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:20:03 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43143'
+          youtube_id: lYXhxgt6suk
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/583f7c85_46-proxy-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c85_46-proxy-intro/46-proxy-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c85_46-proxy-intro/46-proxy-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c85_46-proxy-intro/46-proxy-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c85_46-proxy-intro/46-proxy-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c85_46-proxy-intro/hls/playlist.m3u8'
+  - id: 196728
+    key: 2bae49bd-919f-4051-a066-cb89a9a21b6f
+    locale: en-us
+    version: 1.0.0
+    title: Proxies
+    semantic_type: Concept
+    updated_at: 'Tue Jan 17 2017 19:20:01 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 256151
+      - 256152
+      - 256153
+    atoms:
+      - id: 256151
+        key: b2b2acef-fa60-4d0f-8257-1985ee50eeeb
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Jan 14 2017 02:09:50 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          To create a proxy object, we use the Proxy constructor - `new Proxy();`. The proxy constructor takes two items:
+          * the object that it will be the proxy for
+          * an object containing the list of methods it will handle for the proxied object
+
+          The second object is called the **handler**.
+
+          ## A Pass Through Proxy
+          The simplest way to create a proxy is to provide an object and then an empty handler object.
+
+          ```js
+          var richard = {status: 'looking for work'};
+          var agent = new Proxy(richard, {});
+
+          agent.status; // returns 'looking for work'
+          ```
+
+          The above doesn't actually do anything special with the proxy - it just passes the request directly to the source object! If we want the proxy object to actually intercept the request, that's what the handler object is for!
+        instructor_notes: ''
+        resources: null
+      - id: 256152
+        key: 0e443618-1eb3-4001-ab76-5cf0d1f2fa5d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Jan 14 2017 02:12:07 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          The key to making Proxies useful is the handler object that's passed as the second object to the Proxy constructor. The handler object is made up of a methods that will be used for property access. Let's look at the `get`:
+
+          ## Get Trap
+          The `get` trap is used to "intercept" calls to properties:
+
+          ```js
+          const richard = {status: 'looking for work'};
+          const handler = {
+              get(target, propName) {
+                  console.log(target); // the `richard` object, not `handler` and not `agent`
+                  console.log(propName); // the name of the property the proxy (`agent` in this case) is checking
+              }
+          };
+          const agent = new Proxy(richard, handler);
+          agent.status; // logs out the richard object (not the agent object!) and the name of the property being accessed (`status`)
+          ```
+
+          In the code above, the `handler` object has a `get` method (called a "trap" since it's being used in a Proxy). When the code `agent.status;` is run on the last line, because the `get` trap exists, it "intercepts" the call to get the `status` property and runs the `get` trap function. This will log out the target object of the proxy (the `richard` object) and then logs out the name of the property being requested (the `status` property). _And that's all it does!_ It doesn't actually log out the property! This is important - *if a trap is used, you need to make sure you provide all the functionality for that specific trap*.
+
+          ### Accessing the Target object from inside the proxy
+          If we wanted to actually provide the real result, we would need to return the property on the target object:
+
+          ```js
+          const richard = {status: 'looking for work'};
+          const handler = {
+              get(target, propName) {
+                  console.log(target);
+                  console.log(propName);
+                  return target[propName];
+              }
+          };
+          const agent = new Proxy(richard, handler);
+          agent.status; // (1)logs the richard object, (2)logs the property being accessed, (3)returns the text in richard.status
+          ```
+
+          Notice we added the `return target[propName];` as the last line of the `get` trap. This will access the property on the target object and will return it. 
+
+          ### Having the proxy return info, directly
+          Alternatively, we could use the proxy to provide direct feedback:
+
+          ```js
+          const richard = {status: 'looking for work'};
+          const handler = {
+              get(target, propName) {
+                  return `He's following many leads, so you should offer a contract as soon as possible!`;
+              }
+          };
+          const agent = new Proxy(richard, handler);
+          agent.status; // returns the text `He's following many leads, so you should offer a contract as soon as possible!`
+          ```
+
+          With this code, the Proxy doesn't even check the target object, it just directly responds to the calling code.
+
+          So the `get` trap will take over whenever any property on the proxy is accessed. If we want to intercept calls to _change_ properties, then the `set` trap needs to be used!
+
+          The `set` trap is used for intercepting code that will _change a property_. The `set` trap receives:
+          the object it proxies
+          the property that is being set
+          the new value for the proxy
+
+          ```js
+          const richard = {status: 'looking for work'};
+          const handler = {
+              set(target, propName, value) {
+                  if (propName === 'payRate') { // if the pay is being set, take 15% as commission
+                      value = value * 0.85;
+                  }
+                  target[propName] = value;
+              }
+          };
+          const agent = new Proxy(richard, handler);
+          agent.payRate = 1000; // set the actor's pay to $1,000
+          agent.payRate; // $850 the actor's actual pay
+          ```
+
+          In the code above, notice that the `set` trap checks to see if the `payRate` property is being set. If it is, then the proxy (the agent) takes 15 percent off the top for her own commission! Then, when the actor's pay is set to one thousand dollars, since the `payRate` property was used, the code took 15% off the top and set the actual `payRate` property to `850`;
+        instructor_notes: ''
+        resources: null
+      - id: 256153
+        key: 654e96d2-936a-4841-aff4-3853eba6c093
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 16 2017 21:39:43 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Other Traps
+          So we've looked at the `get` and `set` traps (which are probably the ones you'll use most often), but there are actually a total of 13 different traps that can be used in a handler!
+
+          1. [the get trap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/get) - lets the proxy handle calls to property access
+          2. [the set trap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/set) - lets the proxy handle setting the property to a new value
+          3. [the apply trap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/apply) - lets the proxy handle being invoked (the object being proxied is a function)
+          4. [the has trap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/has) - lets the proxy handle the using `in` operator
+          5. [the deleteProperty trap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/deleteProperty) - lets the proxy handle if a property is deleted
+          6. [the ownKeys trap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/ownKeys) - lets the proxy handle when all keys are requested
+          7. [the construct trap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/construct) - lets the proxy handle when the proxy is used with the `new` keyword as a constructor
+          8. [the defineProperty trap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/defineProperty) - lets the proxy handle when defineProperty is used to create a new property on the object
+          9. [the getOwnPropertyDescriptor trap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/getOwnPropertyDescriptor) - lets the proxy handle getting the property's descriptors
+          10. [the preventExtenions trap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/preventExtensions) - lets the proxy handle calls to `Object.preventExtensions()` on the proxy object
+          11. [the isExtensible trap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/isExtensible) - lets the proxy handle calls to `Object.isExtensible` on the proxy object
+          12. [the getPrototypeOf trap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/getPrototypeOf) - lets the proxy handle calls to `Object.getPrototypeOf` on the proxy object
+          13. [the setPrototypeOf trap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/setPrototypeOf) - lets the proxy handle calls to `Object.setPrototypeOf` on the proxy object
+
+          As you can see, there are a lot of traps that let the proxy manage how it handles calls back and forth to the proxied object.
+        instructor_notes: ''
+        resources: null
+  - id: 257554
+    key: cea200b2-165e-463b-b223-92efcbe91288
+    locale: en-us
+    version: 1.0.0
+    title: Proxies vs. ES5 Getter/Setter
+    semantic_type: Concept
+    updated_at: 'Tue Jan 17 2017 19:21:10 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 257555
+    atoms:
+      - id: 257555
+        key: 078597d6-6197-4694-b7ec-19243eb07fbb
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 17 2017 19:20:59 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+
+          Initially, it can be a bit unclear as to why proxies are all that beneficial when there are already getter and setter methods provided in ES5. With ES5's getter and setter methods, you need to know _before hand_ the properties that are going to be get/set:
+
+          ```js
+          var obj = {
+              _age: 5,
+              _height: 4,
+              get age() {
+                  console.log(`getting the "age" property`);
+                  console.log(this._age);
+              },
+              get height() {
+                  console.log(`getting the "height" property`);
+                  console.log(this._height);
+              }
+          };
+          ```
+
+          With the code above, notice that we have to set `get age()` and `get height()` when initializing the object. So when we call the code below, we'll get the following results:
+
+          ```js
+          obj.age; // logs 'getting the "age" property' & 5
+          obj.height; // logs 'getting the "height" property' & 4
+          ```
+
+          But look what happens when we now _add a new property_ to the object:
+
+          ```js
+          obj.weight = 120; // set a new property on the object
+          obj.weight; // logs just 120
+          ```
+
+          Notice that a `getting the "weight" property` message wasn't displayed like the `age` and `height` properties produced.
+
+          With ES6 Proxies, we *do not need to know the properties beforehand*:
+
+          ```js
+          const proxyObj = new Proxy({age: 5, height: 4}, {
+              get(targetObj, property) {
+                  console.log(`getting the ${property} property`);
+                  console.log(targetObj[property]);
+              }
+          });
+
+          proxyObj.age; // logs 'getting the age property' & 5
+          proxyObj.height; // logs 'getting the height property' & 4
+          ```
+
+          All well and good, just like the ES5 code, but look what happens when we add a new property:
+
+          ```js
+          proxyObj.weight = 120; // set a new property on the object
+          proxyObj.weight; // logs 'getting the weight property' & 120
+          ```
+
+          See that?!? A `weight` property was added to the proxy object, and when it was later retrieved, it displayed a log message!
+
+          So some functionality of proxy objects may seem similar to existing ES5 getter/setter methods. But with proxies, you do not need to initialize the object with getters/setters for each property when the object is initialized.
+        instructor_notes: ''
+        resources: null
+  - id: 257556
+    key: 678533c6-6787-4261-a5e7-c2361a2bc1e2
+    locale: en-us
+    version: 1.0.0
+    title: Proxies Recap
+    semantic_type: Concept
+    updated_at: 'Tue Jan 17 2017 19:26:38 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 257559
+    atoms:
+      - id: 257559
+        key: 2926bd68-1111-464a-ba9d-637513c92622
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 17 2017 19:26:21 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          A proxy object sits between a real object and the calling code. The calling code interacts with the proxy instead of the real object. To create a proxy:
+
+          * use the `new Proxy()` constructor
+            * pass the object being proxied as the first item
+            * the second object is a handler object
+          * the handler object is made up of 1 of 13 different "traps"
+          * a trap is a function that will intercept calls to properties let you run code
+          * if a trap is not defined, the default behavior is sent to the target object
+
+          Proxies are a powerful new way to create and manage the interactions between objects.
+        instructor_notes: ''
+        resources: null
+  - id: 196729
+    key: 87001b69-93ed-4934-b221-bf6008ea49e0
+    locale: en-us
+    version: 1.0.0
+    title: Generators
+    semantic_type: Concept
+    updated_at: 'Tue Jan 17 2017 19:57:52 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 257560
+      - 257561
+      - 257563
+    atoms:
+      - id: 257560
+        key: 00f81cb0-ef2c-4bcf-a36e-0d9d53dceb08
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 17 2017 19:27:25 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Whenever a function is invoked, the JavaScript engine starts at the top of the function and runs every line of code until it gets to the bottom. There's no way to stop the execution of the function in the middle and pick up again at some later point. This **"run-to-completion"** is the way it's always been:
+
+          ```js
+          function getEmployee() {
+              console.log('the function has started');
+
+              const names = ['Amanda', 'Diego', 'Farrin', 'James', 'Kagure', 'Kavita', 'Orit', 'Richard'];
+
+              for (const name of names) {
+                  console.log(name);
+              }
+
+              console.log('the function has ended');
+          }
+
+          getEmployee();
+          ```
+
+          Running the code above produces the following output on the console:
+
+          ```text
+          the function has started
+          Amanda
+          Diego
+          Farrin
+          James
+          Kagure
+          Kavita
+          Orit
+          Richard
+          the function has ended
+          ```
+
+          But what if you want to print out the first 3 employee names then stop for a bit, then, at some later point, you want to continue where you left off and print out more employee names. With a regular function, you can't do this since there's no way to "pause" a function in the middle of its execution.
+        instructor_notes: ''
+        resources: null
+      - id: 257561
+        key: 741dd448-79bb-4b33-8da3-f65db13a4a65
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 16 2017 22:26:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Pausable Functions
+
+
+          If we _do_ want to be able to pause a function mid-execution, then we'll need a new type of function available to us in ES6 - generator functions! Let's look at one:
+
+          ```js
+          function* getEmployee() {
+              console.log('the function has started');
+
+              const names = ['Amanda', 'Diego', 'Farrin', 'James', 'Kagure', 'Kavita', 'Orit', 'Richard'];
+
+              for (const name of names) {
+                  console.log( name );
+              }
+
+              console.log('the function has ended');
+          }
+          ```
+
+          Notice the asterisk (i.e. `*`) right after the `function` keyword? That asterisk indicates that this function is actually a generator!
+
+          Now check out what happens when we try running this function:
+
+          ```js
+          getEmployee();
+
+          // this is the response I get in Chrome:
+          getEmployee {[[GeneratorStatus]]: "suspended", [[GeneratorReceiver]]: Window}
+          ```
+
+          ...umm, what? Where's the "the function has started" text from the top of the function? And why didn't we get any names printed to the console? Those are good questions, but first, a quiz.
+        instructor_notes: ''
+        resources: null
+      - id: 257563
+        key: 4705434e-afb0-4f88-964d-6c85a76fbf2f
+        locale: en-us
+        version: 1.0.0
+        title: Generators Quiz
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Sat Apr 22 2017 04:52:57 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Which of the following are valid generators? Pay attention to the placement of the asterisk.
+
+            If you're not sure, try running them in your browser's console.
+          correct_feedback: |-
+            The asterisk of the generator can actually be placed anywhere between the `function` keyword and the function's name. So all three of these are valid generator declarations!
+
+            The community has coalesced into having the asterisk appear right next to the `function` keyword (i.e. `function* name() { … }`). But there others that recommend having the asterisk touch the function's name instead. So it's important to realize that the asterisk indicates that it is a generator but that the placement of the asterisk is not important.
+          video_feedback: null
+          default_feedback: Try again! The asterisk of the generator can actually be placed anywhere between the `function` keyword and the function's name.
+          answers:
+            - id: a1484681360925
+              text: '`function* names() { /* ... */ }`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1484681489259
+              text: '`function * names() { /* ... */ }`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1484681497507
+              text: '`function *names() { /* ... */ }`'
+              is_correct: true
+              incorrect_feedback: null
+  - id: 257565
+    key: 4ff98c20-fd97-4d86-ab2d-9d9ee659658c
+    locale: en-us
+    version: 1.0.0
+    title: Generators & Iterators
+    semantic_type: Concept
+    updated_at: 'Thu Mar 16 2017 22:11:02 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 283059
+      - 257566
+      - 257567
+      - 257569
+      - 257570
+      - 257572
+    atoms:
+      - id: 283059
+        key: 9f5b133b-83e9-4c1a-a6c8-9472703045df
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 16 2017 22:11:02 GMT+0000 (UTC)'
+        is_public: true
+        text: '# Generators & Iterators'
+        instructor_notes: ''
+        resources: null
+      - id: 257566
+        key: 134be4e2-e390-4931-b153-6c6b6e97e156
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 17 2017 19:35:36 GMT+0000 (UTC)'
+        is_public: true
+        text: '> **WARNING:** We looked at iteration in a previous section, so if you''re rusty on it, better check it out again because they''re resurfacing here with generators!'
+        instructor_notes: ''
+        resources: null
+      - id: 257567
+        key: f276503a-a07e-4233-8b54-645494003a3c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 16 2017 22:16:38 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          When a generator is invoked, it doesn't actually run any of the code inside the function. Instead, it creates and returns an iterator. This iterator can then be used to execute the actual generator's inner code.
+
+          ```js
+          const generatorIterator = getEmployee();
+          generatorIterator.next();
+          ```
+          **Produces the code we expect:**
+
+          ```text
+          the function has started
+          Amanda
+          Diego
+          Farrin
+          James
+          Kagure
+          Kavita
+          Orit
+          Richard
+          the function has ended
+          ```
+
+          Now if you tried the code out for yourself, the first time the iterator's `.next()` method was called it ran all of the code inside the generator. Did you notice anything? The code never paused! So how do we get this magical, pausing functionality?
+        instructor_notes: ''
+        resources: null
+      - id: 257569
+        key: b89513a3-1513-4129-bcf2-b12edd75676e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 16 2017 22:21:50 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## The Yield Keyword
+
+          The `yield` keyword is new and was introduced with ES6. It can only be used inside generator functions. `yield` is what causes the generator to pause. Let's add `yield` to our generator and give it a try:
+
+          ```js
+          function* getEmployee() {
+              console.log('the function has started');
+
+              const names = ['Amanda', 'Diego', 'Farrin', 'James', 'Kagure', 'Kavita', 'Orit', 'Richard'];
+
+              for (const name of names) {
+                  console.log(name);
+                  yield;
+              }
+
+              console.log('the function has ended');
+          }
+          ```
+
+          Notice that there's now a `yield` inside the `for...of` loop. If we invoke the generator (which produces an iterator) and then call `.next()`, we'll get the following output:
+
+          ```js
+          const generatorIterator = getEmployee();
+          generatorIterator.next();
+          ```
+
+          **Logs the following to the console:**
+          ```text
+          the function has started
+          Amanda
+          ```
+
+          It's paused! But to really be sure, let's check out the next iteration:
+
+          ```js
+          generatorIterator.next();
+          ```
+
+          **Logs the following to the console:**
+          ```text
+          Diego
+          ```
+
+          So it remembered exactly where we left off! It took the next item in the array (Diego), logged it, and then hit the `yield` again, so it paused again.
+
+          Now pausing is all well and good, but what if we could send data from the generator back to the "outside" world? We can do this with `yield`.
+        instructor_notes: ''
+        resources: null
+      - id: 257570
+        key: d4e271f0-07a6-47db-b5f8-3e583b939ccc
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 17 2017 19:42:32 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Yielding Data to the "Outside" World
+
+
+          Instead of logging the names to the console and then pausing, let's have the code "return" the name and then pause.
+
+
+          ```js
+          function* getEmployee() {
+              console.log('the function has started');
+
+              const names = ['Amanda', 'Diego', 'Farrin', 'James', 'Kagure', 'Kavita', 'Orit', 'Richard'];
+
+              for (const name of names) {
+                  yield name;
+              }
+
+              console.log('the function has ended');
+          }
+          ```
+
+          Notice that now instead of `console.log(name);` that it's been switched to `yield name;`. With this change, when the generator is run, it will "yield" the name back out to the function _and then pause its execution_. Let's see this in action:
+
+          ```js
+          const generatorIterator = getEmployee();
+          let result = generatorIterator.next();
+          result.value // is "Amanda"
+
+          generatorIterator.next().value // is "Diego"
+          generatorIterator.next().value // is "Farrin"
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 257572
+        key: ad064c5c-a57d-4ae0-a90d-1e979784f70b
+        locale: en-us
+        version: 1.0.0
+        title: Yield Quiz
+        semantic_type: RadioQuizAtom
+        updated_at: 'Sat Apr 22 2017 04:53:34 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            How many times will the iterator's `.next()` method need to be called to fully complete/"use up" the `udacity` generator function below:
+
+            ```js
+            function* udacity() {
+                yield 'Richard';
+                yield 'James'
+            }
+            ```
+          correct_feedback: |-
+            It will be called one more time than there are `yield` expressions in the generator function.
+
+            The first call to `.next()` will start the function and run to the first `yield`. The second call to `.next()` will pick up where things left off and run to the second `yield`. The third and final call to `.next()` will pick up where things left off again and run to the end of the function.
+          video_feedback: null
+          default_feedback: It will be called one more time than there are `yield` expressions in the generator function.
+          answers:
+            - id: a1484682161376
+              text: 0 times
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484682236438
+              text: 1 time
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484682239702
+              text: 2 times
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484682243203
+              text: 3 times
+              is_correct: true
+              incorrect_feedback: null
+  - id: 257573
+    key: 2e54a053-1e9e-4b3f-b236-98270e6d628d
+    locale: en-us
+    version: 1.0.0
+    title: Sending Data into/out of a Generator
+    semantic_type: Concept
+    updated_at: 'Sat Apr 22 2017 05:17:45 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 257575
+      - 299613
+      - 257576
+    atoms:
+      - id: 257575
+        key: bdc453b3-4c9f-4764-80c7-51479b6b6078
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Apr 22 2017 04:59:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+
+          So we can get data out of a generator by using the yield keyword. We can also send data back _into_ the generator, too. We do this using the `.next()` method:
+
+          ```js
+          function* displayResponse() {
+              const response = yield;
+              console.log(`Your response is "${response}"!`);
+          }
+
+          const iterator = displayResponse();
+
+          iterator.next(); // starts running the generator function
+          iterator.next('Hello Udacity Student'); // send data into the generator
+          // the line above logs to the console: Your response is "Hello Udacity Student"!
+          ```
+
+          Calling `.next()` with data (i.e. `.next('Richard')`) will send data into the generator function where it last left off. It will "replace" the yield keyword with the data that you provided.
+
+          So the `yield` keyword is used to pause a generator _and_ used to send data outside of the generator, and then the `.next()` method is used to pass data _into_ the generator. Here's an example that makes use of both of these to cycle through a list of names one at a time:
+
+          ```js
+          function* getEmployee() {
+              const names = ['Amanda', 'Diego', 'Farrin', 'James', 'Kagure', 'Kavita', 'Orit', 'Richard'];
+              const facts = [];
+
+              for (const name of names) {
+                  // yield *out* each name AND store the returned data into the facts array
+                  facts.push(yield name); 
+              }
+
+              return facts;
+          }
+
+          const generatorIterator = getEmployee();
+
+          // get the first name out of the generator
+          let name = generatorIterator.next().value;
+           
+          // pass data in *and* get the next name
+          name = generatorIterator.next(`${name} is cool!`).value; 
+
+          // pass data in *and* get the next name
+          name = generatorIterator.next(`${name} is awesome!`).value; 
+
+          // pass data in *and* get the next name
+          name = generatorIterator.next(`${name} is stupendous!`).value; 
+
+          // you get the idea
+          name = generatorIterator.next(`${name} is rad!`).value; 
+          name = generatorIterator.next(`${name} is impressive!`).value;
+          name = generatorIterator.next(`${name} is stunning!`).value;
+          name = generatorIterator.next(`${name} is awe-inspiring!`).value;
+
+          // pass the last data in, generator ends and returns the array
+          const positions = generatorIterator.next(`${name} is magnificent!`).value; 
+
+          // displays each name with description on its own line
+          positions.join('\n'); 
+          ```
+
+        instructor_notes: ''
+        resources: null
+      - id: 299613
+        key: f856b968-e773-4a7f-a652-9d8ed8950cc6
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed May 10 2017 20:06:30 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            What will happen if the following code is run?
+
+            ```js
+            function* createSundae() {
+                const toppings = [];
+                
+                toppings.push(yield);
+                toppings.push(yield);
+                toppings.push(yield);
+                
+                return toppings;
+            }
+
+            var it = createSundae();
+            it.next('hot fudge');
+            it.next('sprinkles');
+            it.next('whipped cream');
+            it.next();
+            ```
+          correct_feedback: Because the first call to `.next()` passes in some data. But that data doesn't get stored anywhere. The last call to `.next()` should have some data since it's being yielded into the last call to `toppings.push()`.
+          video_feedback: null
+          default_feedback: |-
+            Remember that the _first_ call to `.next()` will initiate the generator which will stop at the first `yield`. The _second_ call to `.next()` is the call that will supply that `yield` with the data.
+
+            Count how many yields there are and when data is passed into each of the calls to `.next()`.
+          answers:
+            - id: a1492837873048
+              text: The `toppings` array will have `undefined` as its last item
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1492837959516
+              text: An error will occur
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1492838057271
+              text: 'The generator will be paused, waiting for it''s last call to `.next()`'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 257576
+        key: 12144750-edfa-4370-a7e9-b8f941211444
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 17 2017 19:57:35 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Generators are a powerful new kind of function that is able to pause its execution while also maintaining its own state. Generators are great for iterating over a list of items one at a time so you can handle each item on its own before moving on to the next one. You can also use generators to handle nested callbacks. For example, let's say that an app needs to get a list of all repositories _and_ the number of times they've been starred. Well, before you can get the number of stars for each repository, you'd need to get the user's information. Then after retrieving the user's profile the code can then take that information to find all of the repositories. 
+
+          Generators will also be used heavily in upcoming additions to the JavaScript language. One upcoming feature that will make use of them is [async functions](https://github.com/tc39/ecmascript-asyncawait).
+        instructor_notes: ''
+        resources: null
+  - id: 196715
+    key: 390df346-c727-4a85-9048-e4787fb0b751
+    locale: en-us
+    version: 1.0.0
+    title: Lesson 3 Summary
+    semantic_type: Concept
+    updated_at: 'Fri Dec 23 2016 05:01:24 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 232944
+    atoms:
+      - id: 232944
+        key: a5a6d73b-ee41-4f51-80c0-348823a6bd85
+        locale: en-us
+        version: 1.0.0
+        title: Lesson 3 Summary
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:21:22 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43144'
+          youtube_id: xE4impdnz3c
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/583f7c8a_65-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c8a_65-outro/65-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c8a_65-outro/65-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c8a_65-outro/65-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c8a_65-outro/65-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7c8a_65-outro/hls/playlist.m3u8'

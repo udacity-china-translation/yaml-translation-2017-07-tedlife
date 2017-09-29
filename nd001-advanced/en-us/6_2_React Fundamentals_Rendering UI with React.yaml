@@ -1,0 +1,904 @@
+id: 298448
+key: 7f45040c-7d92-476d-8ad4-36853d6aa111
+locale: en-us
+version: 1.0.0
+title: Rendering UI with React
+semantic_type: Lesson
+updated_at: 'Sat Aug 12 2017 21:55:15 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/June/59519538_2-2-rendering-ui-with-react-2x/2-2-rendering-ui-with-react-2x.jpg'
+  width: 592
+  height: 640
+video: null
+summary: 'You''ll learn how React creates and renders elements. You''ll also convert manual element creation to JSX, use create-react-app to scaffold projects, and get a brief intro to Components.'
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+career_portal_experience_levels: null
+_concepts_ids:
+  - 328437
+  - 328438
+  - 328461
+  - 328469
+  - 328474
+_project_id: null
+concepts:
+  - id: 328437
+    key: 9d9d9885-c3c7-4296-ab29-ba51045d7615
+    locale: en-us
+    version: 1.0.0
+    title: Rendering UI Intro
+    semantic_type: Concept
+    updated_at: 'Mon Jun 26 2017 22:22:59 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 340209
+      - 328441
+      - 335744
+    atoms:
+      - id: 340209
+        key: 859e9121-b060-4fe1-84ab-b320cbb7b369
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 22:22:59 GMT+0000 (UTC)'
+        is_public: true
+        text: ' '
+        instructor_notes: ''
+        resources: null
+      - id: 328441
+        key: 310f498b-f159-40fd-8394-476b36a99e8b
+        locale: en-us
+        version: 1.0.0
+        title: UI Rendering in React
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:44:13 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57716'
+          youtube_id: H8zoSVe_CL8
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d6d7_01-ui-rendering-in-react/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6d7_01-ui-rendering-in-react/01-ui-rendering-in-react_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6d7_01-ui-rendering-in-react/01-ui-rendering-in-react_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6d7_01-ui-rendering-in-react/01-ui-rendering-in-react_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6d7_01-ui-rendering-in-react/01-ui-rendering-in-react_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6d7_01-ui-rendering-in-react/hls/playlist.m3u8'
+      - id: 335744
+        key: dc9fc728-35a6-4c70-b823-42cda8b81ddc
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jul 12 2017 20:39:14 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          React uses JavaScript objects to create React elements. We'll use these React elements to describe what we want the page to look like, and React will be in charge of generating the DOM nodes to achieve the result.
+           
+          Recall from the previous lesson the difference between imperative and declarative code. The React code that we write is declarative because we aren't telling React _what_ to do; instead, we're writing React elements that describe what the page should look like, and React does all of the implementation work to get it done.
+           
+          Enough theory, let's get to it and create some elements!
+        instructor_notes: ''
+        resources: null
+  - id: 328438
+    key: d9831309-352a-4e04-83f3-ac3e4e8cac76
+    locale: en-us
+    version: 1.0.0
+    title: Creating Elements and JSX
+    semantic_type: Concept
+    updated_at: 'Tue Aug 08 2017 18:28:29 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 337856
+      - 356960
+      - 348167
+      - 331274
+      - 331275
+      - 331276
+      - 331277
+      - 331278
+      - 331280
+      - 340421
+      - 331281
+      - 331282
+      - 339765
+      - 340414
+      - 339761
+      - 331284
+      - 356620
+      - 339763
+    atoms:
+      - id: 337856
+        key: c6f2a36e-fc03-469b-9bdd-f93539ae9352
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Aug 07 2017 23:52:28 GMT+0000 (UTC)'
+        is_public: true
+        text: "## Watch First\n \nWe'll be looking at using React's `.createElement()` method in the next couple of videos. For starters, here is its signature:\n\n```js\nReact.createElement( /* type */, /* props */, /* content */ );\n```\n\nWe'll take a deep dive into what all that entails in just a bit! We'll start things out with a project that's already set up. For now, don't worry about creating a project or keeping up. There will be plenty of hands-on work for you to do soon enough! We'll start building our in-class project, Contacts App, in the next section. \n \nEven though you're watching for the next couple of videos, make sure you're actively learning how cool React's `.createElement()` method is!\n\n> ## \uD83D\uDCA1 Trying Out React Code \uD83D\uDCA1\n\n> React is an extension of JavaScript (i.e., a JavaScript _library_), but it isn't built into your browser. You wouldn't be able to test out React code samples in your browser console the way you would if you were learning JavaScript. In just a bit, we'll see how to install and use a React environment. Then you will be able to try any example code!\n"
+        instructor_notes: ''
+        resources: null
+      - id: 356960
+        key: 7ddc0d0c-c58e-4473-9f6f-0072eb445fae
+        locale: en-us
+        version: 1.0.0
+        title: React's createElement() Method
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:44:23 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '61400'
+          youtube_id: B3VKTJNx7xQ
+          subtitles:
+            - url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/August/5988fbc6_02-reacts-createelement-method/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/5988fbc6_02-reacts-createelement-method/02-reacts-createelement-method_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/5988fbc6_02-reacts-createelement-method/02-reacts-createelement-method_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/5988fbc6_02-reacts-createelement-method/02-reacts-createelement-method_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/5988fbc6_02-reacts-createelement-method/02-reacts-createelement-method_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/5988fbc6_02-reacts-createelement-method/hls/playlist.m3u8'
+      - id: 348167
+        key: 8c97186b-774c-42d5-ae06-724ca916e663
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jul 18 2017 00:17:59 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Rendering Elements onto the DOM
+
+          In the previous video, we used ReactDOM's `render()` method to render our element onto a particular area of a page. In particular, we rendered the `element` onto a DOM node called `root`. But where did this `root` come from?
+
+          Apps built with React typically have a single `root` DOM node. For example, an HTML file may contain a  `<div>` with the following:
+
+          ```html
+          <div id='root'></div>
+          ```
+
+          By passing this DOM node into `getElementById()`, React will end up controlling the entirety of its contents. Another way to think about this is that this particular `<div>` will serve as a "hook" for our React app; this is the area where React will take over and render our UI!
+        instructor_notes: ''
+        resources: null
+      - id: 331274
+        key: 013f22f2-49a8-49f4-81a6-6425ca0a177b
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Tue Jun 27 2017 18:17:45 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            What will `myBio` hold when the following code is run?
+
+            ```js
+            import React from 'react';
+             
+            const myBio = React.createElement(
+                'div',
+                null,
+                'My name is Michael, and I love porcupines.'
+            );
+            ```
+          correct_feedback: React's `.createElement()` method takes in a description of an element and returns a plain JavaScript object.
+          video_feedback: null
+          default_feedback: That doesn't look right to me. Remember in the screencast when I logged the `element` variable to the console? What did it show?
+          answers:
+            - id: a1497640684246
+              text: a reference to a DOM node
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497640759672
+              text: a DOM node itself
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497640760505
+              text: a JavaScript object
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1497640761089
+              text: a JavaScript class
+              is_correct: false
+              incorrect_feedback: null
+      - id: 331275
+        key: 19129bef-b38e-445d-9e4d-52107222fd73
+        locale: en-us
+        version: 1.0.0
+        title: Passing Attributes in createElement()
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:44:33 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57718'
+          youtube_id: MTXIx7859P0
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d6f2_04-passing-attributes-in-createelement/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f2_04-passing-attributes-in-createelement/04-passing-attributes-in-createelement_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f2_04-passing-attributes-in-createelement/04-passing-attributes-in-createelement_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f2_04-passing-attributes-in-createelement/04-passing-attributes-in-createelement_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f2_04-passing-attributes-in-createelement/04-passing-attributes-in-createelement_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f2_04-passing-attributes-in-createelement/hls/playlist.m3u8'
+      - id: 331276
+        key: 67d5b49f-a2cc-4bcd-84f4-e4f633216806
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Wed Aug 16 2017 20:22:05 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'React allows a lot of HTML attributes to be passed along to the React element. Look through [all supported HTML attributes](https://facebook.github.io/react/docs/dom-elements.html#all-supported-html-attributes) in the React docs and select which of the following attributes are allowed: '
+          correct_feedback: 'An interesting thing to note is that you can''t use the default `for` attribute. Just like you have to use `className` instead of `class`, you have to use `htmlFor` instead of `for`. This is because ''for'' is a reserved word in JavaScript.'
+          video_feedback: null
+          default_feedback: 'Those are not the results I got. Are you sure you reviewed [all supported HTML attributes](https://facebook.github.io/react/docs/dom-elements.html#all-supported-html-attributes) in the React docs to see which elements are listed on that page?'
+          answers:
+            - id: a1497640887522
+              text: poster
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1497640891985
+              text: id
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1497640892526
+              text: marginWidth
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1497640893202
+              text: for
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497640913966
+              text: accessKey
+              is_correct: true
+              incorrect_feedback: null
+      - id: 331277
+        key: 847f09d4-9410-41c5-b9db-a13bcb0624dc
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 22:21:52 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          I just used React's `.createElement()` method to construct a "React element". The `.createElement()` method has the following signature:
+           
+          ```js
+          React.createElement( /* type */, /* props */, /* content */ );  
+          ```
+           
+          Let's break down what each item can be:
+           
+          * `type` – either a string or a React Component
+
+              This can be a string of any existing HTML element (e.g. `'p'`, `'span'`, or `'header'`) or you could pass a React _component_ (we'll be creating components with JSX, in just a moment).
+
+
+          * `props` – either `null` or an object
+
+              This is an object of HTML attributes and custom data about the element.
+           
+
+          * `content` – `null`, a string, a React Element, or a React Component
+
+              Anything that you pass here will be the content of the rendered element. This can include plain text, JavaScript code, other React elements, etc.
+        instructor_notes: ''
+        resources: null
+      - id: 331278
+        key: b0f7e2d3-7c81-437d-a955-178cd36006e3
+        locale: en-us
+        version: 1.0.0
+        title: Nesting React.createElement() Calls
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:44:44 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57719'
+          youtube_id: JRkpQamCWxI
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d6f3_07-nesting-react.createelement-calls/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f3_07-nesting-react.createelement-calls/07-nesting-react.createelement-calls_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f3_07-nesting-react.createelement-calls/07-nesting-react.createelement-calls_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f3_07-nesting-react.createelement-calls/07-nesting-react.createelement-calls_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f3_07-nesting-react.createelement-calls/07-nesting-react.createelement-calls_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f3_07-nesting-react.createelement-calls/hls/playlist.m3u8'
+      - id: 331280
+        key: 9dcfc7c1-da5a-4624-aa54-f1928e52fd2a
+        locale: en-us
+        version: 1.0.0
+        title: Nesting with an Array
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:44:52 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57720'
+          youtube_id: PDT3A1L1sPs
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d6f6_09-nesting-with-an-array/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f6_09-nesting-with-an-array/09-nesting-with-an-array_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f6_09-nesting-with-an-array/09-nesting-with-an-array_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f6_09-nesting-with-an-array/09-nesting-with-an-array_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f6_09-nesting-with-an-array/09-nesting-with-an-array_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6f6_09-nesting-with-an-array/hls/playlist.m3u8'
+      - id: 340421
+        key: 774b1487-0c4a-4732-bae2-8919bfab8fc0
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 27 2017 16:37:34 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## `.createElement()` Returns *One* Root Element
+
+          Recall that `React.createElement( /* type */, /* props */, /* content */ );` creates a single React element of a particular type. We'd normally pass in a tag such as a `<div>` or a `<span>` to represent that type, but the content argument can be _another_ React element!
+
+          Consider the following example:
+
+          ```js
+          const element = React.createElement('div', null,
+            React.createElement('strong', null, 'Hello world!')
+          );
+          ```
+
+          Here, "Hello world!" will be wrapped in a `<div>` when this React element renders as HTML. While we can indeed nest React elements, remember the overall call just returns a single element.
+        instructor_notes: ''
+        resources: null
+      - id: 331281
+        key: fba9501d-99d9-4b63-b78f-2d6e79ed7555
+        locale: en-us
+        version: 1.0.0
+        title: JSX is for Easy Nesting
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:45:03 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57721'
+          youtube_id: 9kyaEeKDUGE
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d6fa_10-jsx-is-for-easy-nesting/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6fa_10-jsx-is-for-easy-nesting/10-jsx-is-for-easy-nesting_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6fa_10-jsx-is-for-easy-nesting/10-jsx-is-for-easy-nesting_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6fa_10-jsx-is-for-easy-nesting/10-jsx-is-for-easy-nesting_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6fa_10-jsx-is-for-easy-nesting/10-jsx-is-for-easy-nesting_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6fa_10-jsx-is-for-easy-nesting/hls/playlist.m3u8'
+      - id: 331282
+        key: ee22b7e1-e1bd-4118-9ef0-61477cd5d61a
+        locale: en-us
+        version: 1.0.0
+        title: React.createElement() to JSX
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:45:10 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57722'
+          youtube_id: h_rHa8mVyBk
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d6ff_11-react.createelement-to-jsx/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6ff_11-react.createelement-to-jsx/11-react.createelement-to-jsx_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6ff_11-react.createelement-to-jsx/11-react.createelement-to-jsx_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6ff_11-react.createelement-to-jsx/11-react.createelement-to-jsx_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6ff_11-react.createelement-to-jsx/11-react.createelement-to-jsx_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d6ff_11-react.createelement-to-jsx/hls/playlist.m3u8'
+      - id: 339765
+        key: 52566659-fdf7-4e76-8e6c-aa8ffee2a675
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Tue Jul 25 2017 17:16:10 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Consider the following example in JSX:
+
+            ```js
+            const greeting = (
+              <div className='greeting'>
+                <h2>Hello world!</h2>
+              </div>
+            );
+            ```
+
+            If we want to output the same HTML, what goes into `1`, `2`, and `3` when calling `createElement()`?
+
+            ```js
+            const greeting = React.createElement(
+              __1__,
+              { className: 'greeting' },
+              React.createElement(
+                __2__,
+                {},
+                __3__
+              )
+            );
+            ```
+          correct_feedback: |-
+            Whether it's JSX or regular JavaScript (using `createElement()`), both examples generate the same HTML: 
+
+            ```html
+            <div class='greeting'><h2>Hello world!</h2></div>
+            ```
+          video_feedback: null
+          default_feedback: 'Remember that JSX is really just a syntax extension for `React.createElement( /* type */, /* props */, /* content */ );`. Both will ultimately give you the same HTML.'
+          answers:
+            - id: a1498260147597
+              text: '`''h2''`, `''div''`, `''Hello world!''`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498260346431
+              text: '`div`, `h2`, `Hello world!`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498260346919
+              text: '`''div''`, `''h2''`, `''Hello world!''`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498260347423
+              text: '`Hello world!`, `div`, `h2`'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 340414
+        key: f19ac44f-4d05-4517-8ec7-8448b852039a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 27 2017 21:22:57 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## JSX Returns *One* Root Element, Too
+
+          When writing JSX, keep in mind that it must only return a single element. This element may have any number of descendants, but there _must_ be a single root element wrapping your overall JSX (typically a `<div>` or a `<span>`). Check out the following example:
+
+          ```js
+          const message = (
+            <div>
+              <h1>All About JSX:</h1>
+              <ul>
+                <li>JSX</li>
+                <li>is</li>
+                <li>awesome!</li>
+              </ul>
+            </div>
+          );
+          ```
+
+          See how there's only one `<div>` element in the code above and that all other JSX is nested inside it? This is how you have to write it if you want multiple elements. To be completely clear, the following is incorrect and will cause an error:
+
+          ```js
+          const message = (
+            <h1>All About JSX:</h1>
+            <ul>
+              <li>JSX</li>
+              <li>is</li>
+              <li>awesome!</li>
+            </ul>
+          );
+          ```
+
+          In this example, we have two sibling elements that are both at the root level (i.e. `<h1>` and `<ul>`) . This won't work and will give the error:
+
+          > Syntax error: Adjacent JSX elements must be wrapped in an enclosing tag
+
+          Since we know that JSX is really just a syntax extension for `.createElement()`, this makes sense; `.createElement()` takes in only one tag name (as a string) as its first argument.
+        instructor_notes: ''
+        resources: null
+      - id: 339761
+        key: 224d63a3-5453-4b85-adda-f43d08cba848
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sat Jun 24 2017 12:19:42 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Intro to Components
+
+          So far we've seen how `.createElement()` and JSX can help us produce some HTML. Typically, though, we'll use one of React's key features, Components, to construct our UI. Components refer to _reusable_ pieces of code ultimately responsible for returning HTML to be rendered onto the page. More often than not, you'll see React components written with JSX.
+
+          Since React's main focus is to streamline building our app's UI, there is only one method that is absolutely required in any React component class: `render()`.
+
+          Let's go ahead and build our first component class!
+        instructor_notes: ''
+        resources: null
+      - id: 331284
+        key: 5da4e407-d623-4773-a494-48c8e15efcf5
+        locale: en-us
+        version: 1.0.0
+        title: Create a Component
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:45:20 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57723'
+          youtube_id: qHjr2ndg2UA
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d700_13-create-a-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d700_13-create-a-component/13-create-a-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d700_13-create-a-component/13-create-a-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d700_13-create-a-component/13-create-a-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d700_13-create-a-component/13-create-a-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d700_13-create-a-component/hls/playlist.m3u8'
+      - id: 356620
+        key: 435a9abf-321e-4b74-8b83-38c5d4cbeb74
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Aug 07 2017 23:08:57 GMT+0000 (UTC)'
+        is_public: true
+        text: "> ## \uD83D\uDCA1 Declaring Components in React \uD83D\uDCA1\n\n> In the previous video, we defined the `ContactList` component like so:\n\n> ```js\nclass ContactList extends React.Component {\n// ...\n}\n```\n\n> In other words, we are defining a component that's really just a JavaScript class that inherits from `React.Component`.\n\n> In real-world use (and throughout this course), you may also see declarations like:\n\n> ```js\nclass ContactList extends Component {\n// ...\n}\n```\n\n> Both ways are functionally the same, but be sure your module imports match accordingly! That is, if you choose to declare components like the example directly above, your import from `React` will now look like:\n\n> ```js\nimport React, { Component } from 'react';\n```"
+        instructor_notes: ''
+        resources: null
+      - id: 339763
+        key: d8e72b59-3340-4799-9c0b-adf61ae85d4a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jul 18 2017 00:22:51 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Creating Elements Recap
+
+          In the end, remember that React is only concerned with the View layer of our app. This is what the user sees and interacts with. As such, we can use `.createElement()` to render HTML onto a document. More often than not, however, you'll use a syntax extension to describe what your UI should look like. This syntax extension is known as JSX, and just looks similar to plain HTML written right into a JavaScript file. The JSX gets compiled down to calls to React's `.createElement()` method that outputs HTML to be rendered in the browser.
+
+          A great mindset to have when building React apps is to [think in `components`](https://facebook.github.io/react/docs/thinking-in-react.html). Components represent the modularity and reusability of React. You can think of your component classes as factories that produce instances of components. These component classes should follow the [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) and just "do one thing". If it manages too many different tasks, it may be a good idea to decompose your component into smaller subcomponents.
+
+          Further Research:
+          * [Rendering Elements](https://facebook.github.io/react/docs/rendering-elements.html) from the React docs
+        instructor_notes: ''
+        resources: null
+  - id: 328461
+    key: 2732ebd0-5868-4c37-ad72-891a367c368f
+    locale: en-us
+    version: 1.0.0
+    title: Create React App
+    semantic_type: Concept
+    updated_at: 'Tue Jul 25 2017 17:38:50 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 328462
+      - 339764
+      - 340406
+      - 340220
+      - 331286
+      - 339766
+      - 340407
+      - 341184
+      - 331288
+    atoms:
+      - id: 328462
+        key: 8ae8e90c-bfef-4353-ba41-62461cb28d00
+        locale: en-us
+        version: 1.0.0
+        title: Create React App
+        semantic_type: VideoAtom
+        updated_at: 'Tue Aug 15 2017 00:04:38 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57724'
+          youtube_id: dSl0d0jcrSU
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d703_16-create-react-app/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d703_16-create-react-app/16-create-react-app_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d703_16-create-react-app/16-create-react-app_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d703_16-create-react-app/16-create-react-app_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d703_16-create-react-app/16-create-react-app_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d703_16-create-react-app/hls/playlist.m3u8'
+      - id: 339764
+        key: 438548cd-d5cb-4a3d-938e-3b4480265a74
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Sep 20 2017 17:24:45 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Scaffolding Your React App
+
+          JSX is awesome, but it does need to be transpiled into regular JavaScript before reaching the browser. We typically use a transpiler like [Babel](https://github.com/babel/babel) to accomplish this for us. We can run Babel through a build tool, like [Webpack](https://github.com/facebookincubator/create-react-app) which helps bundle all of our assets (JavaScript files, CSS, images, etc.) for web projects.
+
+          To streamline these initial configurations, we can use Facebook's Create React App package to manage all the setup for us! This tool is incredibly helpful to get started in building a React app, as it sets up everything we need with _zero configuration_! Install Create React App (through the command-line with [npm](https://www.npmjs.com/get-npm)), and then we can walk through what makes it so great.
+           
+          ```bash
+          npm install -g create-react-app
+          ```
+
+          If you're seeing errors when trying to install a package globally, feel free to check out [this article](https://docs.npmjs.com/getting-started/fixing-npm-permissions) in the npm documentation. Note that to find out where global packages are installed, you can run `npm list -g` in your console (more information [here](https://stackoverflow.com/questions/5926672/where-does-npm-install-packages)).
+        instructor_notes: ''
+        resources: null
+      - id: 340406
+        key: 17471062-f9ee-4b9c-b75b-5da2a0492f06
+        locale: en-us
+        version: 1.0.0
+        title: Install & Use Create React App 1
+        semantic_type: VideoAtom
+        updated_at: 'Tue Aug 15 2017 00:05:48 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '59023'
+          youtube_id: CgHOAYV70Vw
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5951f681_17-install-use-create-react-app-1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f681_17-install-use-create-react-app-1/17-install-use-create-react-app-1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f681_17-install-use-create-react-app-1/17-install-use-create-react-app-1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f681_17-install-use-create-react-app-1/17-install-use-create-react-app-1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f681_17-install-use-create-react-app-1/17-install-use-create-react-app-1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f681_17-install-use-create-react-app-1/hls/playlist.m3u8'
+      - id: 340220
+        key: 21b2dfef-c038-4691-907a-ef7fa090a327
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 22:38:50 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/86824dc9f726e68a516f8cf85243b013a3b5c8b7)'
+        instructor_notes: ''
+        resources: null
+      - id: 331286
+        key: 5759c1b6-5858-4838-8173-a1e5cea8f4bc
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Fri Jun 16 2017 19:37:49 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 'I have installed [`create-react-app`](https://github.com/facebookincubator/create-react-app)'
+          - I have used `create-react-app` to create the `contacts` project
+        positive_feedback: Fantastic work!
+        video_feedback: null
+        description: Let's make sure we're both on the same page.
+      - id: 339766
+        key: 4d4e30a0-0ee3-4873-a410-0db9782c995c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Jun 23 2017 23:43:46 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## The Yarn Package Manager
+           
+          > Both in the following video and in the output of create-react-app, we're told to use `yarn start` to start the development server. If you haven't heard about it yet, [Yarn](https://yarnpkg.com) is a package manager that's similar to NPM. Yarn was created from the ground up by Facebook to improve on some key aspects that are slow or lacking in NPM. 
+           
+          > If you don't want to install Yarn, you don't have to! What's great about it is that almost every use of `yarn` can be swapped with `npm` and everything will work just fine! So if the command is `yarn start`, you can use `npm start` to run the same command.
+        instructor_notes: ''
+        resources: null
+      - id: 340407
+        key: 35cde7d8-eb9e-425d-86ac-6a5e39e7fcec
+        locale: en-us
+        version: 1.0.0
+        title: Inspect Contacts Project
+        semantic_type: VideoAtom
+        updated_at: 'Tue Aug 15 2017 00:08:13 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '59024'
+          youtube_id: WmYSd7OEjMM
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5951f686_19-inspect-contacts-project/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f686_19-inspect-contacts-project/19-inspect-contacts-project_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f686_19-inspect-contacts-project/19-inspect-contacts-project_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f686_19-inspect-contacts-project/19-inspect-contacts-project_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f686_19-inspect-contacts-project/19-inspect-contacts-project_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951f686_19-inspect-contacts-project/hls/playlist.m3u8'
+      - id: 341184
+        key: 9b23426a-eb7e-4ed6-957a-64694face686
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sun Aug 06 2017 02:31:48 GMT+0000 (UTC)'
+        is_public: true
+        text: '> The observant student might''ve noticed that my `index.js` file does not include the line `registerServiceWorker();` that''s showing in your project. The call to the Service Worker was added in the version of Create React App right after I recorded this video. Since we''re not using Service Workers in this project, it won''t affect anything. If you want to remove it, though, feel free!'
+        instructor_notes: ''
+        resources: null
+      - id: 331288
+        key: e3e98bb3-c68d-4b90-9148-67a32292d999
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 27 2017 00:05:05 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## `create-react-app` Recap
+           
+          Facebook's `create-react-app` is a command-line tool that scaffolds a React application. Using this, there is no need to install or configure module bundlers like Webpack, or transpilers like Babel. These come preconfigured (and hidden) with `create-react-app`, so you can jump right into building your app!
+           
+          Check out these links for more info about `create-react-app`:
+
+          * [create-react-app](https://github.com/facebookincubator/create-react-app) on GitHub
+          * [create-react-app Release Post](https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html) from the React blog
+          * [Updates to create-react-app](https://facebook.github.io/react/blog/2017/05/18/whats-new-in-create-react-app.html) from the React blog
+        instructor_notes: ''
+        resources: null
+  - id: 328469
+    key: 7e923430-f20c-4d6e-a328-2190b68b6ffe
+    locale: en-us
+    version: 1.0.0
+    title: Composing with Components
+    semantic_type: Concept
+    updated_at: 'Mon Jun 26 2017 22:40:38 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 328470
+      - 331289
+      - 340224
+      - 331290
+    atoms:
+      - id: 328470
+        key: 3ef38e0f-3cdb-4660-b427-2a02bd470900
+        locale: en-us
+        version: 1.0.0
+        title: It's All About Components
+        semantic_type: VideoAtom
+        updated_at: 'Tue Aug 15 2017 00:08:46 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57727'
+          youtube_id: '-AVOIP-L7oo'
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d710_21-its-all-about-components/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d710_21-its-all-about-components/21-its-all-about-components_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d710_21-its-all-about-components/21-its-all-about-components_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d710_21-its-all-about-components/21-its-all-about-components_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d710_21-its-all-about-components/21-its-all-about-components_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d710_21-its-all-about-components/hls/playlist.m3u8'
+      - id: 331289
+        key: 17a2418b-3dff-4232-8605-2494ba39c8b2
+        locale: en-us
+        version: 1.0.0
+        title: Composing in React
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:45:48 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57728'
+          youtube_id: PtospOO4qrs
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d714_22-composing-in-react/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d714_22-composing-in-react/22-composing-in-react_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d714_22-composing-in-react/22-composing-in-react_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d714_22-composing-in-react/22-composing-in-react_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d714_22-composing-in-react/22-composing-in-react_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d714_22-composing-in-react/hls/playlist.m3u8'
+      - id: 340224
+        key: 58cde45d-f426-4be7-881b-293ee6229b91
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 22:40:37 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/069bbfa3f5359849d334a0f58813220291e61dc0)'
+        instructor_notes: ''
+        resources: null
+      - id: 331290
+        key: 95593e56-a1a3-4a86-8d38-8701a6b2ed4a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sun Aug 06 2017 02:32:38 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Favor Composition Over Inheritance
+           
+          You might have heard before that it’s better to “favor composition over inheritance.” This is a principle that I believe is difficult to learn today. Many of the most popular programming languages make extensive use of inheritance, and it has carried over into popular UI frameworks like the Android and iOS SDKs.
+           
+          In contrast, React uses composition to build user interfaces. Yes, we extend React.Component, but we never extend it more than once. Instead of extending base components to add more UI or behavior, we compose elements in different ways using nesting and props. You ultimately want your UI components to be independent, focused, and _reusable_.
+           
+          So if you’ve never understood what it means to “favor composition over inheritance” you’ll definitely learn using React!
+        instructor_notes: ''
+        resources: null
+  - id: 328474
+    key: 3bb3c78a-196b-4ac0-ac38-a6ab92015fcb
+    locale: en-us
+    version: 1.0.0
+    title: UI Rendering Outro
+    semantic_type: Concept
+    updated_at: 'Thu Jun 08 2017 06:11:39 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 328475
+    atoms:
+      - id: 328475
+        key: 14f1aa1e-9ed7-4024-bac2-3abbf0eac77f
+        locale: en-us
+        version: 1.0.0
+        title: UI Rendering Outro
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:36:41 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57729'
+          youtube_id: 9l4fMVw0kdQ
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5938d718_24-ui-rendering-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d718_24-ui-rendering-outro/24-ui-rendering-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d718_24-ui-rendering-outro/24-ui-rendering-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d718_24-ui-rendering-outro/24-ui-rendering-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d718_24-ui-rendering-outro/24-ui-rendering-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5938d718_24-ui-rendering-outro/hls/playlist.m3u8'

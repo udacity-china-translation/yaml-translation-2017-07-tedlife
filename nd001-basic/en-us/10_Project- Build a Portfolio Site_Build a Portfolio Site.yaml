@@ -1,0 +1,140 @@
+id: 122304
+key: '2736698543239847'
+locale: en-us
+version: 1.0.0
+title: Build a Portfolio Site
+semantic_type: Lesson
+updated_at: 'Tue Jul 11 2017 17:17:39 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58f5ad7e_portfolio-project-image/portfolio-project-image.png'
+  width: 500
+  height: 500
+video: null
+summary: 'Given a pdf mockup of a website from a designer, translate it to a real website using your HTML and CSS skills.'
+lesson_type: Classroom
+duration: 20
+is_project_lesson: true
+career_portal_experience_levels: null
+_concepts_ids:
+  - 19794
+  - 138146
+_project_id: 36095
+concepts:
+  - id: 19794
+    key: '26541085730923'
+    locale: en-us
+    version: 1.0.0
+    title: Project Overview
+    semantic_type: Concept
+    updated_at: 'Tue Jun 28 2016 21:04:06 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 108227
+    atoms:
+      - id: 108227
+        key: '2654108573'
+        locale: en-us
+        version: 1.0.0
+        title: Project Overview
+        semantic_type: TextAtom
+        updated_at: 'Mon Jan 09 2017 18:15:18 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Project Overview
+          For this project, you'll be building a portfolio website. You will be provided a design mockup as a PDF-file, and you must replicate that design in HTML and CSS. You will develop a responsive website that will display images, descriptions and links to each of the portfolio projects you will complete through the course of your Nanodegree program. Please note that while you should aim to recreate the mockup, you may also use your own custom images to personalize this project.
+
+          Once you've successfully replicated the design mockup, you are encouraged to continue tweaking and making customizations to the design to personalize it and make it your own! This is your living portfolio site, so make sure you're happy with it.
+
+          ## Why this project?
+          The first thing potential employers look for isn’t which school you attended or what your GPA was; they want to see what you’ve built! You need a professional portfolio to show off your skills.
+
+          In this project you’ll build a great looking portfolio where you can show off images, descriptions and links to all of your projects. You'll do so by writing code that conforms to the [Udacity Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/).
+
+          ## What will I learn?
+          You will learn how HTML is used to define the content of a web page and start to think of every web page as a number of boxes on the screen. You’ll then learn how to position those boxes and make them beautiful using CSS.
+
+          You'll accomplish this while conforming to a [style guide](http://udacity.github.io/frontend-nanodegree-styleguide/) which is an important constraint once you step into any existing development position.
+
+          ## Why is this important to my career?
+
+          * Without a portfolio, recruiters won’t even look at your resume much less interview you.
+          * At their very foundation, web applications are just content delivery mechanisms; HTML defines how that language is structured.
+          * Reading poorly designed content is never an enjoyable experience; CSS empowers you to create beautiful content regardless of your user’s device.
+
+          ## Note
+          If you were previously enrolled in our Intro to HTML and CSS single course and successfully completed this project prior to enrolling in the Nanodegree program (which entails having graduated from the course and having access to your course certificate), simply email us at frontend-project@udacity.com with your passing evaluation and we'll give you credit for this project.
+
+          The design mockup for this project is located [here](https://storage.googleapis.com/supplemental_media/udacityu/2655898586/design-mockup-portfolio.pdf).
+
+          <br>
+        instructor_notes: |-
+          <ul><li><a href="http://udacity.github.io/frontend-nanodegree-styleguide/">Udacity HTML/CSS Style Guide</a></li><li>
+          <a href="http://validator.w3.org/#validate_by_input">HTML Validator</a></li><li>
+          <a href="https://jigsaw.w3.org/css-validator/#validate_by_input">CSS Validator</a></li></ul>
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 138146
+    key: '26558985860923'
+    locale: en-us
+    version: 1.0.0
+    title: Project Details
+    semantic_type: Concept
+    updated_at: 'Tue Jun 28 2016 21:04:06 GMT+0000 (UTC)'
+    is_public: true
+    resources:
+      files:
+        - name: design-mockup-portfolio.pdf
+          uri: 'https://www.udacity.com/api/nodes/2655898586/supplemental_media/design-mockup-portfoliopdf/download'
+      google_plus_link: null
+      career_resource_center_link: null
+      coaching_appointments_link: null
+      office_hours_link: null
+    _atoms_ids:
+      - 30181
+    atoms:
+      - id: 30181
+        key: '2655898586'
+        locale: en-us
+        version: 1.0.0
+        title: Project Details
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 05 2017 22:57:48 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## How do I Complete this Project? 
+          All of the lessons you'll need to help you build this can be found in the lessons in this part of your Nanodegree program. 
+
+          Depending on your background knowledge of HTML and CSS, you may not need to complete all lessons to build this project. To evaluate what you'll need to know, start by downloading the mockup we've provided, and review the [Project Rubric](https://review.udacity.com/#!/rubrics/45/view).
+
+          Be sure to follow the [Project Rubric](https://review.udacity.com/#!/rubrics/45/view) closely when designing your page. For example, note that [HTML5 semantic (structural) elements](https://www.w3.org/wiki/HTML_structural_elements#Enter_HTML5_structural_elements) must be used to organize content.
+
+          Instructions:
+
+          1. Download the design mockup file from the Downloadables section (in the lower right hand corner of your screen, just below this text) and review it.
+          2. Identify the various boxes you will need to build in order to recreate this design.
+          3. Write your HTML and CSS files, continue to iterate until your work is representative of the design mockup.
+          4. Take the time to personalize your portfolio with custom colors, additional content and your own images.
+          5. Validate your HTML and CSS against the [W3C's Validators](http://validator.w3.org/). *Note: the validators consider the following errors, whereas Udacity accepts these errors as acceptable:*
+            * HTML5: **Bad value X-UA-Compatible for attribute http-equiv on element meta** when using the X-UA-Compatible meta tag.
+            * CSS3: **Property *[some property here]* is an unknown vendor extension** when using vendor prefixed properties (like -moz-box-sizing).
+
+          ## Additional resources
+
+          Here are some tools you will find useful in checking your work —
+
+          <ul><li><a href="http://udacity.github.io/frontend-nanodegree-styleguide/">Udacity HTML/CSS Style Guide</a></li><li>
+          <a href="http://validator.w3.org/#validate_by_input">HTML Validator</a></li><li>
+          <a href="https://jigsaw.w3.org/css-validator/#validate_by_input">CSS Validator</a></li></ul>
+        instructor_notes: ''
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null

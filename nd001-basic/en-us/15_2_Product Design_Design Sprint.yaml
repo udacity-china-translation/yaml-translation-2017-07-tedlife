@@ -1,0 +1,2243 @@
+id: 7914
+key: '4275169017'
+locale: en-us
+version: 1.0.0
+title: Design Sprint
+semantic_type: Lesson
+updated_at: 'Fri Apr 21 2017 12:09:25 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: 'Walk through the steps required to validate your ideas and build mockups of your product with Google’s leading Design Sprint Master. '
+lesson_type: Classroom
+duration: 300
+is_project_lesson: false
+career_portal_experience_levels: null
+_concepts_ids:
+  - 42088
+  - 90383
+  - 134067
+  - 87313
+  - 87663
+  - 126826
+  - 134363
+  - 136898
+  - 105489
+  - 89422
+  - 30651
+  - 39903
+  - 74812
+  - 34497
+  - 134077
+  - 89441
+  - 98115
+  - 87627
+  - 89418
+  - 134054
+  - 98782
+  - 66804
+  - 57971
+  - 89941
+  - 128447
+  - 7901
+  - 74842
+  - 98799
+  - 42628
+  - 65339
+  - 66788
+  - 134078
+  - 80816
+_project_id: null
+concepts:
+  - id: 42088
+    key: '43364485370923'
+    locale: en-us
+    version: 1.0.0
+    title: Introduction to Design Sprints
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 123226
+    atoms:
+      - id: 123226
+        key: '4336448537'
+        locale: en-us
+        version: 1.0.0
+        title: Introduction to Design Sprints
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:30:20 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '5834'
+          youtube_id: '-15s1MWJuhw'
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/subtitles/lang_id_vs2.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs7.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/subtitles/lang_ar_vs4.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/subtitles/lang_ja_vs3.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/subtitles/lang_ko_vs3.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/subtitles/lang_en-us_vs4.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/subtitles/lang_tr_vs5.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs3.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/subtitles/lang_en_vs6.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/subtitles/lang_ru_vs7.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/introduction-to-design-sprints-design-sprint-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/introduction-to-design-sprints-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/introduction-to-design-sprints-design-sprint-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/introduction-to-design-sprints-design-sprint-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d06778_introduction-to-design-sprints-design-sprint-product-design-udacity/hls/playlist.m3u8'
+  - id: 90383
+    key: '43315385870923'
+    locale: en-us
+    version: 1.0.0
+    title: 'Design Sprints at Optimizely [HIDE]'
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: false
+    resources: null
+    _atoms_ids:
+      - 37820
+    atoms:
+      - id: 37820
+        key: '4331538587'
+        locale: en-us
+        version: 1.0.0
+        title: 'Design Sprints at Optimizely [HIDE]'
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:30:56 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '15093'
+          youtube_id: DCm5wKcLQHE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/subtitles/lang_id_vs2.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/subtitles/lang_vi_vs4.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/subtitles/lang_pt-br_vs5.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/subtitles/lang_ar_vs3.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/subtitles/lang_ja_vs2.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/subtitles/lang_ko_vs3.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/subtitles/lang_tr_vs5.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/subtitles/lang_zh-tw_vs2.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/subtitles/lang_ru_vs4.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/design-sprints-at-optimizely_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/design-sprints-at-optimizely_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/design-sprints-at-optimizely_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/design-sprints-at-optimizely_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0afa8_design-sprints-at-optimizely/hls/playlist.m3u8'
+  - id: 134067
+    key: '43272285530923'
+    locale: en-us
+    version: 1.0.0
+    title: Design Sprints at Locket
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 81787
+    atoms:
+      - id: 81787
+        key: '4327228553'
+        locale: en-us
+        version: 1.0.0
+        title: Design Sprints at Locket
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:43:18 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |-
+          At time, "0:38", Kaushik mentions "MVP". This is an acronym for "Minimum Viable Product". 
+
+          You can read more about [MVP here](http://en.wikipedia.org/wiki/Minimum_viable_product)
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '12109'
+          youtube_id: aBQjyjxBq9g
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/subtitles/lang_es_vs16.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/subtitles/lang_id_vs1.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/subtitles/lang_vi_vs3.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs10.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/subtitles/lang_ar_vs2.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs3.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/subtitles/lang_ja_vs1.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/subtitles/lang_ko_vs2.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/subtitles/lang_tr_vs2.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/design-sprints-at-locket-design-sprint-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/design-sprints-at-locket-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/design-sprints-at-locket-design-sprint-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/design-sprints-at-locket-design-sprint-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d09edf_design-sprints-at-locket-design-sprint-product-design-udacity/hls/playlist.m3u8'
+  - id: 87313
+    key: '43305685640923'
+    locale: en-us
+    version: 1.0.0
+    title: Design Sprint Overview
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 138976
+    atoms:
+      - id: 138976
+        key: '4330568564'
+        locale: en-us
+        version: 1.0.0
+        title: Design Sprint Overview
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:32:48 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: '<a href="http://firstround.com/review/How-design-thinking-transformed-Airbnb-from-failing-startup-to-billion-dollar-business/" target="_blank">How Design Thinking Transformed Airbnb</a>'
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '20382'
+          youtube_id: IgNmCcVD6DM
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/subtitles/lang_id_vs2.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/subtitles/lang_vi_vs3.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs21.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/subtitles/lang_ar_vs7.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/subtitles/lang_ja_vs5.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/subtitles/lang_ko_vs6.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/subtitles/lang_tr_vs8.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/subtitles/lang_ru_vs8.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/design-sprint-overview-design-sprint-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/design-sprint-overview-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/design-sprint-overview-design-sprint-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/design-sprint-overview-design-sprint-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11e3b_design-sprint-overview-design-sprint-product-design-udacity/hls/playlist.m3u8'
+  - id: 87663
+    key: '43285685560923'
+    locale: en-us
+    version: 1.0.0
+    title: Examples of Design Sprints
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 135575
+    atoms:
+      - id: 135575
+        key: '4328568556'
+        locale: en-us
+        version: 1.0.0
+        title: Examples of Design Sprints
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 21 2016 22:19:12 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Examples of Design Sprints
+
+          Design sprints can look very different for startups and large companies. Below are two links that cover how design sprints and design thinking can be used to improve a product.
+
+          First, watch the video to see how Custom Made improved their product. As you watch the video, think about the 5 stages and the activities that compose the design sprint.
+
+          ### Custom Made's Design Sprint
+          <a href="https://www.youtube.com/watch?v=qvdO0G4uQgc" target="_blank">Custom Made's Design Sprint</a> with Google Ventures' Design Studio
+
+          <em>Note: The Custom Made video highlights 5 stages in a design sprint, and we will cover a similar model of design sprints that includes 6 stages.</em>
+
+          Next, skim or read through these short articles related to redesigning Yelp. As you go through the articles, think about the methods used in the design sprint, why they were chosen, and which ones would be useful for your product.
+
+          ### Testing and Redesigning Yelp
+          <a href="http://blog.uxpin.com/5447/ux-design-action-redesigning-yelp-upcoming-free-e-book/" target="_blank">Redesigning Yelp 1: Overview</a>  
+          <a href="http://blog.uxpin.com/5493/testing-redesigning-yelp-product-definition-upcoming-e-book/" target="_blank">Redesigning Yelp 2: Product Definition</a>  
+          <a href="http://blog.uxpin.com/5517/testing-redesigning-yelp-user-research-upcoming-e-book/" target="_blank">Redesigning Yelp 3: User Research</a>  
+          <a href="http://blog.uxpin.com/5667/user-testing-design-qualitative-analysis-yelps-website/" target="_blank">Redesigning Yelp 4: User Testing Qualitative Insights</a>  
+          <a href="http://blog.uxpin.com/5698/user-testing-design-6-quantitative-insights-yelps-website/" target="_blank">Redesigning Yelp 5: User Testing Quantitative Insights</a>  
+          <a href="http://blog.uxpin.com/5833/usability-testing-design-new-yelp-design-part-1/" target="_blank">Redesigning Yelp 6: Usability Testing Part 1</a>  
+          <a href="http://blog.uxpin.com/5853/usability-testing-design-new-yelp-design-part-2/" target="_blank">Redesigning Yelp 7: Usability Testing Part 2</a>
+
+          By understanding your product, your business, and your resource constraints, you can plan an effective design sprint. You will learn how to do that in the rest of the lesson.
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 126826
+    key: '43320785360923'
+    locale: en-us
+    version: 1.0.0
+    title: Elements of a Design Sprint
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 80773
+    atoms:
+      - id: 80773
+        key: '4332078536'
+        locale: en-us
+        version: 1.0.0
+        title: Elements of a Design Sprint
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:51:43 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '26671'
+            youtube_id: oEGaD9hTATI
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/subtitles/lang_ru_vs3.srt'
+                language_code: ru
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs7.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/subtitles/lang_id_vs3.srt'
+                language_code: id
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+                language_code: fr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+                language_code: zh-tw
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/subtitles/lang_ko_vs2.srt'
+                language_code: ko
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+                language_code: es
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/subtitles/lang_ja_vs1.srt'
+                language_code: ja
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+                language_code: en-us
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/subtitles/lang_ar_vs2.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/subtitles/lang_tr_vs5.srt'
+                language_code: tr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/subtitles/lang_vi_vs1.srt'
+                language_code: vi
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/elements-of-a-design-sprint-design-sprint-product-design-udacity_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/elements-of-a-design-sprint-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/elements-of-a-design-sprint-design-sprint-product-design-udacity_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/elements-of-a-design-sprint-design-sprint-product-design-udacity_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1a1ba_elements-of-a-design-sprint-design-sprint-product-design-udacity/hls/playlist.m3u8'
+          text: null
+        question:
+          title: Elements of a Design Sprint
+          background_image: '//lh3.googleusercontent.com/U2y-UlAQE9RsU1mmhiHHw6YENNywpgu2WPWEJfDt3n9r6yxzNbpERoUaaxb0e70wSiQoEclpsgmBDNYICjzE=s0#w=960&h=540'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4329633138'
+        answer:
+          text: |-
+            understand the business goals  
+            get initial feedback on the product from users  
+            <s>open card sorts</s>  
+            <s>click testing</s>  
+            <s>tree testing</s>  
+            sketching, wireframing, or prototyping  
+            validation through user testing  
+
+            Open card sorts, click testing, and tree testing are user research methodologies that let you understand how users think about or use a product. These methods can provide great qualitative and quantitative data for the product, but they might not be needed in all design sprints.
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 134363
+    key: '43354785490923'
+    locale: en-us
+    version: 1.0.0
+    title: Planning the Design Sprint
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 121206
+    atoms:
+      - id: 121206
+        key: '4335478549'
+        locale: en-us
+        version: 1.0.0
+        title: Planning the Design Sprint
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:28:02 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '28738'
+          youtube_id: zMQ7kU9KQp4
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_id_vs6.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs16.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_ru_vs8.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_ja_vs3.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_ar_vs3.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_tr_vs12.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_ko_vs3.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/planning-the-design-sprint-design-sprint-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/planning-the-design-sprint-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/planning-the-design-sprint-design-sprint-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/planning-the-design-sprint-design-sprint-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1b9ef_planning-the-design-sprint-design-sprint-product-design-udacity/hls/playlist.m3u8'
+  - id: 136898
+    key: '43695385730923'
+    locale: en-us
+    version: 1.0.0
+    title: The Design Challenge
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 112814
+    atoms:
+      - id: 112814
+        key: '4369538573'
+        locale: en-us
+        version: 1.0.0
+        title: The Design Challenge
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:51:04 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: '<a href="https://docs.google.com/document/d/1BgyQ8MOru94b54o0fPmw8k5jIiW417GE02Pr_JG0YII/pub" target="_blank">Gap Analysis</a> (Udacity Google Doc)'
+        instruction:
+          video:
+            id: '16755'
+            youtube_id: Ezo5Au-it38
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+                language_code: es
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/subtitles/lang_id_vs9.srt'
+                language_code: id
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/subtitles/lang_vi_vs2.srt'
+                language_code: vi
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs8.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/subtitles/lang_ar_vs4.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/subtitles/lang_ja_vs2.srt'
+                language_code: ja
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/subtitles/lang_ko_vs5.srt'
+                language_code: ko
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+                language_code: en-us
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/subtitles/lang_tr_vs1.srt'
+                language_code: tr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+                language_code: zh-tw
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+                language_code: fr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/subtitles/lang_ru_vs1.srt'
+                language_code: ru
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/design-challenge-design-sprint-product-design-udacity_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/design-challenge-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/design-challenge-design-sprint-product-design-udacity_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/design-challenge-design-sprint-product-design-udacity_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0d6ed_design-challenge-design-sprint-product-design-udacity/hls/playlist.m3u8'
+          text: null
+        question:
+          title: The Design Challenge
+          background_image: '//lh3.googleusercontent.com/DMLHikWFwCi69WKpJ7b8NwKZvbezEgmh_n_05beeqvsX4e02ofqlCu6E3kp0Rw_7XlU_BL-sQ_y5jOcxKA=s0#w=1920&h=1080'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4332544022'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 105489
+    key: '43253285490923'
+    locale: en-us
+    version: 1.0.0
+    title: Stages of the Design Sprint
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 9801
+    atoms:
+      - id: 9801
+        key: '4325328549'
+        locale: en-us
+        version: 1.0.0
+        title: Stages of the Design Sprint
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:28:37 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: '<a href="https://www.gv.com/lib/the-product-design-sprint-understandday-1" target="_blank">The Product Design Sprint: Understand</a>'
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '19483'
+          youtube_id: HKgjWQUJLFw
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_id_vs6.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_vi_vs3.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs7.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_ar_vs4.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_ja_vs7.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_ko_vs3.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_tr_vs4.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/subtitles/lang_ru_vs6.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/stages-of-the-design-sprint-design-sprint-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/stages-of-the-design-sprint-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/stages-of-the-design-sprint-design-sprint-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/stages-of-the-design-sprint-design-sprint-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d10dd0_stages-of-the-design-sprint-design-sprint-product-design-udacity/hls/playlist.m3u8'
+  - id: 89422
+    key: '43286985520923'
+    locale: en-us
+    version: 1.0.0
+    title: Understand Stage
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 130508
+    atoms:
+      - id: 130508
+        key: '4328698552'
+        locale: en-us
+        version: 1.0.0
+        title: Understand Stage
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:29:38 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '18400'
+          youtube_id: GkL5cy2Vwzc
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/subtitles/lang_id_vs7.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/subtitles/lang_vi_vs5.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/subtitles/lang_ar_vs6.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/subtitles/lang_ja_vs4.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/subtitles/lang_ko_vs5.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/subtitles/lang_tr_vs2.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs2.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/subtitles/lang_ru_vs13.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/understand-stage-design-sprint-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/understand-stage-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/understand-stage-design-sprint-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/understand-stage-design-sprint-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0f71e_understand-stage-design-sprint-product-design-udacity/hls/playlist.m3u8'
+  - id: 30651
+    key: '43288785470923'
+    locale: en-us
+    version: 1.0.0
+    title: Understand Stage Activities
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 60957
+    atoms:
+      - id: 60957
+        key: '4328878547'
+        locale: en-us
+        version: 1.0.0
+        title: Understand Stage Activities
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:39:00 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: |-
+          <a href="http://theuxreview.co.uk/user-interviews-the-beginners-guide/" target="_blank">User Interviews The Beginner's Guide</a>
+
+          <a href="http://www.launchbit.com/blog/customer-research-writing-interview-questions/" target="_blank">Customer Research Writing Interview Questions</a>
+
+          <a href="http://www.slideshare.net/edanzico/user-interview-techniques" target="_blank">User Interview Techniques</a> (slideshare)
+
+          <a href="https://www.gv.com/lib/get-better-data-from-user-studies-16interviewing-tips" target="_blank">Get Better Data from User Studies: 16 Interviewing Tips</a>
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '35216'
+          youtube_id: thZ6bl0Tqdk
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/subtitles/lang_vi_vs3.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs2.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/subtitles/lang_ko_vs3.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/subtitles/lang_id_vs6.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs8.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/subtitles/lang_ar_vs4.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/subtitles/lang_tr_vs1.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/subtitles/lang_ja_vs3.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/subtitles/lang_ru_vs11.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/understand-stage-activities-design-sprint-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/understand-stage-activities-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/understand-stage-activities-design-sprint-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/understand-stage-activities-design-sprint-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d268ea_understand-stage-activities-design-sprint-product-design-udacity/hls/playlist.m3u8'
+  - id: 39903
+    key: '43776649310923'
+    locale: en-us
+    version: 1.0.0
+    title: User Interviews and How Might We...
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 138696
+    atoms:
+      - id: 138696
+        key: '4377664931'
+        locale: en-us
+        version: 1.0.0
+        title: User Interviews and How Might We...
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 21 2016 22:19:13 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## User Interviews
+          We can't stress enough how important it is that you talk to users or your customers.
+
+          User interviews and field visits are some of the best ways to do that. They let you know who you’re building for — their motivations for why and their frustrations about how they currently accomplish a task.
+
+          In-person contextual inquiries (observing users in their own environment) and phone or remote video interviews are ways to figure that out. Pay close attention to things like “I dislike ... ,” or “I wish there was a way I could ... ,” or “I can’t find what I need when I want to ... ”
+
+          Build your product to solve those problems.
+
+          If you're looking for more reading on how to understand your users, check out Indi Young's <a href="http://rosenfeldmedia.com/books/mental-models/" target="_blank">Mental Models</a>.
+
+          ### How Might We?
+
+          As you and your team conduct user interviews, everyone should be listening to a user and capturing their likes, dislikes, and pain points on post-it notes. Everyone should also capture "How might we..." questions.
+
+          ![How Might We](//lh3.googleusercontent.com/yV0DXl1IDgbmxwNuD-oq83UcWczomhp_w0sHrExvmnMLLVGtlNEzS6i7LtCdtNmvdDmWkrFCzgh97EPF8Q=s0#w=684&h=524)
+
+          These questions capture ideas that will help you think in new and innovative ways.
+
+          <strong>How</strong> assumes solutions may exist
+
+          <strong>Might</strong> says we don't have to find a solution, but let's try.
+
+          <strong>We</strong> is all about finding creative solutions together with your team.
+
+
+          It's best to write one idea per post-it note. You should also write with Sharpie or markers so that anyone could easily see the writing if the post-it was on a wall or table.
+
+          At the end of the user interviews and after all the post-its have been written, it's useful to conclude by sharing the first set of ideas and insights that were generated.
+
+          ![Summarize Understanding Findings](//lh3.googleusercontent.com/W4CSW1fxmLKQA-WosX1LKGjWvlUTC3xtm77RR6fMLRHf9vR_NFfxfAT8VkOVvoKBm8XKeXe49dLcaItl3UuQ=s0#w=620&h=491)
+
+          Next, use the sticky notes and group them into themes. You and your team can vote on the best ideas using a limited number of sticker dots. This is called Zen Voting which is covered later in this lesson. By grouping the post-it notes, you can do a "first check" on the direction of the team. The team will continue to learn and decide in the later stages of the design sprint, so nothing at this point is final.
+
+          How Might We - <a href="https://hbr.org/2012/09/the-secret-phrase-top-innovato/" target="_blank">The Secret Phrase Top Innovators Use</a> (Harvard Business Review)
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 74812
+    key: '43287685580923'
+    locale: en-us
+    version: 1.0.0
+    title: Define Stage
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 136139
+    atoms:
+      - id: 136139
+        key: '4328768558'
+        locale: en-us
+        version: 1.0.0
+        title: Define Stage
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:41:09 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '9228'
+          youtube_id: 5XEdgvd99wQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/subtitles/lang_id_vs7.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs9.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/subtitles/lang_ar_vs7.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/subtitles/lang_ja_vs9.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/subtitles/lang_ko_vs3.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/subtitles/lang_tr_vs13.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs2.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/subtitles/lang_fr_vs2.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/subtitles/lang_ru_vs6.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/define-stage-design-sprint-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/define-stage-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/define-stage-design-sprint-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/define-stage-design-sprint-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d087db_define-stage-design-sprint-product-design-udacity/hls/playlist.m3u8'
+  - id: 34497
+    key: '43349285350923'
+    locale: en-us
+    version: 1.0.0
+    title: 'Define Stage: Additional Methods'
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 63670
+    atoms:
+      - id: 63670
+        key: '4334928535'
+        locale: en-us
+        version: 1.0.0
+        title: 'Define Stage: Additional Methods'
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 21 2016 22:18:28 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Additional Methods
+
+          ### Central User Journey
+
+          The central user journey is one activity that can help you break down ideas into meaningful categories. You can describe all the interactions that take a user from first hearing about the product to becoming an expert user. If you are improving an existing product, you need to analyze the current state of the product before creating a new user journey.
+
+          ![Central User Journey](http://i.imgur.com/WKDgdwQ.png)
+
+          ### The Golden Path
+          The Golden Path are the key steps that a user takes to find the value they came to find in the first place. Don't think in terms of web pages or screens; think in terms of stories. Prioritize the central flow versus secondary flows or paths.
+
+          ![The Golden Path](//lh3.googleusercontent.com/DoN8eMZ5-ulBoG3lt4wC2nk0MoYaE_QeN21WDiegGrGyDRoCHHWxz26niKjrcx4r67qpFvRexd-2dNKE1A=s0#w=651&h=226)
+
+          ### Defining Design Principles
+          What three words would you like users to say about your product? List all possible design principles and reactions your team cares about individually, and select the best ideas as a team.
+
+          ![Defining Design Principles](//lh3.googleusercontent.com/FimcVLxQf1PY_VA2rxcj8En5y_bkpz83i7Y1q8KorqkxTBlWWsM7gnJubRSQl_03ps-qhYp3GWFD3OZODvM=s0#w=612&h=533)
+
+          ### Brand Visual Sliders
+          Use sliders to decide on the key visual and emotional qualities you want to express in a new product.
+
+          ![Brand Visual Sliders](//lh3.googleusercontent.com/TKBm_hig1F4bUfD7SLXrlJAsHJNisIBYI1kH9rCEvBblz5YLh6HPiR-hrtHSZZ5K4Oew8LM_4CcwQajsNA=s0#w=643&h=493)
+
+          ### The Three Hypothesis Strategy
+          This simple activity can help you confirm the early formation of the product including the core audience, needs, and solution. You'll answer three questions. Who is the user? What do they need? What is a solution? 
+
+          ### The First Tweet
+          Imagine it's time to launch your product. What is the first announcing tweet you would send out?
+
+          ### Job Flows
+          In this activity, you describe every user problem as a job, focusing on the event trigger, motivation, and outcome. It's simple to formulate and powerful because it focuses on behavior and situation rather than user types.
+
+          ### Future Press Release
+          Write a press release that includes:
+
+          * title and subtitle
+          * problem statement and customer definition
+          * details of the product solution
+          * why this product (in your own voice)
+          * why customers love it (in their voice)
+          * how customers get started using it
+
+          Pay attention to the voice of the company and the customer voice.
+
+          ### Success Metrics and Signals
+          Do you know or does your team have agreed upon signals and success metrics? If yes, remind yourself or your team about these during the "understand stage". If not, draft signals and success metrics. You'll learn a process for doing this in Lesson 4 on Key Metrics.
+
+          What's the difference between signals and success metrics?
+          Signals relate to the general presence of a behavior that is desirable.
+          Metrics are quantifiable, numeric outputs with regards to the desired behavior.
+
+          ### Experience Strategy Template
+          This activity comes from the book, <a href="http://www.amazon.com/Crossing-Chasm-Marketing-High-Tech-Mainstream/dp/0060517123" target="_blank">Crossing the Chasm</a> and it's geared toward new product categories. Fill out the template from your product, and bring together the best ideas to market the new product to a target audience.
+
+          ### 1 Page Executive Summary
+          Answer a couple questions to arrive at a short and sweet product definition. The guiding questions for this activity were published by a former Google PM in the book, <a href="http://www.amazon.com/Shipping-Greatness-Practical-launching-outstanding/dp/1449336574" target="_blank">Shipping Greatness</a>
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 134077
+    key: '43282485390923'
+    locale: en-us
+    version: 1.0.0
+    title: 'Define Stage: Shopping App Golden Path'
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 41060
+    atoms:
+      - id: 41060
+        key: '4328248539'
+        locale: en-us
+        version: 1.0.0
+        title: 'Define Stage: Shopping App Golden Path'
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:52:39 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          <a href="https://docs.google.com/presentation/d/1vTsYE4VT1ybw8VIcN3UGINL3tUrSlRyQEBduuVe0ib4/pub?start=false&loop=false&delayms=15000" target="_blank">ShopPal Personas</a>
+
+          <strong>First Tweet </strong>  
+          "Get groceries on demand and let your past purchases help do the shopping for you. Same day delivery or pick up. #ShopPal"
+
+          <strong>One Page Executive Summary</strong>  
+
+          <em>What is the product called?</em>  
+          ShopPal
+
+          <em>Who are the users and how many of these users exist? </em>  
+          Users of ShopPal are on the go, digitally-savy, and comfortable with shopping for goods or services online. They value convenience and their time and are willing to pay a premium for same day delivery. The current estimate of users is 1%-15% of the US population (3.2-43.8 million).
+
+          <em>What problem does the product solve and how valuable is the solution to users?</em>  
+          The product allows users to find stores and to add items to a cart of groceries for purchase. Users can choose between pick up or delivery methods for the cart items. The product recommends products and quantities based on previous purchases from stores and length of time between purchases. The solution is valuable because it saves the users' time and allows users to not forget items as many people might do when shopping without a grocery list or in person. The solution is also valuable because the app can make item recommendations and remind users to purchase items based on past purchases.
+
+          <em>How does the product solve the problem and what does the solution look like? Why is your approach durably different than the competition?</em>  
+          The product allows users to search for stores in any zipcode, manage a grocery list for a store, and purchase all items on the grocery list or some subset of the items. The product allows users to choose between pick up and delivery so that users can use the application for free or pay for premium services like same day delivery. The product is durably different than the competition since data can be integrated into recommendations by store. Items and quantities can be suggested to the user based on dietary restrictions, past purchases, and other consumer purchase data. The application will focus on personalized item recommendations and suggested quantities because many users value their time and don't want to spend a lot of effort searching for items on the app.
+
+          <em>When will the product ship and what are the major milestones?</em>  
+          The freemium product will ship in 2 months with basic features, such as finding a store, managing a grocery list for a particular store, searching for items in a store, setting quantities for items, making purchases, and choosing delivery method.
+        instruction:
+          video:
+            id: '19091'
+            youtube_id: h_5yACjdf2k
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/subtitles/lang_es_vs4.srt'
+                language_code: es
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/subtitles/lang_id_vs1.srt'
+                language_code: id
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/subtitles/lang_vi_vs1.srt'
+                language_code: vi
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs7.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/subtitles/lang_ar_vs2.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/subtitles/lang_ja_vs4.srt'
+                language_code: ja
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/subtitles/lang_ko_vs3.srt'
+                language_code: ko
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+                language_code: en-us
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/subtitles/lang_tr_vs1.srt'
+                language_code: tr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+                language_code: zh-tw
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+                language_code: fr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/subtitles/lang_ru_vs1.srt'
+                language_code: ru
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/define-stage-golden-path-design-sprint-product-design-udacity_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/define-stage-golden-path-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/define-stage-golden-path-design-sprint-product-design-udacity_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/define-stage-golden-path-design-sprint-product-design-udacity_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d102e9_define-stage-golden-path-design-sprint-product-design-udacity/hls/playlist.m3u8'
+          text: null
+        question:
+          title: Define Stage Shopping App Golden Path
+          background_image: '//lh3.googleusercontent.com/E6Z1TQ13_hgKC-9tMoZgfGok_Cdvcj920GnGRLIyWs587WfZNbIyK0D7Au-QlpgPQbvD_6zw3f7KuMnIOhQ=s0#w=960&h=540'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4330573902'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 89441
+    key: '43324286090923'
+    locale: en-us
+    version: 1.0.0
+    title: Diverge Stage
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 9209
+    atoms:
+      - id: 9209
+        key: '4332428609'
+        locale: en-us
+        version: 1.0.0
+        title: Diverge Stage
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:27:42 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '36193'
+          youtube_id: uGtwsvHMMJA
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs7.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/subtitles/lang_ko_vs4.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/subtitles/lang_id_vs5.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/subtitles/lang_ru_vs8.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/subtitles/lang_tr_vs4.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/subtitles/lang_ja_vs6.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/subtitles/lang_fr_vs2.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/subtitles/lang_ar_vs3.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/diverge-stage-design-sprint-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/diverge-stage-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/diverge-stage-design-sprint-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/diverge-stage-design-sprint-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d279f4_diverge-stage-design-sprint-product-design-udacity/hls/playlist.m3u8'
+  - id: 98115
+    key: '43333794300923'
+    locale: en-us
+    version: 1.0.0
+    title: Structure of a Design Sprint Activity
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 99474
+    atoms:
+      - id: 99474
+        key: '4333379430'
+        locale: en-us
+        version: 1.0.0
+        title: Structure of a Design Sprint Activity
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 21 2016 22:18:27 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Structure of a Design Sprint Activity
+
+          Before you move on to the next activity, you should pay attention to the structure of a design sprint activity. Many of the activities have the following format.
+
+          ### Format
+
+          - intro the activity and deliverables
+          - work time for individuals
+          - sharing and discussion
+          - documenting and next steps
+
+          This format leverages the experiences and creativity of individuals so ideas can be crowd-sourced from the team. The best ideas are often a blend of ideas or come from multiple individuals. The individual work time also tries to prevent <a href="http://en.wikipedia.org/wiki/Groupthink" target="_blank">group think</a> from happening. This format is useful for all stages of the design sprint so that individuals can contribute ideas throughout to shape the product.
+
+          You can work alone on your product, but you will likely come up with a better product by working with a small team. If you do work alone, then you should focus on considering the perspective of other people: users, investors, engineers, designers, business professionals, and other stakeholders. These perspectives will help you build a great product because products are made by people for people. **Our best advice though is to work with others and seek feedback.** Working in a vacuum rarely leads to a great product.
+
+          The collaborative nature of the activities, however, does not mean that every decision should be reached by consensus. Ultimately, you (the entrepreneur) are the decision maker or you have appointed someone to make critical decisions throughout any of the design sprint activities.
+
+          As you work through the next activities for ShopPal or your own idea, remember the objective of these tasks is for you to learn the process and the importance of “showing and not telling” so you can embed that in your thinking and problem solving.
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 87627
+    key: '43314685530923'
+    locale: en-us
+    version: 1.0.0
+    title: 'Diverge Stage: Shopping App Crazy 8s'
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 73343
+    atoms:
+      - id: 73343
+        key: '4331468553'
+        locale: en-us
+        version: 1.0.0
+        title: 'Diverge Stage: Shopping App Crazy 8s'
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:48:00 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '3402'
+            youtube_id: 27lVhXF5s9c
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+                language_code: es
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/subtitles/lang_id_vs4.srt'
+                language_code: id
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/subtitles/lang_vi_vs2.srt'
+                language_code: vi
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs5.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/subtitles/lang_ar_vs8.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/subtitles/lang_ja_vs2.srt'
+                language_code: ja
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/subtitles/lang_ko_vs2.srt'
+                language_code: ko
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+                language_code: en-us
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/subtitles/lang_tr_vs3.srt'
+                language_code: tr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+                language_code: zh-tw
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+                language_code: fr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/subtitles/lang_ru_vs1.srt'
+                language_code: ru
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/diverge-stage-crazy-8s-design-sprint-product-design-udacity_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/diverge-stage-crazy-8s-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/diverge-stage-crazy-8s-design-sprint-product-design-udacity_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/diverge-stage-crazy-8s-design-sprint-product-design-udacity_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57cfa2c9_diverge-stage-crazy-8s-design-sprint-product-design-udacity/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 'Diverge Stage: Shopping App Crazy 8s'
+          background_image: '//lh3.googleusercontent.com/Y60z9I333Qjc6gmdv3n1RJBL5jPoEwzKlAig29F1UF3yeYP5b2WpwPSmEvpiMdwuI224k_fayZQVzFUKopXN=s0#w=960&h=540'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4329022231'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 89418
+    key: '43336885510923'
+    locale: en-us
+    version: 1.0.0
+    title: Zen Voting - Decide Stage
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 9292
+    atoms:
+      - id: 9292
+        key: '4333688551'
+        locale: en-us
+        version: 1.0.0
+        title: Zen Voting - Decide Stage
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:53:52 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: '35909'
+            youtube_id: U5Fi-1Rqj_o
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+                language_code: en-us
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs7.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/subtitles/lang_tr_vs3.srt'
+                language_code: tr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/subtitles/lang_ar_vs5.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+                language_code: zh-tw
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/subtitles/lang_ja_vs2.srt'
+                language_code: ja
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/subtitles/lang_vi_vs2.srt'
+                language_code: vi
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+                language_code: es
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/subtitles/lang_id_vs2.srt'
+                language_code: id
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/subtitles/lang_ru_vs1.srt'
+                language_code: ru
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/subtitles/lang_ko_vs2.srt'
+                language_code: ko
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+                language_code: fr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+                language_code: en
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/zen-voting-decide-stage-design-sprint-product-design-udacity_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/zen-voting-decide-stage-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/zen-voting-decide-stage-design-sprint-product-design-udacity_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/zen-voting-decide-stage-design-sprint-product-design-udacity_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d274f6_zen-voting-decide-stage-design-sprint-product-design-udacity/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 'Zen Voting: Decide Stage'
+          background_image: '//lh3.googleusercontent.com/t6M4MAuWU652ED2i3Kr4f7Y6gEvOe_JHPV-rO9932ADRTJFGzSYbKa5sMO6ai7bVrGgrI1q7m-N_kEcFyRCt=s0#w=960&h=540'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4332522769'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 134054
+    key: '43328185540923'
+    locale: en-us
+    version: 1.0.0
+    title: 'Diverge Stage: Shopping App 1 Big Idea'
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 68184
+    atoms:
+      - id: 68184
+        key: '4332818554'
+        locale: en-us
+        version: 1.0.0
+        title: 'Diverge Stage: Shopping App 1 Big Idea'
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:51:57 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: |-
+          Share your sketches on the discussions.
+          http://discussions.udacity.com/t/lesson-3-the-crazy-8s/20776
+        instruction:
+          video:
+            id: '19782'
+            youtube_id: HUdJBbQC3fk
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+                language_code: es
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/subtitles/lang_id_vs4.srt'
+                language_code: id
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/subtitles/lang_vi_vs2.srt'
+                language_code: vi
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs7.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/subtitles/lang_ar_vs3.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/subtitles/lang_ja_vs3.srt'
+                language_code: ja
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/subtitles/lang_ko_vs2.srt'
+                language_code: ko
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+                language_code: en-us
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/subtitles/lang_tr_vs4.srt'
+                language_code: tr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+                language_code: zh-tw
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+                language_code: fr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/subtitles/lang_ru_vs1.srt'
+                language_code: ru
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/diverge-stage-1-big-idea-design-sprint-product-design-udacity_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/diverge-stage-1-big-idea-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/diverge-stage-1-big-idea-design-sprint-product-design-udacity_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/diverge-stage-1-big-idea-design-sprint-product-design-udacity_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d11324_diverge-stage-1-big-idea-design-sprint-product-design-udacity/hls/playlist.m3u8'
+          text: null
+        question:
+          title: 'Diverge Stage: Shopping App 1 Big Idea'
+          background_image: '//lh3.googleusercontent.com/xa1TtrSu7JzjZqVyGY_tR7jNkjJ_IS8SG1f_N_9Gk6a8obay0AlKMW9w6eeEXoOGR4HFZWvPhfRC2fIHThw=s0#w=960&h=540'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4327232933'
+        answer:
+          text: null
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+  - id: 98782
+    key: '43267985670923'
+    locale: en-us
+    version: 1.0.0
+    title: 'Diverge Stage: Additional Methods'
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 79273
+    atoms:
+      - id: 79273
+        key: '4326798567'
+        locale: en-us
+        version: 1.0.0
+        title: 'Diverge Stage: Additional Methods'
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 21 2016 22:18:42 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Additional Methods
+
+          Another round of Zen Voting, which is explained in the next video, is helpful after the One Big Idea sketch or a Storyboard Sketch (see below). This allows the best ideas to surface before prototypes are created.
+
+          ### 1 Storyboard in 5 Minutes
+          Sometimes, product ideas are too complex to express on 1 page or screen. This is when you or your team need to think in terms of stories or flows. As another activity you can ask individuals or small groups on your team to sketch a storyboard of all the key steps the user must take. Think of this as a more detailed version of the Golden Path or the Central User Journey from the Understand Stage. In this activity you are identifying what the user sees and what the user does every step of the way. If your team is new to design, encourage them to think in terms of comic book strips.
+
+          ### Decision Sliders
+          Products are made of many decisions and assumptions. One great practice in the design sprint is to list the core decisions that affect the user experience. For example, you may need to decide whether a service is going to be free or paid? You might also need if the user will be picking up groceries in the case of the shopping app or not. List both options, and use slides to mark decisions: a, b or both. Decisions can be revised, of course, but changes in the sliders can alter design decisions. This chart can help remind people about what's important for the user experience. Visualizing the decision space can lead to a deeper grasp of what the product should look like and how it can support users in their tasks.
+
+          ![Decision Sliders](//lh3.googleusercontent.com/uJ65MD8j98EZagIVVDLXYK3GQC1E50cu4nd5opuVbPfoJZn8Dbfq1vzyqiYyIdUqaAX3QcX1ThveRgYH3Nw=s0#w=631&h=384)
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 66804
+    key: '43292385380923'
+    locale: en-us
+    version: 1.0.0
+    title: Decide Stage
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 121278
+    atoms:
+      - id: 121278
+        key: '4329238538'
+        locale: en-us
+        version: 1.0.0
+        title: Decide Stage
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:28:03 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '30510'
+          youtube_id: yJyfGi4YexI
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/subtitles/lang_ar_vs6.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/subtitles/lang_ja_vs4.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/subtitles/lang_ko_vs4.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs5.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/subtitles/lang_tr_vs2.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/subtitles/lang_id_vs6.srt'
+              language_code: id
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/decide-stage-design-sprint-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/decide-stage-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/decide-stage-design-sprint-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/decide-stage-design-sprint-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d1c9ef_decide-stage-design-sprint-product-design-udacity/hls/playlist.m3u8'
+  - id: 57971
+    key: '43285585640923'
+    locale: en-us
+    version: 1.0.0
+    title: Additional Methods to Decide
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 137045
+    atoms:
+      - id: 137045
+        key: '4328558564'
+        locale: en-us
+        version: 1.0.0
+        title: Additional Methods to Decide
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 21 2016 22:19:12 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Additional Methods to Decide
+
+          As you've already seen and as Nadya mentioned, zen voting is a great activity to get input from all team members so the best ideas surface. In addition to zen voting, here are two other activities that can help you or your team determine the direction of the product.
+
+          ### Thinking Hats
+
+          If your team is new or tends to be biased in their opinion, assign everyone a "thinking hat." Each hat represents a different point of view that’s valuable and that can enrich the final decision. Encourage everyone to choose a perspective and discuss the decision from that point of view. If you are working alone, it's likely that you are already thinking like an "idea generator" or an "optimist". Change your thoughts to be in line with one of the following:
+
+          * Pessimist
+          * Engineer (technical feasibility)
+          * User advocate
+
+          Think of objections to your own ideas and how you can beat them.
+
+          ![Thinking Hats](//lh3.googleusercontent.com/bTdw6kTwVy71S_SGnlUvTaV-3Dr5HIvfMh3B5rYMwHrAlrK2VTxN2H5_7bgWS0S8w-2hC6bD0BRmqQ4-6g=s0#w=679&h=459)
+
+          ### Technical Difficulty vs. User Value
+
+          Use this activity to organize ideas by difficulty and user value. Ideas that have little user value should be avoided, and if product launch timelines are short, then technically difficult ideas should be put on hold in favor of ideas with less technical difficulty and equal or greater user value.
+
+          ![Difficulty and Value Matrix](//lh3.googleusercontent.com/hTxCgqEG0sJ43siS3r_c_xhjijO1-JmPLXaxczd-r7bNEDAgEk9nNTaijBfZ8IXisXQqbtbluWiMWyzXBK4=s0#w=720&h=540)
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 89941
+    key: '43324286110923'
+    locale: en-us
+    version: 1.0.0
+    title: Prototype Stage
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 37426
+    atoms:
+      - id: 37426
+        key: '4332428611'
+        locale: en-us
+        version: 1.0.0
+        title: Prototype Stage
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:35:10 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '22049'
+          youtube_id: K1xBvjd7UNU
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/subtitles/lang_id_vs4.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/subtitles/lang_vi_vs3.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs5.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/subtitles/lang_ar_vs7.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/subtitles/lang_ja_vs7.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/subtitles/lang_ko_vs2.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/subtitles/lang_tr_vs3.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/subtitles/lang_ru_vs25.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/prototype-stage-design-sprint-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/prototype-stage-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/prototype-stage-design-sprint-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/prototype-stage-design-sprint-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d13d83_prototype-stage-design-sprint-product-design-udacity/hls/playlist.m3u8'
+  - id: 128447
+    key: '43280585500923'
+    locale: en-us
+    version: 1.0.0
+    title: Prototypes & Deliverables to User Test
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 51034
+    atoms:
+      - id: 51034
+        key: '4328058550'
+        locale: en-us
+        version: 1.0.0
+        title: Prototypes & Deliverables to User Test
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 21 2016 22:18:20 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Prototypes & Deliverables
+
+          A prototype is something that makes your ideas “real enough to feel,” so you can get feedback from users. You or your team will likely spend the most time in this stage. Because you have already scheduled user testing, the deadline will help keep you focused on making a prototype. Keep in mind that the output will likely be thrown away so don't obsess about perfecting it. High-fidelity prototypes, those with fonts, logos images, and near pixel perfection, will require design talent and time so plan accordingly.
+
+          Here are the types of deliverable you can make:
+
+          - wireframes
+          - mockups
+          - prototypes
+          - physical prototype (<a href="https://www.pinterest.com/unhaengels/wu_paper-prototyping-ux/" target="_blank">paper</a>, <a href="http://en.wikipedia.org/wiki/Lego" target="_blank">Legos</a>, office supplies, etc.)
+          video (i.e. <a href="https://youtu.be/7QmCUDHpNzE" target="_blank">Dropbox</a>)
+
+          <a href="http://designmodo.com/wireframing-prototyping-mockuping/" target="_blank">What's the difference between a wireframe, mockup, and prototype?</a>
+
+          ![Design Sprint Deliverables](//lh3.googleusercontent.com/AQ0N-7iwcQVPaoahlvn2cTuijiGZdqqKxkajHYIjRhNdvhrPDW5HcHXYoNK3sggLNPKaIgreg1nF2hY3YlA=s0#w=1048&h=685)
+
+          ### Articles and Blog Posts
+          <a href="http://sixrevisions.com/user-experience-ux/prototyping-tips-process/" target="_blank">Tips on for Your Prototyping Process</a>
+          <a href="https://medium.com/greylock-perspectives/prototyping-tools-and-process-ab63831f8486" target="_blank>Prototyping Tools and Process</a>
+          <a href="http://blog.invisionapp.com/10-tips-on-prototyping-uis-with-sketch/" target="_blank">Tips on Prototyping with UIs with Sketch</a>
+          ### Tools (Rapid Prototyping Tools)
+          There are many tools you can user to create user flows, low resolution wireframes, and mid to high fidelity mockups. Here are a list of some tools.
+
+          Remember that tools will change, and you can always make use of paper, pens, pencils, sharpees, crayons, and markers. Paper is great because you are less likely to perfect details and less likely to grow attached to the designs. It's often helpful to know that you won't keep anything on paper before you start so that you can focus on ideas rather than pixel perfection.
+
+          ### User Flows and Low Resolution Wireframes
+          <a href="https://prezi.com/signup/public/" target="_blank">prezi</a><br>
+          <a href="https://wireframe.cc/" target="_blank">wireframe.cc</a><br>
+          <a href="http://pencil.evolus.vn/" target="_blank">pencilproject</a><br>
+          <a href="http://wireframesketcher.com/" target="_blank">wireframesketcher</a><br>
+          <a href="http://ninjamock.com/" target="_blank">ninjamock</a><br>
+
+          ### Low Fidelity Prototyping Tools
+          <a href="https://balsamiq.com/" target="_blank">Balsamiq</a>(free trial)<br>
+          <a href="http://www.invisionapp.com/" target="_blank">Invision</a> (free forever)<br>
+          <a href="https://www.apple.com/mac/keynote/" target="_blank">Keynote</a> (iOS animations)<br>
+          <a href="http://www.google.com/slides/about/" target="_blank">Google Slides</a><br>
+
+          ### High Fidelity Prototyping Tools
+          <a href="http://bohemiancoding.com/sketch/" target="_blank">Sketch</a><br>
+          <a href="http://framerjs.com/" target="_blank">framer.js</a> (14 day free trial)<br>
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 7901
+    key: '56180785540923'
+    locale: en-us
+    version: 1.0.0
+    title: 'Learn More: Dive Deeper into Paper'
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 73985
+    atoms:
+      - id: 73985
+        key: '5618078554'
+        locale: en-us
+        version: 1.0.0
+        title: 'Learn More: Dive Deeper into Paper'
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 21 2016 22:18:38 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Learn More##
+          Throughout your Nanodegree program, you'll have the chance to go deeper into concepts through live events where you can ask questions and get answers straight from your coaches.  The details to signup and attend are shared in your forum.
+
+          Can't attend live? Don't worry! We also <em>record sessions</em> so you can watch them anytime.  We will be sharing the recordings of past events in nodes like this one.  
+
+          These sessions cover things like common mistakes coaches notice students making, additional practice of specific skills, or even just clarification of program details and discussion of how students are feeling about their experience. 
+
+          ### The Power of Paper Prototypes###
+          <em>In this recorded session, Mark and Michael talk about why using paper as a first prototype. Paper prototypes allow you to rapidly iterate your design saving you time, money, and heartache. Paper is cheap, fast, and efficient at finding out the core design elements of your app. You can create an app with paper in less than 30 minutes and show off your design to people that very same day.
+
+          <a href="https://www.youtube.com/watch?v=uEhZ39TaXKE" target="_blank">**Video**</a>
+
+          <a href="https://discussions.udacity.com/t/project-1-webcasts/34543/3" target="_blank">**Transcript**</a>
+
+          Keep an eye out for more <b>Learn More</b> opportunities in your Nanodegree course material and access all recorded sessions from <a href="https://discussions.udacity.com/t/tend-webcast-directory/34544" target="_blank">**this list anytime**</a>.
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 74842
+    key: '43244085650923'
+    locale: en-us
+    version: 1.0.0
+    title: Validate Stage
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 26487
+    atoms:
+      - id: 26487
+        key: '4324408565'
+        locale: en-us
+        version: 1.0.0
+        title: Validate Stage
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:28:31 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: '<a href="http://www.amazon.com/Rocket-Surgery-Made-Easy-Do-It-Yourself/dp/0321657292" target="_blank">Rocket Surgery Made Easy</a> by Steve Krug (How to Conduct User Testing and Fix Usability Issues)'
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '35515'
+          youtube_id: tRE9N_SRKfA
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs13.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/subtitles/lang_ko_vs15.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/subtitles/lang_id_vs5.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs2.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/subtitles/lang_ar_vs13.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/subtitles/lang_ja_vs4.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/subtitles/lang_vi_vs3.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/subtitles/lang_tr_vs6.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/validate-stage-design-sprint-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/validate-stage-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/validate-stage-design-sprint-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/validate-stage-design-sprint-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d26e29_validate-stage-design-sprint-product-design-udacity/hls/playlist.m3u8'
+  - id: 98799
+    key: '43835330620923'
+    locale: en-us
+    version: 1.0.0
+    title: 'Validate Stage: Additional Methods'
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 79396
+    atoms:
+      - id: 79396
+        key: '4383533062'
+        locale: en-us
+        version: 1.0.0
+        title: 'Validate Stage: Additional Methods'
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 21 2016 22:18:42 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Validate Stage: Additional Methods
+
+          ### User Testing
+          As Nadya mentioned, user testing is critical to determine if you are building the right thing for users. A simple user test can uncover valuable insights, and you can perform user testing over a video call or in person. It's important that you are able to see what the user is doing and how they interact with the prototype. For more information on how to conduct usability testing (including examples of a usability script, consent form, checklist, and demo), visit <a href="https://www.sensible.com/downloads-rsme.html" target="_blank">Rocket Surgery Made Easy</a>.
+
+          During the usability testing, observers should take notes (post-its, Google Doc, paper) or document feedback in a <a href="http://www.smashingmagazine.com/2013/04/11/rainbow-spreadsheet-collaborative-ux-research-tool/" target="_blank">rainbow spreadsheet</a> as Tomer mentioned in Lesson 2.
+
+          Observers should capture answers to the following questions.
+
+          - <em>What do users like and dislike in the prototype?</em>
+          - <em>What would they like to improve?</em>
+          - <em>What features did they want?</em>
+          - <em>Does the solution meet their needs overall?</em>
+          - <em>How would they describe the product?</em> (You might ask for only three words which can help with marketing or validate decisions made in the sprint.)
+
+
+          <a href="http://blog.invisionapp.com/building-better-products-through-prototype-validation/" target="_blank">Building Better Products through Prototype Validation</a> (Invision Blog)
+
+          ### Stakeholder Review
+          The key stakeholder of the product often is the one who decides to fund or allocate resources to the ideas. This person is likely you, those working with you, or investors. Be sure to get stakeholders' review and approval.
+
+          At larger companies, the key stakeholder is often a Director, VP, Product Manager, or CEO. If a key stakeholder is not able to attend the full sprint, ask the stakeholder to provide a review in the middle of the sprint before prototyping or attend a final presentation which summarizes the results of the sprint.
+
+
+          ### Technical Feasibility
+          Do the design ideas match or exceed the technical capacity of the team? An engineering review can help the team scope the work appropriately and discuss potential trouble area and workarounds.
+
+          ### Kano Methods
+
+          Kano is used to measure potential user satisfaction with new or proposed features. 
+
+          Participants are shown feature concepts with a short text description, and then asked to rate two questions.
+
+          - <em>How they would feel if a feature was present?</em>
+          - <em>How they would feel if a feature was absent?</em>
+
+          ![Kano Method Grid](//lh3.googleusercontent.com/U5qeAufs_UW5B1tMp9EdzT1stCjC_rG7V2L6KCj_J4lMDtMaxLBbRdhFG7sVtdYh09N77pPGpMwad46ilzlc=s0#w=683&h=526)
+
+          These responses are mapped onto a cartesian grid (shown above), with features falling into 5 general areas:
+
+          - <strong>Delighter</strong> - like the feature and did not expect it to present
+          - <strong>Linear</strong> - like the feature and would dislike if it was absent
+          - <strong>Must have</strong> - no credit is given for the feature, but people dislike if it is absent
+          - <strong>Indifferent</strong> - indifference if the feature is present or absent
+          - <strong>Reverse / negative</strong> - dislike of the feature being present & like it when absent
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 42628
+    key: '43319985480923'
+    locale: en-us
+    version: 1.0.0
+    title: Innovative Team Structures
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 4080
+    atoms:
+      - id: 4080
+        key: '4331998548'
+        locale: en-us
+        version: 1.0.0
+        title: Innovative Team Structures
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 21 2016 22:18:45 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Innovative Team Structures
+
+          ### Teams in Parallel
+
+          When you have a large group, you might consider using the “teams in parallel” method. This means that you can have 2 or 20 teams working in the same week and coming together for key moments of the sprint. 
+
+          This method requires advance planning:
+
+          1. Create team roles to ensure teams have similar talent, list the key roles required to solve the problem and work to staff each team. 
+          2. Decide if teams will work on the same challenge or different challenges. 
+          3. Schedule peer-review sessions when teams visit each other to get feedback. 
+
+          <a href="https://www.youtube.com/watch?v=137XnWlUTKY" target="_blank">Design Sprints at Scale</a>
+
+
+          ### 24 Hour Global Relay Team
+
+          This might be relevant for teams that work on short challenges across different time zones. You can start the sprint in one office A and hand off the results to team B in another time zone. 
+
+          Create a timeline that allows each global team in each office to start and hand-off their work in sequence. Consider how teams can build on each other’s work.  
+
+          Sample schedule 
+
+          - 2 hour sprint in Japan. 
+          - 2 hour sprint in London.
+          - 2 hour sprint in New York.
+          - 2 hour sprint in Mountain View.
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+  - id: 65339
+    key: '43252184500923'
+    locale: en-us
+    version: 1.0.0
+    title: Design Sprint Summary
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 9498
+    atoms:
+      - id: 9498
+        key: '4325218450'
+        locale: en-us
+        version: 1.0.0
+        title: Design Sprint Summary
+        semantic_type: QuizAtom
+        updated_at: 'Tue Jun 27 2017 23:51:23 GMT+0000 (UTC)'
+        is_public: true
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        instructor_notes: ''
+        instruction:
+          video:
+            id: null
+            youtube_id: null
+            subtitles: null
+            transcodings: null
+          text: null
+        question:
+          title: Design Sprint Summary
+          background_image: '//lh3.googleusercontent.com/vQeUqwyNeiBJZbyUu8Eb0zhzoAKT1Q5HTN5tzizYsn9uVRoO9sdgR3Ajf5QeEolFXcy_KRT1HctuJ_vAPz0=s0#w=804&h=452'
+          alt_text: null
+          semantic_type: ImageFormQuestion
+          evaluation_id: '4331048366'
+        answer:
+          text: null
+          video:
+            id: '39183'
+            youtube_id: ehh3b4QtA38
+            subtitles:
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/subtitles/lang_es_vs3.srt'
+                language_code: es
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/subtitles/lang_id_vs1.srt'
+                language_code: id
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/subtitles/lang_vi_vs1.srt'
+                language_code: vi
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/subtitles/lang_pt-br_vs6.srt'
+                language_code: pt-br
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/subtitles/lang_ar_vs2.srt'
+                language_code: ar
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/subtitles/lang_zh-cn_vs2.srt'
+                language_code: zh-cn
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/subtitles/lang_ja_vs1.srt'
+                language_code: ja
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/subtitles/lang_ko_vs1.srt'
+                language_code: ko
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/subtitles/lang_en-us_vs2.srt'
+                language_code: en-us
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/subtitles/lang_tr_vs1.srt'
+                language_code: tr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/subtitles/lang_zh-tw_vs1.srt'
+                language_code: zh-tw
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/subtitles/lang_en_vs2.srt'
+                language_code: en
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/subtitles/lang_fr_vs1.srt'
+                language_code: fr
+              - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/subtitles/lang_ru_vs1.srt'
+                language_code: ru
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/design-sprint-summary_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/design-sprint-summary_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/design-sprint-summary_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/design-sprint-summary_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d50707_design-sprint-summary/hls/playlist.m3u8'
+  - id: 66788
+    key: '43271185370923'
+    locale: en-us
+    version: 1.0.0
+    title: Advice for Running Design Sprints
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 9057
+    atoms:
+      - id: 9057
+        key: '4327118537'
+        locale: en-us
+        version: 1.0.0
+        title: Advice for Running Design Sprints
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:27:42 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '13236'
+          youtube_id: Bg-oXKHSTFA
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/subtitles/lang_id_vs2.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/subtitles/lang_pt-br_vs10.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/subtitles/lang_ar_vs5.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/subtitles/lang_ja_vs7.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/subtitles/lang_ko_vs3.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/subtitles/lang_en-us_vs2.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/subtitles/lang_tr_vs4.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/advice-for-running-design-sprints-design-sprint-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/advice-for-running-design-sprints-design-sprint-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/advice-for-running-design-sprints-design-sprint-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/advice-for-running-design-sprints-design-sprint-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d0a475_advice-for-running-design-sprints-design-sprint-product-design-udacity/hls/playlist.m3u8'
+  - id: 134078
+    key: '43271585590923'
+    locale: en-us
+    version: 1.0.0
+    title: Course Map Revisited
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 123273
+    atoms:
+      - id: 123273
+        key: '4327158559'
+        locale: en-us
+        version: 1.0.0
+        title: Course Map Revisited
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:29:13 GMT+0000 (UTC)'
+        is_public: true
+        tags: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null
+        video:
+          id: '20898'
+          youtube_id: iWW9Hm_edvQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/subtitles/lang_es_vs1.srt'
+              language_code: es
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/subtitles/lang_id_vs2.srt'
+              language_code: id
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/subtitles/lang_vi_vs2.srt'
+              language_code: vi
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/subtitles/lang_pt-br_vs5.srt'
+              language_code: pt-br
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/subtitles/lang_ar_vs2.srt'
+              language_code: ar
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/subtitles/lang_zh-cn_vs2.srt'
+              language_code: zh-cn
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/subtitles/lang_ja_vs2.srt'
+              language_code: ja
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/subtitles/lang_ko_vs2.srt'
+              language_code: ko
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/subtitles/lang_en-us_vs1.srt'
+              language_code: en-us
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/subtitles/lang_tr_vs4.srt'
+              language_code: tr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/subtitles/lang_zh-tw_vs1.srt'
+              language_code: zh-tw
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/subtitles/lang_en_vs2.srt'
+              language_code: en
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/subtitles/lang_fr_vs1.srt'
+              language_code: fr
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/subtitles/lang_ru_vs1.srt'
+              language_code: ru
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/design-sprint-course-map-revisited-product-design-udacity_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/design-sprint-course-map-revisited-product-design-udacity_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/design-sprint-course-map-revisited-product-design-udacity_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/design-sprint-course-map-revisited-product-design-udacity_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d12729_design-sprint-course-map-revisited-product-design-udacity/hls/playlist.m3u8'
+  - id: 80816
+    key: '43314685680923'
+    locale: en-us
+    version: 1.0.0
+    title: 'End of Lesson Notes [HIDE]'
+    semantic_type: Concept
+    updated_at: 'Tue May 31 2016 02:43:40 GMT+0000 (UTC)'
+    is_public: false
+    resources: null
+    _atoms_ids:
+      - 133776
+    atoms:
+      - id: 133776
+        key: '4331468568'
+        locale: en-us
+        version: 1.0.0
+        title: 'End of Lesson Notes [HIDE]'
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 21 2016 22:19:09 GMT+0000 (UTC)'
+        is_public: true
+        text: null
+        instructor_notes: null
+        resources:
+          files: []
+          google_plus_link: null
+          career_resource_center_link: null
+          coaching_appointments_link: null
+          office_hours_link: null

@@ -1,0 +1,1293 @@
+id: 283020
+key: 1cc90ac3-c03a-43e6-8556-dcbd40dfd418
+locale: en-us
+version: 1.0.0
+title: Shell Workshop
+semantic_type: Lesson
+updated_at: 'Thu Aug 24 2017 15:34:56 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58cb08f5_screen-shot-2017-03-16-at-14.50.11/screen-shot-2017-03-16-at-14.50.11.png'
+  width: 500
+  height: 500
+video: null
+summary: 'The Unix shell is a powerful tool for developers of all sorts. In this lesson, you''ll get a quick introduction to the very basics of using it on your own computer.'
+lesson_type: Classroom
+duration: 90
+is_project_lesson: false
+career_portal_experience_levels: []
+_concepts_ids:
+  - 283032
+  - 283033
+  - 283034
+  - 283035
+  - 283036
+  - 283037
+  - 283038
+  - 283039
+  - 283040
+  - 283041
+  - 283042
+  - 283043
+  - 283044
+  - 283045
+  - 286411
+  - 283047
+  - 283049
+_project_id: null
+concepts:
+  - id: 283032
+    key: 68acb17b-161c-42f8-9c1e-fc1460eca322
+    locale: en-us
+    version: 1.0.0
+    title: Welcome!
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:29 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 286075
+    atoms:
+      - id: 286075
+        key: e44b765f-ffbb-4594-b21e-7f6ccea0b35c
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 001 Shell Intro
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:29 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51894'
+          youtube_id: '-EtN5oD8MM0'
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179db_ud206-001-shell-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179db_ud206-001-shell-intro/ud206-001-shell-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179db_ud206-001-shell-intro/ud206-001-shell-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179db_ud206-001-shell-intro/ud206-001-shell-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179db_ud206-001-shell-intro/ud206-001-shell-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179db_ud206-001-shell-intro/hls/playlist.m3u8'
+  - id: 283033
+    key: bda4a9b5-46e3-4ce9-b58d-90eded438522
+    locale: en-us
+    version: 1.0.0
+    title: 'Windows: Installing Git Bash'
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:31 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 286076
+      - 283064
+      - 283060
+    atoms:
+      - id: 286076
+        key: 1a1a79fd-6862-46fc-bf0e-e7c86d8b38d6
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 002 P0 Windows Installing Git Bash
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:30 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51895'
+          youtube_id: UQZvV6VTlGQ
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179dd_ud206-002-p0-windows-installing-git-bash/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179dd_ud206-002-p0-windows-installing-git-bash/ud206-002-p0-windows-installing-git-bash_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179dd_ud206-002-p0-windows-installing-git-bash/ud206-002-p0-windows-installing-git-bash_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179dd_ud206-002-p0-windows-installing-git-bash/ud206-002-p0-windows-installing-git-bash_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179dd_ud206-002-p0-windows-installing-git-bash/ud206-002-p0-windows-installing-git-bash_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179dd_ud206-002-p0-windows-installing-git-bash/hls/playlist.m3u8'
+      - id: 283064
+        key: 4ba231f3-2fab-4377-9ff1-09af28702431
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Aug 24 2017 15:34:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          **Reminder: This page is Windows-only! Mac and Linux users, skip ahead to the next page!**
+
+          Download Git here: https://git-scm.com/download/win
+
+          There is a new Linux compatibility system in Windows 10, called **Windows Subsystem for Linux (WSL)**. It's an experimental mini-Linux-OS that runs inside Windows, like a virtual machine. You can access your Windows files from inside it, but it's a little bit dangerous to share files between the Linux and Windows sides. In the future, WSL will probably become less experimental, **but for now we'll be using Git Bash instead for this course.**
+        instructor_notes: ''
+        resources: null
+      - id: 283060
+        key: e60ecaa0-0112-40a4-b2c1-076d853f8b0a
+        locale: en-us
+        version: 1.0.0
+        title: Install Git Bash on your Windows computer.
+        semantic_type: TaskListAtom
+        updated_at: 'Thu Aug 24 2017 15:34:31 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - I have downloaded Git from git-scm.com
+          - I have installed Git.
+          - I have found the Git Bash application and run it.
+          - I've adjusted the font to something comfortable for me.
+        positive_feedback: Great! Now you have a Unix-compatible shell on your Windows computer.
+        video_feedback: null
+        description: ''
+  - id: 283034
+    key: 9fbb976b-dc7b-4584-a656-b05ab9d7a0c3
+    locale: en-us
+    version: 1.0.0
+    title: Opening a terminal
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 286077
+      - 283069
+    atoms:
+      - id: 286077
+        key: 67213a57-4d75-4a1a-90b2-a1b04e4fe094
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 003 Shell P1 - Opening A Terminal
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:32 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51896'
+          youtube_id: 4q6Vtym-nno
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179e0_ud206-003-shell-p1-opening-a-terminal/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179e0_ud206-003-shell-p1-opening-a-terminal/ud206-003-shell-p1-opening-a-terminal_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179e0_ud206-003-shell-p1-opening-a-terminal/ud206-003-shell-p1-opening-a-terminal_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179e0_ud206-003-shell-p1-opening-a-terminal/ud206-003-shell-p1-opening-a-terminal_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179e0_ud206-003-shell-p1-opening-a-terminal/ud206-003-shell-p1-opening-a-terminal_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d179e0_ud206-003-shell-p1-opening-a-terminal/hls/playlist.m3u8'
+      - id: 283069
+        key: afbaf7d3-fe98-4e90-9b19-bcceef1ebbd3
+        locale: en-us
+        version: 1.0.0
+        title: Open a terminal!
+        semantic_type: TaskListAtom
+        updated_at: 'Thu Aug 24 2017 15:34:32 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - I have a terminal open in another window.
+        positive_feedback: Now let's see what you can do with it.
+        video_feedback: null
+        description: ''
+  - id: 283035
+    key: 329dfdb1-9552-4abe-ba9f-565659db4fe7
+    locale: en-us
+    version: 1.0.0
+    title: Your first command (echo)
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:34 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 286100
+      - 283072
+    atoms:
+      - id: 286100
+        key: 812f3025-4262-4b76-a78f-52748cf67955
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 004 Shell P2 - Your First Command
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:33 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51897'
+          youtube_id: ggf5WhOYy1U
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdd_ud206-004-shell-p2-your-first-command/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdd_ud206-004-shell-p2-your-first-command/ud206-004-shell-p2-your-first-command_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdd_ud206-004-shell-p2-your-first-command/ud206-004-shell-p2-your-first-command_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdd_ud206-004-shell-p2-your-first-command/ud206-004-shell-p2-your-first-command_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdd_ud206-004-shell-p2-your-first-command/ud206-004-shell-p2-your-first-command_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdd_ud206-004-shell-p2-your-first-command/hls/playlist.m3u8'
+      - id: 283072
+        key: 5a1fdd88-1de4-4e73-a7a5-d5408bf59333
+        locale: en-us
+        version: 1.0.0
+        title: echo
+        semantic_type: RadioQuizAtom
+        updated_at: 'Thu Aug 24 2017 15:34:34 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            What do you think is going on when you run this command:  
+            `echo $COLUMNS x $LINES`  
+            (Try it!)
+          correct_feedback: null
+          video_feedback:
+            id: '51532'
+            youtube_id: 7NJC7C8MmdY
+            subtitles: null
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3720_ud206-005-shell-p2.1-echo-solution/ud206-005-shell-p2.1-echo-solution_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3720_ud206-005-shell-p2.1-echo-solution/ud206-005-shell-p2.1-echo-solution_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3720_ud206-005-shell-p2.1-echo-solution/ud206-005-shell-p2.1-echo-solution_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3720_ud206-005-shell-p2.1-echo-solution/ud206-005-shell-p2.1-echo-solution_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3720_ud206-005-shell-p2.1-echo-solution/hls/playlist.m3u8'
+          default_feedback: |-
+            Not quite. Try it out!
+
+            (I assure you it's not deleting files.)
+          answers:
+            - id: a1489702654681
+              text: The terminal is multiplying dollars by dollars.
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489702678549
+              text: The shell is telling me how big my terminal is.
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489702679172
+              text: The shell is telling me how big its army is.
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489702679836
+              text: The terminal is erasing all my files.
+              is_correct: false
+              incorrect_feedback: null
+  - id: 283036
+    key: a2752f68-82cf-4988-8992-eb891c92f994
+    locale: en-us
+    version: 1.0.0
+    title: 'Navigating directories (ls, cd, ..)'
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:36 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 291911
+      - 283073
+    atoms:
+      - id: 291911
+        key: 8cba726a-7e62-41b1-ad16-15e121489ee6
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 006 Shell P3 - Navigating Directories
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:35 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53029'
+          youtube_id: i9Xp94DmdB8
+          subtitles: null
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e8846b_ud206-006-shell-p3-navigating-directories/ud206-006-shell-p3-navigating-directories_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e8846b_ud206-006-shell-p3-navigating-directories/ud206-006-shell-p3-navigating-directories_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e8846b_ud206-006-shell-p3-navigating-directories/ud206-006-shell-p3-navigating-directories_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e8846b_ud206-006-shell-p3-navigating-directories/ud206-006-shell-p3-navigating-directories_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e8846b_ud206-006-shell-p3-navigating-directories/hls/playlist.m3u8'
+      - id: 283073
+        key: 573b6953-893d-467e-a3f3-5a5ec95dbca6
+        locale: en-us
+        version: 1.0.0
+        title: ls and cd
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Thu Aug 24 2017 15:34:36 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Which of these commands would list the contents of the `Pictures` directory?  
+            Mark all that are correct.
+          correct_feedback: |-
+            All of these are correct!
+
+            `ls Pictures` is the most direct way to do it.
+
+            `cd Pictures; ls` changes directory to the `Pictures` subdirectory, then runs `ls` in that directory.
+
+            `ls Pictures/../Pictures` is unnecessarily verbose, but it does work.
+          video_feedback: null
+          default_feedback: The shell has a lot of ways to do things. Keep looking for more!
+          answers:
+            - id: a1489702884747
+              text: '`ls Pictures`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489702897285
+              text: '`cd Pictures; ls`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489702914396
+              text: '`ls Pictures/../Pictures`'
+              is_correct: true
+              incorrect_feedback: null
+  - id: 283037
+    key: 79e6c6b2-93e5-48c6-ad78-0bf5c854ab2b
+    locale: en-us
+    version: 1.0.0
+    title: Current working directory (pwd)
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:37 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 286102
+      - 283075
+    atoms:
+      - id: 286102
+        key: dac97b12-c314-4400-a26e-e9765ad55d0d
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 007 Shell P4 - Current Working Directory
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 27 2017 18:52:39 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51898'
+          youtube_id: X7dsy3oMHp0
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdf_ud206-007-shell-p4-current-working-directory/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdf_ud206-007-shell-p4-current-working-directory/ud206-007-shell-p4-current-working-directory_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdf_ud206-007-shell-p4-current-working-directory/ud206-007-shell-p4-current-working-directory_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdf_ud206-007-shell-p4-current-working-directory/ud206-007-shell-p4-current-working-directory_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdf_ud206-007-shell-p4-current-working-directory/ud206-007-shell-p4-current-working-directory_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d18bdf_ud206-007-shell-p4-current-working-directory/hls/playlist.m3u8'
+      - id: 283075
+        key: 53cd0163-8f9b-4b97-a16b-534d10f42bc9
+        locale: en-us
+        version: 1.0.0
+        title: Brevity
+        semantic_type: RadioQuizAtom
+        updated_at: 'Thu Aug 24 2017 15:34:37 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Why are shell commands so short?
+          correct_feedback: 'The Unix system was originally designed in an era when the connections between computers and terminals were very slow, so making commands really short made it much faster to use. This is true not only for the shell, but also for other parts of the Unix system, such as the C programming language. '
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1489703106691
+              text: It makes for less typing.
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703116847
+              text: It makes them easier to remember.
+              is_correct: false
+              incorrect_feedback: 'Short commands are sometimes pretty hard to remember, though. `ls` isn''t really any easier to remember than `list` would be.'
+            - id: a1489703117523
+              text: It makes Unix experts look wizardly.
+              is_correct: false
+              incorrect_feedback: 'Maybe it does, but when Unix was designed, other operating systems were every bit as cryptic, if not more.'
+  - id: 283038
+    key: 65c5c01a-3c5a-4f31-b3ce-6cef130d972b
+    locale: en-us
+    version: 1.0.0
+    title: Parameters and options (ls -l)
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:39 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 283268
+      - 283076
+      - 283078
+    atoms:
+      - id: 283268
+        key: 2fcf7ce1-146b-4e04-b230-3711fd2bf905
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 008 Shell P5 - Parameters
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:37 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51533'
+          youtube_id: UX9mzq11Mmg
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3722_ud206-008-shell-p5-parameters/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3722_ud206-008-shell-p5-parameters/ud206-008-shell-p5-parameters_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3722_ud206-008-shell-p5-parameters/ud206-008-shell-p5-parameters_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3722_ud206-008-shell-p5-parameters/ud206-008-shell-p5-parameters_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3722_ud206-008-shell-p5-parameters/ud206-008-shell-p5-parameters_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3722_ud206-008-shell-p5-parameters/hls/playlist.m3u8'
+      - id: 283076
+        key: 7eca78c8-6c12-43a5-8c16-4b4f22efb7fc
+        locale: en-us
+        version: 1.0.0
+        title: Research `ls -l`
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Thu Aug 24 2017 15:34:38 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            Which pieces of information can you find out from `ls -l`? You may want to do some research to answer this question; use your favorite search engine.
+          correct_feedback: 'There are even more pieces of information than those in `ls -l` output, but those are some pretty important ones. Good researching!'
+          video_feedback: null
+          default_feedback: 'It''s OK to look up the answer for this one using a search engine or other reference material. To learn the shell really well, you''ll probably end up reading references, blog posts, forums, and other sources of help.'
+          answers:
+            - id: a1489703312453
+              text: The name of each listed file or directory.
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703331303
+              text: The date and time that a file was last modified.
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703331960
+              text: 'The size of a file, in bytes.'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703332604
+              text: Whether a file has been checked for viruses.
+              is_correct: false
+              incorrect_feedback: null
+      - id: 283078
+        key: 8bdb45ab-1284-4e08-b858-f7ee97ec7348
+        locale: en-us
+        version: 1.0.0
+        title: Looking for bear
+        semantic_type: RadioQuizAtom
+        updated_at: 'Thu Aug 24 2017 15:34:38 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'If you wanted to list all the files whose names start with the word `bear`, how would you do it?'
+          correct_feedback: The pattern `bear*` matches any file whose name starts with the word `bear`.
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1489703472992
+              text: '`ls bear`'
+              is_correct: false
+              incorrect_feedback: The command `ls bear` will only list a file whose name is exactly `bear` ... if there is one.
+            - id: a1489703506625
+              text: '`ls *.bear`'
+              is_correct: false
+              incorrect_feedback: The command `ls *.bear` will list files whose names end in `.bear`. We're looking for files whose names start with `bear`.
+            - id: a1489703507258
+              text: '`ls bear*`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703507833
+              text: '`ls *bear*`'
+              is_correct: false
+              incorrect_feedback: 'The command `ls *bear*` will list any file whose name contains `bear`, even if it''s in the middle or end instead of the beginning.'
+            - id: a1489703508493
+              text: You can't.
+              is_correct: false
+              incorrect_feedback: Yes you can!
+  - id: 283039
+    key: d56564be-f4fe-41a7-8378-508338ecb28a
+    locale: en-us
+    version: 1.0.0
+    title: 'Organizing your files (mkdir, mv)'
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:40 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 283267
+      - 283079
+      - 283080
+    atoms:
+      - id: 283267
+        key: 173b5b8a-15db-4cdd-ad32-b6c1db9571bd
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 009 Shell P6 - Organizing Your Files
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:39 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51534'
+          youtube_id: NZsYyzzpJXA
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3724_ud206-009-shell-p6-organizing-your-files/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3724_ud206-009-shell-p6-organizing-your-files/ud206-009-shell-p6-organizing-your-files_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3724_ud206-009-shell-p6-organizing-your-files/ud206-009-shell-p6-organizing-your-files_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3724_ud206-009-shell-p6-organizing-your-files/ud206-009-shell-p6-organizing-your-files_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3724_ud206-009-shell-p6-organizing-your-files/ud206-009-shell-p6-organizing-your-files_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3724_ud206-009-shell-p6-organizing-your-files/hls/playlist.m3u8'
+      - id: 283079
+        key: 01008773-0ea8-43bf-a254-30287f79252d
+        locale: en-us
+        version: 1.0.0
+        title: Moving them back
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Thu Aug 24 2017 15:34:39 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            Let's say I change my mind and want to move the `epub` files back from `Documents/Books` to `Documents`. How can I do this? My current working directory is my home directory, and `Documents` is inside that directory.  
+            Mark each answer that would work:
+          correct_feedback: null
+          video_feedback:
+            id: '51535'
+            youtube_id: guJf4041gYI
+            subtitles: null
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-010-shell-p6.1-mv-solution/ud206-010-shell-p6.1-mv-solution_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-010-shell-p6.1-mv-solution/ud206-010-shell-p6.1-mv-solution_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-010-shell-p6.1-mv-solution/ud206-010-shell-p6.1-mv-solution_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-010-shell-p6.1-mv-solution/ud206-010-shell-p6.1-mv-solution_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-010-shell-p6.1-mv-solution/hls/playlist.m3u8'
+          default_feedback: 'Not quite! Here''s a hint: Three of these commands will do the job.'
+          answers:
+            - id: a1489703663112
+              text: '`mv ''Documents/Books'' Documents`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489703688713
+              text: '`mv ''Documents/Books''/* Documents`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703689341
+              text: '`cd Documents; mv ''Books''/*.epub .`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703689961
+              text: '`cd ''Documents/Books''; mv * ..`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1489703846914
+              text: '`mv ''Documents/Books/*'' Documents`'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 283080
+        key: a8d37a62-9950-4ce3-ad44-ffa93e2b6456
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Aug 24 2017 15:34:40 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          By the way, when you quote something in the shell, you always use straight quotes. This is what you'll get if you type into a terminal window. However, if you copy and paste from a web page or document, you should be really careful to make sure that it hasn't accidentally been written with `“curly quotes”`. Curly quotes _will not work_ in the shell.
+
+          Single quotes and double quotes do slightly different things in the shell. If you're unsure which to use, go for single quotes.
+        instructor_notes: ''
+        resources: null
+  - id: 283040
+    key: 0e019f34-19bf-4d63-bbf3-789074bfe268
+    locale: en-us
+    version: 1.0.0
+    title: Downloading (curl)
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:44 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 291910
+      - 287775
+      - 287784
+      - 287783
+      - 283082
+    atoms:
+      - id: 291910
+        key: 49cab642-5109-46ac-8d24-fb61d6358644
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 011 Shell P7 - Downloading
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:41 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53028'
+          youtube_id: h7FhU1f4TgE
+          subtitles: null
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e883e2_ud206-011-shell-p7-downloading/ud206-011-shell-p7-downloading_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e883e2_ud206-011-shell-p7-downloading/ud206-011-shell-p7-downloading_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e883e2_ud206-011-shell-p7-downloading/ud206-011-shell-p7-downloading_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e883e2_ud206-011-shell-p7-downloading/ud206-011-shell-p7-downloading_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e883e2_ud206-011-shell-p7-downloading/hls/playlist.m3u8'
+      - id: 287775
+        key: d5c59b7d-2d51-4f0e-9359-2aabaf9a2cf1
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: QuizAtom
+        updated_at: 'Thu Aug 24 2017 15:34:42 GMT+0000 (UTC)'
+        is_public: true
+        resources: null
+        instructor_notes: ''
+        instruction: null
+        question:
+          title: Download `dictionary.txt`
+          prompt: |-
+            Enter a shell command to download `https://tinyurl.com/zeyq9vc` and save it as the file `dictionary.txt`. Remember to use the option to follow web redirects.
+
+            Run this command on your own computer, too! You'll need to download this file for the next exercise.
+          semantic_type: CodeGradedQuestion
+          evaluation_id: '5049225802022912'
+          evaluator:
+            model: ProgramEvaluator
+            execution_language: python
+            executor_grading_code: print(open('studentMain.py').read())
+            gae_grading_code: |-
+              # Get student input.
+              text = executor_result['stdout']
+              problems = []
+
+              # Look for things that need to be there.
+              if not text.startswith('curl '):
+                  problems.append('The command should begin with the name of the program for downloading files from the web.')
+
+              if 'https://tinyurl.com/zeyq9vc' not in text:
+                  if 'http:' in text:
+                      problems.append('Make sure to use the exact URL above.')
+                  else:
+                      problems.append('The command needs to include the URL to download.')
+
+              if 'dictionary.txt' not in text:
+                  problems.append('The output filename `dictionary.txt` needs to appear in your command.')  
+              elif ' -L dictionary.txt' in text or '-o http' in text:
+                  problems.append('The output filename `dictionary.txt` needs to appear immediately after the `-o` option.')
+              elif ' -o dictionary.txt' not in text:
+                  problems.append('Use the `-o` option to send output to the right filename.')
+
+              if not problems and ' -L' not in text:
+                  problems.append('The command needs the `-L` option to follow web redirects.')
+                  
+
+              if not problems:
+                  grade_result['correct'] = True
+                  grade_result['feedback'] = "That looks okay to me, but I'm just a simple script and can't actually run that command for you to test it.\n\nTry that command on your own computer and see if you get a file downloaded!"
+                  grade_result['comment'] = ''
+              else:    
+                  grade_result['correct'] = False
+                  grade_result['feedback'] = '\n\n'.join(problems)
+                  grade_result['comment'] = ''
+                  
+            requires_gpu: false
+            deadline_seconds: 0
+            legacy_template_refs: []
+            included_text_files: []
+        answer: null
+      - id: 287784
+        key: 80908d34-fa60-4979-b9a7-39a4556ce4e9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Aug 24 2017 15:34:43 GMT+0000 (UTC)'
+        is_public: true
+        text: '# Solution:'
+        instructor_notes: ''
+        resources: null
+      - id: 287783
+        key: 7426956a-7c7c-4663-80bf-50a61196b0f8
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 011 Shell P7.1 - Downloading Solution
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:44 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51536'
+          youtube_id: 1oEJUA-b0kE
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-011-shell-p7.1-downloading-solution/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-011-shell-p7.1-downloading-solution/ud206-011-shell-p7.1-downloading-solution_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-011-shell-p7.1-downloading-solution/ud206-011-shell-p7.1-downloading-solution_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-011-shell-p7.1-downloading-solution/ud206-011-shell-p7.1-downloading-solution_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-011-shell-p7.1-downloading-solution/ud206-011-shell-p7.1-downloading-solution_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3726_ud206-011-shell-p7.1-downloading-solution/hls/playlist.m3u8'
+      - id: 283082
+        key: 816cfd26-1a96-499a-9772-c151e7ffaf8d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Aug 24 2017 15:34:44 GMT+0000 (UTC)'
+        is_public: true
+        text: 'By the way, a lot of URLs have special characters in them, such as the `&` sign, which have unusual meanings to the shell. That''s why I''m always putting these URLs in quotes … even though these particular examples would work without them, it''s a good practice to get into.'
+        instructor_notes: ''
+        resources: null
+  - id: 283041
+    key: d2ad83b4-3fe3-41da-9073-ba27662c4650
+    locale: en-us
+    version: 1.0.0
+    title: 'Viewing files (cat, less)'
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:45 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 291909
+      - 283083
+    atoms:
+      - id: 291909
+        key: 0ce1517e-a7fa-45e7-84b7-9c351bb856dc
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 013 Shell P8 - Viewing Files
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:45 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '53027'
+          youtube_id: hPPVMKqbQV0
+          subtitles: null
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e88383_ud206-013-shell-p8-viewing-files/ud206-013-shell-p8-viewing-files_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e88383_ud206-013-shell-p8-viewing-files/ud206-013-shell-p8-viewing-files_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e88383_ud206-013-shell-p8-viewing-files/ud206-013-shell-p8-viewing-files_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e88383_ud206-013-shell-p8-viewing-files/ud206-013-shell-p8-viewing-files_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58e88383_ud206-013-shell-p8-viewing-files/hls/playlist.m3u8'
+      - id: 283083
+        key: ef6b54fd-d362-4dcf-9c44-abdbdf3f5ad0
+        locale: en-us
+        version: 1.0.0
+        title: What's the next word?
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Thu Aug 24 2017 15:34:45 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'Using the `dictionary.txt` file and the `less` command, find out the next word after the word `goobers` in this dictionary.'
+          default_feedback: 'Use `less` to look at the `dictionary.txt` file, then use the search feature (with the forward slash key) to search for the word `goobers`. The answer to this quiz is the word on the next line after that.'
+          correct_feedback: '`good` job!'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: ^good$
+              expression_description: ''
+              flags: ''
+              incorrect_feedback: null
+  - id: 283042
+    key: e3962523-75ee-4b58-93bf-0ade6a0fe786
+    locale: en-us
+    version: 1.0.0
+    title: 'Removing things (rm, rmdir)'
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:46 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 286884
+      - 283084
+    atoms:
+      - id: 286884
+        key: 5d0d1656-f74b-40c1-ba14-7fefe2766eb7
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 014 Shell P9 - Removing Things
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:46 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52034'
+          youtube_id: it19PvJarbk
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2f15d_ud206-014-shell-p9-removing-things/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2f15d_ud206-014-shell-p9-removing-things/ud206-014-shell-p9-removing-things_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2f15d_ud206-014-shell-p9-removing-things/ud206-014-shell-p9-removing-things_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2f15d_ud206-014-shell-p9-removing-things/ud206-014-shell-p9-removing-things_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2f15d_ud206-014-shell-p9-removing-things/ud206-014-shell-p9-removing-things_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2f15d_ud206-014-shell-p9-removing-things/hls/playlist.m3u8'
+      - id: 283084
+        key: 6a26da50-2486-4a3f-af12-b2489fb35b51
+        locale: en-us
+        version: 1.0.0
+        title: 'Good file, bad face'
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Thu Aug 24 2017 15:34:46 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            You have four files named:
+            1. `Good File`
+            2. `Bad Name Good File`
+            3. `Bad File`
+            4. `Good Name Bad Face`
+
+            You want to remove files 3 and 4, while leaving 1 and 2 intact. There are two commands below that will accomplish this goal. Choose them:
+          correct_feedback: null
+          video_feedback:
+            id: '51538'
+            youtube_id: RZgFqAwkjmQ
+            subtitles: null
+            transcodings:
+              uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3728_ud206-015-shell-p9.1-removing-solution/ud206-015-shell-p9.1-removing-solution_480p.mp4'
+              uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3728_ud206-015-shell-p9.1-removing-solution/ud206-015-shell-p9.1-removing-solution_480p_1000kbps.mp4'
+              uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3728_ud206-015-shell-p9.1-removing-solution/ud206-015-shell-p9.1-removing-solution_480p.ogg'
+              uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3728_ud206-015-shell-p9.1-removing-solution/ud206-015-shell-p9.1-removing-solution_720p.mp4'
+              uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb3728_ud206-015-shell-p9.1-removing-solution/hls/playlist.m3u8'
+          default_feedback: null
+          answers:
+            - id: a1489704901326
+              text: '`rm ''Bad File'' ''Good Name Bad Face''`'
+              is_correct: true
+              incorrect_feedback: There are two choices that work here. One of them is very verbose.
+            - id: a1489704929921
+              text: '`rm *Bad*`'
+              is_correct: false
+              incorrect_feedback: 'The command `rm *Bad*` will delete the file `Good Name Bad Face`, which we don''t want to delete.'
+            - id: a1489704930729
+              text: '`rm Bad!Good`'
+              is_correct: false
+              incorrect_feedback: The command `rm Bad!Good` will not be understood by the shell.
+            - id: a1489704931490
+              text: "`rm *'Bad F'*\f`"
+              is_correct: true
+              incorrect_feedback: 'There are two choices that work here. One of them looks at the middle of filenames. '
+  - id: 283043
+    key: 5e1f6045-6824-4c73-8ba1-07ce6c9f54a8
+    locale: en-us
+    version: 1.0.0
+    title: 'Searching and pipes (grep, wc)'
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:49 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 288315
+      - 283085
+      - 283087
+    atoms:
+      - id: 288315
+        key: e8885826-0fcf-43d5-845c-7ae93c0ac520
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 016 Shell P10 - Searching And Pipes
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:47 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52340'
+          youtube_id: AWpVScp9z4s
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dac1cb_ud206-016-shell-p10-searching-and-pipes/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dac1cb_ud206-016-shell-p10-searching-and-pipes/ud206-016-shell-p10-searching-and-pipes_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dac1cb_ud206-016-shell-p10-searching-and-pipes/ud206-016-shell-p10-searching-and-pipes_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dac1cb_ud206-016-shell-p10-searching-and-pipes/ud206-016-shell-p10-searching-and-pipes_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dac1cb_ud206-016-shell-p10-searching-and-pipes/ud206-016-shell-p10-searching-and-pipes_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58dac1cb_ud206-016-shell-p10-searching-and-pipes/hls/playlist.m3u8'
+      - id: 283085
+        key: 5b62e8b5-fd40-4ae0-aefb-4e2659d0eceb
+        locale: en-us
+        version: 1.0.0
+        title: Looking for `ibo`
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Thu Aug 24 2017 15:34:48 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            How many words are there in `dictionary.txt` that match the pattern `ibo`?
+          default_feedback: 'Use `grep` and `wc`, or `grep -c`, to find the answer to this question!'
+          correct_feedback: 'From `Claiborne` to `riboflavin`, there are 22 `ibo`''s in this file.'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: '22'
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+      - id: 283087
+        key: de73b556-2650-49e2-9a04-4fa23a2c360a
+        locale: en-us
+        version: 1.0.0
+        title: What are grep patterns called?
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Thu Aug 24 2017 15:34:48 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Research question! You can use `grep` for more than just matching words. There's a specific term for the patterns that `grep` lets you use.
+
+            Use your favorite search engine and do a little research to find out what those patterns are called.
+          default_feedback: There is a specific term from computer science for the patterns that `grep` lets you use. Keep researching!
+          correct_feedback: |
+            Regular expressions are also known as regexps or regexes.
+
+            There is actually a whole complex language of patterns that you can use with `grep` … which is entirely beyond the scope of this course.
+
+            And regular expressions are used in lots of other programs too, including text editors … and this quiz. The regular expression used to match correct answers to this quiz is `^[Rr]eg.*[Ee]x.*` which means "any string that starts with `reg` and has `ex` in it, but upper- and lowercase R and E are both OK.
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: '^[Rr]eg.*[Ee]x.*'
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: '.*[Gg]lob.*'
+              expression_description: null
+              flags: ''
+              incorrect_feedback: "Globbing is what the shell does when you use the `*` operator. But what `grep` does is a little bit different. (Even though \"grep\" and \"glob\" both sound pretty silly.)\n\nKeep looking!\f\n"
+  - id: 283044
+    key: 717cf4a6-fde3-4412-8303-d2a1de8646c8
+    locale: en-us
+    version: 1.0.0
+    title: Shell and environment variables
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:50 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 283273
+      - 283091
+      - 283092
+    atoms:
+      - id: 283273
+        key: 14263128-a059-4243-b6d9-20e2f5726963
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 017 Shell P11 - Variables
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:49 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51540'
+          youtube_id: xe4_Mue2qmk
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372b_ud206-017-shell-p11-variables/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372b_ud206-017-shell-p11-variables/ud206-017-shell-p11-variables_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372b_ud206-017-shell-p11-variables/ud206-017-shell-p11-variables_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372b_ud206-017-shell-p11-variables/ud206-017-shell-p11-variables_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372b_ud206-017-shell-p11-variables/ud206-017-shell-p11-variables_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372b_ud206-017-shell-p11-variables/hls/playlist.m3u8'
+      - id: 283091
+        key: 9653713b-aee1-4cf6-a7e5-1a4b4ad5e341
+        locale: en-us
+        version: 1.0.0
+        title: Shell or environment?
+        semantic_type: RadioQuizAtom
+        updated_at: 'Thu Aug 24 2017 15:34:49 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Do you think the `PWD` variable is a shell variable or an environment variable?
+
+            (Don't know what it is? Try `echo $PWD`.)
+          correct_feedback: 'The value of `$PWD` is the current working directory, same as what you''d see if you ran the pwd command. Every program you run on a Unix-like system has some working directory. It usually starts out as the directory you were in when you started that program. So the `PWD` variable is an **environment** variable. It''s not just internal to the shell.'
+          video_feedback: null
+          default_feedback: 'The value of `$PWD` is the current working directory, same as what you''d see if you ran the pwd command. Every program you run on a Unix-like system has some working directory. It usually starts out as the directory you were in when you started that program.'
+          answers:
+            - id: a1489706549683
+              text: Shell variable
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1489706572500
+              text: Environment variable
+              is_correct: true
+              incorrect_feedback: null
+      - id: 283092
+        key: 2c36d1b8-40a1-49aa-9ddf-dce2b651a96d
+        locale: en-us
+        version: 1.0.0
+        title: Display two variables
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Thu Aug 24 2017 15:34:50 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            Write a shell command using echo that displays the contents of the variables `LOGNAME` and `PWD` with a space between them.
+          default_feedback: Take a look at earlier examples you've done using shell variables.
+          correct_feedback: 'By the way, `LOGNAME` is an environment variable that contains the username of the account you''re logged in as.'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: echo \$LOGNAME \$PWD
+              expression_description: ''
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: echo LOGNAME PWD
+              expression_description: null
+              flags: ''
+              incorrect_feedback: There's something you need to put before the name of a variable when you want to use its value.
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: echo \$logname \$pwd
+              expression_description: null
+              flags: ''
+              incorrect_feedback: 'Remember, the shell is case-sensitive. Uppercase `$LOGNAME` and lowercase `$logname` would be two different variables.'
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: echo logname pwd
+              expression_description: null
+              flags: ''
+              incorrect_feedback: 'There''s something you need to put before the name of a variable when you want to use its value. Also, the shell is case-sensitive; make sure to match upper- and lower-case exactly.'
+  - id: 283045
+    key: e8bb8107-2004-4d27-a053-cc7c277cd20b
+    locale: en-us
+    version: 1.0.0
+    title: Startup files (.bash_profile)
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:51 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 287797
+      - 287458
+    atoms:
+      - id: 287797
+        key: 3e6b4ba3-5dda-4d38-bfc9-0f1d9181deec
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Aug 24 2017 15:34:51 GMT+0000 (UTC)'
+        is_public: true
+        text: ' '
+        instructor_notes: ''
+        resources: null
+      - id: 287458
+        key: 769e63a4-d559-4014-8d31-2930c155351e
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 018 P12 Startup Files (.bash_profile)
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:51 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52085'
+          youtube_id: '-zF-XebfzBE'
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d41d57_ud206-018-p12-startup-files-.bash-profile-render/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d41d57_ud206-018-p12-startup-files-.bash-profile-render/ud206-018-p12-startup-files-.bash-profile-render_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d41d57_ud206-018-p12-startup-files-.bash-profile-render/ud206-018-p12-startup-files-.bash-profile-render_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d41d57_ud206-018-p12-startup-files-.bash-profile-render/ud206-018-p12-startup-files-.bash-profile-render_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d41d57_ud206-018-p12-startup-files-.bash-profile-render/ud206-018-p12-startup-files-.bash-profile-render_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d41d57_ud206-018-p12-startup-files-.bash-profile-render/hls/playlist.m3u8'
+  - id: 286411
+    key: ce6e3ca6-768e-4498-a511-f0bd9f046a74
+    locale: en-us
+    version: 1.0.0
+    title: Controlling the shell prompt ($PS1)
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:53 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 287798
+      - 286478
+      - 289273
+    atoms:
+      - id: 287798
+        key: 6df6cc2c-bff5-4fc1-84e0-09035a31c69a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Aug 24 2017 15:34:52 GMT+0000 (UTC)'
+        is_public: true
+        text: ' '
+        instructor_notes: ''
+        resources: null
+      - id: 286478
+        key: 2a41be52-1c37-45ef-bb59-aa4a59abc414
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 020 Shell P13 Controlling The Shell Prompt ($PS1)
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:52 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52005'
+          youtube_id: nnqvRZ-Fx3k
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d414_ud206-020-shell-p13-controlling-the-shell-prompt-ps1/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d414_ud206-020-shell-p13-controlling-the-shell-prompt-ps1/ud206-020-shell-p13-controlling-the-shell-prompt-ps1_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d414_ud206-020-shell-p13-controlling-the-shell-prompt-ps1/ud206-020-shell-p13-controlling-the-shell-prompt-ps1_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d414_ud206-020-shell-p13-controlling-the-shell-prompt-ps1/ud206-020-shell-p13-controlling-the-shell-prompt-ps1_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d414_ud206-020-shell-p13-controlling-the-shell-prompt-ps1/ud206-020-shell-p13-controlling-the-shell-prompt-ps1_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d414_ud206-020-shell-p13-controlling-the-shell-prompt-ps1/hls/playlist.m3u8'
+      - id: 289273
+        key: d8b79b4b-84a0-4bb3-b428-e7795e66ca0b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Aug 24 2017 15:34:53 GMT+0000 (UTC)'
+        is_public: true
+        text: 'Near the end of the video, there''s a screenshot of the tool I used to construct the long and complex `$PS1` prompt. The tool is http://bashrcgenerator.com by Julien Ricard. Try it out!'
+        instructor_notes: ''
+        resources: null
+  - id: 283047
+    key: 640986e9-1da4-4a4f-9bba-3d9927062389
+    locale: en-us
+    version: 1.0.0
+    title: Aliases
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:54 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 287800
+      - 286480
+    atoms:
+      - id: 287800
+        key: f5437d1b-ccef-487a-aa32-b037172cfe29
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Aug 24 2017 15:34:53 GMT+0000 (UTC)'
+        is_public: true
+        text: ' '
+        instructor_notes: ''
+        resources: null
+      - id: 286480
+        key: f1c7c3bd-239d-4e18-90d1-8cf373911700
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 021 Shell P14 Aliases
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:54 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '52007'
+          youtube_id: kINmpgXxayM
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d4b4_ud206-021-shell-p14-aliases/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d4b4_ud206-021-shell-p14-aliases/ud206-021-shell-p14-aliases_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d4b4_ud206-021-shell-p14-aliases/ud206-021-shell-p14-aliases_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d4b4_ud206-021-shell-p14-aliases/ud206-021-shell-p14-aliases_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d4b4_ud206-021-shell-p14-aliases/ud206-021-shell-p14-aliases_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d2d4b4_ud206-021-shell-p14-aliases/hls/playlist.m3u8'
+  - id: 283049
+    key: aa9e3767-3477-483e-8568-5c1ca02be009
+    locale: en-us
+    version: 1.0.0
+    title: Keep learning!
+    semantic_type: Concept
+    updated_at: 'Thu Aug 24 2017 15:34:55 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 287799
+      - 283274
+      - 287791
+    atoms:
+      - id: 287799
+        key: 3df1bb65-487d-4d00-aaf0-3d617d932e37
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Aug 24 2017 15:34:54 GMT+0000 (UTC)'
+        is_public: true
+        text: ' '
+        instructor_notes: ''
+        resources: null
+      - id: 283274
+        key: 925bbfbc-1696-4959-83ae-9645cd93e898
+        locale: en-us
+        version: 1.0.0
+        title: Ud206 022 Shell Workshop Outro
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 24 2017 15:34:55 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '51541'
+          youtube_id: 68twTPXPrx0
+          subtitles:
+            - url: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372f_ud206-022-shell-workshop-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372f_ud206-022-shell-workshop-outro/ud206-022-shell-workshop-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372f_ud206-022-shell-workshop-outro/ud206-022-shell-workshop-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372f_ud206-022-shell-workshop-outro/ud206-022-shell-workshop-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372f_ud206-022-shell-workshop-outro/ud206-022-shell-workshop-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58cb372f_ud206-022-shell-workshop-outro/hls/playlist.m3u8'
+      - id: 287791
+        key: 2d9ba1a8-26ca-4b8e-af9a-8d030f1d511f
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Aug 24 2017 15:34:55 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Shell resources
+
+          * [The Bash Academy](http://www.bash.academy/)
+          * [Bash Beginners Guide](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/)
+          * [Bash Programming HOWTO](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
+          * [Regexr — Learn Regular Expressions](http://regexr.com/)
+        instructor_notes: ''
+        resources: null

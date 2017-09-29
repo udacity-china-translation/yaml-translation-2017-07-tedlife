@@ -1,0 +1,1180 @@
+id: 298451
+key: 3a472639-ed92-4293-897f-ff8b698030b2
+locale: en-us
+version: 1.0.0
+title: 'Managing App Location with React Router '
+semantic_type: Lesson
+updated_at: 'Wed Jul 19 2017 04:41:18 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/June/595195b2_2-5-managing-app-location-with-react-router-2x/2-5-managing-app-location-with-react-router-2x.jpg'
+  width: 592
+  height: 640
+video: null
+summary: 'You''ll learn how to add routing to a React app by using React Router. You''ll learn about the BrowserRouter, Link, and Route components to dynamically render pages.'
+lesson_type: Classroom
+duration: 120
+is_project_lesson: false
+career_portal_experience_levels: null
+_concepts_ids:
+  - 328685
+  - 328687
+  - 328688
+  - 328692
+  - 328693
+  - 331443
+  - 328694
+  - 331448
+_project_id: null
+concepts:
+  - id: 328685
+    key: 92c6fe7b-962c-42a7-9faf-2312023cc2cd
+    locale: en-us
+    version: 1.0.0
+    title: Introduction
+    semantic_type: Concept
+    updated_at: 'Tue Jun 20 2017 23:52:42 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 331378
+      - 336073
+      - 336075
+    atoms:
+      - id: 331378
+        key: f5284dbd-7b7d-4f68-b5b2-ec94b8d8e92a
+        locale: en-us
+        version: 1.0.0
+        title: React Router Intro
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:36:42 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57997'
+          youtube_id: johndWAT08Y
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b8118_01-react-router-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8118_01-react-router-intro/01-react-router-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8118_01-react-router-intro/01-react-router-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8118_01-react-router-intro/01-react-router-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8118_01-react-router-intro/01-react-router-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8118_01-react-router-intro/hls/playlist.m3u8'
+      - id: 336073
+        key: 37a4bbbd-204e-4ce2-8413-58d9a697de56
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 20 2017 23:52:35 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Single-Page Apps
+           
+          Single-page applications can work in different ways. One way a single-page app loads is by downloading _the entire_ site's contents all at once. This way, when you're navigating around on the site, everything is already available to the browser, and it doesn't need to refresh the page. Another way single-page apps work is by downloading everything that's needed to render the page the user requested. Then when the user navigates to a new page, asynchronous JavaScript requests are made for _just_ the content that was requested. 
+           
+          Another key factor in a good single-page app is that the URL controls the page content. Single-page applications are highly interactive, and users want to be able to get back to a certain state using just the URL. Why is this important? Bookmarkability! (pretty sure that's not a word...yet) When you bookmark a site, that bookmark is _only_ a URL, it doesn't record the state of that page.
+           
+          Have you noticed that any of the actions you perform in the app do not update the page's URL? We need to create React applications that offer bookmarkable pages!
+        instructor_notes: ''
+        resources: null
+      - id: 336075
+        key: 4003346c-afb8-4747-9094-00516c11cb4b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sun Aug 06 2017 05:19:43 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## React Router
+           
+          React Router turns React projects into single-page applications. It does this by providing a number of specialized components that manage the creation of links, manage the app's URL, provide transitions when navigating between different URL locations, and so much more. 
+           
+          According to the React Router website:
+           
+          > React Router is a collection of **navigational components** that compose declaratively with your application. 
+           
+          If you're interested, feel free to check out the website at [https://reacttraining.com/react-router/](https://reacttraining.com/react-router).
+           
+          In the next section, we'll dynamically render content to the page based on a value in the project's `this.state` object. We'll use this basic example as an idea of how React Router works by controlling what's being seen via state. Then we'll switch over to using React Router. We'll walk you through installing React Router, adding it to the project, and hooking everything together so it can manage your links and URLs.
+        instructor_notes: ''
+        resources: null
+  - id: 328687
+    key: f95a95a8-c805-42ae-b056-3730dd90a21e
+    locale: en-us
+    version: 1.0.0
+    title: Dynamically Render Pages
+    semantic_type: Concept
+    updated_at: 'Mon Jun 26 2017 23:09:52 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 336099
+      - 336100
+      - 336098
+      - 331379
+      - 340253
+      - 336110
+      - 336111
+      - 331435
+      - 331434
+      - 340255
+      - 336112
+    atoms:
+      - id: 336099
+        key: 0dd6fd04-eeb4-4d0c-a9d4-55c777a6d33a
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jun 21 2017 00:22:52 GMT+0000 (UTC)'
+        is_public: true
+        text: 'As the app currently functions, there''s no way to add new contacts! That''s a shame because I really need to add Richard to my list of contacts. So let''s create a form that''ll let us create new contacts and save them to the server.'
+        instructor_notes: ''
+        resources: null
+      - id: 336100
+        key: 42f3e379-bfba-4069-93e5-9a383236139f
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Aug 09 2017 19:15:40 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: We're about to create a form that will create new contacts. Where should the code for the form UI go?
+          correct_feedback: Remember that React favors composing components together. So we want to create our new piece of UI as a standalone component and use composition to include it in another component.
+          video_feedback: null
+          default_feedback: Remember back from an earlier topic where we talked about the benefits of composition? Which option separates out the new contact form into its own piece of reusable code?
+          answers:
+            - id: a1498004609602
+              text: in `App.js`
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498004616408
+              text: in `ListContacts.js`
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498004616925
+              text: in `index.js`
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498004617499
+              text: in a new component
+              is_correct: true
+              incorrect_feedback: null
+      - id: 336098
+        key: 5b05e342-dbd8-417e-b55b-7199ce7ad706
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jun 21 2017 00:23:20 GMT+0000 (UTC)'
+        is_public: true
+        text: 'We don''t want the form to display all of the time, so we''ll start out by having the form show up only if a setting is enabled. We''ll store this setting in `this.state`. Doing it this way will give us an idea of how React Router functions.'
+        instructor_notes: ''
+        resources: null
+      - id: 331379
+        key: 1355a7d4-2dbe-4b4b-953e-8e07b78c3abb
+        locale: en-us
+        version: 1.0.0
+        title: State-Based Content Rendering
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:36:43 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57998'
+          youtube_id: 5ySqH5Uag2M
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b811d_02-state-based-content-rendering/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b811d_02-state-based-content-rendering/02-state-based-content-rendering_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b811d_02-state-based-content-rendering/02-state-based-content-rendering_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b811d_02-state-based-content-rendering/02-state-based-content-rendering_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b811d_02-state-based-content-rendering/02-state-based-content-rendering_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b811d_02-state-based-content-rendering/hls/playlist.m3u8'
+      - id: 340253
+        key: f7745905-ab14-4dca-b5de-7b0aa33a34ce
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 23:08:54 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/db0aafdc7766048c28597d37f31977ac7833a62e)'
+        instructor_notes: ''
+        resources: null
+      - id: 336110
+        key: 5c5f6704-1d9d-4082-be12-5a5d528c3d95
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jun 21 2017 01:11:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          We packed quite a bit of important changes in this little video! We created the CreateContact component that'll be in charge of the form to create new contacts. In staying with the general React theme of favoring composition, we created this as a standalone component and used composition by adding it to the `render()` method in the `App` component.
+           
+          In an attempt to do an _extremely_ simple recreation of how React Router works, we added a `screen` property to `this.state`, and used this property to control what content should display on the screen. If `this.state.screen` is `list` then we'll show the list of all existing contacts. If `this.state.screen` is `create` then we'll show the CreateContact component.
+        instructor_notes: ''
+        resources: null
+      - id: 336111
+        key: 0df28e8c-33f6-4c32-80ef-12a35d2420ee
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 21:00:16 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Short-circuit Evaluation Syntax
+           
+          In this video and when we created the "Now showing" from earlier section, we used a somewhat odd looking syntax:
+           
+          ```js
+          {this.state.screen === 'list' && (
+            <ListContacts
+              contacts={this.state.contacts}
+              onDeleteContact={this.removeContact}
+            />
+          )}
+          ```
+           
+          and
+           
+          ```js
+          {this.state.screen === 'create' && (
+            <CreateContact />
+          )}
+          ```
+           
+          This can be a little confusing with both the JSX code for a component and the code to run an expression. But this is really just the logical expression `&&`:
+           
+          ```js
+          expression && expression
+          ```
+           
+          What we're using here is a JavaScript technique called **short-circuit evaluation**. If the first expression evaluates to `true`, then the second expression is run. However, if the first expression evaluates to `false`, then the second expression is skipped. We're using this as a guard to first verify the value of `this.state.screen` before displaying the correct component.
+           
+          For a deeper dive into this, check out [the short-circuit evaluation info on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Short-circuit_evaluation).
+        instructor_notes: ''
+        resources: null
+      - id: 331435
+        key: 067ae250-31a0-4933-a314-3483a4c0957b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jun 21 2017 01:38:17 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Add A Button
+           
+          Right now we have to manually change the state to get the app to display the different screens. We want the user to be able to control that in the app itself, so let's add a button!
+        instructor_notes: ''
+        resources: null
+      - id: 331434
+        key: f3bc3f44-6dc2-4241-abc8-96d4087e280b
+        locale: en-us
+        version: 1.0.0
+        title: Add the -Create Contact- Button
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:49:56 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57999'
+          youtube_id: aOfohwGbL-A
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b8130_03-add-the-create-contact-button/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8130_03-add-the-create-contact-button/03-add-the-create-contact-button_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8130_03-add-the-create-contact-button/03-add-the-create-contact-button_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8130_03-add-the-create-contact-button/03-add-the-create-contact-button_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8130_03-add-the-create-contact-button/03-add-the-create-contact-button_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8130_03-add-the-create-contact-button/hls/playlist.m3u8'
+      - id: 340255
+        key: 722fe93a-c528-4616-9006-9cf6e7124b49
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 23:09:52 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/23a6a4dde977d7c18a3054a7b0b65f4fb4aad2ea)'
+        instructor_notes: ''
+        resources: null
+      - id: 336112
+        key: 5a2ffb4e-c877-4ca0-ae99-4da5bb44d6f8
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jun 21 2017 01:44:37 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Dynamic Routing Recap
+           
+          In the code we added in this section, we tried our attempt at using state to control what content displays to the user. We saw things break down, though, when we used the back button. 
+           
+          Now, let's switch over to using React Router to manage our app's screens.
+        instructor_notes: ''
+        resources: null
+  - id: 328688
+    key: 8156069e-d9b4-465d-a17a-6d956879e10f
+    locale: en-us
+    version: 1.0.0
+    title: The BrowserRouter Component
+    semantic_type: Concept
+    updated_at: 'Fri Aug 25 2017 19:54:16 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 336511
+      - 331437
+      - 340256
+      - 340143
+      - 331436
+      - 331438
+      - 340257
+      - 340107
+      - 336519
+      - 340110
+    atoms:
+      - id: 336511
+        key: 3d2fa825-673f-412e-b1d8-73a406dc4215
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 21:07:51 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          As we've just seen, when the user presses the 'back' button in the browser, they will probably have to refresh the page to see the proper content at that location. This isn't the best experience for our user! When we update location, we can update the app as well using JavaScript. This is where React Router comes in. 
+           
+          ## Install React Router
+           
+          To use React Router in our app, we need to install [react-router-dom](https://www.npmjs.com/package/react-router-dom).
+           
+          ```bash
+          npm install --save react-router-dom
+          ```
+           
+          Let's see it in action!
+        instructor_notes: ''
+        resources: null
+      - id: 331437
+        key: 4d7ea18b-f6f3-47c4-8774-11a777b06d9d
+        locale: en-us
+        version: 1.0.0
+        title: Install React Router
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:36:43 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58001'
+          youtube_id: 5535bLCBGxc
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b8132_05-install-react-router/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8132_05-install-react-router/05-install-react-router_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8132_05-install-react-router/05-install-react-router_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8132_05-install-react-router/05-install-react-router_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8132_05-install-react-router/05-install-react-router_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8132_05-install-react-router/hls/playlist.m3u8'
+      - id: 340256
+        key: 3ce3bc5c-597c-48b4-bc9b-b2280e34bbfd
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 23:11:41 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/3ac98594059c5c245c6032f1484ee0953331b43f)'
+        instructor_notes: ''
+        resources: null
+      - id: 340143
+        key: 6e36490b-ce01-4090-9262-86a505ff3287
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 21:12:04 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## BrowserRouter
+           
+          The first component we'll look at is BrowserRouter.
+        instructor_notes: ''
+        resources: null
+      - id: 331436
+        key: a98e1571-b3ff-44b5-8c50-6eab5144a5c3
+        locale: en-us
+        version: 1.0.0
+        title: The BrowserRouter Component
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:36:43 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58000'
+          youtube_id: KX22H1m_F9k
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b8131_04-the-browserrouter-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8131_04-the-browserrouter-component/04-the-browserrouter-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8131_04-the-browserrouter-component/04-the-browserrouter-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8131_04-the-browserrouter-component/04-the-browserrouter-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8131_04-the-browserrouter-component/04-the-browserrouter-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8131_04-the-browserrouter-component/hls/playlist.m3u8'
+      - id: 331438
+        key: 84afba62-f02d-4041-a976-5c07eb407de7
+        locale: en-us
+        version: 1.0.0
+        title: Add BrowserRouter
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:36:43 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58002'
+          youtube_id: Re8n-hmkWlY
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b8133_06-add-browserrouter/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8133_06-add-browserrouter/06-add-browserrouter_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8133_06-add-browserrouter/06-add-browserrouter_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8133_06-add-browserrouter/06-add-browserrouter_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8133_06-add-browserrouter/06-add-browserrouter_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8133_06-add-browserrouter/hls/playlist.m3u8'
+      - id: 340257
+        key: 87a9077d-72cd-4d68-b2ce-8838dbf53d58
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 23:12:36 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/544d6aff26d6e35b40bd17a633cf7c21c5eb4969)'
+        instructor_notes: ''
+        resources: null
+      - id: 340107
+        key: 3e80e65b-bbb7-400a-821e-de75ff991141
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 27 2017 16:47:49 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          What's nice about React Router is that everything is just a component. This makes using it nice, but it also makes diving into the code more convenient as well. Let's take a look at what exactly BrowserRouter is doing under the hood.
+
+          Here is the code straight from the React Router repository.
+
+          ```js
+          class BrowserRouter extends React.Component {
+            static propTypes = {
+              basename: PropTypes.string,
+              forceRefresh: PropTypes.bool,
+              getUserConfirmation: PropTypes.func,
+              keyLength: PropTypes.number,
+              children: PropTypes.node
+            }
+
+            history = createHistory(this.props)
+
+            render() {
+              return <Router history={this.history} children={this.props.children}  />
+            }
+          }
+          ```
+
+          When you use `BrowserRouter`, what you're really doing is rendering a `Router` component and passing it a `history` prop. Wait, what is `history`? `history` comes from the [history](https://github.com/ReactTraining/history) library (also built by React Training). The whole purpose of this library is it abstracts away the differences in various environments and provides a minimal API that lets you manage the history stack, navigate, confirm navigation, and persist state between sessions.
+
+          So in a nutshell, when you use `BrowserRouter`, you're creating a `history` object which will listen to changes in the URL and make sure your app is made aware of those changes.
+        instructor_notes: ''
+        resources: null
+      - id: 336519
+        key: 1f7f0232-ecdb-45d9-8ad4-080f46f4b560
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Wed Jun 21 2017 21:00:06 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - I have installed  the `react-router-dom` package
+          - I have imported `BrowserRouter` in `src/index.js`
+          - I am now rendering `<BrowserRouter><App /></BrowserRouter>` in `src/index.js`
+        positive_feedback: Fantastic work!
+        video_feedback: null
+        description: 'Let''s make sure you''ve performed the necessary steps. Check off each of the following:'
+      - id: 340110
+        key: 621575d4-d599-457a-95d3-99b198aeca8c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 27 2017 16:50:06 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## `BrowserRouter` Component Recap
+
+          In summary, for React Router to work properly, you need to wrap your whole app in a `BrowserRouter` component. Also, `BrowserRouter` wraps the history library which makes it possible for your app to be made aware of changes in the URL. 
+
+          ### Further Research
+
+          * [history](https://github.com/reacttraining/history)
+        instructor_notes: ''
+        resources: null
+  - id: 328692
+    key: 57731688-a610-4437-b606-3a479a386a4f
+    locale: en-us
+    version: 1.0.0
+    title: The Link Component
+    semantic_type: Concept
+    updated_at: 'Tue Jun 27 2017 16:56:04 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 340410
+      - 331440
+      - 340258
+      - 340116
+      - 337849
+      - 339889
+    atoms:
+      - id: 340410
+        key: fb44d464-be3f-4113-9fab-d8ba73d5b129
+        locale: en-us
+        version: 1.0.0
+        title: The Link Component
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:50:15 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '59036'
+          youtube_id: qbP07LypkN8
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/59520c8c_08-the-link-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8c_08-the-link-component/08-the-link-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8c_08-the-link-component/08-the-link-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8c_08-the-link-component/08-the-link-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8c_08-the-link-component/08-the-link-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8c_08-the-link-component/hls/playlist.m3u8'
+      - id: 331440
+        key: dec7bcf5-d558-4331-86d6-cd02aa350a34
+        locale: en-us
+        version: 1.0.0
+        title: Replace Anchor Links with the Link Component
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:50:29 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58004'
+          youtube_id: V3kc4Sz1GII
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b813b_09-replace-anchor-links-with-the-link-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b813b_09-replace-anchor-links-with-the-link-component/09-replace-anchor-links-with-the-link-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b813b_09-replace-anchor-links-with-the-link-component/09-replace-anchor-links-with-the-link-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b813b_09-replace-anchor-links-with-the-link-component/09-replace-anchor-links-with-the-link-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b813b_09-replace-anchor-links-with-the-link-component/09-replace-anchor-links-with-the-link-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b813b_09-replace-anchor-links-with-the-link-component/hls/playlist.m3u8'
+      - id: 340258
+        key: af424a48-b41a-462a-98bf-ae1bc315479c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 23:13:32 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/4fa3926892f6292fe562902ca1b1e3c9d840f27a)'
+        instructor_notes: ''
+        resources: null
+      - id: 340116
+        key: 0c64148c-9a1e-4cc0-92a8-6f5d53484a48
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jun 29 2017 17:25:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          As you've seen, `Link` is a straightforward way to provide declarative, accessible navigation around your application. By passing a `to` property to the `Link` component, you tell your app which path to route to.
+
+          ```js
+          <Link to="/about">About</Link>
+          ```
+
+          If you're experienced with routing on the web, you'll know that sometimes our links need to be a little more complex than just a string. For example, you can pass along query parameters or link to specific parts of a page. What if you wanted to pass state to the new route? To account for these scenarios, instead of passing a string to `Link`s `to` prop, you can pass it an object like this,
+
+          ```js
+          <Link to={{
+            pathname: '/courses',
+            search: '?sort=name',
+            hash: '#the-hash',
+            state: { fromDashboard: true }
+          }}>
+            Courses
+          </Link>
+          ```
+
+          You won't need to use this feature all of the time, but it's good to know it exists. You can read more information about `Link` in the [official docs](https://reacttraining.com/react-router/web/api/Link).
+        instructor_notes: ''
+        resources: null
+      - id: 337849
+        key: e0705690-35a6-4f24-bfd9-e6367b488675
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Mon Aug 14 2017 02:12:29 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'When creating anchors for our app''s routes, let''s say we want `<a href="/members" class="members">Members</a>` in the DOM. How should we write this using React Router''s `<Link>` component?'
+          correct_feedback: '`<Link>`''s props (attributes) will be passed to the anchor that React Router creates. Using JSX, this is a great way to simplify navigation through your app.'
+          video_feedback: null
+          default_feedback: Recall that we can use React Router's `<Link>` component (which is ultimately JSX) to give us an ordinary anchor in the DOM.
+          answers:
+            - id: a1498154227014
+              text: '`<Link to="/members" class="members">Members</Link>`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498154593961
+              text: '`<a href="/members" class="members">Members</a>`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498154601369
+              text: '`<Link to="/members" className="members">Members</Link>`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498156764197
+              text: '`<Link to="/members" className="members" linkText="Members" />`'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 339889
+        key: c9ea3aa3-cb78-4044-b7f4-02463f0f50fd
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Aug 31 2017 21:21:23 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Link Recap
+
+          React Router provides a `Link` component which allows you to add declarative, accessible navigation around your application. You'll use it in place of anchor tags (`a`) as you're typically used to. React Router's `<Link>` component is a great way to make navigation through your app accessible for users.  Passing a `to` prop to your link, for example, helps guide your users to an absolute path (e.g., `/about`):
+
+          ```js
+          <Link to="/about">About</Link>
+          ```
+
+          Since the `<Link>` component fully renders a proper anchor tag (`<a>`) with the appropriate `href`, you can expect it to behave how a normal link on the web behaves.
+
+          ## Further Research
+          * [`<Link>`](https://reacttraining.com/react-router/web/api/Link) at React Training
+          * [Source Code](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/modules/Link.js)
+        instructor_notes: ''
+        resources: null
+  - id: 328693
+    key: e6f89f07-7f29-41d9-b600-dcf2a94fb13c
+    locale: en-us
+    version: 1.0.0
+    title: The Route Component
+    semantic_type: Concept
+    updated_at: 'Tue Jun 27 2017 15:41:19 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 340411
+      - 331442
+      - 340259
+      - 336573
+      - 336572
+      - 340221
+    atoms:
+      - id: 340411
+        key: ef793e45-be67-4a03-a910-2fd46f1736bb
+        locale: en-us
+        version: 1.0.0
+        title: The Route Component
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:50:37 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '59037'
+          youtube_id: NlHLfRb6T_E
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/59520c8f_10-the-route-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8f_10-the-route-component/10-the-route-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8f_10-the-route-component/10-the-route-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8f_10-the-route-component/10-the-route-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8f_10-the-route-component/10-the-route-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/59520c8f_10-the-route-component/hls/playlist.m3u8'
+      - id: 331442
+        key: a19371df-70b3-4239-b8f2-f65c4b1e5d49
+        locale: en-us
+        version: 1.0.0
+        title: Add Routes to the App
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:50:44 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58006'
+          youtube_id: KsuuFWh1VAg
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b8147_11-add-routes-to-the-app/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8147_11-add-routes-to-the-app/11-add-routes-to-the-app_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8147_11-add-routes-to-the-app/11-add-routes-to-the-app_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8147_11-add-routes-to-the-app/11-add-routes-to-the-app_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8147_11-add-routes-to-the-app/11-add-routes-to-the-app_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b8147_11-add-routes-to-the-app/hls/playlist.m3u8'
+      - id: 340259
+        key: da9b8e86-7e69-4d77-ac2d-6eadf853b8f0
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 23:14:25 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/0c1056088f055e7f1046531142f56201d3f18cd6)'
+        instructor_notes: ''
+        resources: null
+      - id: 336573
+        key: 51d92b60-6fb2-46f3-85a3-7405faa27f8c
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Thu Jun 22 2017 00:06:48 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'If the browser loads the URL `/houses/green`, which of the following Routes will match?'
+          correct_feedback: 'Components wrapped in the Router component will only render when it matches (at least some initial part of) the URL. If the ''exact'' flag is set, the path will only match when it exactly matches the URL.'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1498087290764
+              text: '`<Route path="/houses" component={Houses} />`'
+              is_correct: true
+              incorrect_feedback: 'Recall that if even some initial part of the path matches the URL, the component will render.'
+            - id: a1498087369429
+              text: '`<Route exact path="/houses" component={Houses} />`'
+              is_correct: false
+              incorrect_feedback: 'Whenever the ''exact'' flag is added to the Route, the path must exactly match the URL.'
+            - id: a1498087377989
+              text: '`<Route path="/houses/green" component={Houses} />`'
+              is_correct: true
+              incorrect_feedback: 'Recall that if even some initial part of the path matches the URL, the component will render.'
+            - id: a1498087410949
+              text: '`<Route exact path="/houses/green" component={Houses} />`'
+              is_correct: true
+              incorrect_feedback: 'Recall that if even some initial part of the path matches the URL, the component will render.'
+            - id: a1498087423117
+              text: '`<Route path="/" component={Houses} />`'
+              is_correct: true
+              incorrect_feedback: 'Recall that if even some initial part of the path matches the URL, the component will render.'
+      - id: 336572
+        key: 5f1801a3-6a4e-4ad6-b1f0-6d97a3387fb4
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Wed Jun 21 2017 23:32:28 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - I have imported `Route` in `src/App.js`
+          - I have replaced the `this.state.screen === 'list'` code with a `Route` component
+          - I have added an `exact` prop to the root `Route`
+          - I have replaced the `this.state.screen === create` code with a `Route` component
+          - I have removed the `onNavigate` function from `ListContacts`
+        positive_feedback: Fantastic work!
+        video_feedback: null
+        description: 'We''re almost there! Let''s quickly make sure we''re both on the same page. Make sure to check off each of the following:'
+      - id: 340221
+        key: d5d7a27e-cf28-497f-8c4d-128423c63c04
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 27 2017 22:34:18 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Route Component Recap
+
+          The main takeaway from this section is that with a `Route` component if you want to be able to pass props to a specific component that the router is going to render, you'll need to use `Route`'s `render` prop. As you saw, `render` puts you in charge of rendering the component which in turn allows you to pass any props to the rendered component as you'd like.
+
+          In summary, the `Route` component is a critical piece of building an application with React Router because it's the component which is going to decide which components are rendered based on the current URL path. 
+        instructor_notes: ''
+        resources: null
+  - id: 331443
+    key: c0ac3de9-54e5-46ce-ae94-aedfc1677632
+    locale: en-us
+    version: 1.0.0
+    title: Finishing The Contact Form
+    semantic_type: Concept
+    updated_at: 'Tue Jun 27 2017 17:01:16 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 340161
+      - 340155
+      - 340213
+      - 331444
+      - 340260
+      - 337825
+      - 331445
+      - 340261
+      - 340208
+      - 331446
+      - 340262
+    atoms:
+      - id: 340161
+        key: d755a512-3214-4a6d-9fed-ae0f47a4e492
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 21:42:57 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Create The Contact Form
+           
+          Right now, the page to create contacts is empty! Let's build out a form on that page so we start adding our own custom contacts.
+        instructor_notes: ''
+        resources: null
+      - id: 340155
+        key: 1daee0dd-7c4a-42d6-8b17-0cddcd3d3b12
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jun 29 2017 17:38:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## ⚠️ Required File ⚠️ 
+           
+          > At the beginning of the program, we gave you the option to clone our starter project or to start from scratch using [create-react-app](https://github.com/facebookincubator/create-react-app). If you haven't added it yet, you'll need [the ImageInput.js file](https://github.com/udacity/reactnd-contacts-complete/blob/master/src/ImageInput.js) for the following video.
+        instructor_notes: ''
+        resources: null
+      - id: 340213
+        key: 9341a978-0e41-4efa-acd3-0020316ef66e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 27 2017 16:59:25 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          The ImageInput component is a custom `<input>` that dynamically reads and resizes image files before
+           submitting them to the server as data URLs. It also shows a preview of the image. We chose to give this component to you rather than build it ourselves because it contains features related to files and images on the web that aren't crucial to your education in this context. If you're curious, feel free to dive into the code, but know it's not a requirement.
+        instructor_notes: ''
+        resources: null
+      - id: 331444
+        key: 51d772b5-de43-45b3-9d7e-c7e10d399637
+        locale: en-us
+        version: 1.0.0
+        title: Build Out the Contact Form
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:50:54 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58052'
+          youtube_id: 8JjYl5r3wLk
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593c910d_sc-07-create-contact-form/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c910d_sc-07-create-contact-form/sc-07-create-contact-form_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c910d_sc-07-create-contact-form/sc-07-create-contact-form_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c910d_sc-07-create-contact-form/sc-07-create-contact-form_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c910d_sc-07-create-contact-form/sc-07-create-contact-form_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c910d_sc-07-create-contact-form/hls/playlist.m3u8'
+      - id: 340260
+        key: f28c4248-b475-4249-8b0d-0cbf445dc55e
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 23:15:30 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/09d3d6da0fa0e2c40c95c66d99d0a2d31323ae06)'
+        instructor_notes: ''
+        resources: null
+      - id: 337825
+        key: 6b777590-e7e8-429e-9509-f45cf5fcc130
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 21:43:56 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Serialize The Form Data
+           
+          At this point, our form will serialize the values from user input (i.e., the `name` and `email`), adding them as a query string to the URL. We can add some additional functionality by having our app serialize these form fields on its own. After all, we want the app to ultimately handle creating the contact and saving it to the state. 
+           
+          To accomplish this, we'll use the [form-serialize](https://www.npmjs.com/package/form-serialize) package to output this information as a regular JavaScript object for the app to use.
+           
+          ```bash
+          npm install --save form-serialize
+          ```
+           
+          Let's see it all in action!
+        instructor_notes: ''
+        resources: null
+      - id: 331445
+        key: 049f05df-a967-45d2-8ac2-9fb3873f1800
+        locale: en-us
+        version: 1.0.0
+        title: Handle Submission of the Contact Form
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:51:03 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58053'
+          youtube_id: nf17fXAaRVs
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593c9118_sc-08-create-contact-form/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c9118_sc-08-create-contact-form/sc-08-create-contact-form_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c9118_sc-08-create-contact-form/sc-08-create-contact-form_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c9118_sc-08-create-contact-form/sc-08-create-contact-form_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c9118_sc-08-create-contact-form/sc-08-create-contact-form_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c9118_sc-08-create-contact-form/hls/playlist.m3u8'
+      - id: 340261
+        key: 55d8a980-34ee-4a20-b373-0a46738c692f
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 23:16:13 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/554bab12367719b1526900ea27b8bb60237aba0d)'
+        instructor_notes: ''
+        resources: null
+      - id: 340208
+        key: edeca381-e76e-4d4a-8489-672ddb0f92ad
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 22:22:04 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Update Server With New Contact
+           
+          We have our contact form. We're serializing our data and passing it up to the parent component. All we need to do to have a fully functional app is to save the contact to the server.
+        instructor_notes: ''
+        resources: null
+      - id: 331446
+        key: ee2c3a5a-49b2-44ec-bd57-a0b33c710371
+        locale: en-us
+        version: 1.0.0
+        title: Add New Contact to State
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:51:09 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58054'
+          youtube_id: hRTQp9pFr_c
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593c911e_sc-09-create-contact-form/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c911e_sc-09-create-contact-form/sc-09-create-contact-form_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c911e_sc-09-create-contact-form/sc-09-create-contact-form_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c911e_sc-09-create-contact-form/sc-09-create-contact-form_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c911e_sc-09-create-contact-form/sc-09-create-contact-form_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593c911e_sc-09-create-contact-form/hls/playlist.m3u8'
+      - id: 340262
+        key: f1e8ef1c-2d6a-4548-940f-fccc0abd2fd7
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 23:16:57 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/6ea0a9abe23c06465447bc2b0366e6c794eaefbf)'
+        instructor_notes: ''
+        resources: null
+  - id: 328694
+    key: f1e32c27-362a-402a-962f-ca74ff4704bb
+    locale: en-us
+    version: 1.0.0
+    title: Lesson Summary
+    semantic_type: Concept
+    updated_at: 'Mon Jun 26 2017 22:45:13 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 331447
+      - 340233
+    atoms:
+      - id: 331447
+        key: dfa6ae97-76a4-4bfc-a8e6-cb11ccc214c3
+        locale: en-us
+        version: 1.0.0
+        title: React Router Outro
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:36:44 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58007'
+          youtube_id: _tQZiFzaC3k
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b814a_14-react-router-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814a_14-react-router-outro/14-react-router-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814a_14-react-router-outro/14-react-router-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814a_14-react-router-outro/14-react-router-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814a_14-react-router-outro/14-react-router-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814a_14-react-router-outro/hls/playlist.m3u8'
+      - id: 340233
+        key: e04737ab-d11e-4de1-8437-4e428ea62c6d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Sep 19 2017 23:58:56 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Further Learning
+
+          If you're interested in learning more about React Router, we recommend these two resources. First, [Build your own React Router v4](https://tylermcginnis.com/build-your-own-react-router-v4/) will walk through how to implement your own mini version of React Router to better understand its implementation details. Next, is React Training's [official documentation](https://reacttraining.com/react-router/web/guides/philosophy) for React Router. Feel free to also check out Tyler McGinnis's [React Router](https://tylermcginnis.com/courses/react-router/) course as well!
+        instructor_notes: ''
+        resources: null
+  - id: 331448
+    key: ce71a6eb-ccfa-4adf-909c-067769509c8c
+    locale: en-us
+    version: 1.0.0
+    title: Course Outro
+    semantic_type: Concept
+    updated_at: 'Mon Jun 26 2017 23:08:39 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 331449
+      - 340252
+    atoms:
+      - id: 331449
+        key: 5737d835-2203-4c93-8518-c7ce31c1fc91
+        locale: en-us
+        version: 1.0.0
+        title: Course Outro
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:55:03 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '58008'
+          youtube_id: SPabAvhrDh4
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b814c_15-course-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814c_15-course-outro/15-course-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814c_15-course-outro/15-course-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814c_15-course-outro/15-course-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814c_15-course-outro/15-course-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b814c_15-course-outro/hls/playlist.m3u8'
+      - id: 340252
+        key: 5d7c4025-76bd-4624-a2ab-903494355bf5
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 27 2017 17:09:49 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Keep Learning
+
+          Great work! You've learned how to build applications in React, but there's always more to learn! Check out the following resources to up your skills:
+
+          * [the React Docs](https://facebook.github.io/react/docs/hello-world.html)
+          * [Tyler's Blog](https://tylermcginnis.com/)
+
+          ### People to Follow
+
+          Whether it be popular blog posts or developers to follow on Twitter, a large part of getting everything out of a new technology is utilizing existing community resources. So we want to share with you with our favorite resources from the React community that we've found helpful over the last few years. Hopefully you'll find them helpful as well.
+
+          * [Dan Abramov](https://twitter.com/dan_abramov)
+          * [Ryan Florence](https://twitter.com/ryanflorence)
+          * [Michael Jackson](https://twitter.com/mjackson)
+          * [Sebastian Markbåge](https://twitter.com/sebmarkbage)
+          * [Henry Zhu](https://twitter.com/left_pad)
+          * [Preethi Kasireddy](https://twitter.com/iam_preethi)
+          * [Merrick Christensen](https://twitter.com/iammerrick)
+          * [Christopher Chedeau](https://twitter.com/vjeux)
+          * [React](https://twitter.com/reactjs)
+          * [Tyler McGinnis](https://twitter.com/tylermcginnis33)
+
+          ### Blog posts to read
+
+          * [You're missing the point of React](https://medium.com/@dan_abramov/youre-missing-the-point-of-react-a20e34a51e1a)
+          * [React "Aha" Moments](https://tylermcginnis.com/react-aha-moments/)
+          * [9 Things every React.js Beginner should know](https://camjackson.net/post/9-things-every-reactjs-beginner-should-know)
+          * [React Elements vs React Components](https://tylermcginnis.com/react-elements-vs-react-components/)
+
+          If you want to learn more advanced topics in React, you can check out [React Training's "Advanced React"](https://reacttraining.com/online/advanced-react) course. 
+
+          Thanks for joining us on this journey! Now it's time to move on to learning Redux!
+        instructor_notes: ''
+        resources: null

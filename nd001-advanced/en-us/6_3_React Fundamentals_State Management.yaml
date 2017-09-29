@@ -1,0 +1,1699 @@
+id: 298449
+key: 14331e60-a548-4cfb-a326-054545da8927
+locale: en-us
+version: 1.0.0
+title: State Management
+semantic_type: Lesson
+updated_at: 'Tue Jul 25 2017 21:26:20 GMT+0000 (UTC)'
+is_public: true
+image:
+  url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/June/5951955e_2-3-state-management2x/2-3-state-management2x.jpg'
+  width: 592
+  height: 640
+video: null
+summary: 'You''ll learn how to pass data into a component, how to create Functional Components, when and how to use PropTypes, and how to create controlled components and the benefits they provide.'
+lesson_type: Classroom
+duration: 180
+is_project_lesson: false
+career_portal_experience_levels: null
+_concepts_ids:
+  - 328674
+  - 328675
+  - 328676
+  - 328678
+  - 328679
+  - 328680
+  - 328681
+  - 350594
+_project_id: null
+concepts:
+  - id: 328674
+    key: 38cbfc18-d355-4297-b45b-db449cb92425
+    locale: en-us
+    version: 1.0.0
+    title: Introduction
+    semantic_type: Concept
+    updated_at: 'Mon Jun 26 2017 17:05:26 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 330274
+      - 331291
+      - 331292
+      - 339930
+      - 339931
+      - 339932
+      - 339789
+      - 331293
+    atoms:
+      - id: 330274
+        key: 7954007b-4707-43ad-87a8-6e6ab481c14f
+        locale: en-us
+        version: 1.0.0
+        title: Introduction to State Management
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:36:41 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57963'
+          youtube_id: W8kNdGxfS8A
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b231c_01-state-management-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b231c_01-state-management-intro/01-state-management-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b231c_01-state-management-intro/01-state-management-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b231c_01-state-management-intro/01-state-management-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b231c_01-state-management-intro/01-state-management-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b231c_01-state-management-intro/hls/playlist.m3u8'
+      - id: 331291
+        key: e8eb9557-a978-4c85-81c9-2f67776c7228
+        locale: en-us
+        version: 1.0.0
+        title: App-Intro
+        semantic_type: VideoAtom
+        updated_at: 'Wed Jun 28 2017 00:36:41 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57980'
+          youtube_id: Ju5mbCEFe9Q
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b2659_app-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2659_app-intro/app-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2659_app-intro/app-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2659_app-intro/app-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2659_app-intro/app-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2659_app-intro/hls/playlist.m3u8'
+      - id: 331292
+        key: 7017f278-52a8-4488-b90b-f6b8541badbe
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sun Aug 06 2017 02:33:27 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Remove Default Files
+           
+          Create React App will generate a number of default files and starter code that we need to get rid of. There will be two sets of changes you need to make, delete the starter content and add files that we're providing you. You can perform these manually yourself. Or, you can clone [this repo](https://github.com/udacity/reactnd-contacts-complete) and checkout the `starter-files-added` branch to have it all done for you.
+           
+          If you want to remove the starter content and add our content _manually_, then just proceed ahead. If you decide to clone the repo that already has these changes, then jump down on this page to set up the backend server.
+
+          If you want to perform the changes manually, then the first step is to delete these boilerplate files added by Create React App. Check out [this commit](https://github.com/udacity/reactnd-contacts-complete/commit/b1959521da8d914374bd2a61b17e55088ffab9f5) for the specifics.
+        instructor_notes: ''
+        resources: null
+      - id: 339930
+        key: 352552ce-93f9-4585-8a53-f06a178e8afe
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Mon Jun 26 2017 17:04:31 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - delete the file `src/App.css`
+          - delete the file `src/Logo.svg`
+          - remove all content in `src/index.css`
+          - remove our content in `src/App.js`
+        positive_feedback: Good job!
+        video_feedback: null
+        description: 'Remove the following content:'
+      - id: 339931
+        key: 3bf00fcf-8c1b-41fa-ba7d-24f604abdeec
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jul 11 2017 01:01:01 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Our Starter Files
+           
+          In this program, we're focusing on learning and building with React. We're not too worried about the styles. However, we don't want it to look terrible, so we're providing you with some styling and a handful of icons. 
+
+          The necessary files can be found in [this commit](https://github.com/udacity/reactnd-contacts-complete/commit/6f38f078634d104a62e3024cab4cc2d592dd82f6). Feel free to review the file paths included in the commit, and modify accordingly. If you are cloning the repository, don't forget to run `npm install` to make sure all dependencies are installed!
+        instructor_notes: ''
+        resources: null
+      - id: 339932
+        key: 9c29aa57-92c2-4711-8cc9-917bf34e9b07
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Mon Jun 26 2017 17:17:09 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - create directory `src/icons/`
+          - add all icons to `src/icons/`
+          - add project styles to `src/index.css`
+          - create directory `src/utils/`
+          - add `ContactsAPI.js` file to `src/utils/`
+          - add `ImageInput.js` file to `src/`
+          - have the `render()` method in `src/App.js` return `<div>Hello World</div>`
+        positive_feedback: Fantastic work!
+        video_feedback: null
+        description: 'Add the provided content:'
+      - id: 339789
+        key: e73670c9-0314-409d-93a1-cae0978c2b39
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jul 11 2017 00:47:41 GMT+0000 (UTC)'
+        is_public: true
+        text: "## The Backend Server\n \nThe Contacts app project that we're building is a front-end project. However, we'll eventually be storing the contacts on a backend server. Since we're only really focusing on the front-end for this course, we've gone ahead and built this server for you so you can focus on just the React parts of this program.\n \nThe server is just a simple Node/Express app. The repo for the project is at https://github.com/udacity/reactnd-contacts-server. All you need to do is:\n* clone the project with `git clone https://github.com/udacity/reactnd-contacts-server.git`\n* install the project dependencies with `npm install`\n* start the server with `node server.js`\n \nOnce you've started the server, you can forget about it. The Contacts project we're working on will interact with this server, but we won't ever modify any of the server code.\n\n> ## \uD83D\uDCA1 Running Two Servers\uD83D\uDCA1\n\n> At this point, you should be running two different servers on your local machine: \n\n>* Front-end development server: Accessible on **port 3000** (with `npm start` or `yarn start`)\n* Back-end server: Accessible on **port 5001** (with `node server.js`)\n\n>Please be sure that both are running before moving on in this Lesson."
+        instructor_notes: ''
+        resources: null
+      - id: 331293
+        key: 01a17ca7-3279-4c08-96e4-596528eadadf
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Tue Aug 08 2017 00:46:24 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - cloned the Contacts server
+          - changed directories into the Contacts directory
+          - installed the server's dependencies
+          - started the backend server
+        positive_feedback: 'Awesome work, let''s start building the app!'
+        video_feedback: null
+        description: 'To make sure we''re working with the same code, check off each one of these:'
+  - id: 328675
+    key: 6bc1e32e-089d-43ec-aef4-f83b9f7d37cc
+    locale: en-us
+    version: 1.0.0
+    title: Pass Data With Props
+    semantic_type: Concept
+    updated_at: 'Tue Jun 27 2017 21:02:07 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 330275
+      - 331294
+      - 340288
+      - 331295
+      - 340239
+      - 331342
+      - 331343
+      - 331344
+      - 340240
+      - 331346
+      - 331347
+      - 340241
+      - 340175
+      - 340267
+      - 331348
+    atoms:
+      - id: 330275
+        key: 91d62b41-6ca8-4f00-acd2-b1f89f07c194
+        locale: en-us
+        version: 1.0.0
+        title: Passing Data with Props
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:46:20 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57978'
+          youtube_id: 10YRWO2e7Y8
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b263b_04-passing-data-with-props/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b263b_04-passing-data-with-props/04-passing-data-with-props_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b263b_04-passing-data-with-props/04-passing-data-with-props_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b263b_04-passing-data-with-props/04-passing-data-with-props_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b263b_04-passing-data-with-props/04-passing-data-with-props_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b263b_04-passing-data-with-props/hls/playlist.m3u8'
+      - id: 331294
+        key: cf2a2101-f4a4-49cb-a9bc-c4a9873c14c2
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 27 2017 18:49:22 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          You'll be needing this `contacts` array in the following video:
+           
+          ```js
+          const contacts = [
+            {
+              "id": "ryan",
+              "name": "Ryan Florence",
+              "email": "ryan@reacttraining.com",
+              "avatarURL": "http://localhost:5001/ryan.jpg"
+            },
+            {
+              "id": "michael",
+              "name": "Michael Jackson",
+              "email": "michael@reacttraining.com",
+              "avatarURL": "http://localhost:5001/michael.jpg"
+            },
+            {
+              "id": "tyler",
+              "name": "Tyler McGinnis",
+              "email": "tyler@reacttraining.com",
+              "avatarURL": "http://localhost:5001/tyler.jpg"
+            }
+          ]
+          ```
+
+          This `contacts` array is just temporary. Eventually, we'll be retrieving and storing contacts on our backend server. As of right now, though, we don't know how or where to make network requests. We'll get to this soon, so just stick with this static list of contacts for now.
+        instructor_notes: ''
+        resources: null
+      - id: 340288
+        key: 3211eb4d-69b8-479e-8f33-d8b87ab48418
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Aug 03 2017 20:58:40 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## Apps Are Running?
+
+          > To follow along, make sure that both your Contacts app and the backend server are running.
+        instructor_notes: ''
+        resources: null
+      - id: 331295
+        key: 754249e5-0fb1-4491-af59-d3fa32cca5d2
+        locale: en-us
+        version: 1.0.0
+        title: Create the ListContacts Component
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:46:29 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57964'
+          youtube_id: v3hF0cyPo3M
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b232a_05-create-the-listcontacts-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b232a_05-create-the-listcontacts-component/05-create-the-listcontacts-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b232a_05-create-the-listcontacts-component/05-create-the-listcontacts-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b232a_05-create-the-listcontacts-component/05-create-the-listcontacts-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b232a_05-create-the-listcontacts-component/05-create-the-listcontacts-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b232a_05-create-the-listcontacts-component/hls/playlist.m3u8'
+      - id: 340239
+        key: d958ec23-84ef-4088-9b8b-e922bb58544f
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Sep 12 2017 00:11:38 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/664306f50a05aafe47f4109860e00593fcbf0321)'
+        instructor_notes: ''
+        resources: null
+      - id: 331342
+        key: acf1af8e-d7ac-46e0-92b6-c3fe5b520c63
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: MatchingQuizAtom
+        updated_at: 'Mon Jun 26 2017 20:28:30 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          complex_prompt:
+            text: 'Matching the following items with their respective concept:'
+          default_feedback: _____ are to functions as _____ are to components.
+          correct_feedback: 'We can think of passing in props to components just as we pass arguments into functions. Just as we can access arguments passed into a regular JavaScript function, we can access a component''s props with `this.props` (or `props` in stateless functional components).'
+          video_feedback: null
+          concepts_label: Concept
+          answers_label: Item
+          concepts:
+            - text: functions
+              default_concept_feedback: null
+              correct_answer:
+                id: a1497650224577
+                text: arguments
+              incorrect_feedbacks: []
+            - text: components
+              default_concept_feedback: null
+              correct_answer:
+                id: a1497650247107
+                text: props
+              incorrect_feedbacks: []
+          answers:
+            - id: a1497650224577
+              text: arguments
+            - id: a1497650247107
+              text: props
+      - id: 331343
+        key: aa23b63d-00ca-4879-94b8-9afa306ea96c
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 16 2017 22:04:15 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'If there were a `<Clock />` component in an app you''re building, how would you pass a `currentTime` `prop` into it?'
+          correct_feedback: 'There are a few cases where this isn''t true, but for the most part, when passing in a prop, you just type out the name of the prop as if it''s a regular HTML attribute.'
+          video_feedback: null
+          default_feedback: 'Hmm, that doesn''t look right. Remember that that when writing JSX properties look like regular HTML attributes. Which of the above options looks like a regular attribute?'
+          answers:
+            - id: a1497650401790
+              text: '`<Clock {new Date().getTime()} />`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497650409603
+              text: '`<Clock this.props={new Date().getTime()} />`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497650410210
+              text: '`<Clock currentTime={new Date().getTime()} />`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1497650411588
+              text: '`<Clock this.currentTime={new Date().getTime()} />`'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 331344
+        key: 8390323f-485d-4bcc-9109-33dc449c210f
+        locale: en-us
+        version: 1.0.0
+        title: Displaying the Contact Names
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:46:41 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57965'
+          youtube_id: qkKNrTUvGJU
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b233e_08-displaying-the-contact-names/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b233e_08-displaying-the-contact-names/08-displaying-the-contact-names_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b233e_08-displaying-the-contact-names/08-displaying-the-contact-names_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b233e_08-displaying-the-contact-names/08-displaying-the-contact-names_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b233e_08-displaying-the-contact-names/08-displaying-the-contact-names_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b233e_08-displaying-the-contact-names/hls/playlist.m3u8'
+      - id: 340240
+        key: 3aa35880-0871-4b42-8938-6e3385323aa2
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 22:51:45 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/eaa138af7d992f05449f524d514ac4224f736ae4)'
+        instructor_notes: ''
+        resources: null
+      - id: 331346
+        key: eee7edf5-ed23-4cf7-8868-0a9b3eb346fe
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Jun 16 2017 22:08:58 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Using the `<Clock />` component example:
+             
+            ```js
+            <Clock currentTime='3:41pm' />
+            ```
+             
+            How would you access the value `3:41pm` from inside the component?
+          correct_feedback: Any prop that's passed into the component is accessible on the `this.props` object.
+          video_feedback: null
+          default_feedback: Remember that that data passed into a component are called `props`.
+          answers:
+            - id: a1497650682332
+              text: Clock.currentTime
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497650692334
+              text: currentTime
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497650692835
+              text: this.currentTime
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497650693791
+              text: this.props.currentTime
+              is_correct: true
+              incorrect_feedback: null
+      - id: 331347
+        key: 60e77973-dbdf-4395-a5a7-03676754e53f
+        locale: en-us
+        version: 1.0.0
+        title: Add Contact Details
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:46:50 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57966'
+          youtube_id: mnIuUk9cexA
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b2350_09-add-contact-details/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2350_09-add-contact-details/09-add-contact-details_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2350_09-add-contact-details/09-add-contact-details_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2350_09-add-contact-details/09-add-contact-details_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2350_09-add-contact-details/09-add-contact-details_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2350_09-add-contact-details/hls/playlist.m3u8'
+      - id: 340241
+        key: ee61402f-11a4-434f-b161-9a78cb7cc353
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 22:53:42 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/43add2a640214483b00d9ca491990bb86104501e)'
+        instructor_notes: ''
+        resources: null
+      - id: 340175
+        key: d01bd1ea-953d-45dd-9302-74309a949625
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 22:55:04 GMT+0000 (UTC)'
+        is_public: true
+        text: '> If you''re following along on your own machine and the avatar images are not loading for you, check that the server is running.'
+        instructor_notes: ''
+        resources: null
+      - id: 340267
+        key: d907a4dd-f973-4075-aee2-d976f43fd0f6
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Tue Jul 25 2017 20:27:53 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            How do you pass multiple props individually to a component?
+          correct_feedback: 'You pass in props individually just as you would with any other HTML attributes. '
+          video_feedback: null
+          default_feedback: Remember that props are passed like HTML attributes. How are multiple HTML attributes added?
+          answers:
+            - id: a1498520858279
+              text: '`<Clock time={Date.now()} zone=''MST'' />`'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498520971532
+              text: '`<Clock props={{time: Date.now(), zone: ''MST''}} />`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498521003774
+              text: '`<Clock [time=Date.now(), zone=''MST''] />`'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498521094663
+              text: '`<Clock props={[Date.now(), ''MST'']}/>`'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 331348
+        key: 673fcd1b-0a1d-499d-8ffc-414ae8ad60ec
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Sun Jun 25 2017 04:54:51 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Passing Data With Props Recap
+           
+          A `prop` is any input that you pass to a React component. Just like an HTML attribute, a `prop` name and value are added to the Component.
+           
+          ```js
+          // passing a prop to a component
+          <LogoutButton text='Wanna log out?' />
+          ```
+           
+          In the code above, `text` is the `prop` and the string `'Wanna log out?'` is the value.
+           
+          All props are stored on the `this.props` object. So to access this `text` `prop` from _inside_ the component, we'd use `this.props.text`:
+           
+          ```js
+          // access the prop inside the component
+          ...
+          render() {
+              return <div>{this.props.text}</div>
+          }
+          ...
+          ```
+           
+          ### Further Research
+          * [Components and Props](https://facebook.github.io/react/docs/components-and-props.html) from the React Docs
+        instructor_notes: ''
+        resources: null
+  - id: 328676
+    key: 0be66a50-3b7d-4029-9d3e-7a9b52c6063c
+    locale: en-us
+    version: 1.0.0
+    title: Functional Components
+    semantic_type: Concept
+    updated_at: 'Thu Jun 29 2017 19:45:29 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 331349
+      - 340889
+      - 331350
+      - 340242
+      - 331351
+      - 331352
+      - 331353
+    atoms:
+      - id: 331349
+        key: 2ad02be8-4ec6-4fa3-9daf-ae01b7ab0df0
+        locale: en-us
+        version: 1.0.0
+        title: Create Functional Components
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:46:58 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57967'
+          youtube_id: 0R3WOH32jlg
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b2354_10-create-functional-components/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2354_10-create-functional-components/10-create-functional-components_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2354_10-create-functional-components/10-create-functional-components_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2354_10-create-functional-components/10-create-functional-components_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2354_10-create-functional-components/10-create-functional-components_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2354_10-create-functional-components/hls/playlist.m3u8'
+      - id: 340889
+        key: 90363e7f-2473-4300-a750-f6ab9c6e48c5
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jun 29 2017 19:45:29 GMT+0000 (UTC)'
+        is_public: true
+        text: "> ## \uD83D\uDCA1 Template Literals \uD83D\uDCA1\n\n> In the following video, you'll see us using back-ticks (\\` `\\) in the \"style\" attribute's value. Recall that these [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) allow for embedded expressions. Using template literals, you can interpolate expressions as normal strings through your app. \n\n>  For further reading, feel free to check out [ES6 - JavaScript Improved](https://www.udacity.com/course/es6-javascript-improved--ud356) to explore the latest features and improvements to the language. "
+        instructor_notes: ''
+        resources: null
+      - id: 331350
+        key: 9891a171-6692-4b57-bd6e-91c13327527b
+        locale: en-us
+        version: 1.0.0
+        title: Convert ListContacts to a Stateless Functional Component
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:47:06 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57979'
+          youtube_id: tTxLxl_Bk3Y
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b2657_12-convert-listcontacts-to-a-stateless-functional-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2657_12-convert-listcontacts-to-a-stateless-functional-component/12-convert-listcontacts-to-a-stateless-functional-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2657_12-convert-listcontacts-to-a-stateless-functional-component/12-convert-listcontacts-to-a-stateless-functional-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2657_12-convert-listcontacts-to-a-stateless-functional-component/12-convert-listcontacts-to-a-stateless-functional-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2657_12-convert-listcontacts-to-a-stateless-functional-component/12-convert-listcontacts-to-a-stateless-functional-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2657_12-convert-listcontacts-to-a-stateless-functional-component/hls/playlist.m3u8'
+      - id: 340242
+        key: c1cfb2ee-773d-414b-8cc1-e16e7846a0f4
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 22:55:57 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/e763785368c5d99281182f5d11e03b5ba02541e0)'
+        instructor_notes: ''
+        resources: null
+      - id: 331351
+        key: ba4bd643-487d-45e1-8b0a-8c6418205948
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 16 2017 22:14:55 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: When is it appropriate to use a Stateless Functional Component? Check all that apply.
+          correct_feedback: 'If a component is _only_ using a `render` method to display content, then it can be converted into a Stateless Functional Component.'
+          video_feedback: null
+          default_feedback: 'Keep in mind what these are called - _Stateless_ Functional Components. They''re _stateless_, meaning that these components do not have to worry about managing changing data. They just display the data.'
+          answers:
+            - id: a1497651097853
+              text: when the component needs to initialize some data
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497651101437
+              text: when all the component needs is a `render` method
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1497651102114
+              text: when the component doesn't have any props passed in
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1497651104296
+              text: when the component does not use JSX
+              is_correct: false
+              incorrect_feedback: null
+      - id: 331352
+        key: 535fc1f6-d137-42ee-a47c-96ed1aa310e6
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Wed Aug 02 2017 22:11:05 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            If the `<IngredientList />` Component in the following code is a Stateless Functional Component, what expression would you write to access the `items` prop inside the Component?
+
+            ```js
+            <IngredientList items={ingredient.items} />
+            ```
+          default_feedback: 'Remember that with Stateless Functional Components, `props` are passed to the function as an argument.'
+          correct_feedback: That's right! Stateless Functional Components do away with the `this` keyword.
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: ^props\.items$
+              expression_description: ''
+              flags: ''
+              incorrect_feedback: null
+            - semantic_type: RegexMatcher
+              is_correct: false
+              expression: ^this\.props\.items$
+              expression_description: null
+              flags: ''
+              incorrect_feedback: 'Remember that with a Stateless Functional Component, there''s no `this` keyword and that `props` are passed to the function as an argument.'
+      - id: 331353
+        key: d9994c35-773f-4caa-9d48-7bff311466b5
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 27 2017 22:14:03 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Stateless Functional Components Recap
+           
+          If your component does not keep track of internal state (i.e., all it really has is just a `render()` method), you can declare the component as a Stateless Functional Component.
+
+          Remember that at the end of the day, React components are really just JavaScript functions that return HTML for rendering. As such, the following two examples of a simple Email component are equivalent: 
+
+          ```js
+          class Email extends React.Component {
+            render() {
+              return (
+                <div>
+                  {this.props.text}
+                </div>
+              );
+            }
+          };
+          ```
+
+          ```js
+          const Email = (props) => (
+            <div>
+              {props.text}
+            </div>
+          );
+          ```
+
+          In the latter example (written as an ES6 function with an implicit return), rather than accessing `props` from `this.props`, we can pass in props directly as an argument to the function itself. In turn, this regular JavaScript function can serve as the Email component's `render()` method.
+           
+          ### Further Research
+          * [Creating Stateless Function Components](https://www.reactenlightenment.com/react-state/8.4.html) from the React Enlightenment book
+          * [Functional Components vs. Stateless Functional Components vs. Stateless Components](https://tylermcginnis.com/functional-components-vs-stateless-functional-components-vs-stateless-components/) from Tyler
+        instructor_notes: ''
+        resources: null
+  - id: 328678
+    key: c7172108-9c9f-42d7-9f2b-0e42a2f7130b
+    locale: en-us
+    version: 1.0.0
+    title: Add State To A Component
+    semantic_type: Concept
+    updated_at: 'Tue Aug 08 2017 00:37:37 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 335880
+      - 331354
+      - 356663
+      - 331355
+      - 340243
+      - 354010
+      - 337983
+      - 331356
+    atoms:
+      - id: 335880
+        key: 6901ae60-8350-49df-80ce-28ea625c8145
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jun 21 2017 23:29:28 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## State
+
+          Earlier in this Lesson, we learned that `props` refer to attributes from parent components. In the end, props represent "read-only" data that are _immutable_.
+
+          A component's `state`, on the other hand, represents _mutable_ data that ultimately affects what is rendered on the page. State is managed internally by the component itself and is meant to change over time, commonly due to user input (e.g., clicking on a button on the page).
+
+          In this section, we'll see how we can encapsulate the complexity of state management to individual components.
+        instructor_notes: ''
+        resources: null
+      - id: 331354
+        key: 6d43fa95-7c36-43b0-b74f-dcdc5e9a4294
+        locale: en-us
+        version: 1.0.0
+        title: Add State to Components
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:47:19 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57968'
+          youtube_id: W-udVlRApio
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b2358_14-add-state-to-components/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2358_14-add-state-to-components/14-add-state-to-components_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2358_14-add-state-to-components/14-add-state-to-components_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2358_14-add-state-to-components/14-add-state-to-components_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2358_14-add-state-to-components/14-add-state-to-components_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2358_14-add-state-to-components/hls/playlist.m3u8'
+      - id: 356663
+        key: 8a907494-5e69-4965-8965-0cff27d37ac0
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Aug 08 2017 00:43:10 GMT+0000 (UTC)'
+        is_public: true
+        text: "> ## \uD83D\uDCA1 Class Fields \uD83D\uDCA1\n\n> In the code above, we put the `state` object directly inside the class..._not_ in a `constructor()` method!\n\n> ```js\nclass User extends React.Component {\n  state = {\n    username: 'Tyler'\n  } \n}\n\n> // rather than\n\n> class User extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      username: 'Tyler'\n    }\n  }\n}\n```\n\n> This is slightly different from Facebook's [Setting the Initial State docs](https://facebook.github.io/react/docs/react-without-es6.html#setting-the-initial-state).\n\n> Having `state` outside the `constructor()` means it is a [class field](https://github.com/tc39/proposal-class-fields), which is a proposal for a new change to the language. It currently isn't supported by JavaScript, but thanks to Babel's fantastic powers of transpiling, we can use it!"
+        instructor_notes: ''
+        resources: null
+      - id: 331355
+        key: 6b58c029-70f8-46c6-9086-bb602e51dd47
+        locale: en-us
+        version: 1.0.0
+        title: Set Contacts Array as State in App
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:47:30 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57969'
+          youtube_id: RyO7B5KLXVY
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b236a_15-set-contacts-array-as-state-in-app/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b236a_15-set-contacts-array-as-state-in-app/15-set-contacts-array-as-state-in-app_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b236a_15-set-contacts-array-as-state-in-app/15-set-contacts-array-as-state-in-app_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b236a_15-set-contacts-array-as-state-in-app/15-set-contacts-array-as-state-in-app_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b236a_15-set-contacts-array-as-state-in-app/15-set-contacts-array-as-state-in-app_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b236a_15-set-contacts-array-as-state-in-app/hls/playlist.m3u8'
+      - id: 340243
+        key: 8b6b4c7f-3e18-4ee4-8922-b90cc0846ead
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 22:57:14 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/c4b43702554a8bf732eef6264c7053c370c6b201)'
+        instructor_notes: ''
+        resources: null
+      - id: 354010
+        key: 348111f1-c4fc-4d45-b967-43381631ace8
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jul 31 2017 23:40:26 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > ## ⚠️ Props in Initial State ⚠️
+
+          > When defining a component's initial state, avoid initializing that state with `props`. This is an error-prone _anti-pattern_, since state will only be initialized with `props` when the component is first created.
+
+          >```js
+          this.state = {
+            user: props.user
+          }
+          ```
+
+          > In the above example, if `props` are ever updated, the current state will not change unless the component is "refreshed." Using `props` to produce a component's initial state also leads to duplication of data, deviating from a dependable "source of truth."
+        instructor_notes: ''
+        resources: null
+      - id: 337983
+        key: 5ca0f87f-5f1d-49ae-a62d-66dbb6e293dd
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Fri Jun 23 2017 22:37:38 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'What is true about `state` in React? Please select all that apply:'
+          correct_feedback: State is a key property of React components. Being familiar with how state is used and how state is set (and reset) will help streamline building the UI of your app.
+          video_feedback: null
+          default_feedback: 'Recall that unlike `props`, a component manages its own `state`. State is designed (and expected!) to be updated through the course of a component''s lifetime.'
+          answers:
+            - id: a1498169718408
+              text: A component's state can be defined at initialization
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498169778233
+              text: State is usually passed in from outside components
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498169780449
+              text: State should be used when you want to store information that will never change
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498170087009
+              text: A component can alter its own internal state
+              is_correct: true
+              incorrect_feedback: null
+      - id: 331356
+        key: eb156024-f69c-46a3-88ff-52c2f6f65ec1
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 20 2017 21:41:52 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## State Recap
+           
+          By having a component manage its own state, any time there are changes made to that state, React will know and _automatically_ make the necessary updates to the page.
+           
+          This is one of the key benefits of using React to build UI components: when it comes to re-rendering the page, we just have to think about updating state. We don't have to keep track of exactly which parts of the page change each time there are updates. We don't need to decide how we will efficiently re-render the page. React compares the previous output and new output, determines what has changed, and makes these decisions for us. This process of determining what has changed in the previous and new outputs is called `Reconciliation`.
+           
+          ### Further Research
+          * [Identify Where Your State Should Live](https://facebook.github.io/react/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live)
+        instructor_notes: ''
+        resources: null
+  - id: 328679
+    key: 6e30b216-4065-4c7d-b50b-914dbdf15ec8
+    locale: en-us
+    version: 1.0.0
+    title: Update state with setState
+    semantic_type: Concept
+    updated_at: 'Sun Aug 13 2017 00:45:18 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 340418
+      - 331358
+      - 340244
+      - 339760
+      - 338017
+      - 339759
+    atoms:
+      - id: 340418
+        key: 3b8764de-239a-4ce4-9d50-fc5aa31a311e
+        locale: en-us
+        version: 1.0.0
+        title: Update State with setState()
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:47:48 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '59026'
+          youtube_id: TU1GGjogtbo
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5951fdf3_16-update-state-with-setstate/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fdf3_16-update-state-with-setstate/16-update-state-with-setstate_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fdf3_16-update-state-with-setstate/16-update-state-with-setstate_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fdf3_16-update-state-with-setstate/16-update-state-with-setstate_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fdf3_16-update-state-with-setstate/16-update-state-with-setstate_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fdf3_16-update-state-with-setstate/hls/playlist.m3u8'
+      - id: 331358
+        key: 9a302316-d2ef-4089-8c7d-ce8f5af05df5
+        locale: en-us
+        version: 1.0.0
+        title: Using SetState to Remove Contact
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:47:55 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57971'
+          youtube_id: d3UNPA863f4
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b2391_17-using-setstate-to-remove-contact/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2391_17-using-setstate-to-remove-contact/17-using-setstate-to-remove-contact_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2391_17-using-setstate-to-remove-contact/17-using-setstate-to-remove-contact_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2391_17-using-setstate-to-remove-contact/17-using-setstate-to-remove-contact_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2391_17-using-setstate-to-remove-contact/17-using-setstate-to-remove-contact_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b2391_17-using-setstate-to-remove-contact/hls/playlist.m3u8'
+      - id: 340244
+        key: c6a30cc8-9bdb-4e97-9193-b601762d7c2d
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 22:58:13 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/f794f553e4937f6b2afaab2acdb14c623d8eb8c1)'
+        instructor_notes: ''
+        resources: null
+      - id: 339760
+        key: 7d49b84b-fbcd-4a1a-99d5-9b8611766054
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Aug 08 2017 00:24:02 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## How State is Set
+
+          Earlier in this lesson, we saw how we can define a component's state at the time of initialization. Since state reflects _mutable_ information that ultimately affects rendered output, a component may also update its state throughout its lifecycle using `this.setState()`. As we've learned, every time local state changes, React will trigger a re-render of the component by calling its `render()` method.
+
+          There are two ways to use `setState()`. The first is to merge state updates. Consider a snippet of the following component:
+
+          ```js
+          class Email extends React.Component {
+            state = {
+              subject: '',
+              message: ''
+            }
+            // ...
+          });
+          ```
+
+          Though the initial state of this component contains two properties (`subject` and `message`), they can be updated independently. For example:
+
+          ```js
+          this.setState({
+            subject: 'Hello! This is a new subject'
+          })
+          ```
+
+          This way, we can leave `this.state.message` as-is, but replace `this.state.subject` with a new value.
+
+          The second way we can use `setState()` is by passing in a function rather than an object. For example:
+
+          ```js
+          this.setState((prevState) => ({
+            count: prevState.count + 1
+          }))
+          ```
+
+          Here, the function passed in takes a single `prevState` argument. When a component's new state depends on the previous state (i.e., we are incrementing `count` in the previous state by 1), we want to use the functional `setState()`.
+        instructor_notes: ''
+        resources: null
+      - id: 338017
+        key: 4f21150d-72ca-49b5-aca8-f4b438649335
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Sun Aug 13 2017 00:56:37 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'What is true about setting `state` in our components? Please check all that apply:'
+          correct_feedback: 'At the end of the day, your UI is just a function of your `state`. Being able to leverage React''s automatic re-renders when resetting state can give your app''s users a truly dynamic experience.'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1498172386232
+              text: 'Whenever `setState()` is called, the component also calls `render()` with the new state'
+              is_correct: true
+              incorrect_feedback: 'If `setState()` is called, do you think the component gets re-rendered or not?'
+            - id: a1498172743985
+              text: State updates can be merged by passing in an object to `setState()`
+              is_correct: true
+              incorrect_feedback: Recall that `setState()` can accept a function or an object.
+            - id: a1498172997041
+              text: 'Updating state directly is ideal when you want to re-render a component (i.e., preferring `this.state.message = ''Hi there'';` rather than `this.setState({ message: ''Hi there'' });`)'
+              is_correct: false
+              incorrect_feedback: 'Mutating `this.state` directly will not trigger a re-render. In turn, what the user sees on the page may not reflect the component''s internal state.'
+            - id: a1498173710585
+              text: 'State updates can be asynchronous (i.e., `setState()` can accept a function with the previous state as its first argument)'
+              is_correct: true
+              incorrect_feedback: Recall that `setState()` can accept a function or an object.
+            - id: a1498174851529
+              text: '`setState()` should be called within the component''s `render()` method'
+              is_correct: false
+              incorrect_feedback: 'Keep in mind that `setState()` causes React to re-render your UI. If it were called in `render()`, this would result in an infinite loop!'
+      - id: 339759
+        key: 91afc87a-1709-46ce-b70d-28feb63175a0
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Aug 16 2017 16:16:13 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## `setState()` Recap
+          While a component can set its state when it initializes, we expect that state to change over time, usually due to user input. The component is able to change its own internal state using `this.setState()`. Each time state is changed, React knows and will call `render()` to re-render the component. This allows for fast, efficient updates to your app's UI.
+
+          ### Further Research
+          * [Using State Correctly](https://facebook.github.io/react/docs/state-and-lifecycle.html) from the React Docs
+        instructor_notes: ''
+        resources: null
+  - id: 328680
+    key: 5c728bd9-9ed1-47f8-b402-f7ba18c4dbf4
+    locale: en-us
+    version: 1.0.0
+    title: PropTypes
+    semantic_type: Concept
+    updated_at: 'Fri Sep 01 2017 20:38:38 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 336537
+      - 331359
+      - 340245
+      - 340065
+      - 339887
+      - 339888
+    atoms:
+      - id: 336537
+        key: de98831b-57f3-4779-8d2b-07008794a256
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Sep 14 2017 20:59:22 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Type checking a Component's Props with `PropTypes`
+
+          As we implement additional features into our app, we may soon find ourselves debugging our components more frequently. For example, what if the `props` that we pass to our components end up being an unintended data type (e.g. an object instead of an array)? PropTypes is a package that lets us define the data type we want to see right from the get-go and warn us during development if the prop that's passed to the component doesn't match what is expected.
+
+          To use PropTypes in our app, we need to install [prop-types](https://facebook.github.io/react/docs/typechecking-with-proptypes.html):
+
+          ```bash
+          npm install --save prop-types
+          ```
+
+          Alternatively, if you have been using [yarn](https://www.npmjs.com/package/yarn) to manage packages, feel free to use it as well to install:
+
+          ```bash
+          yarn add prop-types
+          ```
+
+          Let's jump right in and see how it's used!
+        instructor_notes: ''
+        resources: null
+      - id: 331359
+        key: b1b3eeff-e201-4a08-9c4a-e8c7e450302f
+        locale: en-us
+        version: 1.0.0
+        title: PropTypes
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:48:05 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57972'
+          youtube_id: jorS3jX3ngo
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b23a5_18-proptypes/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23a5_18-proptypes/18-proptypes_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23a5_18-proptypes/18-proptypes_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23a5_18-proptypes/18-proptypes_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23a5_18-proptypes/18-proptypes_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23a5_18-proptypes/hls/playlist.m3u8'
+      - id: 340245
+        key: 77af9470-9b51-412b-af7d-e8c5242602b9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 22:59:08 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/a7f4728c61b539863b91752bfe21924eb81f3039)'
+        instructor_notes: ''
+        resources: null
+      - id: 340065
+        key: 364b8c7d-3b19-4079-aa73-690680b547d2
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Mon Jun 26 2017 18:23:53 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 'installed the [prop-types](https://www.npmjs.com/package/prop-types) package'
+          - restarted the Contacts app server
+        positive_feedback: Nice job!
+        video_feedback: null
+        description: ''
+      - id: 339887
+        key: b93b6a3d-b4e7-40b6-a84d-a0dcfb924d4c
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: ValidatedQuizAtom
+        updated_at: 'Mon Jun 26 2017 18:22:29 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Consider this component:
+
+            ```js
+            import PropTypes from 'prop-types';
+
+            class Email extends React.Component {
+              render() {
+                return (
+                  <h3>Message: {this.props.text}</h3>
+                );
+              }
+            }
+
+            Email.propTypes = {
+              text: // ???
+            };
+            ```
+
+            We want to validate that a `text` prop is indeed being passed in, and that its data type is a string. What should the value of the above object's `text` key be?
+          default_feedback: Note what has been imported at the top of the code snippet. Which JavaScript primitive do we want to validate? What can be appended to that call to make sure we're not receiving a null value?
+          correct_feedback: 'When we validate that particular element (i.e., an `array`, a `func`, a `number`, etc.), we can also chain `isRequired` to show a warning if that prop is not provided.'
+          video_feedback: null
+          matchers:
+            - semantic_type: RegexMatcher
+              is_correct: true
+              expression: ^PropTypes\.string\.isRequired$
+              expression_description: null
+              flags: ''
+              incorrect_feedback: null
+      - id: 339888
+        key: 5be9f9d2-8a99-4927-8436-4dbace8846e9
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 18:22:24 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## PropTypes Recap
+
+          All in all, PropTypes is a great way to validate intended data types in our React app. Type checking our data with PropTypes helps us identify these bugs during development to ensure a smooth experience for our app's users.
+
+          ## Further Research
+
+          * [prop-types](https://www.npmjs.com/package/prop-types) library from npm
+          * [Typechecking With Proptypes](https://facebook.github.io/react/docs/typechecking-with-proptypes.html) from the React Docs
+        instructor_notes: ''
+        resources: null
+  - id: 328681
+    key: fc3f11d3-8779-4d8a-8a23-1cd782f8ddf3
+    locale: en-us
+    version: 1.0.0
+    title: Controlled Components
+    semantic_type: Concept
+    updated_at: 'Tue Jun 27 2017 15:37:46 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 331360
+      - 340102
+      - 340409
+      - 340246
+      - 336065
+      - 340287
+      - 331362
+      - 340247
+      - 340098
+      - 340283
+      - 340289
+      - 336102
+      - 331367
+      - 340248
+      - 340112
+      - 331368
+      - 340249
+      - 340263
+      - 336109
+    atoms:
+      - id: 331360
+        key: 7e207af6-ec31-4652-a764-c49221d476b7
+        locale: en-us
+        version: 1.0.0
+        title: Controlled Components
+        semantic_type: VideoAtom
+        updated_at: 'Sun Aug 06 2017 08:04:37 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57973'
+          youtube_id: ayxG2cTb8q4
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b23bb_19-controlled-components/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23bb_19-controlled-components/19-controlled-components_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23bb_19-controlled-components/19-controlled-components_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23bb_19-controlled-components/19-controlled-components_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23bb_19-controlled-components/19-controlled-components_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23bb_19-controlled-components/hls/playlist.m3u8'
+      - id: 340102
+        key: 1461503b-7da4-4d1c-b9e7-3a2a813d7c80
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 27 2017 06:29:50 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## React Developer Tools
+
+          While building React apps, it may be tricky at times to see exactly what is going on in your components. After all, with so many props being passed and accessed, numerous nested components, and all the JSX yet to be rendered as HTML, it can be tough to put things into perspective!
+
+          `React Developer Tools` allows you to inspect your component hierarchy along with their respective props and states. Once you install the [Chrome extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en-US), open the Chrome console and check out the `React` tab. For a detailed overview, feel free to check out the [official documentation](https://github.com/facebook/react-devtools).
+
+          Let's see it in action below!
+        instructor_notes: ''
+        resources: null
+      - id: 340409
+        key: fc5272db-5ce5-44e1-bd1c-cafc9333eeb7
+        locale: en-us
+        version: 1.0.0
+        title: The Search Field - A Controlled Component
+        semantic_type: VideoAtom
+        updated_at: 'Sun Aug 06 2017 09:32:39 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '59027'
+          youtube_id: 1Tkb9SGkOgI
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/5951fe01_20-the-search-field-a-controlled-component/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fe01_20-the-search-field-a-controlled-component/20-the-search-field-a-controlled-component_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fe01_20-the-search-field-a-controlled-component/20-the-search-field-a-controlled-component_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fe01_20-the-search-field-a-controlled-component/20-the-search-field-a-controlled-component_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fe01_20-the-search-field-a-controlled-component/20-the-search-field-a-controlled-component_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/5951fe01_20-the-search-field-a-controlled-component/hls/playlist.m3u8'
+      - id: 340246
+        key: aeaf1e33-eaef-43d5-b513-6ea5873e7d7f
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 23:00:14 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/ce3a9a8a0f1d8d0224eba663e512cd309fb1f804)'
+        instructor_notes: ''
+        resources: null
+      - id: 336065
+        key: 599e7c57-7e50-45fb-8bbb-453d83cf8c05
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 19:43:16 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Note that the `value` attribute is set on the `<input>` element. Our displayed value will always be the value in the component's `state`, making our `state` the "single source of truth." 
+
+          Because it is React that ultimately controls the `value` of our input form element, we consider this component a [Controlled Component](https://facebook.github.io/react/docs/forms.html#controlled-components).
+
+          To recap how user input affects the `ListContacts` component's own `state`:
+           
+          1. The user enters text into the input field.
+          * An event listener invokes the `updateQuery()` function on every `onChange` event.
+          * `updateQuery()` then calls `setState()`, merging in the new state to update the component's internal state.
+          * Because its state has changed, the `ListContacts` component re-renders.
+           
+          Let's see how we can leverage this updated `state` to filter our contacts! To help us with our filtering we'll need the following packages:
+
+
+          * [escape-string-regexp](https://www.npmjs.com/package/escape-string-regexp)
+          * [sort-by](https://www.npmjs.com/package/sort-by)
+           
+          ```bash
+          npm install --save escape-string-regexp sort-by
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 340287
+        key: 85a7dc06-854c-4f64-a5aa-c012b37a2668
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Sun Aug 13 2017 01:56:41 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: What is a Controlled Component?
+          correct_feedback: React is great at handling state. It might as well handle our form state as well!
+          video_feedback: null
+          default_feedback: Think about how we can involve React state when rendering forms.
+          answers:
+            - id: a1498526059926
+              text: A component which controls the state of its children components
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498526062151
+              text: 'A component which renders a form, but the source of truth for that form state lives inside of the component state rather than inside of the DOM'
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498526063016
+              text: A component which controls the UI for its children components
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498526063804
+              text: 'A component which renders a form, but the source of truth for that form state lives inside of DOM rather than inside of the component'
+              is_correct: false
+              incorrect_feedback: null
+      - id: 331362
+        key: 622e7ece-579b-4455-acc4-472a6ece2a00
+        locale: en-us
+        version: 1.0.0
+        title: Display Queried Contacts
+        semantic_type: VideoAtom
+        updated_at: 'Sun Aug 06 2017 08:04:27 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57975'
+          youtube_id: xIlkBGmRq0g
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b23e9_21-display-queried-contacts/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23e9_21-display-queried-contacts/21-display-queried-contacts_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23e9_21-display-queried-contacts/21-display-queried-contacts_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23e9_21-display-queried-contacts/21-display-queried-contacts_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23e9_21-display-queried-contacts/21-display-queried-contacts_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23e9_21-display-queried-contacts/hls/playlist.m3u8'
+      - id: 340247
+        key: cd065c3d-68f5-46ae-af1f-2ed6766b5ae5
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 23:01:15 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/abd5fccf9a69546e75d9c178379d3ef92405719e)'
+        instructor_notes: ''
+        resources: null
+      - id: 340098
+        key: d36b04f6-8cd8-428a-80c8-c043fb0e99b3
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: TaskListAtom
+        updated_at: 'Sun Aug 06 2017 08:04:22 GMT+0000 (UTC)'
+        is_public: true
+        tasks:
+          - 'installed the [escape-string-regexp package](https://www.npmjs.com/package/escape-string-regexp)'
+          - 'installed the [sort-by package](https://www.npmjs.com/package/sort-by)'
+          - restarted Contacts app server
+        positive_feedback: Woohoo! Keep going!
+        video_feedback: null
+        description: ''
+      - id: 340283
+        key: 1ea3efb6-805c-4eff-97e6-b6eccdc8ef30
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jun 27 2017 00:52:26 GMT+0000 (UTC)'
+        is_public: true
+        text: "> ## \uD83D\uDCA1 Regular Expressions \uD83D\uDCA1\n\n> In the previous video, we created a Regular Expression object and used that to test the format of the contacts' names. Regular expressions are too complex to get into in this program, but they're incredibly valuable in programming to verify patterns.\n\n> Check out what MDN has to say about [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions). Also, check out how [the String `.match()` method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match) uses Regular expressions to verify patterns of text."
+        instructor_notes: ''
+        resources: null
+      - id: 340289
+        key: 62288f66-f7ca-417b-9254-8847e355ff45
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: RadioQuizAtom
+        updated_at: 'Tue Jun 27 2017 17:06:47 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Which benefit applies to Controlled Components that doesn't apply to "uncontrolled" components?
+          correct_feedback: 'With Controlled Components, our form state lives inside of the component. Because of this, we can easily update our UI based on that form state.'
+          video_feedback: null
+          default_feedback: 'Using Controlled Components, how does user input affect our app?'
+          answers:
+            - id: a1498526202927
+              text: Controlled Components are more the "React way" of doing things
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498526225491
+              text: Controlled Components are less typing
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498526226255
+              text: Controlled Components are more performant
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498526227054
+              text: Controlled Components allow you to update your UI based on the form itself
+              is_correct: true
+              incorrect_feedback: null
+      - id: 336102
+        key: 07e8f64a-3930-4461-96c6-b8cc722dc41c
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Jun 29 2017 17:21:47 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          At this point, our component is a bit unwieldy; the `render()` method accesses `query` from the state object (`this.state.query`) and `contacts` from the props object (`this.props.contacts`) quite often. Because `props` and `state` are just JavaScript objects, we can use an ES6 feature to unpack them into distinct variables rather than referencing them as `this.state.query` and `this.props.contacts` every time. This process of unpacking is called [object destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment).
+           
+          All in all, destructuring our objects shouldn't change the return value of our code, but it can make things look a bit cleaner. Let's see it in action below.
+        instructor_notes: ''
+        resources: null
+      - id: 331367
+        key: 714571ca-4eee-403b-9354-6c6461c81c4b
+        locale: en-us
+        version: 1.0.0
+        title: Refactoring Via ES6 Destructuring
+        semantic_type: VideoAtom
+        updated_at: 'Sun Aug 06 2017 08:04:17 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57976'
+          youtube_id: ut3jxLunZz0
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b23ed_22-refactoring-via-es6-destructuring/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23ed_22-refactoring-via-es6-destructuring/22-refactoring-via-es6-destructuring_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23ed_22-refactoring-via-es6-destructuring/22-refactoring-via-es6-destructuring_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23ed_22-refactoring-via-es6-destructuring/22-refactoring-via-es6-destructuring_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23ed_22-refactoring-via-es6-destructuring/22-refactoring-via-es6-destructuring_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b23ed_22-refactoring-via-es6-destructuring/hls/playlist.m3u8'
+      - id: 340248
+        key: eca6c0d9-36ca-404e-b5f9-a56f424e7767
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 23:02:18 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/4f7055abb1c197c1c5c968b472a643dedcb90ba1)'
+        instructor_notes: ''
+        resources: null
+      - id: 340112
+        key: 52749c73-7116-46dd-b205-52831e8fa6e1
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 20:23:15 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Showing The Displayed Contacts Count
+           
+          We're almost done working with the controlled component! Our last step is to make our app display the count of how many contacts are being displayed out of the overall total.
+        instructor_notes: ''
+        resources: null
+      - id: 331368
+        key: fb64e36b-6653-47dc-8af7-fcac3c17549b
+        locale: en-us
+        version: 1.0.0
+        title: Add the -Now Showing- Details
+        semantic_type: VideoAtom
+        updated_at: 'Thu Aug 17 2017 17:48:37 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '57977'
+          youtube_id: ykZMChM_Uu8
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2017/June/593b240f_23-add-the-now-showing-details/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b240f_23-add-the-now-showing-details/23-add-the-now-showing-details_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b240f_23-add-the-now-showing-details/23-add-the-now-showing-details_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b240f_23-add-the-now-showing-details/23-add-the-now-showing-details_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b240f_23-add-the-now-showing-details/23-add-the-now-showing-details_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/June/593b240f_23-add-the-now-showing-details/hls/playlist.m3u8'
+      - id: 340249
+        key: db79a9f9-2db6-4905-a466-498556d17153
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Mon Jun 26 2017 23:03:05 GMT+0000 (UTC)'
+        is_public: true
+        text: '[Here''s the commit with the changes made in this video.](https://github.com/udacity/reactnd-contacts-complete/commit/1ca08610c76a33da761b6d85e303cd8c436519de)'
+        instructor_notes: ''
+        resources: null
+      - id: 340263
+        key: b276c5a9-3b3d-4a75-b33d-8be79b9452cc
+        locale: en-us
+        version: 1.0.0
+        title: ''
+        semantic_type: CheckboxQuizAtom
+        updated_at: 'Wed Jul 05 2017 22:31:22 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Before we head into the next Lesson, let's check in on our knowledge of Controlled Components!
+
+            Which of the following is true about Controlled Components? Please check all that apply:
+          correct_feedback: 'With Controlled Components, React state serves as the "single source of truth" of form data. This is how user input in your `ListContacts` component ultimately triggers re-renders of the page.'
+          video_feedback: null
+          default_feedback: 'Recall that with Controlled Components, the value of your form elements is tied directly to the component''s state.'
+          answers:
+            - id: a1498518524112
+              text: Each update to state has an associated handler function
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498518805577
+              text: Form elements receive their current value via an attribute
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498519048216
+              text: Form input values are generally stored in the component's state
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1498519182688
+              text: '`<textarea>` and `<select>` cannot be controlled elements'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1498519794437
+              text: Event handlers for a controlled element update the component's state
+              is_correct: true
+              incorrect_feedback: null
+      - id: 336109
+        key: 9875e6d0-f7c0-4f25-9b5c-4a3ee897714b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jun 21 2017 18:22:48 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Controlled Components Recap
+
+          Controlled components refer to components that render a form, but the "source of truth" for that form state lives inside of the component state rather than inside of the DOM. The benefits of Controlled Components are:
+
+          * instant input validation
+          * conditionally disable/enable buttons
+          * enforce input formats
+
+          In our `ListContacts` component, not only does the component render a form, but it also controls what happens in that form based on user input. In this case, event handlers update the component's state with the user's search query. And as we've learned: any changes to React state will cause a re-render on the page, effectively displaying our live search results.
+        instructor_notes: ''
+        resources: null
+  - id: 350594
+    key: ae5550f3-1ac9-4e9d-97ba-f6009e9e9567
+    locale: en-us
+    version: 1.0.0
+    title: Lesson Summary
+    semantic_type: Concept
+    updated_at: 'Tue Jul 25 2017 21:27:06 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 350595
+    atoms:
+      - id: 350595
+        key: 71c52dec-90e9-4f65-a64b-9adf069bdbd1
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jul 25 2017 21:26:27 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Putting it All Into Perspective
+
+          When it comes to keeping track of data in your app, think about what will be done with that data, and what that data will look like as your user interfaces with your app. If you want your component to store mutable local data, consider using `state` to hold this information. Many times, it is `state` that will be used to manage controlled form elements in your components.
+
+          On the other hand, if some information isn't expected to change over time, and is generally designed to be "read-only" throughout your app, consider using `props` instead. Both `state` and `props` will generally be in the form of an object, and changes in either will trigger a re-render of the component, but they each play very different roles in your app.
+
+          We covered a lot in this lesson, and you've made great progress. Here are some resources that may help solidify some of these concepts:
+
+          * [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
+          * [Functional Components vs. Stateless Functional Components vs. Stateless Components](https://tylermcginnis.com/functional-components-vs-stateless-functional-components-vs-stateless-components/)
+          * [Controlled Components](https://facebook.github.io/react/docs/forms.html)
+        instructor_notes: ''
+        resources: null

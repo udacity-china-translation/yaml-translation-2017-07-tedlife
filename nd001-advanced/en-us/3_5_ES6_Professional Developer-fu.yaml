@@ -1,0 +1,863 @@
+id: 196652
+key: 2baa2512-b298-4796-aa5a-9135d82ff298
+locale: en-us
+version: 1.0.0
+title: Professional Developer-fu
+semantic_type: Lesson
+updated_at: 'Tue Jul 25 2017 21:32:27 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: 'With this massive improvement, not all browsers are able to support this new version of JavaScript. In this lesson, you''ll learn about using polyfills and transpiling your ES6 JavaScript code to ES5.'
+lesson_type: Classroom
+duration: 90
+is_project_lesson: false
+career_portal_experience_levels: null
+_concepts_ids:
+  - 213367
+  - 257577
+  - 257592
+  - 257595
+  - 213368
+  - 213369
+  - 257612
+  - 213363
+  - 257617
+  - 213370
+  - 257623
+  - 213364
+  - 261404
+  - 196716
+_project_id: null
+concepts:
+  - id: 213367
+    key: 71e01842-913a-4166-ac72-26d14bff16e4
+    locale: en-us
+    version: 1.0.0
+    title: The Web is Growing Up
+    semantic_type: Concept
+    updated_at: 'Fri Dec 23 2016 05:02:13 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 232945
+    atoms:
+      - id: 232945
+        key: 25c0db9c-c6c4-45d0-9a2d-ef598ceeb78b
+        locale: en-us
+        version: 1.0.0
+        title: The Web is Growing Up
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:20:43 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43145'
+          youtube_id: ue0FpyoZhts
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/583f7cae_01-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cae_01-intro/01-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cae_01-intro/01-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cae_01-intro/01-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cae_01-intro/01-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cae_01-intro/hls/playlist.m3u8'
+  - id: 257577
+    key: 17ce250d-ac1d-43de-b994-0c83978b30b8
+    locale: en-us
+    version: 1.0.0
+    title: Old and New Browsers
+    semantic_type: Concept
+    updated_at: 'Wed Apr 26 2017 22:53:20 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 257579
+      - 301414
+      - 257587
+      - 301415
+      - 257590
+    atoms:
+      - id: 257579
+        key: 3bf5af3c-9163-410e-a714-0e781f96bcc2
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 25 2017 18:02:59 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Code doesn't work in old browsers
+
+          The code we've been looking at in this course is not supported by older browsers. Older browsers that were developed prior to the release of ES6 were developed to support the version of JavaScript at the time (which was ES5.1). If you try running any ES6 code in an older browser, it won't work.
+        instructor_notes: ''
+        resources: null
+      - id: 301414
+        key: 8c5caed3-65bc-4df1-84f0-44830815b043
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Apr 26 2017 22:51:39 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/59012473_ud356-l4-es6-code-safari-error/ud356-l4-es6-code-safari-error.png'
+        width: 784
+        height: 526
+        alt: null
+        caption: _An arrow function is run and causes a syntax error in a Safari 9._
+        resources: null
+        instructor_notes: null
+      - id: 257587
+        key: 3b611cb3-ee49-4ad0-a96d-e7713e496212
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Apr 26 2017 22:53:15 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          It makes sense that code doesn't work in older browsers that were developed prior to the release of ES6, but there are some browsers that have been released after ES6 that don't support the new JavaScript syntax and functionality yet.
+
+          Try using an arrow function in your code and opening it up in IE 11, and it won't work. There'll be an error on the console saying that it doesn't recognize the syntax.
+        instructor_notes: ''
+        resources: null
+      - id: 301415
+        key: 11274705-3af4-47de-a776-1208f581da97
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Apr 26 2017 22:52:14 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/April/59012490_ud356-l4-es6-code-ie-error/ud356-l4-es6-code-ie-error.png'
+        width: 1183
+        height: 658
+        alt: null
+        caption: _An arrow function is run and causes a syntax error in a IE 11._
+        resources: null
+        instructor_notes: null
+      - id: 257590
+        key: bc0289f9-a05c-4d70-a309-a2766a40b0ed
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 25 2017 18:03:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          Most of us don't think much about the browser and all it can do...until it doesn't work! But really, browser makers have a tough time. Think about HTML, CSS, and JavaScript - these languages are fluid and are always improving. Browser makers have to keep up with all of these changes.
+
+          **But how do they know about these changes?**
+
+          They learn (or actually build) the language specifications!
+
+          Just like the [World Wide Web Consortium (W3C)](https://www.w3.org/) is the standards body for things like HTML, CSS, and SVG, [Ecma International](https://www.ecma-international.org/) is an industry association that develops and oversees standards like JavaScript and JSON. You can find the specifications for ES6 [here](http://www.ecma-international.org/ecma-262/6.0/index.html).
+
+          ### Further info
+
+          Ecma International is an important industry community and definitely worth checking out in more detail:
+
+          * https://en.wikipedia.org/wiki/Ecma_International
+          * http://www.ecma-international.org/memento/index.html
+
+          > **NOTE:** The code we've been looking at in this course is not supported by older browsers. Older browsers that were developed prior to the release of ES6 were developed to support the version of JavaScript at the time (which was ES5.1). If you try running any ES6 code in an older browser, it won't work.
+        instructor_notes: ''
+        resources: null
+  - id: 257592
+    key: 92284c1e-2cda-438d-837e-ae3571a60e65
+    locale: en-us
+    version: 1.0.0
+    title: ES6 Specification
+    semantic_type: Concept
+    updated_at: 'Tue Jan 17 2017 20:41:18 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 257593
+      - 257594
+    atoms:
+      - id: 257593
+        key: 8db40268-7a8f-43b5-b2f9-de97e0616426
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 25 2017 18:03:43 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## The ES6 specification
+
+          The specification (commonly shortened to "spec") for ES6 can be found [here](http://www.ecma-international.org/ecma-262/6.0/index.html). The spec lists the set of rules and guidelines on how the language is supposed to function. It doesn't give specific details on _how_ browser makers are supposed to achieve functionality, but it does provide step-by-step instructions on how the language is supposed to work. While making this course, we repeatedly referred to this official spec.
+
+          Ok, so honestly, it can be a little difficult to decipher some of the cryptic wording of the spec. But when you have a question about ES6, we recommend checking out info on the topic like that provided by the [Mozilla Developer Network](https://developer.mozilla.org) and then also reviewing what the spec actually says. 
+        instructor_notes: ''
+        resources: null
+      - id: 257594
+        key: 84f8ce97-c47d-4afc-8221-652ccaef21b3
+        locale: en-us
+        version: 1.0.0
+        title: ES6 Specification Quiz
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Jan 25 2017 18:03:54 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'Check out the [ES6 Specification](http://www.ecma-international.org/ecma-262/6.0/index.html). Which section in the spec covers arrow functions?'
+          correct_feedback: 'The section on arrow functions is number [14.2](http://www.ecma-international.org/ecma-262/6.0/index.html#sec-arrow-function-definitions)'
+          video_feedback: null
+          default_feedback: Not quite. Keeping looking!
+          answers:
+            - id: a1484684892890
+              text: section 6
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484684905089
+              text: section 10.3.2
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484684909276
+              text: section 14.2
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1484684913573
+              text: section 18.3.29
+              is_correct: false
+              incorrect_feedback: null
+  - id: 257595
+    key: b3c593b2-e4f6-46d9-9551-e0e56af6a36f
+    locale: en-us
+    version: 1.0.0
+    title: Supported Features
+    semantic_type: Concept
+    updated_at: 'Wed Jan 25 2017 19:40:27 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 257598
+      - 261421
+      - 257609
+    atoms:
+      - id: 257598
+        key: 8b6c6cc1-4661-45dd-a398-4ced2ab95396
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 25 2017 18:13:39 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## How Can You Know What Features Browsers Support?
+
+          With new language specifications coming out every year and with browsers updating every other month, it can be quite challenging to know what browser supports which language features. Each browser maker (except for Safari) has a website that tracks its development status. Checkout the platform feature updates for each browser:
+
+          * Google Chrome - https://www.chromestatus.com/features#ES6
+          * Microsoft Edge - https://developer.microsoft.com/en-us/microsoft-edge/platform/status/?q=ES6
+          * Mozilla Firefox - https://platform-status.mozilla.org/
+
+          > **NOTE:** Safari doesn't have it's own platform status website. Under the hood, though, Safari is powered by the open source browser engine, Webkit. The status for Webkit features can be found [here](https://webkit.org/status/).
+
+          This can be a lot of information to track down. If you prefer a birdseye view of all the feature support for all JavaScript code, check out the ECMAScript Compatibility Table built by [@kangax](https://twitter.com/kangax):
+
+          * http://kangax.github.io/compat-table/es6/
+        instructor_notes: ''
+        resources: null
+      - id: 261421
+        key: 62fd635e-ab9f-436e-ada9-5873fe053dbf
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Jan 25 2017 19:40:33 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/5888ff26_es6-compatibility-tables/es6-compatibility-tables.png'
+        width: 1220
+        height: 495
+        alt: null
+        caption: Compatibility table of browser support for ECMAScript features.
+        resources: null
+        instructor_notes: null
+      - id: 257609
+        key: 783738d6-b662-47c5-b690-99f9a175bc63
+        locale: en-us
+        version: 1.0.0
+        title: Compatibility Table Quiz
+        semantic_type: RadioQuizAtom
+        updated_at: 'Wed Jan 25 2017 17:47:26 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |
+            Looking at the ECMAScript Compatibility Table, what kind of information does the first _colored_ column display? 
+          correct_feedback: 'The very first column lists all of the ES6 features. The second column in the table is the first one that''s colored and displays the support of each ES6 feature in your the current browser. '
+          video_feedback: null
+          default_feedback: Look at the column headings for a hint.
+          answers:
+            - id: a1484685558934
+              text: The list of up-to-date browsers that support ES6.
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484685640302
+              text: The list of all ES6 features.
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484685646746
+              text: The status of all ES6 features supported by your current browser.
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1484685657822
+              text: Links to each browser platform's status for the specific ES6 feature.
+              is_correct: false
+              incorrect_feedback: null
+  - id: 213368
+    key: e7375b57-6356-485b-bb74-d23498fd0a40
+    locale: en-us
+    version: 1.0.0
+    title: The Web is Eternal
+    semantic_type: Concept
+    updated_at: 'Fri Dec 23 2016 05:12:18 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 232949
+    atoms:
+      - id: 232949
+        key: f25bcf06-2bff-41aa-9893-e600e558f029
+        locale: en-us
+        version: 1.0.0
+        title: The Web is Eternal
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:17:22 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '44132'
+          youtube_id: LwdL-8jFCyQ
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/585cb21a_13-the-web-is-eternal/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/585cb21a_13-the-web-is-eternal/13-the-web-is-eternal_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/585cb21a_13-the-web-is-eternal/13-the-web-is-eternal_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/585cb21a_13-the-web-is-eternal/13-the-web-is-eternal_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/585cb21a_13-the-web-is-eternal/13-the-web-is-eternal_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/585cb21a_13-the-web-is-eternal/hls/playlist.m3u8'
+  - id: 213369
+    key: 13d0a1e8-f2ad-45a2-afa6-dedd1f5ccf98
+    locale: en-us
+    version: 1.0.0
+    title: Polyfills
+    semantic_type: Concept
+    updated_at: 'Wed Jan 25 2017 18:00:53 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 232946
+    atoms:
+      - id: 232946
+        key: 27c975ae-92f7-4b52-8e17-31cd5ef21db4
+        locale: en-us
+        version: 1.0.0
+        title: Polyfill Intro
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:17:30 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43226'
+          youtube_id: eC2_Umstx9U
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/58422e37_14-polyfill-intro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422e37_14-polyfill-intro/14-polyfill-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422e37_14-polyfill-intro/14-polyfill-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422e37_14-polyfill-intro/14-polyfill-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422e37_14-polyfill-intro/14-polyfill-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/58422e37_14-polyfill-intro/hls/playlist.m3u8'
+  - id: 257612
+    key: a97c5af3-a227-4aba-9ea8-98fbecb5acf1
+    locale: en-us
+    version: 1.0.0
+    title: Using Polyfills
+    semantic_type: Concept
+    updated_at: 'Wed Jan 25 2017 18:07:16 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 257613
+      - 257615
+    atoms:
+      - id: 257613
+        key: 112b9a5c-8b3a-46c7-82e0-27d3bd9eb5df
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 25 2017 18:28:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## What is a polyfill?
+
+          > A polyfill, or polyfiller, is a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively. 
+
+          Coined by [Remy Sharp](https://twitter.com/rem) - https://remysharp.com/2010/10/08/what-is-a-polyfill
+
+          > We, as developers, should be able to develop with the HTML5 APIs, and scripts can create the methods and objects that should exist. Developing in this future-proof way means as users upgrade, your code doesn't have to change but users will move to the better, native experience cleanly.
+          From the HTML5 Boilerplate team on polyfills - https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills
+
+          ## Further research:
+
+          https://en.wikipedia.org/wiki/Polyfill
+
+          ## An example polyfill
+
+          The code below is a polyfill for the new ES6 String method, `startsWith()`: 
+
+          ```js
+          if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function (searchString, position) {
+              position = position || 0;
+              return this.substr(position, searchString.length) === searchString;
+            };
+          }
+          ```
+
+          As you can see, a polyfill is just regular JavaScript.
+
+          This code is a simple polyfill (check it out on MDN), but there's also a significantly more robust one, [here](https://github.com/mathiasbynens/String.prototype.startsWith/blob/master/startswith.js)
+        instructor_notes: ''
+        resources: null
+      - id: 257615
+        key: 3a06d71a-44a9-49f8-ace4-f71345d7fd6a
+        locale: en-us
+        version: 1.0.0
+        title: Polyfill Quiz
+        semantic_type: RadioQuizAtom
+        updated_at: 'Sat Apr 22 2017 05:55:44 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: |-
+            Why does the `startsWith()` polyfill begin with the following line?:
+
+            ```js
+            if (!String.prototype.startsWith)
+            ```
+          correct_feedback: 'Remember that a polyfill is used to patch missing functionality. If the browser supports ES6 and has the native `startsWith` method, then there''s no reason to polyfill it. If this check didn''t exist, then this polyfill would overwrite the native implementation.'
+          video_feedback: null
+          default_feedback: The correct answer is that it would overwrite the native method.
+          answers:
+            - id: a1484686110824
+              text: 'Without it, the script would throw an error.'
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484686131841
+              text: It checks to make sure the `String.prototype` exists.
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484686132193
+              text: It avoids overwriting the native `startsWith` method.
+              is_correct: true
+              incorrect_feedback: null
+  - id: 213363
+    key: b61048ac-5167-4fe1-93fe-642d652d0ef8
+    locale: en-us
+    version: 1.0.0
+    title: Polyfill Walkthrough
+    semantic_type: Concept
+    updated_at: 'Fri Dec 23 2016 05:10:42 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 232947
+    atoms:
+      - id: 232947
+        key: f020d18a-de58-4d36-b246-98dc9248c94d
+        locale: en-us
+        version: 1.0.0
+        title: Polyfill Walkthrough
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:21:28 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43148'
+          youtube_id: vDmB-gT-U88
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/583f7cbc_18-walk-through-the-polyfill/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cbc_18-walk-through-the-polyfill/18-walk-through-the-polyfill_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cbc_18-walk-through-the-polyfill/18-walk-through-the-polyfill_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cbc_18-walk-through-the-polyfill/18-walk-through-the-polyfill_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cbc_18-walk-through-the-polyfill/18-walk-through-the-polyfill_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cbc_18-walk-through-the-polyfill/hls/playlist.m3u8'
+  - id: 257617
+    key: ba4d8f5e-5a98-4f1e-84bd-e460ff26a773
+    locale: en-us
+    version: 1.0.0
+    title: Other Uses for Polyfills
+    semantic_type: Concept
+    updated_at: 'Tue Jan 17 2017 20:53:17 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 257619
+    atoms:
+      - id: 257619
+        key: 3e051d84-3d76-4e35-ad6f-242adf7887e0
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Thu Mar 16 2017 23:53:07 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Polyfills aren't only for patching missing JavaScript features
+
+          JavaScript is the language used to create a polyfill, but a polyfill doesn't just patch up missing JavaScript features! There are polyfills for all sorts of browser features:
+
+          * SVG
+          * Canvas
+          * Web Storage (local storage / session storage)
+          * Video
+          * HTML5 elements
+          * Accessibility
+          * Web Sockets
+          * and many more!
+
+          For a more-complete list of polyfills, check out [this link](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)
+        instructor_notes: ''
+        resources: null
+  - id: 213370
+    key: b44f914d-d1f5-489e-b0bd-0c6119b25b29
+    locale: en-us
+    version: 1.0.0
+    title: Transpiling
+    semantic_type: Concept
+    updated_at: 'Wed Jan 25 2017 18:38:04 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 232948
+      - 257622
+    atoms:
+      - id: 232948
+        key: f93aa2c4-8c91-4b68-917e-b0093f049442
+        locale: en-us
+        version: 1.0.0
+        title: Transpiling Intro
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:17:31 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43149'
+          youtube_id: Ku2NATTmgks
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/583f7cc5_21-transpiling/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cc5_21-transpiling/21-transpiling_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cc5_21-transpiling/21-transpiling_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cc5_21-transpiling/21-transpiling_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cc5_21-transpiling/21-transpiling_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cc5_21-transpiling/hls/playlist.m3u8'
+      - id: 257622
+        key: 62ad0bc7-47c7-48cd-9497-ba16f02fe0ea
+        locale: en-us
+        version: 1.0.0
+        title: Compiler or Transpiler
+        semantic_type: RadioQuizAtom
+        updated_at: 'Tue Jan 17 2017 20:52:44 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: 'To convert Java to JavaScript, would you use a compiler or a transpiler?'
+          correct_feedback: 'Since both the Java source code and the JavaScript target code are of the same level of abstraction (they''re both human-readable), a transpiler would be used.'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1484686317209
+              text: a compiler
+              is_correct: false
+              incorrect_feedback: null
+            - id: a1484686341106
+              text: a transpiler
+              is_correct: true
+              incorrect_feedback: null
+  - id: 257623
+    key: e2141a12-c59a-4d1f-ac39-20e5408d86ee
+    locale: en-us
+    version: 1.0.0
+    title: Using Babel
+    semantic_type: Concept
+    updated_at: 'Wed Jan 25 2017 19:34:14 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 257624
+      - 261417
+      - 257628
+      - 261418
+      - 257635
+      - 261420
+      - 257638
+    atoms:
+      - id: 257624
+        key: 3e5e0905-876d-45ee-a2e0-5ba3e4254138
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 25 2017 18:30:00 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          The most popular JavaScript transpiler is called [Babel](https://babeljs.io/).
+
+          Babel's original name was slightly more descriptive - 6to5. This was because, originally, Babel converted ES6 code to ES5 code. Now, Babel does a lot more. It'll convert ES6 to ES5, JSX to JavaScript, and Flow to JavaScript.
+
+          Before we look at transpiling code on our computer, let's do a quick test by transpiling some ES6 code into ES5 code directly on the Babel website. Check out [Babel's REPL](http://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015) and paste the following code into the section on the left:
+
+          ```js
+          class Student {
+            constructor (name, major) {
+              this.name = name;
+              this.major = major;
+            }
+
+            displayInfo() {
+              console.log(`${this.name} is a ${this.major} student.`);
+            }
+          }
+
+          const richard = new Student('Richard', 'Music');
+          const james = new Student('James', 'Electrical Engineering');
+          ```
+        instructor_notes: ''
+        resources: null
+      - id: 261417
+        key: 981da7bc-fc0b-4d62-87f8-d554a71e3267
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Jan 25 2017 19:28:35 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/5888fc24_babel-es6-to-es5/babel-es6-to-es5.png'
+        width: 1518
+        height: 733
+        alt: null
+        caption: ES6 code on the left that's being transpiled to ES5 code on the right.
+        resources: null
+        instructor_notes: null
+      - id: 257628
+        key: 560475fe-6e82-4e9d-878d-d7792da9e3d5
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 25 2017 18:32:44 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Transpiling project in repo
+
+          If you check in the [repo for this project](https://github.com/udacity/course-es6/tree/master/lesson-4/walk-through-transpiling), inside the Lesson 4 directory is a little project that's all set up for transpiling ES6 code to ES5 code. There's an "ES6" directory that contains the ES6 code we'll be transpiling (using Babel) to ES5 code that will be able to run in every browser.
+        instructor_notes: ''
+        resources: null
+      - id: 261418
+        key: 74e76117-4e5f-4d67-b1ac-86edc3cdd52b
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Jan 25 2017 19:32:32 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/5888fd20_es6-code-in-project/es6-code-in-project.png'
+        width: 897
+        height: 527
+        alt: null
+        caption: Code editor with ES6 code that will be transpiled.
+        resources: null
+        instructor_notes: null
+      - id: 257635
+        key: e68d1ce5-0c37-45c6-8474-c1af83d95e08
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 25 2017 18:35:39 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          The way Babel transforms code from one language to another is through plugins. There are plugins that transform ES6 arrow functions to regular ES5 functions (the [ES2015 arrow function plugin](http://babeljs.io/docs/plugins/transform-es2015-arrow-functions/)). There are plugins that transform ES6 template literals to regular string concatenation (the [ES2015 template literals transform](http://babeljs.io/docs/plugins/transform-es2015-template-literals/)). For a full list, check out [all of Babel's plugins](http://babeljs.io/docs/plugins/).
+
+          Now, you're busy and you don't want to have to sift through a big long list of plugins to see which ones you need to convert your code from ES6 to ES5. So instead of having to use a bunch of individual plugins, Babel has **presets** which are groups of plugins bundled together. So instead of worrying about which plugins you need to install, we'll just use the [ES2015 preset](http://babeljs.io/docs/plugins/preset-es2015/) that is a collection of all the plugins we'll need to convert all of our ES6 code to ES5.
+
+          You can see that the project has a `.babelrc` file. This is where you'd put all of the plugins and/or presets that the project will use. Since we want to convert all ES6 code, we've set it up so that it has the ES2015 preset.
+        instructor_notes: ''
+        resources: null
+      - id: 261420
+        key: 5bac53bb-9df4-428e-b0a1-43e9a173381f
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Wed Jan 25 2017 19:35:04 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2017/January/5888fdb4_es6-preset-in-project/es6-preset-in-project.png'
+        width: 897
+        height: 527
+        alt: null
+        caption: Code editor with `.babelrc` file that has ES2015 preset listed.
+        resources: null
+        instructor_notes: null
+      - id: 257638
+        key: 1a47eb6a-0a2c-4e19-a234-4a23a230faec
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Tue Jan 17 2017 20:58:55 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          > **WARNING:** Babel uses both [Node](https://nodejs.org/) and [NPM](https://www.npmjs.com/) to distribute its plugins. So before you can install anything, make sure you have both of these tools installed:
+          * install [Node](https://nodejs.org/) (which will automatically install NPM)
+        instructor_notes: ''
+        resources: null
+  - id: 213364
+    key: b91e41ba-c30a-4772-868a-e57dd96e0684
+    locale: en-us
+    version: 1.0.0
+    title: Transpiling Walkthrough
+    semantic_type: Concept
+    updated_at: 'Wed Jan 25 2017 18:21:51 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 232950
+    atoms:
+      - id: 232950
+        key: 5170f82c-8af6-40ba-9934-e31e64b64042
+        locale: en-us
+        version: 1.0.0
+        title: Transpiling Walkthrough
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:20:26 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43150'
+          youtube_id: QGE5Emfg1hI
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/583f7cc6_31-walk-through-transpiling-project/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cc6_31-walk-through-transpiling-project/31-walk-through-transpiling-project_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cc6_31-walk-through-transpiling-project/31-walk-through-transpiling-project_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cc6_31-walk-through-transpiling-project/31-walk-through-transpiling-project_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cc6_31-walk-through-transpiling-project/31-walk-through-transpiling-project_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7cc6_31-walk-through-transpiling-project/hls/playlist.m3u8'
+  - id: 261404
+    key: d31889ae-7903-487d-994a-9f113feb8525
+    locale: en-us
+    version: 1.0.0
+    title: Transpiling Recap
+    semantic_type: Concept
+    updated_at: 'Wed Jan 25 2017 20:01:32 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 261407
+      - 261426
+      - 261405
+    atoms:
+      - id: 261407
+        key: 15736fac-6071-4b84-b0bb-8ee6c37d36c2
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 25 2017 18:36:28 GMT+0000 (UTC)'
+        is_public: true
+        text: '> **NOTE**: As of the creation of this course (circa Winter 2016), most of ES6 is supported by the current set of browsers. But that''s "most", not "all", unfortunately. And that''s also referring to "current" browsers. There are plenty of older browsers that do not support many, if any, of the new ES6 additions. However, it is safe to say that pretty much every browser supports the previous version of the language (ES5.1).'
+        instructor_notes: ''
+        resources: null
+      - id: 261426
+        key: 69dd72fd-01e3-42c2-9587-bd70fb0ac135
+        locale: en-us
+        version: 1.0.0
+        title: Transpiling ES6 to ES5
+        semantic_type: VideoAtom
+        updated_at: 'Wed Sep 27 2017 18:53:10 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: '<div style="text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;">Transpiling ES6 code to ES5 code.</div>'
+        resources: null
+        video:
+          id: '48648'
+          youtube_id: ihtUq_Ve0fk
+          subtitles: null
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/588903ca_transpiling-es6-to-es5-animation-new/transpiling-es6-to-es5-animation-new_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/588903ca_transpiling-es6-to-es5-animation-new/transpiling-es6-to-es5-animation-new_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/588903ca_transpiling-es6-to-es5-animation-new/transpiling-es6-to-es5-animation-new_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/588903ca_transpiling-es6-to-es5-animation-new/transpiling-es6-to-es5-animation-new_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2017/January/588903ca_transpiling-es6-to-es5-animation-new/hls/playlist.m3u8'
+      - id: 261405
+        key: 57671a32-3047-4d8c-b36c-08c14e295a39
+        locale: en-us
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Wed Jan 25 2017 18:21:16 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Transpiling Recap
+
+          It's important to stay on top of all the changes JavaScript is going through. The best way to do that is to start making use of the new features that are added. The problem is that not all browsers support these new features. So to have your cake and eat it too, you can write in ES6 and then use a transpiler to convert it to ES5 code. This lets you transform your project's code base to the newest version of the language while still letting it run everywhere. Then, once all of the browsers your app has to run on fully support ES6 code, you can stop transpiling your code and just serve the straight ES6 code, directly!
+        instructor_notes: ''
+        resources: null
+  - id: 196716
+    key: a6b9bd3d-e712-4535-82f2-039fbcf7b59c
+    locale: en-us
+    version: 1.0.0
+    title: Course Summary
+    semantic_type: Concept
+    updated_at: 'Fri Dec 23 2016 05:14:00 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 232951
+    atoms:
+      - id: 232951
+        key: 796472f7-385d-468b-9208-f92d16ca7fa1
+        locale: en-us
+        version: 1.0.0
+        title: Course Summary
+        semantic_type: VideoAtom
+        updated_at: 'Sat Jul 01 2017 16:17:21 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          id: '43151'
+          youtube_id: hXddrbk5LF8
+          subtitles:
+            - url: 'https://s3.amazonaws.com/video.udacity-data.com/topher/2016/December/583f7ccd_34-course-outro/subtitles/lang_en_vs1.srt'
+              language_code: en
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7ccd_34-course-outro/34-course-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7ccd_34-course-outro/34-course-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7ccd_34-course-outro/34-course-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7ccd_34-course-outro/34-course-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/December/583f7ccd_34-course-outro/hls/playlist.m3u8'
