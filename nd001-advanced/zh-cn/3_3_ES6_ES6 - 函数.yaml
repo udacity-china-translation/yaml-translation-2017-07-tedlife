@@ -11,7 +11,7 @@ image:
   width: 592
   height: 640
 video: null
-summary: 函数是 JavaScript 的核心！在 ES6 中，函数出现了很多必要的改进。在这节课，你将学习很多新内容，包括箭头函数和类。
+summary: 函数是 JavaScript 的核心！在 ES6 中，函数有了很多必要的改进。在这节课，你将学习很多新内容，包括箭头函数和类。
 lesson_type: Classroom
 duration: 120
 is_project_lesson: false
@@ -44,7 +44,7 @@ concepts:
     key: 8e1cfa11-b537-4d12-8654-76baf56957e7
     locale: zh-cn
     version: 1.0.0
-    title: 函数更新
+    title: 函数的更新
     semantic_type: Concept
     updated_at: 'Mon Sep 11 2017 16:37:18 GMT+0000 (UTC)'
     is_public: true
@@ -56,7 +56,7 @@ concepts:
         key: 7aa1c84c-dac4-4a29-a296-01ec858319e1
         locale: zh-cn
         version: 1.0.0
-        title: 函数更新
+        title: 函数的更新
         semantic_type: VideoAtom
         updated_at: 'Mon Sep 11 2017 16:37:18 GMT+0000 (UTC)'
         is_public: true
@@ -98,11 +98,11 @@ concepts:
         updated_at: 'Tue Sep 19 2017 02:53:46 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          函数是 JavaScript 中的主要数据结构之一；它们一直都存在。
+          函数是 JavaScript 中的主要数据结构之一；它们**一直**都存在于 Javascript 中。
 
           ## 箭头函数
 
-          ES6 引入了一种新的函数，叫做**箭头函数**。箭头函数和普通函数的行为非常相似，但是在句法构成上非常不同。以下代码获得一个名称列表，并使用普通函数将每个名称转换为大写形式：
+          ES6 引入了一种新的函数，叫做**箭头函数**。箭头函数和普通函数的行为非常相似，但是在语法构成上非常不同。以下代码列出一组名字，使用普通函数把其中每个名字转换为大写形式：
 
           ```js
           const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(function(name) { 
@@ -110,7 +110,7 @@ concepts:
           });
           ```
 
-          下面的代码操作一样，但是向 `map()` 方法中传入的是箭头函数，而不是普通函数。注意以下代码中的箭头函数中的箭头 ( `=>` )：
+          下面的代码操作一样，但是向 `map()` 方法中传入的是箭头函数，而不是普通函数。注意以下代码中的箭头函数中的**箭头** ( `=>` )：
 
           ```js
           const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(
@@ -120,7 +120,7 @@ concepts:
 
           上述代码的唯一变化是 `map()` 方法内的代码。它将普通函数换成了箭头函数。
 
-          > **注意：** 不知道 `map()` 的原理？它是数组原型上的方法。向其传递一个函数，它会对数组中的每个元素调用该函数。然后从每个函数调用中收集返回的值，并形成新的数组。要了解详情，请参阅 [MDN 的文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)。
+          > **注意：** 不知道 `map()` 的原理？它是 Array 原型上的方法。向其传递一个函数，它会对数组中的每个元素调用该函数。然后从每个函数调用中收集返回的值，并生成新的数组。要了解详情，请参阅 [MDN 的文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)。
 
           ## 将函数转换为箭头函数
 
@@ -130,7 +130,7 @@ concepts:
           });
           ```
 
-          对于上述函数，将现有的"normal"函数转换为箭头函数只需几步。
+          对于上述函数，将现有的"普通"函数转换为箭头函数只需几步。
 
           * 删掉关键字 `function`
           * 删掉圆括号
@@ -144,7 +144,7 @@ concepts:
         key: 723ebd59-04dd-489b-b0c3-e080af5ad332
         locale: zh-cn
         version: 1.0.0
-        title: 键函数转换为箭头函数
+        title: 把函数转换为箭头函数
         semantic_type: VideoAtom
         updated_at: 'Mon Sep 11 2017 16:37:19 GMT+0000 (UTC)'
         is_public: true
@@ -181,7 +181,7 @@ concepts:
             });
             ```
 
-            下面的哪个选项结果一样，但是将 `.filter()` 函数替换成了箭头函数？
+            下面的哪个选项结果一样，但是将 `.filter()` 中的函数替换成了箭头函数？
           correct_feedback: 该箭头函数返回了六个字符或更长的国家/地区名称。
           video_feedback: null
           default_feedback: |-
@@ -235,7 +235,7 @@ concepts:
         updated_at: 'Mon Sep 11 2017 16:37:20 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          普通函数可以是**函数声明**或**函数表达式**，但是箭头函数_始终是_**表达式**。实际上，它们的全称是“箭头函数表达式”，因此仅在表达式有效时才能使用，包括：
+          普通函数可以是**函数声明**或**函数表达式**，但是箭头函数始终是**表达式**。实际上，它们的全称是“箭头函数表达式”，因此仅在表达式有效时才能使用，包括：
 
           * 存储在变量中，
           * 当做参数传递给函数，
@@ -262,7 +262,7 @@ concepts:
           name => `Hello ${name}!` 
           ```
 
-          参数列表出现在箭头函数的箭头（例如 `=>`）前面。如果列表中只有**一个**参数，那么可以像上述示例函数那样编写代码。但是，如果列表中有**两个或多个**参数，如果有**零个**，则需要将列表放在圆括号内：
+          如果你还记得，参数列表出现在箭头函数的箭头（即 `=>`）前面。如果列表中只有**一个**参数，那么可以像上述示例那样编写代码。但是，如果列表中有**两个或多个**参数，或者有**零**个，则需要将参数列表放在圆括号内：
 
           ```js
           // empty parameter list requires parentheses
@@ -321,7 +321,7 @@ concepts:
         updated_at: 'Mon Sep 11 2017 16:37:21 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          ## 简练主体语法和块体语法
+          ## 简写主体语法和常规主体语法
 
           我们看过的所有箭头函数都只有一个表达式作为函数主体：
 
@@ -331,12 +331,12 @@ concepts:
           );
           ```
 
-          这种函数主体形式称为*简练主体语法*。简练语法：
+          这种函数主体形式称为**"简写主体语法"**。简写语法：
 
           * 在函数主体周围没有花括号
           * 自动返回表达式。
 
-          如果箭头函数的主体内需要多行代码，则可以使用*块体语法*。
+          如果箭头函数的主体内需要多行代码，则可以使用**"常规主体语法"**。
 
           ```js
           const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map( name => {
@@ -345,7 +345,7 @@ concepts:
           });
           ```
 
-          对于块体语法需要主体的重要事项：
+          对于常规主体语法需要记住的重要事项：
 
           * 它将函数主体放在花括号内
           * 需要使用 `return` 语句来返回内容。
@@ -368,7 +368,7 @@ concepts:
 
             选项 2 不正确，因为它有花括号，但是没有 return 语句。该函数会运行，但是没有内容返回到 `crazyColors`。
 
-            选项 3 没有花括号。意味着需要为简练语法，并自动返回表达式，因此不应有 `return` 关键字，因此该选项不正确。
+            选项 3 没有花括号。意味着需要使用简写语法，并自动返回表达式，因此不应有 `return` 关键字，因此该选项不正确。
 
             选项 4 正确。这是你将见到的最常见的箭头函数书写形式，一行内容并自动返回内容。
           answers:
@@ -400,14 +400,14 @@ concepts:
           箭头函数很强大！
 
           * 语法简短多了，
-          * 更容易编写和阅读简短的单行函数，
-          * 使用简练主体语法时，自动返回内容！
+          * 更容易编写和阅读的简短的单行函数，
+          * 使用简写主体语法时，自动返回内容！
 
-          > **警告**：事情并非总是很完美，有些时候的确不能使用箭头函数。在忘记如何编写普通函数之前，先看看下面的限制：
+          > **警告**：事情并非总是很完美，有些时候你可能不想使用箭头函数。在忘记如何编写普通函数之前，先看看下面的限制：
 
           > * 箭头函数中的 `this` 关键字存在限制条件
           >  * 请转到下一节课了解详情！
-          > * 箭头函数只是表达式
+          > * 箭头函数只是**表达式**
           >  * 没有箭头函数声明
         instructor_notes: ''
         resources: null
@@ -769,7 +769,7 @@ concepts:
         updated_at: 'Tue Sep 19 2017 03:19:45 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          要了解箭头函数中的 `this` 有何区别，我们快速总结下标准函数中的 `this` 是如何使用的。如果你已经非常熟悉 `this` 的使用方法，可以跳过此部分。
+          要了解箭头函数中的 `this` 有何区别，让我们快速总结下标准函数中的 `this` 是如何使用的。如果你已经非常熟悉 `this` 的使用方法，可以跳过此部分。
 
           `this` 关键字的价值完全取决于它的函数（或方法）是如何被调用的。`this` 可以是以下任何内容：
 
@@ -783,7 +783,7 @@ concepts:
           const mySundae = new Sundae('Chocolate', ['Sprinkles', 'Hot Fudge']); 
           ```
 
-          在上述代码中，`Sundae` 构造函数内的 `this` 的值是新的对象，因为它使用 `new` 被调用。
+          在上述代码中，`Sundae` 这个构造函数内的 `this` 的值是新的对象，因为它使用 `new` 被调用。
 
           ---
 
@@ -819,7 +819,7 @@ concepts:
           teleport();
           ```
 
-          在上述代码中，`teleport()` 中的 `this` 的值是全局对象，更严格说来，是 `undefined`。
+          在上述代码中，`teleport()` 中的 `this` 的值是全局对象，如果在严格模式下，是 `undefined`。
 
           ---
 
@@ -836,7 +836,7 @@ concepts:
         is_public: true
         question:
           prompt: |-
-            下面的 `Train` 构造函数中的 `this` 的值是什么？
+            下面的 `Train` 这个构造函数中的 `this` 的值是什么？
 
             ```js
             const redTrain = new Train('red');
@@ -846,7 +846,7 @@ concepts:
           default_feedback: 滚动到顶部的第一部分，看看 `this` 的值可以如何设置。
           answers:
             - id: a1485273574059
-              text: 窗口对象
+              text: window 对象
               is_correct: false
               incorrect_feedback: null
             - id: a1485273623417
@@ -878,7 +878,7 @@ concepts:
           default_feedback: 滚动到顶部的第一部分，看看 `this` 的值可以如何设置。
           answers:
             - id: a1485273749391
-              text: 窗口对象
+              text: window 对象
               is_correct: false
               incorrect_feedback: null
             - id: a1485273786245
@@ -915,7 +915,7 @@ concepts:
         updated_at: 'Mon Sep 11 2017 16:37:34 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          对于普通函数，`this` 的值基于函数如何被调用。对于箭头函数，`this` 的值基于函数周围的上下文。换句话说，箭头函数内的，`this` 的值与函数外面的 `this` 的值一样。
+          对于普通函数，`this` 的值基于**函数如何被调用**。对于箭头函数，`this` 的值基于函数周围的上下文。换句话说，箭头函数内的，`this` 的值与函数外面的 `this` 的值一样。
 
           我们先看一个普通函数中的 `this` 示例，再看一个箭头函数是如何使用 `this` 的。
 
@@ -959,7 +959,7 @@ concepts:
           > **Prints:**<br>
           NaN
 
-          一种方法是使用：
+          解决这个问题的方法之一是使用闭包：
 
           ```js
           // constructor
@@ -980,7 +980,7 @@ concepts:
           dessert.addScoop();
           ```
 
-          上述代码将可行，因为它没有在函数内使用 `this`，而是将 `cone` 变量设为 `this`，然后当函数被调用时查找 `cone` 变量。这样可行，因为是在函数外面使用 `this` 的值。如果现在查看甜点中的勺子数量，正确值将为 `1`：
+          上述代码将可行，因为它没有在函数内使用 `this`，而是将 `cone` 变量设为 `this`，然后当函数被调用时查找 `cone` 变量。这样可行，因为使用了函数外面的 `this` 值。如果现在查看甜点中的勺子数量，正确值将为 `1`：
 
           ```js
           console.log(dessert.scoops);
@@ -1050,7 +1050,7 @@ concepts:
           dessert.addScoop();
           ```
 
-          这段代码并不因为同一原因而可行，即箭头函数从周围上下文中继承了 `this` 值。在 `addScoop()` 方法外面，`this` 的值是全局对象。因此如果 `addScoop()` 是箭头函数，`addScoop()` 中的 `this` 的值是全局对象。这样的话，传递给 `setTimeout()` 的函数中的 `this` 的值也设为该全局对象！
+          是的，这段代码因为同一原因而不起作用，即箭头函数从周围上下文中继承了 `this` 值。在 `addScoop()` 方法外面，`this` 的值是全局对象。因此如果 `addScoop()` 是箭头函数，`addScoop()` 中的 `this` 的值是全局对象。这样的话，传递给 `setTimeout()` 的函数中的 `this` 的值也设为了该全局对象！
         instructor_notes: ''
         resources: null
   - id: 374297
@@ -1094,9 +1094,9 @@ concepts:
           Welcome James!<br>
           Howdy Richard!
 
-          `greet()` 函数中混乱的前两行的作用是什么？它们的作用是当所需的参数未提供时，为函数提供默认的值。但是看起来很混乱...
+          `greet()` 函数中混乱的前两行的作用是什么？它们的作用是当所需的参数未提供时，为函数提供默认的值。但是看起来很难看...
 
-          幸运的是，ES6 引入了一个新的方式来创建默认值。叫做_默认函数参数_。
+          幸运的是，ES6 引入了一个新的方式来创建默认值。它叫做**默认函数参数**。
 
           ## 默认函数参数
 
@@ -1116,9 +1116,9 @@ concepts:
           Welcome James!<br>
           Howdy Richard!
 
-          哇，代码少了很多，整洁多了，也更容易读懂了！
+          哇，代码少了很多，整洁多了，也明显更容易读懂了！
 
-          要创建默认参数，需要添加等号 ( `=` ) 以及当参数未提供时参数应该设为的默认值。在上述代码中，两个参数的默认值都是字符串，但是可以为任何 JavaScript 类型！
+          要创建默认参数，需要添加等号 ( `=` ) 以及当参数未提供时参数应该设为的默认值。在上述代码中，两个参数的默认值都是字符串，但是可以为任何 JavaScript 数据类型！
         instructor_notes: ''
         resources: null
       - id: 374170
@@ -1145,7 +1145,7 @@ concepts:
           correct_feedback: 选项 4 正确地使用了默认函数参数，它直接为参数设置了默认值。
           video_feedback: null
           default_feedback: |-
-            选项 1、2 和 3 不正确，我们看看为何原因。
+            选项 1、2 和 3 不正确，我们看看什么原因。
 
             选项 1 对 `name` 和 `address` 都设定了默认值，但是不是正确的默认值。
 
@@ -1198,7 +1198,7 @@ concepts:
         text: |-
           ## 默认值和解构数组
 
-          你可以通过 **解构** 将默认函数参数结合到一起，形成非常强大的函数！
+          你可以将默认函数参数和[解构](https://classroom.udacity.com/courses/ud356/lessons/42383e89-ac6a-491a-b7d0-198851287bbe/concepts/7c7be588-31e9-4c62-9dad-ecf23f943b19)结合到一起， 创建非常强大的函数！
 
           ```js
           function createGrid([width = 5, height = 5]) {
@@ -1225,7 +1225,7 @@ concepts:
           ```
           > **Uncaught TypeError:** Cannot read property 'Symbol(Symbol.iterator)' of undefined
 
-          出现错误，因为 `createGrid()` 预期传入的是数组，然后对其进行解构。因为函数被调用时没有传入数组，措意出现问题。但是，我们可以使用默认的函数参数！
+          出现错误，因为 `createGrid()` 预期传入的是数组，然后对其进行解构。因为函数被调用时没有传入数组，然后出现问题。但是，我们可以使用默认的函数参数！
 
           ```js
           function createGrid([width = 5, height = 5] = []) {
@@ -1263,11 +1263,11 @@ concepts:
           correct_feedback: 只有选项 2 和 4 会正常运行，不会出现错误。
           video_feedback: null
           default_feedback: |-
-            因为 `houseDescriptor` 预期只传入一个参数（数组），因此选项 1 不对，它使用两个参数调用函数。
+            因为 `houseDescriptor` 预期只传入一个参数（数组），因此选项 1 不对，它调用函数时传入了两个参数。
 
             选项 2 正确。
 
-            选项 3 使用一个数组参数调用函数，但是列表中的第二项和 `.join()` 不是字符串方法，因此代码会出现错误。
+            选项 3 调用函数传入了一个数组参数，但是列表中的第二项是字符串，而 `.join()` 不是字符串方法，因此代码会出现错误。
 
             选项 4 正确。
           answers:
@@ -1298,7 +1298,7 @@ concepts:
         text: |-
           ## 默认值和解构对象
 
-          就像使用数组默认值解构数组一样，函数可以让对象具有默认参数，并使用对象解构：
+          就像使用数组默认值解构数组一样，函数可以让对象成为一个默认参数，并使用对象解构：
 
           ```js
           function createSundae({scoops = 1, toppings = ['Hot Fudge']}) {
@@ -1317,7 +1317,7 @@ concepts:
           Your sundae has 2 scoops with Sprinkles toppings.<br>
           Your sundae has 1 scoop with Cookie Dough toppings.
 
-          就像上面的数组示例，如果尝试调用函数时不用参数，将不可行：
+          就像上面的数组示例，如果尝试调用函数时不传入参数，将不可行：
 
           ```js
           createSundae(); // throws an error
@@ -1401,7 +1401,7 @@ concepts:
           function createSundae({scoops = 1, toppings = ['Hot Fudge']} = {}) { … }
           ```
 
-          ...with the `createSundae()` 函数使用对象默认值进行解构后，如果你想使用 `scoops` 的默认值，但是更改 `toppings`，那么只需使用 `toppings` 传入一个对象：
+          ...在 `createSundae()` 函数使用对象默认值进行解构时，如果你想使用 `scoops` 的默认值，但是更改 `toppings`，那么只需使用 `toppings` 传入一个对象：
 
           ```js
           createSundae({toppings: ['Hot Fudge', 'Sprinkles', 'Caramel']});
@@ -1413,13 +1413,13 @@ concepts:
           function createSundae([scoops = 1, toppings = ['Hot Fudge']] = []) { … }
           ```
 
-          对于这个函数，如果想使用 `scoops` 的默认数量，但是更改 `toppings`，则需要有点奇怪地调用你的函数：
+          对于这个函数，如果想使用 `scoops` 的默认数量，但是更改 `toppings`，则调用你的函数就有点奇怪：
 
           ```js
           createSundae([undefined, toppings: ['Hot Fudge', 'Sprinkles', 'Caramel']]);
           ```
 
-          因为数组基于位置，我们需要传入 `undefined` 以跳过第一个参数（并接受默认值）并到达第二个参数。
+          因为数组是基于位置，我们需要传入 `undefined` 以跳过第一个参数（并使用默认值）来到达第二个参数。
 
           除非你有很充足的理由来使用数组默认值进行数组解构，否则建议使用对象默认值进行对象解构！
         instructor_notes: ''
@@ -1730,7 +1730,7 @@ concepts:
         is_public: true
         text: |-
           # 类预览
-          下面快速查看下 JavaScript 类的外观：
+          下面快速查看下 JavaScript 类是怎么写的：
 
           ```js
           class Dessert {
@@ -1751,16 +1751,16 @@ concepts:
           }
           ```
 
-          注意到 `Dessert` 和 `IceCream`, 前面的新关键字 `class` 或 `class IceCream extends Dessert` 中的新关键字 `extends` 了吗？还有 IceCream 的 `constructor()` 方法中对 `super()` 的调用。
+          注意到 `Dessert` 和 `IceCream` 前面的新关键字 `class`，以及 `class IceCream extends Dessert` 中的新关键字 `extends` 了吗？还有 IceCream 的 `constructor()` 方法中 `super()` 的调用。
 
-          在创建 JavaScript 类时，可以使用大量新的关键字和语法了。但是，在具体讲解如何编写 JavaScript 类之前，我们需要指出与基于类的语言相比，非常令人困惑的 JavaScript 部分。
+          在创建 JavaScript 类时，可以使用大量新的关键字和语法了。但是，在具体讲解如何编写 JavaScript 类之前，我们需要指出与基于类的语言相比，JavaScript 非常令人困惑的部分。
         instructor_notes: ''
         resources: null
   - id: 374299
     key: 8f5f9b2b-c38c-47f6-af21-ae90eda29780
     locale: zh-cn
     version: 1.0.0
-    title: 对 JavaScript 类的错觉
+    title: 对 JavaScript 类的错误观念
     semantic_type: Concept
     updated_at: 'Mon Sep 11 2017 16:37:47 GMT+0000 (UTC)'
     is_public: true
@@ -1772,7 +1772,7 @@ concepts:
         key: 852d1ff2-f15d-4224-8962-985ec90aa72c
         locale: zh-cn
         version: 1.0.0
-        title: 对 JavaScript 类的错觉
+        title: 对 JavaScript 类的错误观念
         semantic_type: VideoAtom
         updated_at: 'Mon Sep 11 2017 16:37:46 GMT+0000 (UTC)'
         is_public: true
@@ -1814,7 +1814,7 @@ concepts:
         text: |-
           ## ES5 “类”总结
 
-          因为 ES6 类只是一个“幻景”，原型继承实际上被隐藏起来了，我们快速了解下如何用 ES5 代码创建”类” ：
+          因为 ES6 类只是一个“幻景”（语法糖），原型继承实际上在底层被隐藏起来了，我们快速了解下如何用 ES5 代码创建”类” ：
 
           ```js
           function Plane(numEngines) {
@@ -1835,16 +1835,16 @@ concepts:
           jamesPlane.startEngines();
           ```
 
-          在上述代码中，`Plane` 函数是一个*构造函数*，它将创建新的 Plane 对象。具体的 Plane 对象的数据被传递给 `Plane` 函数，并设置到该对象上。每个 Plane 对象继承的方法被放置在 `Plane.prototype` 对象上。然后，`richardsPlane` 被创建后有一个引擎，而 `jamesPlane` 被创建后有四个引擎。但是，这两个对象都使用相同的 `startEngines` 方法来激活各自的引擎。
+          在上述代码中，`Plane` 函数是一个**构造函数**，它将用来创建新的 Plane 对象。具体的 Plane 对象的数据被传递给 `Plane` 函数，并设置到该对象上。每个 Plane 对象继承的方法被放置在 `Plane.prototype` 对象上。然后，`richardsPlane` 被创建后有一个引擎，而 `jamesPlane` 被创建后有四个引擎。但是，这两个对象都使用相同的 `startEngines` 方法来激活各自的引擎。
 
           需要注意的事项：
 
           * 构造函数使用 `new` 关键字被调用
-          * 按照惯例，构造函数以大写字母开头
-          * 构造函数控制将被创建的对象上数据的设置
-          * “继承的”方法被放置在构造函数的原型对象上
+          * 按照惯例，构造函数名以大写字母开头
+          * 构造函数控制将被创建的对象的数据的设置
+          * “继承”的方法被放在构造函数的原型对象上
 
-          当我们了解 ES6 类的原理时，请记住这几点，因为 ES6 类都在后台帮你设置了所有这些。
+          当我们了解 ES6 类的原理时，请记住这几点，因为 ES6 类都在底层帮你设置了所有这些。
 
           ## ES6 类
 
@@ -1988,14 +1988,14 @@ concepts:
             ```
 
             下面的哪些选项正确？
-          correct_feedback: 选项 1 和 3 都正确。出现在类定义中的方法放在类的原型对象上，类只是一种函数。
+          correct_feedback: 选项 1 和 3 都正确。出现在类定义中的方法放在类的原型对象上，类只是一个函数。
           video_feedback: null
           default_feedback: |-
-            选项 1 正确。出现在类定义中的方法属于后台内容，并放在类的原型对象上。
+            选项 1 正确。出现在类定义中的方法，在底层，是放在类的原型对象上的。
 
             选项 2 不正确。类其实就是函数。
 
-            选项 3 正确。类是一种函数。
+            选项 3 正确。类是一个函数。
           answers:
             - id: a1485281919970
               text: '`eat()` 方法出现在 `Animal.prototype` 上。'
@@ -2042,7 +2042,7 @@ concepts:
           }
           ```
 
-          注意 `badWeather()` 在前面具有单词 `static`，而 `startEngines()` 没有？这样使得 `badWeather()` 可以在 `Plane` 类上直接访问的方法，因此你可以这样调用它：
+          注意 `badWeather()` 在前面有单词 `static`，而 `startEngines()` 没有？这样使得 `badWeather()` 成为 `Plane` 类中可以直接访问的方法，因此你可以这样调用它：
 
           ```js
           Plane.badWeather([plane1, plane2, plane3]);
@@ -2056,13 +2056,13 @@ concepts:
             * 创建函数要编写的代码少多了
           2. 清晰地定义了构造函数
             * 在类定义总，可以清晰地指定构造函数。
-          3. 一起都包含起来
-            * 类需要的所有代码都包含在类声明中。你可以同时设定一切内容，而不用在一个位置编写构造函数，然后向原型一个一个地添加方法！
+          3. 全部都包含起来了
+            * 类需要的所有代码都包含在类声明中。你可以同时设定一切内容，而不用在一个位置编写构造函数，然后向原型一个一个地添加方法，你可以同时做所有的事！
 
           ## 使用类时需要注意的事项
 
           1. `class` 不是魔术
-            * 关键字 `class` 带来了其他基于类的语言中的很多后台结构。它没有像变魔术一样向 JavaScript 类添加了此功能。
+            * 关键字 `class` 带来了其它基于类的语言中的很多思想观念。它没有像变魔术一样向 JavaScript 类添加了此功能。
           2. `class` 是原型继承的抽象形式
             * 我们已经多次提到，JavaScript 类实际上使用的就是原型继承。
           3. 使用类需要用到 `new`
@@ -2151,11 +2151,11 @@ concepts:
           myMaple.changeSeason('spring');
           ```
 
-          `Tree` 和 `Maple` 都是 JavaScript 类。`Maple` 类是 `Tree` 的子类，并使用关键字 `extends` 将其自己设为子类。要从子类转到父类，需要使用关键字 `super`。注意到 `super` 有两种使用方式吗？在 `Maple` 的构造方法中，`super` 被用作函数。在 `Maple` 的`changeSeason()` 方法中，`super` 被用作对象！
+          `Tree` 和 `Maple` 都是 JavaScript 类。`Maple` 类是 `Tree` 的子类，并使用关键字 `extends` 将自己设为子类。要从子类到父类，需要使用关键字 `super`。注意到 `super` 有两种使用方式吗？在 `Maple` 的构造方法中，`super` 被用作函数。在 `Maple` 的`changeSeason()` 方法中，`super` 被用作对象！
 
           ## 与 ES5 子类对比
 
-          我们看看用 ES5 代码编写的相同功能：
+          我们看看用 ES5 编写相同功能的代码：
 
           ```js
           function Tree() {
@@ -2196,7 +2196,7 @@ concepts:
           myMaple.changeSeason('spring');
           ```
 
-          这段代码和上面的类样式代码都实现了相同的功能。
+          这段代码和上面的类风格的代码都实现了相同的功能。
         instructor_notes: ''
         resources: null
   - id: 374307
@@ -2259,9 +2259,9 @@ concepts:
         text: |-
           ## 使用子类
 
-          就像很多新增功能一样，使用 `class`、`super` 和 `extends` 创建子类时设置代码少了很多，语法更清晰。
+          像大多数新增加的特性，使用 `class`、`super` 和 `extends` 创建子类时设置代码少了很多，语法更清晰。
 
-          只需记住，在后台，函数和类型之间的连接是一样的。
+          只需记住，在底层，函数和原型之间的连接是一样的。
 
           ### `super` 必须在 `this` 之前被调用
 
@@ -2325,7 +2325,7 @@ concepts:
           prompt: |-
             假设存在 `Toy` 类，`Dragon` 类扩展自 `Toy` 类。
 
-            哪个是在 `Dragon` 类的`构造函数`方法中创建 `Toy` 对象的正确方式？
+            哪个是在 `Dragon` 类的 `constructor` 方法中创建 `Toy` 对象的正确方式？
           correct_feedback: 选项 1 是从子类的构造函数中调用超级类的正确方式。
           video_feedback: null
           default_feedback: 选项 1 是从子类的构造函数中调用超级类的正确方式。
