@@ -130,7 +130,7 @@ concepts:
           });
           ```
 
-          对于上述函数，将现有的"普通"函数转换为箭头函数只需几步。
+          对于上述函数，将现有的“普通”函数转换为箭头函数只需几步。
 
           * 删掉关键字 `function`
           * 删掉圆括号
@@ -400,7 +400,7 @@ concepts:
           箭头函数很强大！
 
           * 语法简短多了，
-          * 更容易编写和阅读的简短的单行函数，
+          * 更容易编写和阅读的简短单行函数，
           * 使用简写主体语法时，自动返回内容！
 
           > **警告**：事情并非总是很完美，有些时候你可能不想使用箭头函数。在忘记如何编写普通函数之前，先看看下面的限制：
@@ -1145,7 +1145,7 @@ concepts:
           correct_feedback: 选项 4 正确地使用了默认函数参数，它直接为参数设置了默认值。
           video_feedback: null
           default_feedback: |-
-            选项 1、2 和 3 不正确，我们看看什么原因。
+            选项 1、2 和 3 不正确，我们看看是什么原因。
 
             选项 1 对 `name` 和 `address` 都设定了默认值，但是不是正确的默认值。
 
@@ -1225,7 +1225,7 @@ concepts:
           ```
           > **Uncaught TypeError:** Cannot read property 'Symbol(Symbol.iterator)' of undefined
 
-          出现错误，因为 `createGrid()` 预期传入的是数组，然后对其进行解构。因为函数被调用时没有传入数组，然后出现问题。但是，我们可以使用默认的函数参数！
+          出现错误，因为 `createGrid()` 预期传入的是数组，然后对其进行解构。因为函数被调用时没有传入数组，所以出现问题。但是，我们可以使用默认的函数参数！
 
           ```js
           function createGrid([width = 5, height = 5] = []) {
@@ -1413,7 +1413,7 @@ concepts:
           function createSundae([scoops = 1, toppings = ['Hot Fudge']] = []) { … }
           ```
 
-          对于这个函数，如果想使用 `scoops` 的默认数量，但是更改 `toppings`，则调用你的函数就有点奇怪：
+          对于这个函数，如果想使用 `scoops` 的默认数量，但是更改 `toppings`，则必须以这种奇怪的方式调用你的函数：
 
           ```js
           createSundae([undefined, toppings: ['Hot Fudge', 'Sprinkles', 'Caramel']]);
@@ -2151,7 +2151,7 @@ concepts:
           myMaple.changeSeason('spring');
           ```
 
-          `Tree` 和 `Maple` 都是 JavaScript 类。`Maple` 类是 `Tree` 的子类，并使用关键字 `extends` 将自己设为子类。要从子类到父类，需要使用关键字 `super`。注意到 `super` 有两种使用方式吗？在 `Maple` 的构造方法中，`super` 被用作函数。在 `Maple` 的`changeSeason()` 方法中，`super` 被用作对象！
+          `Tree` 和 `Maple` 都是 JavaScript 类。`Maple` 类是 `Tree` 的子类，并使用关键字 `extends` 将自己设为子类。要让子类可以访问到父类，需要使用关键字 `super`。注意到 `super` 有两种使用方式吗？在 `Maple` 的构造方法中，`super` 被用作函数。在 `Maple` 的`changeSeason()` 方法中，`super` 被用作对象！
 
           ## 与 ES5 子类对比
 
